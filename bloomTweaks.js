@@ -283,7 +283,25 @@ function waitForSpicetify() {
             display: none !important;
         }
 
-        /* Profile Page */
+
+        /* ---------------------------------- Friends Activity --------------------------------- */
+
+
+        .umsKuFPqgF42Qhs2m0Ud svg {
+            mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/facebook-logo-fill.svg) !important;
+            -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/facebook-logo-fill.svg) !important;
+            background-color: var(--spice-text) !important;
+            width: 20px !important;
+            height: 20px !important;
+            transition: transform 0.3s ease;
+        }
+
+        .umsKuFPqgF42Qhs2m0Ud .IconWrapper__Wrapper-sc-1hf1hjl-0 {
+            margin-top: 0 !important;
+        }
+
+        /* ------------------------------------ Profile Page ----------------------------------- */
+
 
         .spotify__container--is-desktop:not(.fullscreen) .zogFp9G1AEqb8AKOd5BO {
             -webkit-app-region: no-drag;
@@ -315,10 +333,21 @@ function waitForSpicetify() {
             background: linear-gradient(180deg, #0f0f0f, var(--spice-tab-active));
         }
 
-        /* Marketplace */
+
+        /* ------------------------------------ Marketplace ------------------------------------ */
+
+
         .marketplace-grid .main-card-draggable .main-card-cardMetadata li.marketplace-card__tag[data-tag="external JS"], .marketplace-grid .main-card-draggable .main-card-cardMetadata li.marketplace-card__tag[data-tag=archived] {
             background-color: var(--spice-accent);
             color: var(--spice-alt-text);
+        }
+
+
+        /* -------------------------------------- Play Bar ------------------------------------- */
+
+
+        .HD9s7U5E1RLSWKpXmrqx {
+            background: transparent !important;
         }
     `;
     document.head.append(style);
