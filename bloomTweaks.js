@@ -8,12 +8,15 @@ function waitForSpicetify() {
     // Inject CSS styles
     const style = document.createElement('style');
     style.textContent = `
+        .playlist-playlist-playlist .IconWrapper__Wrapper-sc-1hf1hjl-0 .Svg-sc-ytk21e-0 {
+            width: 50px;
+            height: 50px;
+        }
+
         .IconWrapper__Wrapper-sc-1hf1hjl-0 .Svg-sc-ytk21e-0 {
             mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg);
             -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg);
             background-color: var(--spice-text) !important;
-            width: 60px;
-            height: 60px;
         }
 
         .IconWrapper__Wrapper-sc-1hf1hjl-0 .Svg-sc-ytk21e-0 path {
@@ -87,40 +90,40 @@ function waitForSpicetify() {
             visibility: hidden;
         }
 
+        aside[aria-label="Queue"] .Button-sc-1dqy6lx-0 svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .kh6wYYPvgRPBhA2wj3AS .qp7Sys7hJSZHLzw4K_yF {
+            background-color: rgba(var(--spice-rgb-card), 0.7) !important;
+        }
+
+        aside[aria-label="Queue"] .Button-sc-1dqy6lx-0[aria-label*="Play"] svg,
         .cRB7yMdTUrWxDud8Uqvi[aria-label*="Play"] .RTHphmJ9fFJyJWFe9Kwt,
         .play-button,
         .Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only[aria-label*="Play"] .IconWrapper__Wrapper-sc-1hf1hjl-0 .Svg-sc-ytk21e-0 {
             mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg);
             -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg);
-            background-color: var(--spice-text) !important;
-            width: 60px;
-            height: 60px;
             transition: transform 0.3s ease;
+            background: var(--spice-text);
         }
 
-        .shuffle-enabled {
-            filter: brightness(0) saturate(100%) invert(79%) sepia(29%) saturate(800%) hue-rotate(87deg) brightness(87%) contrast(81%) !important;
-        }
-
+        aside[aria-label="Queue"] .Button-sc-1dqy6lx-0[aria-label*="Pause"] svg,
         .cRB7yMdTUrWxDud8Uqvi[aria-label*="Pause"] .RTHphmJ9fFJyJWFe9Kwt,
         .Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only[aria-label*="Pause"] .IconWrapper__Wrapper-sc-1hf1hjl-0 .Svg-sc-ytk21e-0 {
             mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_pause_16_filled.svg);
             -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_pause_16_filled.svg);
             transition: transform 0.3s ease;
-        }
-
-        .view-homeShortcutsGrid-PlayButtonContainer .Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only {
-            background: transparent !important;
-        }
-
-        .Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only .Svg-sc-ytk21e-0,
-        .view-homeShortcutsGrid-PlayButtonContainer .Svg-sc-ytk21e-0 {
-            width: 35px !important;
-            height: 35px !important;
+            background: var(--spice-text);
         }
 
         .view-homeShortcutsGrid-PlayButtonContainer .Svg-sc-ytk21e-0 {
             margin-right: 10px;    
+        }
+
+        .shuffle-enabled {
+            filter: brightness(0) saturate(100%) invert(79%) sepia(29%) saturate(800%) hue-rotate(87deg) brightness(87%) contrast(81%) !important;
         }
 
         .Wrapper-large-only-medium .Svg-sc-ytk21e-0 {
@@ -284,7 +287,9 @@ function waitForSpicetify() {
         }
 
 
+
         /* ---------------------------------- Friends Activity --------------------------------- */
+
 
 
         .umsKuFPqgF42Qhs2m0Ud svg {
@@ -300,7 +305,10 @@ function waitForSpicetify() {
             margin-top: 0 !important;
         }
 
+
+
         /* ------------------------------------ Profile Page ----------------------------------- */
+
 
 
         .spotify__container--is-desktop:not(.fullscreen) .zogFp9G1AEqb8AKOd5BO {
@@ -334,7 +342,9 @@ function waitForSpicetify() {
         }
 
 
+
         /* ------------------------------------ Marketplace ------------------------------------ */
+
 
 
         .marketplace-grid .main-card-draggable .main-card-cardMetadata li.marketplace-card__tag[data-tag="external JS"], .marketplace-grid .main-card-draggable .main-card-cardMetadata li.marketplace-card__tag[data-tag=archived] {
@@ -343,11 +353,113 @@ function waitForSpicetify() {
         }
 
 
+
         /* -------------------------------------- Play Bar ------------------------------------- */
+
 
 
         .HD9s7U5E1RLSWKpXmrqx {
             background: transparent !important;
+        }
+
+
+
+        /* -------------------------------------- NPV ------------------------------------- */
+
+
+
+        .artist-artistOnTour-date.artist-artistOnTour-elevated {
+            background: transparent !important;
+        }
+
+
+
+        /* -------------------------------------- Event Page ------------------------------------- */
+
+
+
+        .HYVIJaYYiCTgSCHie70L {
+            background: rgba(var(--spice-rgb-card), 0.7) !important;
+        }
+
+        .SPbe_Q1wtiZQCmo0QKUy {
+            margin: 8px;
+        }
+
+        .wedRUk4eiBo9n9vqXLhU {
+            background-color: var(--spice-card);
+            border: 1px var(--spice-contour) solid !important;
+            display: inline-flex;
+            flex-direction: column;
+            row-gap: var(--encore-spacing-tighter-2, 8px);
+            border-radius: var(--encore-corner-radius-larger, 6px);
+            padding-block: 12px;
+            padding-inline: 12px;
+        }
+
+        .wedRUk4eiBo9n9vqXLhU:hover {
+            background-color: var(--spice-highlight);
+        }
+
+        .EkGb0ZzhswreSvpZoioY {
+            border-radius: 6px !important;
+            width: calc(100% - 20px) !important;
+            margin: 10px;
+        }
+            
+        .no-focus-outline :focus {
+            outline: none;
+        }
+
+        .XgeTnLs82tTjczDR6oKn .IconWrapper__Wrapper-sc-1hf1hjl-0 .Svg-sc-ytk21e-0 {
+            mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/ic_fluent_open_24_filled.svg);
+            -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/ic_fluent_open_24_filled.svg);
+            background-color: var(--spice-highlight-elevated) !important;
+            width: 17px;
+            height: 17px;
+            margin-top: -4px;
+        }
+
+
+
+        /* -------------------------------------- Top Bar ------------------------------------- */
+
+
+
+        .main-topBar-topbarContent svg {
+            width: 25px !important;
+            height: 25px !important;
+            margin-top: -4px;
+        }
+
+
+
+        /* -------------------------------------- New Release Page ------------------------------------- */
+
+
+
+        .view-homeShortcutsGrid-PlayButtonContainer .Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only {
+            background: transparent !important;
+        }
+
+        .Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only .Svg-sc-ytk21e-0,
+        .view-homeShortcutsGrid-PlayButtonContainer .Svg-sc-ytk21e-0 {
+            width: 35px;
+            height: 35px;
+        }
+
+        .Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only .ButtonInner-small-iconOnly {
+            background: transparent !important;
+        }
+
+        .Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only .IconWrapper__Wrapper-sc-1hf1hjl-0 {
+            top: 0 !important;
+            left: 0 !important;
+            margin: 0 !important;
+        }
+
+        .SjhDNg4bQRQmIJAba47Z {
+            width: 60% !important;
         }
     `;
     document.head.append(style);
