@@ -461,6 +461,22 @@ function waitForSpicetify() {
         .SjhDNg4bQRQmIJAba47Z {
             width: 60% !important;
         }
+
+
+
+        /* -------------------------------------- New Release Page ------------------------------------- */
+
+
+
+        .tag-list-button {
+            mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/ic_fluent_edit_24_regular.svg);
+            -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/ic_fluent_edit_24_regular.svg);
+            background-color: var(--spice-text) !important;
+            width: 13px;
+            height: 13px;
+            padding: 20px 0 0;
+            margin-left: 6px;
+        }
     `;
     document.head.append(style);
 
