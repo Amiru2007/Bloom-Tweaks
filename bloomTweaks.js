@@ -62,6 +62,14 @@ function waitForSpicetify() {
             z-index: 0;
         }
 
+        aside[aria-label="Friend Activity"] .sGj6VHKqd2s4IorAqiYI {
+            background-color: var(--background-press) !important;
+        }
+
+        aside[aria-label="Friend Activity"] .sGj6VHKqd2s4IorAqiYI p {
+            color: var(--spice-subtext) !important;
+        }
+
         .dAPXjNmPLJI6x_sXJwAp .cRB7yMdTUrWxDud8Uqvi {
             background-color: rgba(var(--spice-rgb-card), 0.7) !important;
         }
