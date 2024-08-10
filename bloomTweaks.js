@@ -13,11 +13,11 @@ function waitForSpicetify() {
             height: 50px;
         }
 
-        .IconWrapper__Wrapper-sc-1hf1hjl-0 .Svg-sc-ytk21e-0 {
+        /* .IconWrapper__Wrapper-sc-1hf1hjl-0 .Svg-sc-ytk21e-0 {
             mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg);
             -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg);
             background-color: var(--spice-text) !important;
-        }
+        } */
 
         .IconWrapper__Wrapper-sc-1hf1hjl-0 .Svg-sc-ytk21e-0 path {
             fill: transparent;
@@ -98,10 +98,11 @@ function waitForSpicetify() {
         .kh6wYYPvgRPBhA2wj3AS .qp7Sys7hJSZHLzw4K_yF {
             background-color: rgba(var(--spice-rgb-card), 0.7) !important;
         }
-
+        
+        .main-playButton-PlayButton.main-playButton-primary svg,
         aside[aria-label="Queue"] .Button-sc-1dqy6lx-0[aria-label*="Play"] svg,
         .cRB7yMdTUrWxDud8Uqvi[aria-label*="Play"] .RTHphmJ9fFJyJWFe9Kwt,
-        .play-button,
+        .play-button svg,
         .Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only[aria-label*="Play"] .IconWrapper__Wrapper-sc-1hf1hjl-0 .Svg-sc-ytk21e-0 {
             mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg);
             -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg);
@@ -286,6 +287,14 @@ function waitForSpicetify() {
             display: none !important;
         }
 
+        .main-trackList-trackList[aria-rowcount="3"] {
+            margin-top: 20px;
+        }
+
+        .playlist-playlist-playlistInlineCurationBackButton {
+            color: var(--text-subdued);
+        }
+
 
 
         /* ---------------------------------- Friends Activity --------------------------------- */
@@ -305,6 +314,10 @@ function waitForSpicetify() {
             margin-top: 0 !important;
         }
 
+        .SN5MVM1k5tAxwKeA7WDr {
+            color: var(--spice-text) !important;
+        }
+
 
 
         /* ------------------------------------ Profile Page ----------------------------------- */
@@ -318,7 +331,7 @@ function waitForSpicetify() {
         }
 
         .PsrXxenHUFXYM1ub1xWw {
-            background-color: rgba(var(--spice-rgb-card) 0.7) !important;
+            background-color: rgba(var(--spice-rgb-card), 0.7) !important;
         }
 
         .U_VWfeeLWnDPhUTxCmrQ {
@@ -348,8 +361,14 @@ function waitForSpicetify() {
 
 
         .marketplace-grid .main-card-draggable .main-card-cardMetadata li.marketplace-card__tag[data-tag="external JS"], .marketplace-grid .main-card-draggable .main-card-cardMetadata li.marketplace-card__tag[data-tag=archived] {
-            background-color: var(--spice-accent);
-            color: var(--spice-alt-text);
+            background-color: var(--spice-accent) !important;
+            color: var(--spice-alt-text) !important;
+        }
+
+        .setting-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
 
 
@@ -476,6 +495,116 @@ function waitForSpicetify() {
             height: 13px;
             padding: 20px 0 0;
             margin-left: 6px;
+        }
+
+
+
+        /* -------------------------------------- Nav Bar ------------------------------------- */
+
+
+
+        .main-yourLibraryX-header .Button-sc-1dqy6lx-0[aria-label="Go back"] svg {
+            mask-image: url(https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_arrow_left_24_filled.svg) !important;
+            -webkit-mask-image: url(https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_arrow_left_24_filled.svg) !important;
+            background-color: var(--spice-subtext);
+            margin-left: 5px;
+        }
+
+
+
+        /* -------------------------------------- Spicetify Tags ------------------------------------- */
+
+
+        
+        .GitHub-button-wrapper,
+        .README h1,
+        .all-untagged-playlists-page-sort-dropdown-wrapper, 
+        .all-playlists-page-sort-dropdown-wrapper {
+            padding-top: 30px;
+        }
+
+        .play-icon {
+            left: 0 !important;
+            top: 0 !important;
+            width: 50px !important;
+            transform: none !important;
+            height: 50px !important;
+        }
+        
+        .loadingWrapper .status-icon {
+            mask-image: url(https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_library_24_regular.svg) !important;
+            -webkit-mask-image: url(https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_library_24_regular.svg) !important;
+            background-color: var(--spice-subtext) !important;
+        }
+
+
+
+        /* -------------------------------------- Beutiful Lyrics ------------------------------------- */
+
+
+
+        #BeautifulLyricsFullscreenButton svg {
+            fill: var(--spice-subtext) !important;
+        }
+
+
+
+        /* -------------------------------------- Genre Tags ------------------------------------- */
+
+
+
+        .ellipsis-one-line a {
+            color: var(--text-subdued) !important;
+        }
+
+
+
+        /* -------------------------------------- Home ------------------------------------- */
+
+
+
+        .mjZrvVI3CxfHJXu7y0Lg {
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            border-bottom-left-radius: 0 !important;
+            border-bottom-right-radius: 0 !important;
+        }
+
+
+
+        /* -------------------------------------- Sleep Time ------------------------------------- */
+
+
+
+        #sleep-timer-menu .btn-success, #sleep-timer-menu .btn-success:hover {
+            background: var(--spice-button, var(--spice-accent)) !important;
+            border: 1px solid var(--spice-button, var(--spice-accent)) !important;
+            color: var(--spice-alt-text) !important;
+        }
+
+
+
+        /* -------------------------------------- Bookmarks ------------------------------------- */
+
+
+
+        .main-playButton-PlayButton.main-playButton-primary {
+            background: transparent;
+            border: 0;
+        }
+
+        .bookmark-controls {
+            background-color: rgb(45 45 45 / 70%) !important;
+        }
+
+        .bookmark-card-image {
+            width: 60px !important;
+            height: 60px !important;
+            border-radius: 7px !important;
+        }
+
+        .bookmark-card {
+            margin-top: 12px !important;
         }
     `;
     document.head.append(style);
