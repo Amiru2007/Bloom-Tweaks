@@ -107,6 +107,7 @@ function waitForSpicetify() {
             background-color: rgba(var(--spice-rgb-card), 0.7) !important;
         }
         
+        #spicetify-playlist-list li button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle[aria-label*="Play"] svg.Svg-sc-ytk21e-0.Svg-img-icon-medium,
         .main-playButton-PlayButton.main-playButton-primary svg,
         aside[aria-label="Queue"] .Button-sc-1dqy6lx-0[aria-label*="Play"] svg,
         .cRB7yMdTUrWxDud8Uqvi[aria-label*="Play"] .RTHphmJ9fFJyJWFe9Kwt,
@@ -118,6 +119,7 @@ function waitForSpicetify() {
             background: var(--spice-text);
         }
 
+        #spicetify-playlist-list li button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle[aria-label*="Pause"] svg.Svg-sc-ytk21e-0.Svg-img-icon-medium,
         aside[aria-label="Queue"] .Button-sc-1dqy6lx-0[aria-label*="Pause"] svg,
         .cRB7yMdTUrWxDud8Uqvi[aria-label*="Pause"] .RTHphmJ9fFJyJWFe9Kwt,
         .Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only[aria-label*="Pause"] .IconWrapper__Wrapper-sc-1hf1hjl-0 .Svg-sc-ytk21e-0 {
@@ -125,6 +127,19 @@ function waitForSpicetify() {
             -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_pause_16_filled.svg);
             transition: transform 0.3s ease;
             background: var(--spice-text);
+        }
+
+        .main-yourLibraryX-button path {
+            display: block !important;
+        }
+
+        .main-yourLibraryX-libraryItemContainer li.main-useDropTarget-base.main-useDropTarget-track.main-useDropTarget-local.main-useDropTarget-album.main-useDropTarget-episode.main-yourLibraryX-listItem button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle svg.Svg-sc-ytk21e-0.Svg-img-icon-medium path {
+            background: transparent;
+        }
+
+        .BfALkuQy0UjTI70U9QlQ {
+            background: rgba(0, 0, 0, 0.5) !important;
+            border-radius: 4px !important;
         }
 
         .view-homeShortcutsGrid-PlayButtonContainer .Svg-sc-ytk21e-0 {
@@ -389,6 +404,60 @@ function waitForSpicetify() {
             background: transparent !important;
         }
 
+        .Root__now-playing-bar .Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only .Svg-sc-ytk21e-0 {
+            width: 28px !important;
+            height: 28px !important;
+        }
+
+        .player-controls__buttons button {
+            max-height: var(--button-size);
+            max-width: var(--button-size);
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+
+        button.Button-sc-1dqy6lx-0[aria-label*="Previous"] {
+            padding-left: 10px !important;
+        }
+
+        button.Button-sc-1dqy6lx-0[aria-label*="Next"] {
+            padding-right: 10px !important;
+        }
+
+        button.Button-sc-1dqy6lx-0[aria-label*="Previous"] svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
+            mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_previous_24_filled.svg);
+            -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_previous_24_filled.svg);
+            background-color: var(--spice-text) !important;
+            width: 24px !important;
+            height: 24px !important;
+        }
+
+        button.Button-sc-1dqy6lx-0[aria-label*="Next"] svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
+            mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_next_24_filled.svg);
+            -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_next_24_filled.svg);
+            background-color: var(--spice-text) !important;
+            width: 24px !important;
+            height: 24px !important;
+        }
+
+        .playback-bar .playback-progressbar {
+            height: 20px !important;
+        }
+
+        .playback-bar .progress-bar {
+            padding: 0 10px;
+        }
+
+        .playback-bar .x-progressBar-progressBarBg {
+            width: calc(100% - 20px) !important;
+        }
+
+        .playback-bar .x-progressBar-fillColor {
+            width: 100%;
+            will-change: transform;
+            padding: 0 10px;
+        }
+
 
 
         /* -------------------------------------- NPV ------------------------------------- */
@@ -545,14 +614,70 @@ function waitForSpicetify() {
             background-color: var(--spice-subtext) !important;
         }
 
+        .text-input {
+            scrollbar-color: rgba(var(--spice-rgb-selected-row),.3) transparent;
+            -webkit-font-smoothing: antialiased;
+            user-select: none;
+            box-sizing: border-box;
+            font-family: "Segoe UI Variable Display", "Segoe UI Variable Text", "Segoe UI",
+            "Microsoft Ya Hei", sans-serif !important;
+            line-height: normal;
+            box-shadow: none !important;
+            text-transform: none;
+            background: rgba(var(--spice-rgb-selected-row),.1);
+            border: 1px solid transparent;
+            color: var(--spice-text);
+            font-size: 14px;
+            height: 40px;
+            padding: 0 12px;
+            width: 100%;
+            background-color: var(--spice-card);
+            border-radius: var(--border-radius-2) !important;
+        }
+
+        .text-input:focus {
+            border-color: var(--spice-accent) !important;
+        }
+
+        .modal-button { */
+            scrollbar-color: rgba(var(--spice-rgb-selected-row), .3) transparent;
+            -webkit-font-smoothing: antialiased;
+            user-select: none;
+            box-sizing: border-box;
+            font-family: "Segoe UI Variable Display", "Segoe UI Variable Text", "Segoe UI", "Microsoft Ya Hei", sans-serif !important;
+            line-height: normal;
+            box-shadow: none !important;
+            text-transform: none;
+            background: rgba(var(--spice-rgb-selected-row), .1);
+            border: 1px solid transparent;
+            color: var(--spice-text);
+            font-size: 14px;
+            height: 40px;
+            padding: 0 12px;
+            width: 70px !important;
+            background-color: var(--spice-card);
+            border-radius: 9999px;
+            color: var(--spice-alt-text) !important;
+            font-weight: 700;
+            background: var(--spice-text) !Important;
+        }
 
 
-        /* -------------------------------------- Beutiful Lyrics ------------------------------------- */
+
+        /* -------------------------------------- Beautiful Lyrics ------------------------------------- */
 
 
 
         #BeautifulLyricsFullscreenButton svg {
             fill: var(--spice-subtext) !important;
+        }
+
+        .BeautifulLyricsBackground:is(aside) .BeautifulLyricsBackground-Container {
+            display: none !important;
+        }
+
+        .Lyric.Synced.Line {  
+            --text-shadow-opacity: 0 !important;
         }
 
 
@@ -563,6 +688,10 @@ function waitForSpicetify() {
 
         .ellipsis-one-line a {
             color: var(--text-subdued) !important;
+        }
+
+        .ellipsis-one-line.main-type-finale {
+            margin-top: -3px !important;
         }
 
 
@@ -613,6 +742,195 @@ function waitForSpicetify() {
 
         .bookmark-card {
             margin-top: 12px !important;
+        }
+
+
+
+        /* -------------------------------------- Spicetify Stats ------------------------------------- */
+
+
+
+        .Box__BoxComponent-sc-y4nds-0.BoxComponent-group-card-naked-isInteractive-draggable.Box-sc-1njtxi4-0.Box-group-naked-card-md-isInteractive-draggable.main-card-cardContainer.Card:hover:active,
+        .Box__BoxComponent-sc-y4nds-0.BoxComponent-group-card-naked-isInteractive-draggable.Box-sc-1njtxi4-0.Box-group-naked-card-md-isInteractive-draggable.main-card-cardContainer.Card {
+            width: 100% !important;
+            height: 100% !important;
+        }
+            
+        .TypeElement-type-canon-textBase {
+            margin-bottom: 10px;
+        }
+
+        .page-header {
+            margin: 16px 0 0 0 !important;
+        }
+            
+        .badge {
+            background-color: var(--spice-accent) !important;
+            color: var(--spice-alt-text) !important;
+            font-weight: 500;
+        }
+            
+        .badge svg {
+            fill: var(--spice-alt-text) !important;
+        }
+
+        .main-tag-container, .main-trackList-rowImage {
+            border-radius: 4px !important;
+        }
+
+        .navBar-module__topBarNav___qWGeZ_stats {
+            text-align: center;
+        }
+        
+        #stats-app .main-trackList-trackListHeader {
+            padding: 0 !important;
+            top: 64px !important;
+        }
+        
+        #stats-app span.TypeElement-mesto-textSubdued.TypeElement-mesto-textSubdued-type.main-trackList-rowSubTitle.standalone-ellipsis-one-line {
+            margin-top: -2px;
+        }
+        
+        #stats-app span.TypeElement-mesto-textSubdued.TypeElement-mesto-textSubdued-type.main-trackList-rowSubTitle.standalone-ellipsis-one-line a {
+            color: var(--text-subdued) !important;
+            font-size: 14px !important;
+        }
+
+        #stats-app .stats-scrollButton {
+            border-radius: 4px !important;
+            padding: 3px 0 !important;
+            margin: 0 5px 5px 0 !important;
+        }
+
+        #stats-app .stats-genreRowFill {
+            background: var(--spice-button);
+            height: 100%;
+            border-radius: 30px !important;
+            display: flex;
+            align-items: center;
+        }
+
+        #stats-app .stats-genreText {
+            margin-left: 10px !important;
+        }
+
+
+
+        /* -------------------------------------- Spicetify Better Local Fils by Pithaya ------------------------------------- */
+
+
+
+        .contentSpacing.main-entityHeader-container.main-entityHeader-nonWrapped.main-entityHeader-newEntityHeaders .app-module__center-container___LG8O4_betterDlocalDfiles {
+            border-radius: var(--border-radius-1) !important; */
+            box-shadow: 0 4px 60px rgb(33 33 33 / 50%) !important;
+            background-image: linear-gradient(to right top, #007cbc, #00a1d3, #00c2bc, #00dc7c, #a8eb12) !important;
+        }
+            
+        .app-module__stretch-container___SIzsh_betterDlocalDfiles.undefined .main-trackList-trackListRow {
+            width: calc(100% - 20px) !important;
+            margin-left: 10px !important;
+            margin-top: 0px !Important;
+        }
+            
+        .app-module__stretch-container___SIzsh_betterDlocalDfiles.undefined .main-trackList-trackListHeaderRow {
+            margin-bottom: 25px;
+        }
+
+        .app-module__stretch-container___SIzsh_betterDlocalDfiles.undefined .main-entityHeader-backgroundColor {
+            background-color: #00a1d3;
+        }
+            
+        span.Type__TypeElement-sc-goli3j-0.TypeElement-type-mesto-textSubdued.main-trackList-rowSubTitle.standalone-ellipsis-one-line {
+            font    -size: 14px !important;
+            color: var(--spice-subtext) !important;
+        }
+            
+        .app-module__full-size-container___XoGtP_betterDlocalDfiles .contentSpacing:not( .artist-artistDiscography-topBar, .search-searchCategory-container, .hV9v6y_uYwdAsoiOHpzk, .main-entityHeader-container, .main-actionBar-ActionBar ) {
+            padding-top: 8px;
+            padding-bottom: 110px;
+        }
+
+        .main-playButton-PlayButton > button {
+            width: 50px !important;
+            height: 50px !important;
+            margin: 3px;
+        }
+
+
+
+        /* -------------------------------------- Made For You ------------------------------------- */
+
+
+
+        a[aria-label*="Made for you"] .TypeElement-balladBold-type {
+            font-weight: 700 !important;
+        }
+
+
+
+        /* -------------------------------------- Spicetify Library by Harbassan ------------------------------------- */
+
+
+
+        .main-yourLibraryX-navLink[href="/library"] > svg {
+            mask-image: url(https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_library_24_regular.svg) !important;
+            -webkit-mask-image: url(https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_library_24_regular.svg) !important;
+            background-color: var(--spice-subtext) !important;
+        }
+
+        .main-yourLibraryX-navLink[href="/library"].active > svg {
+            mask-image: url(https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_library_24_filled.svg) !important;
+            -webkit-mask-image: url(https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_library_24_filled.svg) !important;
+            background-color: var(--spice-accent) !important;
+        }
+
+        .main-yourLibraryX-navLink[href="/library"]:hover > svg {
+            background-color: var(--spice-text) !important;
+        }
+
+        .main-yourLibraryX-navLink[href="/library"].active:hover > svg {
+            background-color: var(--spice-accent) !important;
+        }
+
+        .main-yourLibraryX-navLink[href="/library"] > svg path {
+            opacity: 0;
+        }
+
+        .main-gridContainer-gridContainer div .Box__BoxComponent-sc-y4nds-0[aria-labelledby*='folder'] .Areas__InteractiveArea-sc-1tea2mc-0.Areas__MainArea-sc-1tea2mc-1.MWEhk.MainArea::after {
+            content: '';
+            background: var(--text-subdued);
+            height: 24px;
+            width: 24px;
+            mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/ic_fluent_folder_24_regular.svg) !important;
+            -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/ic_fluent_folder_24_regular.svg) !important;
+            position: absolute;
+            right: 12px;
+        }
+
+
+
+        /* -------------------------------------- Spicetify Library by Harbassan ------------------------------------- */
+
+
+
+        #playback-bar-drag-block div div:nth-child(3) {
+            background-color: var(--spice-player-bar-bg) !important;
+        }
+
+        #playback-bar-drag-block div div:nth-child(1) svg,
+        #playback-bar-drag-block div div:nth-child(2) svg {
+            opacity: 0;
+        }
+
+        #playback-bar-drag-block div div:nth-child(1)::after,
+        #playback-bar-drag-block div div:nth-child(2)::after {
+            content: '';
+            background: var(--spice-text);
+            width: 2px;
+            height: 16px;
+            border-radius: 99px;
+            border: 3px solid var(--spice-card);
+            position: absolute;
         }
     `;
     document.head.append(style);
