@@ -8,6 +8,10 @@ function waitForSpicetify() {
     // Inject CSS styles
     const style = document.createElement('style');
     style.textContent = `
+        ._Cq69xKZBtHaaeMZXIdk {
+            display: none !important;
+        }
+
         .playlist-playlist-playlist .IconWrapper__Wrapper-sc-1hf1hjl-0 .Svg-sc-ytk21e-0 {
             width: 50px;
             height: 50px;
@@ -661,6 +665,24 @@ function waitForSpicetify() {
             font-weight: 700;
             background: var(--spice-text) !Important;
         }
+            
+        div#playlist-tags-settings {
+            padding-top: 30px;
+        }
+    
+        h2.TypeElement-cello-textBase-type {
+            font-size: var(--encore-text-size-base);
+            color: var(--text-base);
+            font-weight: 700;
+        }
+
+        #playlist-tags-settings h2.TypeElement-cello-textBase-type {
+            font-size: var(--encore-text-size-larger-2) !important;
+        }
+
+        .TypeElement-viola-textSubdued-type {
+            font-size: var(--encore-text-size-smaller);
+        }
 
 
 
@@ -671,13 +693,17 @@ function waitForSpicetify() {
         #BeautifulLyricsFullscreenButton svg {
             fill: var(--spice-subtext) !important;
         }
-
+        /*
         .BeautifulLyricsBackground:is(aside) .BeautifulLyricsBackground-Container {
             display: none !important;
         }
-
+        */
         .Lyric.Synced.Line {  
             --text-shadow-opacity: 0 !important;
+        }
+
+        .ffFwfKcPDbmAPLXzxzKq {
+            border-radius: var(--border-radius-1) !important;
         }
 
 
@@ -931,6 +957,21 @@ function waitForSpicetify() {
             border-radius: 99px;
             border: 3px solid var(--spice-card);
             position: absolute;
+        }
+
+
+
+        /* -------------------------------------- Local Files Folder ------------------------------------- */
+
+
+
+        .standalone-ellipsis-one-line.W676nknusnBt8sz19YVV {
+            font-size: var(--encore-text-size-smaller) !important;
+            color: var(--text-subdued) !important;
+        }
+
+        .main-entityHeader-detailsText {
+            margin-left: 5px;
         }
     `;
     document.head.append(style);
