@@ -1,8 +1,8 @@
 :root {
     --spice-accent: #4cc2ff !important;
-    --spice-notification: #4cc2ff !important;
-    --spice-button-active: #4cc2ff !important;
-    --spice-button: #4cc2ff !important;
+    --spice-notification: var(--spice-accent) !important;
+    --spice-button-active: var(--spice-accent) !important;
+    --spice-button: var(--spice-accent) !important;
     --spice-rgb-accent: 76, 194, 255 !important;
     /* --background-highlight: #3be477 !important; */
 }
@@ -10,9 +10,9 @@
 .encore-dark-theme .encore-bright-accent-set {
     --background-highlight: #99ebff !important;
     --background-press: #0091f8 !important;
-    --background-elevated-base: #99ebff !important;
-    --background-elevated-highlight: #99ebff !important;
-    --background-elevated-press: #0091f8 !important;
+    --background-elevated-base: var(--background-highlight) !important;
+    --background-elevated-highlight: var(--background-highlight) !important;
+    --background-elevated-press: var(--background-press) !important;
 }
 
 ._Cq69xKZBtHaaeMZXIdk {
@@ -1068,21 +1068,26 @@ a[aria-label*="Made for you"] .TypeElement-balladBold-type {
 
 
 #playback-bar-drag-block div div:nth-child(3),
-#playback-bar-drag-block div div:nth-child(6) {
+#playback-bar-drag-block div div:nth-child(6),
+#playback-bar-drag-block div div:nth-child(9) {
     background-color: var(--spice-player-bar-bg) !important;
 }
 
 #playback-bar-drag-block div div:nth-child(1) svg,
 #playback-bar-drag-block div div:nth-child(2) svg,
 #playback-bar-drag-block div div:nth-child(4) svg,
-#playback-bar-drag-block div div:nth-child(5) svg {
+#playback-bar-drag-block div div:nth-child(5) svg,
+#playback-bar-drag-block div div:nth-child(7) svg,
+#playback-bar-drag-block div div:nth-child(8) svg {
     opacity: 0;
 }
 
 #playback-bar-drag-block div div:nth-child(1)::after,
 #playback-bar-drag-block div div:nth-child(2)::after,
 #playback-bar-drag-block div div:nth-child(4)::after,
-#playback-bar-drag-block div div:nth-child(5)::after {
+#playback-bar-drag-block div div:nth-child(5)::after,
+#playback-bar-drag-block div div:nth-child(7)::after,
+#playback-bar-drag-block div div:nth-child(8)::after {
     content: '';
     background: var(--spice-text);
     width: 2px;
