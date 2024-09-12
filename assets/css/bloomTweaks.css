@@ -803,12 +803,12 @@ font-weight: 500;
 }
 
 .BeautifulLyricsBackground:is(aside) .BeautifulLyricsBackground-Container {
-    opacity: 1 !important;
+    opacity: 0.3 !important;
 }
 
-.BeautifulLyricsBackground:is(aside) .BeautifulLyricsBackground-Container {
+/* .BeautifulLyricsBackground:is(aside) .BeautifulLyricsBackground-Container {
     filter: saturate(2) brightness(1) !important;
-}
+} */
 
 .Lyric.Synced.Line {
     --text-shadow-opacity: 0 !important;
