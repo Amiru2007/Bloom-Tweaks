@@ -1,8 +1,8 @@
 :root {
     --spice-accent: #4cc2ff !important;
-    --spice-notification: var(--spice-accent) !important;
-    --spice-button-active: var(--spice-accent) !important;
-    --spice-button: var(--spice-accent) !important;
+    --spice-notification: #4cc2ff !important;
+    --spice-button-active: #4cc2ff !important;
+    --spice-button: #4cc2ff !important;
     --spice-rgb-accent: 76, 194, 255 !important;
     /* --background-highlight: #3be477 !important; */
 }
@@ -10,9 +10,9 @@
 .encore-dark-theme .encore-bright-accent-set {
     --background-highlight: #99ebff !important;
     --background-press: #0091f8 !important;
-    --background-elevated-base: var(--background-highlight) !important;
-    --background-elevated-highlight: var(--background-highlight) !important;
-    --background-elevated-press: var(--background-press) !important;
+    --background-elevated-base: #99ebff !important;
+    --background-elevated-highlight: #99ebff !important;
+    --background-elevated-press: #0091f8 !important;
 }
 
 ._Cq69xKZBtHaaeMZXIdk {
@@ -166,6 +166,16 @@ aside[aria-label="Queue"] .Button-sc-1dqy6lx-0[aria-label*="Pause"] svg,
 
 .main-yourLibraryX-libraryItemContainer li.main-useDropTarget-base.main-useDropTarget-track.main-useDropTarget-local.main-useDropTarget-album.main-useDropTarget-episode.main-yourLibraryX-listItem button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle svg.Svg-sc-ytk21e-0.Svg-img-icon-medium path {
     background: transparent;
+}
+
+button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-in-keyboard-nav-condensedAll-useBrowserDefaultFocusStyle.PUipCs3_0Qott0Sru3pB.XAOxFVWnd185_vZ5zPGu.JUPaw8kZF94Coth4G88s[aria-label*="Expand folder"] svg {
+    background: var(--spice-subtext);
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_caret_down_24_filled.svg);
+}
+
+button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-in-keyboard-nav-condensedAll-useBrowserDefaultFocusStyle.PUipCs3_0Qott0Sru3pB.XAOxFVWnd185_vZ5zPGu.JUPaw8kZF94Coth4G88s[aria-label*="Collapse folder"] svg {
+    background: var(--spice-subtext);
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_caret_down_24_filled.svg);
 }
 
 .BfALkuQy0UjTI70U9QlQ {
@@ -633,7 +643,7 @@ a[data-context-menu-open=true] {
 .tag-list-button {
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/ic_fluent_edit_24_regular.svg);
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/ic_fluent_edit_24_regular.svg);
-    background-color: var(--spice-text) !important;
+    background-color: var(--spice-subtext) !important;
     width: 13px;
     height: 13px;
     padding: 20px 0 0;
@@ -803,12 +813,12 @@ font-weight: 500;
 }
 
 .BeautifulLyricsBackground:is(aside) .BeautifulLyricsBackground-Container {
-    opacity: 0.3 !important;
+    opacity: 1 !important;
 }
 
-/* .BeautifulLyricsBackground:is(aside) .BeautifulLyricsBackground-Container {
+.BeautifulLyricsBackground:is(aside) .BeautifulLyricsBackground-Container {
     filter: saturate(2) brightness(1) !important;
-} */
+}
 
 .Lyric.Synced.Line {
     --text-shadow-opacity: 0 !important;
@@ -1068,26 +1078,21 @@ a[aria-label*="Made for you"] .TypeElement-balladBold-type {
 
 
 #playback-bar-drag-block div div:nth-child(3),
-#playback-bar-drag-block div div:nth-child(6),
-#playback-bar-drag-block div div:nth-child(9) {
+#playback-bar-drag-block div div:nth-child(6) {
     background-color: var(--spice-player-bar-bg) !important;
 }
 
 #playback-bar-drag-block div div:nth-child(1) svg,
 #playback-bar-drag-block div div:nth-child(2) svg,
 #playback-bar-drag-block div div:nth-child(4) svg,
-#playback-bar-drag-block div div:nth-child(5) svg,
-#playback-bar-drag-block div div:nth-child(7) svg,
-#playback-bar-drag-block div div:nth-child(8) svg {
+#playback-bar-drag-block div div:nth-child(5) svg {
     opacity: 0;
 }
 
 #playback-bar-drag-block div div:nth-child(1)::after,
 #playback-bar-drag-block div div:nth-child(2)::after,
 #playback-bar-drag-block div div:nth-child(4)::after,
-#playback-bar-drag-block div div:nth-child(5)::after,
-#playback-bar-drag-block div div:nth-child(7)::after,
-#playback-bar-drag-block div div:nth-child(8)::after {
+#playback-bar-drag-block div div:nth-child(5)::after {
     content: '';
     background: var(--spice-text);
     width: 2px;
