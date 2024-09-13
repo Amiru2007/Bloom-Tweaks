@@ -9,10 +9,9 @@ function waitForSpicetify() {
     function loadCustomCSS() {
         const link = document.createElement('link');
         link.rel = 'stylesheet';
-    
-        // Use current timestamp to force CSS update
-        const timestamp = new Date().getTime(); 
-        link.href = `https://cdn.jsdelivr.net/gh/Amiru2007/Bloom-Tweaks@main/assets/css/bloomTweaks.css?v=${timestamp}`;
+        
+        // Use jsDelivr's @latest tag to fetch the latest version of the file
+        link.href = 'https://cdn.jsdelivr.net/gh/Amiru2007/Bloom-Tweaks@latest/assets/css/bloomTweaks.css';
         document.head.append(link);
     }
 
