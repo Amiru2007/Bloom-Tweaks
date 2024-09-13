@@ -831,7 +831,7 @@ font-weight: 500;
 
 svg.Svg-sc-ytk21e-0.Svg-img-16-icon.LyricsPageIcon {
     background: var(--spice-subtext) !important;
-    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/mic.svg) !important;
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/mic.svg) !important;
     width: 16px !important;
     height: 16px !important;
 }
@@ -845,7 +845,7 @@ button.main-genericButton-button.Button-sc-1dqy6lx-0.Button-small-small-buttonTe
 }
 
 button.main-genericButton-button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-isUsingKeyboard-useBrowserDefaultFocusStyle.play.main-genericButton-buttonActive.main-genericButton-buttonActiveDot::after {
-    margin-left: 10px !important;
+    margin-left: 13px !important;
     /* margin-top: 5px; */
     bottom: -2px !important;
 }
