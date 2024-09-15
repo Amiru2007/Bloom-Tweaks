@@ -625,6 +625,36 @@ a[data-context-menu-open=true] {
     margin-top: -4px;
 }
 
+button.main-topBar-button,
+.main-actionButtons button.encore-over-media-set.main-topBar-buddyFeed {
+    background: transparent !important;
+}
+
+button.main-topBar-button.play[aria-label*="playlist-stats"] {
+    margin-left: 10px;
+}
+
+button.main-topBar-button.play[aria-label*="playlist-stats"] svg {
+    background: var(--spice-text);
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/chart-bar-big.svg);
+    height: 20px;
+    width: 20px;
+}
+
+.main-actionButtons button.encore-over-media-set.main-topBar-buddyFeed[aria-label*="What's New"] svg {
+    background: var(--spice-text) !important;
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/bell.svg) !important;
+    width: 18px;
+    height: 18px;
+}
+
+.main-actionButtons button.encore-over-media-set.main-topBar-buddyFeed[aria-label*="Friend Activity"] svg {
+    background: var(--spice-text) !important;
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/users.svg) !important;
+    width: 18px;
+    height: 18px;
+}
+
 
 
 /* -------------------------------------- New Release Page ------------------------------------- */
