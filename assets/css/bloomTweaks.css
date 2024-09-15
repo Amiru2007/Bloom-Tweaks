@@ -633,7 +633,7 @@ button.main-topBar-button,
 /* button.main-topBar-button.play[aria-label*="playlist-stats"] {
     margin-left: 10px;
 } */
-button.main-topBar-button.play svg {
+button.main-topBar-button svg {
     background: var(--spice-text) !important;
     height: 18px !important;
     width: 18px !important;
@@ -648,7 +648,7 @@ button.main-topBar-button[aria-label*="Full App Display"] svg {
 }
 
 button.main-topBar-button[aria-label*="Bookmark"] svg {
-    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/tv.svg) !important;
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/bookmark.svg) !important;
 }
 
 button.main-topBar-button[aria-label*="Beautiful Fullscreen"] svg {
