@@ -662,6 +662,14 @@ button[title*="TV Mode Display"] svg {
     width: 18px !important;
 }
 
+button[aria-label*="Get Random Saved Album"] svg {
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/dice-5.svg);
+    transition: all 0.3s ease;
+}
+button[aria-label*="Get Random Saved Album"]:hover svg {
+    transform: rotate(90deg);
+}
+
 button.main-topBar-button svg path {
     opacity: 0 !important;
 }
@@ -678,6 +686,19 @@ button.main-topBar-button svg path {
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/users.svg) !important;
     width: 18px;
     height: 18px;
+}
+.main-noConnection-isNotice {
+    background-color: transparent !important;
+}
+
+button.main-actionButtons-button.main-topBarStatusIndicator-hasTooltip.main-noConnection-isNotice.main-topBarStatusIndicator-tooltipEnter.main-topBarStatusIndicator-tooltipEnterActive svg {
+    fill: var(--spice-accent) !important;
+}
+
+.qSTDtICR1fiIGRni1cwy {
+    color: var(--spice-alt-text) !important;
+    padding: 8px 16px !important;
+    font-weight: 500;
 }
 
 
