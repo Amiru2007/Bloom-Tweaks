@@ -630,15 +630,40 @@ button.main-topBar-button,
     background: transparent !important;
 }
 
-button.main-topBar-button.play[aria-label*="playlist-stats"] {
+/* button.main-topBar-button.play[aria-label*="playlist-stats"] {
     margin-left: 10px;
+} */
+button.main-topBar-button.play svg {
+    background: var(--spice-text) !important;
+    height: 18px !important;
+    width: 18px !important;
 }
 
-button.main-topBar-button.play[aria-label*="playlist-stats"] svg {
-    background: var(--spice-text);
-    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/chart-bar-big.svg);
-    height: 20px;
-    width: 20px;
+button.main-topBar-button[aria-label*="playlist-stats"] svg {
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/chart-bar-big.svg) !important;
+}
+
+button.main-topBar-button[aria-label*="Full App Display"] svg {
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/tv.svg) !important;
+}
+
+button.main-topBar-button[aria-label*="Bookmark"] svg {
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/tv.svg) !important;
+}
+
+button.main-topBar-button[aria-label*="Beautiful Fullscreen"] svg {
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/fullscreen.svg) !important;
+}
+
+button[title*="TV Mode Display"] svg {
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/tv-minimal.svg) !important;
+    background: var(--spice-text) !important;
+    height: 18px !important;
+    width: 18px !important;
+}
+
+button.main-topBar-button svg path {
+    opacity: 0 !important;
 }
 
 .main-actionButtons button.encore-over-media-set.main-topBar-buddyFeed[aria-label*="What's New"] svg {
