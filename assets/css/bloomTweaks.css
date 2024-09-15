@@ -664,6 +664,20 @@ a[data-context-menu-open=true] {
     margin-right: 9px !important;
 }
 
+.main-yourLibraryX-libraryRootlist span.collapse-button svg {
+    background: var(--text-subdued, #656565);
+    opacity: 1;
+    height: 20px;
+    width: 20px;
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_arrow_collapse_all_24_filled.svg);
+    transform: rotate(270deg);
+}
+
+
+.main-yourLibraryX-libraryRootlist span.collapse-button svg path {
+    opacity: 0 !important;
+}
+
 
 
 /* -------------------------------------- Spicetify Tags ------------------------------------- */
@@ -1084,13 +1098,15 @@ a[aria-label*="Made for you"] .TypeElement-balladBold-type {
 
 .main-gridContainer-gridContainer div .Box__BoxComponent-sc-y4nds-0[aria-labelledby*='folder'] .main-card-imageContainer::after {
     content: '';
-    background: var(--text-subdued);
+    background: #00000000;
     height: 24px;
     width: 24px;
+    backdrop-filter: invert(75%);
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/ic_fluent_folder_24_regular.svg) !important;
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/ic_fluent_folder_24_regular.svg) !important;
     position: absolute;
-    right: 12px;
+    right: 8px;
+    bottom: 8px;
 }
 
 
