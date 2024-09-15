@@ -699,6 +699,21 @@ a[data-context-menu-open=true] {
     opacity: 0 !important;
 }
 
+.main-yourLibraryX-navLinkActive.active {
+    background-color: var(--spice-selected-row);
+    position: relative !important;
+}
+
+.main-yourLibraryX-navLinkActive.active::before {
+    content: '';
+    background: var(--spice-accent);
+    width: 4px;
+    height: 24px;
+    border-radius: 9999px;
+    position: absolute !important;
+    left: 0;
+}
+
 
 
 /* -------------------------------------- Spicetify Tags ------------------------------------- */
