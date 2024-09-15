@@ -463,6 +463,26 @@ button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-
     justify-content: space-between;
 }
 
+a[class*="-tabBar-active"],
+a[class*="topBarActive"] {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+a[class*="-tabBar-active"]::before,
+a[class*="topBarActive"]::before {
+    content: '';
+    background: var(--spice-accent);
+    display: block !important;
+    width: calc(100% - 32px);
+    height: 2px;
+    position: absolute;
+    bottom: 2px;
+    border-radius: 9999px;
+}
+
 
 
 /* -------------------------------------- Play Bar ------------------------------------- */
@@ -1333,4 +1353,14 @@ a.muHL0_3HjlqTZDoapgc9[href*="https://en.wikipedia.org/"] svg {
 
 a.muHL0_3HjlqTZDoapgc9[href*="https://en.wikipedia.org/"] svg path {
     opacity: 0 !important;
+}
+
+
+
+/* -------------------------------------- Device connect panel------------------------------------- */
+
+
+
+div[aria-describedby*='device-picker-troubleshooting-list'] {
+    margin-bottom: 90px;
 }
