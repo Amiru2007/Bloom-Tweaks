@@ -11,7 +11,7 @@ function waitForSpicetify() {
         link.rel = 'stylesheet';
         
         // Use jsDelivr's @latest tag to fetch the latest version of the file
-        link.href = 'https://cdn.jsdelivr.net/gh/Amiru2007/Bloom-Tweaks@latest/assets/css/bloomTweaks.css';
+        link.href = 'https://cdn.jsdelivr.net/gh/Amiru2007/Bloom-Tweaks@main/assets/css/bloomTweaks.css?v=1';
         document.head.append(link);
     }
 

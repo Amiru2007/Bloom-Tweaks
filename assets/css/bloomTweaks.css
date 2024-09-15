@@ -1082,7 +1082,7 @@ a[aria-label*="Made for you"] .TypeElement-balladBold-type {
     opacity: 0;
 }
 
-.main-gridContainer-gridContainer div .Box__BoxComponent-sc-y4nds-0[aria-labelledby*='folder'] .Areas__InteractiveArea-sc-1tea2mc-0.Areas__MainArea-sc-1tea2mc-1.MWEhk.MainArea::after {
+.main-gridContainer-gridContainer div .Box__BoxComponent-sc-y4nds-0[aria-labelledby*='folder'] .main-card-imageContainer::after {
     content: '';
     background: var(--text-subdued);
     height: 24px;
@@ -1302,4 +1302,19 @@ button.main-repeatButton-button.main-repeatButton-active svg {
 .pQmF4tvRpUeLWgPKUcW7 {
     background-color: var(--spice-card) !important;
     border: 1px solid var(--spice-player-border) !important;
+}
+
+
+
+/* -------------------------------------- Artist About Modal------------------------------------- */
+
+
+
+a.muHL0_3HjlqTZDoapgc9[href*="https://en.wikipedia.org/"] svg {
+    background: var(--background-elevated-highlight) !important;
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/wikipedia-w-brands-solid.svg) !important;
+}
+
+a.muHL0_3HjlqTZDoapgc9[href*="https://en.wikipedia.org/"] svg path {
+    opacity: 0 !important;
 }
