@@ -799,10 +799,11 @@ button.main-actionButtons-button.main-topBarStatusIndicator-hasTooltip.main-noCo
 
 /* This will style the moving active indicator */
 .active-indicator {
+    transform: translateY(-201px) !important;
     position: absolute;
-    left: 0;
+    left: 12px;
     width: 4px;
-    height: 24px;
+    height: 24px !important;
     background: var(--spice-accent);
     border-radius: 9999px;
     transition: transform 0.3s ease, height 0.3s ease;
