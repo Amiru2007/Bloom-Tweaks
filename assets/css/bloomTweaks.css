@@ -794,7 +794,7 @@ button.main-actionButtons-button.main-topBarStatusIndicator-hasTooltip.main-noCo
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    transition: height 0.3s, transform 0.3s;
+    transition: height 0.3s, transform 0.3s ease;
     z-index: 1000; /* Ensure it's above other content */
 }
 
@@ -804,10 +804,25 @@ button.main-actionButtons-button.main-topBarStatusIndicator-hasTooltip.main-noCo
     position: absolute;
     left: 12px;
     width: 4px;
-    height: 24px !important;
+    height: 24px;
     background: var(--spice-accent);
     border-radius: 9999px;
-    transition: transform 0.3s ease, height 0.3s ease;
+    transition: height 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+/* Animation keyframes for height transition */
+@keyframes heightIncrease {
+    0% {
+        height: 30px; /* Increased height at the start */
+    }
+    100% {
+        height: 24px; /* Original height */
+    }
+}
+
+/* Apply animation when the active class is added */
+.main-yourLibraryX-navLinkActive.active .active-indicator {
+    animation: heightIncrease 0.3s ease forwards;
 }
 
 .main-yourLibraryX-entryPoints #spicetify-show-list, .main-yourLibraryX-entryPoints #spicetify-hidden-list {
