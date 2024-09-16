@@ -785,21 +785,21 @@ button.main-actionButtons-button.main-topBarStatusIndicator-hasTooltip.main-noCo
 }
 
 .main-yourLibraryX-navLinkActive.active::before {
-    content: '';
+    /* content: ''; */
     background: var(--spice-accent);
     width: 4px;
     height: 24px;
     border-radius: 9999px;
     position: absolute !important;
     left: 0;
-    top: 50%;  /* Center the indicator */
-    transform: translateY(-50%);  /* Center alignment */
-    transition: height 0.3s, transform 0.3s;  /* Smooth animation for size and movement */
+    top: 50%;
+    transform: translateY(-50%);
+    transition: height 0.3s, transform 0.3s;
 }
 
 /* This will style the moving active indicator */
 .active-indicator {
-    transform: translateY(-201px) !important;
+    /* transform: translateY(-201px) !important; */
     position: absolute;
     left: 12px;
     width: 4px;
