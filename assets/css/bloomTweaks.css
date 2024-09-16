@@ -15,6 +15,10 @@
     --background-elevated-press: #0091f8 !important;
 }
 
+.C1USyigFSYyc22_BmsgB .rdp {
+    --rdp-accent-color: #0091f8 !important;
+}
+
 ._Cq69xKZBtHaaeMZXIdk {
     display: none !important;
 }
@@ -788,6 +792,24 @@ button.main-actionButtons-button.main-topBarStatusIndicator-hasTooltip.main-noCo
     border-radius: 9999px;
     position: absolute !important;
     left: 0;
+    top: 50%;  /* Center the indicator */
+    transform: translateY(-50%);  /* Center alignment */
+    transition: height 0.3s, transform 0.3s;  /* Smooth animation for size and movement */
+}
+
+/* This will style the moving active indicator */
+.active-indicator {
+    position: absolute;
+    left: 0;
+    width: 4px;
+    height: 24px;
+    background: var(--spice-accent);
+    border-radius: 9999px;
+    transition: transform 0.3s ease, height 0.3s ease;
+}
+
+.main-yourLibraryX-entryPoints #spicetify-show-list, .main-yourLibraryX-entryPoints #spicetify-hidden-list {
+    padding: 0 12px 8px 12px;
 }
 
 
@@ -1430,6 +1452,28 @@ button.main-repeatButton-button.main-repeatButton-active svg {
 .pQmF4tvRpUeLWgPKUcW7 {
     background-color: var(--spice-card) !important;
     border: 1px solid var(--spice-player-border) !important;
+}
+
+.EPBWBmUPyLEpl4VJflaL {
+    border-radius: 8px !important;
+}
+
+.h_q319q68ujja24YIoXY {
+    background: var(--spice-main) !important;
+}
+
+.zBCfaF04WlTsiUcov2oJ,
+.JxTPZX9AoptKanJg0zIw {
+    color: var(--text-subdued) !important;
+}
+
+.YpfopxY2udneDY34uzRN,
+.cBs7zoipfqjsCHbDjY_p .tICcDjrC0CkSMO2fZZNy {
+    background: var(--spice-main-elevated) !important;
+}
+
+.lKQxSRsi8KcoYx5D7mjh {
+    height: 370px !important;
 }
 
 
