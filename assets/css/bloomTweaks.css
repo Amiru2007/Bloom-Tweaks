@@ -813,7 +813,7 @@ button.main-actionButtons-button.main-topBarStatusIndicator-hasTooltip.main-noCo
 /* Animation keyframes for height transition */
 @keyframes heightIncrease {
     0% {
-        height: 30px; /* Increased height at the start */
+        height: 50px; /* Increased height at the start */
     }
     100% {
         height: 24px; /* Original height */
