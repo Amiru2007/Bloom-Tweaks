@@ -804,7 +804,7 @@ button.main-actionButtons-button.main-topBarStatusIndicator-hasTooltip.main-noCo
     position: absolute;
     left: 12px;
     width: 4px;
-    height: 24px;
+    height: 24px !important;
     background: var(--spice-accent);
     border-radius: 9999px;
     transition: transform 0.3s ease, height 0.3s ease;
