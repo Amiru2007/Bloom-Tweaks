@@ -795,6 +795,7 @@ button.main-actionButtons-button.main-topBarStatusIndicator-hasTooltip.main-noCo
     top: 50%;
     transform: translateY(-50%);
     transition: height 0.3s, transform 0.3s;
+    z-index: 1000; /* Ensure it's above other content */
 }
 
 /* This will style the moving active indicator */
