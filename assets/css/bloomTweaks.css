@@ -139,8 +139,8 @@ aside[aria-label="Queue"] .Button-sc-1dqy6lx-0 svg {
 }
 
 .StyledTabItem-tab-tabItem-useBrowserDefaultFocusStyle::before {
-    animation-delay: 0.3s;
-    animation: indicator 1s ease;
+    animation-delay: 0.2s;
+    animation: indicator 0.5s ease;
 }
 
 .kh6wYYPvgRPBhA2wj3AS .qp7Sys7hJSZHLzw4K_yF {
@@ -981,12 +981,12 @@ font-weight: 500;
 }
 
 .BeautifulLyricsBackground:is(aside) .BeautifulLyricsBackground-Container {
-    opacity: 1 !important;
+    opacity: 0.5 !important;
 }
 
-.BeautifulLyricsBackground:is(aside) .BeautifulLyricsBackground-Container {
+/* .BeautifulLyricsBackground:is(aside) .BeautifulLyricsBackground-Container {
     filter: saturate(2) brightness(1) !important;
-}
+} */
 
 .Lyric.Synced.Line {
     --text-shadow-opacity: 0 !important;
