@@ -187,6 +187,10 @@ button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-
     border-radius: 4px !important;
 }
 
+.Box__BoxComponent-sc-y4nds-0.BoxComponent-group-listRow-naked-isInteractive-minBlockSize_56px-padding_8px.Box-sc-8t9c76-0.Box-group-listRow-isInteractive-hasLeadingOrMedia-minBlockSize_56px-padding_8px.fYWNdY4zhj4OX_T2Xtg6[aria-labelledby*="artist"] .BfALkuQy0UjTI70U9QlQ {
+    border-radius: 50% !important;
+}
+
 .view-homeShortcutsGrid-PlayButtonContainer .Svg-sc-ytk21e-0 {
     margin-right: 10px;
 }
@@ -481,7 +485,7 @@ a[class*="topBarActive"]::before {
     content: '';
     background: var(--spice-accent);
     display: block !important;
-    width: calc(100% - 32px);
+    width: calc(100% - 22px);
     height: 2px;
     position: absolute;
     bottom: 0;
@@ -562,10 +566,7 @@ button.Button-sc-1dqy6lx-0[aria-label*="Next"] svg.Svg-sc-ytk21e-0.Svg-img-icon-
     background: transparent !important;
 }
 
-[data-context-menu-open=true]>a:only-child,
-a:focus,
-a:hover,
-a[data-context-menu-open=true] {
+aside[aria-label*="Now playing view"] a:hover {
     text-decoration: none !important;
 }
 
@@ -1006,7 +1007,7 @@ button.main-genericButton-button.Button-sc-1dqy6lx-0.Button-small-small-buttonTe
 
 
 
-.ellipsis-one-line a {
+.main-nowPlayingBar-nowPlayingBar .ellipsis-one-line a {
     color: var(--text-subdued) !important;
 }
 
@@ -1110,7 +1111,7 @@ p.popup-row {
 
 #stats-app .main-trackList-trackListHeader {
     padding: 0 !important;
-    top: 64px !important;
+    /* top: 64px !important; */
 }
 
 #stats-app span.TypeElement-mesto-textSubdued.TypeElement-mesto-textSubdued-type.main-trackList-rowSubTitle.standalone-ellipsis-one-line {
@@ -1478,9 +1479,13 @@ button.main-repeatButton-button.main-repeatButton-active svg {
     height: 370px !important;
 }
 
+.artist-artistOnTour-item {
+    border-radius: var(--border-radius-2) !important;
+}
 
 
-/* -------------------------------------- Artist About Modal------------------------------------- */
+
+/* -------------------------------------- Artist Page------------------------------------- */
 
 
 
@@ -1491,6 +1496,10 @@ a.muHL0_3HjlqTZDoapgc9[href*="https://en.wikipedia.org/"] svg {
 
 a.muHL0_3HjlqTZDoapgc9[href*="https://en.wikipedia.org/"] svg path {
     opacity: 0 !important;
+}
+
+.guUl5dHbF5HJRvwjBxzR {
+    border-radius: var(--border-radius-1);
 }
 
 
