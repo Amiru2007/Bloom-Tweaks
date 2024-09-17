@@ -485,11 +485,21 @@ a[class*="topBarActive"]::before {
     content: '';
     background: var(--spice-accent);
     display: block !important;
-    width: calc(100% - 22px);
+    width: 0;
     height: 2px;
     position: absolute;
     bottom: 0;
     border-radius: 9999px;
+    animation: indicator 0.3s ease infinite;
+}
+
+@keyframes indicator {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: calc(100% - 22px);
+    }
 }
 
 
