@@ -138,6 +138,11 @@ aside[aria-label="Queue"] .Button-sc-1dqy6lx-0 svg {
     height: 20px;
 }
 
+.StyledTabItem-tab-tabItem-useBrowserDefaultFocusStyle::before {
+    animation-delay: 0.3s;
+    animation: indicator 1s ease;
+}
+
 .kh6wYYPvgRPBhA2wj3AS .qp7Sys7hJSZHLzw4K_yF {
     background-color: rgba(var(--spice-rgb-card), 0.7) !important;
 }
