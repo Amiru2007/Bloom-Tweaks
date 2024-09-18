@@ -1107,9 +1107,50 @@ p.popup-row {
 }
 
 .badge {
-    background-color: var(--spice-accent) !important;
-    color: var(--spice-alt-text) !important;
+    background-color: var(--spice-card);
+    color: var(--spice-text) !important;
     font-weight: 500;
+    top: 13px !important;
+    left: 13px;
+    border-radius: 0 0 6px 0;
+}
+
+.badge::after {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: red;
+    position: absolute;
+    left: 30px;
+    top: 0;
+    background-color: var(--spice-card);
+    margin: 0;
+    -webkit-mask-image: radial-gradient(circle at bottom right, transparent 70.6%, black 51%);
+    mask-image: radial-gradient(circle at bottom right, transparent 70.6%, black 51%);
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+}
+
+.badge::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: red;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    background-color: var(--spice-card);
+    margin: 0;
+    -webkit-mask-image: radial-gradient(circle at bottom right, transparent 70.6%, black 51%);
+    mask-image: radial-gradient(circle at bottom right, transparent 70.6%, black 51%);
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+}
+
+.Box__BoxComponent-sc-y4nds-0.BoxComponent-group-card-naked-isInteractive-draggable.Box-sc-1njtxi4-0.Box-group-naked-card-md-isInteractive-draggable.main-card-cardContainer.Card:hover .badge,
+.Box__BoxComponent-sc-y4nds-0.BoxComponent-group-card-naked-isInteractive-draggable.Box-sc-1njtxi4-0.Box-group-naked-card-md-isInteractive-draggable.main-card-cardContainer.Card:hover .badge::after
+.Box__BoxComponent-sc-y4nds-0.BoxComponent-group-card-naked-isInteractive-draggable.Box-sc-1njtxi4-0.Box-group-naked-card-md-isInteractive-draggable.main-card-cardContainer.Card:hover .badge::before {
+    background-color: var(--background-highlight, #f0f0f0);
 }
 
 .badge svg {
@@ -1128,6 +1169,9 @@ p.popup-row {
 #stats-app .main-trackList-trackListHeader {
     padding: 0 !important;
     /* top: 64px !important; */
+}
+#stats-app .main-trackList-trackListHeaderRow, .main-trackCreditsModal-header {
+    border-radius: 10px 10px 0 0 !important;
 }
 
 #stats-app span.TypeElement-mesto-textSubdued.TypeElement-mesto-textSubdued-type.main-trackList-rowSubTitle.standalone-ellipsis-one-line {
