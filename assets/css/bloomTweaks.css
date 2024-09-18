@@ -1107,12 +1107,13 @@ p.popup-row {
 }
 
 .badge {
-    background-color: var(--spice-card);
+    background-color: var(--spice-card) !important;
+    box-shadow: none !important;
     color: var(--spice-text) !important;
     font-weight: 500;
     top: 13px !important;
-    left: 13px;
-    border-radius: 0 0 6px 0;
+    left: 13px !important;
+    border-radius: 0 0 6px 0 !important;
 }
 
 .badge::after {
