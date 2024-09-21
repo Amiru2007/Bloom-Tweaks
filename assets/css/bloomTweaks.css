@@ -1585,10 +1585,16 @@ div[aria-describedby*='device-picker-troubleshooting-list'] {
 }
 
 /* Custom style for the <li> element */
-li.main-yourLibraryX-navItem.custom-style::after {
-    content: '✨'; /* Example content, you can customize this */
-    display: inline-block;
-    margin-left: 10px;
-    color: var(--spice-accent); /* Adjust color as needed */
-    font-size: 16px; /* Adjust font size as needed */
+/* This style will only be applied when the class is added */
+.custom-style::after {
+    content: 'New After Element Content';
+    display: block;
+    position: absolute;
+    /* Adjust as needed */
+    top: 10px;
+    left: 10px;
+    width: 100px;
+    height: 20px;
+    background-color: red;
+    /* Any other styling */
 }
