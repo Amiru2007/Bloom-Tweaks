@@ -1603,3 +1603,25 @@ This style will only be applied when the class is added
     background-color: var(--spice-selected-row);
     color: var(--spice-text);
 }
+
+svg.made-for-you-icon.home-icon path {
+    opacity: 0;
+}
+
+svg.made-for-you-icon.home-icon {
+    background: var(--spice-subtext);
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/crown-simple.svg);
+}
+
+li.main-yourLibraryX-navItem a[aria-label*="Made for you"]:hover svg.made-for-you-icon.home-icon {
+    background: var(--spice-text);
+}
+
+.custom-style a svg:nth-child(1) {
+    background: var(--spice-accent);
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/crown-simple-fill.svg);
+}
+
+.custom-style a:hover svg:nth-child(1) {
+    background: var(--spice-accent) !important;
+}
