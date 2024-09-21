@@ -503,6 +503,7 @@ a[class*="topBarActive"]::before {
     0% {
         width: 0;
     }
+
     100% {
         width: calc(100% - 22px);
     }
@@ -687,6 +688,7 @@ button[aria-label*="Get Random Saved Album"] svg {
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/dice-5.svg);
     transition: all 0.3s ease;
 }
+
 button[aria-label*="Get Random Saved Album"]:hover svg {
     transform: rotate(90deg);
 }
@@ -708,6 +710,7 @@ button.main-topBar-button svg path {
     width: 18px;
     height: 18px;
 }
+
 .main-noConnection-isNotice {
     background-color: transparent !important;
 }
@@ -812,7 +815,8 @@ button.main-actionButtons-button.main-topBarStatusIndicator-hasTooltip.main-noCo
     top: 50%;
     transform: translateY(-50%);
     transition: height 0.3s, transform 0.3s ease;
-    z-index: 1000; /* Ensure it's above other content */
+    z-index: 1000;
+    /* Ensure it's above other content */
 }
 
 /* This will style the moving active indicator */
@@ -827,7 +831,8 @@ button.main-actionButtons-button.main-topBarStatusIndicator-hasTooltip.main-noCo
     transition: transform 0.3s ease, height 0.3s ease;
 }
 
-.main-yourLibraryX-entryPoints #spicetify-show-list, .main-yourLibraryX-entryPoints #spicetify-hidden-list {
+.main-yourLibraryX-entryPoints #spicetify-show-list,
+.main-yourLibraryX-entryPoints #spicetify-hidden-list {
     padding: 0 12px 8px 12px;
 }
 
@@ -980,9 +985,9 @@ font-weight: 500;
     fill: var(--spice-subtext) !important;
 }
 
-.BeautifulLyricsBackground:is(aside) .BeautifulLyricsBackground-Container {
+/* .BeautifulLyricsBackground:is(aside) .BeautifulLyricsBackground-Container {
     opacity: 0.5 !important;
-}
+} */
 
 /* .BeautifulLyricsBackground:is(aside) .BeautifulLyricsBackground-Container {
     filter: saturate(2) brightness(1) !important;
@@ -1148,19 +1153,23 @@ p.popup-row {
     mask-size: 100% 100%;
 }
 
-.Box__BoxComponent-sc-y4nds-0.BoxComponent-group-card-naked-isInteractive-draggable.Box-sc-1njtxi4-0.Box-group-naked-card-md-isInteractive-draggable.main-card-cardContainer.Card:hover + .badge,
-.Box__BoxComponent-sc-y4nds-0.BoxComponent-group-card-naked-isInteractive-draggable.Box-sc-1njtxi4-0.Box-group-naked-card-md-isInteractive-draggable.main-card-cardContainer.Card:hover + .badge::after,
-.Box__BoxComponent-sc-y4nds-0.BoxComponent-group-card-naked-isInteractive-draggable.Box-sc-1njtxi4-0.Box-group-naked-card-md-isInteractive-draggable.main-card-cardContainer.Card:hover + .badge::before {
+.Box__BoxComponent-sc-y4nds-0.BoxComponent-group-card-naked-isInteractive-draggable.Box-sc-1njtxi4-0.Box-group-naked-card-md-isInteractive-draggable.main-card-cardContainer.Card:hover+.badge,
+.Box__BoxComponent-sc-y4nds-0.BoxComponent-group-card-naked-isInteractive-draggable.Box-sc-1njtxi4-0.Box-group-naked-card-md-isInteractive-draggable.main-card-cardContainer.Card:hover+.badge::after,
+.Box__BoxComponent-sc-y4nds-0.BoxComponent-group-card-naked-isInteractive-draggable.Box-sc-1njtxi4-0.Box-group-naked-card-md-isInteractive-draggable.main-card-cardContainer.Card:hover+.badge::before {
     background-color: var(--background-highlight, #f0f0f0) !important;
 }
 
 .badge svg {
-    fill: var(--spice-alt-text) !important;
+    fill: var(--spice-accent) !important;
 }
 
 .main-tag-container,
 .main-trackList-rowImage {
     border-radius: 4px !important;
+}
+
+span.main-tag-container[aria-label*="Explicit"] {
+    width: 16px !important;
 }
 
 .navBar-module__topBarNav___qWGeZ_stats {
@@ -1171,7 +1180,9 @@ p.popup-row {
     padding: 0 !important;
     /* top: 64px !important; */
 }
-#stats-app .main-trackList-trackListHeaderRow, .main-trackCreditsModal-header {
+
+#stats-app .main-trackList-trackListHeaderRow,
+.main-trackCreditsModal-header {
     border-radius: 10px 10px 0 0 !important;
 }
 
@@ -1571,4 +1582,13 @@ a.muHL0_3HjlqTZDoapgc9[href*="https://en.wikipedia.org/"] svg path {
 
 div[aria-describedby*='device-picker-troubleshooting-list'] {
     margin-bottom: 90px;
+}
+
+/* Custom style for the <li> element */
+li.main-yourLibraryX-navItem.custom-style::after {
+    content: '✨'; /* Example content, you can customize this */
+    display: inline-block;
+    margin-left: 10px;
+    color: var(--spice-accent); /* Adjust color as needed */
+    font-size: 16px; /* Adjust font size as needed */
 }
