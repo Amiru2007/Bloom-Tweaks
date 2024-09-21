@@ -1584,17 +1584,22 @@ div[aria-describedby*='device-picker-troubleshooting-list'] {
     margin-bottom: 90px;
 }
 
-/* Custom style for the <li> element */
-/* This style will only be applied when the class is added */
+/* Custom style for the <li> element
+This style will only be applied when the class is added
 .custom-style::after {
     content: 'New After Element Content';
     display: block;
     position: absolute;
-    /* Adjust as needed */
+    Adjust as needed
     top: 10px;
     left: 10px;
     width: 100px;
     height: 20px;
     background-color: red;
-    /* Any other styling */
+    Any other styling
+} */
+
+.custom-style a {
+    background-color: var(--spice-selected-row);
+    color: var(--spice-text);
 }
