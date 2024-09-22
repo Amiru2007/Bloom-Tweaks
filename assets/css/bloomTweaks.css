@@ -144,7 +144,7 @@ aside[aria-label="Queue"] .Button-sc-1dqy6lx-0 svg {
 }
 
 .kh6wYYPvgRPBhA2wj3AS .qp7Sys7hJSZHLzw4K_yF {
-    background-color: rgba(var(--spice-rgb-card), 0.7) !important;
+    background: rgba(0, 0, 0, 0.5) !important;
 }
 
 #spicetify-playlist-list li button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle[aria-label*="Play"] svg.Svg-sc-ytk21e-0.Svg-img-icon-medium,
@@ -661,8 +661,12 @@ button.main-topBar-button svg {
     width: 18px !important;
 }
 
+button.main-topBar-button svg path {
+    opacity: 0 !important;
+}
+
 button.main-topBar-button[aria-label*="playlist-stats"] svg {
-    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/chart-bar-big.svg) !important;
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/bxs-bar-chart-alt-2.svg) !important;
 }
 
 button.main-topBar-button[aria-label*="Full App Display"] svg {
@@ -691,10 +695,6 @@ button[aria-label*="Get Random Saved Album"] svg {
 
 button[aria-label*="Get Random Saved Album"]:hover svg {
     transform: rotate(90deg);
-}
-
-button.main-topBar-button svg path {
-    opacity: 0 !important;
 }
 
 .main-actionButtons button.encore-over-media-set.main-topBar-buddyFeed[aria-label*="What's New"] svg {
@@ -1213,6 +1213,10 @@ span.main-tag-container[aria-label*="Explicit"] {
     margin-left: 10px !important;
 }
 
+/* .contentSpacing {
+    margin-bottom: 18px !important;
+} */
+
 /*
 svg.Svg-img-16.Svg-img-16-icon.Svg-img-icon.Svg-img-icon-small[data-encore-id*="icon"] {
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/ic_fluent_caret_down_24_filled.svg) !important;
@@ -1273,6 +1277,34 @@ span.Type__TypeElement-sc-goli3j-0.TypeElement-type-mesto-textSubdued.main-track
 
 a[aria-label*="Made for you"] .TypeElement-balladBold-type {
     font-weight: 700 !important;
+}
+
+
+.custom-style a {
+    background-color: var(--spice-selected-row);
+    color: var(--spice-text);
+}
+
+svg.made-for-you-icon.home-icon path {
+    opacity: 0;
+}
+
+svg.made-for-you-icon.home-icon {
+    background: var(--spice-subtext);
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/crown-simple.svg);
+}
+
+li.main-yourLibraryX-navItem a[aria-label*="Made for you"]:hover svg.made-for-you-icon.home-icon {
+    background: var(--spice-text);
+}
+
+.custom-style a svg:nth-child(1) {
+    background: var(--spice-accent);
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/crown-simple-fill.svg);
+}
+
+.custom-style a:hover svg:nth-child(1) {
+    background: var(--spice-accent) !important;
 }
 
 
@@ -1584,44 +1616,30 @@ div[aria-describedby*='device-picker-troubleshooting-list'] {
     margin-bottom: 90px;
 }
 
-/* Custom style for the <li> element
-This style will only be applied when the class is added
-.custom-style::after {
-    content: 'New After Element Content';
-    display: block;
-    position: absolute;
-    Adjust as needed
-    top: 10px;
-    left: 10px;
-    width: 100px;
-    height: 20px;
-    background-color: red;
-    Any other styling
-} */
 
-.custom-style a {
-    background-color: var(--spice-selected-row);
-    color: var(--spice-text);
+
+/*------------------------------------------------------ Search Page -------------------------------------------------------*/
+
+
+
+.WDC2Yzs811n7JCYtYQzc {
+    border-radius: var(--border-radius-2) !important;
 }
 
-svg.made-for-you-icon.home-icon path {
-    opacity: 0;
+.main-shelf-shelfGrid {
+    margin-bottom: 0 !important;
 }
 
-svg.made-for-you-icon.home-icon {
-    background: var(--spice-subtext);
-    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/crown-simple.svg);
+.mXNT9H2GU7lDW4cGx0q1 {
+    background: var(--spice-tab-active) !important;
 }
 
-li.main-yourLibraryX-navItem a[aria-label*="Made for you"]:hover svg.made-for-you-icon.home-icon {
-    background: var(--spice-text);
-}
 
-.custom-style a svg:nth-child(1) {
-    background: var(--spice-accent);
-    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/crown-simple-fill.svg);
-}
 
-.custom-style a:hover svg:nth-child(1) {
-    background: var(--spice-accent) !important;
+/*---------------------------------------------------------- Episodes----------------------------------------------------------- */
+
+
+
+.main-contextMenu-menu, .main-contextMenu-tippy, .main-devicePicker-tooltip {
+    background-color: rgb(28 28 28) !important;
 }
