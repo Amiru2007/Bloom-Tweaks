@@ -106,11 +106,13 @@ aside[aria-label="Friend Activity"] .sGj6VHKqd2s4IorAqiYI p {
 .main-trackList-rowSectionVariable[aria-sort*="ascending"] svg.Svg-sc-ytk21e-0.Svg-img-icon-small-textBrightAccent.OQc9_giz7hbNqHLZODIx {
     background: var(--spice-accent) !important;
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/ic_fluent_caret_up_24_filled.svg) !important;
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/ic_fluent_caret_up_24_filled.svg) !important;
 }
 
 .main-trackList-rowSectionVariable[aria-sort*="descending"] svg.Svg-sc-ytk21e-0.Svg-img-icon-small-textBrightAccent.OQc9_giz7hbNqHLZODIx {
     background: var(--spice-accent) !important;
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/ic_fluent_caret_down_24_filled.svg) !important;
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/ic_fluent_caret_down_24_filled.svg) !important;
 }
 
 .sz8Nwj2lvhOZxDwYWRQr {
@@ -169,6 +171,10 @@ aside[aria-label="Queue"] .Button-sc-1dqy6lx-0[aria-label*="Pause"] svg,
     background: var(--spice-text);
 }
 
+.StyledTabItem-tab-tabItem-useBrowserDefaultFocusStyle:hover {
+    border-radius: var(--border-radius-2) !important;
+}
+
 .main-yourLibraryX-button path {
     display: block !important;
 }
@@ -180,11 +186,13 @@ aside[aria-label="Queue"] .Button-sc-1dqy6lx-0[aria-label*="Pause"] svg,
 button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-in-keyboard-nav-condensedAll-useBrowserDefaultFocusStyle.PUipCs3_0Qott0Sru3pB.XAOxFVWnd185_vZ5zPGu.JUPaw8kZF94Coth4G88s[aria-label*="Expand folder"] svg {
     background: var(--spice-subtext);
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_caret_down_24_filled.svg);
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_caret_down_24_filled.svg);
 }
 
 button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-in-keyboard-nav-condensedAll-useBrowserDefaultFocusStyle.PUipCs3_0Qott0Sru3pB.XAOxFVWnd185_vZ5zPGu[aria-label*="Collapse folder"] svg {
     background: var(--spice-subtext);
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_caret_down_24_filled.svg);
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_caret_down_24_filled.svg);
 }
 
 .BfALkuQy0UjTI70U9QlQ {
@@ -202,6 +210,7 @@ button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-
 
 .ZSXjRBoTtuX5kmFeZHQu svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/ic_fluent_share_24_filled.svg) !important;
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/ic_fluent_share_24_filled.svg) !important;
     background: var(--spice-alt-text) !important;
     margin: 0 !important;
     padding: 0 !important;
@@ -667,22 +676,27 @@ button.main-topBar-button svg path {
 
 button.main-topBar-button[aria-label*="playlist-stats"] svg {
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/bxs-bar-chart-alt-2.svg) !important;
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/bxs-bar-chart-alt-2.svg) !important;
 }
 
 button.main-topBar-button[aria-label*="Full App Display"] svg {
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/tv.svg) !important;
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/tv.svg) !important;
 }
 
 button.main-topBar-button[aria-label*="Bookmark"] svg {
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/bookmark.svg) !important;
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/bookmark.svg) !important;
 }
 
 button.main-topBar-button[aria-label*="Beautiful Fullscreen"] svg {
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/fullscreen.svg) !important;
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/fullscreen.svg) !important;
 }
 
 button[title*="TV Mode Display"] svg {
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/tv-minimal.svg) !important;
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/tv-minimal.svg) !important;
     background: var(--spice-text) !important;
     height: 18px !important;
     width: 18px !important;
@@ -690,6 +704,7 @@ button[title*="TV Mode Display"] svg {
 
 button[aria-label*="Get Random Saved Album"] svg {
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/dice-5.svg);
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/dice-5.svg);
     transition: all 0.3s ease;
 }
 
@@ -700,6 +715,7 @@ button[aria-label*="Get Random Saved Album"]:hover svg {
 .main-actionButtons button.encore-over-media-set.main-topBar-buddyFeed[aria-label*="What's New"] svg {
     background: var(--spice-text) !important;
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/bell.svg) !important;
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/bell.svg) !important;
     width: 18px;
     height: 18px;
 }
@@ -707,6 +723,7 @@ button[aria-label*="Get Random Saved Album"]:hover svg {
 .main-actionButtons button.encore-over-media-set.main-topBar-buddyFeed[aria-label*="Friend Activity"] svg {
     background: var(--spice-text) !important;
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/users.svg) !important;
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/users.svg) !important;
     width: 18px;
     height: 18px;
 }
@@ -785,12 +802,29 @@ button.main-actionButtons-button.main-topBarStatusIndicator-hasTooltip.main-noCo
     margin-right: 9px !important;
 }
 
+.main-yourLibraryX-button[aria-label="Create playlist or folder"] svg {
+    background: var(--spice-subtext) !important;
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_add_24_filled.svg) !important;
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_add_24_filled.svg) !important;
+}
+
+.main-yourLibraryX-button[aria-haspopup="menu"] {
+    padding: 8px !important;
+}
+
+.main-yourLibraryX-button[aria-haspopup="menu"] svg {
+    background: var(--spice-subtext) !important;
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_more_horizontal_24_filled.svg) !important;
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_more_horizontal_24_filled.svg) !important;
+}
+
 .main-yourLibraryX-libraryRootlist span.collapse-button svg {
     background: var(--text-subdued, #656565);
     opacity: 1;
     height: 20px;
     width: 20px;
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_arrow_collapse_all_24_filled.svg);
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_arrow_collapse_all_24_filled.svg);
     transform: rotate(270deg);
 }
 
@@ -1004,8 +1038,17 @@ font-weight: 500;
 svg.Svg-sc-ytk21e-0.Svg-img-16-icon.LyricsPageIcon {
     background: var(--spice-subtext) !important;
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/mic.svg) !important;
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/mic.svg) !important;
     width: 16px !important;
     height: 16px !important;
+}
+
+button:focus svg.Svg-sc-ytk21e-0.Svg-img-16-icon.LyricsPageIcon {
+    background: var(--text-subdued) !important;
+}
+
+button:focus svg.Svg-sc-ytk21e-0.Svg-img-16-icon.LyricsPageIcon path {
+    opacity: 0 !important;
 }
 
 button:hover svg.Svg-sc-ytk21e-0.Svg-img-16-icon.LyricsPageIcon {
@@ -1292,6 +1335,7 @@ svg.made-for-you-icon.home-icon path {
 svg.made-for-you-icon.home-icon {
     background: var(--spice-subtext);
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/crown-simple.svg);
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/crown-simple.svg);
 }
 
 li.main-yourLibraryX-navItem a[aria-label*="Made for you"]:hover svg.made-for-you-icon.home-icon {
@@ -1301,6 +1345,7 @@ li.main-yourLibraryX-navItem a[aria-label*="Made for you"]:hover svg.made-for-yo
 .custom-style a svg:nth-child(1) {
     background: var(--spice-accent);
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/crown-simple-fill.svg);
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/crown-simple-fill.svg);
 }
 
 .custom-style a:hover svg:nth-child(1) {
@@ -1504,6 +1549,7 @@ li.main-yourLibraryX-navItem a[aria-label*="Made for you"]:hover svg.made-for-yo
 button.main-repeatButton-button svg,
 button.main-repeatButton-button.main-repeatButton-active svg {
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/infinite.svg) !important;
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/infinite.svg) !important;
     width: 20px !important;
     height: 20px !important;
     margin: 0 5px !important;
@@ -1596,6 +1642,7 @@ button.main-repeatButton-button.main-repeatButton-active svg {
 a.muHL0_3HjlqTZDoapgc9[href*="https://en.wikipedia.org/"] svg {
     background: var(--background-elevated-highlight) !important;
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/wikipedia-w-brands-solid.svg) !important;
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/wikipedia-w-brands-solid.svg) !important;
 }
 
 a.muHL0_3HjlqTZDoapgc9[href*="https://en.wikipedia.org/"] svg path {
