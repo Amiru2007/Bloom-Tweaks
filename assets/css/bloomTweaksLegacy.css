@@ -1,0 +1,1705 @@
+/* :root {
+    --spice-accent: #4cc2ff !important;
+    --spice-notification: #4cc2ff !important;
+    --spice-button-active: #4cc2ff !important;
+    --spice-button: #4cc2ff !important;
+    --spice-rgb-accent: 76, 194, 255 !important;
+}
+
+.encore-dark-theme .encore-bright-accent-set {
+    --background-highlight: #99ebff !important;
+    --background-press: #0091f8 !important;
+    --background-elevated-base: #99ebff !important;
+    --background-elevated-highlight: #99ebff !important;
+    --background-elevated-press: #0091f8 !important;
+}
+
+.C1USyigFSYyc22_BmsgB .rdp {
+    --rdp-accent-color: #0091f8 !important;
+} */
+
+._Cq69xKZBtHaaeMZXIdk {
+    display: none !important;
+}
+
+.playlist-playlist-playlist .IconWrapper__Wrapper-sc-1hf1hjl-0 .Svg-sc-ytk21e-0 {
+    width: 50px;
+    height: 50px;
+}
+
+/* .IconWrapper__Wrapper-sc-1hf1hjl-0 .Svg-sc-ytk21e-0 {
+    mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg);
+    -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg);
+    background-color: var(--spice-text) !important;
+} */
+
+.IconWrapper__Wrapper-sc-1hf1hjl-0 .Svg-sc-ytk21e-0 path {
+    fill: transparent;
+}
+
+.Wrapper-large-only-medium {
+    position: static !important;
+}
+
+.ButtonInner-large-iconOnly {
+    background-color: transparent !important;
+}
+
+.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only:hover .ButtonInner-sc-14ud5tc-0 {
+    background-color: transparent !important;
+}
+
+.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only:active .ButtonInner-sc-14ud5tc-0 {
+    background-color: transparent !important;
+}
+
+.play-button,
+.ButtonInner-medium-iconOnly {
+    background-color: transparent !important;
+}
+
+.ChipInnerComponent-sm-isUsingKeyboard,
+.login-button {
+    background-color: var(--spice-dark-border) !important;
+    border-radius: 99px !important;
+    border-style: none !important;
+    color: var(--spice-text) !important;
+    cursor: pointer !important;
+    font-size: 14px !important;
+    height: auto !important;
+    padding: 8px 16px !important;
+    text-align: center !important;
+}
+
+.main-buddyFeed-buddyFeedRoot,
+.main-buddyFeed-buddyFeed,
+aside[aria-label="Friend Activity"] {
+    width: 100% !important;
+    z-index: 0;
+}
+
+button.main-actionButtons-button.main-topBarStatusIndicator-hasTooltip.main-noConnection-isNotice.main-topBarStatusIndicator-tooltipEnter.main-topBarStatusIndicator-tooltipEnterActive svg {
+    fill: var(--spice-alt-text) !important;
+}
+
+aside[aria-label="Friend Activity"] .sGj6VHKqd2s4IorAqiYI {
+    background-color: var(--background-press) !important;
+}
+
+aside[aria-label="Friend Activity"] .sGj6VHKqd2s4IorAqiYI p {
+    color: var(--spice-subtext) !important;
+}
+
+.dAPXjNmPLJI6x_sXJwAp .cRB7yMdTUrWxDud8Uqvi {
+    background-color: rgba(var(--spice-rgb-card), 0.7) !important;
+}
+
+.RTHphmJ9fFJyJWFe9Kwt {
+    mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg);
+    -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg);
+    background: var(--spice-text);
+    height: 16px !important;
+    width: 16px !important;
+}
+
+.main-trackList-rowSectionVariable[aria-sort*="ascending"] svg.Svg-sc-ytk21e-0.Svg-img-icon-small-textBrightAccent.OQc9_giz7hbNqHLZODIx {
+    background: var(--spice-accent) !important;
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/ic_fluent_caret_up_24_filled.svg) !important;
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/ic_fluent_caret_up_24_filled.svg) !important;
+}
+
+.main-trackList-rowSectionVariable[aria-sort*="descending"] svg.Svg-sc-ytk21e-0.Svg-img-icon-small-textBrightAccent.OQc9_giz7hbNqHLZODIx {
+    background: var(--spice-accent) !important;
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/ic_fluent_caret_down_24_filled.svg) !important;
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/ic_fluent_caret_down_24_filled.svg) !important;
+}
+
+.sz8Nwj2lvhOZxDwYWRQr {
+    color: var(--spice-alt-text) !important;
+}
+
+.RTHphmJ9fFJyJWFe9Kwt path {
+    opacity: 0;
+}
+
+.login-button {
+    margin: 5px !important;
+}
+
+/* .ellipsis-one-line {
+    color: #d9d9d9 !important;
+} */
+
+.play-icon path {
+    visibility: hidden;
+}
+
+aside[aria-label="Queue"] .Button-sc-1dqy6lx-0 svg {
+    width: 20px;
+    height: 20px;
+}
+
+.StyledTabItem-tab-tabItem-useBrowserDefaultFocusStyle::before {
+    animation-delay: 0.2s;
+    animation: indicator 0.5s ease;
+}
+
+.kh6wYYPvgRPBhA2wj3AS .qp7Sys7hJSZHLzw4K_yF {
+    background: rgba(0, 0, 0, 0.5) !important;
+}
+
+#spicetify-playlist-list li button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle[aria-label*="Play"] svg.Svg-sc-ytk21e-0.Svg-img-icon-medium,
+.main-playButton-PlayButton.main-playButton-primary svg,
+aside[aria-label="Queue"] .Button-sc-1dqy6lx-0[aria-label*="Play"] svg,
+.cRB7yMdTUrWxDud8Uqvi[aria-label*="Play"] .RTHphmJ9fFJyJWFe9Kwt,
+.play-button svg,
+.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only[aria-label*="Play"] .IconWrapper__Wrapper-sc-1hf1hjl-0 .Svg-sc-ytk21e-0 {
+    mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg);
+    -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg);
+    transition: transform 0.3s ease;
+    background: var(--spice-text);
+}
+
+#spicetify-playlist-list li button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle[aria-label*="Pause"] svg.Svg-sc-ytk21e-0.Svg-img-icon-medium,
+aside[aria-label="Queue"] .Button-sc-1dqy6lx-0[aria-label*="Pause"] svg,
+.cRB7yMdTUrWxDud8Uqvi[aria-label*="Pause"] .RTHphmJ9fFJyJWFe9Kwt,
+.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only[aria-label*="Pause"] .IconWrapper__Wrapper-sc-1hf1hjl-0 .Svg-sc-ytk21e-0 {
+    mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_pause_16_filled.svg);
+    -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_pause_16_filled.svg);
+    transition: transform 0.3s ease;
+    background: var(--spice-text);
+}
+
+.StyledTabItem-tab-tabItem-useBrowserDefaultFocusStyle:hover {
+    border-radius: var(--border-radius-2) !important;
+}
+
+.main-yourLibraryX-button path {
+    display: block !important;
+}
+
+.main-yourLibraryX-libraryItemContainer li.main-useDropTarget-base.main-useDropTarget-track.main-useDropTarget-local.main-useDropTarget-album.main-useDropTarget-episode.main-yourLibraryX-listItem button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle svg.Svg-sc-ytk21e-0.Svg-img-icon-medium path {
+    background: transparent;
+}
+
+button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-in-keyboard-nav-condensedAll-useBrowserDefaultFocusStyle.PUipCs3_0Qott0Sru3pB.XAOxFVWnd185_vZ5zPGu.JUPaw8kZF94Coth4G88s[aria-label*="Expand folder"] svg {
+    background: var(--spice-subtext);
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_caret_down_24_filled.svg);
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_caret_down_24_filled.svg);
+}
+
+button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-in-keyboard-nav-condensedAll-useBrowserDefaultFocusStyle.PUipCs3_0Qott0Sru3pB.XAOxFVWnd185_vZ5zPGu[aria-label*="Collapse folder"] svg {
+    background: var(--spice-subtext);
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_caret_down_24_filled.svg);
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_caret_down_24_filled.svg);
+}
+
+.BfALkuQy0UjTI70U9QlQ {
+    background: rgba(0, 0, 0, 0.5) !important;
+    border-radius: 4px !important;
+}
+
+.Box__BoxComponent-sc-y4nds-0.BoxComponent-group-listRow-naked-isInteractive-minBlockSize_56px-padding_8px.Box-sc-8t9c76-0.Box-group-listRow-isInteractive-hasLeadingOrMedia-minBlockSize_56px-padding_8px.fYWNdY4zhj4OX_T2Xtg6[aria-labelledby*="artist"] .BfALkuQy0UjTI70U9QlQ {
+    border-radius: 50% !important;
+}
+
+.view-homeShortcutsGrid-PlayButtonContainer .Svg-sc-ytk21e-0 {
+    margin-right: 10px;
+}
+
+.ZSXjRBoTtuX5kmFeZHQu svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/ic_fluent_share_24_filled.svg) !important;
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/ic_fluent_share_24_filled.svg) !important;
+    background: var(--spice-alt-text) !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.ZSXjRBoTtuX5kmFeZHQu span.IconWrapper__Wrapper-sc-1hf1hjl-0.Wrapper-small-leading-small {
+    margin: 0 4px !important;
+}
+
+.shuffle-enabled {
+    filter: brightness(0) saturate(100%) invert(79%) sepia(29%) saturate(800%) hue-rotate(87deg) brightness(87%) contrast(81%) !important;
+}
+
+.Wrapper-large-only-medium .Svg-sc-ytk21e-0 {
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.main-trackList-rowImagePlayButton {
+    transition: transform 0.3s ease;
+}
+
+.main-trackList-rowImagePlayButton[aria-label*="Play"] .main-trackList-rowPlayPauseIcon {
+    mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg);
+    -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg);
+    background-color: var(--spice-text) !important;
+    transition: transform 0.3s ease;
+}
+
+.main-trackList-rowImagePlayButton[aria-label*="Pause"] .main-trackList-rowPlayPauseIcon {
+    mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_pause_16_filled.svg);
+    -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_pause_16_filled.svg);
+    background-color: var(--spice-text) !important;
+    transition: transform 0.3s ease;
+}
+
+.ButtonInner-large-iconOnly {
+    transition: 0.3s ease !important;
+}
+
+.marketplace-header {
+    margin-top: -2px;
+}
+
+.Root__main-view::before {
+    box-shadow: 0 -15px 0 var(--spice-sidebar), 0 15px 0 var(--spice-sidebar) !important;
+}
+
+.x-downloadButton-DownloadButton {
+    display: none;
+}
+
+.lPDqjZWZMsdD4yc00T2X .main-trackList-rowPlayPauseIcon {
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/icons-i-nedd-in-my-project-personal/main/facebook-f-brands-solid.svg);
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/icons-i-nedd-in-my-project-personal/main/facebook-f-brands-solid.svg);
+    background-color: var(--spice-text) !important;
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+}
+
+.playlist-playlist-playlist .main-editImageButton-image:focus,
+.playlist-playlist-playlist .main-editImageButton-image:hover {
+    opacity: 1;
+    border-radius: var(--border-radius-1) !important;
+}
+
+.main-trackList-rowImageWithPlay .main-trackList-rowImagePlayPauseButton {
+    border-radius: 4px !important;
+}
+
+.view-homeShortcutsGrid-shortcut:hover .view-homeShortcutsGrid-equaliser {
+    opacity: 0;
+}
+
+.mjZrvVI3CxfHJXu7y0Lg .main-trackList-rowImageButton:focus,
+.mjZrvVI3CxfHJXu7y0Lg .main-trackList-rowImageButton:hover {
+    opacity: 1;
+}
+
+.main-trackList-rowImageButton::before {
+    display: none;
+}
+
+.desktop-grid-wrapper .main-trackList-rowImageWithPlay:hover .main-trackList-rowPlayPauseWrapper {
+    opacity: 1 !important;
+}
+
+.main-rootlist-item:hover {
+    opacity: 0.9;
+}
+
+.KYkSwfV1FCtD15TMChbH img {
+    filter: hue-rotate(55deg) brightness(1.2) saturate(1.1) !important;
+}
+
+.main-userWidget-box,
+.main-avatar-avatar,
+.main-avatar-image {
+    border-radius: 9999px !important;
+}
+
+.main-playButton-ButtonInner-sc-1b8ah6o-0 {
+    background-color: transparent !important;
+    color: var(--spice-accent);
+}
+
+.IconWrapper__Wrapper-sc-1hf1hjl-0 {
+    position: absolute;
+    margin-top: 4px;
+}
+
+.main-rootlist-itemLink {
+    padding-left: 24px !important;
+}
+
+.UoHg4euRpSnCqEZJFlRR {
+    padding: 4px 0 !important;
+}
+
+.main-rootlist-rootlistItemLink {
+    height: 32px !important;
+}
+
+.main-rootlist-itemLink:hover {
+    background-color: var(--spice-sidebar-highlight) !important;
+    border-radius: var(--border-radius-2) !important;
+    padding-left: 20px !important;
+}
+
+.react-contextmenu-wrapper:first-child {
+    padding-top: 4px !important;
+}
+
+.main-rootlist-item {
+    border-bottom-left-radius: 4px !important;
+    border-top-left-radius: 4px !important;
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+    padding: 0 0 0 4px !important;
+}
+
+.navBar-footer {
+    display: none !important;
+}
+
+.navBar-link {
+    color: var(--spice-text) !important;
+    font-size: 14px !important;
+    height: 40px !important;
+    line-height: 40px !important;
+}
+
+/* .button:first-child {
+    margin-right: 8px !important;
+} */
+
+.cover-art img {
+    border-radius: 4px !important;
+    box-shadow: 0 0 12px rgb(0 0 0 / 70%) !important;
+}
+
+.main-rootlist-rootlistItemLink:hover {
+    background-color: var(--spice-sidebar-highlight) !important;
+}
+
+
+.main-rootlist-rootlistItemLink .main-rootlist-itemLinkText {
+    border-radius: 4px !important;
+    font-weight: 400 !important;
+}
+
+.main-trackList-rowImageWithPlay:hover .main-trackList-rowPlayPauseWrapper {
+    opacity: 1 !important;
+}
+
+.main-trackList-rowImageWithPlay:hover .main-trackList-rowImagePlayButton[aria-label*="Play"] {
+    display: block !important;
+}
+
+.main-trackList-rowImageWithPlay:hover .main-trackList-rowImagePlayButton[aria-label*="Pause"] {
+    display: none !important;
+}
+
+.main-trackList-trackList[aria-rowcount="3"] {
+    margin-top: 20px;
+}
+
+.playlist-playlist-playlistInlineCurationBackButton {
+    color: var(--text-subdued);
+}
+
+
+
+/* ---------------------------------- Friends Activity --------------------------------- */
+
+
+
+.umsKuFPqgF42Qhs2m0Ud svg {
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/facebook-logo-fill.svg) !important;
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/facebook-logo-fill.svg) !important;
+    background-color: var(--spice-text) !important;
+    width: 20px !important;
+    height: 20px !important;
+    transition: transform 0.3s ease;
+}
+
+.umsKuFPqgF42Qhs2m0Ud .IconWrapper__Wrapper-sc-1hf1hjl-0 {
+    margin-top: 0 !important;
+}
+
+.SN5MVM1k5tAxwKeA7WDr {
+    color: var(--spice-text) !important;
+}
+
+.Bpdhrb_he3jzWLv40DpE a {
+    color: var(--spice-text) !important;
+    font-weight: 500 !important;
+}
+
+
+
+/* ------------------------------------ Profile Page ----------------------------------- */
+
+
+
+.spotify__container--is-desktop:not(.fullscreen) .zogFp9G1AEqb8AKOd5BO {
+    -webkit-app-region: no-drag;
+    backdrop-filter: blur(40px) saturate(3.5) !important;
+    border-radius: var(--border-radius-1);
+}
+
+.PsrXxenHUFXYM1ub1xWw {
+    background-color: rgba(var(--spice-rgb-card), 0.7) !important;
+}
+
+.U_VWfeeLWnDPhUTxCmrQ {
+    margin: 15px !important;
+}
+
+.PsrXxenHUFXYM1ub1xWw .tAIzXn8C9KriGwGuBfWg {
+    cursor: pointer !important;
+}
+
+.profile-userEditDetails-nameInput:focus {
+    border: 1px solid var(--spice-accent) !important;
+}
+
+.profile-userEditDetails-label {
+    left: 10px;
+    top: -5px;
+    line-height: 0;
+    padding: 0 4px;
+    background: linear-gradient(180deg, #0f0f0f, var(--spice-tab-active));
+}
+
+
+
+/* ------------------------------------ Marketplace ------------------------------------ */
+
+
+
+.marketplace-grid .main-card-draggable .main-card-cardMetadata li.marketplace-card__tag[data-tag="external JS"],
+.marketplace-grid .main-card-draggable .main-card-cardMetadata li.marketplace-card__tag[data-tag=archived] {
+    background-color: var(--spice-accent) !important;
+    color: var(--spice-alt-text) !important;
+}
+
+.setting-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a[class*="-tabBar-active"],
+a[class*="topBarActive"] {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: var(--spice-tab-active) !important;
+}
+
+a[class*="-tabBar-active"]::before,
+a[class*="topBarActive"]::before {
+    content: '';
+    background: var(--spice-accent);
+    display: block !important;
+    width: calc(100% - 22px);
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    border-radius: 9999px;
+    animation-delay: 0.3s;
+    animation: indicator 1s ease;
+}
+
+@keyframes indicator {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: calc(100% - 22px);
+    }
+}
+
+
+
+/* -------------------------------------- Play Bar ------------------------------------- */
+
+
+
+.HD9s7U5E1RLSWKpXmrqx {
+    background: transparent !important;
+}
+
+.Root__now-playing-bar .Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only .Svg-sc-ytk21e-0 {
+    width: 28px !important;
+    height: 28px !important;
+}
+
+.player-controls__buttons button {
+    max-height: var(--button-size);
+    max-width: var(--button-size);
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+button.Button-sc-1dqy6lx-0[aria-label*="Previous"] {
+    padding-left: 10px !important;
+}
+
+button.Button-sc-1dqy6lx-0[aria-label*="Next"] {
+    padding-right: 10px !important;
+}
+
+button.Button-sc-1dqy6lx-0[aria-label*="Previous"] svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
+    mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_previous_24_filled.svg);
+    -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_previous_24_filled.svg);
+    background-color: var(--spice-text) !important;
+    width: 24px !important;
+    height: 24px !important;
+}
+
+button.Button-sc-1dqy6lx-0[aria-label*="Next"] svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
+    mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_next_24_filled.svg);
+    -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_next_24_filled.svg);
+    background-color: var(--spice-text) !important;
+    width: 24px !important;
+    height: 24px !important;
+}
+
+.playback-bar .playback-progressbar {
+    height: 20px !important;
+}
+
+.playback-bar .progress-bar {
+    padding: 0 10px;
+}
+
+.playback-bar .x-progressBar-progressBarBg {
+    width: calc(100% - 20px) !important;
+}
+
+.playback-bar .x-progressBar-fillColor {
+    width: 100%;
+    will-change: transform;
+    padding: 0 10px;
+}
+
+
+
+/* -------------------------------------- NPV ------------------------------------- */
+
+
+
+.artist-artistOnTour-date.artist-artistOnTour-elevated {
+    background: transparent !important;
+}
+
+aside[aria-label*="Now playing view"] a:hover {
+    text-decoration: none !important;
+}
+
+
+
+/* -------------------------------------- Event Page ------------------------------------- */
+
+
+
+.HYVIJaYYiCTgSCHie70L {
+    background: rgba(var(--spice-rgb-card), 0.7) !important;
+}
+
+.SPbe_Q1wtiZQCmo0QKUy {
+    margin: 8px;
+}
+
+.wedRUk4eiBo9n9vqXLhU {
+    background-color: var(--spice-card);
+    border: 1px var(--spice-contour) solid !important;
+    display: inline-flex;
+    flex-direction: column;
+    row-gap: var(--encore-spacing-tighter-2, 8px);
+    border-radius: var(--encore-corner-radius-larger, 6px);
+    padding-block: 12px;
+    padding-inline: 12px;
+}
+
+.wedRUk4eiBo9n9vqXLhU:hover {
+    background-color: var(--spice-highlight);
+}
+
+.EkGb0ZzhswreSvpZoioY {
+    border-radius: 6px !important;
+    width: calc(100% - 20px) !important;
+    margin: 10px;
+}
+
+.no-focus-outline :focus {
+    outline: none;
+}
+
+.XgeTnLs82tTjczDR6oKn .IconWrapper__Wrapper-sc-1hf1hjl-0 .Svg-sc-ytk21e-0 {
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/ic_fluent_open_24_filled.svg);
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/ic_fluent_open_24_filled.svg);
+    background-color: var(--spice-highlight-elevated) !important;
+    width: 17px;
+    height: 17px;
+    margin-top: -4px;
+}
+
+
+
+/* -------------------------------------- Top Bar ------------------------------------- */
+
+
+
+.main-topBar-topbarContent svg {
+    width: 25px !important;
+    height: 25px !important;
+    margin-top: -4px;
+}
+
+button.main-topBar-button,
+.main-actionButtons button.encore-over-media-set.main-topBar-buddyFeed {
+    background: transparent !important;
+}
+
+/* button.main-topBar-button.play[aria-label*="playlist-stats"] {
+    margin-left: 10px;
+} */
+button.main-topBar-button svg {
+    background: var(--spice-text) !important;
+    height: 18px !important;
+    width: 18px !important;
+}
+
+button.main-topBar-button svg path {
+    opacity: 0 !important;
+}
+
+button.main-topBar-button[aria-label*="playlist-stats"] svg {
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/bxs-bar-chart-alt-2.svg) !important;
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/bxs-bar-chart-alt-2.svg) !important;
+}
+
+button.main-topBar-button[aria-label*="Full App Display"] svg {
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/tv.svg) !important;
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/tv.svg) !important;
+}
+
+button.main-topBar-button[aria-label*="Bookmark"] svg {
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/bookmark.svg) !important;
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/bookmark.svg) !important;
+}
+
+button.main-topBar-button[aria-label*="Beautiful Fullscreen"] svg {
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/fullscreen.svg) !important;
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/fullscreen.svg) !important;
+}
+
+button[title*="TV Mode Display"] svg {
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/tv-minimal.svg) !important;
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/tv-minimal.svg) !important;
+    background: var(--spice-text) !important;
+    height: 18px !important;
+    width: 18px !important;
+}
+
+button[aria-label*="Get Random Saved Album"] svg {
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/dice-5.svg);
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/dice-5.svg);
+    transition: all 0.3s ease;
+}
+
+button[aria-label*="Get Random Saved Album"]:hover svg {
+    transform: rotate(90deg);
+}
+
+.main-actionButtons button.encore-over-media-set.main-topBar-buddyFeed[aria-label*="What's New"] svg {
+    background: var(--spice-text) !important;
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/bell.svg) !important;
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/bell.svg) !important;
+    width: 18px;
+    height: 18px;
+}
+
+.main-actionButtons button.encore-over-media-set.main-topBar-buddyFeed[aria-label*="Friend Activity"] svg {
+    background: var(--spice-text) !important;
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/users.svg) !important;
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/users.svg) !important;
+    width: 18px;
+    height: 18px;
+}
+
+.main-noConnection-isNotice {
+    background-color: transparent !important;
+}
+
+button.main-actionButtons-button.main-topBarStatusIndicator-hasTooltip.main-noConnection-isNotice.main-topBarStatusIndicator-tooltipEnter.main-topBarStatusIndicator-tooltipEnterActive svg {
+    fill: var(--spice-accent) !important;
+}
+
+.qSTDtICR1fiIGRni1cwy {
+    color: var(--spice-alt-text) !important;
+    padding: 8px 16px !important;
+    font-weight: 500;
+}
+
+
+
+/* -------------------------------------- New Release Page ------------------------------------- */
+
+
+
+.view-homeShortcutsGrid-PlayButtonContainer .Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only {
+    background: transparent !important;
+}
+
+.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only .Svg-sc-ytk21e-0,
+.view-homeShortcutsGrid-PlayButtonContainer .Svg-sc-ytk21e-0 {
+    width: 35px;
+    height: 35px;
+}
+
+.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only .ButtonInner-small-iconOnly {
+    background: transparent !important;
+}
+
+.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only .IconWrapper__Wrapper-sc-1hf1hjl-0 {
+    top: 0 !important;
+    left: 0 !important;
+    margin: 0 !important;
+}
+
+.SjhDNg4bQRQmIJAba47Z {
+    width: 60% !important;
+}
+
+
+
+/* -------------------------------------- New Release Page ------------------------------------- */
+
+
+
+.tag-list-button {
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/ic_fluent_edit_24_regular.svg);
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/ic_fluent_edit_24_regular.svg);
+    background-color: var(--spice-subtext) !important;
+    width: 13px;
+    height: 13px;
+    padding: 20px 0 0;
+    margin-left: 6px;
+}
+
+
+
+/* -------------------------------------- Nav Bar ------------------------------------- */
+
+
+
+.main-yourLibraryX-header .Button-sc-1dqy6lx-0[aria-label="Go back"] svg {
+    mask-image: url(https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_arrow_left_24_filled.svg) !important;
+    -webkit-mask-image: url(https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_arrow_left_24_filled.svg) !important;
+    background-color: var(--spice-subtext);
+    margin-left: 0px !important;
+    margin-right: 9px !important;
+}
+
+.main-yourLibraryX-button[aria-label="Create playlist or folder"] svg {
+    background: var(--spice-subtext) !important;
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_add_24_filled.svg) !important;
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_add_24_filled.svg) !important;
+}
+
+.main-yourLibraryX-button[aria-haspopup="menu"] {
+    mask-image: none !important;
+    -webkit-mask-image: none !important;
+    background-color: transparent !important;
+}
+
+.main-yourLibraryX-button[aria-haspopup="menu"] svg {
+    background: var(--spice-subtext) !important;
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_more_horizontal_24_filled.svg) !important;
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_more_horizontal_24_filled.svg) !important;
+}
+
+.main-yourLibraryX-libraryRootlist span.collapse-button svg {
+    background: var(--text-subdued, #656565);
+    opacity: 1;
+    height: 20px;
+    width: 20px;
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_arrow_collapse_all_24_filled.svg);
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_arrow_collapse_all_24_filled.svg);
+    transform: rotate(270deg);
+}
+
+
+.main-yourLibraryX-libraryRootlist span.collapse-button svg path {
+    opacity: 0 !important;
+}
+
+.main-yourLibraryX-navLinkActive.active {
+    background-color: var(--spice-selected-row);
+    position: relative !important;
+}
+
+.main-yourLibraryX-navLinkActive.active::before {
+    /* content: ''; */
+    background: var(--spice-accent);
+    width: 4px;
+    height: 24px;
+    border-radius: 9999px;
+    position: absolute !important;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: height 0.3s, transform 0.3s ease;
+    z-index: 1000;
+    /* Ensure it's above other content */
+}
+
+/* This will style the moving active indicator */
+.active-indicator {
+    /* transform: translateY(-201px) !important; */
+    position: absolute;
+    left: 12px;
+    width: 4px;
+    height: 24px !important;
+    background: var(--spice-accent);
+    border-radius: 9999px;
+    transition: transform 0.3s ease, height 0.3s ease;
+}
+
+.main-yourLibraryX-entryPoints #spicetify-show-list,
+.main-yourLibraryX-entryPoints #spicetify-hidden-list {
+    padding: 0 12px 8px 12px;
+}
+
+
+
+/* -------------------------------------- Spicetify Tags ------------------------------------- */
+
+
+
+.GitHub-button-wrapper,
+.README h1,
+.all-untagged-playlists-page-sort-dropdown-wrapper,
+.all-playlists-page-sort-dropdown-wrapper {
+    padding-top: 30px;
+}
+
+.play-icon {
+    left: 0 !important;
+    top: 0 !important;
+    width: 50px !important;
+    transform: none !important;
+    height: 50px !important;
+}
+
+.icon {
+    margin: 0 !important;
+}
+
+.loadingWrapper .status-icon {
+    mask-image: url(https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_library_24_regular.svg) !important;
+    -webkit-mask-image: url(https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_library_24_regular.svg) !important;
+    background-color: var(--spice-subtext) !important;
+}
+
+.text-input {
+    scrollbar-color: rgba(var(--spice-rgb-selected-row), .3) transparent;
+    -webkit-font-smoothing: antialiased;
+    user-select: none;
+    box-sizing: border-box;
+    font-family: "Segoe UI Variable Display", "Segoe UI Variable Text", "Segoe UI",
+        "Microsoft Ya Hei", sans-serif !important;
+    line-height: normal;
+    box-shadow: none !important;
+    text-transform: none;
+    background: rgba(var(--spice-rgb-selected-row), .1);
+    border: 1px solid transparent;
+    color: var(--spice-text);
+    font-size: 14px;
+    height: 40px;
+    padding: 0 12px;
+    width: 100%;
+    background-color: var(--spice-card);
+    border-radius: var(--border-radius-2) !important;
+}
+
+.text-input:focus {
+    border-color: var(--spice-accent) !important;
+}
+
+.input-wrapper {
+    margin-top: 30px;
+}
+
+.tag-search-bar {
+    width: 100%;
+    height: 48px;
+    color: var(--spice-text);
+    background-color: rgba(var(--spice-rgb-selected-row), 0.4) !important;
+    padding: 5px;
+    border-radius: var(--border-radius-2) !important;
+    border-width: 0;
+    margin: 0;
+    padding-left: 42px;
+    border: 1px solid var(--spice-light-border) !important;
+}
+
+input.tag-search-bar:hover {
+    background-color: rgba(var(--spice-rgb-selected-row), 0.6) !important;
+}
+
+input.tag-search-bar:focus {
+    background-color: rgba(var(--spice-rgb-main), 0.7) !important;
+    border-bottom: var(--spice-accent) solid 2px !important;
+}
+
+input.tag-search-bar::placeholder {
+    color: var(--spice-text);
+}
+
+.modal-button {
+    scrollbar-color: rgba(var(--spice-rgb-selected-row), .3) transparent;
+    -webkit-font-smoothing: antialiased;
+    user-select: none;
+    box-sizing: border-box;
+    font-family: "Segoe UI Variable Display", "Segoe UI Variable Text", "Segoe UI", "Microsoft Ya Hei", sans-serif !important;
+    line-height: normal;
+    box-shadow: none !important;
+    text-transform: none;
+    background: rgba(var(--spice-rgb-selected-row), .1);
+    border: 1px solid transparent;
+    color: var(--spice-text);
+    font-size: 14px;
+    height: 40px;
+    padding: 0 12px;
+    width: 70px !important;
+    background-color: var(--spice-card);
+    border-radius: 9999px;
+    color: var(--spice-alt-text) !important;
+    font-weight: 700;
+    background: var(--spice-text) !Important;
+}
+
+.main-trackCreditsModal-container {
+    width: 500px !important;
+}
+
+.text-input-form .ButtonInner-small {
+    background-color: transparent !important;
+}
+
+div#playlist-tags-settings {
+    padding-top: 30px;
+}
+
+h2.TypeElement-cello-textBase-type {
+    font-size: var(--encore-text-size-base);
+    color: var(--text-base);
+    font-weight: 700;
+}
+
+#playlist-tags-settings h2.TypeElement-cello-textBase-type {
+    font-size: var(--encore-text-size-larger-2) !important;
+}
+
+.TypeElement-viola-textSubdued-type {
+    font-size: var(--encore-text-size-smaller);
+}
+
+/*
+background-color: var(--spice-accent);
+font-weight: 500;
+*/
+
+
+/* -------------------------------------- Beautiful Lyrics ------------------------------------- */
+
+
+
+#BeautifulLyricsFullscreenButton svg {
+    fill: var(--spice-subtext) !important;
+}
+
+/* .BeautifulLyricsBackground:is(aside) .BeautifulLyricsBackground-Container {
+    opacity: 0.5 !important;
+} */
+
+/* .BeautifulLyricsBackground:is(aside) .BeautifulLyricsBackground-Container {
+    filter: saturate(2) brightness(1) !important;
+} */
+
+.Lyric.Synced.Line {
+    --text-shadow-opacity: 0 !important;
+}
+
+.ffFwfKcPDbmAPLXzxzKq {
+    border-radius: var(--border-radius-1) !important;
+}
+
+svg.Svg-sc-ytk21e-0.Svg-img-16-icon.LyricsPageIcon {
+    background: var(--spice-subtext) !important;
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/mic.svg) !important;
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/mic.svg) !important;
+    width: 16px !important;
+    height: 16px !important;
+}
+
+button:focus svg.Svg-sc-ytk21e-0.Svg-img-16-icon.LyricsPageIcon {
+    background: var(--text-subdued) !important;
+}
+
+button:focus svg.Svg-sc-ytk21e-0.Svg-img-16-icon.LyricsPageIcon path {
+    opacity: 0 !important;
+}
+
+button:hover svg.Svg-sc-ytk21e-0.Svg-img-16-icon.LyricsPageIcon {
+    background: var(--spice-text) !important;
+}
+
+button.main-genericButton-button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-isUsingKeyboard-useBrowserDefaultFocusStyle.play.main-genericButton-buttonActive.main-genericButton-buttonActiveDot svg {
+    background: var(--spice-accent) !important;
+}
+
+button.main-genericButton-button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-isUsingKeyboard-useBrowserDefaultFocusStyle.play.main-genericButton-buttonActive.main-genericButton-buttonActiveDot::after {
+    margin-left: 13px !important;
+    /* margin-top: 5px; */
+    bottom: -2px !important;
+}
+
+
+
+/* -------------------------------------- Genre Tags ------------------------------------- */
+
+
+
+.main-nowPlayingBar-nowPlayingBar .ellipsis-one-line a {
+    color: var(--text-subdued) !important;
+}
+
+.ellipsis-one-line.main-type-finale {
+    margin-top: -3px !important;
+}
+
+p.popup-row {
+    color: var(--text-subdued) !important;
+}
+
+
+
+/* -------------------------------------- Home ------------------------------------- */
+
+
+
+.mjZrvVI3CxfHJXu7y0Lg {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+
+
+/* -------------------------------------- Sleep Time ------------------------------------- */
+
+
+
+#sleep-timer-menu .btn-success,
+#sleep-timer-menu .btn-success:hover {
+    background: var(--spice-button, var(--spice-accent)) !important;
+    border: 1px solid var(--spice-button, var(--spice-accent)) !important;
+    color: var(--spice-alt-text) !important;
+}
+
+
+
+/* -------------------------------------- Bookmarks ------------------------------------- */
+
+
+
+.main-playButton-PlayButton.main-playButton-primary {
+    background: transparent;
+    border: 0;
+}
+
+.bookmark-controls {
+    background-color: rgb(45 45 45 / 70%) !important;
+}
+
+.bookmark-card-image {
+    width: 60px !important;
+    height: 60px !important;
+    border-radius: 7px !important;
+}
+
+.bookmark-card {
+    margin-top: 12px !important;
+}
+
+
+
+/* -------------------------------------- Spicetify Stats ------------------------------------- */
+
+
+
+.Box__BoxComponent-sc-y4nds-0.BoxComponent-group-card-naked-isInteractive-draggable.Box-sc-1njtxi4-0.Box-group-naked-card-md-isInteractive-draggable.main-card-cardContainer.Card:hover:active,
+.Box__BoxComponent-sc-y4nds-0.BoxComponent-group-card-naked-isInteractive-draggable.Box-sc-1njtxi4-0.Box-group-naked-card-md-isInteractive-draggable.main-card-cardContainer.Card {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.TypeElement-type-canon-textBase {
+    margin-bottom: 10px;
+}
+
+.page-header {
+    margin: 16px 0 0 0 !important;
+}
+
+.badge {
+    background-color: var(--spice-card) !important;
+    box-shadow: none !important;
+    color: var(--spice-text) !important;
+    font-weight: 500;
+    top: 13px !important;
+    left: 13px !important;
+    border-radius: 0 0 6px 0 !important;
+}
+
+.badge::after {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: red;
+    position: absolute;
+    left: 30px;
+    top: 0;
+    background-color: var(--spice-card);
+    margin: 0;
+    -webkit-mask-image: radial-gradient(circle at bottom right, transparent 70.6%, black 51%);
+    mask-image: radial-gradient(circle at bottom right, transparent 70.6%, black 51%);
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+}
+
+.badge::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: red;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    background-color: var(--spice-card);
+    margin: 0;
+    -webkit-mask-image: radial-gradient(circle at bottom right, transparent 70.6%, black 51%);
+    mask-image: radial-gradient(circle at bottom right, transparent 70.6%, black 51%);
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+}
+
+.Box__BoxComponent-sc-y4nds-0.BoxComponent-group-card-naked-isInteractive-draggable.Box-sc-1njtxi4-0.Box-group-naked-card-md-isInteractive-draggable.main-card-cardContainer.Card:hover+.badge,
+.Box__BoxComponent-sc-y4nds-0.BoxComponent-group-card-naked-isInteractive-draggable.Box-sc-1njtxi4-0.Box-group-naked-card-md-isInteractive-draggable.main-card-cardContainer.Card:hover+.badge::after,
+.Box__BoxComponent-sc-y4nds-0.BoxComponent-group-card-naked-isInteractive-draggable.Box-sc-1njtxi4-0.Box-group-naked-card-md-isInteractive-draggable.main-card-cardContainer.Card:hover+.badge::before {
+    background-color: var(--background-highlight, #f0f0f0) !important;
+}
+
+.badge svg {
+    fill: var(--spice-accent) !important;
+}
+
+.main-tag-container,
+.main-trackList-rowImage {
+    border-radius: 4px !important;
+}
+
+span.main-tag-container[aria-label*="Explicit"] {
+    width: 16px !important;
+}
+
+.navBar-module__topBarNav___qWGeZ_stats {
+    text-align: center;
+}
+
+#stats-app .main-trackList-trackListHeader {
+    padding: 0 !important;
+    /* top: 64px !important; */
+}
+
+#stats-app .main-trackList-trackListHeaderRow,
+.main-trackCreditsModal-header {
+    border-radius: 10px 10px 0 0 !important;
+}
+
+#stats-app span.TypeElement-mesto-textSubdued.TypeElement-mesto-textSubdued-type.main-trackList-rowSubTitle.standalone-ellipsis-one-line {
+    margin-top: -2px;
+}
+
+#stats-app span.TypeElement-mesto-textSubdued.TypeElement-mesto-textSubdued-type.main-trackList-rowSubTitle.standalone-ellipsis-one-line a {
+    color: var(--text-subdued) !important;
+    font-size: 14px !important;
+}
+
+#stats-app .stats-scrollButton {
+    border-radius: 4px !important;
+    padding: 3px 0 !important;
+    margin: 0 5px 5px 0 !important;
+}
+
+#stats-app .stats-genreRowFill {
+    background: var(--spice-button);
+    height: 100%;
+    border-radius: 30px !important;
+    display: flex;
+    align-items: center;
+}
+
+#stats-app .stats-genreText {
+    margin-left: 10px !important;
+}
+
+/* .contentSpacing {
+    margin-bottom: 18px !important;
+} */
+
+/*
+svg.Svg-img-16.Svg-img-16-icon.Svg-img-icon.Svg-img-icon-small[data-encore-id*="icon"] {
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/ic_fluent_caret_down_24_filled.svg) !important;
+    background: var(--spice-text) !important;
+}
+    
+svg.Svg-img-16.Svg-img-16-icon.Svg-img-icon.Svg-img-icon-small[data-encore-id*="icon"] path {
+    opacity: 0 !important;
+}
+*/
+
+
+/* -------------------------------------- Spicetify Better Local Fils by Pithaya ------------------------------------- */
+
+
+
+.contentSpacing.main-entityHeader-container.main-entityHeader-nonWrapped.main-entityHeader-newEntityHeaders .app-module__center-container___LG8O4_betterDlocalDfiles {
+    border-radius: var(--border-radius-1) !important;
+    box-shadow: 0 4px 60px rgb(33 33 33 / 50%) !important;
+    background-image: linear-gradient(to right top, #007cbc, #00a1d3, #00c2bc, #00dc7c, #a8eb12) !important;
+}
+
+.app-module__stretch-container___SIzsh_betterDlocalDfiles.undefined .main-trackList-trackListRow {
+    width: calc(100% - 20px) !important;
+    margin-left: 10px !important;
+    margin-top: 0px !Important;
+}
+
+.app-module__stretch-container___SIzsh_betterDlocalDfiles.undefined .main-trackList-trackListHeaderRow {
+    margin-bottom: 25px;
+}
+
+.app-module__stretch-container___SIzsh_betterDlocalDfiles.undefined .main-entityHeader-backgroundColor {
+    background-color: #00a1d3;
+}
+
+span.Type__TypeElement-sc-goli3j-0.TypeElement-type-mesto-textSubdued.main-trackList-rowSubTitle.standalone-ellipsis-one-line {
+    font-size: 14px !important;
+    color: var(--spice-subtext) !important;
+}
+
+.app-module__full-size-container___XoGtP_betterDlocalDfiles .contentSpacing:not(.artist-artistDiscography-topBar, .search-searchCategory-container, .hV9v6y_uYwdAsoiOHpzk, .main-entityHeader-container, .main-actionBar-ActionBar) {
+    padding-top: 8px;
+    padding-bottom: 110px;
+}
+
+.main-playButton-PlayButton>button {
+    width: 50px !important;
+    height: 50px !important;
+    margin: 3px;
+}
+
+
+
+/* -------------------------------------- Made For You ------------------------------------- */
+
+
+
+a[aria-label*="Made for you"] .TypeElement-balladBold-type {
+    font-weight: 700 !important;
+}
+
+
+.custom-style a {
+    background-color: var(--spice-selected-row);
+    color: var(--spice-text);
+}
+
+svg.made-for-you-icon.home-icon path {
+    opacity: 0;
+}
+
+svg.made-for-you-icon.home-icon {
+    background: var(--spice-subtext);
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/crown-simple.svg);
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/crown-simple.svg);
+}
+
+li.main-yourLibraryX-navItem a[aria-label*="Made for you"]:hover svg.made-for-you-icon.home-icon {
+    background: var(--spice-text);
+}
+
+.custom-style a svg:nth-child(1) {
+    background: var(--spice-accent);
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/crown-simple-fill.svg);
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/crown-simple-fill.svg);
+}
+
+.custom-style a:hover svg:nth-child(1) {
+    background: var(--spice-accent) !important;
+}
+
+
+
+/* -------------------------------------- Spicetify Library by Harbassan ------------------------------------- */
+
+
+
+.main-yourLibraryX-navLink[href="/library"]>svg {
+    mask-image: url(https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_library_24_regular.svg) !important;
+    -webkit-mask-image: url(https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_library_24_regular.svg) !important;
+    background-color: var(--spice-subtext) !important;
+}
+
+.main-yourLibraryX-navLink[href="/library"].active>svg {
+    mask-image: url(https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_library_24_filled.svg) !important;
+    -webkit-mask-image: url(https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_library_24_filled.svg) !important;
+    background-color: var(--spice-accent) !important;
+}
+
+.main-yourLibraryX-navLink[href="/library"]:hover>svg {
+    background-color: var(--spice-text) !important;
+}
+
+.main-yourLibraryX-navLink[href="/library"].active:hover>svg {
+    background-color: var(--spice-accent) !important;
+}
+
+.main-yourLibraryX-navLink[href="/library"]>svg path {
+    opacity: 0;
+}
+
+.main-gridContainer-gridContainer div .Box__BoxComponent-sc-y4nds-0[aria-labelledby*='folder'] .main-card-imageContainer::after {
+    content: '';
+    background: #00000000;
+    height: 24px;
+    width: 24px;
+    backdrop-filter: invert(75%);
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/ic_fluent_folder_24_regular.svg) !important;
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/ic_fluent_folder_24_regular.svg) !important;
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+}
+
+
+
+/* -------------------------------------- Spicetify Library by Harbassan ------------------------------------- */
+
+
+
+#playback-bar-drag-block div div:nth-child(3),
+#playback-bar-drag-block div div:nth-child(6) {
+    background-color: var(--spice-player-bar-bg) !important;
+}
+
+#playback-bar-drag-block div div:nth-child(1) svg,
+#playback-bar-drag-block div div:nth-child(2) svg,
+#playback-bar-drag-block div div:nth-child(4) svg,
+#playback-bar-drag-block div div:nth-child(5) svg {
+    opacity: 0;
+}
+
+#playback-bar-drag-block div div:nth-child(1)::after,
+#playback-bar-drag-block div div:nth-child(2)::after,
+#playback-bar-drag-block div div:nth-child(4)::after,
+#playback-bar-drag-block div div:nth-child(5)::after {
+    content: '';
+    background: var(--spice-text);
+    width: 2px;
+    height: 16px;
+    border-radius: 99px;
+    border: 3px solid var(--spice-card);
+    position: absolute;
+}
+
+
+
+/* -------------------------------------- Local Files Folder ------------------------------------- */
+
+
+
+.standalone-ellipsis-one-line.W676nknusnBt8sz19YVV {
+    font-size: var(--encore-text-size-smaller) !important;
+    color: var(--text-subdued) !important;
+}
+
+.main-entityHeader-detailsText {
+    margin-left: 5px;
+}
+
+/*
+.Root__globalNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    grid-area: global-nav;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 59px !important;
+    margin-top: -7px !important;
+    position: relative;
+    z-index: 9999 !important;
+    background: var(--spice-sidebar) !important;
+}
+
+.custom-navlinks-scrollable_container:nth-child(3) {
+    display: none !important;
+}
+
+.Root__top-container {
+    --left-sidebar-grid-area-z-index: 4;
+    --above-everything-except-now-playing-bar-z-index: 5;
+    --above-main-and-now-playing-view-grid-area: 6;
+    --above-everything-grid-area-z-index: 7;
+    --now-playing-bar-grid-area-z-index: calc(var(--above-everything-except-now-playing-bar-z-index) + 1);
+    background-color: var(--spice-sidebar);
+    display: grid;
+    gap: var(--panel-gap);
+    grid-row-gap: 4px !important;
+    grid-template-areas:
+        "left-sidebar main-view right-sidebar"
+        "now-playing-bar now-playing-bar now-playing-bar";
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr auto;
+    height: 100%;
+    min-height: 100%;
+    padding: var(--panel-gap);
+    position: relative;
+    width: 100%;
+}
+
+.playlist-playlist-playlist {
+    margin-top: -60px !important;
+}
+
+.main-view-container__scroll-node {
+    height: calc(100% - 64px) !important;
+    margin-top: 64px !important;
+} */
+
+
+
+/* -------------------------------------- Duplicate modal ------------------------------------- */
+
+
+
+.main-duplicateTrackModal-container {
+    background-color: var(--background-base) !important;
+    color: var(--spice-text) !important;
+    padding: 35px !important;
+}
+
+.main-duplicateTrackModal-container h2 {
+    font-size: 26px !important;
+}
+
+.main-duplicateTrackModal-container p {
+    color: var(--text-subdued) !important;
+}
+
+
+
+/* -------------------------------------- Spicetify tags (Additional) ------------------------------------- */
+
+
+
+.artist-button {
+    order: -1 !important;
+}
+
+.artist-button span.LegacyChipInner__ChipInnerComponent-sc-1qguixk-0.ChipInnerComponent-sm-isUsingKeyboard.tag-list-tag {
+    background: var(--spice-text) !important;
+    color: var(--spice-alt-text) !important;
+}
+
+
+
+/* -------------------------------------- Eternal Jukebox ------------------------------------- */
+
+
+
+.player-controls__buttons button {
+    max-height: var(--button-size);
+    max-width: var(--button-size);
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+button.main-repeatButton-button svg,
+button.main-repeatButton-button.main-repeatButton-active svg {
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/infinite.svg) !important;
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/infinite.svg) !important;
+    width: 20px !important;
+    height: 20px !important;
+    margin: 0 5px !important;
+    display: block !important;
+    /* z-index: 999999; */
+}
+
+
+button.main-repeatButton-button svg {
+    background: var(--spice-subtext);
+}
+
+button.main-repeatButton-button.main-repeatButton-active svg {
+    background: var(--spice-accent) !important;
+}
+
+
+
+/* -------------------------------------- Rotating Cover-art ------------------------------------- */
+
+
+
+@keyframes rotating {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.main-coverSlotCollapsed-container.main-coverSlotCollapsed-navAltContainer .cover-art {
+    animation: rotating 8s linear infinite;
+    border-radius: 50%;
+}
+
+.main-coverSlotCollapsed-container.main-coverSlotCollapsed-navAltContainer .cover-art {
+    clip-path: circle(50% at 50% 50%);
+}
+
+/*
+.main-nowPlayingBar-left button {
+    background: transparent;
+} */
+
+
+
+/* -------------------------------------- Concerts Associated ------------------------------------- */
+
+
+
+.pQmF4tvRpUeLWgPKUcW7 {
+    background-color: var(--spice-card) !important;
+    border: 1px solid var(--spice-player-border) !important;
+}
+
+.EPBWBmUPyLEpl4VJflaL {
+    border-radius: 8px !important;
+}
+
+.h_q319q68ujja24YIoXY {
+    background: var(--spice-main) !important;
+}
+
+.zBCfaF04WlTsiUcov2oJ,
+.JxTPZX9AoptKanJg0zIw {
+    color: var(--text-subdued) !important;
+}
+
+.YpfopxY2udneDY34uzRN,
+.cBs7zoipfqjsCHbDjY_p .tICcDjrC0CkSMO2fZZNy {
+    background: var(--spice-main-elevated) !important;
+}
+
+.lKQxSRsi8KcoYx5D7mjh {
+    height: 370px !important;
+}
+
+.artist-artistOnTour-item {
+    border-radius: var(--border-radius-2) !important;
+}
+
+
+
+/* -------------------------------------- Artist Page------------------------------------- */
+
+
+
+a.muHL0_3HjlqTZDoapgc9[href*="https://en.wikipedia.org/"] svg {
+    background: var(--background-elevated-highlight) !important;
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/wikipedia-w-brands-solid.svg) !important;
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/wikipedia-w-brands-solid.svg) !important;
+}
+
+a.muHL0_3HjlqTZDoapgc9[href*="https://en.wikipedia.org/"] svg path {
+    opacity: 0 !important;
+}
+
+.guUl5dHbF5HJRvwjBxzR {
+    border-radius: var(--border-radius-1);
+}
+
+
+
+/* -------------------------------------- Device connect panel------------------------------------- */
+
+
+
+div[aria-describedby*='device-picker-troubleshooting-list'] {
+    margin-bottom: 90px;
+}
+
+
+
+/*------------------------------------------------------ Search Page -------------------------------------------------------*/
+
+
+
+.WDC2Yzs811n7JCYtYQzc {
+    border-radius: var(--border-radius-2) !important;
+}
+
+.main-shelf-shelfGrid {
+    margin-bottom: 0 !important;
+}
+
+.mXNT9H2GU7lDW4cGx0q1 {
+    background: var(--spice-tab-active) !important;
+}
+
+
+
+/*---------------------------------------------------------- Episodes----------------------------------------------------------- */
+
+
+
+.main-contextMenu-menu, .main-contextMenu-tippy, .main-devicePicker-tooltip {
+    background-color: rgb(28 28 28) !important;
+}
+
+
+
+/*---------------------------------------------------------- Main Context Manu ----------------------------------------------------------- */
+
+
+
+/* .main-contextMenu-menu .main-contextMenu-menuItem:nth-last-child(1) svg.Svg-sc-ytk21e-0.Svg-img-icon-small-textSubdued {
+    background: var(--spice-subtext) !important;
+    mask-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMzIgMzIiPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTEyLjIyNSA0LjQ2MkM5Ljg5IDMuMTQyIDcgNC44MjcgNyA3LjUwOFYyNC41YzAgMi42ODIgMi44OTIgNC4zNjggNS4yMjYgMy4wNDVsMTQuOTk3LTguNDk4YzIuMzY3LTEuMzQxIDIuMzY2LTQuNzUxIDAtNi4wOTF6Ii8+PC9zdmc+) !important;
+    -webkit-mask-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMzIgMzIiPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTEyLjIyNSA0LjQ2MkM5Ljg5IDMuMTQyIDcgNC44MjcgNyA3LjUwOFYyNC41YzAgMi42ODIgMi44OTIgNC4zNjggNS4yMjYgMy4wNDVsMTQuOTk3LTguNDk4YzIuMzY3LTEuMzQxIDIuMzY2LTQuNzUxIDAtNi4wOTF6Ii8+PC9zdmc+) !important;
+} */
