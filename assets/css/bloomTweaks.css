@@ -809,7 +809,9 @@ button.main-actionButtons-button.main-topBarStatusIndicator-hasTooltip.main-noCo
 }
 
 .main-yourLibraryX-button[aria-haspopup="menu"] {
-    padding: 8px !important;
+    mask-image: none !important;
+    -webkit-mask-image: none !important;
+    background-color: transparent !important;
 }
 
 .main-yourLibraryX-button[aria-haspopup="menu"] svg {
