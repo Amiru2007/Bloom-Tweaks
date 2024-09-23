@@ -1641,6 +1641,47 @@ button.main-repeatButton-button.main-repeatButton-active svg {
 
 
 
+button.qyKJPLjz8o4jnbk92JOn.zsVdTdACMZA_MWB3HlEW,
+button.qyKJPLjz8o4jnbk92JOn.nsakAYOtgZOAcEO4ObrM {
+    width: 18px !important;
+    height: 50px !important;
+    border-radius: 4px !important;
+    background: var(--spice-card) !important;
+    border: 1px solid var(--spice-light-border) !important;
+    color: var(--spice-subtext) !important;
+    transition: all 0.3s ease;
+}
+
+button.qyKJPLjz8o4jnbk92JOn.zsVdTdACMZA_MWB3HlEW:hover,
+button.qyKJPLjz8o4jnbk92JOn.nsakAYOtgZOAcEO4ObrM:hover {
+    background: var(--spice-highlight-elevated) !important;
+}
+
+button.qyKJPLjz8o4jnbk92JOn.zsVdTdACMZA_MWB3HlEW svg,
+button.qyKJPLjz8o4jnbk92JOn.nsakAYOtgZOAcEO4ObrM svg {
+    background: var(--spice-subtext);
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_caret_right_24_filled.svg);
+}
+
+
+button.qyKJPLjz8o4jnbk92JOn.zsVdTdACMZA_MWB3HlEW svg {
+    transform: rotate(180deg) !important;
+}
+
+button.qyKJPLjz8o4jnbk92JOn.zsVdTdACMZA_MWB3HlEW:hover svg,
+button.qyKJPLjz8o4jnbk92JOn.nsakAYOtgZOAcEO4ObrM:hover svg {
+    background: var(--spice-text) !important;
+}
+
+button.qyKJPLjz8o4jnbk92JOn.zsVdTdACMZA_MWB3HlEW svg path,
+button.qyKJPLjz8o4jnbk92JOn.nsakAYOtgZOAcEO4ObrM svg path {
+    opacity: 0 !important;
+}
+
+.muHL0_3HjlqTZDoapgc9 {
+    color: var(--text-subdued) !important;
+}
+
 a.muHL0_3HjlqTZDoapgc9[href*="https://en.wikipedia.org/"] svg {
     background: var(--background-elevated-highlight) !important;
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/wikipedia-w-brands-solid.svg) !important;
@@ -1653,6 +1694,19 @@ a.muHL0_3HjlqTZDoapgc9[href*="https://en.wikipedia.org/"] svg path {
 
 .guUl5dHbF5HJRvwjBxzR {
     border-radius: var(--border-radius-1);
+}
+
+.anPfvyDzeqR3CKW4gHUP {
+    padding-top: 16px;
+}
+
+.EQaztpbGtXeN7V1cjAP4 {
+    border-radius: 4px !important;
+}
+
+.tYSzgx8hG37WjBDn364n .DehN40s8150pzqyBfGN_ {
+    color: var(--text-subdued) !important;
+    font-size: 13px !important;
 }
 
 
