@@ -1699,8 +1699,8 @@ div[aria-describedby*='device-picker-troubleshooting-list'] {
 
 
 
-.main-contextMenu-menu .main-contextMenu-menuItem:nth-last-child(1) svg.Svg-sc-ytk21e-0.Svg-img-icon-small-textSubdued {
+/* .main-contextMenu-menu .main-contextMenu-menuItem:nth-last-child(1) svg.Svg-sc-ytk21e-0.Svg-img-icon-small-textSubdued {
     background: var(--spice-subtext) !important;
     mask-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMzIgMzIiPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTEyLjIyNSA0LjQ2MkM5Ljg5IDMuMTQyIDcgNC44MjcgNyA3LjUwOFYyNC41YzAgMi42ODIgMi44OTIgNC4zNjggNS4yMjYgMy4wNDVsMTQuOTk3LTguNDk4YzIuMzY3LTEuMzQxIDIuMzY2LTQuNzUxIDAtNi4wOTF6Ii8+PC9zdmc+) !important;
     -webkit-mask-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMzIgMzIiPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTEyLjIyNSA0LjQ2MkM5Ljg5IDMuMTQyIDcgNC44MjcgNyA3LjUwOFYyNC41YzAgMi42ODIgMi44OTIgNC4zNjggNS4yMjYgMy4wNDVsMTQuOTk3LTguNDk4YzIuMzY3LTEuMzQxIDIuMzY2LTQuNzUxIDAtNi4wOTF6Ii8+PC9zdmc+) !important;
-}
+} */
