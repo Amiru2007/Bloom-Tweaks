@@ -77,7 +77,7 @@ function waitForSpicetify() {
             const offsetY = activeItem.offsetTop - navContainerRect.top;
 
             const parentElement = document.getElementById('spicetify-sticky-list');
-            const specificChildrenCount = parentElement.querySelectorAll('li').length;
+            const specificChildrenCount = parentElement.querySelectorAll('li').length - 1;
 
             // Define correction factors
             const baseCorrection = -171;
