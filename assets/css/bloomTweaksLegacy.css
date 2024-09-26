@@ -1220,9 +1220,16 @@ span.main-tag-container[aria-label*="Explicit"] {
     min-width: 16px !important;
 }
 
-span:hover span.main-tag-container[aria-label*="Explicit"]::after {
+span.main-tag-container[aria-label*="Explicit"]::after {
     content: 'xplicit';
     text-transform: lowercase;
+    width: 0px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.main-trackList-trackListRow:hover span.main-tag-container[aria-label*="Explicit"]::after {
+    width: 26px;
 }
 
 .navBar-module__topBarNav___qWGeZ_stats {
