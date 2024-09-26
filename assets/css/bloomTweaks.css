@@ -1220,7 +1220,7 @@ span.main-tag-container[aria-label*="Explicit"] {
     min-width: 16px !important;
 }
 
-span.main-tag-container[aria-label*="Explicit"]::after {
+span:hover span.main-tag-container[aria-label*="Explicit"]::after {
     content: 'xplicit';
     text-transform: lowercase;
 }
