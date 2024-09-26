@@ -4,7 +4,6 @@
     --spice-button-active: #4cc2ff !important;
     --spice-button: #4cc2ff !important;
     --spice-rgb-accent: 76, 194, 255 !important;
-    /* --background-highlight: #3be477 !important; */
 }
 
 .encore-dark-theme .encore-bright-accent-set {
@@ -193,6 +192,10 @@ button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-
     background: var(--spice-subtext);
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_caret_down_24_filled.svg);
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_caret_down_24_filled.svg);
+}
+
+.main-yourLibraryX-listItem:hover .Box__BoxComponent-sc-y4nds-0.BoxComponent-group-listRow-naked-isInteractive-minBlockSize_56px-padding_8px.Box-sc-8t9c76-0.Box-group-listRow-isInteractive-hasLeadingOrMedia-minBlockSize_56px-padding_8px.fYWNdY4zhj4OX_T2Xtg6[aria-labelledby*="artist"] .BfALkuQy0UjTI70U9QlQ {
+    border-radius: 50% !important;
 }
 
 .BfALkuQy0UjTI70U9QlQ {
@@ -864,7 +867,7 @@ button.main-actionButtons-button.main-topBarStatusIndicator-hasTooltip.main-noCo
     height: 24px !important;
     background: var(--spice-accent);
     border-radius: 9999px;
-    transition: transform 0.3s ease, height 0.3s ease;
+    transition: transform 0.3s ease-in-out, height 0.3s ease-in-out;
 }
 
 .main-yourLibraryX-entryPoints #spicetify-show-list,
@@ -1758,4 +1761,24 @@ div[aria-describedby*='device-picker-troubleshooting-list'] {
     background: var(--spice-subtext) !important;
     mask-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMzIgMzIiPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTEyLjIyNSA0LjQ2MkM5Ljg5IDMuMTQyIDcgNC44MjcgNyA3LjUwOFYyNC41YzAgMi42ODIgMi44OTIgNC4zNjggNS4yMjYgMy4wNDVsMTQuOTk3LTguNDk4YzIuMzY3LTEuMzQxIDIuMzY2LTQuNzUxIDAtNi4wOTF6Ii8+PC9zdmc+) !important;
     -webkit-mask-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMzIgMzIiPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTEyLjIyNSA0LjQ2MkM5Ljg5IDMuMTQyIDcgNC44MjcgNyA3LjUwOFYyNC41YzAgMi42ODIgMi44OTIgNC4zNjggNS4yMjYgMy4wNDVsMTQuOTk3LTguNDk4YzIuMzY3LTEuMzQxIDIuMzY2LTQuNzUxIDAtNi4wOTF6Ii8+PC9zdmc+) !important;
+} */
+
+
+
+/*---------------------------------------------------------- Main Context Manu ----------------------------------------------------------- */
+
+
+
+/* button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle.link-subtle.main-globalNav-navLink.main-globalNav-link-icon.custom-navlink svg {
+    background: var(--spice-subtext);
+}
+
+button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle.Dp3xccI7c2f_JSJ8OHYu.main-globalNav-link-icon.link-subtle[aria-label*="Home"] svg {
+    background: var(--spice-subtext);
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_home_24_regular.svg);
+}
+
+button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle.link-subtle.main-globalNav-navLink.main-globalNav-link-icon.custom-navlink[aria-label*="Marketplace"] svg {
+    background: var(--spice-subtext);
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_app_store_24_regular.svg);
 } */
