@@ -1217,7 +1217,12 @@ p.popup-row {
 }
 
 span.main-tag-container[aria-label*="Explicit"] {
-    width: 16px !important;
+    min-width: 16px !important;
+}
+
+span.main-tag-container[aria-label*="Explicit"]::after {
+    content: 'xplicit';
+    text-transform: lowercase;
 }
 
 .navBar-module__topBarNav___qWGeZ_stats {
