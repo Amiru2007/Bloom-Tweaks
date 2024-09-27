@@ -48,7 +48,7 @@ function waitForSpicetify() {
                 parentElement.appendChild(percentageElement);
             }
 
-            percentageElement.innerHTML = `<p class="explicit-text">Explicit tracks: ${explicitPercentage}%</p>`;
+            percentageElement.innerHTML = `<p class="explicit-text"><span class="title">Explicity</span><span class="percentage-value">${explicitPercentage}%</span></p>`;
         }
     }
 
