@@ -12,11 +12,11 @@
     --background-elevated-base: #99ebff !important;
     --background-elevated-highlight: #99ebff !important;
     --background-elevated-press: #0091f8 !important;
-} */
+}
 
 .C1USyigFSYyc22_BmsgB .rdp {
     --rdp-accent-color: #0091f8 !important;
-}
+} */
 
 ._Cq69xKZBtHaaeMZXIdk {
     display: none !important;
@@ -168,6 +168,15 @@ aside[aria-label="Queue"] .Button-sc-1dqy6lx-0[aria-label*="Pause"] svg,
     -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_pause_16_filled.svg);
     transition: transform 0.3s ease;
     background: var(--spice-text);
+}
+
+.explicit-percentage {
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--spice-alt-text) !important;
+    background-color: var(--spice-accent);
+    padding: 2px 5px;
 }
 
 .StyledTabItem-tab-tabItem-useBrowserDefaultFocusStyle:hover {
@@ -1676,6 +1685,7 @@ button.qyKJPLjz8o4jnbk92JOn.zsVdTdACMZA_MWB3HlEW svg,
 button.qyKJPLjz8o4jnbk92JOn.nsakAYOtgZOAcEO4ObrM svg {
     background: var(--spice-subtext);
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_caret_right_24_filled.svg);
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_caret_right_24_filled.svg);
 }
 
 
