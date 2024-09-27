@@ -17,7 +17,7 @@ function waitForSpicetify() {
 
             const link = document.createElement('link');
             link.rel = 'stylesheet';
-            link.href = `https://cdn.jsdelivr.net/gh/${repoOwner}/${repoName}@${latestCommitHash}/assets/css/bloomTweaksLegacy.css`;
+            link.href = `https://cdn.jsdelivr.net/gh/${repoOwner}/${repoName}@${latestCommitHash}/assets/css/bloomTweaks.css`;
             document.head.append(link);
         } catch (error) {
             console.error('Error fetching the latest commit hash:', error);
