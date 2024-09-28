@@ -1417,13 +1417,13 @@ li.main-yourLibraryX-navItem a[aria-label*="Made for you"]:hover svg.made-for-yo
 
 
 
-.main-yourLibraryX-navLink[href="/library"]>svg {
+.main-yourLibraryX-navLink[href="/library"] svg {
     mask-image: url(https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_library_24_regular.svg) !important;
     -webkit-mask-image: url(https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_library_24_regular.svg) !important;
     background-color: var(--spice-subtext) !important;
 }
 
-.main-yourLibraryX-navLink[href="/library"].active>svg {
+.main-yourLibraryX-navLink[href="/library"].active svg {
     mask-image: url(https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_library_24_filled.svg) !important;
     -webkit-mask-image: url(https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_library_24_filled.svg) !important;
     background-color: var(--spice-accent) !important;
@@ -1437,7 +1437,7 @@ li.main-yourLibraryX-navItem a[aria-label*="Made for you"]:hover svg.made-for-yo
     background-color: var(--spice-accent) !important;
 }
 
-.main-yourLibraryX-navLink[href="/library"]>svg path {
+.main-yourLibraryX-navLink[href="/library"] svg path {
     opacity: 0;
 }
 
@@ -1888,49 +1888,49 @@ button.main-globalNav-link-icon[aria-label*="search"].main-globalNav-navLinkActi
   background-color: var(--spice-accent) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="lyrics-plus"]>svg {
+button.main-globalNav-link-icon[aria-label*="lyrics-plus"] svg {
   mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_slide_text_24_regular.svg");
   -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_slide_text_24_regular.svg");
   background-color: var(--spice-subtext) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="lyrics-plus"].main-globalNav-navLinkActive>svg {
+button.main-globalNav-link-icon[aria-label*="lyrics-plus"].main-globalNav-navLinkActive svg {
   mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_slide_text_24_filled.svg");
   -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_slide_text_24_filled.svg");
   background-color: var(--spice-accent) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="Marketplace"]>svg {
+button.main-globalNav-link-icon[aria-label*="Marketplace"] svg {
   mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_app_store_24_regular.svg");
   -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_app_store_24_regular.svg");
   background-color: var(--spice-subtext) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="Marketplace"].main-globalNav-navLinkActive>svg {
+button.main-globalNav-link-icon[aria-label*="Marketplace"].main-globalNav-navLinkActive svg {
   mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_app_store_24_filled.svg");
   -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_app_store_24_filled.svg");
   background-color: var(--spice-accent) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="eternal-jukebox"]>svg {
+button.main-globalNav-link-icon[aria-label*="eternal-jukebox"] svg {
   mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/phosphor-icons/infinity.svg");
   -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/phosphor-icons/infinity.svg");
   background-color: var(--spice-subtext) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="eternal-jukebox"].main-globalNav-navLinkActive>svg {
+button.main-globalNav-link-icon[aria-label*="eternal-jukebox"].main-globalNav-navLinkActive svg {
   mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/phosphor-icons/infinity-bold.svg");
   -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/phosphor-icons/infinity-bold.svg");
   background-color: var(--spice-accent) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="new-releases"]>svg {
+button.main-globalNav-link-icon[aria-label*="new-releases"] svg {
   mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_alert_24_regular.svg");
   -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_alert_24_regular.svg");
   background-color: var(--spice-subtext) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="new-releases"].main-globalNav-navLinkActive>svg {
+button.main-globalNav-link-icon[aria-label*="new-releases"].main-globalNav-navLinkActive svg {
   mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_alert_24_filled.svg");
   -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_alert_24_filled.svg");
   background-color: var(--spice-accent) !important;
@@ -1948,49 +1948,49 @@ button.main-globalNav-link-icon[aria-label*="Statistics"].main-globalNav-navLink
   background-color: var(--spice-accent) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="name-that-tune"]>svg {
+button.main-globalNav-link-icon[aria-label*="name-that-tune"] svg {
   mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_music_note_2_24_regular.svg");
   -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_music_note_2_24_regular.svg");
   background-color: var(--spice-subtext) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="name-that-tune"].main-globalNav-navLinkActive>svg {
+button.main-globalNav-link-icon[aria-label*="name-that-tune"].main-globalNav-navLinkActive svg {
   mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_music_note_2_24_filled.svg");
   -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_music_note_2_24_filled.svg");
   background-color: var(--spice-accent) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="Your Library"]>svg {
+button.main-globalNav-link-icon[aria-label*="Your Library"] svg {
   mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_library_24_regular.svg");
   -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_library_24_regular.svg");
   background-color: var(--spice-subtext) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="Your Library"].main-globalNav-navLinkActive>svg {
+button.main-globalNav-link-icon[aria-label*="Your Library"].main-globalNav-navLinkActive svg {
   mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_library_24_filled.svg");
   -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_library_24_filled.svg");
   background-color: var(--spice-accent) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="better-local-files"]>svg {
+button.main-globalNav-link-icon[aria-label*="better-local-files"] svg {
   mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_folder_24_regular.svg");
   -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_folder_24_regular.svg");
   background-color: var(--spice-subtext) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="better-local-files"].main-globalNav-navLinkActive>svg {
+button.main-globalNav-link-icon[aria-label*="better-local-files"].main-globalNav-navLinkActive svg {
   mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_folder_24_filled.svg");
   -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_folder_24_filled.svg");
   background-color: var(--spice-accent) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="Tags"]>svg {
+button.main-globalNav-link-icon[aria-label*="Tags"] svg {
   mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_tag_24_regular.svg");
   -webkit-mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_tag_24_regular.svg");
   background-color: var(--spice-subtext) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="Tags"].main-globalNav-navLinkActive>svg {
+button.main-globalNav-link-icon[aria-label*="Tags"].main-globalNav-navLinkActive svg {
   mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_tag_24_filled.svg");
   -webkit-mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_tag_24_filled.svg");
   background-color: var(--spice-accent) !important;
