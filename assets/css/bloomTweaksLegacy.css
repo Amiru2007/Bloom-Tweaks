@@ -1840,37 +1840,28 @@ button.main-globalNav-link-icon[aria-label*="Home"] path,
 button.main-globalNav-link-icon[aria-label*="search"] path,
 button.main-globalNav-link-icon[aria-label*="search"] path,
 button.main-globalNav-link-icon[aria-label*="lyrics-plus"] path,
-button.main-globalNav-link-icon[aria-label*="marketplace"] path,
+button.main-globalNav-link-icon[aria-label*="Marketplace"] path,
 button.main-globalNav-link-icon[aria-label*="eternal-jukebox"] path,
 button.main-globalNav-link-icon[aria-label*="new-releases"] path,
 button.main-globalNav-link-icon[aria-label*="Statistics"] svg path,
 button.main-globalNav-link-icon[aria-label*="name-that-tune"] path,
-button.main-globalNav-link-icon[aria-label*="betterLibrary"] path,
+button.main-globalNav-link-icon[aria-label*="Your Library"] path,
 button.main-globalNav-link-icon[aria-label*="better-local-files"] path,
-button.main-globalNav-link-icon[aria-label*="Home"].main-globalNav-navLinkActive path,
-button.main-globalNav-link-icon[aria-label*="search"].main-globalNav-navLinkActive path,
-button.main-globalNav-link-icon[aria-label*="search"].main-globalNav-navLinkActive path,
-button.main-globalNav-link-icon[aria-label*="lyrics-plus"].main-globalNav-navLinkActive path,
-button.main-globalNav-link-icon[aria-label*="marketplace"].main-globalNav-navLinkActive path,
-button.main-globalNav-link-icon[aria-label*="eternal-jukebox"].main-globalNav-navLinkActive path,
-button.main-globalNav-link-icon[aria-label*="new-releases"].main-globalNav-navLinkActive path,
-button.main-globalNav-link-icon[aria-label*="Statistics"].main-globalNav-navLinkActive svg path,
-button.main-globalNav-link-icon[aria-label*="name-that-tune"].main-globalNav-navLinkActive path,
-button.main-globalNav-link-icon[aria-label*="betterLibrary"].main-globalNav-navLinkActive path,
-button.main-globalNav-link-icon[aria-label*="better-local-files"].main-globalNav-navLinkActive path {
+button.main-globalNav-link-icon[aria-label*="Tags"] path {
   display: none !important;
 }
 
 button.main-globalNav-link-icon[aria-label*="Home"]:hover svg,
 button.main-globalNav-link-icon[aria-label*="search"]:hover .search-icon,
 button.main-globalNav-link-icon[aria-label*="lyrics-plus"]:hover svg,
-button.main-globalNav-link-icon[aria-label*="marketplace"]:hover svg,
+button.main-globalNav-link-icon[aria-label*="Marketplace"]:hover svg,
 button.main-globalNav-link-icon[aria-label*="eternal-jukebox"]:hover svg,
 button.main-globalNav-link-icon[aria-label*="new-releases"]:hover svg,
 button.main-globalNav-link-icon[aria-label*="Statistics"]:hover svg,
 button.main-globalNav-link-icon[aria-label*="name-that-tune"]:hover svg,
-button.main-globalNav-link-icon[aria-label*="betterLibrary"]:hover svg,
-button.main-globalNav-link-icon[aria-label*="better-local-files"]:hover svg {
+button.main-globalNav-link-icon[aria-label*="Your Library"]:hover svg,
+button.main-globalNav-link-icon[aria-label*="better-local-files"]:hover svg,
+button.main-globalNav-link-icon[aria-label*="Tags"]:hover svg {
   background-color: var(--spice-text) !important;
 }
 
