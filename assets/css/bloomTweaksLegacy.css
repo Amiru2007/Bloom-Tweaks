@@ -2039,6 +2039,7 @@ button.main-globalNav-link-icon[aria-label*="Statistics"] svg {
 .b7r2WRiu5f9Q99qmyreh .main-topBar-searchBar {
     background: var(--spice-card) !important;
     border: 1px solid var(--spice-player-border) !important;
+    border-radius: 8px !important;
 }
 
 .b7r2WRiu5f9Q99qmyreh .main-topBar-searchBar:hover {
