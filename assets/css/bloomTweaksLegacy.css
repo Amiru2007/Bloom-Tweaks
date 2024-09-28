@@ -1936,13 +1936,13 @@ button.main-globalNav-link-icon[aria-label*="new-releases"].main-globalNav-navLi
   background-color: var(--spice-accent) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="Statistics"]>svg {
+button.main-globalNav-link-icon[aria-label*="Statistics"] svg {
   mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_chart_multiple_24_regular.svg");
   -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_chart_multiple_24_regular.svg");
   background-color: var(--spice-subtext) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="Statistics"].main-globalNav-navLinkActive>svg {
+button.main-globalNav-link-icon[aria-label*="Statistics"].main-globalNav-navLinkActive svg {
   mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_chart_multiple_24_filled.svg");
   -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_chart_multiple_24_filled.svg");
   background-color: var(--spice-accent) !important;
