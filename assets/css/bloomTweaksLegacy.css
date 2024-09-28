@@ -169,7 +169,8 @@ aside[aria-label="Queue"] .Button-sc-1dqy6lx-0[aria-label*="Pause"] svg,
 .xU4sacBisQneHoQeHMP5 .srjSlmxMGzXnJBc32BJa[aria-label*="Pause"] .lju7xv10a5Y5Z8h8CcKJ,
 .Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only[aria-label*="Pause"] .IconWrapper__Wrapper-sc-1hf1hjl-0 .Svg-sc-ytk21e-,
 button.Button-sc-qlcn5g-0.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only.pause svg,
-button.Button-sc-qlcn5g-0.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only[aria-label*="Pause"] svg {
+button.Button-sc-qlcn5g-0.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only[aria-label*="Pause"] svg,
+button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle.pause svg {
     mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_pause_16_filled.svg) !important;
     -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_pause_16_filled.svg) !important;
     transition: transform 0.3s ease;
@@ -819,6 +820,15 @@ button.main-actionButtons-button.main-topBarStatusIndicator-hasTooltip.main-noCo
     color: var(--spice-alt-text) !important;
     padding: 8px 16px !important;
     font-weight: 500;
+}
+
+.link-subtle.main-topBar-topbarContentRight::after {
+    content: '';
+    width: 134px;
+    height: 32px;
+    position: absolute;
+    background: #353535;
+    right: -7px;
 }
 
 

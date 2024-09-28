@@ -155,6 +155,7 @@ aside[aria-label="Queue"] .Button-sc-1dqy6lx-0[aria-label*="Play"] svg,
 .xU4sacBisQneHoQeHMP5 .srjSlmxMGzXnJBc32BJa[aria-label*="Play"] .lju7xv10a5Y5Z8h8CcKJ,
 .play-button svg,
 .Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only[aria-label*="Play"] .IconWrapper__Wrapper-sc-1hf1hjl-0 .Svg-sc-ytk21e-0,
+button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle.play svg,
 button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle[aria-label*="Play"] svg {
     mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg) !important;
     -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg) !important;
@@ -167,7 +168,9 @@ aside[aria-label="Queue"] .Button-sc-1dqy6lx-0[aria-label*="Pause"] svg,
 .cRB7yMdTUrWxDud8Uqvi[aria-label*="Pause"] .RTHphmJ9fFJyJWFe9Kwt,
 .xU4sacBisQneHoQeHMP5 .srjSlmxMGzXnJBc32BJa[aria-label*="Pause"] .lju7xv10a5Y5Z8h8CcKJ,
 .Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only[aria-label*="Pause"] .IconWrapper__Wrapper-sc-1hf1hjl-0 .Svg-sc-ytk21e-,
-button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle[aria-label*="Pause"] svg {
+button.Button-sc-qlcn5g-0.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only.pause svg,
+button.Button-sc-qlcn5g-0.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only[aria-label*="Pause"] svg,
+button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle.pause svg {
     mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_pause_16_filled.svg) !important;
     -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_pause_16_filled.svg) !important;
     transition: transform 0.3s ease;
@@ -454,6 +457,10 @@ button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-
     color: var(--spice-text) !important;
 }
 
+.jr794VV4i2iUBRhfvS5i .KE3gK5ccLz2gL3dhJ4BW .pO2rsGFqUdaNhpLrif21 {
+    font-weight: 400 !important;
+}
+
 .Bpdhrb_he3jzWLv40DpE a {
     color: var(--spice-text) !important;
     font-weight: 500 !important;
@@ -718,6 +725,20 @@ aside[aria-label*="Now playing view"] a:hover {
 button.main-topBar-button,
 .main-topBar-buddyFeed {
     background: transparent !important;
+    z-index: 3;
+}
+
+.main-topBar-buddyFeed::before {
+    content: '';
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    z-index: 4;
+    background: var(--spice-sidebar);
+}
+
+.main-topBar-buddyFeed svg {
+    z-index: 5;
 }
 
 /* button.main-topBar-button.play[aria-label*="playlist-stats"] {
@@ -799,6 +820,15 @@ button.main-actionButtons-button.main-topBarStatusIndicator-hasTooltip.main-noCo
     color: var(--spice-alt-text) !important;
     padding: 8px 16px !important;
     font-weight: 500;
+}
+
+.link-subtle.main-topBar-topbarContentRight::after {
+    content: '';
+    width: 134px;
+    height: 32px;
+    position: absolute;
+    background: #353535;
+    right: -7px;
 }
 
 
@@ -1274,6 +1304,10 @@ p.popup-row {
     gap: 0 !important;
 }
 
+.main-trackList-selected .Ps9zgW56WZaBVLo1n3cg {
+    color: var(--spice-alt-text) !important;
+}
+
 .Ps9zgW56WZaBVLo1n3cg::after {
     content: 'xplicit';
     text-transform: lowercase;
@@ -1282,8 +1316,11 @@ p.popup-row {
     transition: all 0.3s ease-in-out;
 }
 
+.main-trackList-trackListRow:active .Ps9zgW56WZaBVLo1n3cg::after,
+.main-trackList-trackListRow:focus .Ps9zgW56WZaBVLo1n3cg::after,
 .main-trackList-trackListRow:hover .Ps9zgW56WZaBVLo1n3cg::after {
     width: 29px;
+    color: var(--spice-alt-text) !important;
 }
 
 .navBar-module__topBarNav___qWGeZ_stats {
@@ -1830,6 +1867,10 @@ span.encore-text.encore-text-body-small.ArQQy9kpoXLmafHpoi6u.FGrkEs4xa3OtWqaSmtv
 
 .w1TBi3o5CTM7zW1EB3Bm {
     color: var(--spice-subtext) !important;
+}
+
+.main-trackList-trackListHeaderStuck.main-trackList-trackListHeader {
+    top: 40px !important;
 }
 
 
