@@ -1255,16 +1255,13 @@ p.popup-row {
     fill: var(--spice-accent) !important;
 }
 
-.main-tag-container,
-.main-trackList-rowImage {
+.Ps9zgW56WZaBVLo1n3cg {
+    background-color: var(--spice-accent) !important;
     border-radius: 4px !important;
-}
-
-span.main-tag-container[aria-label*="Explicit"] {
     min-width: 16px !important;
 }
 
-span.main-tag-container[aria-label*="Explicit"]::after {
+.Ps9zgW56WZaBVLo1n3cg::after {
     content: 'xplicit';
     text-transform: lowercase;
     width: 0px;
@@ -1272,7 +1269,7 @@ span.main-tag-container[aria-label*="Explicit"]::after {
     transition: all 0.3s ease-in-out;
 }
 
-.main-trackList-trackListRow:hover span.main-tag-container[aria-label*="Explicit"]::after {
+.main-trackList-trackListRow:hover .Ps9zgW56WZaBVLo1n3cg::after {
     width: 26px;
 }
 
