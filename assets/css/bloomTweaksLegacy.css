@@ -1282,8 +1282,11 @@ p.popup-row {
     transition: all 0.3s ease-in-out;
 }
 
+.main-trackList-trackListRow:active .Ps9zgW56WZaBVLo1n3cg::after,
+.main-trackList-trackListRow:focus .Ps9zgW56WZaBVLo1n3cg::after,
 .main-trackList-trackListRow:hover .Ps9zgW56WZaBVLo1n3cg::after {
     width: 29px;
+    color: var(--spice-alt-text) !important;
 }
 
 .navBar-module__topBarNav___qWGeZ_stats {
