@@ -41,17 +41,14 @@ function waitForSpicetify() {
 
         const parentElement = document.querySelector('.LFdMliaHVgrpBcqNKHU3');
         if (parentElement) {
-            // Recreate the percentage element every time the panel is opened
             let percentageElement = document.querySelector('.explicit-percentage');
-            if (percentageElement) {
-                percentageElement.remove(); // Remove the old element before recreating it
+            if (!percentageElement) {
+                percentageElement = document.createElement('div');
+                percentageElement.classList.add('explicit-percentage');
+                parentElement.appendChild(percentageElement);
             }
 
-            percentageElement = document.createElement('div');
-            percentageElement.classList.add('explicit-percentage');
-            parentElement.appendChild(percentageElement);
-
-            percentageElement.innerHTML = `<p class="explicit-text"><span class="title">Explicit</span><span class="percentage-value">${explicitPercentage}%</span></p>`;
+            percentageElement.innerHTML = `<p class="explicit-text"><span class="title">Explicity</span><span class="percentage-value">${explicitPercentage}%</span></p>`;
         }
     }
 
@@ -187,40 +184,16 @@ function waitForSpicetify() {
     // Debounced version of the updateUI function
     const debouncedUpdateUI = debounce(updateUI, 200);
 
-    // Function to observe when the queue panel becomes visible
-    function observeQueueVisibility() {
-        const queueContainer = document.getElementById('Desktop_PanelContainer_Id'); // Updated selector for the queue panel
-        if (!queueContainer) {
-            console.warn('Queue container not found. Retrying...');
-            setTimeout(observeQueueVisibility, 100); // Retry if container not found
-            return;
-        }
-
-        const observer = new MutationObserver((mutations) => {
-            mutations.forEach((mutation) => {
-                if (mutation.attributeName === 'style') {
-                    const queueElement = document.querySelector('ul[role="treegrid"]');
-                    if (queueElement && window.getComputedStyle(queueContainer).display !== 'none') {
-                        // Queue is visible, trigger explicit percentage update
-                        updateExplicitTrackPercentage();
-                    }
-                }
-            });
-        });
-
-        observer.observe(queueContainer, { attributes: true });
-    }
-
-    // Recalculate and show explicit percentage when queue content changes
-    function observeQueueContent() {
+    // Observe changes in the queue panel
+    function observeQueueChanges() {
         const queueElement = document.querySelector('ul[role="treegrid"]');
         if (queueElement) {
-            const observer = new MutationObserver(updateExplicitTrackPercentage);
+            const observer = new MutationObserver(debouncedUpdateUI);
             observer.observe(queueElement, { childList: true, subtree: true });
-            // Initial explicit percentage calculation
+            // Also immediately update the UI when the queue is found
             updateExplicitTrackPercentage();
         } else {
-            setTimeout(observeQueueContent, 100); // Retry if queue element is not yet loaded
+            setTimeout(observeQueueChanges, 100); // Retry observing the queue panel
         }
     }
 
@@ -229,8 +202,7 @@ function waitForSpicetify() {
         // Initial setup
         updateUI();
         handleNavClick();
-        observeQueueVisibility();  // Watch for queue opening/closing
-        observeQueueContent();     // Watch for changes in the queue content
+        observeQueueChanges(); // Start observing the queue panel
     });
 
     // Listen for button clicks to update button states
