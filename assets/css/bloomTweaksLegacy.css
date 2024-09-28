@@ -565,6 +565,18 @@ a[class*="topBarActive"]::before {
     }
 }
 
+.main-topBar-background {
+    background-color: var(--spice-main) !important;
+}
+
+.marketplace-card-type-heading {
+    margin: 2em 0 .5em !important;
+}
+
+.global-nav .marketplace-header, .global-nav .main-trackList-trackListHeader, .global-nav .artist-artistDiscography-topBar {
+    top: 40px !important;
+}
+
 
 
 /* -------------------------------------- Play Bar ------------------------------------- */
@@ -704,7 +716,7 @@ aside[aria-label*="Now playing view"] a:hover {
 }
 
 button.main-topBar-button,
-.main-actionButtons button.encore-over-media-set.main-topBar-buddyFeed {
+.main-topBar-buddyFeed {
     background: transparent !important;
 }
 
@@ -759,7 +771,7 @@ button[aria-label*="Get Random Saved Album"]:hover svg {
     transform: rotate(90deg);
 }
 
-.main-actionButtons button.encore-over-media-set.main-topBar-buddyFeed[aria-label*="What's New"] svg {
+.main-topBar-buddyFeed[aria-label*="What's New"] svg {
     background: var(--spice-text) !important;
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/bell.svg) !important;
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/bell.svg) !important;
@@ -767,7 +779,7 @@ button[aria-label*="Get Random Saved Album"]:hover svg {
     height: 18px;
 }
 
-.main-actionButtons button.encore-over-media-set.main-topBar-buddyFeed[aria-label*="Friend Activity"] svg {
+.main-topBar-buddyFeed[aria-label*="Friend Activity"] svg {
     background: var(--spice-text) !important;
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/users.svg) !important;
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/users.svg) !important;
@@ -1200,7 +1212,7 @@ p.popup-row {
 }
 
 .page-header {
-    margin: 16px 0 0 0 !important;
+    margin: 50px 0 0 0 !important;
 }
 
 .badge {
@@ -2023,3 +2035,17 @@ button.main-globalNav-link-icon[aria-label*="Statistics"] svg {
 button.main-globalNav-link-icon[aria-label*="Statistics"] svg {
     mask-image: url();
 } */
+
+.b7r2WRiu5f9Q99qmyreh .main-topBar-searchBar {
+    background: var(--spice-card) !important;
+    border: 1px solid var(--spice-player-border) !important;
+}
+
+.b7r2WRiu5f9Q99qmyreh .main-topBar-searchBar:hover {
+    background: var(--spice-main-elevated) !important;
+}
+
+.b7r2WRiu5f9Q99qmyreh .main-topBar-searchBar:focus {
+    background: var(--spice-main) !important;
+    border-bottom: 2px solid var(--spice-accent) !important;
+}
