@@ -1846,7 +1846,18 @@ button.main-globalNav-link-icon[aria-label*="new-releases"] path,
 button.main-globalNav-link-icon[aria-label*="Statistics"] svg path,
 button.main-globalNav-link-icon[aria-label*="name-that-tune"] path,
 button.main-globalNav-link-icon[aria-label*="betterLibrary"] path,
-button.main-globalNav-link-icon[aria-label*="better-local-files"] path {
+button.main-globalNav-link-icon[aria-label*="better-local-files"] path,
+button.main-globalNav-link-icon[aria-label*="Home"].main-globalNav-navLinkActive path,
+button.main-globalNav-link-icon[aria-label*="search"].main-globalNav-navLinkActive path,
+button.main-globalNav-link-icon[aria-label*="search"].main-globalNav-navLinkActive path,
+button.main-globalNav-link-icon[aria-label*="lyrics-plus"].main-globalNav-navLinkActive path,
+button.main-globalNav-link-icon[aria-label*="marketplace"].main-globalNav-navLinkActive path,
+button.main-globalNav-link-icon[aria-label*="eternal-jukebox"].main-globalNav-navLinkActive path,
+button.main-globalNav-link-icon[aria-label*="new-releases"].main-globalNav-navLinkActive path,
+button.main-globalNav-link-icon[aria-label*="Statistics"].main-globalNav-navLinkActive svg path,
+button.main-globalNav-link-icon[aria-label*="name-that-tune"].main-globalNav-navLinkActive path,
+button.main-globalNav-link-icon[aria-label*="betterLibrary"].main-globalNav-navLinkActive path,
+button.main-globalNav-link-icon[aria-label*="better-local-files"].main-globalNav-navLinkActive path {
   display: none !important;
 }
 
