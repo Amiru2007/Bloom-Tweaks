@@ -1274,8 +1274,7 @@ p.popup-row {
     gap: 0 !important;
 }
 
-.main-trackList-trackListRow:active .Ps9zgW56WZaBVLo1n3cg,
-.main-trackList-trackListRow:focus .Ps9zgW56WZaBVLo1n3cg {
+.main-trackList-selected .Ps9zgW56WZaBVLo1n3cg {
     color: var(--spice-alt-text) !important;
 }
 
