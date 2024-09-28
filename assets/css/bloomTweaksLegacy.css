@@ -152,22 +152,26 @@ aside[aria-label="Queue"] .Button-sc-1dqy6lx-0 svg {
 .main-playButton-PlayButton.main-playButton-primary svg,
 aside[aria-label="Queue"] .Button-sc-1dqy6lx-0[aria-label*="Play"] svg,
 .cRB7yMdTUrWxDud8Uqvi[aria-label*="Play"] .RTHphmJ9fFJyJWFe9Kwt,
+.xU4sacBisQneHoQeHMP5 .srjSlmxMGzXnJBc32BJa[aria-label*="Play"] .lju7xv10a5Y5Z8h8CcKJ,
 .play-button svg,
-.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only[aria-label*="Play"] .IconWrapper__Wrapper-sc-1hf1hjl-0 .Svg-sc-ytk21e-0 {
-    mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg);
-    -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg);
+.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only[aria-label*="Play"] .IconWrapper__Wrapper-sc-1hf1hjl-0 .Svg-sc-ytk21e-0,
+button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle[aria-label*="Play"] svg {
+    mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg) !important;
+    -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg) !important;
     transition: transform 0.3s ease;
-    background: var(--spice-text);
+    background: var(--spice-text) !important;
 }
 
 #spicetify-playlist-list li button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle[aria-label*="Pause"] svg.Svg-sc-ytk21e-0.Svg-img-icon-medium,
 aside[aria-label="Queue"] .Button-sc-1dqy6lx-0[aria-label*="Pause"] svg,
 .cRB7yMdTUrWxDud8Uqvi[aria-label*="Pause"] .RTHphmJ9fFJyJWFe9Kwt,
-.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only[aria-label*="Pause"] .IconWrapper__Wrapper-sc-1hf1hjl-0 .Svg-sc-ytk21e-0 {
-    mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_pause_16_filled.svg);
-    -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_pause_16_filled.svg);
+.xU4sacBisQneHoQeHMP5 .srjSlmxMGzXnJBc32BJa[aria-label*="Pause"] .lju7xv10a5Y5Z8h8CcKJ,
+.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only[aria-label*="Pause"] .IconWrapper__Wrapper-sc-1hf1hjl-0 .Svg-sc-ytk21e-,
+button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle[aria-label*="Pause"] svg {
+    mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_pause_16_filled.svg) !important;
+    -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_pause_16_filled.svg) !important;
     transition: transform 0.3s ease;
-    background: var(--spice-text);
+    background: var(--spice-text) !important;
 }
 
 .explicit-percentage {
@@ -445,13 +449,33 @@ button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-
     margin-top: 0 !important;
 }
 
-.SN5MVM1k5tAxwKeA7WDr {
+.SN5MVM1k5tAxwKeA7WDr,
+.Ydxgl4Y23orfVVVI9O2k {
     color: var(--spice-text) !important;
 }
 
 .Bpdhrb_he3jzWLv40DpE a {
     color: var(--spice-text) !important;
     font-weight: 500 !important;
+}
+
+.KE3gK5ccLz2gL3dhJ4BW svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
+    background: var(--spice-text);
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/equaliser-animated-green.gif);
+    height: 14px;
+    width: 14px;
+}
+
+.KE3gK5ccLz2gL3dhJ4BW svg.Svg-sc-ytk21e-0.Svg-img-icon-small path {
+    opacity: 0 !important;
+}
+
+.xU4sacBisQneHoQeHMP5 .srjSlmxMGzXnJBc32BJa {
+    background-color: rgba(var(--spice-rgb-card), 0.7) !important;
+}
+
+.jr794VV4i2iUBRhfvS5i .T3liC_3fbMOTilR4HHKD {
+    fill: var(--text-muted) !important;
 }
 
 
