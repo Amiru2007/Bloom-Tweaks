@@ -738,8 +738,8 @@ button.main-topBar-button,
 
 .main-topBar-buddyFeed::before {
     content: '';
-    width: 28px;
-    height: 28px;
+    width: 30px;
+    height: 30px;
     position: absolute;
     z-index: 4;
     background: var(--spice-sidebar);
