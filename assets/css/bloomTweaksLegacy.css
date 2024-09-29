@@ -738,8 +738,8 @@ button.main-topBar-button,
 
 .main-topBar-buddyFeed::before {
     content: '';
-    width: 30px;
-    height: 30px;
+    width: 32px;
+    height: 32px;
     position: absolute;
     z-index: 4;
     background: var(--spice-sidebar);
@@ -1898,7 +1898,17 @@ span.encore-text.encore-text-body-small.ArQQy9kpoXLmafHpoi6u.FGrkEs4xa3OtWqaSmtv
 }
 
 .Root__globalNav .main-globalNav-link-icon {
+    background-color: transparent !important;
+}
+
+
+button.main-globalNav-link-icon[aria-label*="Home"] {
+    background-color: var(--spice-card) !important;
+}
+
+.Root__globalNav .main-globalNav-link-icon.main-globalNav-navLinkActive {
     border: 1px solid #232323;
+    background-color: var(--spice-card) !important;
 }
 
 .custom-navlinks-scrollable_container {
