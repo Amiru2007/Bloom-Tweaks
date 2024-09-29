@@ -580,8 +580,16 @@ a[class*="topBarActive"]::before {
     margin: 2em 0 .5em !important;
 }
 
-.global-nav .marketplace-header, .global-nav .main-trackList-trackListHeader, .global-nav .artist-artistDiscography-topBar {
-    top: 40px !important;
+.global-nav .marketplace-header {
+    transform: translateY(-24px) !important;
+    /* background: rgb(18 18 18 / 91%); */
+    /* backdrop-filter: blur(20px); */
+    background-color: rgba(var(--spice-rgb-sidebar), 0.85) !important;
+    backdrop-filter: blur(50px) saturate(2.5);
+}
+
+.main-topBar-background {
+    background-color: rgba(var(--spice-rgb-sidebar), 1) !important;
 }
 
 
@@ -1889,6 +1897,18 @@ span.encore-text.encore-text-body-small.ArQQy9kpoXLmafHpoi6u.FGrkEs4xa3OtWqaSmtv
   color: var(--spice-accent);
 }
 
+.Root__globalNav .main-globalNav-link-icon {
+    border: 1px solid #232323;
+}
+
+.custom-navlinks-scrollable_container {
+    max-width: 230px !important;
+}
+
+.dixACKl18S755OnSdpna {
+    display: none !important;
+}
+
 button.main-globalNav-link-icon[aria-label*="Home"] path,
 button.main-globalNav-link-icon[aria-label*="search"] path,
 button.main-globalNav-link-icon[aria-label*="search"] path,
@@ -2079,7 +2099,7 @@ button.main-globalNav-link-icon[aria-label*="Statistics"] svg {
 
 .b7r2WRiu5f9Q99qmyreh .main-topBar-searchBar {
     background: var(--spice-card) !important;
-    border: 1px solid var(--spice-player-border) !important;
+    border: 1px solid #242424 !important;
     border-radius: 8px !important;
 }
 
