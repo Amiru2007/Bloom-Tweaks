@@ -2087,7 +2087,7 @@ button.main-globalNav-link-icon[aria-label*="Tags"].main-globalNav-navLinkActive
   margin-bottom: 20px !important;
 }
 
-.Root__globalNav .main-globalNav-link-icon.main-globalNav-navLinkActive::after {
+.Root__globalNav .main-globalNav-link-icon::after {
     content: '';
     position: absolute;
     height: 3px;
