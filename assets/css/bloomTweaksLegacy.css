@@ -695,10 +695,6 @@ aside[aria-label*="Now playing view"] a:hover {
     backdrop-filter: blur(var(--blur-radius)) saturate(0.5) brightness(100%) !important;
 }
 
-.main-nowPlayingView-section.main-nowPlayingView-queue {
-    margin-bottom: 10px !important;
-}
-
 .main-nowPlayingView-nowPlayingWidget {
     order: -3 !important;
 }
@@ -713,13 +709,12 @@ div#BeautifulLyrics-CardView {
 }
 
 .main-nowPlayingView-section.main-nowPlayingView-credits {
-    margin-bottom: 10px;
+    margin-bottom: 10px !important;
 }
 
-#BeautifulLyrics-CardView,
-.LoadingLyricsCard.Loading {
-    height: 450px !important;
-    max-height: 450px !important;
+#BeautifulLyrics-CardView, .LoadingLyricsCard.Loading {
+    height: 515px !important;
+    max-height: 515px !important;
 }
 
 #BeautifulLyrics-CardView .LyricsContent .ContentContainer {
