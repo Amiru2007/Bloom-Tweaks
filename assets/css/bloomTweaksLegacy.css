@@ -692,7 +692,7 @@ aside[aria-label*="Now playing view"] a:hover {
 
 .Root__right-sidebar:has(.main-nowPlayingView-section,canvas) .main-nowPlayingView-section {
     background-color: rgb(8 8 8 / 50%) !important;
-    backdrop-filter: blur(var(--blur-radius)) saturate(0.5) brightness(100%) !important;
+    backdrop-filter: blur(var(--blur-radius)) saturate(0.5) brightness(60%) !important;
 }
 
 .main-nowPlayingView-nowPlayingWidget {
@@ -718,7 +718,7 @@ div#BeautifulLyrics-CardView {
 }
 
 #BeautifulLyrics-CardView .LyricsContent .ContentContainer {
-    height: 37cqh !important;
+    height: 43cqh !important;
 }
 
 
