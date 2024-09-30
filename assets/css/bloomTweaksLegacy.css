@@ -667,6 +667,65 @@ aside[aria-label*="Now playing view"] a:hover {
     text-decoration: none !important;
 }
 
+.main-nowPlayingView-nowPlayingWidget {
+    max-height: 100px !important;
+}
+
+.main-nowPlayingView-nowPlayingGrid {
+    flex-direction: row !important;
+}
+
+.main-nowPlayingView-nowPlayingWidget .GlueDropTarget.GlueDropTarget--albums.GlueDropTarget--tracks.GlueDropTarget--episodes.GlueDropTarget--local-tracks {
+    width: 100px !important;
+    height: 100px !important;
+}
+
+.main-nowPlayingView-contextItemInfo, .main-nowPlayingView-nowPlayingGrid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    width: -webkit-fill-available;
+    /* background: blue; */
+    margin-left: 50px;
+}
+
+.Root__right-sidebar:has(.main-nowPlayingView-section,canvas) .main-nowPlayingView-section {
+    background-color: rgb(8 8 8 / 50%) !important;
+    backdrop-filter: blur(var(--blur-radius)) saturate(0.5) brightness(100%) !important;
+}
+
+.main-nowPlayingView-section.main-nowPlayingView-queue {
+    margin-bottom: 10px !important;
+}
+
+.main-nowPlayingView-nowPlayingWidget {
+    order: -3 !important;
+}
+
+.LoadingLyricsCard.Loading,
+div#BeautifulLyrics-CardView {
+    order: -2 !important;
+}
+
+.main-nowPlayingView-section.main-nowPlayingView-queue {
+    order: -1 !important;
+}
+
+.main-nowPlayingView-section.main-nowPlayingView-credits {
+    margin-bottom: 10px;
+}
+
+#BeautifulLyrics-CardView,
+.LoadingLyricsCard.Loading {
+    height: 450px !important;
+    max-height: 450px !important;
+}
+
+#BeautifulLyrics-CardView .LyricsContent .ContentContainer {
+    height: 37cqh !important;
+}
+
 
 
 /* -------------------------------------- Event Page ------------------------------------- */
@@ -1706,7 +1765,7 @@ button.main-repeatButton-button.main-repeatButton-active svg {
 
 
 
-@keyframes rotating {
+/* @keyframes rotating {
     from {
         transform: rotate(0deg);
     }
@@ -1723,7 +1782,7 @@ button.main-repeatButton-button.main-repeatButton-active svg {
 
 .main-coverSlotCollapsed-container.main-coverSlotCollapsed-navAltContainer .cover-art {
     clip-path: circle(50% at 50% 50%);
-}
+} */
 
 /*
 .main-nowPlayingBar-left button {
@@ -1896,7 +1955,8 @@ span.encore-text.encore-text-body-small.ArQQy9kpoXLmafHpoi6u.FGrkEs4xa3OtWqaSmtv
 }
 
 .main-trackList-trackListHeaderStuck.main-trackList-trackListHeader {
-    top: 40px !important;
+    /* top: 40px !important; */
+    transform: translateY(-24px);
 }
 
 
