@@ -699,6 +699,16 @@ aside[aria-label*="Now playing view"] a:hover {
     order: -3 !important;
 }
 
+.main-nowPlayingView-coverArtContainer.hCImOEZCJwYaSy2r1Xgx.pUIBQ9cykHKYx2A2ZIPA {
+    height: 100px !important;
+}
+
+.ylBRlfNqGnzVa4kjUQGP,
+.ylBRlfNqGnzVa4kjUQGP div {
+    max-height: 100px !important;
+    height: 100px !important;
+}
+
 .LoadingLyricsCard.Loading,
 div#BeautifulLyrics-CardView {
     order: -2 !important;
