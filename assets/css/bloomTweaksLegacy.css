@@ -669,10 +669,12 @@ aside[aria-label*="Now playing view"] a:hover {
 
 .main-nowPlayingView-nowPlayingWidget {
     max-height: 100px !important;
+    overflow: visible;
 }
 
 .main-nowPlayingView-nowPlayingGrid {
     flex-direction: row !important;
+    overflow: visible;  
 }
 
 .main-nowPlayingView-nowPlayingWidget .GlueDropTarget.GlueDropTarget--albums.GlueDropTarget--tracks.GlueDropTarget--episodes.GlueDropTarget--local-tracks {
@@ -701,12 +703,14 @@ aside[aria-label*="Now playing view"] a:hover {
 
 .main-nowPlayingView-coverArtContainer.hCImOEZCJwYaSy2r1Xgx.pUIBQ9cykHKYx2A2ZIPA {
     height: 100px !important;
+    overflow: visible;
 }
 
 .ylBRlfNqGnzVa4kjUQGP,
 .ylBRlfNqGnzVa4kjUQGP div {
     max-height: 100px !important;
     height: 100px !important;
+    overflow: visible;
 }
 
 .LoadingLyricsCard.Loading,
@@ -723,12 +727,34 @@ div#BeautifulLyrics-CardView {
 }
 
 #BeautifulLyrics-CardView, .LoadingLyricsCard.Loading {
-    height: 515px !important;
     max-height: 515px !important;
+    height: fit-content !important;
 }
 
 #BeautifulLyrics-CardView .LyricsContent .ContentContainer {
     height: 43cqh !important;
+}
+
+button.Button-sc-1dqy6lx-0.Button-textSubdued-small-small-buttonTertiary-condensed-useBrowserDefaultFocusStyle.encore-text-body-small-bold.main-nowPlayingView-creditsShowAll::after,
+button.Button-sc-1dqy6lx-0.Button-textSubdued-small-small-buttonTertiary-condensed-useBrowserDefaultFocusStyle.encore-text-body-small-bold.main-nowPlayingView-openQueue::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    background: var(--spice-subtext);
+    width: 18px;
+    height: 18px;
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_arrow_right_24_filled.svg);
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_arrow_right_24_filled.svg);
+}
+
+.main-nowPlayingView-openQueue {
+    width: 18px !important;
+    height: 10px !important;
+    font-size: 0 !important;
+}
+
+.main-nowPlayingView-openQueue:hover {
+    color: transparent !important;
 }
 
 
@@ -827,6 +853,7 @@ button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-condense
 button.main-topBar-button[aria-label*="playlist-stats"] svg {
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/bxs-bar-chart-alt-2.svg) !important;
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/bxs-bar-chart-alt-2.svg) !important;
+    background: var(--spice-subtext);
 }
 
 button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-condensed-useBrowserDefaultFocusStyle.main-globalNav-icon[aria-label*="Full App Display"] svg,
@@ -1452,6 +1479,12 @@ p.popup-row {
 
 #stats-app .stats-genreText {
     margin-left: 10px !important;
+}
+
+span.main-tag-container {
+    width: 13px !important;
+    border-radius: 4px !important;
+    text-align: center !important;
 }
 
 /* .contentSpacing {
