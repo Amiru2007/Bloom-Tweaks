@@ -670,6 +670,7 @@ aside[aria-label*="Now playing view"] a:hover {
 .main-nowPlayingView-nowPlayingWidget {
     max-height: 100px !important;
     overflow: visible;
+    margin-top: 15px !important;
 }
 
 .main-nowPlayingView-nowPlayingGrid {
@@ -732,7 +733,7 @@ div#BeautifulLyrics-CardView {
 }
 
 #BeautifulLyrics-CardView .LyricsContent .ContentContainer {
-    height: 43cqh !important;
+    height: calc(41cqh + 3px) !important;
 }
 
 button.Button-sc-1dqy6lx-0.Button-textSubdued-small-small-buttonTertiary-condensed-useBrowserDefaultFocusStyle.encore-text-body-small-bold.main-nowPlayingView-creditsShowAll::after,
@@ -747,12 +748,14 @@ button.Button-sc-1dqy6lx-0.Button-textSubdued-small-small-buttonTertiary-condens
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_arrow_right_24_filled.svg);
 }
 
+.main-nowPlayingView-creditsShowAll,
 .main-nowPlayingView-openQueue {
     width: 18px !important;
     height: 10px !important;
     font-size: 0 !important;
 }
 
+.main-nowPlayingView-creditsShowAll:hover,
 .main-nowPlayingView-openQueue:hover {
     color: transparent !important;
 }
