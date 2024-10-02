@@ -635,6 +635,62 @@ button.Button-sc-1dqy6lx-0[aria-label*="Next"] svg.Svg-sc-ytk21e-0.Svg-img-icon-
     height: 24px !important;
 }
 
+button.Button-sc-1dqy6lx-0[aria-label*="Enable shuffle"],
+button.Button-sc-1dqy6lx-0[aria-label*="Disable shuffle"],
+button.Button-sc-1dqy6lx-0[aria-label*="Enable repeat"],
+button.Button-sc-1dqy6lx-0[aria-label*="Disable repeat"],
+button.Button-sc-1dqy6lx-0[aria-label*="Enable repeat one"] {
+    padding: 0 25px !important;
+}
+
+button.Button-sc-1dqy6lx-0[aria-label*="Enable shuffle"] path,
+button.Button-sc-1dqy6lx-0[aria-label*="Disable shuffle"] path,
+button.Button-sc-1dqy6lx-0[aria-label*="Enable repeat"] path,
+button.Button-sc-1dqy6lx-0[aria-label*="Disable repeat"] path,
+button.Button-sc-1dqy6lx-0[aria-label*="Enable repeat one"] path {
+    opacity: 0 !important;
+}
+
+button.Button-sc-1dqy6lx-0[aria-label*="Enable shuffle"] svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
+    mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/refs/heads/main/assets/fluentui-system-icons/ic_fluent_arrow_shuffle_24_regular.svg);
+    -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/refs/heads/main/assets/fluentui-system-icons/ic_fluent_arrow_shuffle_24_regular.svg);
+    background-color: var(--text-subdued) !important;
+    width: 22px !important;
+    height: 22px !important;
+}
+
+button.Button-sc-1dqy6lx-0[aria-label*="Disable shuffle"] svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
+    mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/refs/heads/main/assets/fluentui-system-icons/ic_fluent_arrow_shuffle_24_filled.svg);
+    -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/refs/heads/main/assets/fluentui-system-icons/ic_fluent_arrow_shuffle_24_filled.svg);
+    background-color: var(--spice-accent) !important;
+    width: 22px !important;
+    height: 22px !important;
+}
+
+button.Button-sc-1dqy6lx-0[aria-label*="Enable repeat"] svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
+    mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/refs/heads/main/assets/fluentui-system-icons/ic_fluent_arrow_repeat_all_off_24_regular.svg);
+    -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/refs/heads/main/assets/fluentui-system-icons/ic_fluent_arrow_repeat_all_off_24_regular.svg);
+    background-color: var(--text-subdued) !important;
+    width: 22px !important;
+    height: 22px !important;
+}
+
+button.Button-sc-1dqy6lx-0[aria-label*="Enable repeat one"] svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
+    mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/refs/heads/main/assets/fluentui-system-icons/ic_fluent_arrow_repeat_all_24_filled.svg);
+    -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/refs/heads/main/assets/fluentui-system-icons/ic_fluent_arrow_repeat_all_24_filled.svg);
+    background-color: var(--spice-accent) !important;
+    width: 22px !important;
+    height: 22px !important;
+}
+
+button.Button-sc-1dqy6lx-0[aria-label*="Disable repeat"] svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
+    mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/refs/heads/main/assets/fluentui-system-icons/ic_fluent_arrow_repeat_all_once_24_filled.svg);
+    -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/refs/heads/main/assets/fluentui-system-icons/ic_fluent_arrow_repeat_all_once_24_filled.svg);
+    background-color: var(--spice-accent) !important;
+    width: 22px !important;
+    height: 22px !important;
+}
+
 .playback-bar .playback-progressbar {
     height: 20px !important;
 }
@@ -758,6 +814,21 @@ button.Button-sc-1dqy6lx-0.Button-textSubdued-small-small-buttonTertiary-condens
 .main-nowPlayingView-creditsShowAll:hover,
 .main-nowPlayingView-openQueue:hover {
     color: transparent !important;
+}
+
+.main-nowPlayingView-queue .ix_8kg3iUb9VS5SmTnBY {
+    margin-right: 0 !important;
+}
+
+.main-nowPlayingView-queue .ix_8kg3iUb9VS5SmTnBY svg {
+    background: var(--spice-text);
+    mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg);
+    -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg);
+}
+
+.BoxComponent-group-listRow-naked-isInteractive-minBlockSize_56px-padding_8px:hover::after {
+    /* background-color: rgba(var(--spice-rgb-highlight-elevated)); */
+    background: rgba(var(--spice-rgb-card), 0.3) !important;
 }
 
 
@@ -1773,8 +1844,8 @@ li.main-yourLibraryX-navItem a[aria-label*="Made for you"]:hover svg.made-for-yo
 .player-controls__buttons button {
     max-height: var(--button-size);
     max-width: var(--button-size);
-    padding-left: 10px !important;
-    padding-right: 10px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
     background: transparent;
     border: none;
     cursor: pointer;
