@@ -635,6 +635,62 @@ button.Button-sc-1dqy6lx-0[aria-label*="Next"] svg.Svg-sc-ytk21e-0.Svg-img-icon-
     height: 24px !important;
 }
 
+button.Button-sc-1dqy6lx-0[aria-label*="Enable shuffle"],
+button.Button-sc-1dqy6lx-0[aria-label*="Disable shuffle"],
+button.Button-sc-1dqy6lx-0[aria-label*="Enable repeat"],
+button.Button-sc-1dqy6lx-0[aria-label*="Disable repeat"],
+button.Button-sc-1dqy6lx-0[aria-label*="Enable repeat one"] {
+    padding: 0 25px !important;
+}
+
+button.Button-sc-1dqy6lx-0[aria-label*="Enable shuffle"] path,
+button.Button-sc-1dqy6lx-0[aria-label*="Disable shuffle"] path,
+button.Button-sc-1dqy6lx-0[aria-label*="Enable repeat"] path,
+button.Button-sc-1dqy6lx-0[aria-label*="Disable repeat"] path,
+button.Button-sc-1dqy6lx-0[aria-label*="Enable repeat one"] path {
+    opacity: 0 !important;
+}
+
+button.Button-sc-1dqy6lx-0[aria-label*="Enable shuffle"] svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
+    mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/refs/heads/main/assets/fluentui-system-icons/ic_fluent_arrow_shuffle_24_regular.svg);
+    -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/refs/heads/main/assets/fluentui-system-icons/ic_fluent_arrow_shuffle_24_regular.svg);
+    background-color: var(--text-subdued) !important;
+    width: 22px !important;
+    height: 22px !important;
+}
+
+button.Button-sc-1dqy6lx-0[aria-label*="Disable shuffle"] svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
+    mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/refs/heads/main/assets/fluentui-system-icons/ic_fluent_arrow_shuffle_24_filled.svg);
+    -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/refs/heads/main/assets/fluentui-system-icons/ic_fluent_arrow_shuffle_24_filled.svg);
+    background-color: var(--spice-accent) !important;
+    width: 22px !important;
+    height: 22px !important;
+}
+
+button.Button-sc-1dqy6lx-0[aria-label*="Enable repeat"] svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
+    mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/refs/heads/main/assets/fluentui-system-icons/ic_fluent_arrow_repeat_all_off_24_regular.svg);
+    -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/refs/heads/main/assets/fluentui-system-icons/ic_fluent_arrow_repeat_all_off_24_regular.svg);
+    background-color: var(--text-subdued) !important;
+    width: 22px !important;
+    height: 22px !important;
+}
+
+button.Button-sc-1dqy6lx-0[aria-label*="Enable repeat one"] svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
+    mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/refs/heads/main/assets/fluentui-system-icons/ic_fluent_arrow_repeat_all_24_filled.svg);
+    -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/refs/heads/main/assets/fluentui-system-icons/ic_fluent_arrow_repeat_all_24_filled.svg);
+    background-color: var(--spice-accent) !important;
+    width: 22px !important;
+    height: 22px !important;
+}
+
+button.Button-sc-1dqy6lx-0[aria-label*="Disable repeat"] svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
+    mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/refs/heads/main/assets/fluentui-system-icons/ic_fluent_arrow_repeat_all_once_24_filled.svg);
+    -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/refs/heads/main/assets/fluentui-system-icons/ic_fluent_arrow_repeat_all_once_24_filled.svg);
+    background-color: var(--spice-accent) !important;
+    width: 22px !important;
+    height: 22px !important;
+}
+
 .playback-bar .playback-progressbar {
     height: 20px !important;
 }
@@ -669,10 +725,13 @@ aside[aria-label*="Now playing view"] a:hover {
 
 .main-nowPlayingView-nowPlayingWidget {
     max-height: 100px !important;
+    overflow: visible;
+    margin-top: 15px !important;
 }
 
 .main-nowPlayingView-nowPlayingGrid {
     flex-direction: row !important;
+    overflow: visible;  
 }
 
 .main-nowPlayingView-nowPlayingWidget .GlueDropTarget.GlueDropTarget--albums.GlueDropTarget--tracks.GlueDropTarget--episodes.GlueDropTarget--local-tracks {
@@ -692,15 +751,23 @@ aside[aria-label*="Now playing view"] a:hover {
 
 .Root__right-sidebar:has(.main-nowPlayingView-section,canvas) .main-nowPlayingView-section {
     background-color: rgb(8 8 8 / 50%) !important;
-    backdrop-filter: blur(var(--blur-radius)) saturate(0.5) brightness(100%) !important;
-}
-
-.main-nowPlayingView-section.main-nowPlayingView-queue {
-    margin-bottom: 10px !important;
+    backdrop-filter: blur(var(--blur-radius)) saturate(0.5) brightness(60%) !important;
 }
 
 .main-nowPlayingView-nowPlayingWidget {
     order: -3 !important;
+}
+
+.main-nowPlayingView-coverArtContainer.hCImOEZCJwYaSy2r1Xgx.pUIBQ9cykHKYx2A2ZIPA {
+    height: 100px !important;
+    overflow: visible;
+}
+
+.ylBRlfNqGnzVa4kjUQGP,
+.ylBRlfNqGnzVa4kjUQGP div {
+    max-height: 100px !important;
+    height: 100px !important;
+    overflow: visible;
 }
 
 .LoadingLyricsCard.Loading,
@@ -713,17 +780,55 @@ div#BeautifulLyrics-CardView {
 }
 
 .main-nowPlayingView-section.main-nowPlayingView-credits {
-    margin-bottom: 10px;
+    margin-bottom: 10px !important;
 }
 
-#BeautifulLyrics-CardView,
-.LoadingLyricsCard.Loading {
-    height: 450px !important;
-    max-height: 450px !important;
+#BeautifulLyrics-CardView, .LoadingLyricsCard.Loading {
+    max-height: 515px !important;
+    height: fit-content !important;
 }
 
 #BeautifulLyrics-CardView .LyricsContent .ContentContainer {
-    height: 37cqh !important;
+    height: calc(41cqh + 3px) !important;
+}
+
+button.Button-sc-1dqy6lx-0.Button-textSubdued-small-small-buttonTertiary-condensed-useBrowserDefaultFocusStyle.encore-text-body-small-bold.main-nowPlayingView-creditsShowAll::after,
+button.Button-sc-1dqy6lx-0.Button-textSubdued-small-small-buttonTertiary-condensed-useBrowserDefaultFocusStyle.encore-text-body-small-bold.main-nowPlayingView-openQueue::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    background: var(--spice-subtext);
+    width: 18px;
+    height: 18px;
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_arrow_right_24_filled.svg);
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_arrow_right_24_filled.svg);
+}
+
+.main-nowPlayingView-creditsShowAll,
+.main-nowPlayingView-openQueue {
+    width: 18px !important;
+    height: 10px !important;
+    font-size: 0 !important;
+}
+
+.main-nowPlayingView-creditsShowAll:hover,
+.main-nowPlayingView-openQueue:hover {
+    color: transparent !important;
+}
+
+.main-nowPlayingView-queue .ix_8kg3iUb9VS5SmTnBY {
+    margin-right: 0 !important;
+}
+
+.main-nowPlayingView-queue .ix_8kg3iUb9VS5SmTnBY svg {
+    background: var(--spice-text);
+    mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg);
+    -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg);
+}
+
+.BoxComponent-group-listRow-naked-isInteractive-minBlockSize_56px-padding_8px:hover::after {
+    /* background-color: rgba(var(--spice-rgb-highlight-elevated)); */
+    background: rgba(var(--spice-rgb-card), 0.3) !important;
 }
 
 
@@ -818,11 +923,24 @@ button.main-topBar-button svg path {
     opacity: 0 !important;
 }
 
-button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-condensed-useBrowserDefaultFocusStyle.main-globalNav-icon[aria-label*="playlist-stats"] svg,
+.Button-medium-medium-buttonTertiary-iconOnly-condensed-disabled-isUsingKeyboard-useBrowserDefaultFocusStyle {
+    min-block-size: 0 !important;
+    order: -99;
+}
+
+.main-topBar-buddyFeed[aria-label*="playlist-stats"] svg {
+    background: var(--spice-text);
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/align-start-vertical.svg) !important;
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/align-start-vertical.svg) !important;
+    width: 18px;
+    height: 18px;
+}
+/* button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-condensed-useBrowserDefaultFocusStyle.main-globalNav-icon[aria-label*="playlist-stats"] svg,
 button.main-topBar-button[aria-label*="playlist-stats"] svg {
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/bxs-bar-chart-alt-2.svg) !important;
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/bxs-bar-chart-alt-2.svg) !important;
-}
+    background: var(--spice-subtext);
+} */
 
 button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-condensed-useBrowserDefaultFocusStyle.main-globalNav-icon[aria-label*="Full App Display"] svg,
 button.main-topBar-button[aria-label*="Full App Display"] svg {
@@ -1449,6 +1567,12 @@ p.popup-row {
     margin-left: 10px !important;
 }
 
+span.main-tag-container {
+    width: 13px !important;
+    border-radius: 4px !important;
+    text-align: center !important;
+}
+
 /* .contentSpacing {
     margin-bottom: 18px !important;
 } */
@@ -1732,8 +1856,8 @@ li.main-yourLibraryX-navItem a[aria-label*="Made for you"]:hover svg.made-for-yo
 .player-controls__buttons button {
     max-height: var(--button-size);
     max-width: var(--button-size);
-    padding-left: 10px !important;
-    padding-right: 10px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
     background: transparent;
     border: none;
     cursor: pointer;

@@ -923,12 +923,24 @@ button.main-topBar-button svg path {
     opacity: 0 !important;
 }
 
-button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-condensed-useBrowserDefaultFocusStyle.main-globalNav-icon[aria-label*="playlist-stats"] svg,
+.Button-medium-medium-buttonTertiary-iconOnly-condensed-disabled-isUsingKeyboard-useBrowserDefaultFocusStyle {
+    min-block-size: 0 !important;
+    order: -99;
+}
+
+.main-topBar-buddyFeed[aria-label*="playlist-stats"] svg {
+    background: var(--spice-text);
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/align-start-vertical.svg) !important;
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/align-start-vertical.svg) !important;
+    width: 18px;
+    height: 18px;
+}
+/* button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-condensed-useBrowserDefaultFocusStyle.main-globalNav-icon[aria-label*="playlist-stats"] svg,
 button.main-topBar-button[aria-label*="playlist-stats"] svg {
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/bxs-bar-chart-alt-2.svg) !important;
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/bxs-bar-chart-alt-2.svg) !important;
     background: var(--spice-subtext);
-}
+} */
 
 button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-condensed-useBrowserDefaultFocusStyle.main-globalNav-icon[aria-label*="Full App Display"] svg,
 button.main-topBar-button[aria-label*="Full App Display"] svg {
