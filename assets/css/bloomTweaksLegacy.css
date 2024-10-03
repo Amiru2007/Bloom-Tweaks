@@ -482,7 +482,7 @@ button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-
 }
 
 .jr794VV4i2iUBRhfvS5i .T3liC_3fbMOTilR4HHKD {
-    fill: var(--text-muted) !important;
+    fill: var(--spice-subtext) !important;
 }
 
 
@@ -587,6 +587,10 @@ a[class*="topBarActive"]::before {
 
 .main-topBar-background {
     background-color: rgba(var(--spice-rgb-sidebar), 1) !important;
+}
+
+.marketplace-tabBar-nav {
+    display: none !important;
 }
 
 
@@ -996,6 +1000,7 @@ button[aria-label*="Get Random Saved Album"]:hover svg {
 
 .main-noConnection-isNotice {
     background-color: transparent !important;
+    transform: translateX(8px);
 }
 
 button.main-actionButtons-button.main-topBarStatusIndicator-hasTooltip.main-noConnection-isNotice.main-topBarStatusIndicator-tooltipEnter.main-topBarStatusIndicator-tooltipEnterActive svg {
@@ -1192,7 +1197,11 @@ span.ListRowDetails__LineClamp-sc-sozu4l-1.LineClamp a,
 .loadingWrapper .status-icon {
     mask-image: url(https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_library_24_regular.svg) !important;
     -webkit-mask-image: url(https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_library_24_regular.svg) !important;
-    background-color: var(--spice-subtext) !important;
+    background-color: #ffffff !important;
+}
+
+.loadingWrapper .status-icon path {
+    display: none;
 }
 
 .text-input {
@@ -1297,6 +1306,11 @@ h2.TypeElement-cello-textBase-type {
 
 .TypeElement-viola-textSubdued-type {
     font-size: var(--encore-text-size-smaller);
+}
+
+.search-wrapper {
+    justify-content: flex-start !important;
+    align-items: flex-start;
 }
 
 /*
@@ -2012,7 +2026,7 @@ a.muHL0_3HjlqTZDoapgc9[href*="https://en.wikipedia.org/"] svg path {
     border-radius: var(--border-radius-1);
 }
 
-.b_dSllo9kearPhsw_MSp,
+/* .b_dSllo9kearPhsw_MSp, */
 .anPfvyDzeqR3CKW4gHUP {
     padding-top: 16px;
 }
