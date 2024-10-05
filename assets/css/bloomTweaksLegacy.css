@@ -753,7 +753,7 @@ aside[aria-label*="Now playing view"] a:hover {
     margin-left: 50px;
 }
 
-.Root__right-sidebar:has(.main-nowPlayingView-section,canvas) .main-nowPlayingView-section {
+/* .Root__right-sidebar:has(.main-nowPlayingView-section,canvas) .main-nowPlayingView-section {
     background-color: rgb(8 8 8 / 50%) !important;
     backdrop-filter: blur(var(--blur-radius)) saturate(0.5) brightness(60%) !important;
 }
@@ -831,9 +831,8 @@ button.Button-sc-1dqy6lx-0.Button-textSubdued-small-small-buttonTertiary-condens
 }
 
 .BoxComponent-group-listRow-naked-isInteractive-minBlockSize_56px-padding_8px:hover::after {
-    /* background-color: rgba(var(--spice-rgb-highlight-elevated)); */
     background: rgba(var(--spice-rgb-card), 0.3) !important;
-}
+} */
 
 
 
