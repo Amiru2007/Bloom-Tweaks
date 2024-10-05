@@ -589,9 +589,9 @@ a[class*="topBarActive"]::before {
     background-color: rgba(var(--spice-rgb-sidebar), 1) !important;
 }
 
-.marketplace-tabBar-nav {
+/* .marketplace-tabBar-nav {
     display: none !important;
-}
+} */
 
 
 
