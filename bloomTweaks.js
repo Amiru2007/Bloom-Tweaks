@@ -63,37 +63,37 @@ function waitForSpicetify() {
     }
 
     // Function to move the external button to the desired parent and apply classes
-    function moveExternalExtensionButtons() {
-        const button = document.querySelector('button[aria-label="playlist-stats"]');
-        const newParent = document.querySelector('.main-actionButtons');
+    // function moveExternalExtensionButtons() {
+    //     const button = document.querySelector('button[aria-label="playlist-stats"]');
+    //     const newParent = document.querySelector('.main-actionButtons');
 
-        if (button && newParent) {
-            // Prevent re-adding the button if it's already moved
-            if (!newParent.contains(button)) {
-                // Move the button to the new parent
-                newParent.appendChild(button);
+    //     if (button && newParent) {
+    //         // Prevent re-adding the button if it's already moved
+    //         if (!newParent.contains(button)) {
+    //             // Move the button to the new parent
+    //             newParent.appendChild(button);
 
-                // Add new classes to the button to match the other children in the new parent
-                button.classList.add(
-                    'Button-sc-1dqy6lx-0',
-                    'Button-small-small-buttonTertiary-condensedAll-useBrowserDefaultFocusStyle',
-                    'encore-text-body-small-bold',
-                    'main-topBar-buddyFeed'
-                );
+    //             // Add new classes to the button to match the other children in the new parent
+    //             button.classList.add(
+    //                 'Button-sc-1dqy6lx-0',
+    //                 'Button-small-small-buttonTertiary-condensedAll-useBrowserDefaultFocusStyle',
+    //                 'encore-text-body-small-bold',
+    //                 'main-topBar-buddyFeed'
+    //             );
                 
-                console.log('Button successfully moved and classes added.');
-            }
-        } else {
-            console.error('Button or new parent not found.');
-        }
-    }
+    //             console.log('Button successfully moved and classes added.');
+    //         }
+    //     } else {
+    //         console.error('Button or new parent not found.');
+    //     }
+    // }
 
     // Initialize extension functionality (wait for DOM to be loaded)
     function initExtension() {
         // Run once on load
         updateButtonState();
         addArtistButtonClass();
-        moveExternalExtensionButtons();
+        // moveExternalExtensionButtons();
 
         // MutationObserver to watch for dynamic changes
         const observer = new MutationObserver(() => {
@@ -101,7 +101,7 @@ function waitForSpicetify() {
             setTimeout(() => {
                 updateButtonState();
                 addArtistButtonClass();
-                moveExternalExtensionButtons();
+                // moveExternalExtensionButtons();
             }, 100);  // Delay by 100ms to avoid rapid reflows
         });
 
