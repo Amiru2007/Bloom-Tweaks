@@ -1362,8 +1362,23 @@ button:hover svg.Svg-sc-ytk21e-0.Svg-img-16-icon.LyricsPageIcon {
     background: var(--spice-text) !important;
 }
 
-button.main-genericButton-button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-isUsingKeyboard-useBrowserDefaultFocusStyle.play.main-genericButton-buttonActive.main-genericButton-buttonActiveDot svg {
+.main-genericButton-buttonActiveDot:has(.lucide-picture-in-picture-2) svg,
+button:has(.LyricsPageIcon) svg {
     background: var(--spice-accent) !important;
+}
+
+.main-genericButton-buttonActiveDot:has(.lucide-picture-in-picture-2) svg {
+    background: var(--spice-accent) !important;
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/picture-in-picture-2.svg) !important;
+}
+
+.main-genericButton-buttonActiveDot:has(.lucide-picture-in-picture-2) path,
+.main-genericButton-buttonActiveDot:has(.lucide-picture-in-picture-2) rect {
+    display: none;
+}
+
+.main-genericButton-buttonActiveDot:has(.lucide-picture-in-picture-2)::after {
+    margin-left: 0px !important;
 }
 
 button.main-genericButton-button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-isUsingKeyboard-useBrowserDefaultFocusStyle.play.main-genericButton-buttonActive.main-genericButton-buttonActiveDot::after {

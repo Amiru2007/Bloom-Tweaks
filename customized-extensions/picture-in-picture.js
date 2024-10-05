@@ -40,10 +40,10 @@
             height: 16px;
         }
         .album {
-            height: 60px;
+            height: 56px;
             aspect-ratio: 1 / 1;
-            border-radius: 6px;
-            box-shadow: 3px 3px 6px #252525;
+            border-radius: 4px;
+            /* box-shadow: 1px 1px 2px #1e1e1eb8; */
         }
         .main {
             width: 100%;
@@ -58,6 +58,7 @@
             width: 100%;
             align-items: center;
             justify-content: space-between;
+            gap: 20px;
         }
         .song-text {
             display: flex;
@@ -65,11 +66,13 @@
             justify-content: center;
             flex-direction: column;
             height: 60px;
+            width: -webkit-fill-available;
         }
         .controls {
             display: flex;
             justify-content: center;
             gap: 40px;
+            /* padding: 8px 0 22px 0; */
             padding: 15px 0;
         }
         .title {
@@ -95,16 +98,28 @@
                 fill: #999;
             }
         }
+
         .progress {
-            height: 5px;
+            height: 4px;
             position: absolute;
-            bottom: 0;
+            bottom: 2px;
             width: 100%;
+            opacity: 0;
+            transition: all 0.5s ease;
+            background: #444444;
+            border-radius: 9px;
             > .bar {
-                background: #7bdb0f;
+                background: #878787;
                 height: 100%;
                 width: 0;
+                border-radius: 9px;
             }
+        }
+        .main-container:hover .progress {
+            opacity: 1;
+        }
+        .controls .button {
+            transform: scale(0.76);
         }
 
         /*
@@ -156,15 +171,15 @@
                     <div class="play button">${n ? v.pause : v.play}</div>
                     <div class="next button">${v.next}</div>
                 </div>
-                <!-- <div class="progress">
+                <div class="progress">
                     <div class="bar" style="width: ${a / t * 100}%"></div>
-                </div> -->
+                </div>
             </div>
         </div>
     </div>
     `, s.querySelector(".prev").addEventListener("click", Spicetify.Player.back), s.querySelector(".play").addEventListener("click", e => { Spicetify.Player.togglePlay() }), s.querySelector(".next").addEventListener("click", Spicetify.Player.next), s.querySelector(".close").addEventListener("click", () => { e.close() }))
     } function a() { var e; s && (e = s.querySelector(".play"), n = !n, e.innerHTML = n ? v.pause : v.play) } n = Spicetify.Player.isPlaying(), v = {
-        pip: '<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="M80-520v-80h144L52-772l56-56 172 172v-144h80v280H80Zm80 360q-33 0-56.5-23.5T80-240v-200h80v200h320v80H160Zm640-280v-280H440v-80h360q33 0 56.5 23.5T880-720v280h-80ZM560-160v-200h320v200H560Z"/></svg>',
+        pip: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#909090" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-picture-in-picture-2"><path d="M21 9V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v10c0 1.1.9 2 2 2h4"/><rect width="10" height="7" x="12" y="13" rx="2"/></svg>',
         leave_pip: '<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="16px" fill="#555555"><path d="M160-160q-33 0-56.5-23.5T80-240v-280h80v280h640v-480H440v-80h360q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm523-140 57-57-124-123h104v-80H480v240h80v-103l123 123ZM80-600v-200h280v200H80Zm400 120Z"/></svg>',
         play: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M5 5.27368C5 3.56682 6.82609 2.48151 8.32538 3.2973L20.687 10.0235C22.2531 10.8756 22.2531 13.124 20.687 13.9762L8.32538 20.7024C6.82609 21.5181 5 20.4328 5 18.726V5.27368Z" fill="#ffffff"/></svg>',
         pause: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path d="M5.746 3a1.75 1.75 0 0 0-1.75 1.75v14.5c0 .966.784 1.75 1.75 1.75h3.5a1.75 1.75 0 0 0 1.75-1.75V4.75A1.75 1.75 0 0 0 9.246 3h-3.5ZM14.746 3a1.75 1.75 0 0 0-1.75 1.75v14.5c0 .966.784 1.75 1.75 1.75h3.5a1.75 1.75 0 0 0 1.75-1.75V4.75A1.75 1.75 0 0 0 18.246 3h-3.5Z" fill="#ffffff"/></svg>',
