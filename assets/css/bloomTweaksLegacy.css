@@ -1040,6 +1040,33 @@ button.main-actionButtons-button.main-topBarStatusIndicator-hasTooltip.main-noCo
     right: -7px;
 }
 
+button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-condensed-disabled-isUsingKeyboard-useBrowserDefaultFocusStyle.main-globalNav-icon.play svg {
+    height: 24px !important;
+    width: 24px !important;
+    background: var(--spice-subtext) !important;
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/bxs-bar-chart-alt-2.svg) !important;
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/bxs-bar-chart-alt-2.svg) !important;
+}
+
+button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-condensed-disabled-isUsingKeyboard-useBrowserDefaultFocusStyle.main-globalNav-icon.play {
+    padding: 12px !important;
+}
+
+.main-globalNav-historyButtons div::after {
+    content: '';
+    width: 1px;
+    height: 30px;
+    background: var(--spice-contour);
+    position: absolute;
+    top: 8px;
+    bottom: 8px;
+    margin-left: 5px;
+}
+
+button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-condensed-disabled-isUsingKeyboard-useBrowserDefaultFocusStyle.main-globalNav-icon.play path {
+    opacity: 0 !important;
+}
+
 
 
 /* -------------------------------------- New Release Page ------------------------------------- */
