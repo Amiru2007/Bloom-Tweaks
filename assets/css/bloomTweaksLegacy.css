@@ -18,6 +18,21 @@
     --rdp-accent-color: #0091f8 !important;
 } */
 
+
+
+/*-------------------------------------------------------------------------------- Custom Apps Configuration ---------------------------------------------------------------------------------*/
+
+
+button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle.link-subtle.main-globalNav-navLink.main-globalNav-link-icon.custom-navlink[aria-label*="Tags"] {
+    display: none !important;
+}
+
+
+
+
+
+
+
 ._Cq69xKZBtHaaeMZXIdk {
     display: none !important;
 }
@@ -749,7 +764,6 @@ aside[aria-label*="Now playing view"] a:hover {
     display: flex;
     height: 100%;
     width: -webkit-fill-available;
-    /* background: blue; */
     margin-left: 50px;
 }
 
@@ -781,6 +795,11 @@ div#BeautifulLyrics-CardView {
 
 .main-nowPlayingView-section.main-nowPlayingView-queue {
     order: -1 !important;
+    min-height: 130px !important;
+}
+
+.main-nowPlayingView-section.main-nowPlayingView-queue a[href*="/search"] {
+    margin-top: 18px !important;
 }
 
 .main-nowPlayingView-section.main-nowPlayingView-credits {
@@ -1377,14 +1396,14 @@ button:has(.LyricsPageIcon) svg {
     display: none;
 }
 
-.main-genericButton-buttonActiveDot:has(.lucide-picture-in-picture-2)::after {
-    margin-left: 0px !important;
-}
-
 button.main-genericButton-button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-isUsingKeyboard-useBrowserDefaultFocusStyle.play.main-genericButton-buttonActive.main-genericButton-buttonActiveDot::after {
     margin-left: 13px !important;
     /* margin-top: 5px; */
     bottom: -2px !important;
+}
+
+.main-genericButton-buttonActiveDot:has(.lucide-picture-in-picture-2)::after {
+    margin-left: 0px !important;
 }
 
 
@@ -1738,6 +1757,10 @@ li.main-yourLibraryX-navItem a[aria-label*="Made for you"]:hover svg.made-for-yo
     position: absolute;
     right: 8px;
     bottom: 8px;
+}
+
+#library-app .ix_8kg3iUb9VS5SmTnBY {
+    margin-right: 0 !important;
 }
 
 
