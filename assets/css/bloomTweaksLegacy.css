@@ -1943,16 +1943,20 @@ li.main-yourLibraryX-navItem a[aria-label*="Made for you"]:hover svg.made-for-yo
 
 
 .special-tag-button {
-    order: -2 !important;
+    order: -1 !important;
+    /* margin: 0 !important;
+    margin-left: -40px !important;
+    z-index: -1 !important; */
 }
 
 .special-tag-button-spotify {
-    order: -1 !important;
+    order: -2 !important;
 }
 
 .special-tag-button span.LegacyChipInner__ChipInnerComponent-sc-1qguixk-0.ChipInnerComponent-sm-isUsingKeyboard.tag-list-tag {
     background: var(--spice-text) !important;
     color: var(--spice-alt-text) !important;
+    /* padding-left: 46px !important; */
 }
 
 .special-tag-button-spotify span.LegacyChipInner__ChipInnerComponent-sc-1qguixk-0.ChipInnerComponent-sm-isUsingKeyboard.tag-list-tag {

@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --spice-accent: #4cc2ff !important;
     --spice-notification: #4cc2ff !important;
     --spice-button-active: #4cc2ff !important;
@@ -16,6 +16,45 @@
 
 .C1USyigFSYyc22_BmsgB .rdp {
     --rdp-accent-color: #0091f8 !important;
+} */
+
+:root {
+    --spice-accent: #1ed760 !important;
+    --spice-notification: #1ed760 !important;
+    --spice-button-active: #1ed760 !important;
+    --spice-button: #1ed760 !important;
+    --spice-rgb-accent: 30, 215, 96 !important;
+}
+/*
+.encore-dark-theme .encore-bright-accent-set {
+    --background-highlight: #99ebff !important;
+    --background-press: #0091f8 !important;
+    --background-elevated-base: #99ebff !important;
+    --background-elevated-highlight: #99ebff !important;
+    --background-elevated-press: #0091f8 !important;
+}
+
+.C1USyigFSYyc22_BmsgB .rdp {
+    --rdp-accent-color: #0091f8 !important;
+} */
+
+/*-------------------------------------------------------------------------------- Custom Apps Configuration ---------------------------------------------------------------------------------*/
+
+
+button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle.link-subtle.main-globalNav-navLink.main-globalNav-link-icon.custom-navlink[aria-label*="Tags"] {
+    display: none !important;
+}
+
+
+
+
+
+
+
+.main-contextMenu-highlightedText {
+    background-color: #90d5ff !important;
+    border-radius: 3px !important;
+    color: var(--spice-alt-text) !important;
 }
 
 ._Cq69xKZBtHaaeMZXIdk {
@@ -482,7 +521,7 @@ button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-
 }
 
 .jr794VV4i2iUBRhfvS5i .T3liC_3fbMOTilR4HHKD {
-    fill: var(--text-muted) !important;
+    fill: var(--spice-subtext) !important;
 }
 
 
@@ -588,6 +627,10 @@ a[class*="topBarActive"]::before {
 .main-topBar-background {
     background-color: rgba(var(--spice-rgb-sidebar), 1) !important;
 }
+
+/* .marketplace-tabBar-nav {
+    display: none !important;
+} */
 
 
 
@@ -745,7 +788,6 @@ aside[aria-label*="Now playing view"] a:hover {
     display: flex;
     height: 100%;
     width: -webkit-fill-available;
-    /* background: blue; */
     margin-left: 50px;
 }
 
@@ -773,13 +815,19 @@ aside[aria-label*="Now playing view"] a:hover {
 .LoadingLyricsCard.Loading,
 div#BeautifulLyrics-CardView {
     order: -2 !important;
+    backdrop-filter: brightness(0.92);
 }
 
 .main-nowPlayingView-section.main-nowPlayingView-queue {
     order: -1 !important;
+    min-height: 130px !important;
 }
 
-.main-nowPlayingView-section.main-nowPlayingView-credits {
+.main-nowPlayingView-section.main-nowPlayingView-queue a[href*="/search"] {
+    margin-top: 18px !important;
+}
+
+.main-nowPlayingView-section:nth-last-child(2) {
     margin-bottom: 10px !important;
 }
 
@@ -827,8 +875,11 @@ button.Button-sc-1dqy6lx-0.Button-textSubdued-small-small-buttonTertiary-condens
 }
 
 .BoxComponent-group-listRow-naked-isInteractive-minBlockSize_56px-padding_8px:hover::after {
-    /* background-color: rgba(var(--spice-rgb-highlight-elevated)); */
     background: rgba(var(--spice-rgb-card), 0.3) !important;
+}
+
+.artist-artistOnTour-timeAndVenue.artist-artistOnTour-condensed {
+    color: var(--text-subdued) !important;
 }
 
 
@@ -996,6 +1047,7 @@ button[aria-label*="Get Random Saved Album"]:hover svg {
 
 .main-noConnection-isNotice {
     background-color: transparent !important;
+    transform: translateX(8px);
 }
 
 button.main-actionButtons-button.main-topBarStatusIndicator-hasTooltip.main-noConnection-isNotice.main-topBarStatusIndicator-tooltipEnter.main-topBarStatusIndicator-tooltipEnterActive svg {
@@ -1015,6 +1067,33 @@ button.main-actionButtons-button.main-topBarStatusIndicator-hasTooltip.main-noCo
     position: absolute;
     background: #353535;
     right: -7px;
+}
+
+button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-condensed-disabled-isUsingKeyboard-useBrowserDefaultFocusStyle.main-globalNav-icon.play svg {
+    height: 24px !important;
+    width: 24px !important;
+    background: var(--spice-subtext) !important;
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/bxs-bar-chart-alt-2.svg) !important;
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/bxs-bar-chart-alt-2.svg) !important;
+}
+
+button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-condensed-disabled-isUsingKeyboard-useBrowserDefaultFocusStyle.main-globalNav-icon.play {
+    padding: 12px !important;
+}
+
+.main-globalNav-historyButtons div::after {
+    content: '';
+    width: 1px;
+    height: 30px;
+    background: var(--spice-contour);
+    position: absolute;
+    top: 8px;
+    bottom: 8px;
+    margin-left: 5px;
+}
+
+button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-condensed-disabled-isUsingKeyboard-useBrowserDefaultFocusStyle.main-globalNav-icon.play path {
+    opacity: 0 !important;
 }
 
 
@@ -1164,6 +1243,16 @@ span.ListRowDetails__LineClamp-sc-sozu4l-1.LineClamp a,
     padding: 0 12px 8px 12px;
 }
 
+/* button.LegacyChip__LegacyChipComponent-sc-tzfq94-0.LegacyChipComponent-checkbox-chip-sm-selected-useBrowserDefaultFocusStyle.encore-text-body-small[aria-checked*="true"] span::before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    background: var(--spice-alt-text);
+    margin-right: 8px;
+    margin-left: -3px;
+    border-radius: 50%;
+} */
+
 
 
 /* -------------------------------------- Spicetify Tags ------------------------------------- */
@@ -1192,7 +1281,11 @@ span.ListRowDetails__LineClamp-sc-sozu4l-1.LineClamp a,
 .loadingWrapper .status-icon {
     mask-image: url(https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_library_24_regular.svg) !important;
     -webkit-mask-image: url(https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_library_24_regular.svg) !important;
-    background-color: var(--spice-subtext) !important;
+    background-color: #ffffff !important;
+}
+
+.loadingWrapper .status-icon path {
+    display: none;
 }
 
 .text-input {
@@ -1299,6 +1392,11 @@ h2.TypeElement-cello-textBase-type {
     font-size: var(--encore-text-size-smaller);
 }
 
+.search-wrapper {
+    justify-content: flex-start !important;
+    align-items: flex-start;
+}
+
 /*
 background-color: var(--spice-accent);
 font-weight: 500;
@@ -1349,14 +1447,29 @@ button:hover svg.Svg-sc-ytk21e-0.Svg-img-16-icon.LyricsPageIcon {
     background: var(--spice-text) !important;
 }
 
-button.main-genericButton-button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-isUsingKeyboard-useBrowserDefaultFocusStyle.play.main-genericButton-buttonActive.main-genericButton-buttonActiveDot svg {
+.main-genericButton-buttonActiveDot:has(.lucide-picture-in-picture-2) svg,
+button:has(.LyricsPageIcon) svg {
     background: var(--spice-accent) !important;
+}
+
+.main-genericButton-buttonActiveDot:has(.lucide-picture-in-picture-2) svg {
+    background: var(--spice-accent) !important;
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/picture-in-picture-2.svg) !important;
+}
+
+.main-genericButton-buttonActiveDot:has(.lucide-picture-in-picture-2) path,
+.main-genericButton-buttonActiveDot:has(.lucide-picture-in-picture-2) rect {
+    display: none;
 }
 
 button.main-genericButton-button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-isUsingKeyboard-useBrowserDefaultFocusStyle.play.main-genericButton-buttonActive.main-genericButton-buttonActiveDot::after {
     margin-left: 13px !important;
     /* margin-top: 5px; */
     bottom: -2px !important;
+}
+
+.main-genericButton-buttonActiveDot:has(.lucide-picture-in-picture-2)::after {
+    margin-left: 0px !important;
 }
 
 
@@ -1388,6 +1501,11 @@ p.popup-row {
     border-top-right-radius: 8px;
     border-bottom-left-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
+}
+
+.oncgBAFkunsYPz4icLG7 {
+    border-radius: var(--border-radius-1);
+    overflow: hidden;
 }
 
 
@@ -1712,6 +1830,10 @@ li.main-yourLibraryX-navItem a[aria-label*="Made for you"]:hover svg.made-for-yo
     bottom: 8px;
 }
 
+#library-app .ix_8kg3iUb9VS5SmTnBY {
+    margin-right: 0 !important;
+}
+
 
 
 /* -------------------------------------- Spicetify Library by Harbassan ------------------------------------- */
@@ -1838,13 +1960,57 @@ li.main-yourLibraryX-navItem a[aria-label*="Made for you"]:hover svg.made-for-yo
 
 
 
-.artist-button {
+.special-tag-button {
     order: -1 !important;
+    /* margin: 0 !important;
+    margin-left: -40px !important;
+    z-index: -1 !important; */
 }
 
-.artist-button span.LegacyChipInner__ChipInnerComponent-sc-1qguixk-0.ChipInnerComponent-sm-isUsingKeyboard.tag-list-tag {
+.special-tag-button-spotify {
+    order: -2 !important;
+}
+
+.special-tag-button span.LegacyChipInner__ChipInnerComponent-sc-1qguixk-0.ChipInnerComponent-sm-isUsingKeyboard.tag-list-tag {
     background: var(--spice-text) !important;
     color: var(--spice-alt-text) !important;
+    /* padding-left: 46px !important; */
+}
+
+.special-tag-button-spotify span.LegacyChipInner__ChipInnerComponent-sc-1qguixk-0.ChipInnerComponent-sm-isUsingKeyboard.tag-list-tag {
+    background: #1ed760 !important;
+    color: var(--spice-alt-text) !important;
+}
+
+button.special-tag-button-spotify span::before,
+button.LegacyChip__LegacyChipComponent-sc-tzfq94-0.LegacyChipComponent-checkbox-textBase-chip-sm-isUsingKeyboard.encore-text-body-small.special-tag-button span::before {
+    content: '';
+    background: var(--spice-alt-text);
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    margin-left: -6px;
+    /* transform: scale(0.7); */
+}
+
+button.LegacyChip__LegacyChipComponent-sc-tzfq94-0.LegacyChipComponent-checkbox-textBase-chip-sm-isUsingKeyboard.encore-text-body-small.special-tag-button[aria-label*="artist-tag"] span::before {
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_color_24_regular.svg);
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_color_24_regular.svg);
+}
+
+button.LegacyChip__LegacyChipComponent-sc-tzfq94-0.LegacyChipComponent-checkbox-textBase-chip-sm-isUsingKeyboard.encore-text-body-small.special-tag-button[aria-label*="collection-tag"] span::before {
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/shapes.svg);
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/shapes.svg);
+}
+
+button.LegacyChip__LegacyChipComponent-sc-tzfq94-0.LegacyChipComponent-checkbox-textBase-chip-sm-isUsingKeyboard.encore-text-body-small.special-tag-button[aria-label*="genre-tag"] span::before {
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/icons8-spotify.svg);
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/icons8-spotify.svg);
+}
+
+button.special-tag-button-spotify span::before {
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/icons8-spotify.svg);
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/icons8-spotify.svg);
 }
 
 
@@ -2012,7 +2178,7 @@ a.muHL0_3HjlqTZDoapgc9[href*="https://en.wikipedia.org/"] svg path {
     border-radius: var(--border-radius-1);
 }
 
-.b_dSllo9kearPhsw_MSp,
+/* .b_dSllo9kearPhsw_MSp, */
 .anPfvyDzeqR3CKW4gHUP {
     padding-top: 16px;
 }
