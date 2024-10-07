@@ -50,14 +50,30 @@ function waitForSpicetify() {
     function addArtistButtonClass() {
         const tagList = document.querySelector('.tag-list');
         if (!tagList) return;
-
+    
         const buttons = tagList.querySelectorAll('button[role="checkbox"]');
         buttons.forEach(button => {
             const span = button.querySelector('span');
-            if (span && (span.textContent.includes('Artist') || 
-                         span.textContent.includes('Genre') || 
-                         span.textContent.includes('Collection'))) {
-                button.classList.add('artist-button');
+            if (span) {
+                let label = '';
+    
+                if (span.textContent.includes('Artist')) {
+                    button.classList.add('special-tag-button');
+                    label = 'artist-tag';
+                } 
+                else if (span.textContent.includes('Genre')) {
+                    button.classList.add('special-tag-button');
+                    label = 'genre-tag';
+                } 
+                else if (span.textContent.includes('Collection')) {
+                    button.classList.add('special-tag-button');
+                    label = 'collection-tag';
+                }
+    
+                // Set the aria-label attribute dynamically
+                if (label) {
+                    button.setAttribute('aria-label', label);
+                }
             }
         });
     }
