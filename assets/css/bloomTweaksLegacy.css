@@ -1225,6 +1225,16 @@ span.ListRowDetails__LineClamp-sc-sozu4l-1.LineClamp a,
     padding: 0 12px 8px 12px;
 }
 
+/* button.LegacyChip__LegacyChipComponent-sc-tzfq94-0.LegacyChipComponent-checkbox-chip-sm-selected-useBrowserDefaultFocusStyle.encore-text-body-small[aria-checked*="true"] span::before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    background: var(--spice-alt-text);
+    margin-right: 8px;
+    margin-left: -3px;
+    border-radius: 50%;
+} */
+
 
 
 /* -------------------------------------- Spicetify Tags ------------------------------------- */
@@ -1933,6 +1943,10 @@ li.main-yourLibraryX-navItem a[aria-label*="Made for you"]:hover svg.made-for-yo
 
 
 .special-tag-button {
+    order: -2 !important;
+}
+
+.special-tag-button-spotify {
     order: -1 !important;
 }
 
@@ -1941,7 +1955,12 @@ li.main-yourLibraryX-navItem a[aria-label*="Made for you"]:hover svg.made-for-yo
     color: var(--spice-alt-text) !important;
 }
 
+.special-tag-button-spotify span.LegacyChipInner__ChipInnerComponent-sc-1qguixk-0.ChipInnerComponent-sm-isUsingKeyboard.tag-list-tag {
+    background: #1ed760 !important;
+    color: var(--spice-alt-text) !important;
+}
 
+button.special-tag-button-spotify span::before,
 button.LegacyChip__LegacyChipComponent-sc-tzfq94-0.LegacyChipComponent-checkbox-textBase-chip-sm-isUsingKeyboard.encore-text-body-small.special-tag-button span::before {
     content: '';
     background: var(--spice-alt-text);
@@ -1963,6 +1982,11 @@ button.LegacyChip__LegacyChipComponent-sc-tzfq94-0.LegacyChipComponent-checkbox-
 }
 
 button.LegacyChip__LegacyChipComponent-sc-tzfq94-0.LegacyChipComponent-checkbox-textBase-chip-sm-isUsingKeyboard.encore-text-body-small.special-tag-button[aria-label*="genre-tag"] span::before {
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/icons8-spotify.svg);
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/icons8-spotify.svg);
+}
+
+button.special-tag-button-spotify span::before {
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/icons8-spotify.svg);
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/icons8-spotify.svg);
 }

@@ -69,6 +69,10 @@ function waitForSpicetify() {
                     button.classList.add('special-tag-button');
                     label = 'collection-tag';
                 }
+                else if (span.textContent.includes('Spotify')) {
+                    button.classList.add('special-tag-button-spotify');
+                    label = 'spotify-tag';
+                }
     
                 // Set the aria-label attribute dynamically
                 if (label) {
