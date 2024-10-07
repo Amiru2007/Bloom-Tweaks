@@ -1949,6 +1949,7 @@ button.LegacyChip__LegacyChipComponent-sc-tzfq94-0.LegacyChipComponent-checkbox-
     height: 16px;
     margin-right: 8px;
     margin-left: -6px;
+    /* transform: scale(0.7); */
 }
 
 button.LegacyChip__LegacyChipComponent-sc-tzfq94-0.LegacyChipComponent-checkbox-textBase-chip-sm-isUsingKeyboard.encore-text-body-small.special-tag-button[aria-label*="artist-tag"] span::before {
