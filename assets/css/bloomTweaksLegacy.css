@@ -1112,9 +1112,9 @@ button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-condense
     border-radius: var(--border-radius-2) !important;
 }
 
-.ix_8kg3iUb9VS5SmTnBY {
+/* .ix_8kg3iUb9VS5SmTnBY {
     margin-right: 14px;
-}
+} */
 
 .TPNGFuTvzNVNHisumnhg:before {
     color: var(--spice-text) !important;
@@ -1488,6 +1488,13 @@ p.popup-row {
 .oncgBAFkunsYPz4icLG7 {
     border-radius: var(--border-radius-1);
     overflow: hidden;
+}
+
+.MKCgGhu_c8l6hsVuee46 .main-shelf-shelfGrid {
+    margin-inline: 0 !important;
+}
+.main-shelf-shelfGrid.deJGxfMNXUc8uApEGgoQ {
+    width: 100% !important;
 }
 
 

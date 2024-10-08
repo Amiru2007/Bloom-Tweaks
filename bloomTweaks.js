@@ -17,7 +17,7 @@ function waitForSpicetify() {
             const randomTimestamp = new Date().getTime();
             const link = document.createElement('link');
             link.rel = 'stylesheet';
-            link.href = `https://cdn.jsdelivr.net/gh/${repoOwner}/${repoName}@${latestCommitHash}/assets/css/bloomTweaks.css?ts=${randomTimestamp}`;
+            link.href = `https://cdn.jsdelivr.net/gh/${repoOwner}/${repoName}@${latestCommitHash}/assets/css/bloomTweaksLegacy.css?ts=${randomTimestamp}`;
             
             // Only append CSS after ensuring it has loaded successfully
             link.onload = () => {
