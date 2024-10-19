@@ -99,14 +99,29 @@ function waitForSpicetify() {
             return;
         }
     
-        const ambientContainer = createAmbientContainer();  // Reuse or create the container
+        const ambientContainer = createAmbientContainer();
         if (ambientContainer) {
-            // Set the album cover as the background image with a blur filter
             ambientContainer.style.backgroundImage = `url(${albumCoverUrl})`;
-            ambientContainer.style.backgroundSize = 'cover'; // Ensure the image covers the container
-            ambientContainer.style.backgroundPosition = 'center'; // Center the cover art
-            ambientContainer.style.filter = 'blur(10px)'; // Apply the blur effect
+    
+            // Trigger zoom effect when song changes
+            triggerZoomEffect(ambientContainer);
         }
+    }
+    
+    function triggerZoomEffect(element) {
+        // Reset the element's scale to 0
+        element.style.transform = 'scale(0)';
+        element.style.transition = 'transform 2s ease 0.2s'; // 2s transition time with 0.5s delay
+    
+        // Remove and re-add the element to the DOM to trigger the transition
+        const parent = element.parentNode;
+        parent.removeChild(element);
+        parent.appendChild(element); // Re-add the element
+    
+        // Wait a bit before applying the zoom-in effect
+        setTimeout(() => {
+            element.style.transform = 'scale(1)'; // Zoom to original size
+        }, 500); // Delay to wait for the transition to start
     }
     
     function setupDynamicAmbient() {
@@ -114,11 +129,10 @@ function waitForSpicetify() {
             updateAmbientEffect();
         });
     
-        updateAmbientEffect(); // Trigger the effect initially when extension loads
+        updateAmbientEffect();  // Call when the script first loads
     }
     
     function createAmbientContainer() {
-        // Check if the ambient container already exists
         let ambientContainer = document.getElementById('ambient-container');
         
         if (!ambientContainer) {
@@ -128,23 +142,27 @@ function waitForSpicetify() {
                 return null;
             }
     
-            // Create a new ambient container if it doesn't exist
             ambientContainer = document.createElement('div');
             ambientContainer.id = 'ambient-container';
-            ambientContainer.style.position = 'absolute';
-            ambientContainer.style.top = '11px';
-            ambientContainer.style.left = '8px';
-            ambientContainer.style.width = '64px';
-            ambientContainer.style.height = '64px';
-            ambientContainer.style.zIndex = '-1'; // Keep behind the cover art
-            ambientContainer.style.borderRadius = 'var(--border-radius-3)';
     
-            // Insert the container under the cover art section in the Now Playing Bar
+            // Apply the desired styles
+            ambientContainer.style.position = 'absolute';
+            ambientContainer.style.top = '12px';
+            ambientContainer.style.left = '9px';
+            ambientContainer.style.width = '62px';
+            ambientContainer.style.height = '62px';
+            ambientContainer.style.zIndex = '-1';
+            ambientContainer.style.borderRadius = '6px';
+            ambientContainer.style.backgroundSize = 'cover';
+            ambientContainer.style.backgroundPosition = 'center center';
+            ambientContainer.style.filter = 'blur(10px) brightness(90%)';
+            ambientContainer.style.transform = 'scale(0)'; // Start with scale 0
+    
             nowPlayingBar.appendChild(ambientContainer);
         }
     
         return ambientContainer;
-    }    
+    }
     
     function initExtension() {
         updateButtonState();
