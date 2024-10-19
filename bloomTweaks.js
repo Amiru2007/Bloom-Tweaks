@@ -92,7 +92,7 @@ function waitForSpicetify() {
         }
     
         const currentTrack = Spicetify.Player.data.item;
-        const albumCoverUrl = currentTrack.album.images[0]?.url; // Get the album cover URL
+        const albumCoverUrl = currentTrack.album.images[0]?.url;
     
         if (!albumCoverUrl) {
             console.warn('Album cover URL not found.');
@@ -103,25 +103,21 @@ function waitForSpicetify() {
         if (ambientContainer) {
             ambientContainer.style.backgroundImage = `url(${albumCoverUrl})`;
     
-            // Trigger zoom effect when song changes
             triggerZoomEffect(ambientContainer);
         }
     }
     
     function triggerZoomEffect(element) {
-        // Reset the element's scale to 0
         element.style.transform = 'scale(0)';
-        element.style.transition = 'transform 2s ease 0.2s'; // 2s transition time with 0.5s delay
+        element.style.transition = 'transform 2s ease 0.2s';
     
-        // Remove and re-add the element to the DOM to trigger the transition
         const parent = element.parentNode;
         parent.removeChild(element);
-        parent.appendChild(element); // Re-add the element
+        parent.appendChild(element);
     
-        // Wait a bit before applying the zoom-in effect
         setTimeout(() => {
-            element.style.transform = 'scale(1)'; // Zoom to original size
-        }, 500); // Delay to wait for the transition to start
+            element.style.transform = 'scale(1)';
+        }, 500);
     }
     
     function setupDynamicAmbient() {
@@ -129,7 +125,7 @@ function waitForSpicetify() {
             updateAmbientEffect();
         });
     
-        updateAmbientEffect();  // Call when the script first loads
+        updateAmbientEffect();
     }
     
     function createAmbientContainer() {
@@ -145,7 +141,6 @@ function waitForSpicetify() {
             ambientContainer = document.createElement('div');
             ambientContainer.id = 'ambient-container';
     
-            // Apply the desired styles
             ambientContainer.style.position = 'absolute';
             ambientContainer.style.top = '12px';
             ambientContainer.style.left = '9px';
@@ -156,7 +151,7 @@ function waitForSpicetify() {
             ambientContainer.style.backgroundSize = 'cover';
             ambientContainer.style.backgroundPosition = 'center center';
             ambientContainer.style.filter = 'blur(10px) brightness(90%)';
-            ambientContainer.style.transform = 'scale(0)'; // Start with scale 0
+            ambientContainer.style.transform = 'scale(0)';
     
             nowPlayingBar.appendChild(ambientContainer);
         }
