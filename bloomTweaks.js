@@ -4,7 +4,6 @@ function waitForSpicetify() {
         return;
     }
 
-    // Load Custom CSS with a cache-busting timestamp
     async function loadCustomCSS() {
         const repoOwner = 'Amiru2007';
         const repoName = 'Bloom-Tweaks';
@@ -19,10 +18,9 @@ function waitForSpicetify() {
             link.rel = 'stylesheet';
             link.href = `https://cdn.jsdelivr.net/gh/${repoOwner}/${repoName}@${latestCommitHash}/assets/css/bloomTweaksLegacy.css?ts=${randomTimestamp}`;
             
-            // Only append CSS after ensuring it has loaded successfully
             link.onload = () => {
                 console.log('Custom CSS loaded successfully');
-                initExtension();  // Initialize the extension only after CSS is loaded
+                initExtension();
             };
 
             document.head.append(link);
@@ -31,7 +29,6 @@ function waitForSpicetify() {
         }
     }
 
-    // Function to update the button state for play/pause icons
     function updateButtonState() {
         const buttons = document.querySelectorAll('button[aria-label]');
         buttons.forEach(button => {
@@ -46,7 +43,6 @@ function waitForSpicetify() {
         });
     }
 
-    // Function to add custom class to artist buttons
     function addArtistButtonClass() {
         const tagList = document.querySelector('.tag-list');
         if (!tagList) return;
@@ -74,61 +70,98 @@ function waitForSpicetify() {
                     label = 'spotify-tag';
                 }
     
-                // Set the aria-label attribute dynamically
                 if (label) {
                     button.setAttribute('aria-label', label);
                 }
             }
         });
     }
-
-    // Function to move the external button to the desired parent and apply classes
-    // function moveExternalExtensionButtons() {
-    //     const button = document.querySelector('button[aria-label="playlist-stats"]');
-    //     const newParent = document.querySelector('.main-actionButtons');
-
-    //     if (button && newParent) {
-    //         // Prevent re-adding the button if it's already moved
-    //         if (!newParent.contains(button)) {
-    //             // Move the button to the new parent
-    //             newParent.appendChild(button);
-
-    //             // Add new classes to the button to match the other children in the new parent
-    //             button.classList.add(
-    //                 'Button-sc-1dqy6lx-0',
-    //                 'Button-small-small-buttonTertiary-condensedAll-useBrowserDefaultFocusStyle',
-    //                 'encore-text-body-small-bold',
-    //                 'main-topBar-buddyFeed'
-    //             );
-                
-    //             console.log('Button successfully moved and classes added.');
-    //         }
-    //     } else {
-    //         console.error('Button or new parent not found.');
-    //     }
-    // }
-
-    // Initialize extension functionality (wait for DOM to be loaded)
+    async function updateAmbientEffect(retries = 10, delay = 100) {
+        if (!Spicetify.Player || !Spicetify.Player.data || !Spicetify.Player.data.item) {
+            console.warn('Spicetify Player or track data is not available. Retrying...');
+            if (retries > 0) {
+                setTimeout(() => {
+                    updateAmbientEffect(retries - 1, delay);
+                }, delay);
+                return;
+            } else {
+                console.error('Max retries reached. Exiting updateAmbientEffect.');
+            }
+        }
+    
+        const currentTrack = Spicetify.Player.data.item;
+    
+        try {
+            const colors = await Spicetify.colorExtractor(currentTrack.uri);
+    
+            if (!colors) {
+                console.warn('Color extraction failed.');
+                return;
+            }
+    
+            const ambientColor = colors.VIBRANT || colors.PROMINENT || colors.DESATURATED;
+    
+            const ambientContainer = createAmbientContainer();  // Reuse or create the container
+            if (ambientContainer) {
+                // ambientContainer.style.backgroundColor = ambientColor;
+                ambientContainer.style.backgroundImage = `linear-gradient(to right, ${ambientColor}, transparent)`;
+            }
+        } catch (error) {
+            console.error('Error extracting colors:', error);
+        }
+    }
+    
+    function setupDynamicAmbient() {
+        Spicetify.Player.addEventListener("songchange", () => {
+            updateAmbientEffect();
+        });
+    
+        updateAmbientEffect(); // Trigger the effect initially when extension loads
+    }
+    
+    function createAmbientContainer() {
+        // Check if the ambient container already exists
+        let ambientContainer = document.getElementById('ambient-container');
+        
+        if (!ambientContainer) {
+            const nowPlayingBar = document.querySelector('.main-nowPlayingBar-nowPlayingBar');
+            if (!nowPlayingBar) {
+                console.warn('Now Playing Bar container not found.');
+                return null;
+            }
+    
+            // Create a new ambient container if it doesn't exist
+            ambientContainer = document.createElement('div');
+            ambientContainer.id = 'ambient-container';
+            ambientContainer.style.position = 'absolute';
+            ambientContainer.style.top = '0';
+            ambientContainer.style.left = '0';
+            ambientContainer.style.width = '300px';
+            ambientContainer.style.height = '86px';
+            ambientContainer.style.zIndex = '-1';
+            ambientContainer.style.transition = 'background-color 0.5s';
+            ambientContainer.style.borderRadius = '6px 0 0 6px';
+            ambientContainer.style.filter = 'brightness(70%)';
+    
+            nowPlayingBar.appendChild(ambientContainer);
+        }
+    
+        return ambientContainer;
+    }
+    
     function initExtension() {
-        // Run once on load
         updateButtonState();
         addArtistButtonClass();
-        // moveExternalExtensionButtons();
 
-        // MutationObserver to watch for dynamic changes
         const observer = new MutationObserver(() => {
-            // Debounce DOM manipulations
             setTimeout(() => {
                 updateButtonState();
                 addArtistButtonClass();
-                // moveExternalExtensionButtons();
-            }, 100);  // Delay by 100ms to avoid rapid reflows
+            }, 100);
         });
 
-        // Observe the entire document's body for changes
         observer.observe(document.body, { childList: true, subtree: true });
 
-        // Add event listener to track button clicks and update UI accordingly
         document.body.addEventListener('click', event => {
             if (event.target.tagName === 'BUTTON' && event.target.getAttribute('aria-label')) {
                 updateButtonState();
@@ -137,9 +170,8 @@ function waitForSpicetify() {
         });
     }
 
-    // Load the CSS first, then initialize the extension
     loadCustomCSS();
+    setupDynamicAmbient();
 }
 
-// Execute the function to wait for Spicetify and initialize the extension
 waitForSpicetify();
