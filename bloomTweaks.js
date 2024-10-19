@@ -76,6 +76,7 @@ function waitForSpicetify() {
             }
         });
     }
+    
     async function updateAmbientEffect(retries = 10, delay = 100) {
         if (!Spicetify.Player || !Spicetify.Player.data || !Spicetify.Player.data.item) {
             console.warn('Spicetify Player or track data is not available. Retrying...');
@@ -86,28 +87,25 @@ function waitForSpicetify() {
                 return;
             } else {
                 console.error('Max retries reached. Exiting updateAmbientEffect.');
+                return;
             }
         }
     
         const currentTrack = Spicetify.Player.data.item;
+        const albumCoverUrl = currentTrack.album.images[0]?.url; // Get the album cover URL
     
-        try {
-            const colors = await Spicetify.colorExtractor(currentTrack.uri);
+        if (!albumCoverUrl) {
+            console.warn('Album cover URL not found.');
+            return;
+        }
     
-            if (!colors) {
-                console.warn('Color extraction failed.');
-                return;
-            }
-    
-            const ambientColor = colors.VIBRANT || colors.PROMINENT || colors.DESATURATED;
-    
-            const ambientContainer = createAmbientContainer();  // Reuse or create the container
-            if (ambientContainer) {
-                // ambientContainer.style.backgroundColor = ambientColor;
-                ambientContainer.style.backgroundImage = `linear-gradient(to right, ${ambientColor}, transparent)`;
-            }
-        } catch (error) {
-            console.error('Error extracting colors:', error);
+        const ambientContainer = createAmbientContainer();  // Reuse or create the container
+        if (ambientContainer) {
+            // Set the album cover as the background image with a blur filter
+            ambientContainer.style.backgroundImage = `url(${albumCoverUrl})`;
+            ambientContainer.style.backgroundSize = 'cover'; // Ensure the image covers the container
+            ambientContainer.style.backgroundPosition = 'center'; // Center the cover art
+            ambientContainer.style.filter = 'blur(10px)'; // Apply the blur effect
         }
     }
     
@@ -134,20 +132,19 @@ function waitForSpicetify() {
             ambientContainer = document.createElement('div');
             ambientContainer.id = 'ambient-container';
             ambientContainer.style.position = 'absolute';
-            ambientContainer.style.top = '0';
-            ambientContainer.style.left = '0';
-            ambientContainer.style.width = '300px';
-            ambientContainer.style.height = '86px';
-            ambientContainer.style.zIndex = '-1';
-            ambientContainer.style.transition = 'background-color 0.5s';
-            ambientContainer.style.borderRadius = '6px 0 0 6px';
-            ambientContainer.style.filter = 'brightness(70%)';
+            ambientContainer.style.top = '11px';
+            ambientContainer.style.left = '8px';
+            ambientContainer.style.width = '64px';
+            ambientContainer.style.height = '64px';
+            ambientContainer.style.zIndex = '-1'; // Keep behind the cover art
+            ambientContainer.style.borderRadius = 'var(--border-radius-3)';
     
+            // Insert the container under the cover art section in the Now Playing Bar
             nowPlayingBar.appendChild(ambientContainer);
         }
     
         return ambientContainer;
-    }
+    }    
     
     function initExtension() {
         updateButtonState();
