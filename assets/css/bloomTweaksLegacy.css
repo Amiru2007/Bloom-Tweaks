@@ -817,8 +817,8 @@ div#BeautifulLyrics-CardView {
     /* max-height: 0;
     height: 0;
     opacity: 0; */
-    max-height: 515px;
-    height: fit-content;
+    max-height: 515px !important;
+    height: fit-content !important;
     opacity: 1;
 }
 
