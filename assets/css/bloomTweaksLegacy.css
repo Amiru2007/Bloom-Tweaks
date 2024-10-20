@@ -814,8 +814,8 @@ div#BeautifulLyrics-CardView {
 }
 
 #BeautifulLyrics-CardView, .LoadingLyricsCard.Loading {
-    max-height: 515px !important;
-    height: fit-content !important;
+    max-height: 0 !important;
+    height: 0 !important;
 }
 
 #BeautifulLyrics-CardView .LyricsContent .ContentContainer {
