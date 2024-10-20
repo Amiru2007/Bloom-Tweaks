@@ -814,8 +814,8 @@ div#BeautifulLyrics-CardView {
 }
 
 #BeautifulLyrics-CardView, .LoadingLyricsCard.Loading {
-    max-height: 0 !important;
-    height: 0 !important;
+    max-height: 0;
+    height: 0;
 }
 
 #BeautifulLyrics-CardView .LyricsContent .ContentContainer {
@@ -823,17 +823,18 @@ div#BeautifulLyrics-CardView {
 }
 
 div#BeautifulLyrics-CardView {
-    animation: expand 5s linear 2s;
+    animation: expand 2s ease;
+    animation-fill-mode: forwards;
 }
 
 @keyframes expand {
     0% {
-        max-height: 0 !important;
-        height: 0 !important;
+        max-height: 0;
+        height: 0;
     }
     100% {
-        max-height: 515px !important;
-        height: fit-content !important;
+        max-height: 515px;
+        height: fit-content;
     }
 }
 
