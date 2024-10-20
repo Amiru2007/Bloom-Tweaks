@@ -816,6 +816,7 @@ div#BeautifulLyrics-CardView {
 #BeautifulLyrics-CardView, .LoadingLyricsCard.Loading {
     max-height: 0;
     height: 0;
+    opacity: 0;
 }
 
 #BeautifulLyrics-CardView .LyricsContent .ContentContainer {
@@ -831,10 +832,12 @@ div#BeautifulLyrics-CardView {
     0% {
         max-height: 0;
         height: 0;
+        opacity: 0;
     }
     100% {
         max-height: 515px;
         height: fit-content;
+        opacity: 1;
     }
 }
 
