@@ -822,6 +822,21 @@ div#BeautifulLyrics-CardView {
     height: calc(41cqh + 3px) !important;
 }
 
+div#BeautifulLyrics-CardView {
+    animation: expand 5s linear 2s;
+}
+
+@keyframes expand {
+    0% {
+        max-height: 0 !important;
+        height: 0 !important;
+    }
+    100% {
+        max-height: 515px !important;
+        height: fit-content !important;
+    }
+}
+
 button.Button-sc-1dqy6lx-0.Button-textSubdued-small-small-buttonTertiary-condensed-useBrowserDefaultFocusStyle.encore-text-body-small-bold.main-nowPlayingView-creditsShowAll::after,
 button.Button-sc-1dqy6lx-0.Button-textSubdued-small-small-buttonTertiary-condensed-useBrowserDefaultFocusStyle.encore-text-body-small-bold.main-nowPlayingView-openQueue::after {
     content: '';

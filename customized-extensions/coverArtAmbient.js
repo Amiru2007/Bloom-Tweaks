@@ -77,7 +77,7 @@ function waitForSpicetify() {
             ambientContainer.style.borderRadius = '6px';
             ambientContainer.style.backgroundSize = 'cover';
             ambientContainer.style.backgroundPosition = 'center center';
-            ambientContainer.style.filter = 'blur(10px) brightness(90%)';
+            ambientContainer.style.filter = 'blur(10px) brightness(80%)';
             ambientContainer.style.transform = 'scale(0)';
 
             nowPlayingBar.appendChild(ambientContainer);
