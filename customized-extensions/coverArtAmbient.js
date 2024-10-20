@@ -69,12 +69,12 @@ function waitForSpicetify() {
             ambientContainer.id = 'ambient-container';
 
             ambientContainer.style.position = 'absolute';
-            ambientContainer.style.top = '12px';
-            ambientContainer.style.left = '9px';
-            ambientContainer.style.width = '62px';
-            ambientContainer.style.height = '62px';
+            ambientContainer.style.top = '15px';
+            ambientContainer.style.left = '12px';
+            ambientContainer.style.width = '56px';
+            ambientContainer.style.height = '56px';
             ambientContainer.style.zIndex = '-1';
-            ambientContainer.style.borderRadius = '6px';
+            ambientContainer.style.borderRadius = 'var(--border-radius-3)';
             ambientContainer.style.backgroundSize = 'cover';
             ambientContainer.style.backgroundPosition = 'center center';
             ambientContainer.style.filter = 'blur(10px) brightness(80%)';

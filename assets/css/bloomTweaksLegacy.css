@@ -814,16 +814,19 @@ div#BeautifulLyrics-CardView {
 }
 
 #BeautifulLyrics-CardView, .LoadingLyricsCard.Loading {
-    max-height: 0;
+    /* max-height: 0;
     height: 0;
-    opacity: 0;
+    opacity: 0; */
+    max-height: 515px;
+    height: fit-content;
+    opacity: 1;
 }
 
 #BeautifulLyrics-CardView .LyricsContent .ContentContainer {
     height: calc(41cqh + 3px) !important;
 }
 
-div#BeautifulLyrics-CardView {
+/* div#BeautifulLyrics-CardView {
     animation: expand 2s ease;
     animation-fill-mode: forwards;
 }
@@ -839,7 +842,7 @@ div#BeautifulLyrics-CardView {
         height: fit-content;
         opacity: 1;
     }
-}
+} */
 
 button.Button-sc-1dqy6lx-0.Button-textSubdued-small-small-buttonTertiary-condensed-useBrowserDefaultFocusStyle.encore-text-body-small-bold.main-nowPlayingView-creditsShowAll::after,
 button.Button-sc-1dqy6lx-0.Button-textSubdued-small-small-buttonTertiary-condensed-useBrowserDefaultFocusStyle.encore-text-body-small-bold.main-nowPlayingView-openQueue::after {
