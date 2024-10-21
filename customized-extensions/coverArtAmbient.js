@@ -30,6 +30,7 @@ function waitForSpicetify() {
         if (ambientContainer) {
             ambientContainer.style.backgroundImage = `url(${albumCoverUrl})`;
 
+            // Trigger the zoom effect when the ambient image updates
             triggerZoomEffect(ambientContainer);
         }
     }
@@ -69,18 +70,37 @@ function waitForSpicetify() {
             ambientContainer = document.createElement('div');
             ambientContainer.id = 'ambient-container';
 
+            // Set styles for the ambient container
             ambientContainer.style.position = 'absolute';
-            ambientContainer.style.top = '13px';
-            ambientContainer.style.left = '10px';
-            ambientContainer.style.width = '60px';
-            ambientContainer.style.height = '60px';
+            ambientContainer.style.top = '0';
+            ambientContainer.style.left = '0';
+            ambientContainer.style.width = '86px';
+            ambientContainer.style.height = '86px';
             ambientContainer.style.zIndex = '-1';
             ambientContainer.style.borderRadius = 'var(--border-radius-3)';
             ambientContainer.style.backgroundSize = 'cover';
             ambientContainer.style.backgroundPosition = 'center center';
-            ambientContainer.style.filter = 'blur(30px) brightness(120%)';
             ambientContainer.style.transform = 'scale(0)';
 
+            // Now create the inner overlay div for blur and dark overlay effect
+            const blurOverlay = document.createElement('div');
+            blurOverlay.id = 'blur-overlay';
+
+            // Set styles for the blur and dark overlay
+            blurOverlay.style.position = 'absolute';
+            blurOverlay.style.top = '0';
+            blurOverlay.style.left = '0';
+            blurOverlay.style.width = '100%';
+            blurOverlay.style.height = '100%';
+            blurOverlay.style.backgroundColor = 'rgba(0, 0, 0, 0.5)'; // Dark transparent overlay
+            blurOverlay.style.backdropFilter = 'blur(10px)'; // Add the blur effect
+            blurOverlay.style.borderRadius = 'var(--border-radius-3)'; // Match border radius
+            blurOverlay.style.zIndex = '1'; // Ensure it stays on top of the background image
+
+            // Append the overlay to the ambient container
+            ambientContainer.appendChild(blurOverlay);
+
+            // Finally, append the ambient container to the nowPlayingBar
             nowPlayingBar.appendChild(ambientContainer);
         }
 

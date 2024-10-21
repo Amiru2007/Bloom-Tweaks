@@ -33,7 +33,21 @@ button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-useBrows
 }
 
 
+/* ----------------------------------------------------------------- Button Pack ---------------------------------------------------------------------------------------------------------- */
 
+
+.main-dropDown-dropDown,
+button.Button-sc-y0gtbx-0 {
+    background: var(--spice-card) !important;
+    border-radius: 6px !important;
+    border: 1px solid var(--spice-main-elevated) !important;
+    font-weight: 400 !important;
+}
+
+.Button-buttonSecondary-small-useBrowserDefaultFocusStyle:hover {
+    transform: scale(1) !important;
+    background: #1e1e1e !important;
+}
 
 
 
