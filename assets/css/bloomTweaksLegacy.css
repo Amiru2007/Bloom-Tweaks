@@ -28,6 +28,10 @@ button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-useBrows
 }
 
 
+.main-nowPlayingBar-container {
+    overflow: hidden !important;
+}
+
 
 
 
