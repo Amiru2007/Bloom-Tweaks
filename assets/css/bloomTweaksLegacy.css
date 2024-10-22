@@ -48,6 +48,7 @@ button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-useBrows
     background: rgba(var(--spice-rgb-not-selected), 0.045) !important;
     border: 1px solid rgba(var(--spice-rgb-shadow), 0.045) !important;
     transition: all 0.3s ease !important;
+    min-width: 135px !important;
 }
 
 .Button-buttonSecondary-small-useBrowserDefaultFocusStyle:hover,
