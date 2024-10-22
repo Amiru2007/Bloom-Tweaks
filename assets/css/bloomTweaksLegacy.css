@@ -48,7 +48,7 @@ button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-useBrows
     background: rgba(var(--spice-rgb-not-selected), 0.045) !important;
     border: 1px solid rgba(var(--spice-rgb-shadow), 0.045) !important;
     transition: all 0.3s ease !important;
-    min-width: 135px !important;
+    min-width: 100px !important;
 }
 
 .Button-buttonSecondary-small-useBrowserDefaultFocusStyle:hover,
@@ -56,6 +56,11 @@ button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-useBrows
     transform: scale(1) !important;
     background: rgba(var(--spice-rgb-not-selected), 0.07) !important;
     border: 1px solid rgba(var(--spice-rgb-shadow), 0.05) !important;
+}
+
+.playlist-playlist-recommendedTrackList button.Button-sc-y0gtbx-0,
+.playlist-playlist-recommendedTrackList button.Button-sc-y0gtbx-0:hover {
+    transform: translateX(-5px) !important;
 }
 
 /* .playlist-playlist-recommendedTrackList button.Button-sc-y0gtbx-0 {
