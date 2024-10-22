@@ -23,13 +23,26 @@
 /*-------------------------------------------------------------------------------- Custom Apps Configuration ---------------------------------------------------------------------------------*/
 
 
+button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle.link-subtle.main-globalNav-navLink.main-globalNav-link-icon.custom-navlink[aria-label*="Tags"] {
+    display: none !important;
+}
+
+
+.main-nowPlayingBar-container {
+    overflow: hidden !important;
+}
+
+
+/* ----------------------------------------------------------------- Button Pack ---------------------------------------------------------------------------------------------------------- */
+
+
+
 .main-dropDown-dropDown,
 button.Button-sc-y0gtbx-0 {
     /* background: var(--spice-card) !important;
     border: 1px solid var(--spice-main-elevated) !important; */
     border-radius: 6px !important;
     font-weight: 400 !important;
-    background: var(--spice-main-elevated);
     backdrop-filter: blur(10px);
     background: rgba(var(--spice-rgb-not-selected), 0.03) !important;
     border: 1px solid rgba(var(--spice-rgb-shadow), 0.03) !important;
@@ -50,24 +63,6 @@ button.Button-sc-y0gtbx-0 {
     border: 1px solid var(--spice-player-bar-bg) !important;
 }
 
-
-
-/* ----------------------------------------------------------------- Button Pack ---------------------------------------------------------------------------------------------------------- */
-
-
-button.Button-sc-y0gtbx-0,
-.main-dropDown-dropDown {
-    background: var(--spice-card) !important;
-    border-radius: 6px !important;
-    border: 1px solid var(--spice-main-elevated) !important;
-    font-weight: 400 !important;
-    min-width: 135px !important;
-}
-
-.Button-buttonSecondary-small-useBrowserDefaultFocusStyle:hover {
-    transform: scale(1) !important;
-    background: #1e1e1e !important;
-}
 
 
 
