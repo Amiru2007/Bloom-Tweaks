@@ -38,22 +38,24 @@ button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-useBrows
 
 
 .main-dropDown-dropDown,
-button.Button-sc-y0gtbx-0 {
+.Button-sc-y0gtbx-0 {
     /* background: var(--spice-card) !important;
     border: 1px solid var(--spice-main-elevated) !important; */
     border-radius: 6px !important;
     font-weight: 400 !important;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px) !important;
     background: rgba(var(--spice-rgb-not-selected), 0.03) !important;
     border: 1px solid rgba(var(--spice-rgb-shadow), 0.03) !important;
+    transition: all 0.3s ease !important;
 }
 
 .Button-buttonSecondary-small-useBrowserDefaultFocusStyle:hover {
     transform: scale(1) !important;
-    background: #1e1e1e !important;
+    background: rgba(var(--spice-rgb-not-selected), 0.06) !important;
+    border: 1px solid rgba(var(--spice-rgb-shadow), 0.04) !important;
 }
 
-.playlist-playlist-recommendedTrackList button.Button-sc-y0gtbx-0 {
+/* .playlist-playlist-recommendedTrackList button.Button-sc-y0gtbx-0 {
     background: var(--spice-main-elevated) !important;
     border: 1px solid var(--spice-highlight-elevated) !important;
 }
@@ -61,7 +63,7 @@ button.Button-sc-y0gtbx-0 {
 .main-trackList-trackListRowGrid.main-trackList-isRecommendedTrackListRow:hover button.Button-sc-y0gtbx-0 {
     background: var(--spice-highlight-elevated) !important;
     border: 1px solid var(--spice-player-bar-bg) !important;
-}
+} */
 
 
 
