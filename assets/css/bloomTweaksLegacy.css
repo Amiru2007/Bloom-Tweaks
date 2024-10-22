@@ -63,6 +63,14 @@ button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-useBrows
     transform: translateX(-5px) !important;
 }
 
+span.ButtonInner-sc-14ud5tc-0 {
+    border-radius: 6px !important;
+    font-weight: 400 !important;
+    min-block-size: 32px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
 /* .playlist-playlist-recommendedTrackList button.Button-sc-y0gtbx-0 {
     background: var(--spice-main-elevated) !important;
     border: 1px solid var(--spice-highlight-elevated) !important;
@@ -904,6 +912,8 @@ button.Button-sc-1dqy6lx-0.Button-textSubdued-small-small-buttonTertiary-condens
     width: 18px !important;
     height: 10px !important;
     font-size: 0 !important;
+    background: var(--spice-subtext);
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_arrow_right_24_filled.svg);
 }
 
 .main-nowPlayingView-creditsShowAll:hover,
