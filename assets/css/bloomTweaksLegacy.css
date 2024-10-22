@@ -18,30 +18,58 @@
     --rdp-accent-color: #0091f8 !important;
 } */
 
+::root {
+    --btn-bg-auto: #1c1c1c;
+    --btn-border-auto: #242424;
+    --btn-bg-auto-hover: #1f1f1f;
+    --btn-border-auto-hover: #272727;
+    --recommend-list-btn-bg: #242424;
+    --recommend-list-btn-border: #2c2c2c;
+    --recommend-list-btn-bg-hover: #2a2a2a;
+    --recommend-list-btn-border-hover: #323232;
+}
+
 
 
 /*-------------------------------------------------------------------------------- Custom Apps Configuration ---------------------------------------------------------------------------------*/
 
 
-button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle.link-subtle.main-globalNav-navLink.main-globalNav-link-icon.custom-navlink[aria-label*="Tags"] {
-    display: none !important;
+.main-dropDown-dropDown,
+button.Button-sc-y0gtbx-0 {
+    background: var(--btn-bg-auto) !important;
+    border-radius: 6px !important;
+    border: 1px solid #242424 !important;
+    font-weight: 400 !important;
 }
 
-
-.main-nowPlayingBar-container {
-    overflow: hidden !important;
+.Button-buttonSecondary-small-useBrowserDefaultFocusStyle:hover {
+    transform: scale(1) !important;
+    background: var(--btn-bg-auto-hover) !important;
+    border: 1px solid var(--btn-border-auto-hover) !important;
 }
+
+.playlist-playlist-recommendedTrackList button.Button-sc-y0gtbx-0.Button-buttonSecondary-small-useBrowserDefaultFocusStyle {
+    background: var(--recommend-list-btn-bg) !important;
+    border: 1px solid var(--recommend-list-btn-border) !important;
+}
+
+.main-trackList-trackList[aria-colcount="4"]:not(.main-trackList-indexable) .main-trackList-trackListRowGrid.main-trackList-isRecommendedTrackListRow:hover button.Button-sc-y0gtbx-0.Button-buttonSecondary-small-useBrowserDefaultFocusStyle {
+    background: var(--recommend-list-btn-bg-hover) !important;
+    border: 1px solid var(--recommend-list-btn-border-hover) !important;
+}
+
 
 
 /* ----------------------------------------------------------------- Button Pack ---------------------------------------------------------------------------------------------------------- */
 
 
-.main-dropDown-dropDown,
-button.Button-sc-y0gtbx-0 {
+button.Button-sc-y0gtbx-0,
+.main-dropDown-dropDown {
     background: var(--spice-card) !important;
     border-radius: 6px !important;
     border: 1px solid var(--spice-main-elevated) !important;
     font-weight: 400 !important;
+    min-width: 135px !important;
 }
 
 .Button-buttonSecondary-small-useBrowserDefaultFocusStyle:hover {
