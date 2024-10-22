@@ -18,17 +18,6 @@
     --rdp-accent-color: #0091f8 !important;
 } */
 
-::root {
-    --btn-bg-auto: #1c1c1c;
-    --btn-border-auto: #242424;
-    --btn-bg-auto-hover: #1f1f1f;
-    --btn-border-auto-hover: #272727;
-    --recommend-list-btn-bg: #242424;
-    --recommend-list-btn-border: #2c2c2c;
-    --recommend-list-btn-bg-hover: #2a2a2a;
-    --recommend-list-btn-border-hover: #323232;
-}
-
 
 
 /*-------------------------------------------------------------------------------- Custom Apps Configuration ---------------------------------------------------------------------------------*/
@@ -36,26 +25,26 @@
 
 .main-dropDown-dropDown,
 button.Button-sc-y0gtbx-0 {
-    background: var(--btn-bg-auto) !important;
+    background: var(--spice-card) !important;
     border-radius: 6px !important;
-    border: 1px solid #242424 !important;
+    border: 1px solid var(--spice-main-elevated) !important;
     font-weight: 400 !important;
+    background: var(--spice-main-elevated);
+}
+
+.playlist-playlist-recommendedTrackList button.Button-sc-y0gtbx-0.Button-buttonSecondary-small-useBrowserDefaultFocusStyle {
+    background: var(--spice-main-elevated) !important;
+    border: 1px solid var(--spice-highlight-elevated) !important;
 }
 
 .Button-buttonSecondary-small-useBrowserDefaultFocusStyle:hover {
     transform: scale(1) !important;
-    background: var(--btn-bg-auto-hover) !important;
-    border: 1px solid var(--btn-border-auto-hover) !important;
+    background: #1e1e1e !important;
 }
 
-.playlist-playlist-recommendedTrackList button.Button-sc-y0gtbx-0.Button-buttonSecondary-small-useBrowserDefaultFocusStyle {
-    background: var(--recommend-list-btn-bg) !important;
-    border: 1px solid var(--recommend-list-btn-border) !important;
-}
-
-.main-trackList-trackList[aria-colcount="4"]:not(.main-trackList-indexable) .main-trackList-trackListRowGrid.main-trackList-isRecommendedTrackListRow:hover button.Button-sc-y0gtbx-0.Button-buttonSecondary-small-useBrowserDefaultFocusStyle {
-    background: var(--recommend-list-btn-bg-hover) !important;
-    border: 1px solid var(--recommend-list-btn-border-hover) !important;
+.main-trackList-trackListRowGrid.main-trackList-isRecommendedTrackListRow:hover button.Button-sc-y0gtbx-0.Button-buttonSecondary-small-useBrowserDefaultFocusStyle {
+    background: var(--spice-highlight-elevated) !important;
+    border: 1px solid var(--spice-player-bar-bg) !important;
 }
 
 
