@@ -37,6 +37,7 @@ button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-useBrows
 
 
 
+#context-menu button.Button-sc-1dqy6lx-0.Button-buttonTertiary-textSubdued-small-small-useBrowserDefaultFocusStyle-condensed,
 .main-dropDown-dropDown,
 .Button-sc-y0gtbx-0,
 .ShowLyrics {
@@ -49,6 +50,31 @@ button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-useBrows
     border: 1px solid rgba(var(--spice-rgb-shadow), 0.045) !important;
     transition: all 0.3s ease !important;
     min-width: 100px !important;
+}
+
+#context-menu button.Button-sc-1dqy6lx-0.Button-buttonTertiary-textSubdued-small-small-useBrowserDefaultFocusStyle-condensed {
+    color: var(--spice-text);
+    height: 32px !important;
+    padding: 0 20px;
+    min-width: 114px !important;
+}
+
+span.ButtonInner-sc-14ud5tc-0.ButtonInner-medium.encore-inverted-light-set,
+#context-menu button.Button-sc-qlcn5g-0.Button-buttonPrimary-useBrowserDefaultFocusStyle span {
+    border-radius: 6px !important;
+    font-weight: 400 !important;
+    backdrop-filter: blur(10px) !important;
+    background: var(--spice-accent) !important;
+    border: 1px solid var(--spice-main-elevated) !important;
+    transition: all 0.3s ease !important;
+    min-width: 114px !important;
+    height: 30px;
+}
+
+span.ButtonInner-sc-14ud5tc-0.ButtonInner-medium.encore-inverted-light-set:hover,
+#context-menu button.Button-sc-1dqy6lx-0.Button-buttonTertiary-textSubdued-small-small-useBrowserDefaultFocusStyle-condensed:hover,
+#context-menu button.Button-sc-qlcn5g-0.Button-buttonPrimary-useBrowserDefaultFocusStyle span:hover {
+    transform: scale(1) !important;
 }
 
 .Button-buttonSecondary-small-useBrowserDefaultFocusStyle:hover,
