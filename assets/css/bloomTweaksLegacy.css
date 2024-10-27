@@ -841,6 +841,10 @@ button.Button-sc-1dqy6lx-0[aria-label*="Disable repeat"] svg.Svg-sc-ytk21e-0.Svg
     height: calc(100% - 98px) !important;
 }
 
+.nw2W4ZMdICuBo08Tzxg9 {
+    padding-bottom: 6px !important;
+}
+
 .artist-artistOnTour-date.artist-artistOnTour-elevated {
     background: transparent !important;
 }
@@ -1776,13 +1780,13 @@ p.popup-row {
     color: var(--spice-alt-text) !important;
 }
 
-.Ps9zgW56WZaBVLo1n3cg::after {
+/* .Ps9zgW56WZaBVLo1n3cg::after {
     content: 'xplicit';
     text-transform: lowercase;
     width: 0px;
     overflow: hidden;
     transition: all 0.3s ease-in-out;
-}
+} */
 
 .main-trackList-trackListRow:active .Ps9zgW56WZaBVLo1n3cg::after,
 .main-trackList-trackListRow:focus .Ps9zgW56WZaBVLo1n3cg::after,
