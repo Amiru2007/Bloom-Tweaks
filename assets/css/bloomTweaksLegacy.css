@@ -680,6 +680,11 @@ button.cRB7yMdTUrWxDud8Uqvi.play {
     fill: var(--spice-subtext) !important;
 }
 
+.cm9IUdJYVsbGCooedALf p:nth-last-child(1) a svg {
+    fill: var(--spice-subtext) !important;
+    color: var(--spice-subtext) !important;
+}
+
 aside#Desktop_PanelContainer_Id figure.main-avatar-avatar, aside#Desktop_PanelContainer_Id figure.main-avatar-avatar div {
     width: 24px !important;
     height: 24px !important;
