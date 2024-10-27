@@ -34,6 +34,10 @@
     background: linear-gradient(transparent 0, var(--spice-main)) !important;
 }
 
+._Cq69xKZBtHaaeMZXIdk {
+    display: none !important;
+}
+
 
 
 /*-------------------------------------------------------------------------------- Custom Apps Configuration ---------------------------------------------------------------------------------*/
@@ -833,6 +837,10 @@ button.Button-sc-1dqy6lx-0[aria-label*="Disable repeat"] svg.Svg-sc-ytk21e-0.Svg
 
 
 
+.ffFwfKcPDbmAPLXzxzKq {
+    height: calc(100% - 98px) !important;
+}
+
 .artist-artistOnTour-date.artist-artistOnTour-elevated {
     background: transparent !important;
 }
@@ -907,12 +915,13 @@ div#BeautifulLyrics-CardView {
 }
 
 #BeautifulLyrics-CardView, .LoadingLyricsCard.Loading {
-    /* max-height: 0;
-    height: 0;
-    opacity: 0; */
-    max-height: 515px !important;
+    max-height: 492px !important;
     height: fit-content !important;
     opacity: 1;
+}
+
+.VocalsGroup:nth-last-child(1) {
+    padding-bottom: 40px;
 }
 
 #BeautifulLyrics-CardView .LyricsContent .ContentContainer {
