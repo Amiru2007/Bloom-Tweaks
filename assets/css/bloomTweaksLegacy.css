@@ -574,6 +574,20 @@ button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-
     color: var(--spice-text) !important;
 }
 
+ul.gtJcoAXGeGQ9ochIvg6h {
+    padding-top: 8px !important;
+}
+
+.rV7v8LWgSCAQH6wodc1N svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
+    background: var(--spice-accent) !important;
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/icons-i-nedd-in-my-project-personal/refs/heads/main/ic_fluent_speaker_0_24_filled.svg) !important;
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/icons-i-nedd-in-my-project-personal/refs/heads/main/ic_fluent_speaker_0_24_filled.svg) !important;
+}
+
+.rV7v8LWgSCAQH6wodc1N svg.Svg-sc-ytk21e-0.Svg-img-icon-small path {
+    display: none !important;
+}
+
 .dAPXjNmPLJI6x_sXJwAp {
     position: relative !important;
     height: 100% !important;
