@@ -1,3 +1,7 @@
+.main-trackCreditsModal-mainSection {
+    padding: 16px 16px 0 32px !important;
+}
+
 .bloom-tweaks.x-settings-row {
     display: flex;
     align-items: center;
@@ -28,6 +32,7 @@
     min-width: 114px !important;
     height: 30px;
     color: var(--spice-alt-text) !important;
+    cursor: pointer;
 }
 
 .RMhp6CH5pXRI1XuARX8n {
