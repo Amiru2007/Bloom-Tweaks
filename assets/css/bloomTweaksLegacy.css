@@ -9,6 +9,7 @@ button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBro
     height: 28px;
     background: transparent;
     border: 1px solid transparent;
+    order: -1;
 }
 
 .main-trackCreditsModal-mainSection {
