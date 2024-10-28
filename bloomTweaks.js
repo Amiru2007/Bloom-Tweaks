@@ -9,6 +9,7 @@ function waitForSpicetify() {
         customCSS: true,
         buttonStyling: true,
         tagStyling: true,
+        fluentButtonsCSS: false, // New preference for fluent buttons CSS
     };
 
     function loadPreferences() {
@@ -22,15 +23,25 @@ function waitForSpicetify() {
 
     async function loadCustomCSS() {
         const prefs = loadPreferences();
-        const existingLink = document.querySelector("link[href*='bloomTweaksLegacy.css']");
 
-        if (!prefs.customCSS) {
-            if (existingLink) existingLink.remove();
-            return;
+        // Load bloomTweaksLegacy.css
+        const existingLegacyLink = document.querySelector("link[href*='bloomTweaksLegacy.css']");
+        if (prefs.customCSS && !existingLegacyLink) {
+            await loadCSSFile("bloomTweaksLegacy.css");
+        } else if (!prefs.customCSS && existingLegacyLink) {
+            existingLegacyLink.remove();
         }
 
-        if (existingLink) return;
+        // Load fluentButtons.css
+        const existingFluentLink = document.querySelector("link[href*='fluentButtons.css']");
+        if (prefs.fluentButtonsCSS && !existingFluentLink) {
+            await loadCSSFile("fluentButtons.css");
+        } else if (!prefs.fluentButtonsCSS && existingFluentLink) {
+            existingFluentLink.remove();
+        }
+    }
 
+    async function loadCSSFile(fileName) {
         const repoOwner = "Amiru2007";
         const repoName = "Bloom-Tweaks";
 
@@ -42,12 +53,12 @@ function waitForSpicetify() {
             const randomTimestamp = new Date().getTime();
             const link = document.createElement("link");
             link.rel = "stylesheet";
-            link.href = `https://cdn.jsdelivr.net/gh/${repoOwner}/${repoName}@${latestCommitHash}/assets/css/bloomTweaksLegacy.css?ts=${randomTimestamp}`;
+            link.href = `https://cdn.jsdelivr.net/gh/${repoOwner}/${repoName}@${latestCommitHash}/assets/css/${fileName}?ts=${randomTimestamp}`;
 
-            link.onload = () => console.log("Custom CSS loaded successfully");
+            link.onload = () => console.log(`${fileName} loaded successfully`);
             document.head.append(link);
         } catch (error) {
-            console.error("Error fetching the latest commit hash:", error);
+            console.error(`Error loading ${fileName}:`, error);
         }
     }
 
@@ -130,52 +141,76 @@ function waitForSpicetify() {
                     const content = document.createElement("div");
                     content.innerHTML = `
                         <h3>UI Customizations</h3>
-                        <div>
-                            <label>
-                                <input type="checkbox" id="customCSS" ${prefs.customCSS ? "checked" : ""}/>
-                                Enable Custom CSS
-                            </label>
+                        <div class="x-settings-row">
+                            <div class="x-settings-firstColumn">
+                                <label class="encore-text encore-text-body-small encore-internal-color-text-subdued">Enable Custom CSS</label>
+                            </div>
+                            <div class="x-settings-secondColumn">
+                                <label class="x-toggle-wrapper">
+                                    <input id="customCSS" type="checkbox" class="x-toggle-input" ${prefs.customCSS ? "checked" : ""}>
+                                    <span class="x-toggle-indicatorWrapper"><span class="x-toggle-indicator"></span></span>
+                                </label>
+                            </div>
                         </div>
-                        <div>
-                            <label>
-                                <input type="checkbox" id="buttonStyling" ${prefs.buttonStyling ? "checked" : ""}/>
-                                Enable Button Styling
-                            </label>
+                        <div class="x-settings-row">
+                            <div class="x-settings-firstColumn">
+                                <label class="encore-text encore-text-body-small encore-internal-color-text-subdued">Enable Button Styling</label>
+                            </div>
+                            <div class="x-settings-secondColumn">
+                                <label class="x-toggle-wrapper">
+                                    <input id="buttonStyling" type="checkbox" class="x-toggle-input" ${prefs.buttonStyling ? "checked" : ""}>
+                                    <span class="x-toggle-indicatorWrapper"><span class="x-toggle-indicator"></span></span>
+                                </label>
+                            </div>
                         </div>
-                        <div>
-                            <label>
-                                <input type="checkbox" id="tagStyling" ${prefs.tagStyling ? "checked" : ""}/>
-                                Enable Tag Styling
-                            </label>
+                        <div class="x-settings-row">
+                            <div class="x-settings-firstColumn">
+                                <label class="encore-text encore-text-body-small encore-internal-color-text-subdued">Enable Tag Styling</label>
+                            </div>
+                            <div class="x-settings-secondColumn">
+                                <label class="x-toggle-wrapper">
+                                    <input id="tagStyling" type="checkbox" class="x-toggle-input" ${prefs.tagStyling ? "checked" : ""}>
+                                    <span class="x-toggle-indicatorWrapper"><span class="x-toggle-indicator"></span></span>
+                                </label>
+                            </div>
                         </div>
-                        <button id="saveSettingsButton" class="save-button">Save</button>
+                        <div class="x-settings-row">
+                            <div class="x-settings-firstColumn">
+                                <label class="encore-text encore-text-body-small encore-internal-color-text-subdued">Enable Fluent Buttons CSS</label>
+                            </div>
+                            <div class="x-settings-secondColumn">
+                                <label class="x-toggle-wrapper">
+                                    <input id="fluentButtonsCSS" type="checkbox" class="x-toggle-input" ${prefs.fluentButtonsCSS ? "checked" : ""}>
+                                    <span class="x-toggle-indicatorWrapper"><span class="x-toggle-indicator"></span></span>
+                                </label>
+                            </div>
+                        </div>
+                        <button id="saveSettingsButton" class="save-button ButtonInner-sc-14ud5tc-0 ButtonInner-medium encore-inverted-light-set">
+                            Save
+                        </button>
                     `;
-
+                
                     Spicetify.PopupModal.display({
                         title: "Customizations",
                         content,
                         isLarge: true,
-                        onConfirm: () => {
-                            const newPrefs = {
-                                customCSS: document.getElementById("customCSS").checked,
-                                buttonStyling: document.getElementById("buttonStyling").checked,
-                                tagStyling: document.getElementById("tagStyling").checked,
-                            };
-                            savePreferences(newPrefs);
-                            location.reload();
-                        },
+                        onConfirm: saveSettings,
                     });
-
-                    document.getElementById("saveSettingsButton").addEventListener("click", () => {
+                
+                    document.getElementById("saveSettingsButton").addEventListener("click", saveSettings);
+                    
+                    function saveSettings() {
                         const newPrefs = {
                             customCSS: document.getElementById("customCSS").checked,
                             buttonStyling: document.getElementById("buttonStyling").checked,
                             tagStyling: document.getElementById("tagStyling").checked,
+                            fluentButtonsCSS: document.getElementById("fluentButtonsCSS").checked,
                         };
                         savePreferences(newPrefs);
                         location.reload();
-                    });
+                    }
                 });
+               
 
                 actionButtons.appendChild(button);
             }

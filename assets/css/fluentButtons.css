@@ -27,7 +27,7 @@
     min-width: 114px !important;
 }
 
-span.ButtonInner-sc-14ud5tc-0.ButtonInner-medium.encore-inverted-light-set,
+.ButtonInner-sc-14ud5tc-0.ButtonInner-medium.encore-inverted-light-set,
 #context-menu button.Button-sc-qlcn5g-0.Button-buttonPrimary-useBrowserDefaultFocusStyle span {
     border-radius: 6px !important;
     font-weight: 400 !important;
@@ -39,7 +39,7 @@ span.ButtonInner-sc-14ud5tc-0.ButtonInner-medium.encore-inverted-light-set,
     height: 30px;
 }
 
-span.ButtonInner-sc-14ud5tc-0.ButtonInner-medium.encore-inverted-light-set:hover,
+.ButtonInner-sc-14ud5tc-0.ButtonInner-medium.encore-inverted-light-set:hover,
 #context-menu button.Button-sc-1dqy6lx-0.Button-buttonTertiary-textSubdued-small-small-useBrowserDefaultFocusStyle-condensed:hover,
 #context-menu button.Button-sc-qlcn5g-0.Button-buttonPrimary-useBrowserDefaultFocusStyle span:hover {
     transform: scale(1) !important;
