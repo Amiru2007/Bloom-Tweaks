@@ -50,10 +50,10 @@ function waitForSpicetify() {
             existingwindowsColorThemeLink.remove();
         }
     
-        // Load windowsColorTheme.css (Updated name from 'windowsColorTheme.css')
-        const customNPVLink = document.querySelector("link[href*='windowsColorTheme.css']"); // Corrected here
+        // Load customNPV.css (Updated name from 'customNPV.css')
+        const customNPVLink = document.querySelector("link[href*='customNPV.css']"); // Corrected here
         if (prefs.customNPV && !customNPVLink) {
-            await loadCSSFile("windowsColorTheme.css");
+            await loadCSSFile("customNPV.css");
         } else if (!prefs.customNPV && customNPVLink) {
             customNPVLink.remove();
         }
