@@ -4,6 +4,13 @@ button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBro
     stroke: var(--spice-text) !important;
 }
 
+button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBrowserDefaultFocusStyle-condensedAll {
+    width: 28px;
+    height: 28px;
+    background: transparent;
+    border: 1px solid transparent;
+}
+
 .main-trackCreditsModal-mainSection {
     padding: 16px 16px 0 32px !important;
 }
