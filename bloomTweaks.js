@@ -9,8 +9,9 @@ function waitForSpicetify() {
         customCSS: true,
         buttonStyling: true,
         tagStyling: true,
-        fluentButtonsCSS: true, // Existing preference
-        windowsColorThemeCSS: false, // New preference for custom styles CSS
+        fluentButtonsCSS: true,
+        windowsColorThemeCSS: false,
+        customNPV: true,
     };
 
     function loadPreferences() {
@@ -47,6 +48,14 @@ function waitForSpicetify() {
             await loadCSSFile("windowsColorTheme.css");
         } else if (!prefs.windowsColorThemeCSS && existingwindowsColorThemeLink) {
             existingwindowsColorThemeLink.remove();
+        }
+    
+        // Load windowsColorTheme.css (Updated name from 'windowsColorTheme.css')
+        const customNPVLink = document.querySelector("link[href*='windowsColorTheme.css']"); // Corrected here
+        if (prefs.customNPV && !customNPVLink) {
+            await loadCSSFile("windowsColorTheme.css");
+        } else if (!prefs.customNPV && customNPVLink) {
+            customNPVLink.remove();
         }
     }
 
@@ -174,6 +183,17 @@ function waitForSpicetify() {
                         </div>
                         <div class="bloom-tweaks x-settings-row">
                             <div class="bloom-tweaks x-settings-firstColumn">
+                                <label class="bloom-tweaks encore-text encore-text-body-small encore-internal-color-text-subdued">Custom NPV</label>
+                            </div>
+                            <div class="bloom-tweaks x-settings-secondColumn">
+                                <label class="bloom-tweaks x-toggle-wrapper">
+                                    <input id="customNPV" type="checkbox" class="bloom-tweaks x-toggle-input" ${prefs.customNPV ? "checked" : ""}>
+                                    <span class="bloom-tweaks x-toggle-indicatorWrapper"><span class="bloom-tweaks x-toggle-indicator"></span></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="bloom-tweaks x-settings-row">
+                            <div class="bloom-tweaks x-settings-firstColumn">
                                 <label class="bloom-tweaks encore-text encore-text-body-small encore-internal-color-text-subdued">Fluent Buttons CSS</label>
                             </div>
                             <div class="bloom-tweaks x-settings-secondColumn">
@@ -216,7 +236,8 @@ function waitForSpicetify() {
                             buttonStyling: document.getElementById("buttonStyling")?.checked || false,
                             tagStyling: document.getElementById("tagStyling")?.checked || false,
                             fluentButtonsCSS: document.getElementById("fluentButtonsCSS")?.checked || false,
-                            windowsColorThemeCSS: document.getElementById("windowsColorThemeCSS")?.checked || false, // Save the new toggle preference
+                            windowsColorThemeCSS: document.getElementById("windowsColorThemeCSS")?.checked || false,
+                            customNPV: document.getElementById("customNPV")?.checked || false,
                         };
 
                         savePreferences(newPrefs);
