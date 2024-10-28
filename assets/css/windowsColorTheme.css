@@ -1,0 +1,19 @@
+:root {
+    --spice-accent: #4cc2ff !important;
+    --spice-notification: #4cc2ff !important;
+    --spice-button-active: #4cc2ff !important;
+    --spice-button: #4cc2ff !important;
+    --spice-rgb-accent: 76, 194, 255 !important;
+}
+
+.encore-dark-theme .encore-bright-accent-set {
+    --background-highlight: #99ebff !important;
+    --background-press: #0091f8 !important;
+    --background-elevated-base: #99ebff !important;
+    --background-elevated-highlight: #99ebff !important;
+    --background-elevated-press: #0091f8 !important;
+}
+
+.C1USyigFSYyc22_BmsgB .rdp {
+    --rdp-accent-color: #0091f8 !important;
+}

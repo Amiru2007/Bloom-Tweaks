@@ -10,7 +10,7 @@ function waitForSpicetify() {
         buttonStyling: true,
         tagStyling: true,
         fluentButtonsCSS: true, // Existing preference
-        customStylesCSS: false, // New preference for custom styles CSS
+        windowsColorThemeCSS: false, // New preference for custom styles CSS
     };
 
     function loadPreferences() {
@@ -24,7 +24,7 @@ function waitForSpicetify() {
 
     async function loadCustomCSS() {
         const prefs = loadPreferences();
-
+    
         // Load bloomTweaksLegacy.css
         const existingLegacyLink = document.querySelector("link[href*='bloomTweaksLegacy.css']");
         if (prefs.customCSS && !existingLegacyLink) {
@@ -32,7 +32,7 @@ function waitForSpicetify() {
         } else if (!prefs.customCSS && existingLegacyLink) {
             existingLegacyLink.remove();
         }
-
+    
         // Load fluentButtons.css
         const existingFluentLink = document.querySelector("link[href*='fluentButtons.css']");
         if (prefs.fluentButtonsCSS && !existingFluentLink) {
@@ -40,13 +40,13 @@ function waitForSpicetify() {
         } else if (!prefs.fluentButtonsCSS && existingFluentLink) {
             existingFluentLink.remove();
         }
-
-        // Load customStyles.css
-        const existingCustomStylesLink = document.querySelector("link[href*='windowsColorTheme.css']");
-        if (prefs.customStylesCSS && !existingCustomStylesLink) {
-            await loadCSSFile("customStyles.css");
-        } else if (!prefs.customStylesCSS && existingCustomStylesLink) {
-            existingCustomStylesLink.remove();
+    
+        // Load windowsColorTheme.css (Updated name from 'windowsColorTheme.css')
+        const existingwindowsColorThemeLink = document.querySelector("link[href*='windowsColorTheme.css']"); // Corrected here
+        if (prefs.windowsColorThemeCSS && !existingwindowsColorThemeLink) {
+            await loadCSSFile("windowsColorTheme.css");
+        } else if (!prefs.windowsColorThemeCSS && existingwindowsColorThemeLink) {
+            existingwindowsColorThemeLink.remove();
         }
     }
 
@@ -124,47 +124,6 @@ function waitForSpicetify() {
         });
     }
 
-    const customCSS = `
-        :root {
-            --spice-accent: #4cc2ff !important;
-            --spice-notification: #4cc2ff !important;
-            --spice-button-active: #4cc2ff !important;
-            --spice-button: #4cc2ff !important;
-            --spice-rgb-accent: 76, 194, 255 !important;
-        }
-
-        .encore-dark-theme .encore-bright-accent-set {
-            --background-highlight: #99ebff !important;
-            --background-press: #0091f8 !important;
-            --background-elevated-base: #99ebff !important;
-            --background-elevated-highlight: #99ebff !important;
-            --background-elevated-press: #0091f8 !important;
-        }
-
-        .C1USyigFSYyc22_BmsgB .rdp {
-            --rdp-accent-color: #0091f8 !important;
-        }
-    `;
-
-    // Function to toggle loading/unloading inline CSS based on user preference
-    function toggleInlineCSS() {
-        const cssEnabled = localStorage.getItem('enableInlineCSS') === 'true';
-        let styleTag = document.getElementById('inlineCSS');
-
-        if (cssEnabled && !styleTag) {
-            // If enabled and not already added, inject the CSS
-            styleTag = document.createElement('style');
-            styleTag.id = 'inlineCSS';
-            styleTag.textContent = customCSS;
-            document.head.append(styleTag);
-            console.log('Inline CSS injected based on user preference');
-        } else if (!cssEnabled && styleTag) {
-            // If disabled and style tag exists, remove it
-            styleTag.remove();
-            console.log('Inline CSS removed based on user preference');
-        }
-    }
-
     function addControlPanelButton() {
         const prefs = loadPreferences();
 
@@ -208,7 +167,7 @@ function waitForSpicetify() {
                             </div>
                             <div class="bloom-tweaks x-settings-secondColumn">
                                 <label class="bloom-tweaks x-toggle-wrapper">
-                                    <input id="customStylesCSS" type="checkbox" class="bloom-tweaks x-toggle-input" ${prefs.customStylesCSS ? "checked" : ""}>
+                                    <input id="windowsColorThemeCSS" type="checkbox" class="bloom-tweaks x-toggle-input" ${prefs.windowsColorThemeCSS ? "checked" : ""}>
                                     <span class="bloom-tweaks x-toggle-indicatorWrapper"><span class="bloom-tweaks x-toggle-indicator"></span></span>
                                 </label>
                             </div>
@@ -257,7 +216,7 @@ function waitForSpicetify() {
                             buttonStyling: document.getElementById("buttonStyling")?.checked || false,
                             tagStyling: document.getElementById("tagStyling")?.checked || false,
                             fluentButtonsCSS: document.getElementById("fluentButtonsCSS")?.checked || false,
-                            customStylesCSS: document.getElementById("customStylesCSS")?.checked || false, // Save the new toggle preference
+                            windowsColorThemeCSS: document.getElementById("windowsColorThemeCSS")?.checked || false, // Save the new toggle preference
                         };
 
                         savePreferences(newPrefs);
