@@ -1,3 +1,23 @@
+.bloom-tweaks.x-settings-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 0;
+}
+
+.bloom-tweaks.x-settings-secondColumn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.save-btn-container {
+    padding: 16px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
 .bloom-tweaks-popup-btn.save-button {
     border-radius: 6px !important;
     font-weight: 400 !important;
@@ -7,7 +27,7 @@
     transition: all 0.3s ease !important;
     min-width: 114px !important;
     height: 30px;
-    color: var(spice-alt-text) !important;
+    color: var(--spice-alt-text) !important;
 }
 
 .RMhp6CH5pXRI1XuARX8n {

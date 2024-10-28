@@ -141,51 +141,51 @@ function waitForSpicetify() {
                     const content = document.createElement("div");
                     content.innerHTML = `
                         <h3>UI Customizations</h3>
-                        <div class="x-settings-row">
-                            <div class="x-settings-firstColumn">
-                                <label class="encore-text encore-text-body-small encore-internal-color-text-subdued">Enable Custom CSS</label>
+                        <div class="bloom-tweaks x-settings-row">
+                            <div class="bloom-tweaks x-settings-firstColumn">
+                                <label class="bloom-tweaks encore-text encore-text-body-small encore-internal-color-text-subdued">Enable Custom CSS</label>
                             </div>
-                            <div class="x-settings-secondColumn">
-                                <label class="x-toggle-wrapper">
-                                    <input id="customCSS" type="checkbox" class="x-toggle-input" ${prefs.customCSS ? "checked" : ""}>
-                                    <span class="x-toggle-indicatorWrapper"><span class="x-toggle-indicator"></span></span>
+                            <div class="bloom-tweaks x-settings-secondColumn">
+                                <label class="bloom-tweaks x-toggle-wrapper">
+                                    <input id="customCSS" type="checkbox" class="bloom-tweaks x-toggle-input" ${prefs.customCSS ? "checked" : ""}>
+                                    <span class="bloom-tweaks x-toggle-indicatorWrapper"><span class="bloom-tweaks x-toggle-indicator"></span></span>
                                 </label>
                             </div>
                         </div>
-                        <div class="x-settings-row">
-                            <div class="x-settings-firstColumn">
-                                <label class="encore-text encore-text-body-small encore-internal-color-text-subdued">Enable Button Styling</label>
+                        <div class="bloom-tweaks x-settings-row">
+                            <div class="bloom-tweaks x-settings-firstColumn">
+                                <label class="bloom-tweaks encore-text encore-text-body-small encore-internal-color-text-subdued">Enable Button Styling</label>
                             </div>
-                            <div class="x-settings-secondColumn">
-                                <label class="x-toggle-wrapper">
-                                    <input id="buttonStyling" type="checkbox" class="x-toggle-input" ${prefs.buttonStyling ? "checked" : ""}>
-                                    <span class="x-toggle-indicatorWrapper"><span class="x-toggle-indicator"></span></span>
+                            <div class="bloom-tweaks x-settings-secondColumn">
+                                <label class="bloom-tweaks x-toggle-wrapper">
+                                    <input id="buttonStyling" type="checkbox" class="bloom-tweaks x-toggle-input" ${prefs.buttonStyling ? "checked" : ""}>
+                                    <span class="bloom-tweaks x-toggle-indicatorWrapper"><span class="bloom-tweaks x-toggle-indicator"></span></span>
                                 </label>
                             </div>
                         </div>
-                        <div class="x-settings-row">
-                            <div class="x-settings-firstColumn">
-                                <label class="encore-text encore-text-body-small encore-internal-color-text-subdued">Enable Tag Styling</label>
+                        <div class="bloom-tweaks x-settings-row">
+                            <div class="bloom-tweaks x-settings-firstColumn">
+                                <label class="bloom-tweaks encore-text encore-text-body-small encore-internal-color-text-subdued">Enable Tag Styling</label>
                             </div>
-                            <div class="x-settings-secondColumn">
-                                <label class="x-toggle-wrapper">
-                                    <input id="tagStyling" type="checkbox" class="x-toggle-input" ${prefs.tagStyling ? "checked" : ""}>
-                                    <span class="x-toggle-indicatorWrapper"><span class="x-toggle-indicator"></span></span>
+                            <div class="bloom-tweaks x-settings-secondColumn">
+                                <label class="bloom-tweaks x-toggle-wrapper">
+                                    <input id="tagStyling" type="checkbox" class="bloom-tweaks x-toggle-input" ${prefs.tagStyling ? "checked" : ""}>
+                                    <span class="bloom-tweaks x-toggle-indicatorWrapper"><span class="bloom-tweaks x-toggle-indicator"></span></span>
                                 </label>
                             </div>
                         </div>
-                        <div class="x-settings-row">
-                            <div class="x-settings-firstColumn">
-                                <label class="encore-text encore-text-body-small encore-internal-color-text-subdued">Enable Fluent Buttons CSS</label>
+                        <div class="bloom-tweaks x-settings-row">
+                            <div class="bloom-tweaks x-settings-firstColumn">
+                                <label class="bloom-tweaks encore-text encore-text-body-small encore-internal-color-text-subdued">Enable Fluent Buttons CSS</label>
                             </div>
-                            <div class="x-settings-secondColumn">
-                                <label class="x-toggle-wrapper">
-                                    <input id="fluentButtonsCSS" type="checkbox" class="x-toggle-input" ${prefs.fluentButtonsCSS ? "checked" : ""}>
-                                    <span class="x-toggle-indicatorWrapper"><span class="x-toggle-indicator"></span></span>
+                            <div class="bloom-tweaks x-settings-secondColumn">
+                                <label class="bloom-tweaks x-toggle-wrapper">
+                                    <input id="fluentButtonsCSS" type="checkbox" class="bloom-tweaks x-toggle-input" ${prefs.fluentButtonsCSS ? "checked" : ""}>
+                                    <span class="bloom-tweaks x-toggle-indicatorWrapper"><span class="bloom-tweaks x-toggle-indicator"></span></span>
                                 </label>
                             </div>
                         </div>
-                        <div class="save-btn-container" style="width: 100%;">
+                        <div class="bloom-tweaks save-btn-container">
                             <button id="saveSettingsButton" class="bloom-tweaks-popup-btn save-button">
                                 Save
                             </button>
