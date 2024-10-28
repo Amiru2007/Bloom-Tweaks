@@ -33,7 +33,7 @@
     font-weight: 400 !important;
     backdrop-filter: blur(10px) !important;
     background: var(--spice-accent) !important;
-    border: 1px solid var(--spice-main-elevated) !important;
+    border: 1px solid transparent !important;
     transition: all 0.3s ease !important;
     min-width: 114px !important;
     height: 30px;
