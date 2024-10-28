@@ -9,7 +9,8 @@ function waitForSpicetify() {
         customCSS: true,
         buttonStyling: true,
         tagStyling: true,
-        fluentButtonsCSS: false, // New preference for fluent buttons CSS
+        fluentButtonsCSS: true, // Existing preference
+        customStylesCSS: false, // New preference for custom styles CSS
     };
 
     function loadPreferences() {
@@ -38,6 +39,14 @@ function waitForSpicetify() {
             await loadCSSFile("fluentButtons.css");
         } else if (!prefs.fluentButtonsCSS && existingFluentLink) {
             existingFluentLink.remove();
+        }
+
+        // Load customStyles.css
+        const existingCustomStylesLink = document.querySelector("link[href*='windowsColorTheme.css']");
+        if (prefs.customStylesCSS && !existingCustomStylesLink) {
+            await loadCSSFile("customStyles.css");
+        } else if (!prefs.customStylesCSS && existingCustomStylesLink) {
+            existingCustomStylesLink.remove();
         }
     }
 
@@ -115,6 +124,47 @@ function waitForSpicetify() {
         });
     }
 
+    const customCSS = `
+        :root {
+            --spice-accent: #4cc2ff !important;
+            --spice-notification: #4cc2ff !important;
+            --spice-button-active: #4cc2ff !important;
+            --spice-button: #4cc2ff !important;
+            --spice-rgb-accent: 76, 194, 255 !important;
+        }
+
+        .encore-dark-theme .encore-bright-accent-set {
+            --background-highlight: #99ebff !important;
+            --background-press: #0091f8 !important;
+            --background-elevated-base: #99ebff !important;
+            --background-elevated-highlight: #99ebff !important;
+            --background-elevated-press: #0091f8 !important;
+        }
+
+        .C1USyigFSYyc22_BmsgB .rdp {
+            --rdp-accent-color: #0091f8 !important;
+        }
+    `;
+
+    // Function to toggle loading/unloading inline CSS based on user preference
+    function toggleInlineCSS() {
+        const cssEnabled = localStorage.getItem('enableInlineCSS') === 'true';
+        let styleTag = document.getElementById('inlineCSS');
+
+        if (cssEnabled && !styleTag) {
+            // If enabled and not already added, inject the CSS
+            styleTag = document.createElement('style');
+            styleTag.id = 'inlineCSS';
+            styleTag.textContent = customCSS;
+            document.head.append(styleTag);
+            console.log('Inline CSS injected based on user preference');
+        } else if (!cssEnabled && styleTag) {
+            // If disabled and style tag exists, remove it
+            styleTag.remove();
+            console.log('Inline CSS removed based on user preference');
+        }
+    }
+
     function addControlPanelButton() {
         const prefs = loadPreferences();
 
@@ -148,6 +198,17 @@ function waitForSpicetify() {
                             <div class="bloom-tweaks x-settings-secondColumn">
                                 <label class="bloom-tweaks x-toggle-wrapper">
                                     <input id="customCSS" type="checkbox" class="bloom-tweaks x-toggle-input" ${prefs.customCSS ? "checked" : ""}>
+                                    <span class="bloom-tweaks x-toggle-indicatorWrapper"><span class="bloom-tweaks x-toggle-indicator"></span></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="bloom-tweaks x-settings-row">
+                            <div class="bloom-tweaks x-settings-firstColumn">
+                                <label class="bloom-tweaks encore-text encore-text-body-small encore-internal-color-text-subdued">Windows Color Theme</label>
+                            </div>
+                            <div class="bloom-tweaks x-settings-secondColumn">
+                                <label class="bloom-tweaks x-toggle-wrapper">
+                                    <input id="customStylesCSS" type="checkbox" class="bloom-tweaks x-toggle-input" ${prefs.customStylesCSS ? "checked" : ""}>
                                     <span class="bloom-tweaks x-toggle-indicatorWrapper"><span class="bloom-tweaks x-toggle-indicator"></span></span>
                                 </label>
                             </div>
@@ -192,11 +253,13 @@ function waitForSpicetify() {
                     
                     function saveSettings() {
                         const newPrefs = {
-                            customCSS: document.getElementById("customCSS").checked,
-                            buttonStyling: document.getElementById("buttonStyling").checked,
-                            tagStyling: document.getElementById("tagStyling").checked,
-                            fluentButtonsCSS: document.getElementById("fluentButtonsCSS").checked,
+                            customCSS: document.getElementById("customCSS")?.checked || false,
+                            buttonStyling: document.getElementById("buttonStyling")?.checked || false,
+                            tagStyling: document.getElementById("tagStyling")?.checked || false,
+                            fluentButtonsCSS: document.getElementById("fluentButtonsCSS")?.checked || false,
+                            customStylesCSS: document.getElementById("customStylesCSS")?.checked || false, // Save the new toggle preference
                         };
+
                         savePreferences(newPrefs);
                         location.reload();
                     }
