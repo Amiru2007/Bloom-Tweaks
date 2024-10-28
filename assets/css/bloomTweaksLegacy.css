@@ -1,24 +1,13 @@
-/* :root {
-    --spice-accent: #4cc2ff !important;
-    --spice-notification: #4cc2ff !important;
-    --spice-button-active: #4cc2ff !important;
-    --spice-button: #4cc2ff !important;
-    --spice-rgb-accent: 76, 194, 255 !important;
+.bloom-tweaks-popup-btn.save-button {
+    border-radius: 6px !important;
+    font-weight: 400 !important;
+    backdrop-filter: blur(10px) !important;
+    background: var(--spice-accent) !important;
+    border: 1px solid var(--spice-main-elevated) !important;
+    transition: all 0.3s ease !important;
+    min-width: 114px !important;
+    height: 30px;
 }
-
-.encore-dark-theme .encore-bright-accent-set {
-    --background-highlight: #99ebff !important;
-    --background-press: #0091f8 !important;
-    --background-elevated-base: #99ebff !important;
-    --background-elevated-highlight: #99ebff !important;
-    --background-elevated-press: #0091f8 !important;
-}
-
-.C1USyigFSYyc22_BmsgB .rdp {
-    --rdp-accent-color: #0091f8 !important;
-} */
-
-
 
 .RMhp6CH5pXRI1XuARX8n {
     background: transparent !important;

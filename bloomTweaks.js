@@ -185,9 +185,11 @@ function waitForSpicetify() {
                                 </label>
                             </div>
                         </div>
-                        <button id="saveSettingsButton" class="save-button ButtonInner-sc-14ud5tc-0 ButtonInner-medium encore-inverted-light-set">
-                            Save
-                        </button>
+                        <div class="save-btn-container" style="width: 100%;">
+                            <button id="saveSettingsButton" class="bloom-tweaks-popup-btn save-button">
+                                Save
+                            </button>
+                        </div>
                     `;
                 
                     Spicetify.PopupModal.display({
