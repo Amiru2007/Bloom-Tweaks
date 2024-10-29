@@ -2311,7 +2311,7 @@ span.encore-text.encore-text-body-small.ArQQy9kpoXLmafHpoi6u.FGrkEs4xa3OtWqaSmtv
 
 button.main-globalNav-link-icon[aria-label*="Home"],
 .Root__globalNav .main-globalNav-link-icon.main-globalNav-navLinkActive {
-    border: 1px solid #232323;
+    /* border: 1px solid #232323; */
     background-color: var(--spice-card) !important;
 }
 
@@ -2530,12 +2530,12 @@ button.main-globalNav-link-icon[aria-label*="Statistics"] svg {
 
 .b7r2WRiu5f9Q99qmyreh .main-topBar-searchBar {
     background: var(--spice-card) !important;
-    border: 1px solid #242424 !important;
+    /* border: 1px solid #242424 !important; */
     border-radius: 8px !important;
 }
 
 .b7r2WRiu5f9Q99qmyreh .main-topBar-searchBar:hover {
-    background: var(--spice-main-elevated) !important;
+    background: var(--spice-main) !important;
 }
 
 .b7r2WRiu5f9Q99qmyreh .main-topBar-searchBar:focus {

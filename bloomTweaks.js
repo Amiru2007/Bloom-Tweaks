@@ -12,6 +12,7 @@ function waitForSpicetify() {
         fluentButtonsCSS: true,
         windowsColorThemeCSS: false,
         customNPV: true,
+        lightTheme: false,
     };
 
     function loadPreferences() {
@@ -56,6 +57,14 @@ function waitForSpicetify() {
             await loadCSSFile("customNPV.css");
         } else if (!prefs.customNPV && customNPVLink) {
             customNPVLink.remove();
+        }
+    
+        // Load lightTheme.css (Updated name from 'lightTheme.css')
+        const lightThemeLink = document.querySelector("link[href*='lightTheme.css']"); // Corrected here
+        if (prefs.lightTheme && !lightThemeLink) {
+            await loadCSSFile("lightTheme.css");
+        } else if (!prefs.lightTheme && lightThemeLink) {
+            lightThemeLink.remove();
         }
     }
 
@@ -194,6 +203,17 @@ function waitForSpicetify() {
                         </div>
                         <div class="bloom-tweaks x-settings-row">
                             <div class="bloom-tweaks x-settings-firstColumn">
+                                <label class="bloom-tweaks encore-text encore-text-body-small encore-internal-color-text-subdued">Light Theme</label>
+                            </div>
+                            <div class="bloom-tweaks x-settings-secondColumn">
+                                <label class="bloom-tweaks x-toggle-wrapper">
+                                    <input id="lightTheme" type="checkbox" class="bloom-tweaks x-toggle-input" ${prefs.lightTheme ? "checked" : ""}>
+                                    <span class="bloom-tweaks x-toggle-indicatorWrapper"><span class="bloom-tweaks x-toggle-indicator"></span></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="bloom-tweaks x-settings-row">
+                            <div class="bloom-tweaks x-settings-firstColumn">
                                 <label class="bloom-tweaks encore-text encore-text-body-small encore-internal-color-text-subdued">Fluent Buttons CSS</label>
                             </div>
                             <div class="bloom-tweaks x-settings-secondColumn">
@@ -239,6 +259,7 @@ function waitForSpicetify() {
                             fluentButtonsCSS: document.getElementById("fluentButtonsCSS")?.checked || false,
                             windowsColorThemeCSS: document.getElementById("windowsColorThemeCSS")?.checked || false,
                             customNPV: document.getElementById("customNPV")?.checked || false,
+                            lightTheme: document.getElementById("lightTheme")?.checked || false,
                         };
 
                         savePreferences(newPrefs);

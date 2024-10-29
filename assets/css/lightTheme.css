@@ -1,0 +1,23 @@
+.PeLrpasyfBW8ql_bmoAi {
+    background: var(--spice-main) !important;
+}
+
+button.Button-sc-1dqy6lx-0.Button-buttonTertiary-textBase-medium-medium-useBrowserDefaultFocusStyle-condensedAll.encore-text-body-medium-bold.main-userWidget-box {
+    background: var(--spice-light-border) !important;
+}
+
+aside[aria-label*="Now playing view"] a:not([data-encore-id]),
+aside[aria-label*="Now playing view"] h1.encore-text.encore-text-body-medium-bold.encore-internal-color-text-base,
+aside[aria-label*="Now playing view"] .main-nowPlayingView-sectionHeaderText,
+aside[aria-label*="Now playing view"] span {
+    color: var(--spice-alt-text) !important;
+}
+
+aside[aria-label*="Now playing view"] p[data-encore-id*="listRowSubtitle"] span span a,
+aside[aria-label*="Now playing view"] span[data-testid*="artist-row-role"] {
+    color: var(--text-subdued) !important;
+}
+
+aside[aria-label*="Now playing view"] #context-menu button.Button-sc-1dqy6lx-0.Button-buttonTertiary-textSubdued-small-small-useBrowserDefaultFocusStyle-condensed, .main-dropDown-dropDown, .Button-sc-y0gtbx-0, .ShowLyrics {
+    color: var(--spice-alt-text) !important;
+}
