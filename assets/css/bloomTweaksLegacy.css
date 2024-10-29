@@ -1,7 +1,9 @@
 button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBrowserDefaultFocusStyle-condensedAll svg, button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBrowserDefaultFocusStyle-condensedAll svg svg {
+    background: var(--spice-text) !important;
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/settings.svg) !important;
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/settings.svg) !important;
     width: 18px;
     height: 18px;
-    stroke: var(--spice-text) !important;
 }
 
 button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBrowserDefaultFocusStyle-condensedAll {

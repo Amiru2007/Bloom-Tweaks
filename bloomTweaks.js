@@ -161,7 +161,7 @@ function waitForSpicetify() {
                 icon.setAttribute("aria-hidden", "true");
                 icon.setAttribute("viewBox", "0 0 16 16");
                 icon.className = "Svg-sc-ytk21e-0 Svg-img-icon-small";
-                icon.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bolt"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><circle cx="12" cy="12" r="4"/></svg>`;
+                icon.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`;
                 button.appendChild(icon);
 
                 button.addEventListener("click", () => {
@@ -181,7 +181,7 @@ function waitForSpicetify() {
                         </div>
                         <div class="bloom-tweaks x-settings-row">
                             <div class="bloom-tweaks x-settings-firstColumn">
-                                <label class="bloom-tweaks encore-text encore-text-body-small encore-internal-color-text-subdued">Windows Color Theme</label>
+                                <label class="bloom-tweaks encore-text encore-text-body-small encore-internal-color-text-subdued">Windows Accent Color</label>
                             </div>
                             <div class="bloom-tweaks x-settings-secondColumn">
                                 <label class="bloom-tweaks x-toggle-wrapper">

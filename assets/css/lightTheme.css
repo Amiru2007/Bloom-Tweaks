@@ -6,10 +6,8 @@ button.Button-sc-1dqy6lx-0.Button-buttonTertiary-textBase-medium-medium-useBrows
     background: var(--spice-light-border) !important;
 }
 
-aside[aria-label*="Now playing view"] a:not([data-encore-id]),
 aside[aria-label*="Now playing view"] h1.encore-text.encore-text-body-medium-bold.encore-internal-color-text-base,
-aside[aria-label*="Now playing view"] .main-nowPlayingView-sectionHeaderText,
-aside[aria-label*="Now playing view"] span {
+aside[aria-label*="Now playing view"] .main-trackInfo-contentContainer .main-trackInfo-contentWrapper span a {
     color: var(--spice-alt-text) !important;
 }
 
@@ -18,6 +16,39 @@ aside[aria-label*="Now playing view"] span[data-testid*="artist-row-role"] {
     color: var(--text-subdued) !important;
 }
 
-aside[aria-label*="Now playing view"] #context-menu button.Button-sc-1dqy6lx-0.Button-buttonTertiary-textSubdued-small-small-useBrowserDefaultFocusStyle-condensed, .main-dropDown-dropDown, .Button-sc-y0gtbx-0, .ShowLyrics {
+aside[aria-label*="Now playing view"] #context-menu button.Button-sc-1dqy6lx-0.Button-buttonTertiary-textSubdued-small-small-useBrowserDefaultFocusStyle-condensed, .main-dropDown-dropDown, .ShowLyrics {
     color: var(--spice-alt-text) !important;
+}
+
+.Root__right-sidebar:has(.main-nowPlayingView-section,canvas) .main-nowPlayingView-section {
+    backdrop-filter: brightness(100%) !important;
+    background: rgba(var(--spice-rgb-alt-text), 0.5) !important;
+}
+
+#BeautifulLyrics-CardView {
+    background-color: rgba(var(--spice-rgb-alt-text), 0.1) !important;
+}
+
+#BeautifulLyrics-CardView .Header .Title {
+    color: var(--spice-alt-text) !important;
+}
+
+span.encore-text.encore-text-body-small.main-nowPlayingView-aboutArtistV2Bio {
+    color: var(--spice-subtext) !important;
+}
+
+.encore-text.encore-text-body-medium.main-nowPlayingView-aboutArtistV2ListenersCount {
+    color: var(--text-base) !important;
+}
+
+.main-nowPlayingView-section.main-nowPlayingView-aboutArtistV2 .main-nowPlayingView-sectionHeaderText {
+    color: var(--spice-alt-text);
+}
+
+.BeautifulLyricsBackground:is(aside) .BeautifulLyricsBackground-Container {
+    filter: brightness(0.9);
+}
+
+.kh6wYYPvgRPBhA2wj3AS .qp7Sys7hJSZHLzw4K_yF {
+    background: rgb(180 180 180 / 50%) !important;
 }
