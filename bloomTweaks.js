@@ -13,6 +13,8 @@ function waitForSpicetify() {
         windowsColorThemeCSS: false,
         customNPV: true,
         lightTheme: false,
+        friendsActivityBar: false,
+        floatingVolumeBar: false,
     };
 
     function loadPreferences() {
@@ -73,6 +75,14 @@ function waitForSpicetify() {
             await loadCSSFile("friendsActivityBar.css");
         } else if (!prefs.friendsActivityBar && friendsActivityBarLink) {
             friendsActivityBarLink.remove();
+        }
+    
+        // Load floatingVolumeBar.css (Updated name from 'floatingVolumeBar.css')
+        const floatingVolumeBarLink = document.querySelector("link[href*='floatingVolumeBar.css']"); // Corrected here
+        if (prefs.floatingVolumeBar && !floatingVolumeBarLink) {
+            await loadCSSFile("floatingVolumeBar.css");
+        } else if (!prefs.floatingVolumeBar && floatingVolumeBarLink) {
+            floatingVolumeBarLink.remove();
         }
     }
 
@@ -242,6 +252,17 @@ function waitForSpicetify() {
                                 </label>
                             </div>
                         </div>
+                        <div class="bloom-tweaks x-settings-row">
+                            <div class="bloom-tweaks x-settings-firstColumn">
+                                <label class="bloom-tweaks encore-text encore-text-body-small encore-internal-color-text-subdued">Floating Volume Bar</label>
+                            </div>
+                            <div class="bloom-tweaks x-settings-secondColumn">
+                                <label class="bloom-tweaks x-toggle-wrapper">
+                                    <input id="floatingVolumeBar" type="checkbox" class="bloom-tweaks x-toggle-input" ${prefs.floatingVolumeBar ? "checked" : ""}>
+                                    <span class="bloom-tweaks x-toggle-indicatorWrapper"><span class="bloom-tweaks x-toggle-indicator"></span></span>
+                                </label>
+                            </div>
+                        </div>
                         <h3 style="padding-top: 16px;">Custom Apps Customizations</h3>
                         <div class="bloom-tweaks x-settings-row">
                             <div class="bloom-tweaks x-settings-firstColumn">
@@ -280,6 +301,7 @@ function waitForSpicetify() {
                             customNPV: document.getElementById("customNPV")?.checked || false,
                             lightTheme: document.getElementById("lightTheme")?.checked || false,
                             friendsActivityBar: document.getElementById("friendsActivityBar")?.checked || false,
+                            floatingVolumeBar: document.getElementById("floatingVolumeBar")?.checked || false,
                         };
 
                         savePreferences(newPrefs);

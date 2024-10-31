@@ -1,0 +1,41 @@
+.volume-bar {
+    padding-right: 8px !important;
+    width: 32px !important;
+    margin: 0 !important;
+    flex: 0 !important;
+    order: -9;
+}
+
+.volume-bar__icon-button {
+    margin-top: 4px;
+}
+
+.volume-bar__slider-container {
+    width: 120px !important;
+    position: absolute !important;
+    background: var(--spice-player) !important;
+    backdrop-filter: blur(10px);
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -30px;
+    z-index: 9;
+    left: -48px;
+    transition: all 0.3s ease;
+    transition-delay: 1s;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 8px;
+    padding: 0 20px 0 10px;
+}
+
+.volume-bar.main-nowPlayingBar-volumeBar:hover .volume-bar__slider-container
+.volume-bar__slider-container:hover {
+    opacity: 1;
+    visibility: visible;
+}
+
+svg#volume-icon {
+    fill: var(--spice-subtext) !important;
+}

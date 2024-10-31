@@ -79,9 +79,9 @@ button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-useBrows
 }
 
 
-.main-nowPlayingBar-container {
+/* .main-nowPlayingBar-container {
     overflow: hidden !important;
-}
+} */
 
 /* .playlist-playlist-recommendedTrackList button.Button-sc-y0gtbx-0 {
     background: var(--spice-main-elevated) !important;
