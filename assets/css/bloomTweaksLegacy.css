@@ -71,6 +71,24 @@ button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBro
 
 
 
+
+
+.LayoutResizer__resize-bar {
+    opacity: 1 !important;
+    background: var(--spice-sidebar);
+}
+
+.LayoutResizer__inline-end:after, .LayoutResizer__inline-start:after {
+    opacity: 0;
+}
+
+.LayoutResizer__resize-bar:hover .LayoutResizer__inline-end:after,
+.LayoutResizer__resize-bar:hover .LayoutResizer__inline-start:after {
+    opacity: 1;
+}
+
+
+
 /*-------------------------------------------------------------------------------- Custom Apps Configuration ---------------------------------------------------------------------------------*/
 
 
