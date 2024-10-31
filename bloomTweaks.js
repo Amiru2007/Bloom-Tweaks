@@ -66,6 +66,14 @@ function waitForSpicetify() {
         } else if (!prefs.lightTheme && lightThemeLink) {
             lightThemeLink.remove();
         }
+    
+        // Load friendsActivityBar.css (Updated name from 'friendsActivityBar.css')
+        const friendsActivityBarLink = document.querySelector("link[href*='friendsActivityBar.css']"); // Corrected here
+        if (prefs.friendsActivityBar && !friendsActivityBarLink) {
+            await loadCSSFile("friendsActivityBar.css");
+        } else if (!prefs.friendsActivityBar && friendsActivityBarLink) {
+            friendsActivityBarLink.remove();
+        }
     }
 
     async function loadCSSFile(fileName) {
@@ -214,6 +222,17 @@ function waitForSpicetify() {
                         </div>
                         <div class="bloom-tweaks x-settings-row">
                             <div class="bloom-tweaks x-settings-firstColumn">
+                                <label class="bloom-tweaks encore-text encore-text-body-small encore-internal-color-text-subdued">Custom Friends Activity Panel</label>
+                            </div>
+                            <div class="bloom-tweaks x-settings-secondColumn">
+                                <label class="bloom-tweaks x-toggle-wrapper">
+                                    <input id="friendsActivityBar" type="checkbox" class="bloom-tweaks x-toggle-input" ${prefs.friendsActivityBar ? "checked" : ""}>
+                                    <span class="bloom-tweaks x-toggle-indicatorWrapper"><span class="bloom-tweaks x-toggle-indicator"></span></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="bloom-tweaks x-settings-row">
+                            <div class="bloom-tweaks x-settings-firstColumn">
                                 <label class="bloom-tweaks encore-text encore-text-body-small encore-internal-color-text-subdued">Fluent Buttons CSS</label>
                             </div>
                             <div class="bloom-tweaks x-settings-secondColumn">
@@ -260,6 +279,7 @@ function waitForSpicetify() {
                             windowsColorThemeCSS: document.getElementById("windowsColorThemeCSS")?.checked || false,
                             customNPV: document.getElementById("customNPV")?.checked || false,
                             lightTheme: document.getElementById("lightTheme")?.checked || false,
+                            friendsActivityBar: document.getElementById("friendsActivityBar")?.checked || false,
                         };
 
                         savePreferences(newPrefs);
