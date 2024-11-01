@@ -1361,6 +1361,7 @@ button.main-genericButton-button.Button-sc-1dqy6lx-0.Button-small-small-buttonTe
 
 .main-nowPlayingBar-nowPlayingBar .ellipsis-one-line a {
     color: var(--text-subdued) !important;
+    font-size: var(--encore-text-size-smaller-2) !important;
 }
 
 .ellipsis-one-line.main-type-finale {
@@ -1368,6 +1369,10 @@ button.main-genericButton-button.Button-sc-1dqy6lx-0.Button-small-small-buttonTe
 }
 
 p.popup-row {
+    color: var(--text-subdued) !important;
+}
+
+.main-nowPlayingWidget-trackInfo.main-trackInfo-container .ellipsis-one-line.main-type-finale span {
     color: var(--text-subdued) !important;
 }
 
