@@ -65,3 +65,21 @@ span.ButtonInner-sc-14ud5tc-0 {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
 }
+
+.Dropdown-menu {
+    background-color: rgba(var(--spice-rgb-main), 0.5) !important;
+    backdrop-filter: blur(var(--blur-radius)) saturate(0.5) brightness(100%);
+    padding: 8px;
+    gap: 6px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Dropdown-menu {
+    scrollbar-color: var(--spice-main-elevated) transparent;
+    scrollbar-width: thin;
+}
+
+.Dropdown-option {
+    border-radius: 6px;
+}
