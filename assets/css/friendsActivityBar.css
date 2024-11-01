@@ -59,7 +59,7 @@ ul.gtJcoAXGeGQ9ochIvg6h {
     background: var(--spice-main);
     border-radius: var(--border-radius-2);
     width: calc(100% - 16px) !important;
-    margin-left: 0 !important;;
+    margin-left: 0 !important;
 }
 
 .cm9IUdJYVsbGCooedALf .SN5MVM1k5tAxwKeA7WDr {
@@ -127,7 +127,8 @@ button.cRB7yMdTUrWxDud8Uqvi.play {
     color: var(--spice-subtext) !important;
 }
 
-aside#Desktop_PanelContainer_Id figure.main-avatar-avatar, aside#Desktop_PanelContainer_Id figure.main-avatar-avatar div {
+aside#Desktop_PanelContainer_Id figure.main-avatar-avatar,
+aside#Desktop_PanelContainer_Id figure.main-avatar-avatar div {
     width: 24px !important;
     height: 24px !important;
 }

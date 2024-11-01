@@ -1,4 +1,8 @@
-button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBrowserDefaultFocusStyle-condensedAll svg, button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBrowserDefaultFocusStyle-condensedAll svg svg {
+button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBrowserDefaultFocusStyle-condensedAll
+    svg,
+button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBrowserDefaultFocusStyle-condensedAll
+    svg
+    svg {
     background: var(--spice-text) !important;
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/settings.svg) !important;
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/settings.svg) !important;
@@ -58,7 +62,11 @@ button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBro
 
 .PkOz5g82CaoKk1J3GX0e {
     background-color: var(--spice-main) !important;
-    background-image: linear-gradient(0deg, var(--spice-main), var(--spice-main)) !important;
+    background-image: linear-gradient(
+        0deg,
+        var(--spice-main),
+        var(--spice-main)
+    ) !important;
 }
 
 .yhlH4Dsjqw56Z58EOwvQ {
@@ -69,16 +77,13 @@ button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBro
     display: none !important;
 }
 
-
-
-
-
 .LayoutResizer__resize-bar {
     opacity: 1 !important;
     background: var(--spice-sidebar);
 }
 
-.LayoutResizer__inline-end:after, .LayoutResizer__inline-start:after {
+.LayoutResizer__inline-end:after,
+.LayoutResizer__inline-start:after {
     opacity: 0;
 }
 
@@ -87,15 +92,11 @@ button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBro
     opacity: 1;
 }
 
-
-
 /*-------------------------------------------------------------------------------- Custom Apps Configuration ---------------------------------------------------------------------------------*/
-
 
 button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle.link-subtle.main-globalNav-navLink.main-globalNav-link-icon.custom-navlink[aria-label*="Tags"] {
     display: none !important;
 }
-
 
 /* .main-nowPlayingBar-container {
     overflow: hidden !important;
@@ -111,9 +112,6 @@ button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-useBrows
     border: 1px solid var(--spice-player-bar-bg) !important;
 } */
 
-
-
-
 .main-contextMenu-highlightedText {
     background-color: #90d5ff !important;
     border-radius: 3px !important;
@@ -124,7 +122,9 @@ button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-useBrows
     display: none !important;
 }
 
-.playlist-playlist-playlist .IconWrapper__Wrapper-sc-1hf1hjl-0 .Svg-sc-ytk21e-0 {
+.playlist-playlist-playlist
+    .IconWrapper__Wrapper-sc-1hf1hjl-0
+    .Svg-sc-ytk21e-0 {
     width: 50px;
     height: 50px;
 }
@@ -147,11 +147,13 @@ button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-useBrows
     background-color: transparent !important;
 }
 
-.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only:hover .ButtonInner-sc-14ud5tc-0 {
+.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only:hover
+    .ButtonInner-sc-14ud5tc-0 {
     background-color: transparent !important;
 }
 
-.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only:active .ButtonInner-sc-14ud5tc-0 {
+.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only:active
+    .ButtonInner-sc-14ud5tc-0 {
     background-color: transparent !important;
 }
 
@@ -180,7 +182,8 @@ aside[aria-label="Friend Activity"] {
     z-index: 0;
 }
 
-button.main-actionButtons-button.main-topBarStatusIndicator-hasTooltip.main-noConnection-isNotice.main-topBarStatusIndicator-tooltipEnter.main-topBarStatusIndicator-tooltipEnterActive svg {
+button.main-actionButtons-button.main-topBarStatusIndicator-hasTooltip.main-noConnection-isNotice.main-topBarStatusIndicator-tooltipEnter.main-topBarStatusIndicator-tooltipEnterActive
+    svg {
     fill: var(--spice-alt-text) !important;
 }
 
@@ -204,13 +207,15 @@ aside[aria-label="Friend Activity"] .sGj6VHKqd2s4IorAqiYI p {
     width: 16px !important;
 }
 
-.main-trackList-rowSectionVariable[aria-sort*="ascending"] svg.Svg-sc-ytk21e-0.Svg-img-icon-small-textBrightAccent.OQc9_giz7hbNqHLZODIx {
+.main-trackList-rowSectionVariable[aria-sort*="ascending"]
+    svg.Svg-sc-ytk21e-0.Svg-img-icon-small-textBrightAccent.OQc9_giz7hbNqHLZODIx {
     background: var(--spice-accent) !important;
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/ic_fluent_caret_up_24_filled.svg) !important;
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/ic_fluent_caret_up_24_filled.svg) !important;
 }
 
-.main-trackList-rowSectionVariable[aria-sort*="descending"] svg.Svg-sc-ytk21e-0.Svg-img-icon-small-textBrightAccent.OQc9_giz7hbNqHLZODIx {
+.main-trackList-rowSectionVariable[aria-sort*="descending"]
+    svg.Svg-sc-ytk21e-0.Svg-img-icon-small-textBrightAccent.OQc9_giz7hbNqHLZODIx {
     background: var(--spice-accent) !important;
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/ic_fluent_caret_down_24_filled.svg) !important;
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/ic_fluent_caret_down_24_filled.svg) !important;
@@ -250,29 +255,48 @@ aside[aria-label="Queue"] .Button-sc-1dqy6lx-0 svg {
     background: rgba(0, 0, 0, 0.5) !important;
 }
 
-#spicetify-playlist-list li button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle[aria-label*="Play"] svg.Svg-sc-ytk21e-0.Svg-img-icon-medium,
+#spicetify-playlist-list
+    li
+    button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle[aria-label*="Play"]
+    svg.Svg-sc-ytk21e-0.Svg-img-icon-medium,
 .main-playButton-PlayButton.main-playButton-primary svg,
 aside[aria-label="Queue"] .Button-sc-1dqy6lx-0[aria-label*="Play"] svg,
 .cRB7yMdTUrWxDud8Uqvi[aria-label*="Play"] .RTHphmJ9fFJyJWFe9Kwt,
-.xU4sacBisQneHoQeHMP5 .srjSlmxMGzXnJBc32BJa[aria-label*="Play"] .lju7xv10a5Y5Z8h8CcKJ,
+.xU4sacBisQneHoQeHMP5
+    .srjSlmxMGzXnJBc32BJa[aria-label*="Play"]
+    .lju7xv10a5Y5Z8h8CcKJ,
 .play-button svg,
-.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only[aria-label*="Play"] .IconWrapper__Wrapper-sc-1hf1hjl-0 .Svg-sc-ytk21e-0,
-button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle.play svg,
-button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle[aria-label*="Play"] svg {
+.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only[aria-label*="Play"]
+    .IconWrapper__Wrapper-sc-1hf1hjl-0
+    .Svg-sc-ytk21e-0,
+button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle.play
+    svg,
+button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle[aria-label*="Play"]
+    svg {
     mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg) !important;
     -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg) !important;
     transition: transform 0.3s ease;
     background: var(--spice-text) !important;
 }
 
-#spicetify-playlist-list li button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle[aria-label*="Pause"] svg.Svg-sc-ytk21e-0.Svg-img-icon-medium,
+#spicetify-playlist-list
+    li
+    button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle[aria-label*="Pause"]
+    svg.Svg-sc-ytk21e-0.Svg-img-icon-medium,
 aside[aria-label="Queue"] .Button-sc-1dqy6lx-0[aria-label*="Pause"] svg,
 .cRB7yMdTUrWxDud8Uqvi[aria-label*="Pause"] .RTHphmJ9fFJyJWFe9Kwt,
-.xU4sacBisQneHoQeHMP5 .srjSlmxMGzXnJBc32BJa[aria-label*="Pause"] .lju7xv10a5Y5Z8h8CcKJ,
-.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only[aria-label*="Pause"] .IconWrapper__Wrapper-sc-1hf1hjl-0 .Svg-sc-ytk21e-,
-button.Button-sc-qlcn5g-0.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only.pause svg,
-button.Button-sc-qlcn5g-0.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only[aria-label*="Pause"] svg,
-button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle.pause svg {
+.xU4sacBisQneHoQeHMP5
+    .srjSlmxMGzXnJBc32BJa[aria-label*="Pause"]
+    .lju7xv10a5Y5Z8h8CcKJ,
+.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only[aria-label*="Pause"]
+    .IconWrapper__Wrapper-sc-1hf1hjl-0
+    .Svg-sc-ytk21e-,
+button.Button-sc-qlcn5g-0.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only.pause
+    svg,
+button.Button-sc-qlcn5g-0.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only[aria-label*="Pause"]
+    svg,
+button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle.pause
+    svg {
     mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_pause_16_filled.svg) !important;
     -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_pause_16_filled.svg) !important;
     transition: transform 0.3s ease;
@@ -307,23 +331,31 @@ button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly
     display: block !important;
 }
 
-.main-yourLibraryX-libraryItemContainer li.main-useDropTarget-base.main-useDropTarget-track.main-useDropTarget-local.main-useDropTarget-album.main-useDropTarget-episode.main-yourLibraryX-listItem button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle svg.Svg-sc-ytk21e-0.Svg-img-icon-medium path {
+.main-yourLibraryX-libraryItemContainer
+    li.main-useDropTarget-base.main-useDropTarget-track.main-useDropTarget-local.main-useDropTarget-album.main-useDropTarget-episode.main-yourLibraryX-listItem
+    button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle
+    svg.Svg-sc-ytk21e-0.Svg-img-icon-medium
+    path {
     background: transparent;
 }
 
-button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-in-keyboard-nav-condensedAll-useBrowserDefaultFocusStyle.PUipCs3_0Qott0Sru3pB.XAOxFVWnd185_vZ5zPGu.JUPaw8kZF94Coth4G88s[aria-label*="Expand folder"] svg {
+button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-in-keyboard-nav-condensedAll-useBrowserDefaultFocusStyle.PUipCs3_0Qott0Sru3pB.XAOxFVWnd185_vZ5zPGu.JUPaw8kZF94Coth4G88s[aria-label*="Expand folder"]
+    svg {
     background: var(--spice-subtext);
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_caret_down_24_filled.svg);
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_caret_down_24_filled.svg);
 }
 
-button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-in-keyboard-nav-condensedAll-useBrowserDefaultFocusStyle.PUipCs3_0Qott0Sru3pB.XAOxFVWnd185_vZ5zPGu[aria-label*="Collapse folder"] svg {
+button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-in-keyboard-nav-condensedAll-useBrowserDefaultFocusStyle.PUipCs3_0Qott0Sru3pB.XAOxFVWnd185_vZ5zPGu[aria-label*="Collapse folder"]
+    svg {
     background: var(--spice-subtext);
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_caret_down_24_filled.svg);
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_caret_down_24_filled.svg);
 }
 
-.main-yourLibraryX-listItem:hover .Box__BoxComponent-sc-y4nds-0.BoxComponent-group-listRow-naked-isInteractive-minBlockSize_56px-padding_8px.Box-sc-8t9c76-0.Box-group-listRow-isInteractive-hasLeadingOrMedia-minBlockSize_56px-padding_8px.fYWNdY4zhj4OX_T2Xtg6[aria-labelledby*="artist"] .BfALkuQy0UjTI70U9QlQ {
+.main-yourLibraryX-listItem:hover
+    .Box__BoxComponent-sc-y4nds-0.BoxComponent-group-listRow-naked-isInteractive-minBlockSize_56px-padding_8px.Box-sc-8t9c76-0.Box-group-listRow-isInteractive-hasLeadingOrMedia-minBlockSize_56px-padding_8px.fYWNdY4zhj4OX_T2Xtg6[aria-labelledby*="artist"]
+    .BfALkuQy0UjTI70U9QlQ {
     border-radius: 50% !important;
 }
 
@@ -332,7 +364,8 @@ button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-
     border-radius: 4px !important;
 }
 
-.Box__BoxComponent-sc-y4nds-0.BoxComponent-group-listRow-naked-isInteractive-minBlockSize_56px-padding_8px.Box-sc-8t9c76-0.Box-group-listRow-isInteractive-hasLeadingOrMedia-minBlockSize_56px-padding_8px.fYWNdY4zhj4OX_T2Xtg6[aria-labelledby*="artist"] .BfALkuQy0UjTI70U9QlQ {
+.Box__BoxComponent-sc-y4nds-0.BoxComponent-group-listRow-naked-isInteractive-minBlockSize_56px-padding_8px.Box-sc-8t9c76-0.Box-group-listRow-isInteractive-hasLeadingOrMedia-minBlockSize_56px-padding_8px.fYWNdY4zhj4OX_T2Xtg6[aria-labelledby*="artist"]
+    .BfALkuQy0UjTI70U9QlQ {
     border-radius: 50% !important;
 }
 
@@ -348,12 +381,14 @@ button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-
     padding: 0 !important;
 }
 
-.ZSXjRBoTtuX5kmFeZHQu span.IconWrapper__Wrapper-sc-1hf1hjl-0.Wrapper-small-leading-small {
+.ZSXjRBoTtuX5kmFeZHQu
+    span.IconWrapper__Wrapper-sc-1hf1hjl-0.Wrapper-small-leading-small {
     margin: 0 4px !important;
 }
 
 .shuffle-enabled {
-    filter: brightness(0) saturate(100%) invert(79%) sepia(29%) saturate(800%) hue-rotate(87deg) brightness(87%) contrast(81%) !important;
+    filter: brightness(0) saturate(100%) invert(79%) sepia(29%) saturate(800%)
+        hue-rotate(87deg) brightness(87%) contrast(81%) !important;
 }
 
 .Wrapper-large-only-medium .Svg-sc-ytk21e-0 {
@@ -365,14 +400,16 @@ button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-
     transition: transform 0.3s ease;
 }
 
-.main-trackList-rowImagePlayButton[aria-label*="Play"] .main-trackList-rowPlayPauseIcon {
+.main-trackList-rowImagePlayButton[aria-label*="Play"]
+    .main-trackList-rowPlayPauseIcon {
     mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg);
     -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg);
     background-color: var(--spice-text) !important;
     transition: transform 0.3s ease;
 }
 
-.main-trackList-rowImagePlayButton[aria-label*="Pause"] .main-trackList-rowPlayPauseIcon {
+.main-trackList-rowImagePlayButton[aria-label*="Pause"]
+    .main-trackList-rowPlayPauseIcon {
     mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_pause_16_filled.svg);
     -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_pause_16_filled.svg);
     background-color: var(--spice-text) !important;
@@ -427,7 +464,9 @@ button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-
     display: none;
 }
 
-.desktop-grid-wrapper .main-trackList-rowImageWithPlay:hover .main-trackList-rowPlayPauseWrapper {
+.desktop-grid-wrapper
+    .main-trackList-rowImageWithPlay:hover
+    .main-trackList-rowPlayPauseWrapper {
     opacity: 1 !important;
 }
 
@@ -509,7 +548,6 @@ button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-
     background-color: var(--spice-sidebar-highlight) !important;
 }
 
-
 .main-rootlist-rootlistItemLink .main-rootlist-itemLinkText {
     border-radius: 4px !important;
     font-weight: 400 !important;
@@ -519,11 +557,13 @@ button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-
     opacity: 1 !important;
 }
 
-.main-trackList-rowImageWithPlay:hover .main-trackList-rowImagePlayButton[aria-label*="Play"] {
+.main-trackList-rowImageWithPlay:hover
+    .main-trackList-rowImagePlayButton[aria-label*="Play"] {
     display: block !important;
 }
 
-.main-trackList-rowImageWithPlay:hover .main-trackList-rowImagePlayButton[aria-label*="Pause"] {
+.main-trackList-rowImageWithPlay:hover
+    .main-trackList-rowImagePlayButton[aria-label*="Pause"] {
     display: none !important;
 }
 
@@ -535,11 +575,7 @@ button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-
     color: var(--text-subdued);
 }
 
-
-
 /* ------------------------------------ Profile Page ----------------------------------- */
-
-
 
 .spotify__container--is-desktop:not(.fullscreen) .zogFp9G1AEqb8AKOd5BO {
     -webkit-app-region: no-drag;
@@ -571,14 +607,16 @@ button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-
     background: linear-gradient(180deg, #0f0f0f, var(--spice-tab-active));
 }
 
-
-
 /* ------------------------------------ Marketplace ------------------------------------ */
 
-
-
-.marketplace-grid .main-card-draggable .main-card-cardMetadata li.marketplace-card__tag[data-tag="external JS"],
-.marketplace-grid .main-card-draggable .main-card-cardMetadata li.marketplace-card__tag[data-tag=archived] {
+.marketplace-grid
+    .main-card-draggable
+    .main-card-cardMetadata
+    li.marketplace-card__tag[data-tag="external JS"],
+.marketplace-grid
+    .main-card-draggable
+    .main-card-cardMetadata
+    li.marketplace-card__tag[data-tag="archived"] {
     background-color: var(--spice-accent) !important;
     color: var(--spice-alt-text) !important;
 }
@@ -600,7 +638,7 @@ a[class*="topBarActive"] {
 
 a[class*="-tabBar-active"]::before,
 a[class*="topBarActive"]::before {
-    content: '';
+    content: "";
     background: var(--spice-accent);
     display: block !important;
     width: calc(100% - 22px);
@@ -627,7 +665,7 @@ a[class*="topBarActive"]::before {
 }
 
 .marketplace-card-type-heading {
-    margin: 2em 0 .5em !important;
+    margin: 2em 0 0.5em !important;
 }
 
 .global-nav .marketplace-header {
@@ -643,17 +681,15 @@ a[class*="topBarActive"]::before {
     display: none !important;
 } */
 
-
-
 /* -------------------------------------- Play Bar ------------------------------------- */
-
-
 
 .HD9s7U5E1RLSWKpXmrqx {
     background: transparent !important;
 }
 
-.Root__now-playing-bar .Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only .Svg-sc-ytk21e-0 {
+.Root__now-playing-bar
+    .Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only
+    .Svg-sc-ytk21e-0 {
     width: 28px !important;
     height: 28px !important;
 }
@@ -673,7 +709,8 @@ button.Button-sc-1dqy6lx-0[aria-label*="Next"] {
     padding-right: 10px !important;
 }
 
-button.Button-sc-1dqy6lx-0[aria-label*="Previous"] svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
+button.Button-sc-1dqy6lx-0[aria-label*="Previous"]
+    svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
     mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_previous_24_filled.svg);
     -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_previous_24_filled.svg);
     background-color: var(--spice-text) !important;
@@ -681,7 +718,8 @@ button.Button-sc-1dqy6lx-0[aria-label*="Previous"] svg.Svg-sc-ytk21e-0.Svg-img-i
     height: 24px !important;
 }
 
-button.Button-sc-1dqy6lx-0[aria-label*="Next"] svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
+button.Button-sc-1dqy6lx-0[aria-label*="Next"]
+    svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
     mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_next_24_filled.svg);
     -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_next_24_filled.svg);
     background-color: var(--spice-text) !important;
@@ -705,7 +743,8 @@ button.Button-sc-1dqy6lx-0[aria-label*="Enable repeat one"] path {
     opacity: 0 !important;
 }
 
-button.Button-sc-1dqy6lx-0[aria-label*="Enable shuffle"] svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
+button.Button-sc-1dqy6lx-0[aria-label*="Enable shuffle"]
+    svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
     mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/refs/heads/main/assets/fluentui-system-icons/ic_fluent_arrow_shuffle_24_regular.svg);
     -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/refs/heads/main/assets/fluentui-system-icons/ic_fluent_arrow_shuffle_24_regular.svg);
     background-color: var(--text-subdued) !important;
@@ -713,7 +752,8 @@ button.Button-sc-1dqy6lx-0[aria-label*="Enable shuffle"] svg.Svg-sc-ytk21e-0.Svg
     height: 22px !important;
 }
 
-button.Button-sc-1dqy6lx-0[aria-label*="Disable shuffle"] svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
+button.Button-sc-1dqy6lx-0[aria-label*="Disable shuffle"]
+    svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
     mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/refs/heads/main/assets/fluentui-system-icons/ic_fluent_arrow_shuffle_24_filled.svg);
     -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/refs/heads/main/assets/fluentui-system-icons/ic_fluent_arrow_shuffle_24_filled.svg);
     background-color: var(--spice-accent) !important;
@@ -721,7 +761,8 @@ button.Button-sc-1dqy6lx-0[aria-label*="Disable shuffle"] svg.Svg-sc-ytk21e-0.Sv
     height: 22px !important;
 }
 
-button.Button-sc-1dqy6lx-0[aria-label*="Enable repeat"] svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
+button.Button-sc-1dqy6lx-0[aria-label*="Enable repeat"]
+    svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
     mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/refs/heads/main/assets/fluentui-system-icons/ic_fluent_arrow_repeat_all_off_24_regular.svg);
     -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/refs/heads/main/assets/fluentui-system-icons/ic_fluent_arrow_repeat_all_off_24_regular.svg);
     background-color: var(--text-subdued) !important;
@@ -729,7 +770,8 @@ button.Button-sc-1dqy6lx-0[aria-label*="Enable repeat"] svg.Svg-sc-ytk21e-0.Svg-
     height: 22px !important;
 }
 
-button.Button-sc-1dqy6lx-0[aria-label*="Enable repeat one"] svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
+button.Button-sc-1dqy6lx-0[aria-label*="Enable repeat one"]
+    svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
     mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/refs/heads/main/assets/fluentui-system-icons/ic_fluent_arrow_repeat_all_24_filled.svg);
     -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/refs/heads/main/assets/fluentui-system-icons/ic_fluent_arrow_repeat_all_24_filled.svg);
     background-color: var(--spice-accent) !important;
@@ -737,7 +779,8 @@ button.Button-sc-1dqy6lx-0[aria-label*="Enable repeat one"] svg.Svg-sc-ytk21e-0.
     height: 22px !important;
 }
 
-button.Button-sc-1dqy6lx-0[aria-label*="Disable repeat"] svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
+button.Button-sc-1dqy6lx-0[aria-label*="Disable repeat"]
+    svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
     mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/refs/heads/main/assets/fluentui-system-icons/ic_fluent_arrow_repeat_all_once_24_filled.svg);
     -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/refs/heads/main/assets/fluentui-system-icons/ic_fluent_arrow_repeat_all_once_24_filled.svg);
     background-color: var(--spice-accent) !important;
@@ -763,11 +806,7 @@ button.Button-sc-1dqy6lx-0[aria-label*="Disable repeat"] svg.Svg-sc-ytk21e-0.Svg
     padding: 0 10px;
 }
 
-
-
 /* -------------------------------------- Event Page ------------------------------------- */
-
-
 
 .HYVIJaYYiCTgSCHie70L {
     background: rgba(var(--spice-rgb-card), 0.7) !important;
@@ -811,11 +850,7 @@ button.Button-sc-1dqy6lx-0[aria-label*="Disable repeat"] svg.Svg-sc-ytk21e-0.Svg
     margin-top: -4px;
 }
 
-
-
 /* -------------------------------------- Top Bar ------------------------------------- */
-
-
 
 .main-topBar-topbarContent svg {
     width: 25px !important;
@@ -830,7 +865,7 @@ button.main-topBar-button,
 }
 
 .main-topBar-buddyFeed::before {
-    content: '';
+    content: "";
     width: 32px;
     height: 32px;
     position: absolute;
@@ -874,19 +909,22 @@ button.main-topBar-button[aria-label*="playlist-stats"] svg {
     background: var(--spice-subtext);
 } */
 
-button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-condensed-useBrowserDefaultFocusStyle.main-globalNav-icon[aria-label*="Full App Display"] svg,
+button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-condensed-useBrowserDefaultFocusStyle.main-globalNav-icon[aria-label*="Full App Display"]
+    svg,
 button.main-topBar-button[aria-label*="Full App Display"] svg {
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/tv.svg) !important;
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/tv.svg) !important;
 }
 
-button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-condensed-useBrowserDefaultFocusStyle.main-globalNav-icon[aria-label*="Bookmark"] svg,
+button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-condensed-useBrowserDefaultFocusStyle.main-globalNav-icon[aria-label*="Bookmark"]
+    svg,
 button.main-topBar-button[aria-label*="Bookmark"] svg {
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/bookmark.svg) !important;
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/bookmark.svg) !important;
 }
 
-button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-condensed-useBrowserDefaultFocusStyle.main-globalNav-icon[aria-label*="Beautiful Fullscreen"] svg,
+button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-condensed-useBrowserDefaultFocusStyle.main-globalNav-icon[aria-label*="Beautiful Fullscreen"]
+    svg,
 button.main-topBar-button[aria-label*="Beautiful Fullscreen"] svg {
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/fullscreen.svg) !important;
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/fullscreen.svg) !important;
@@ -931,7 +969,8 @@ button[aria-label*="Get Random Saved Album"]:hover svg {
     transform: translateX(8px);
 }
 
-button.main-actionButtons-button.main-topBarStatusIndicator-hasTooltip.main-noConnection-isNotice.main-topBarStatusIndicator-tooltipEnter.main-topBarStatusIndicator-tooltipEnterActive svg {
+button.main-actionButtons-button.main-topBarStatusIndicator-hasTooltip.main-noConnection-isNotice.main-topBarStatusIndicator-tooltipEnter.main-topBarStatusIndicator-tooltipEnterActive
+    svg {
     fill: var(--spice-accent) !important;
 }
 
@@ -942,7 +981,7 @@ button.main-actionButtons-button.main-topBarStatusIndicator-hasTooltip.main-noCo
 }
 
 .link-subtle.main-topBar-topbarContentRight::after {
-    content: '';
+    content: "";
     width: 142px;
     height: 32px;
     position: absolute;
@@ -950,7 +989,8 @@ button.main-actionButtons-button.main-topBarStatusIndicator-hasTooltip.main-noCo
     right: -7px;
 }
 
-button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-condensed-disabled-isUsingKeyboard-useBrowserDefaultFocusStyle.main-globalNav-icon.play svg {
+button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-condensed-disabled-isUsingKeyboard-useBrowserDefaultFocusStyle.main-globalNav-icon.play
+    svg {
     height: 24px !important;
     width: 24px !important;
     background: var(--spice-subtext) !important;
@@ -963,7 +1003,7 @@ button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-condense
 }
 
 .main-globalNav-historyButtons div::after {
-    content: '';
+    content: "";
     width: 1px;
     height: 30px;
     background: var(--spice-contour);
@@ -973,31 +1013,32 @@ button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-condense
     margin-left: 5px;
 }
 
-button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-condensed-disabled-isUsingKeyboard-useBrowserDefaultFocusStyle.main-globalNav-icon.play path {
+button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-condensed-disabled-isUsingKeyboard-useBrowserDefaultFocusStyle.main-globalNav-icon.play
+    path {
     opacity: 0 !important;
 }
 
-
-
 /* -------------------------------------- New Release Page ------------------------------------- */
 
-
-
-.view-homeShortcutsGrid-PlayButtonContainer .Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only {
+.view-homeShortcutsGrid-PlayButtonContainer
+    .Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only {
     background: transparent !important;
 }
 
-.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only .Svg-sc-ytk21e-0,
+.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only
+    .Svg-sc-ytk21e-0,
 .view-homeShortcutsGrid-PlayButtonContainer .Svg-sc-ytk21e-0 {
     width: 35px;
     height: 35px;
 }
 
-.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only .ButtonInner-small-iconOnly {
+.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only
+    .ButtonInner-small-iconOnly {
     background: transparent !important;
 }
 
-.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only .IconWrapper__Wrapper-sc-1hf1hjl-0 {
+.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only
+    .IconWrapper__Wrapper-sc-1hf1hjl-0 {
     top: 0 !important;
     left: 0 !important;
     margin: 0 !important;
@@ -1024,11 +1065,7 @@ span.ListRowDetails__LineClamp-sc-sozu4l-1.LineClamp a,
     color: var(--text-subdued) !important;
 }
 
-
-
 /* -------------------------------------- New Release Page ------------------------------------- */
-
-
 
 .tag-list-button {
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/ic_fluent_edit_24_regular.svg);
@@ -1040,11 +1077,7 @@ span.ListRowDetails__LineClamp-sc-sozu4l-1.LineClamp a,
     margin-left: 6px;
 }
 
-
-
 /* -------------------------------------- Nav Bar ------------------------------------- */
-
-
 
 .main-yourLibraryX-header .Button-sc-1dqy6lx-0[aria-label="Go back"] svg {
     mask-image: url(https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_arrow_left_24_filled.svg) !important;
@@ -1081,7 +1114,6 @@ span.ListRowDetails__LineClamp-sc-sozu4l-1.LineClamp a,
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_arrow_collapse_all_24_filled.svg);
     transform: rotate(270deg);
 }
-
 
 .main-yourLibraryX-libraryRootlist span.collapse-button svg path {
     opacity: 0 !important;
@@ -1134,11 +1166,7 @@ span.ListRowDetails__LineClamp-sc-sozu4l-1.LineClamp a,
     border-radius: 50%;
 } */
 
-
-
 /* -------------------------------------- Spicetify Tags ------------------------------------- */
-
-
 
 .GitHub-button-wrapper,
 .README h1,
@@ -1170,16 +1198,16 @@ span.ListRowDetails__LineClamp-sc-sozu4l-1.LineClamp a,
 }
 
 .text-input {
-    scrollbar-color: rgba(var(--spice-rgb-selected-row), .3) transparent;
+    scrollbar-color: rgba(var(--spice-rgb-selected-row), 0.3) transparent;
     -webkit-font-smoothing: antialiased;
     user-select: none;
     box-sizing: border-box;
-    font-family: "Segoe UI Variable Display", "Segoe UI Variable Text", "Segoe UI",
-        "Microsoft Ya Hei", sans-serif !important;
+    font-family: "Segoe UI Variable Display", "Segoe UI Variable Text",
+        "Segoe UI", "Microsoft Ya Hei", sans-serif !important;
     line-height: normal;
     box-shadow: none !important;
     text-transform: none;
-    background: rgba(var(--spice-rgb-selected-row), .1);
+    background: rgba(var(--spice-rgb-selected-row), 0.1);
     border: 1px solid transparent;
     color: var(--spice-text);
     font-size: 14px;
@@ -1225,15 +1253,16 @@ input.tag-search-bar::placeholder {
 }
 
 .modal-button {
-    scrollbar-color: rgba(var(--spice-rgb-selected-row), .3) transparent;
+    scrollbar-color: rgba(var(--spice-rgb-selected-row), 0.3) transparent;
     -webkit-font-smoothing: antialiased;
     user-select: none;
     box-sizing: border-box;
-    font-family: "Segoe UI Variable Display", "Segoe UI Variable Text", "Segoe UI", "Microsoft Ya Hei", sans-serif !important;
+    font-family: "Segoe UI Variable Display", "Segoe UI Variable Text",
+        "Segoe UI", "Microsoft Ya Hei", sans-serif !important;
     line-height: normal;
     box-shadow: none !important;
     text-transform: none;
-    background: rgba(var(--spice-rgb-selected-row), .1);
+    background: rgba(var(--spice-rgb-selected-row), 0.1);
     border: 1px solid transparent;
     color: var(--spice-text);
     font-size: 14px;
@@ -1244,7 +1273,7 @@ input.tag-search-bar::placeholder {
     border-radius: 9999px;
     color: var(--spice-alt-text) !important;
     font-weight: 700;
-    background: var(--spice-text) !Important;
+    background: var(--spice-text) !important;
 }
 
 .main-trackCreditsModal-container {
@@ -1283,10 +1312,7 @@ background-color: var(--spice-accent);
 font-weight: 500;
 */
 
-
 /* -------------------------------------- Beautiful Lyrics ------------------------------------- */
-
-
 
 #BeautifulLyricsFullscreenButton svg {
     fill: var(--spice-subtext) !important;
@@ -1353,11 +1379,7 @@ button.main-genericButton-button.Button-sc-1dqy6lx-0.Button-small-small-buttonTe
     margin-left: 0px !important;
 }
 
-
-
 /* -------------------------------------- Genre Tags ------------------------------------- */
-
-
 
 .main-nowPlayingBar-nowPlayingBar .ellipsis-one-line a {
     color: var(--text-subdued) !important;
@@ -1372,15 +1394,13 @@ p.popup-row {
     color: var(--text-subdued) !important;
 }
 
-.main-nowPlayingWidget-trackInfo.main-trackInfo-container .ellipsis-one-line.main-type-finale span {
+.main-nowPlayingWidget-trackInfo.main-trackInfo-container
+    .ellipsis-one-line.main-type-finale
+    span {
     color: var(--text-subdued) !important;
 }
 
-
-
 /* -------------------------------------- Home ------------------------------------- */
-
-
 
 .mjZrvVI3CxfHJXu7y0Lg {
     border-top-left-radius: 8px;
@@ -1417,11 +1437,24 @@ p.popup-row {
 }
 
 .QSkuUiKpZ4MHrdOB83XV {
-    background: linear-gradient(0deg, transparent 2.09%, rgb(10 10 10 / 10%) 16.28%, rgb(10 10 10 / 40%) 36.5%, rgb(10 10 10 / 60%) 53.25%) !important;
+    background: linear-gradient(
+        0deg,
+        transparent 2.09%,
+        rgb(10 10 10 / 10%) 16.28%,
+        rgb(10 10 10 / 40%) 36.5%,
+        rgb(10 10 10 / 60%) 53.25%
+    ) !important;
 }
 
-.AqLt2Nk3rygv3mAt_6gi, .C2dCWzsDwu1iDX7ttMKA {
-    background: linear-gradient(180deg, transparent 2.09%, rgb(10 10 10 / 10%) 16.28%, rgb(10 10 10 / 40%) 36.5%, rgb(10 10 10 / 60%) 53.25%) !important;
+.AqLt2Nk3rygv3mAt_6gi,
+.C2dCWzsDwu1iDX7ttMKA {
+    background: linear-gradient(
+        180deg,
+        transparent 2.09%,
+        rgb(10 10 10 / 10%) 16.28%,
+        rgb(10 10 10 / 40%) 36.5%,
+        rgb(10 10 10 / 60%) 53.25%
+    ) !important;
 }
 
 .OGu88AVNWY3IM3QlZjG0 {
@@ -1433,11 +1466,7 @@ p.popup-row {
     animation: none !important;
 }
 
-
-
 /* -------------------------------------- Sleep Time ------------------------------------- */
-
-
 
 #sleep-timer-menu .btn-success,
 #sleep-timer-menu .btn-success:hover {
@@ -1446,11 +1475,7 @@ p.popup-row {
     color: var(--spice-alt-text) !important;
 }
 
-
-
 /* -------------------------------------- Bookmarks ------------------------------------- */
-
-
 
 .main-playButton-PlayButton.main-playButton-primary {
     background: transparent;
@@ -1471,11 +1496,7 @@ p.popup-row {
     margin-top: 12px !important;
 }
 
-
-
 /* -------------------------------------- Spicetify Stats ------------------------------------- */
-
-
 
 .Box__BoxComponent-sc-y4nds-0.BoxComponent-group-card-naked-isInteractive-draggable.Box-sc-1njtxi4-0.Box-group-naked-card-md-isInteractive-draggable.main-card-cardContainer.Card:hover:active,
 .Box__BoxComponent-sc-y4nds-0.BoxComponent-group-card-naked-isInteractive-draggable.Box-sc-1njtxi4-0.Box-group-naked-card-md-isInteractive-draggable.main-card-cardContainer.Card {
@@ -1502,7 +1523,7 @@ p.popup-row {
 }
 
 .badge::after {
-    content: '';
+    content: "";
     width: 6px;
     height: 6px;
     background: red;
@@ -1511,14 +1532,22 @@ p.popup-row {
     top: 0;
     background-color: var(--spice-card);
     margin: 0;
-    -webkit-mask-image: radial-gradient(circle at bottom right, transparent 70.6%, black 51%);
-    mask-image: radial-gradient(circle at bottom right, transparent 70.6%, black 51%);
+    -webkit-mask-image: radial-gradient(
+        circle at bottom right,
+        transparent 70.6%,
+        black 51%
+    );
+    mask-image: radial-gradient(
+        circle at bottom right,
+        transparent 70.6%,
+        black 51%
+    );
     -webkit-mask-size: 100% 100%;
     mask-size: 100% 100%;
 }
 
 .badge::before {
-    content: '';
+    content: "";
     width: 6px;
     height: 6px;
     background: red;
@@ -1527,15 +1556,26 @@ p.popup-row {
     top: 30px;
     background-color: var(--spice-card);
     margin: 0;
-    -webkit-mask-image: radial-gradient(circle at bottom right, transparent 70.6%, black 51%);
-    mask-image: radial-gradient(circle at bottom right, transparent 70.6%, black 51%);
+    -webkit-mask-image: radial-gradient(
+        circle at bottom right,
+        transparent 70.6%,
+        black 51%
+    );
+    mask-image: radial-gradient(
+        circle at bottom right,
+        transparent 70.6%,
+        black 51%
+    );
     -webkit-mask-size: 100% 100%;
     mask-size: 100% 100%;
 }
 
-.Box__BoxComponent-sc-y4nds-0.BoxComponent-group-card-naked-isInteractive-draggable.Box-sc-1njtxi4-0.Box-group-naked-card-md-isInteractive-draggable.main-card-cardContainer.Card:hover+.badge,
-.Box__BoxComponent-sc-y4nds-0.BoxComponent-group-card-naked-isInteractive-draggable.Box-sc-1njtxi4-0.Box-group-naked-card-md-isInteractive-draggable.main-card-cardContainer.Card:hover+.badge::after,
-.Box__BoxComponent-sc-y4nds-0.BoxComponent-group-card-naked-isInteractive-draggable.Box-sc-1njtxi4-0.Box-group-naked-card-md-isInteractive-draggable.main-card-cardContainer.Card:hover+.badge::before {
+.Box__BoxComponent-sc-y4nds-0.BoxComponent-group-card-naked-isInteractive-draggable.Box-sc-1njtxi4-0.Box-group-naked-card-md-isInteractive-draggable.main-card-cardContainer.Card:hover
+    + .badge,
+.Box__BoxComponent-sc-y4nds-0.BoxComponent-group-card-naked-isInteractive-draggable.Box-sc-1njtxi4-0.Box-group-naked-card-md-isInteractive-draggable.main-card-cardContainer.Card:hover
+    + .badge::after,
+.Box__BoxComponent-sc-y4nds-0.BoxComponent-group-card-naked-isInteractive-draggable.Box-sc-1njtxi4-0.Box-group-naked-card-md-isInteractive-draggable.main-card-cardContainer.Card:hover
+    + .badge::before {
     background-color: var(--background-highlight, #f0f0f0) !important;
 }
 
@@ -1583,11 +1623,14 @@ p.popup-row {
     border-radius: 10px 10px 0 0 !important;
 }
 
-#stats-app span.TypeElement-mesto-textSubdued.TypeElement-mesto-textSubdued-type.main-trackList-rowSubTitle.standalone-ellipsis-one-line {
+#stats-app
+    span.TypeElement-mesto-textSubdued.TypeElement-mesto-textSubdued-type.main-trackList-rowSubTitle.standalone-ellipsis-one-line {
     margin-top: -2px;
 }
 
-#stats-app span.TypeElement-mesto-textSubdued.TypeElement-mesto-textSubdued-type.main-trackList-rowSubTitle.standalone-ellipsis-one-line a {
+#stats-app
+    span.TypeElement-mesto-textSubdued.TypeElement-mesto-textSubdued-type.main-trackList-rowSubTitle.standalone-ellipsis-one-line
+    a {
     color: var(--text-subdued) !important;
     font-size: 14px !important;
 }
@@ -1631,28 +1674,36 @@ svg.Svg-img-16.Svg-img-16-icon.Svg-img-icon.Svg-img-icon-small[data-encore-id*="
 }
 */
 
-
 /* -------------------------------------- Spicetify Better Local Fils by Pithaya ------------------------------------- */
 
-
-
-.contentSpacing.main-entityHeader-container.main-entityHeader-nonWrapped.main-entityHeader-newEntityHeaders .app-module__center-container___LG8O4_betterDlocalDfiles {
+.contentSpacing.main-entityHeader-container.main-entityHeader-nonWrapped.main-entityHeader-newEntityHeaders
+    .app-module__center-container___LG8O4_betterDlocalDfiles {
     border-radius: var(--border-radius-1) !important;
     box-shadow: 0 4px 60px rgb(33 33 33 / 50%) !important;
-    background-image: linear-gradient(to right top, #007cbc, #00a1d3, #00c2bc, #00dc7c, #a8eb12) !important;
+    background-image: linear-gradient(
+        to right top,
+        #007cbc,
+        #00a1d3,
+        #00c2bc,
+        #00dc7c,
+        #a8eb12
+    ) !important;
 }
 
-.app-module__stretch-container___SIzsh_betterDlocalDfiles.undefined .main-trackList-trackListRow {
+.app-module__stretch-container___SIzsh_betterDlocalDfiles.undefined
+    .main-trackList-trackListRow {
     width: calc(100% - 20px) !important;
     margin-left: 10px !important;
-    margin-top: 0px !Important;
+    margin-top: 0px !important;
 }
 
-.app-module__stretch-container___SIzsh_betterDlocalDfiles.undefined .main-trackList-trackListHeaderRow {
+.app-module__stretch-container___SIzsh_betterDlocalDfiles.undefined
+    .main-trackList-trackListHeaderRow {
     margin-bottom: 25px;
 }
 
-.app-module__stretch-container___SIzsh_betterDlocalDfiles.undefined .main-entityHeader-backgroundColor {
+.app-module__stretch-container___SIzsh_betterDlocalDfiles.undefined
+    .main-entityHeader-backgroundColor {
     background-color: #00a1d3;
 }
 
@@ -1661,27 +1712,29 @@ span.Type__TypeElement-sc-goli3j-0.TypeElement-type-mesto-textSubdued.main-track
     color: var(--spice-subtext) !important;
 }
 
-.app-module__full-size-container___XoGtP_betterDlocalDfiles .contentSpacing:not(.artist-artistDiscography-topBar, .search-searchCategory-container, .hV9v6y_uYwdAsoiOHpzk, .main-entityHeader-container, .main-actionBar-ActionBar) {
+.app-module__full-size-container___XoGtP_betterDlocalDfiles
+    .contentSpacing:not(
+        .artist-artistDiscography-topBar,
+        .search-searchCategory-container,
+        .hV9v6y_uYwdAsoiOHpzk,
+        .main-entityHeader-container,
+        .main-actionBar-ActionBar
+    ) {
     padding-top: 8px;
     padding-bottom: 110px;
 }
 
-.main-playButton-PlayButton>button {
+.main-playButton-PlayButton > button {
     width: 50px !important;
     height: 50px !important;
     margin: 3px;
 }
 
-
-
 /* -------------------------------------- Made For You ------------------------------------- */
-
-
 
 a[aria-label*="Made for you"] .TypeElement-balladBold-type {
     font-weight: 700 !important;
 }
-
 
 .custom-style a {
     background-color: var(--spice-selected-row);
@@ -1698,7 +1751,9 @@ svg.made-for-you-icon.home-icon {
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/crown-simple.svg);
 }
 
-li.main-yourLibraryX-navItem a[aria-label*="Made for you"]:hover svg.made-for-you-icon.home-icon {
+li.main-yourLibraryX-navItem
+    a[aria-label*="Made for you"]:hover
+    svg.made-for-you-icon.home-icon {
     background: var(--spice-text);
 }
 
@@ -1712,11 +1767,7 @@ li.main-yourLibraryX-navItem a[aria-label*="Made for you"]:hover svg.made-for-yo
     background: var(--spice-accent) !important;
 }
 
-
-
 /* -------------------------------------- Spicetify Library by Harbassan ------------------------------------- */
-
-
 
 .main-yourLibraryX-navLink[href="/library"] svg {
     mask-image: url(https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_library_24_regular.svg) !important;
@@ -1730,11 +1781,11 @@ li.main-yourLibraryX-navItem a[aria-label*="Made for you"]:hover svg.made-for-yo
     background-color: var(--spice-accent) !important;
 }
 
-.main-yourLibraryX-navLink[href="/library"]:hover>svg {
+.main-yourLibraryX-navLink[href="/library"]:hover > svg {
     background-color: var(--spice-text) !important;
 }
 
-.main-yourLibraryX-navLink[href="/library"].active:hover>svg {
+.main-yourLibraryX-navLink[href="/library"].active:hover > svg {
     background-color: var(--spice-accent) !important;
 }
 
@@ -1742,8 +1793,11 @@ li.main-yourLibraryX-navItem a[aria-label*="Made for you"]:hover svg.made-for-yo
     opacity: 0;
 }
 
-.main-gridContainer-gridContainer div .Box__BoxComponent-sc-y4nds-0[aria-labelledby*='folder'] .main-card-imageContainer::after {
-    content: '';
+.main-gridContainer-gridContainer
+    div
+    .Box__BoxComponent-sc-y4nds-0[aria-labelledby*="folder"]
+    .main-card-imageContainer::after {
+    content: "";
     background: #00000000;
     height: 24px;
     width: 24px;
@@ -1759,11 +1813,7 @@ li.main-yourLibraryX-navItem a[aria-label*="Made for you"]:hover svg.made-for-yo
     margin-right: 0 !important;
 }
 
-
-
 /* -------------------------------------- Spicetify Library by Harbassan ------------------------------------- */
-
-
 
 #playback-bar-drag-block div div:nth-child(3),
 #playback-bar-drag-block div div:nth-child(6) {
@@ -1781,7 +1831,7 @@ li.main-yourLibraryX-navItem a[aria-label*="Made for you"]:hover svg.made-for-yo
 #playback-bar-drag-block div div:nth-child(2)::after,
 #playback-bar-drag-block div div:nth-child(4)::after,
 #playback-bar-drag-block div div:nth-child(5)::after {
-    content: '';
+    content: "";
     background: var(--spice-text);
     width: 2px;
     height: 16px;
@@ -1790,11 +1840,7 @@ li.main-yourLibraryX-navItem a[aria-label*="Made for you"]:hover svg.made-for-yo
     position: absolute;
 }
 
-
-
 /* -------------------------------------- Local Files Folder ------------------------------------- */
-
-
 
 .standalone-ellipsis-one-line.W676nknusnBt8sz19YVV {
     font-size: var(--encore-text-size-smaller) !important;
@@ -1859,11 +1905,7 @@ li.main-yourLibraryX-navItem a[aria-label*="Made for you"]:hover svg.made-for-yo
     margin-top: 64px !important;
 } */
 
-
-
 /* -------------------------------------- Duplicate modal ------------------------------------- */
-
-
 
 .main-duplicateTrackModal-container {
     background-color: var(--background-base) !important;
@@ -1879,11 +1921,7 @@ li.main-yourLibraryX-navItem a[aria-label*="Made for you"]:hover svg.made-for-yo
     color: var(--text-subdued) !important;
 }
 
-
-
 /* -------------------------------------- Spicetify tags (Additional) ------------------------------------- */
-
-
 
 .special-tag-button {
     order: -1 !important;
@@ -1896,20 +1934,23 @@ li.main-yourLibraryX-navItem a[aria-label*="Made for you"]:hover svg.made-for-yo
     order: -2 !important;
 }
 
-.special-tag-button span.LegacyChipInner__ChipInnerComponent-sc-1qguixk-0.ChipInnerComponent-sm-isUsingKeyboard.tag-list-tag {
+.special-tag-button
+    span.LegacyChipInner__ChipInnerComponent-sc-1qguixk-0.ChipInnerComponent-sm-isUsingKeyboard.tag-list-tag {
     background: var(--spice-text) !important;
     color: var(--spice-alt-text) !important;
     /* padding-left: 46px !important; */
 }
 
-.special-tag-button-spotify span.LegacyChipInner__ChipInnerComponent-sc-1qguixk-0.ChipInnerComponent-sm-isUsingKeyboard.tag-list-tag {
+.special-tag-button-spotify
+    span.LegacyChipInner__ChipInnerComponent-sc-1qguixk-0.ChipInnerComponent-sm-isUsingKeyboard.tag-list-tag {
     background: #1ed760 !important;
     color: var(--spice-alt-text) !important;
 }
 
 button.special-tag-button-spotify span::before,
-button.LegacyChip__LegacyChipComponent-sc-tzfq94-0.LegacyChipComponent-checkbox-textBase-chip-sm-isUsingKeyboard.encore-text-body-small.special-tag-button span::before {
-    content: '';
+button.LegacyChip__LegacyChipComponent-sc-tzfq94-0.LegacyChipComponent-checkbox-textBase-chip-sm-isUsingKeyboard.encore-text-body-small.special-tag-button
+    span::before {
+    content: "";
     background: var(--spice-alt-text);
     width: 16px;
     height: 16px;
@@ -1918,17 +1959,20 @@ button.LegacyChip__LegacyChipComponent-sc-tzfq94-0.LegacyChipComponent-checkbox-
     /* transform: scale(0.7); */
 }
 
-button.LegacyChip__LegacyChipComponent-sc-tzfq94-0.LegacyChipComponent-checkbox-textBase-chip-sm-isUsingKeyboard.encore-text-body-small.special-tag-button[aria-label*="artist-tag"] span::before {
+button.LegacyChip__LegacyChipComponent-sc-tzfq94-0.LegacyChipComponent-checkbox-textBase-chip-sm-isUsingKeyboard.encore-text-body-small.special-tag-button[aria-label*="artist-tag"]
+    span::before {
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_color_24_regular.svg);
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_color_24_regular.svg);
 }
 
-button.LegacyChip__LegacyChipComponent-sc-tzfq94-0.LegacyChipComponent-checkbox-textBase-chip-sm-isUsingKeyboard.encore-text-body-small.special-tag-button[aria-label*="collection-tag"] span::before {
+button.LegacyChip__LegacyChipComponent-sc-tzfq94-0.LegacyChipComponent-checkbox-textBase-chip-sm-isUsingKeyboard.encore-text-body-small.special-tag-button[aria-label*="collection-tag"]
+    span::before {
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/shapes.svg);
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/shapes.svg);
 }
 
-button.LegacyChip__LegacyChipComponent-sc-tzfq94-0.LegacyChipComponent-checkbox-textBase-chip-sm-isUsingKeyboard.encore-text-body-small.special-tag-button[aria-label*="genre-tag"] span::before {
+button.LegacyChip__LegacyChipComponent-sc-tzfq94-0.LegacyChipComponent-checkbox-textBase-chip-sm-isUsingKeyboard.encore-text-body-small.special-tag-button[aria-label*="genre-tag"]
+    span::before {
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/icons8-spotify.svg);
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/icons8-spotify.svg);
 }
@@ -1938,11 +1982,7 @@ button.special-tag-button-spotify span::before {
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/icons8-spotify.svg);
 }
 
-
-
 /* -------------------------------------- Eternal Jukebox ------------------------------------- */
-
-
 
 .player-controls__buttons button {
     max-height: var(--button-size);
@@ -1965,7 +2005,6 @@ button.main-repeatButton-button.main-repeatButton-active svg {
     /* z-index: 999999; */
 }
 
-
 button.main-repeatButton-button svg {
     background: var(--spice-subtext);
 }
@@ -1974,11 +2013,7 @@ button.main-repeatButton-button.main-repeatButton-active svg {
     background: var(--spice-accent) !important;
 }
 
-
-
 /* -------------------------------------- Rotating Cover-art ------------------------------------- */
-
-
 
 /* @keyframes rotating {
     from {
@@ -2004,11 +2039,7 @@ button.main-repeatButton-button.main-repeatButton-active svg {
     background: transparent;
 } */
 
-
-
 /* -------------------------------------- Concerts Associated ------------------------------------- */
-
-
 
 .pQmF4tvRpUeLWgPKUcW7 {
     background-color: var(--spice-card) !important;
@@ -2041,11 +2072,7 @@ button.main-repeatButton-button.main-repeatButton-active svg {
     border-radius: var(--border-radius-2) !important;
 }
 
-
-
 /* -------------------------------------- Artist Page------------------------------------- */
-
-
 
 button.qyKJPLjz8o4jnbk92JOn.zsVdTdACMZA_MWB3HlEW,
 button.qyKJPLjz8o4jnbk92JOn.nsakAYOtgZOAcEO4ObrM {
@@ -2070,7 +2097,6 @@ button.qyKJPLjz8o4jnbk92JOn.nsakAYOtgZOAcEO4ObrM svg {
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_caret_right_24_filled.svg);
 }
 
-
 button.qyKJPLjz8o4jnbk92JOn.zsVdTdACMZA_MWB3HlEW svg {
     transform: rotate(180deg) !important;
 }
@@ -2089,13 +2115,15 @@ button.qyKJPLjz8o4jnbk92JOn.nsakAYOtgZOAcEO4ObrM svg path {
     color: var(--text-subdued) !important;
 }
 
-a.muHL0_3HjlqTZDoapgc9[href*="https://en.wikipedia.org/"] svg {
+a.muHL0_3HjlqTZDoapgc9[href*="https://en.wikipedia.org/"] svg
+{
     background: var(--background-elevated-highlight) !important;
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/wikipedia-w-brands-solid.svg) !important;
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/wikipedia-w-brands-solid.svg) !important;
 }
 
-a.muHL0_3HjlqTZDoapgc9[href*="https://en.wikipedia.org/"] svg path {
+a.muHL0_3HjlqTZDoapgc9[href*="https://en.wikipedia.org/"] svg path
+{
     opacity: 0 !important;
 }
 
@@ -2117,21 +2145,13 @@ a.muHL0_3HjlqTZDoapgc9[href*="https://en.wikipedia.org/"] svg path {
     font-size: 13px !important;
 }
 
-
-
 /* -------------------------------------- Device connect panel------------------------------------- */
 
-
-
-div[aria-describedby*='device-picker-troubleshooting-list'] {
+div[aria-describedby*="device-picker-troubleshooting-list"] {
     margin-bottom: 90px;
 }
 
-
-
 /*------------------------------------------------------ Search Page -------------------------------------------------------*/
-
-
 
 .WDC2Yzs811n7JCYtYQzc {
     border-radius: var(--border-radius-2) !important;
@@ -2145,21 +2165,15 @@ div[aria-describedby*='device-picker-troubleshooting-list'] {
     background: var(--spice-tab-active) !important;
 }
 
-
-
 /*---------------------------------------------------------- Episodes----------------------------------------------------------- */
 
-
-
-.main-contextMenu-menu, .main-contextMenu-tippy, .main-devicePicker-tooltip {
+.main-contextMenu-menu,
+.main-contextMenu-tippy,
+.main-devicePicker-tooltip {
     background-color: rgb(28 28 28) !important;
 }
 
-
-
 /*---------------------------------------------------------- Main Playlist Page ----------------------------------------------------------- */
-
-
 
 span.encore-text.encore-text-body-small.ArQQy9kpoXLmafHpoi6u.FGrkEs4xa3OtWqaSmtvc {
     color: var(--spice-text) !important;
@@ -2174,20 +2188,15 @@ span.encore-text.encore-text-body-small.ArQQy9kpoXLmafHpoi6u.FGrkEs4xa3OtWqaSmtv
     transform: translateY(-24px);
 }
 
-
-
 /*---------------------------------------------------------- Global Nav ----------------------------------------------------------- */
-
-
 
 .Root__globalNav {
     z-index: 2;
 }
 
-
 .main-yourLibraryX-navLinkActive .home-active-icon,
 .main-yourLibraryX-navLinkActive .search-active-icon {
-  color: var(--spice-accent);
+    color: var(--spice-accent);
 }
 
 .Root__globalNav .main-globalNav-link-icon {
@@ -2220,7 +2229,7 @@ button.main-globalNav-link-icon[aria-label*="name-that-tune"] path,
 button.main-globalNav-link-icon[aria-label*="Your Library"] path,
 button.main-globalNav-link-icon[aria-label*="better-local-files"] path,
 button.main-globalNav-link-icon[aria-label*="Tags"] path {
-  display: none !important;
+    display: none !important;
 }
 
 button.main-globalNav-link-icon[aria-label*="Home"]:hover svg,
@@ -2234,157 +2243,168 @@ button.main-globalNav-link-icon[aria-label*="name-that-tune"]:hover svg,
 button.main-globalNav-link-icon[aria-label*="Your Library"]:hover svg,
 button.main-globalNav-link-icon[aria-label*="better-local-files"]:hover svg,
 button.main-globalNav-link-icon[aria-label*="Tags"]:hover svg {
-  background-color: var(--spice-text) !important;
+    background-color: var(--spice-text) !important;
 }
 
 button.main-globalNav-link-icon[aria-label*="Home"] svg {
-  mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_home_24_regular.svg");
-  -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_home_24_regular.svg");
+    mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_home_24_regular.svg");
+    -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_home_24_regular.svg");
 
-  background-color: var(--spice-subtext) !important;
+    background-color: var(--spice-subtext) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="Home"].main-globalNav-navLinkActive svg {
-  mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_home_24_filled.svg");
-  -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_home_24_filled.svg");
-  background-color: var(--spice-accent) !important;
+button.main-globalNav-link-icon[aria-label*="Home"].main-globalNav-navLinkActive
+    svg {
+    mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_home_24_filled.svg");
+    -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_home_24_filled.svg");
+    background-color: var(--spice-accent) !important;
 }
 
 button.main-globalNav-link-icon[aria-label*="search"] svg {
-  mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_search_24_regular.svg");
-  -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_search_24_regular.svg");
-  background-color: var(--spice-subtext) !important;
+    mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_search_24_regular.svg");
+    -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_search_24_regular.svg");
+    background-color: var(--spice-subtext) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="search"].main-globalNav-navLinkActive svg {
-  mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_search_24_filled.svg");
-  -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_search_24_filled.svg");
-  background-color: var(--spice-accent) !important;
+button.main-globalNav-link-icon[aria-label*="search"].main-globalNav-navLinkActive
+    svg {
+    mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_search_24_filled.svg");
+    -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_search_24_filled.svg");
+    background-color: var(--spice-accent) !important;
 }
 
 button.main-globalNav-link-icon[aria-label*="lyrics-plus"] svg {
-  mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_slide_text_24_regular.svg");
-  -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_slide_text_24_regular.svg");
-  background-color: var(--spice-subtext) !important;
+    mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_slide_text_24_regular.svg");
+    -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_slide_text_24_regular.svg");
+    background-color: var(--spice-subtext) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="lyrics-plus"].main-globalNav-navLinkActive svg {
-  mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_slide_text_24_filled.svg");
-  -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_slide_text_24_filled.svg");
-  background-color: var(--spice-accent) !important;
+button.main-globalNav-link-icon[aria-label*="lyrics-plus"].main-globalNav-navLinkActive
+    svg {
+    mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_slide_text_24_filled.svg");
+    -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_slide_text_24_filled.svg");
+    background-color: var(--spice-accent) !important;
 }
 
 button.main-globalNav-link-icon[aria-label*="Marketplace"] svg {
-  mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_app_store_24_regular.svg");
-  -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_app_store_24_regular.svg");
-  background-color: var(--spice-subtext) !important;
+    mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_app_store_24_regular.svg");
+    -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_app_store_24_regular.svg");
+    background-color: var(--spice-subtext) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="Marketplace"].main-globalNav-navLinkActive svg {
-  mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_app_store_24_filled.svg");
-  -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_app_store_24_filled.svg");
-  background-color: var(--spice-accent) !important;
+button.main-globalNav-link-icon[aria-label*="Marketplace"].main-globalNav-navLinkActive
+    svg {
+    mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_app_store_24_filled.svg");
+    -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_app_store_24_filled.svg");
+    background-color: var(--spice-accent) !important;
 }
 
 button.main-globalNav-link-icon[aria-label*="eternal-jukebox"] svg {
-  mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/phosphor-icons/infinity.svg");
-  -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/phosphor-icons/infinity.svg");
-  background-color: var(--spice-subtext) !important;
+    mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/phosphor-icons/infinity.svg");
+    -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/phosphor-icons/infinity.svg");
+    background-color: var(--spice-subtext) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="eternal-jukebox"].main-globalNav-navLinkActive svg {
-  mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/phosphor-icons/infinity-bold.svg");
-  -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/phosphor-icons/infinity-bold.svg");
-  background-color: var(--spice-accent) !important;
+button.main-globalNav-link-icon[aria-label*="eternal-jukebox"].main-globalNav-navLinkActive
+    svg {
+    mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/phosphor-icons/infinity-bold.svg");
+    -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/phosphor-icons/infinity-bold.svg");
+    background-color: var(--spice-accent) !important;
 }
 
 button.main-globalNav-link-icon[aria-label*="new-releases"] svg {
-  mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_alert_24_regular.svg");
-  -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_alert_24_regular.svg");
-  background-color: var(--spice-subtext) !important;
+    mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_alert_24_regular.svg");
+    -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_alert_24_regular.svg");
+    background-color: var(--spice-subtext) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="new-releases"].main-globalNav-navLinkActive svg {
-  mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_alert_24_filled.svg");
-  -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_alert_24_filled.svg");
-  background-color: var(--spice-accent) !important;
+button.main-globalNav-link-icon[aria-label*="new-releases"].main-globalNav-navLinkActive
+    svg {
+    mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_alert_24_filled.svg");
+    -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_alert_24_filled.svg");
+    background-color: var(--spice-accent) !important;
 }
 
 button.main-globalNav-link-icon[aria-label*="Statistics"] svg {
-  mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_chart_multiple_24_regular.svg");
-  -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_chart_multiple_24_regular.svg");
-  background-color: var(--spice-subtext) !important;
+    mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_chart_multiple_24_regular.svg");
+    -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_chart_multiple_24_regular.svg");
+    background-color: var(--spice-subtext) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="Statistics"].main-globalNav-navLinkActive svg {
-  mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_chart_multiple_24_filled.svg");
-  -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_chart_multiple_24_filled.svg");
-  background-color: var(--spice-accent) !important;
+button.main-globalNav-link-icon[aria-label*="Statistics"].main-globalNav-navLinkActive
+    svg {
+    mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_chart_multiple_24_filled.svg");
+    -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_chart_multiple_24_filled.svg");
+    background-color: var(--spice-accent) !important;
 }
 
 button.main-globalNav-link-icon[aria-label*="name-that-tune"] svg {
-  mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_music_note_2_24_regular.svg");
-  -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_music_note_2_24_regular.svg");
-  background-color: var(--spice-subtext) !important;
+    mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_music_note_2_24_regular.svg");
+    -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_music_note_2_24_regular.svg");
+    background-color: var(--spice-subtext) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="name-that-tune"].main-globalNav-navLinkActive svg {
-  mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_music_note_2_24_filled.svg");
-  -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_music_note_2_24_filled.svg");
-  background-color: var(--spice-accent) !important;
+button.main-globalNav-link-icon[aria-label*="name-that-tune"].main-globalNav-navLinkActive
+    svg {
+    mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_music_note_2_24_filled.svg");
+    -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_music_note_2_24_filled.svg");
+    background-color: var(--spice-accent) !important;
 }
 
 button.main-globalNav-link-icon[aria-label*="Your Library"] svg {
-  mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_library_24_regular.svg");
-  -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_library_24_regular.svg");
-  background-color: var(--spice-subtext) !important;
+    mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_library_24_regular.svg");
+    -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_library_24_regular.svg");
+    background-color: var(--spice-subtext) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="Your Library"].main-globalNav-navLinkActive svg {
-  mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_library_24_filled.svg");
-  -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_library_24_filled.svg");
-  background-color: var(--spice-accent) !important;
+button.main-globalNav-link-icon[aria-label*="Your Library"].main-globalNav-navLinkActive
+    svg {
+    mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_library_24_filled.svg");
+    -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_library_24_filled.svg");
+    background-color: var(--spice-accent) !important;
 }
 
 button.main-globalNav-link-icon[aria-label*="better-local-files"] svg {
-  mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_folder_24_regular.svg");
-  -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_folder_24_regular.svg");
-  background-color: var(--spice-subtext) !important;
+    mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_folder_24_regular.svg");
+    -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_folder_24_regular.svg");
+    background-color: var(--spice-subtext) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="better-local-files"].main-globalNav-navLinkActive svg {
-  mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_folder_24_filled.svg");
-  -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_folder_24_filled.svg");
-  background-color: var(--spice-accent) !important;
+button.main-globalNav-link-icon[aria-label*="better-local-files"].main-globalNav-navLinkActive
+    svg {
+    mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_folder_24_filled.svg");
+    -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_folder_24_filled.svg");
+    background-color: var(--spice-accent) !important;
 }
 
 button.main-globalNav-link-icon[aria-label*="Tags"] svg {
-  mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_tag_24_regular.svg");
-  -webkit-mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_tag_24_regular.svg");
-  background-color: var(--spice-subtext) !important;
+    mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_tag_24_regular.svg");
+    -webkit-mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_tag_24_regular.svg");
+    background-color: var(--spice-subtext) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="Tags"].main-globalNav-navLinkActive svg {
-  mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_tag_24_filled.svg");
-  -webkit-mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_tag_24_filled.svg");
-  background-color: var(--spice-accent) !important;
+button.main-globalNav-link-icon[aria-label*="Tags"].main-globalNav-navLinkActive
+    svg {
+    mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_tag_24_filled.svg");
+    -webkit-mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_tag_24_filled.svg");
+    background-color: var(--spice-accent) !important;
 }
 
 .main-createPlaylistButton-button {
-  mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_add_circle_24_regular.svg");
-  -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_add_circle_24_regular.svg");
-  background-color: var(--spice-subtext) !important;
-  padding: 0px;
-  margin: auto;
-  height: 24px !important;
-  width: 24px !important;
-  display: block !important;
-  margin-top: 20px !important;
-  margin-bottom: 20px !important;
+    mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_add_circle_24_regular.svg");
+    -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_add_circle_24_regular.svg");
+    background-color: var(--spice-subtext) !important;
+    padding: 0px;
+    margin: auto;
+    height: 24px !important;
+    width: 24px !important;
+    display: block !important;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
 }
 
 .Root__globalNav .main-globalNav-link-icon::after {
-    content: '';
+    content: "";
     position: absolute;
     height: 3px;
     width: 5px;

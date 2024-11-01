@@ -1,11 +1,7 @@
-
-
-
 /* ----------------------------------------------------------------- Button Pack ---------------------------------------------------------------------------------------------------------- */
 
-
-
-#context-menu button.Button-sc-1dqy6lx-0.Button-buttonTertiary-textSubdued-small-small-useBrowserDefaultFocusStyle-condensed,
+#context-menu
+    button.Button-sc-1dqy6lx-0.Button-buttonTertiary-textSubdued-small-small-useBrowserDefaultFocusStyle-condensed,
 .main-dropDown-dropDown,
 .Button-sc-y0gtbx-0,
 .ShowLyrics,
@@ -21,7 +17,8 @@
     min-width: 100px !important;
 }
 
-#context-menu button.Button-sc-1dqy6lx-0.Button-buttonTertiary-textSubdued-small-small-useBrowserDefaultFocusStyle-condensed {
+#context-menu
+    button.Button-sc-1dqy6lx-0.Button-buttonTertiary-textSubdued-small-small-useBrowserDefaultFocusStyle-condensed {
     color: var(--spice-text);
     height: 32px !important;
     padding: 0 20px;
@@ -29,7 +26,9 @@
 }
 
 .ButtonInner-sc-14ud5tc-0.ButtonInner-medium.encore-inverted-light-set,
-#context-menu button.Button-sc-qlcn5g-0.Button-buttonPrimary-useBrowserDefaultFocusStyle span {
+#context-menu
+    button.Button-sc-qlcn5g-0.Button-buttonPrimary-useBrowserDefaultFocusStyle
+    span {
     border-radius: 6px !important;
     font-weight: 400 !important;
     backdrop-filter: blur(10px) !important;
@@ -41,8 +40,11 @@
 }
 
 .ButtonInner-sc-14ud5tc-0.ButtonInner-medium.encore-inverted-light-set:hover,
-#context-menu button.Button-sc-1dqy6lx-0.Button-buttonTertiary-textSubdued-small-small-useBrowserDefaultFocusStyle-condensed:hover,
-#context-menu button.Button-sc-qlcn5g-0.Button-buttonPrimary-useBrowserDefaultFocusStyle span:hover {
+#context-menu
+    button.Button-sc-1dqy6lx-0.Button-buttonTertiary-textSubdued-small-small-useBrowserDefaultFocusStyle-condensed:hover,
+#context-menu
+    button.Button-sc-qlcn5g-0.Button-buttonPrimary-useBrowserDefaultFocusStyle
+    span:hover {
     transform: scale(1) !important;
 }
 
@@ -66,13 +68,21 @@ span.ButtonInner-sc-14ud5tc-0 {
     padding-bottom: 0 !important;
 }
 
+.Dropdown-control {
+    min-width: 140px !important;
+}
+
 .Dropdown-menu {
     background-color: rgba(var(--spice-rgb-main), 0.5) !important;
     backdrop-filter: blur(var(--blur-radius)) saturate(0.5) brightness(100%);
-    padding: 8px;
+    padding: 6px;
     gap: 6px;
     display: flex;
     flex-direction: column;
+    min-width: 140px;
+    margin-top: 6px !important;
+    border-radius: 8px !important;
+    border: 1px solid rgba(var(--spice-rgb-shadow), 0.045) !important;
 }
 
 .Dropdown-menu {

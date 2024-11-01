@@ -22,15 +22,17 @@ aside[aria-label*="Now playing view"] a:hover {
 
 .main-nowPlayingView-nowPlayingGrid {
     flex-direction: row !important;
-    overflow: visible;  
+    overflow: visible;
 }
 
-.main-nowPlayingView-nowPlayingWidget .GlueDropTarget.GlueDropTarget--albums.GlueDropTarget--tracks.GlueDropTarget--episodes.GlueDropTarget--local-tracks {
+.main-nowPlayingView-nowPlayingWidget
+    .GlueDropTarget.GlueDropTarget--albums.GlueDropTarget--tracks.GlueDropTarget--episodes.GlueDropTarget--local-tracks {
     width: 100px !important;
     height: 100px !important;
 }
 
-.main-nowPlayingView-contextItemInfo, .main-nowPlayingView-nowPlayingGrid {
+.main-nowPlayingView-contextItemInfo,
+.main-nowPlayingView-nowPlayingGrid {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -39,7 +41,8 @@ aside[aria-label*="Now playing view"] a:hover {
     margin-left: 50px;
 }
 
-.Root__right-sidebar:has(.main-nowPlayingView-section,canvas) .main-nowPlayingView-section {
+.Root__right-sidebar:has(.main-nowPlayingView-section, canvas)
+    .main-nowPlayingView-section {
     background-color: rgb(8 8 8 / 50%) !important;
     backdrop-filter: blur(var(--blur-radius)) saturate(0.5) brightness(60%) !important;
 }
@@ -79,7 +82,8 @@ div#BeautifulLyrics-CardView {
     margin-bottom: 10px !important;
 }
 
-#BeautifulLyrics-CardView, .LoadingLyricsCard.Loading {
+#BeautifulLyrics-CardView,
+.LoadingLyricsCard.Loading {
     max-height: 492px !important;
     height: fit-content !important;
     opacity: 1;
@@ -95,7 +99,7 @@ div#BeautifulLyrics-CardView {
 
 button.Button-sc-1dqy6lx-0.Button-textSubdued-small-small-buttonTertiary-condensed-useBrowserDefaultFocusStyle.encore-text-body-small-bold.main-nowPlayingView-creditsShowAll::after,
 button.Button-sc-1dqy6lx-0.Button-textSubdued-small-small-buttonTertiary-condensed-useBrowserDefaultFocusStyle.encore-text-body-small-bold.main-nowPlayingView-openQueue::after {
-    content: '';
+    content: "";
     position: absolute;
     right: 0;
     background: var(--spice-subtext);

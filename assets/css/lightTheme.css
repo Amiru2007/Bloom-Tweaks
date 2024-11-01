@@ -6,21 +6,35 @@ button.Button-sc-1dqy6lx-0.Button-buttonTertiary-textBase-medium-medium-useBrows
     background: var(--spice-light-border) !important;
 }
 
-aside[aria-label*="Now playing view"] h1.encore-text.encore-text-body-medium-bold.encore-internal-color-text-base,
-aside[aria-label*="Now playing view"] .main-trackInfo-contentContainer .main-trackInfo-contentWrapper span a {
+aside[aria-label*="Now playing view"]
+    h1.encore-text.encore-text-body-medium-bold.encore-internal-color-text-base,
+aside[aria-label*="Now playing view"]
+    .main-trackInfo-contentContainer
+    .main-trackInfo-contentWrapper
+    span
+    a {
     color: var(--spice-alt-text) !important;
 }
 
-aside[aria-label*="Now playing view"] p[data-encore-id*="listRowSubtitle"] span span a,
+aside[aria-label*="Now playing view"]
+    p[data-encore-id*="listRowSubtitle"]
+    span
+    span
+    a,
 aside[aria-label*="Now playing view"] span[data-testid*="artist-row-role"] {
     color: var(--text-subdued) !important;
 }
 
-aside[aria-label*="Now playing view"] #context-menu button.Button-sc-1dqy6lx-0.Button-buttonTertiary-textSubdued-small-small-useBrowserDefaultFocusStyle-condensed, .main-dropDown-dropDown, .ShowLyrics {
+aside[aria-label*="Now playing view"]
+    #context-menu
+    button.Button-sc-1dqy6lx-0.Button-buttonTertiary-textSubdued-small-small-useBrowserDefaultFocusStyle-condensed,
+.main-dropDown-dropDown,
+.ShowLyrics {
     color: var(--spice-alt-text) !important;
 }
 
-.Root__right-sidebar:has(.main-nowPlayingView-section,canvas) .main-nowPlayingView-section {
+.Root__right-sidebar:has(.main-nowPlayingView-section, canvas)
+    .main-nowPlayingView-section {
     backdrop-filter: brightness(100%) !important;
     background: rgba(var(--spice-rgb-alt-text), 0.5) !important;
 }
@@ -41,7 +55,8 @@ span.encore-text.encore-text-body-small.main-nowPlayingView-aboutArtistV2Bio {
     color: var(--text-base) !important;
 }
 
-.main-nowPlayingView-section.main-nowPlayingView-aboutArtistV2 .main-nowPlayingView-sectionHeaderText {
+.main-nowPlayingView-section.main-nowPlayingView-aboutArtistV2
+    .main-nowPlayingView-sectionHeaderText {
     color: var(--spice-alt-text);
 }
 
