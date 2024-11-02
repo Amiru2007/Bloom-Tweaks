@@ -2448,3 +2448,22 @@ button.main-globalNav-link-icon[aria-label*="Statistics"] svg {
     background: var(--spice-main) !important;
     border-bottom: 2px solid var(--spice-accent) !important;
 }
+
+
+
+/* ------------------------------------------------- Full Screen Default ------------------------------------------------- */
+
+
+
+.ylcmjHXKpwmez5_bBVgt {
+    opacity: 1 !important;
+}
+
+.spotifyinternal-artistnpv .npv-up-next__image {
+    border-radius: var(--border-radius-2) !important;
+}
+
+.spotifyinternal-artistnpv .npv-up-next {
+    border-radius: var(--border-radius-1) !important;
+    background: var(--spice-contour) !important;
+}

@@ -15,6 +15,7 @@ function waitForSpicetify() {
         lightTheme: false,
         friendsActivityBar: false,
         floatingVolumeBar: false,
+        customAppEnhancify: false,
     };
 
     function loadPreferences() {
@@ -83,6 +84,14 @@ function waitForSpicetify() {
             await loadCSSFile("floatingVolumeBar.css");
         } else if (!prefs.floatingVolumeBar && floatingVolumeBarLink) {
             floatingVolumeBarLink.remove();
+        }
+    
+        // Load customAppEnhancify.css (Updated name from 'customAppEnhancify.css')
+        const customAppEnhancifyLink = document.querySelector("link[href*='customAppEnhancify.css']"); // Corrected here
+        if (prefs.customAppEnhancify && !customAppEnhancifyLink) {
+            await loadCSSFile("customAppEnhancify.css");
+        } else if (!prefs.customAppEnhancify && customAppEnhancifyLink) {
+            customAppEnhancifyLink.remove();
         }
     }
 
@@ -275,6 +284,17 @@ function waitForSpicetify() {
                                 </label>
                             </div>
                         </div>
+                        <div class="bloom-tweaks x-settings-row">
+                            <div class="bloom-tweaks x-settings-firstColumn">
+                                <label class="bloom-tweaks encore-text encore-text-body-small encore-internal-color-text-subdued">Floating Volume Bar</label>
+                            </div>
+                            <div class="bloom-tweaks x-settings-secondColumn">
+                                <label class="bloom-tweaks x-toggle-wrapper">
+                                    <input id="customAppEnhancify" type="checkbox" class="bloom-tweaks x-toggle-input" ${prefs.customAppEnhancify ? "checked" : ""}>
+                                    <span class="bloom-tweaks x-toggle-indicatorWrapper"><span class="bloom-tweaks x-toggle-indicator"></span></span>
+                                </label>
+                            </div>
+                        </div>
                         <div class="bloom-tweaks save-btn-container">
                             <button id="saveSettingsButton" class="bloom-tweaks-popup-btn save-button">
                                 Save
@@ -302,6 +322,7 @@ function waitForSpicetify() {
                             lightTheme: document.getElementById("lightTheme")?.checked || false,
                             friendsActivityBar: document.getElementById("friendsActivityBar")?.checked || false,
                             floatingVolumeBar: document.getElementById("floatingVolumeBar")?.checked || false,
+                            customAppEnhancify: document.getElementById("customAppEnhancify")?.checked || false,
                         };
 
                         savePreferences(newPrefs);
