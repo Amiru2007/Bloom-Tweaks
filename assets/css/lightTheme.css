@@ -1,3 +1,24 @@
+.Button-sc-y0gtbx-0 {
+    background: rgba(var(--spice-rgb-alt-text), 1) !important;
+    border: 1px solid var(--spice-contour) !important;
+}
+
+.BoxComponent-group-card-naked-isInteractive-draggable:hover::after {
+    background: var(--spice-main) !important;
+}
+
+.main-card-PlayButtonContainer .Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only[aria-label*="Play"] .IconWrapper__Wrapper-sc-1hf1hjl-0 .Svg-sc-ytk21e-0 {
+    background: var(--spice-alt-text) !important;
+}
+
+.LegacyChipInner__ChipInnerComponent-sc-1qguixk-0 {
+    border-radius: var(--border-radius-2) !important;
+}
+
+.LegacyChip__LegacyChipComponent-sc-tzfq94-0:hover > .ChipInnerComponent-sm-selected.ChipInnerComponent-sm-selected {
+    background-color: var(--spice-highlight-elevated) !important;
+}
+
 .PeLrpasyfBW8ql_bmoAi {
     background: var(--spice-main) !important;
 }
@@ -71,6 +92,12 @@ span.encore-text.encore-text-body-small.main-nowPlayingView-aboutArtistV2Bio {
 
 .kh6wYYPvgRPBhA2wj3AS .qp7Sys7hJSZHLzw4K_yF {
     background: rgb(180 180 180 / 50%) !important;
+}
+
+aside[aria-label*="Now playing view"] .Button-sc-y0gtbx-0 {
+    color: var(--spice-alt-text) !important;
+    background: rgba(var(--spice-rgb-not-selected), 0.045) !important;
+    border: 1px solid rgba(var(--spice-rgb-shadow), 0.045) !important;
 }
 
 button.main-globalNav-link-icon[aria-label*="Home"],
