@@ -2205,8 +2205,9 @@ span.encore-text.encore-text-body-small.ArQQy9kpoXLmafHpoi6u.FGrkEs4xa3OtWqaSmtv
 
 button.main-globalNav-link-icon[aria-label*="Home"],
 .Root__globalNav .main-globalNav-link-icon.main-globalNav-navLinkActive {
-    /* border: 1px solid #232323; */
+    border: 1px solid var(--spice-main-elevated) !important;
     background-color: var(--spice-card) !important;
+    border-radius: var(--border-radius-2);
 }
 
 .custom-navlinks-scrollable_container {
@@ -2435,7 +2436,7 @@ button.main-globalNav-link-icon[aria-label*="Statistics"] svg {
 
 .b7r2WRiu5f9Q99qmyreh .main-topBar-searchBar {
     background: var(--spice-card) !important;
-    /* border: 1px solid #242424 !important; */
+    border: 1px solid var(--spice-main-elevated) !important;
     border-radius: 8px !important;
 }
 
