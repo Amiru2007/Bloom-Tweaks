@@ -23,6 +23,7 @@ img.app-module__trackCover___UFVka_Enhancify {
     background: var(--spice-card) !important;
     border: 1px solid var(--spice-contour) !important;
     margin: 0 !important;
+    position: relative;
 }
 
 .app-module__trackName___90Kd4_Enhancify {
@@ -38,6 +39,15 @@ img.app-module__trackCover___UFVka_Enhancify {
 .app-module__topBar___gbq6k_Enhancify {
     margin-top: 0 !important;
     gap: 16px;
+}
+
+img.app-module__playIcon___eaD-6_Enhancify {
+    background: var(--spice-text);
+    mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg);
+    -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg);
+    margin: 0 !important;
+    position: absolute;
+    right: 20px;
 }
 
 .app-module__trackInfoPrimary___PLXQO_Enhancify {
@@ -124,5 +134,5 @@ img.app-module__trackCover___UFVka_Enhancify {
     border: 1px solid var(--spice-contour) !important;
     border-radius: var(--border-radius-1) !important;
     margin: 0 !important;
-    width: calc(100% / 3 - 11px);
+    width: calc(100% / 3 - 11px) !important;
 }
