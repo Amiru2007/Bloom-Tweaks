@@ -7,7 +7,17 @@
     background: var(--spice-main) !important;
 }
 
-.main-card-PlayButtonContainer .Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only[aria-label*="Play"] .IconWrapper__Wrapper-sc-1hf1hjl-0 .Svg-sc-ytk21e-0 {
+aside[aria-label*="Now playing view"]
+    .artist-artistOnTour-date.artist-artistOnTour-elevated
+    h5,
+aside[aria-label*="Now playing view"]
+    .artist-artistOnTour-date.artist-artistOnTour-elevated
+    h1,
+aside[aria-label*="Now playing view"] .artist-artistOnTour-info h3,
+.main-card-PlayButtonContainer
+    .Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only[aria-label*="Play"]
+    .IconWrapper__Wrapper-sc-1hf1hjl-0
+    .Svg-sc-ytk21e-0 {
     background: var(--spice-alt-text) !important;
 }
 
@@ -15,7 +25,8 @@
     border-radius: var(--border-radius-2) !important;
 }
 
-.LegacyChip__LegacyChipComponent-sc-tzfq94-0:hover > .ChipInnerComponent-sm-selected.ChipInnerComponent-sm-selected {
+.LegacyChip__LegacyChipComponent-sc-tzfq94-0:hover
+    > .ChipInnerComponent-sm-selected.ChipInnerComponent-sm-selected {
     background-color: var(--spice-highlight-elevated) !important;
 }
 
@@ -104,4 +115,9 @@ button.main-globalNav-link-icon[aria-label*="Home"],
 .Root__globalNav .main-globalNav-link-icon.main-globalNav-navLinkActive,
 .b7r2WRiu5f9Q99qmyreh .main-topBar-searchBar {
     border: 1px solid #ebebeb !important;
+}
+
+.artist-artistOnTour-info p,
+.artist-artistOnTour-info span {
+    color: var(--spice-not-selected) !important;
 }
