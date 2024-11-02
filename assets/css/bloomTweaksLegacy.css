@@ -1504,7 +1504,10 @@ p.popup-row {
 }
 
 .main-trackList-selected .Ps9zgW56WZaBVLo1n3cg {
-    color: var(--spice-alt-text) !important;
+    color: var(--spice-alt-text) !important;!important;!important;!important;!important;!important;!important;!important;!important;!important;!important;!important;!important;!i;!;
+    filter: invert(1);
+    background-color: #ff005e !important;!importa;!importat;!i;!;);
+    font-weight: 300;
 }
 
 /* .Ps9zgW56WZaBVLo1n3cg::after {
