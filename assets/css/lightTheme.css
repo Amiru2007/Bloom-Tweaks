@@ -7,13 +7,6 @@
     background: var(--spice-main) !important;
 }
 
-aside[aria-label*="Now playing view"]
-    .artist-artistOnTour-date.artist-artistOnTour-elevated
-    h5,
-aside[aria-label*="Now playing view"]
-    .artist-artistOnTour-date.artist-artistOnTour-elevated
-    h1,
-aside[aria-label*="Now playing view"] .artist-artistOnTour-info h3,
 .main-card-PlayButtonContainer
     .Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only[aria-label*="Play"]
     .IconWrapper__Wrapper-sc-1hf1hjl-0
@@ -46,7 +39,14 @@ aside[aria-label*="Now playing view"]
     span
     a,
 aside[aria-label*="Now playing view"] .main-nowPlayingView-sectionHeaderText,
-aside[aria-label*="Now playing view"] span {
+aside[aria-label*="Now playing view"] span,
+aside[aria-label*="Now playing view"]
+    .artist-artistOnTour-date.artist-artistOnTour-elevated
+    h5,
+aside[aria-label*="Now playing view"]
+    .artist-artistOnTour-date.artist-artistOnTour-elevated
+    h1,
+aside[aria-label*="Now playing view"] .artist-artistOnTour-info h3 {
     color: var(--spice-alt-text) !important;
 }
 
