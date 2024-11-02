@@ -30,9 +30,7 @@
     padding: 0 20px 0 10px;
 }
 
-.volume-bar.main-nowPlayingBar-volumeBar:hover
-    .volume-bar__slider-container
-    .volume-bar__slider-container:hover {
+.volume-bar.main-nowPlayingBar-volumeBar:hover .volume-bar__slider-container .volume-bar__slider-container:hover {
     opacity: 1;
     visibility: visible;
 }

@@ -25,8 +25,7 @@ aside[aria-label*="Now playing view"] a:hover {
     overflow: visible;
 }
 
-.main-nowPlayingView-nowPlayingWidget
-    .GlueDropTarget.GlueDropTarget--albums.GlueDropTarget--tracks.GlueDropTarget--episodes.GlueDropTarget--local-tracks {
+.main-nowPlayingView-nowPlayingWidget .GlueDropTarget.GlueDropTarget--albums.GlueDropTarget--tracks.GlueDropTarget--episodes.GlueDropTarget--local-tracks {
     width: 100px !important;
     height: 100px !important;
 }
@@ -41,8 +40,7 @@ aside[aria-label*="Now playing view"] a:hover {
     margin-left: 50px;
 }
 
-.Root__right-sidebar:has(.main-nowPlayingView-section, canvas)
-    .main-nowPlayingView-section {
+.Root__right-sidebar:has(.main-nowPlayingView-section, canvas) .main-nowPlayingView-section {
     background-color: rgb(8 8 8 / 50%) !important;
     backdrop-filter: blur(var(--blur-radius)) saturate(0.5) brightness(60%) !important;
 }

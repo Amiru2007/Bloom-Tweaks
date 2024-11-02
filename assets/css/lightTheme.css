@@ -7,10 +7,7 @@
     background: var(--spice-main) !important;
 }
 
-.main-card-PlayButtonContainer
-    .Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only[aria-label*="Play"]
-    .IconWrapper__Wrapper-sc-1hf1hjl-0
-    .Svg-sc-ytk21e-0 {
+.main-card-PlayButtonContainer .Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only[aria-label*="Play"] .IconWrapper__Wrapper-sc-1hf1hjl-0 .Svg-sc-ytk21e-0 {
     background: var(--spice-alt-text) !important;
 }
 
@@ -18,8 +15,7 @@
     border-radius: var(--border-radius-2) !important;
 }
 
-.LegacyChip__LegacyChipComponent-sc-tzfq94-0:hover
-    > .ChipInnerComponent-sm-selected.ChipInnerComponent-sm-selected {
+.LegacyChip__LegacyChipComponent-sc-tzfq94-0:hover>.ChipInnerComponent-sm-selected.ChipInnerComponent-sm-selected {
     background-color: var(--spice-highlight-elevated) !important;
 }
 
@@ -31,21 +27,12 @@ button.Button-sc-1dqy6lx-0.Button-buttonTertiary-textBase-medium-medium-useBrows
     background: var(--spice-not-selected) !important;
 }
 
-aside[aria-label*="Now playing view"]
-    h1.encore-text.encore-text-body-medium-bold.encore-internal-color-text-base,
-aside[aria-label*="Now playing view"]
-    .main-trackInfo-contentContainer
-    .main-trackInfo-contentWrapper
-    span
-    a,
+aside[aria-label*="Now playing view"] h1.encore-text.encore-text-body-medium-bold.encore-internal-color-text-base,
+aside[aria-label*="Now playing view"] .main-trackInfo-contentContainer .main-trackInfo-contentWrapper span a,
 aside[aria-label*="Now playing view"] .main-nowPlayingView-sectionHeaderText,
 aside[aria-label*="Now playing view"] span,
-aside[aria-label*="Now playing view"]
-    .artist-artistOnTour-date.artist-artistOnTour-elevated
-    h5,
-aside[aria-label*="Now playing view"]
-    .artist-artistOnTour-date.artist-artistOnTour-elevated
-    h1,
+aside[aria-label*="Now playing view"] .artist-artistOnTour-date.artist-artistOnTour-elevated h5,
+aside[aria-label*="Now playing view"] .artist-artistOnTour-date.artist-artistOnTour-elevated h1,
 aside[aria-label*="Now playing view"] .artist-artistOnTour-info h3 {
     color: var(--spice-alt-text) !important;
 }
@@ -54,25 +41,18 @@ aside[aria-label*="Now playing view"] span:has(svg) {
     color: var(--spice-text) !important;
 }
 
-aside[aria-label*="Now playing view"]
-    p[data-encore-id*="listRowSubtitle"]
-    span
-    span
-    a,
+aside[aria-label*="Now playing view"] p[data-encore-id*="listRowSubtitle"] span span a,
 aside[aria-label*="Now playing view"] span[data-testid*="artist-row-role"] {
     color: var(--spice-not-selected) !important;
 }
 
-aside[aria-label*="Now playing view"]
-    #context-menu
-    button.Button-sc-1dqy6lx-0.Button-buttonTertiary-textSubdued-small-small-useBrowserDefaultFocusStyle-condensed,
+aside[aria-label*="Now playing view"] #context-menu button.Button-sc-1dqy6lx-0.Button-buttonTertiary-textSubdued-small-small-useBrowserDefaultFocusStyle-condensed,
 .main-dropDown-dropDown,
 .ShowLyrics {
     color: var(--spice-alt-text) !important;
 }
 
-.Root__right-sidebar:has(.main-nowPlayingView-section, canvas)
-    .main-nowPlayingView-section {
+.Root__right-sidebar:has(.main-nowPlayingView-section, canvas) .main-nowPlayingView-section {
     background: rgba(var(--spice-rgb-alt-text), 0.5) !important;
 }
 
@@ -92,8 +72,7 @@ span.encore-text.encore-text-body-small.main-nowPlayingView-aboutArtistV2Bio {
     color: var(--spice-layer-shadow);
 }
 
-.main-nowPlayingView-section.main-nowPlayingView-aboutArtistV2
-    .main-nowPlayingView-sectionHeaderText {
+.main-nowPlayingView-section.main-nowPlayingView-aboutArtistV2 .main-nowPlayingView-sectionHeaderText {
     color: var(--spice-alt-text);
 }
 
