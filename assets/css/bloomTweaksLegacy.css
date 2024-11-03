@@ -1302,7 +1302,7 @@ font-weight: 500;
 .Root__top-container:has(.BeautifulLyricsPage.Contained.BeautifulLyricsBackground) footer.main-nowPlayingBar-container {
     background: transparent !important;
     backdrop-filter: blur(var(--blur-radius)) saturate(0.8) brightness(100%);
-    width: calc(100% - 8px);
+    /* width: calc(100% - 8px); */
     /* margin-left: 8px; */
     /* margin-bottom: 8px; */
     border: 1px solid transparent;
