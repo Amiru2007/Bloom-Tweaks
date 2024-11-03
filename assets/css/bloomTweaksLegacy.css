@@ -2360,3 +2360,29 @@ button.main-globalNav-link-icon[aria-label*="Statistics"] svg {
     border-radius: var(--border-radius-1) !important;
     background: var(--spice-contour) !important;
 }
+
+
+
+
+
+
+
+
+#Desktop_LeftSidebar_Id {
+    background-color: var(--spice-sidebar) !important;
+    border-left: 8px solid var(--spice-sidebar) !important;
+}
+
+#Desktop_LeftSidebar_Id::after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    right: -20px;
+    background-color: var(--spice-sidebar);
+    margin: 0;
+    -webkit-mask-image: radial-gradient(circle at bottom right, transparent 70.6%, black 51%);
+    mask-image: radial-gradient(circle at bottom right, transparent 70.6%, black 51%);
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+}
