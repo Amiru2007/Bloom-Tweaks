@@ -318,6 +318,19 @@ button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_caret_down_24_filled.svg);
 }
 
+.main-yourLibraryX-filterArea {
+    position: relative !important;
+}
+
+.main-yourLibraryX-filterArea::after {
+    content: '';
+    width: 100%;
+    height: 30px;
+    position: absolute !important;
+    bottom: -30px;
+    background-image: linear-gradient(to bottom, var(--spice-main) 50%, transparent);
+}
+
 .main-yourLibraryX-listItem:hover .Box__BoxComponent-sc-y4nds-0.BoxComponent-group-listRow-naked-isInteractive-minBlockSize_56px-padding_8px.Box-sc-8t9c76-0.Box-group-listRow-isInteractive-hasLeadingOrMedia-minBlockSize_56px-padding_8px.fYWNdY4zhj4OX_T2Xtg6[aria-labelledby*="artist"] .BfALkuQy0UjTI70U9QlQ {
     border-radius: 50% !important;
 }
@@ -918,7 +931,7 @@ button.main-actionButtons-button.main-topBarStatusIndicator-hasTooltip.main-noCo
 
 .link-subtle.main-topBar-topbarContentRight::after {
     content: "";
-    width: 142px;
+    width: 134px;
     height: 32px;
     position: absolute;
     background: #353535;
