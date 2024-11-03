@@ -99,6 +99,24 @@ button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBro
 
 /* -------------------------------------------------------------------------------- Customized Snippets --------------------------------------------------------------------------------------*/
 
+#Desktop_LeftSidebar_Id {
+    position: absolute;
+    left: -280px;
+    width: 288px;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    visibility: visible;
+    transition: left 0.5s ease, opacity 0.5s ease;
+    z-index: 12;
+}
+
+#Desktop_LeftSidebar_Id:hover {
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
 /*-------------------------------------------------------------------------------- Custom Apps Configuration ---------------------------------------------------------------------------------*/
 
 button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle.link-subtle.main-globalNav-navLink.main-globalNav-link-icon.custom-navlink[aria-label*="Tags"] {
