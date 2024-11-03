@@ -181,7 +181,6 @@ function waitForSpicetify() {
                 const button = document.createElement("button");
                 button.className = "bloom-tweaks Button-sc-1dqy6lx-0 Button-buttonTertiary-small-small-useBrowserDefaultFocusStyle-condensedAll encore-text-body-small-bold";
                 button.setAttribute("aria-label", "Customizations");
-                button.setAttribute("title", "UI Customizations"); // This adds a tooltip
 
                 const icon = document.createElement("svg");
                 icon.setAttribute("data-encore-id", "icon");
