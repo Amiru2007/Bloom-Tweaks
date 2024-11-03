@@ -87,6 +87,18 @@ button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBro
     opacity: 1;
 }
 
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------------------------------- Customized Snippets --------------------------------------------------------------------------------------*/
+
 /*-------------------------------------------------------------------------------- Custom Apps Configuration ---------------------------------------------------------------------------------*/
 
 button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle.link-subtle.main-globalNav-navLink.main-globalNav-link-icon.custom-navlink[aria-label*="Tags"] {
@@ -1257,10 +1269,6 @@ font-weight: 500;
 
 /* -------------------------------------- Beautiful Lyrics ------------------------------------- */
 
-
-::root {
-    margin-left: 0 !important;
-}
 
 .Root__top-container:has(.BeautifulLyricsPage.Contained.BeautifulLyricsBackground) {
     padding-right: 0 !important;
