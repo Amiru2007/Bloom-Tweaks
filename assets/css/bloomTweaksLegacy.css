@@ -87,6 +87,14 @@ button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBro
     opacity: 1;
 }
 
+.main-view-container {
+    position: relative;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    min-height: 0;
+    overflow: hidden;
+}
 
 
 
@@ -1301,11 +1309,11 @@ font-weight: 500;
 
 .Root__top-container:has(.BeautifulLyricsPage.Contained.BeautifulLyricsBackground) footer.main-nowPlayingBar-container {
     background: transparent !important;
-    backdrop-filter: blur(var(--blur-radius)) saturate(0.8) brightness(100%);
+    backdrop-filter: blur(var(--blur-radius)) saturate(0.9) brightness(0.75);
     /* width: calc(100% - 8px); */
     /* margin-left: 8px; */
     /* margin-bottom: 8px; */
-    border: 1px solid transparent;
+    border: 2px solid #2f2f2f1c;
 }
 
 #BeautifulLyricsFullscreenButton svg {
