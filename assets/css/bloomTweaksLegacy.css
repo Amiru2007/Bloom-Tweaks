@@ -1295,6 +1295,8 @@ font-weight: 500;
 
 .Root__top-container:has(.BeautifulLyricsPage.Contained.BeautifulLyricsBackground) {
     padding-right: 0 !important;
+    padding: 0 !important;
+    gap: 0;
 }
 
 .Root__top-container:has(.BeautifulLyricsPage.Contained.BeautifulLyricsBackground) footer.main-nowPlayingBar-container {
