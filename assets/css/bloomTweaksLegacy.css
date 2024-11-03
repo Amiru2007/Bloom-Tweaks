@@ -1257,9 +1257,36 @@ font-weight: 500;
 
 /* -------------------------------------- Beautiful Lyrics ------------------------------------- */
 
+.Root__top-container:has(.BeautifulLyricsPage.Contained.BeautifulLyricsBackground) {
+    padding-right: 0 !important;
+}
+
+.Root__top-container:has(.BeautifulLyricsPage.Contained.BeautifulLyricsBackground) footer.main-nowPlayingBar-container {
+    background: transparent !important;
+    backdrop-filter: blur(var(--blur-radius)) saturate(0.8) brightness(100%);
+    width: calc(100% - 8px);
+    /* margin-left: 8px; */
+    /* margin-bottom: 8px; */
+    border: 1px solid transparent;
+}
+
 #BeautifulLyricsFullscreenButton svg {
     fill: var(--spice-subtext) !important;
 }
+
+.Root__top-container:has(.BeautifulLyricsPage.Contained.BeautifulLyricsBackground) .Root__globalNav {
+    display: none;
+}
+
+.Root__top-container:has(.BeautifulLyricsPage.Contained.BeautifulLyricsBackground) .Root__main-view::before {
+    border-radius: 0 !important;
+}
+
+.Root__top-container:has(.BeautifulLyricsPage.Contained.BeautifulLyricsBackground) footer.main-nowPlayingBar-container div#ambient-container {
+    opacity: 0;
+}
+
+
 
 /* .BeautifulLyricsBackground:is(aside) .BeautifulLyricsBackground-Container {
     opacity: 0.5 !important;
