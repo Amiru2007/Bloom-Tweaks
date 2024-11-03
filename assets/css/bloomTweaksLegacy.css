@@ -1257,6 +1257,11 @@ font-weight: 500;
 
 /* -------------------------------------- Beautiful Lyrics ------------------------------------- */
 
+
+::root {
+    margin-left: 0 !important;
+}
+
 .Root__top-container:has(.BeautifulLyricsPage.Contained.BeautifulLyricsBackground) {
     padding-right: 0 !important;
 }
