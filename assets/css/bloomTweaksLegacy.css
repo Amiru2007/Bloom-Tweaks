@@ -681,7 +681,7 @@ a[class*="topBarActive"]::before {
     background-color: rgba(var(--spice-rgb-sidebar), 1) !important;
 }
 
-.contentSpacing:not(.artist-artistDiscography-topBar, .search-searchCategory-container, .hV9v6y_uYwdAsoiOHpzk) {
+/* .contentSpacing:not(.artist-artistDiscography-topBar, .search-searchCategory-container, .hV9v6y_uYwdAsoiOHpzk) {
     display: flex !important;
     flex-direction: column;
 }
@@ -691,7 +691,7 @@ button.button-module__button___hf2qg_marketplace.marketplace-add-snippet-btn {
     top: 106px;
     margin-top: -27px !important;
     cursor: pointer;
-}
+} */
 
 /* .marketplace-tabBar-nav {
     display: none !important;
