@@ -2,6 +2,11 @@
     height: calc(100% - 98px) !important;
 }
 
+.Root__top-container:has(.BeautifulLyricsPage.Contained.BeautifulLyricsBackground) .Root__right-sidebar .ffFwfKcPDbmAPLXzxzKq {
+    height: 100% !important;
+    border-radius: 0 !important;
+}
+
 .nw2W4ZMdICuBo08Tzxg9 {
     padding-bottom: 6px !important;
 }

@@ -681,6 +681,18 @@ a[class*="topBarActive"]::before {
     background-color: rgba(var(--spice-rgb-sidebar), 1) !important;
 }
 
+.contentSpacing:not(.artist-artistDiscography-topBar, .search-searchCategory-container, .hV9v6y_uYwdAsoiOHpzk) {
+    display: flex !important;
+    flex-direction: column;
+}
+
+button.button-module__button___hf2qg_marketplace.marketplace-add-snippet-btn {
+    order: -1;
+    top: 106px;
+    margin-top: -27px !important;
+    cursor: pointer;
+}
+
 /* .marketplace-tabBar-nav {
     display: none !important;
 } */
@@ -1321,7 +1333,8 @@ font-weight: 500;
 }
 
 .Root__top-container:has(.BeautifulLyricsPage.Contained.BeautifulLyricsBackground) .Root__globalNav {
-    display: none;
+    opacity: 0;
+    height: 0;
 }
 
 .Root__top-container:has(.BeautifulLyricsPage.Contained.BeautifulLyricsBackground) .Root__main-view::before {
@@ -1474,6 +1487,18 @@ p.popup-row {
 .EBU7aYrd4J_LgPaKmyJA {
     background: rgb(160 160 160 / 20%) !important;
     animation: none !important;
+}
+
+/* ------------------------------------------------------------- Home Card Shell Bug Updates -------------------------------------------------------------------------- */
+
+
+.qI009QzTkvisAXqhbw74 {
+    gap: 12px !important;
+}
+
+.Box__BoxComponent-sc-y4nds-0.BoxComponent-group-card-naked-isInteractive-draggable.Box-sc-1njtxi4-0.Box-group-naked-card-md-isInteractive-draggable.main-card-cardContainer.Card {
+    max-width: 215px !important;
+    min-width: 215px !important;
 }
 
 /* -------------------------------------- Sleep Time ------------------------------------- */

@@ -86,3 +86,17 @@ span.ButtonInner-sc-14ud5tc-0 {
 .Dropdown-option {
     border-radius: 6px;
 }
+
+
+/* ----------------------------------------------------------------------- Marketplace----------------------------------------------------------------------------- */
+
+button.button-module__button___hf2qg_marketplace.marketplace-add-snippet-btn {
+    border-radius: 6px !important;
+    font-weight: 400 !important;
+    background: var(--spice-text) !important;
+    border: 1px solid rgba(var(--spice-rgb-shadow), 0.045) !important;
+    transition: all 0.3s ease !important;
+    min-width: 100px !important;
+    cursor: pointer;
+    padding: 6px 30px !important;
+}
