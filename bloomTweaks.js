@@ -16,6 +16,7 @@ function waitForSpicetify() {
         friendsActivityBar: false,
         floatingVolumeBar: false,
         customAppEnhancify: false,
+        beautifulLyricsLegacyCinema: true,
     };
 
     function loadPreferences() {
@@ -92,6 +93,14 @@ function waitForSpicetify() {
             await loadCSSFile("customAppEnhancify.css");
         } else if (!prefs.customAppEnhancify && customAppEnhancifyLink) {
             customAppEnhancifyLink.remove();
+        }
+    
+        // Load beautifulLyricsLegacyCinema.css (Updated name from 'beautifulLyricsLegacyCinema.css')
+        const beautifulLyricsLegacyCinemaLink = document.querySelector("link[href*='beautifulLyricsLegacyCinema.css']"); // Corrected here
+        if (prefs.beautifulLyricsLegacyCinema && !beautifulLyricsLegacyCinemaLink) {
+            await loadCSSFile("beautifulLyricsLegacyCinema.css");
+        } else if (!prefs.beautifulLyricsLegacyCinema && beautifulLyricsLegacyCinemaLink) {
+            beautifulLyricsLegacyCinemaLink.remove();
         }
     }
 
@@ -272,7 +281,19 @@ function waitForSpicetify() {
                                 </label>
                             </div>
                         </div>
-                        <h3 style="padding-top: 16px;">Custom Apps Customizations</h3>
+                        <h3 style="padding-top: 16px;">Extension Customizations</h3>
+                        <div class="bloom-tweaks x-settings-row">
+                            <div class="bloom-tweaks x-settings-firstColumn">
+                                <label class="bloom-tweaks encore-text encore-text-body-small encore-internal-color-text-subdued">Beautiful Lyrics old cinema lyrics page</label>
+                            </div>
+                            <div class="bloom-tweaks x-settings-secondColumn">
+                                <label class="bloom-tweaks x-toggle-wrapper">
+                                    <input id="beautifulLyricsLegacyCinema" type="checkbox" class="bloom-tweaks x-toggle-input" ${prefs.beautifulLyricsLegacyCinema ? "checked" : ""}>
+                                    <span class="bloom-tweaks x-toggle-indicatorWrapper"><span class="bloom-tweaks x-toggle-indicator"></span></span>
+                                </label>
+                            </div>
+                        </div>
+                        <h3 style="padding-top: 16px;">Custom App Customizations</h3>
                         <div class="bloom-tweaks x-settings-row">
                             <div class="bloom-tweaks x-settings-firstColumn">
                                 <label class="bloom-tweaks encore-text encore-text-body-small encore-internal-color-text-subdued">Tag Styling (Playlist Tags Custom App)</label>
@@ -323,6 +344,7 @@ function waitForSpicetify() {
                             friendsActivityBar: document.getElementById("friendsActivityBar")?.checked || false,
                             floatingVolumeBar: document.getElementById("floatingVolumeBar")?.checked || false,
                             customAppEnhancify: document.getElementById("customAppEnhancify")?.checked || false,
+                            beautifulLyricsLegacyCinema: document.getElementById("beautifulLyricsLegacyCinema")?.checked || false,
                         };
 
                         savePreferences(newPrefs);

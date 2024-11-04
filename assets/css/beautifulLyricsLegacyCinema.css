@@ -1,0 +1,73 @@
+#Desktop_LeftSidebar_Id {
+    background-color: var(--spice-sidebar) !important;
+    border-left: 8px solid var(--spice-sidebar) !important;
+}
+
+/* #Desktop_LeftSidebar_Id::after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    right: -20px;
+    background-color: var(--spice-sidebar);
+    margin: 0;
+    -webkit-mask-image: radial-gradient(circle at bottom right, transparent 70.6%, black 51%);
+    mask-image: radial-gradient(circle at bottom right, transparent 70.6%, black 51%);
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+} */
+
+#Desktop_LeftSidebar_Id {
+    position: absolute;
+    left: -280px;
+    width: 288px;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    visibility: visible;
+    transition: left 0.5s ease, opacity 0.5s ease;
+    z-index: 12;
+}
+
+#Desktop_LeftSidebar_Id:hover {
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.spotify__container--is-desktop .Root__top-container {
+    padding-top: var(--panel-gap);
+    padding-left: 0 !important;
+}
+
+.Root__top-container:has(.BeautifulLyricsPage.Contained.BeautifulLyricsBackground) {
+    padding-right: 0 !important;
+    padding: 0 !important;
+    gap: 0;
+}
+
+.Root__top-container:has(.BeautifulLyricsPage.Contained.BeautifulLyricsBackground) footer.main-nowPlayingBar-container {
+    background: transparent !important;
+    backdrop-filter: blur(var(--blur-radius)) saturate(0.9) brightness(0.75);
+    /* width: calc(100% - 8px); */
+    /* margin-left: 8px; */
+    /* margin-bottom: 8px; */
+    border: 2px solid #2f2f2f1c;
+}
+
+#BeautifulLyricsFullscreenButton svg {
+    fill: var(--spice-subtext) !important;
+}
+
+.Root__top-container:has(.BeautifulLyricsPage.Contained.BeautifulLyricsBackground) .Root__globalNav {
+    opacity: 0;
+    height: 0;
+}
+
+.Root__top-container:has(.BeautifulLyricsPage.Contained.BeautifulLyricsBackground) .Root__main-view::before {
+    border-radius: 0 !important;
+}
+
+.Root__top-container:has(.BeautifulLyricsPage.Contained.BeautifulLyricsBackground) footer.main-nowPlayingBar-container div#ambient-container {
+    opacity: 0;
+}
