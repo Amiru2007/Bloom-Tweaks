@@ -1372,6 +1372,10 @@ button:has(.LyricsPageIcon):after {
     display: none;
 }
 
+.Root__main-view:has(.BeautifulLyricsPage) .main-view-container__scroll-node-child .ViewControls button, .Root__main-view:has(.BeautifulLyricsPage) .main-view-container__scroll-node-child-spacer .ViewControls button, div.os-host:has(.BeautifulLyricsPage) .main-view-container__scroll-node-child .ViewControls button, div.os-host:has(.BeautifulLyricsPage) .main-view-container__scroll-node-child-spacer .ViewControls button {
+    pointer-events: all !important;
+}
+
 /* -------------------------------------- Genre Tags ------------------------------------- */
 
 .main-nowPlayingBar-nowPlayingBar .ellipsis-one-line a {
