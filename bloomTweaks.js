@@ -16,7 +16,7 @@ function waitForSpicetify() {
         friendsActivityBar: false,
         floatingVolumeBar: false,
         customAppEnhancify: false,
-        beautifulLyricsLegacyCinema: true,
+        beautifulLyricsLegacyCinema: false,
     };
 
     function loadPreferences() {

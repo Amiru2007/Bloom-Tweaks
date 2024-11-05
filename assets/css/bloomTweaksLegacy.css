@@ -649,6 +649,17 @@ a[class*="topBarActive"]::before {
     background-color: rgba(var(--spice-rgb-sidebar), 1) !important;
 }
 
+.marketplace-customCSS-input-container {
+    gap: 6px;
+}
+
+.marketplace-code-editor {
+    background: var(--spice-sidebar) !important;
+    border: 1px solid transparent !important;
+    padding: 6px 10px !important;
+    border-radius: 6px !important;
+}
+
 /* .contentSpacing:not(.artist-artistDiscography-topBar, .search-searchCategory-container, .hV9v6y_uYwdAsoiOHpzk) {
     display: flex !important;
     flex-direction: column;

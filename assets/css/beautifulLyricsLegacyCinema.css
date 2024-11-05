@@ -17,7 +17,7 @@
     mask-size: 100% 100%;
 } */
 
-#Desktop_LeftSidebar_Id {
+.Root__top-container:has(.BeautifulLyricsPage.Contained.BeautifulLyricsBackground) #Desktop_LeftSidebar_Id {
     position: absolute;
     left: -280px;
     width: 288px;
@@ -29,7 +29,7 @@
     z-index: 12;
 }
 
-#Desktop_LeftSidebar_Id:hover {
+.Root__top-container:has(.BeautifulLyricsPage.Contained.BeautifulLyricsBackground) #Desktop_LeftSidebar_Id:hover {
     left: 0;
     opacity: 1;
     visibility: visible;
