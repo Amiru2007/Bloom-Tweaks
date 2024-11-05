@@ -1355,6 +1355,23 @@ button.main-genericButton-button.Button-sc-1dqy6lx-0.Button-small-small-buttonTe
     margin-left: 0px !important;
 }
 
+svg.Svg-sc-ytk21e-0.Svg-img-16-icon.LyricsPageIcon path {
+    display: none;
+}
+
+.main-genericButton-button.main-genericButton-buttonActive svg.Svg-sc-ytk21e-0.Svg-img-16-icon.LyricsPageIcon {
+    background: var(--spice-accent) !important;
+}
+
+button:has(.LyricsPageIcon):after {
+    margin-left: 14px;
+    bottom: -2px !important;
+}
+
+.main-nowPlayingBar-lyricsButton {
+    display: none;
+}
+
 /* -------------------------------------- Genre Tags ------------------------------------- */
 
 .main-nowPlayingBar-nowPlayingBar .ellipsis-one-line a {
