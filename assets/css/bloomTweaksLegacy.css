@@ -1466,7 +1466,7 @@ p.popup-row {
 
 .Box__BoxComponent-sc-y4nds-0.BoxComponent-group-card-naked-isInteractive-draggable.Box-sc-1njtxi4-0.Box-group-naked-card-md-isInteractive-draggable.main-card-cardContainer.Card {
     max-width: 215px !important;
-    min-width: 215px !important;
+    min-width: 190px !important;
 }
 
 /* -------------------------------------- Sleep Time ------------------------------------- */
@@ -2113,6 +2113,10 @@ a.muHL0_3HjlqTZDoapgc9[href*="https://en.wikipedia.org/"] svg path {
 .tYSzgx8hG37WjBDn364n .DehN40s8150pzqyBfGN_ {
     color: var(--text-subdued) !important;
     font-size: 13px !important;
+}
+
+.artist-artistDiscography-topBar.artist-artistDiscography-topBarScrolled {
+    transform: translateY(-24px);
 }
 
 /* -------------------------------------- Device connect panel------------------------------------- */
