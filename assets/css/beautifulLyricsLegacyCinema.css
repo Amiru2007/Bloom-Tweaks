@@ -71,3 +71,92 @@
 .Root__top-container:has(.BeautifulLyricsPage.Contained.BeautifulLyricsBackground) footer.main-nowPlayingBar-container div#ambient-container {
     opacity: 0;
 }
+
+
+
+/* -------------------------------------- Beautiful Lyrics ------------------------------------- */
+
+
+
+
+/* .BeautifulLyricsBackground:is(aside) .BeautifulLyricsBackground-Container {
+    opacity: 0.5 !important;
+} */
+
+/* .BeautifulLyricsBackground:is(aside) .BeautifulLyricsBackground-Container {
+    filter: saturate(2) brightness(1) !important;
+} */
+
+.Lyric.Synced.Line {
+    --text-shadow-opacity: 0 !important;
+}
+
+.ffFwfKcPDbmAPLXzxzKq {
+    border-radius: var(--border-radius-1) !important;
+}
+
+svg.Svg-sc-ytk21e-0.Svg-img-16-icon.LyricsPageIcon {
+    background: var(--spice-subtext) !important;
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/mic.svg) !important;
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/mic.svg) !important;
+    width: 16px !important;
+    height: 16px !important;
+}
+
+button:focus svg.Svg-sc-ytk21e-0.Svg-img-16-icon.LyricsPageIcon {
+    background: var(--text-subdued) !important;
+}
+
+button:focus svg.Svg-sc-ytk21e-0.Svg-img-16-icon.LyricsPageIcon path {
+    opacity: 0 !important;
+}
+
+button:hover svg.Svg-sc-ytk21e-0.Svg-img-16-icon.LyricsPageIcon {
+    background: var(--spice-text) !important;
+}
+
+.main-genericButton-buttonActiveDot:has(.lucide-picture-in-picture-2) svg,
+button:has(.LyricsPageIcon) svg {
+    background: var(--spice-accent) !important;
+}
+
+.main-genericButton-buttonActiveDot:has(.lucide-picture-in-picture-2) svg {
+    background: var(--spice-accent) !important;
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/picture-in-picture-2.svg) !important;
+}
+
+.main-genericButton-buttonActiveDot:has(.lucide-picture-in-picture-2) path,
+.main-genericButton-buttonActiveDot:has(.lucide-picture-in-picture-2) rect {
+    display: none;
+}
+
+button.main-genericButton-button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-isUsingKeyboard-useBrowserDefaultFocusStyle.play.main-genericButton-buttonActive.main-genericButton-buttonActiveDot::after {
+    margin-left: 13px !important;
+    /* margin-top: 5px; */
+    bottom: -2px !important;
+}
+
+.main-genericButton-buttonActiveDot:has(.lucide-picture-in-picture-2)::after {
+    margin-left: 0px !important;
+}
+
+svg.Svg-sc-ytk21e-0.Svg-img-16-icon.LyricsPageIcon path {
+    display: none;
+}
+
+.main-genericButton-button.main-genericButton-buttonActive svg.Svg-sc-ytk21e-0.Svg-img-16-icon.LyricsPageIcon {
+    background: var(--spice-accent) !important;
+}
+
+button:has(.LyricsPageIcon):after {
+    margin-left: 14px;
+    bottom: -2px !important;
+}
+
+.main-nowPlayingBar-lyricsButton {
+    display: none;
+}
+
+.Root__main-view:has(.BeautifulLyricsPage) .main-view-container__scroll-node-child .ViewControls button, .Root__main-view:has(.BeautifulLyricsPage) .main-view-container__scroll-node-child-spacer .ViewControls button, div.os-host:has(.BeautifulLyricsPage) .main-view-container__scroll-node-child .ViewControls button, div.os-host:has(.BeautifulLyricsPage) .main-view-container__scroll-node-child-spacer .ViewControls button {
+    pointer-events: all !important;
+}

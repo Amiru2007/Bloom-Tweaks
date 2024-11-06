@@ -87,6 +87,10 @@ span.ButtonInner-sc-14ud5tc-0 {
     border-radius: 6px;
 }
 
+.ChipInnerComponent-sm, .ChipInnerComponent-sm-selected {
+    border-radius: var(--border-radius-2) !important;
+}
+
 
 /* ----------------------------------------------------------------------- Marketplace----------------------------------------------------------------------------- */
 
@@ -99,4 +103,46 @@ button.button-module__button___hf2qg_marketplace.marketplace-add-snippet-btn {
     min-width: 100px !important;
     cursor: pointer;
     padding: 6px 30px !important;
+}
+
+
+/* ----------------------------------------------------------------------- Artist Page ----------------------------------------------------------------------------- */
+
+button.qyKJPLjz8o4jnbk92JOn.zsVdTdACMZA_MWB3HlEW,
+button.qyKJPLjz8o4jnbk92JOn.nsakAYOtgZOAcEO4ObrM {
+    width: 18px !important;
+    height: 50px !important;
+    border-radius: 4px !important;
+    font-weight: 400 !important;
+    backdrop-filter: blur(10px) !important;
+    background: rgba(var(--spice-rgb-not-selected), 0.045) !important;
+    border: 1px solid rgba(var(--spice-rgb-shadow), 0.045) !important;
+    transition: all 0.3s ease !important;
+}
+
+button.qyKJPLjz8o4jnbk92JOn.zsVdTdACMZA_MWB3HlEW:hover,
+button.qyKJPLjz8o4jnbk92JOn.nsakAYOtgZOAcEO4ObrM:hover {
+    background: rgba(var(--spice-rgb-not-selected), 0.07) !important;
+    border: 1px solid rgba(var(--spice-rgb-shadow), 0.05) !important;
+}
+
+button.qyKJPLjz8o4jnbk92JOn.zsVdTdACMZA_MWB3HlEW svg,
+button.qyKJPLjz8o4jnbk92JOn.nsakAYOtgZOAcEO4ObrM svg {
+    background: var(--spice-subtext);
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_caret_right_24_filled.svg);
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_caret_right_24_filled.svg);
+}
+
+button.qyKJPLjz8o4jnbk92JOn.zsVdTdACMZA_MWB3HlEW svg {
+    transform: rotate(180deg) !important;
+}
+
+button.qyKJPLjz8o4jnbk92JOn.zsVdTdACMZA_MWB3HlEW:hover svg,
+button.qyKJPLjz8o4jnbk92JOn.nsakAYOtgZOAcEO4ObrM:hover svg {
+    background: var(--spice-text) !important;
+}
+
+button.qyKJPLjz8o4jnbk92JOn.zsVdTdACMZA_MWB3HlEW svg path,
+button.qyKJPLjz8o4jnbk92JOn.nsakAYOtgZOAcEO4ObrM svg path {
+    opacity: 0 !important;
 }

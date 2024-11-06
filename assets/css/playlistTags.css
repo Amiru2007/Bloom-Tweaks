@@ -1,0 +1,199 @@
+.GitHub-button-wrapper,
+.README h1,
+.all-untagged-playlists-page-sort-dropdown-wrapper,
+.all-playlists-page-sort-dropdown-wrapper {
+    padding-top: 30px;
+}
+
+.play-icon {
+    left: 0 !important;
+    top: 0 !important;
+    width: 50px !important;
+    transform: none !important;
+    height: 50px !important;
+}
+
+.icon {
+    margin: 0 !important;
+}
+
+.loadingWrapper .status-icon {
+    mask-image: url(https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_library_24_regular.svg) !important;
+    -webkit-mask-image: url(https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_library_24_regular.svg) !important;
+    background-color: #ffffff !important;
+}
+
+.loadingWrapper .status-icon path {
+    display: none;
+}
+
+.text-input {
+    scrollbar-color: rgba(var(--spice-rgb-selected-row), 0.3) transparent;
+    -webkit-font-smoothing: antialiased;
+    user-select: none;
+    box-sizing: border-box;
+    font-family: "Segoe UI Variable Display", "Segoe UI Variable Text",
+        "Segoe UI", "Microsoft Ya Hei", sans-serif !important;
+    line-height: normal;
+    box-shadow: none !important;
+    text-transform: none;
+    background: rgba(var(--spice-rgb-selected-row), 0.1);
+    border: 1px solid transparent;
+    color: var(--spice-text);
+    font-size: 14px;
+    height: 40px;
+    padding: 0 12px;
+    width: 100%;
+    background-color: var(--spice-card);
+    border-radius: var(--border-radius-2) !important;
+}
+
+.text-input:focus {
+    border-color: var(--spice-accent) !important;
+}
+
+.input-wrapper {
+    margin-top: 30px;
+}
+
+.tag-search-bar {
+    width: 100%;
+    height: 48px;
+    color: var(--spice-text);
+    background-color: rgba(var(--spice-rgb-selected-row), 0.4) !important;
+    padding: 5px;
+    border-radius: var(--border-radius-2) !important;
+    border-width: 0;
+    margin: 0;
+    padding-left: 42px;
+    border: 1px solid var(--spice-light-border) !important;
+}
+
+input.tag-search-bar:hover {
+    background-color: rgba(var(--spice-rgb-selected-row), 0.6) !important;
+}
+
+input.tag-search-bar:focus {
+    background-color: rgba(var(--spice-rgb-main), 0.7) !important;
+    border-bottom: var(--spice-accent) solid 2px !important;
+}
+
+input.tag-search-bar::placeholder {
+    color: var(--spice-text);
+}
+
+.modal-button {
+    scrollbar-color: rgba(var(--spice-rgb-selected-row), 0.3) transparent;
+    -webkit-font-smoothing: antialiased;
+    user-select: none;
+    box-sizing: border-box;
+    font-family: "Segoe UI Variable Display", "Segoe UI Variable Text",
+        "Segoe UI", "Microsoft Ya Hei", sans-serif !important;
+    line-height: normal;
+    box-shadow: none !important;
+    text-transform: none;
+    background: rgba(var(--spice-rgb-selected-row), 0.1);
+    border: 1px solid transparent;
+    color: var(--spice-text);
+    font-size: 14px;
+    height: 40px;
+    padding: 0 12px;
+    width: 70px !important;
+    background-color: var(--spice-card);
+    border-radius: 9999px;
+    color: var(--spice-alt-text) !important;
+    font-weight: 700;
+    background: var(--spice-text) !important;
+}
+
+.main-trackCreditsModal-container {
+    width: 500px !important;
+}
+
+.text-input-form .ButtonInner-small {
+    background-color: transparent !important;
+}
+
+div#playlist-tags-settings {
+    padding-top: 30px;
+}
+
+h2.TypeElement-cello-textBase-type {
+    font-size: var(--encore-text-size-base);
+    color: var(--text-base);
+    font-weight: 700;
+}
+
+#playlist-tags-settings h2.TypeElement-cello-textBase-type {
+    font-size: var(--encore-text-size-larger-2) !important;
+}
+
+.TypeElement-viola-textSubdued-type {
+    font-size: var(--encore-text-size-smaller);
+}
+
+.search-wrapper {
+    justify-content: flex-start !important;
+    align-items: flex-start;
+}
+
+/*
+background-color: var(--spice-accent);
+font-weight: 500;
+*/
+
+
+/* -------------------------------------- Spicetify tags (Additional) ------------------------------------- */
+
+.special-tag-button {
+    order: -1 !important;
+    /* margin: 0 !important;
+    margin-left: -40px !important;
+    z-index: -1 !important; */
+}
+
+.special-tag-button-spotify {
+    order: -2 !important;
+}
+
+.special-tag-button span.LegacyChipInner__ChipInnerComponent-sc-1qguixk-0.ChipInnerComponent-sm-isUsingKeyboard.tag-list-tag {
+    background: var(--spice-text) !important;
+    color: var(--spice-alt-text) !important;
+    /* padding-left: 46px !important; */
+}
+
+.special-tag-button-spotify span.LegacyChipInner__ChipInnerComponent-sc-1qguixk-0.ChipInnerComponent-sm-isUsingKeyboard.tag-list-tag {
+    background: #1ed760 !important;
+    color: var(--spice-alt-text) !important;
+}
+
+button.special-tag-button-spotify span::before,
+button.LegacyChip__LegacyChipComponent-sc-tzfq94-0.LegacyChipComponent-checkbox-textBase-chip-sm-isUsingKeyboard.encore-text-body-small.special-tag-button span::before {
+    content: "";
+    background: var(--spice-alt-text);
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    margin-left: -6px;
+    /* transform: scale(0.7); */
+}
+
+button.LegacyChip__LegacyChipComponent-sc-tzfq94-0.LegacyChipComponent-checkbox-textBase-chip-sm-isUsingKeyboard.encore-text-body-small.special-tag-button[aria-label*="artist-tag"] span::before {
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_color_24_regular.svg);
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_color_24_regular.svg);
+}
+
+button.LegacyChip__LegacyChipComponent-sc-tzfq94-0.LegacyChipComponent-checkbox-textBase-chip-sm-isUsingKeyboard.encore-text-body-small.special-tag-button[aria-label*="collection-tag"] span::before {
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/shapes.svg);
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/shapes.svg);
+}
+
+button.LegacyChip__LegacyChipComponent-sc-tzfq94-0.LegacyChipComponent-checkbox-textBase-chip-sm-isUsingKeyboard.encore-text-body-small.special-tag-button[aria-label*="genre-tag"] span::before {
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/icons8-spotify.svg);
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/icons8-spotify.svg);
+}
+
+button.special-tag-button-spotify span::before {
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/icons8-spotify.svg);
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/icons8-spotify.svg);
+}
