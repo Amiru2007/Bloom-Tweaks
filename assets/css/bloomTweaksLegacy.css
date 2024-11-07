@@ -792,6 +792,10 @@ button.Button-sc-1dqy6lx-0[aria-label*="Disable repeat"] svg.Svg-sc-ytk21e-0.Svg
     padding: 0 10px;
 }
 
+.fZjbVIqD8Xc3auRZOxu5:before, .vW9NFcNIj8useE43Vx9G:before {
+    background-color: var(--spice-accent) !important;
+}
+
 /* -------------------------------------- Event Page ------------------------------------- */
 
 .HYVIJaYYiCTgSCHie70L {

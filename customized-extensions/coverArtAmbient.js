@@ -17,34 +17,41 @@ function waitForSpicetify() {
                 return;
             }
         }
-
+    
         const currentTrack = Spicetify.Player.data.item;
         const albumCoverUrl = currentTrack.album.images[0]?.url;
-
+    
         if (!albumCoverUrl) {
             console.warn('Album cover URL not found.');
             return;
         }
-
-        // Extract color from the track URI
+    
+        // Attempt color extraction
         try {
             const colors = await Spicetify.colorExtractor(currentTrack.uri);
-            if (colors && colors.Vibrant) {
-                console.log("Extracted vibrant color:", colors.Vibrant);
-                applyAccentColor(colors.Vibrant);
-            } else {
-                console.warn("No vibrant color found. Using album cover as background.");
-                applyAccentColor(null);  // Fallback if no color is available
+            console.log("Extracted colors:", colors);
+    
+            // Select a visible, lighter color if available, otherwise convert a darker one to lighter
+            let accentColor = colors?.LIGHT_VIBRANT || colors?.VIBRANT || colors?.LIGHT_MUTED || colors?.MUTED;
+    
+            if (!accentColor) {
+                // Fallback to dark color if lighter ones aren't available
+                accentColor = colors?.DARK_VIBRANT || "#1DB954";  // Default Spotify green
+                accentColor = lightenColor(accentColor, 40);  // Make darker colors lighter
             }
+    
+            console.log("Using color for accent:", accentColor);
+            applyAccentColor(accentColor);
         } catch (error) {
             console.error("Error extracting color with Spicetify color extractor:", error);
+            applyAccentColor("#1DB954");  // Apply default if error occurs
         }
-
+    
         // Apply cover art as ambient background
         const ambientContainer = createAmbientContainer();
         if (ambientContainer) {
             ambientContainer.style.backgroundImage = `url(${albumCoverUrl})`;
-
+    
             // Trigger the zoom effect when the ambient image updates
             triggerZoomEffect(ambientContainer);
         }
@@ -60,7 +67,15 @@ function waitForSpicetify() {
             // Create a new style block and inject the color as CSS if color is available
             const style = document.createElement("style");
             style.id = "dynamicAccentColor";
-            style.textContent = `:root { --spice-accent: ${color}; }`;
+            style.textContent = `
+                    :root {
+                        --spice-accent: ${color} !important;
+                    }
+
+                    .Svg-img-icon-small-textBrightAccent {
+                        fill: ${color} !important;
+                    }
+                `;
             document.head.appendChild(style);
             console.log("Accent color applied:", color);
         } else {
