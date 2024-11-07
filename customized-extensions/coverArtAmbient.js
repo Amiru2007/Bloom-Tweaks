@@ -26,12 +26,45 @@ function waitForSpicetify() {
             return;
         }
 
+        // Extract color from the track URI
+        try {
+            const colors = await Spicetify.colorExtractor(currentTrack.uri);
+            if (colors && colors.Vibrant) {
+                console.log("Extracted vibrant color:", colors.Vibrant);
+                applyAccentColor(colors.Vibrant);
+            } else {
+                console.warn("No vibrant color found. Using album cover as background.");
+                applyAccentColor(null);  // Fallback if no color is available
+            }
+        } catch (error) {
+            console.error("Error extracting color with Spicetify color extractor:", error);
+        }
+
+        // Apply cover art as ambient background
         const ambientContainer = createAmbientContainer();
         if (ambientContainer) {
             ambientContainer.style.backgroundImage = `url(${albumCoverUrl})`;
 
             // Trigger the zoom effect when the ambient image updates
             triggerZoomEffect(ambientContainer);
+        }
+    }
+
+    function applyAccentColor(color) {
+        const existingStyle = document.getElementById("dynamicAccentColor");
+        if (existingStyle) {
+            existingStyle.remove();
+        }
+
+        if (color) {
+            // Create a new style block and inject the color as CSS if color is available
+            const style = document.createElement("style");
+            style.id = "dynamicAccentColor";
+            style.textContent = `:root { --spice-accent: ${color}; }`;
+            document.head.appendChild(style);
+            console.log("Accent color applied:", color);
+        } else {
+            console.warn("Fallback: No accent color applied.");
         }
     }
 
@@ -70,7 +103,6 @@ function waitForSpicetify() {
             ambientContainer = document.createElement('div');
             ambientContainer.id = 'ambient-container';
 
-            // Set styles for the ambient container
             ambientContainer.style.position = 'absolute';
             ambientContainer.style.top = '13px';
             ambientContainer.style.left = '10px';
@@ -83,7 +115,6 @@ function waitForSpicetify() {
             ambientContainer.style.transform = 'scale(0)';
             ambientContainer.style.filter = 'blur(10px) saturate(1.2)';
 
-            // Finally, append the ambient container to the nowPlayingBar
             nowPlayingBar.appendChild(ambientContainer);
         }
 

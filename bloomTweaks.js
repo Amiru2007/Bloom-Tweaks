@@ -19,11 +19,17 @@ function waitForSpicetify() {
         beautifulLyricsLegacyCinema: false,
         playlistTags: false,
         spicetifyStats: false,
+        accentColor: false,
     };
 
     function loadPreferences() {
+        console.log("Loading preferences...");
+    
         const savedPrefs = localStorage.getItem(PREF_KEY);
-        return savedPrefs ? JSON.parse(savedPrefs) : defaultPrefs;
+        const prefs = savedPrefs ? JSON.parse(savedPrefs) : defaultPrefs;
+    
+        console.log("Preferences loaded:", prefs);
+        return prefs;
     }
 
     function savePreferences(prefs) {
@@ -195,6 +201,66 @@ function waitForSpicetify() {
             }
         });
     }
+    
+    async function extractAndApplyAccentColor() {
+        console.log("Starting accent color extraction with Spicetify's color extractor...");
+    
+        const prefs = loadPreferences();
+        if (!prefs.accentColor) {
+            console.log("Accent color feature is disabled in preferences.");
+            return;
+        } else {
+            console.log("Accent color feature is enabled.");
+        }
+    
+        // Get the current track
+        const currentTrack = Spicetify.Player.data?.item;
+        if (!currentTrack || !currentTrack.uri) {
+            console.log("No current track data available or URI missing.");
+            return;
+        } else {
+            console.log("Current track:", currentTrack.name, "by", currentTrack.artists.map(artist => artist.name).join(", "));
+        }
+    
+        try {
+            // Use Spicetify's color extractor
+            const colors = await Spicetify.colorExtractor(currentTrack.uri);
+            if (colors && colors.Vibrant) {
+                console.log("Extracted vibrant color:", colors.Vibrant);
+                applyAccentColor(colors.Vibrant);
+            } else {
+                console.log("No vibrant color found in color extraction results.");
+            }
+        } catch (error) {
+            console.error("Error extracting color with Spicetify color extractor:", error);
+        }
+    }
+    
+    // Function to apply the accent color using CSS injection
+    function applyAccentColor(color) {
+        console.log("Applying accent color:", color);
+    
+        // Remove any existing dynamic accent color style block
+        const existingStyle = document.getElementById("dynamicAccentColor");
+        if (existingStyle) {
+            existingStyle.remove();
+        }
+    
+        // Create a new style block and inject the color as CSS
+        const style = document.createElement("style");
+        style.id = "dynamicAccentColor";
+        style.textContent = `:root { --spice-accent: ${color}; }`;
+    
+        document.head.appendChild(style);
+    
+        // Verify the color application
+        const appliedColor = getComputedStyle(document.documentElement).getPropertyValue('--spice-accent').trim();
+        if (appliedColor === color) {
+            console.log("Accent color successfully applied:", appliedColor);
+        } else {
+            console.warn("Accent color application failed. Expected:", color, "but found:", appliedColor);
+        }
+    }    
 
     function addControlPanelButton() {
         const prefs = loadPreferences();
@@ -299,6 +365,17 @@ function waitForSpicetify() {
                                 </label>
                             </div>
                         </div>
+                        <div class="bloom-tweaks x-settings-row">
+                            <div class="bloom-tweaks x-settings-firstColumn">
+                                <label class="bloom-tweaks encore-text encore-text-body-small encore-internal-color-text-subdued">Accent Color</label>
+                            </div>
+                            <div class="bloom-tweaks x-settings-secondColumn">
+                                <label class="bloom-tweaks x-toggle-wrapper">
+                                    <input id="accentColor" type="checkbox" class="bloom-tweaks x-toggle-input" ${prefs.accentColor ? "checked" : ""}>
+                                    <span class="bloom-tweaks x-toggle-indicatorWrapper"><span class="bloom-tweaks x-toggle-indicator"></span></span>
+                                </label>
+                            </div>
+                        </div>
                         <h3 style="padding-top: 16px;">Extension Customizations</h3>
                         <div class="bloom-tweaks x-settings-row">
                             <div class="bloom-tweaks x-settings-firstColumn">
@@ -325,7 +402,7 @@ function waitForSpicetify() {
                         </div>
                         <div class="bloom-tweaks x-settings-row">
                             <div class="bloom-tweaks x-settings-firstColumn">
-                                <label class="bloom-tweaks encore-text encore-text-body-small encore-internal-color-text-subdued">Enhancify Custom App Page</label>
+                                <label class="bloom-tweaks encore-text encore-text-body-small encore-internal-color-text-subdued">Playlist Tags Bloom Update</label>
                             </div>
                             <div class="bloom-tweaks x-settings-secondColumn">
                                 <label class="bloom-tweaks x-toggle-wrapper">
@@ -336,7 +413,7 @@ function waitForSpicetify() {
                         </div>
                         <div class="bloom-tweaks x-settings-row">
                             <div class="bloom-tweaks x-settings-firstColumn">
-                                <label class="bloom-tweaks encore-text encore-text-body-small encore-internal-color-text-subdued">Enhancify Custom App Page</label>
+                                <label class="bloom-tweaks encore-text encore-text-body-small encore-internal-color-text-subdued">Spicetify Stats Bloom Update</label>
                             </div>
                             <div class="bloom-tweaks x-settings-secondColumn">
                                 <label class="bloom-tweaks x-toggle-wrapper">
@@ -387,6 +464,7 @@ function waitForSpicetify() {
                             beautifulLyricsLegacyCinema: document.getElementById("beautifulLyricsLegacyCinema")?.checked || false,
                             playlistTags: document.getElementById("playlistTags")?.checked || false,
                             spicetifyStats: document.getElementById("spicetifyStats")?.checked || false,
+                            accentColor: document.getElementById("accentColor")?.checked || false,
                         };
 
                         savePreferences(newPrefs);
@@ -400,17 +478,25 @@ function waitForSpicetify() {
         }, 100);
     }
 
+    function checkAccentColor() {
+        const accentColor = getComputedStyle(document.documentElement).getPropertyValue('--spice-accent').trim();
+        console.log("Current accent color (from CSS variable --spice-accent):", accentColor);
+        return accentColor;
+    }
+
     function initExtension() {
         loadCustomCSS();
         updateButtonState();
         addArtistButtonClass();
+        extractAndApplyAccentColor();
     }
-
+    
     function initObserver() {
         const observer = new MutationObserver(() => {
             setTimeout(() => {
                 updateButtonState();
                 addArtistButtonClass();
+                extractAndApplyAccentColor() // Call on track change
             }, 100);
         });
         observer.observe(document.body, { childList: true, subtree: true });
