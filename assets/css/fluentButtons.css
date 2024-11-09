@@ -146,3 +146,18 @@ button.qyKJPLjz8o4jnbk92JOn.zsVdTdACMZA_MWB3HlEW svg path,
 button.qyKJPLjz8o4jnbk92JOn.nsakAYOtgZOAcEO4ObrM svg path {
     opacity: 0 !important;
 }
+
+.C1USyigFSYyc22_BmsgB {
+    border-radius: var(--border-radius-1);
+}
+
+.rdp-day_selected, .rdp-day_selected:focus-visible, .rdp-day_selected:hover {
+    background-color: var(--spice-accent) !important;
+    color: var(--spice-alt-text) !important;
+    font-weight: 400;
+    border: 1px solid var(--spice-accent) !important;
+}
+
+span.LegacyChipInner__ChipInnerComponent-sc-1qguixk-0.ChipInnerComponent-md-selected.encore-bright-accent-set.x0xbkRE3CyGK_i406MSX:hover {
+    background-color: var(--spice-accent) !important;
+}

@@ -57,31 +57,35 @@ function waitForSpicetify() {
         }
     }
 
-    function applyAccentColor(color) {
-        const existingStyle = document.getElementById("dynamicAccentColor");
-        if (existingStyle) {
-            existingStyle.remove();
-        }
+    // This accent color applying function is disable on purpose as i like the static accent color
 
-        if (color) {
-            // Create a new style block and inject the color as CSS if color is available
-            const style = document.createElement("style");
-            style.id = "dynamicAccentColor";
-            style.textContent = `
-                    :root {
-                        --spice-accent: ${color} !important;
-                    }
+    // function applyAccentColor(color) {
+    //     const existingStyle = document.getElementById("dynamicAccentColor");
+    //     if (existingStyle) {
+    //         existingStyle.remove();
+    //     }
 
-                    .Svg-img-icon-small-textBrightAccent {
-                        fill: ${color} !important;
-                    }
-                `;
-            document.head.appendChild(style);
-            console.log("Accent color applied:", color);
-        } else {
-            console.warn("Fallback: No accent color applied.");
-        }
-    }
+    //     if (color) {
+    //         // Create a new style block and inject the color as CSS if color is available
+    //         const style = document.createElement("style");
+    //         style.id = "dynamicAccentColor";
+    //         style.textContent = `
+    //                 :root {
+    //                     --spice-accent: ${color} !important;
+    //                     --spice-button: ${color} !important;
+    //                     --spice-button-active: ${color} !important;
+    //                 }
+
+    //                 .Svg-img-icon-small-textBrightAccent {
+    //                     fill: ${color} !important;
+    //                 }
+    //             `;
+    //         document.head.appendChild(style);
+    //         console.log("Accent color applied:", color);
+    //     } else {
+    //         console.warn("Fallback: No accent color applied.");
+    //     }
+    // }
 
     function triggerZoomEffect(element) {
         element.style.transform = 'scale(0)';
