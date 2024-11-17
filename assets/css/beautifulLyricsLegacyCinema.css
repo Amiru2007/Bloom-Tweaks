@@ -93,6 +93,11 @@
     backdrop-filter: blur(10px);
 }
 
+.lyrics-lyricsContainer-SyncedLyrics .lyrics-lyricsContainer-LyricsLine.lyrics-lyricsContainer-LyricsLine-active {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.6) !important;
+    transform: translateY(calc(var(--position-index)* var(--lyrics-line-height) + var(--offset))) scale(1) !important;
+}
+
 .Root__top-container:has(.BeautifulLyricsPage.Contained.BeautifulLyricsBackground) {
     padding-right: 0 !important;
     padding: 0 !important;
