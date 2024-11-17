@@ -1226,6 +1226,10 @@ p.popup-row {
     animation: none !important;
 }
 
+.fYWNdY4zhj4OX_T2Xtg6[aria-labelledby*="artist"] .BfALkuQy0UjTI70U9QlQ {
+    border-radius: 50% !important;
+}
+
 /* ------------------------------------------------------------- Home Card Shell Bug Updates -------------------------------------------------------------------------- */
 
 
@@ -1234,8 +1238,8 @@ p.popup-row {
 }
 
 .Box__BoxComponent-sc-y4nds-0.BoxComponent-group-card-naked-isInteractive-draggable.Box-sc-1njtxi4-0.Box-group-naked-card-md-isInteractive-draggable.main-card-cardContainer.Card {
-    max-width: 215px !important;
-    min-width: 190px !important;
+    max-width: 217px !important;
+    min-width: 217px !important;
 }
 
 section.xOmT3apmEbwVlFt4HkBe.C3jVNGQUUZcUp5kTEOC0.Sm3POgzbjs7wFj7tyYNh[aria-label*="WRAPPED has arrived"] .qI009QzTkvisAXqhbw74 .Box__BoxComponent-sc-y4nds-0.BoxComponent-group-card-naked-isInteractive-draggable.Box-sc-1njtxi4-0.Box-group-naked-card-md-isInteractive-draggable.main-card-cardContainer.Card {
@@ -1807,6 +1811,13 @@ a.muHL0_3HjlqTZDoapgc9[href*="https://en.wikipedia.org/"] svg path {
 
 h2.encore-text.encore-text-title-small.encore-internal-color-text-base.b_dSllo9kearPhsw_MSp {
     padding-top: 16px;
+}
+
+.main-gridContainer-gridContainer {
+    display: grid;
+    grid-gap: var(--grid-gap);
+    grid-auto-rows: min-content;
+    grid-template-columns: repeat(auto-fill, minmax(215px, 1fr));
 }
 
 /* -------------------------------------- Device connect panel------------------------------------- */
