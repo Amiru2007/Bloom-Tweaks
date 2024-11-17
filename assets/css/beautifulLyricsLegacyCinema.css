@@ -17,17 +17,9 @@
     mask-size: 100% 100%;
 } */
 
-/* .Root__top-container:has(.BeautifulLyricsPage.Contained.BeautifulLyricsBackground) #Desktop_LeftSidebar_Id {
-    position: absolute;
-    left: -280px;
-    width: 288px;
-    height: 100%;
-    background-color: black;
-    opacity: 0;
-    visibility: visible;
-    transition: left 0.5s ease, opacity 0.5s ease;
-    z-index: 12;
-} */
+.Root__top-container:has(.BeautifulLyricsPage.Contained.BeautifulLyricsBackground) #Desktop_LeftSidebar_Id {
+    display: none;
+}
 
 /* .Root__top-container:has(.BeautifulLyricsPage.Contained.BeautifulLyricsBackground) #Desktop_LeftSidebar_Id:hover {
     left: 0;
