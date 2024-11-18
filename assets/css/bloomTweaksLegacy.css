@@ -870,6 +870,13 @@ button.main-topBar-button,
 /* button.main-topBar-button.play[aria-label*="playlist-stats"] {
     margin-left: 10px;
 } */
+
+#library-app .main-gridContainer-gridContainer.grid .main-card-cardContainer {
+    width: 190px !important;
+    max-width: 190px !important;
+    min-width: 190px !important;
+}
+
 button.main-topBar-button svg {
     background: var(--spice-text) !important;
     height: 18px !important;
@@ -1554,7 +1561,7 @@ li.main-yourLibraryX-navItem a[aria-label*="Made for you"]:hover svg.made-for-yo
     opacity: 0;
 }
 
-.main-gridContainer-gridContainer div .Box__BoxComponent-sc-y4nds-0[aria-labelledby*="folder"] .main-card-imageContainer::after {
+/* .main-gridContainer-gridContainer div .Box__BoxComponent-sc-y4nds-0[aria-labelledby*="folder"] .main-card-imageContainer::after {
     content: "";
     background: #00000000;
     height: 24px;
@@ -1565,7 +1572,7 @@ li.main-yourLibraryX-navItem a[aria-label*="Made for you"]:hover svg.made-for-yo
     position: absolute;
     right: 8px;
     bottom: 8px;
-}
+} */
 
 #library-app .ix_8kg3iUb9VS5SmTnBY {
     margin-right: 0 !important;
