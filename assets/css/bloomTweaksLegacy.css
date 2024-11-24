@@ -1874,6 +1874,23 @@ span.encore-text.encore-text-body-small.ArQQy9kpoXLmafHpoi6u.FGrkEs4xa3OtWqaSmtv
     transform: translateY(-24px);
 }
 
+.main-embedWidgetGenerator-contentCode {
+    background-color: transparent !important;
+    margin-top: -30px !important;
+    opacity: 0;
+    transition: all 0.3s ease !important;
+}
+
+.main-embedWidgetGenerator-contentCode.main-embedWidgetGenerator-visible {
+    opacity: 1;
+}
+
+.main-embedWidgetGenerator-contentCode .main-embedWidgetGenerator-code {
+    background: rgba(var(--spice-rgb-player-bar-bg), 0.25) !important;
+    width: calc(100% - 48px) !important;
+    margin-left: 24px !important;
+}
+
 /*---------------------------------------------------------- Global Nav ----------------------------------------------------------- */
 
 .Root__globalNav {
