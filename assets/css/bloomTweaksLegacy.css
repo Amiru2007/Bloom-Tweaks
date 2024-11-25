@@ -56,6 +56,35 @@ button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBro
     cursor: pointer;
 }
 
+
+/* ----------------------------------------------------------------------------- Snippets ------------------------------------------------------------------------------------ */
+
+.BeautifulLyricsPage.Fullscreen .Content .PlayPanel {
+    padding-top: 0 !important;
+    margin-top: calc(50cqh - var(--PlayPanelWidth)* .6) !important;
+}
+
+/* explicit tag hide */
+
+
+.main-trackList-rowMainContent {
+    column-gap: 0 !important;
+}
+
+span.encore-text.encore-text-body-medium.encore-internal-color-text-subdued.main-trackList-rowBadges {
+    display: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+
 .RMhp6CH5pXRI1XuARX8n {
     background: transparent !important;
     display: none !important;
