@@ -76,6 +76,13 @@ span.encore-text.encore-text-body-medium.encore-internal-color-text-subdued.main
 }
 
 
+/* beautiful lyrics text-shdow delete */
+
+.Vocals.Active .Synced {
+    background-image: linear-gradient(var(--gradient-angle), rgba(var(--gradient-color), var(--gradient-color), var(--gradient-color), var(--gradient-color-alpha-active)) var(--gradient-progress), rgba(var(--gradient-color), var(--gradient-color), var(--gradient-color), var(--gradient-color-alpha)) calc(var(--gradient-progress) + 20% + var(--gradient-offset)));
+    text-shadow: 0 0 var(--text-shadow-blur-radius) rgb(255 255 255 / 0%);
+    text-shadow: none !important;
+}
 
 
 
