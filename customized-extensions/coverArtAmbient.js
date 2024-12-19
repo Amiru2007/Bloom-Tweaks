@@ -17,75 +17,23 @@ function waitForSpicetify() {
                 return;
             }
         }
-    
+
         const currentTrack = Spicetify.Player.data.item;
         const albumCoverUrl = currentTrack.album.images[0]?.url;
-    
+
         if (!albumCoverUrl) {
             console.warn('Album cover URL not found.');
             return;
         }
-    
-        // Attempt color extraction
-        try {
-            const colors = await Spicetify.colorExtractor(currentTrack.uri);
-            console.log("Extracted colors:", colors);
-    
-            // Select a visible, lighter color if available, otherwise convert a darker one to lighter
-            let accentColor = colors?.LIGHT_VIBRANT || colors?.VIBRANT || colors?.LIGHT_MUTED || colors?.MUTED;
-    
-            if (!accentColor) {
-                // Fallback to dark color if lighter ones aren't available
-                accentColor = colors?.DARK_VIBRANT || "#1DB954";  // Default Spotify green
-                accentColor = lightenColor(accentColor, 40);  // Make darker colors lighter
-            }
-    
-            console.log("Using color for accent:", accentColor);
-            applyAccentColor(accentColor);
-        } catch (error) {
-            console.error("Error extracting color with Spicetify color extractor:", error);
-            applyAccentColor("#1DB954");  // Apply default if error occurs
-        }
-    
-        // Apply cover art as ambient background
+
         const ambientContainer = createAmbientContainer();
         if (ambientContainer) {
             ambientContainer.style.backgroundImage = `url(${albumCoverUrl})`;
-    
+
             // Trigger the zoom effect when the ambient image updates
             triggerZoomEffect(ambientContainer);
         }
     }
-
-    // This accent color applying function is disable on purpose as i like the static accent color
-
-    // function applyAccentColor(color) {
-    //     const existingStyle = document.getElementById("dynamicAccentColor");
-    //     if (existingStyle) {
-    //         existingStyle.remove();
-    //     }
-
-    //     if (color) {
-    //         // Create a new style block and inject the color as CSS if color is available
-    //         const style = document.createElement("style");
-    //         style.id = "dynamicAccentColor";
-    //         style.textContent = `
-    //                 :root {
-    //                     --spice-accent: ${color} !important;
-    //                     --spice-button: ${color} !important;
-    //                     --spice-button-active: ${color} !important;
-    //                 }
-
-    //                 .Svg-img-icon-small-textBrightAccent {
-    //                     fill: ${color} !important;
-    //                 }
-    //             `;
-    //         document.head.appendChild(style);
-    //         console.log("Accent color applied:", color);
-    //     } else {
-    //         console.warn("Fallback: No accent color applied.");
-    //     }
-    // }
 
     function triggerZoomEffect(element) {
         element.style.transform = 'scale(0)';
@@ -122,6 +70,7 @@ function waitForSpicetify() {
             ambientContainer = document.createElement('div');
             ambientContainer.id = 'ambient-container';
 
+            // Set styles for the ambient container
             ambientContainer.style.position = 'absolute';
             ambientContainer.style.top = '13px';
             ambientContainer.style.left = '10px';
@@ -132,8 +81,27 @@ function waitForSpicetify() {
             ambientContainer.style.backgroundSize = 'cover';
             ambientContainer.style.backgroundPosition = 'center center';
             ambientContainer.style.transform = 'scale(0)';
-            ambientContainer.style.filter = 'blur(10px) saturate(1.2)';
+            ambientContainer.style.filter = 'blur(10px)';
 
+            // // Now create the inner overlay div for blur and dark overlay effect
+            // const blurOverlay = document.createElement('div');
+            // blurOverlay.id = 'blur-overlay';
+
+            // // Set styles for the blur and dark overlay
+            // blurOverlay.style.position = 'absolute';
+            // blurOverlay.style.top = '0';
+            // blurOverlay.style.left = '0';
+            // blurOverlay.style.width = '100%';
+            // blurOverlay.style.height = '100%';
+            // blurOverlay.style.backgroundColor = 'rgba(0, 0, 0, 0.5)'; // Dark transparent overlay
+            // blurOverlay.style.backdropFilter = 'blur(10px)'; // Add the blur effect
+            // blurOverlay.style.borderRadius = 'var(--border-radius-3)'; // Match border radius
+            // blurOverlay.style.zIndex = '1'; // Ensure it stays on top of the background image
+
+            // // Append the overlay to the ambient container
+            // ambientContainer.appendChild(blurOverlay);
+
+            // Finally, append the ambient container to the nowPlayingBar
             nowPlayingBar.appendChild(ambientContainer);
         }
 
