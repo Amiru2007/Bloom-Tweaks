@@ -220,3 +220,11 @@ button:has(.LyricsPageIcon):after {
 .Root__main-view:has(.BeautifulLyricsPage) .main-view-container__scroll-node-child .ViewControls button, .Root__main-view:has(.BeautifulLyricsPage) .main-view-container__scroll-node-child-spacer .ViewControls button, div.os-host:has(.BeautifulLyricsPage) .main-view-container__scroll-node-child .ViewControls button, div.os-host:has(.BeautifulLyricsPage) .main-view-container__scroll-node-child-spacer .ViewControls button {
     pointer-events: all !important;
 }
+
+.KL8t9WB65UfUEPuTFAhO {
+    min-height: 100% !important;
+}
+
+.Root__top-container:has(.BeautifulLyricsPage.Contained.BeautifulLyricsBackground) .Root__right-sidebar:has(.main-nowPlayingView-section,canvas) .BeautifulLyricsBackground div[data-overlayscrollbars-viewport],.Root__right-sidebar:has(.main-nowPlayingView-section,canvas) .BeautifulLyricsBackground div[data-overlayscrollbars-viewport]>div {
+    height: calc(100% - 122px) !important;
+}
