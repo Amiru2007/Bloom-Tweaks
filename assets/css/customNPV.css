@@ -5,14 +5,10 @@
 .Root__top-container:has(.BeautifulLyricsPage.Contained.BeautifulLyricsBackground) .Root__right-sidebar .ffFwfKcPDbmAPLXzxzKq {
     height: 100% !important;
     border-radius: 0 !important;
-    margin-top: 60px;
     border-top-right-radius: var(--border-radius-1) !important;
     border-top-left-radius: var(--border-radius-1) !important;
 }
 
-.Root__top-container:has(.BeautifulLyricsPage.Contained.BeautifulLyricsBackground) .Root__right-sidebar .XOawmCGZcQx4cesyNfVO {
-    border-right: 8px solid var(--spice-sidebar);
-}
 .nw2W4ZMdICuBo08Tzxg9 {
     padding-bottom: 6px !important;
 }

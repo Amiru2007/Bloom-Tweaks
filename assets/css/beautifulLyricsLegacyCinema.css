@@ -228,3 +228,11 @@ button:has(.LyricsPageIcon):after {
 .Root__top-container:has(.BeautifulLyricsPage.Contained.BeautifulLyricsBackground) .Root__right-sidebar:has(.main-nowPlayingView-section,canvas) .BeautifulLyricsBackground div[data-overlayscrollbars-viewport],.Root__right-sidebar:has(.main-nowPlayingView-section,canvas) .BeautifulLyricsBackground div[data-overlayscrollbars-viewport]>div {
     height: calc(100% - 122px) !important;
 }
+
+.Root__top-container:has(.BeautifulLyricsPage.Contained.BeautifulLyricsBackground) .Root__right-sidebar .ffFwfKcPDbmAPLXzxzKq {
+    margin-top: 60px;
+}
+
+.Root__top-container:has(.BeautifulLyricsPage.Contained.BeautifulLyricsBackground) .Root__right-sidebar .XOawmCGZcQx4cesyNfVO {
+    border-right: 8px solid var(--spice-sidebar);
+}
