@@ -2212,3 +2212,18 @@ button.main-globalNav-link-icon[aria-label*="Statistics"] svg {
     background-color: rgb(0 0 0 / 54%) !important;
     color: var(--text-base) !important;
 }
+
+.I6NEvCpflvkfINWthnVk::before {
+    content: '';
+    background: var(--spice-sidebar) !important;
+    width: 8px;
+    height: 100%;
+    position: absolute;
+    z-index: 9;
+    left: -8px;
+    transition: all .5s cubic-bezier(.47,0,.23,1.38);
+}
+
+.k128gbGG35HRlqRLl19c.KL8t9WB65UfUEPuTFAhO {
+    height: 100% !important;
+}
