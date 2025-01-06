@@ -7,7 +7,8 @@ button.main-nowPlayingView-aboutArtistV2Button {
 .main-entityHeader-backgroundColor::before,
 button.main-nowPlayingView-aboutArtistV2Button::before,
 .main-nowPlayingView-section::before,
-.main-nowPlayingView-sectionHeaderSpacing.main-nowPlayingView-lyricsGradient::before {
+.main-nowPlayingView-sectionHeaderSpacing.main-nowPlayingView-lyricsGradient::before,
+.lyrics-lyricsContainer-SyncedLyricsPage::before {
     content: '';
     position: absolute;
     background: var(--noise-texture);
@@ -25,4 +26,8 @@ button.main-nowPlayingView-aboutArtistV2Button::before,
 
 .main-entityHeader-backgroundColor::before {
     opacity: 5% !important;
+}
+
+.lyrics-lyricsContainer-SyncedLyricsPage::before {
+    opacity: 12%;
 }

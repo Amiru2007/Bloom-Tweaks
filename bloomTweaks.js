@@ -13,13 +13,13 @@ function waitForSpicetify() {
         windowsColorThemeCSS: false,
         customNPV: true,
         lightTheme: false,
+        noiseBlurBg: true,
         friendsActivityBar: false,
         floatingVolumeBar: false,
         customAppEnhancify: false,
         beautifulLyricsLegacyCinema: false,
         playlistTags: false,
         spicetifyStats: false,
-        noiseBlurBg: false,
     };
 
     function loadPreferences() {
@@ -314,7 +314,7 @@ function waitForSpicetify() {
                             </div>
                             <div class="bloom-tweaks x-settings-secondColumn">
                                 <label class="bloom-tweaks x-toggle-wrapper">
-                                    <input id="floatingVolumeBar" type="checkbox" class="bloom-tweaks x-toggle-input" ${prefs.noiseBlurBg ? "checked" : ""}>
+                                    <input id="noiseBlurBg" type="checkbox" class="bloom-tweaks x-toggle-input" ${prefs.noiseBlurBg ? "checked" : ""}>
                                     <span class="bloom-tweaks x-toggle-indicatorWrapper"><span class="bloom-tweaks x-toggle-indicator"></span></span>
                                 </label>
                             </div>
@@ -407,7 +407,7 @@ function waitForSpicetify() {
                             beautifulLyricsLegacyCinema: document.getElementById("beautifulLyricsLegacyCinema")?.checked || false,
                             playlistTags: document.getElementById("playlistTags")?.checked || false,
                             spicetifyStats: document.getElementById("spicetifyStats")?.checked || false,
-                            spicetifyStats: document.getElementById("noiseBlurBg")?.checked || false,
+                            noiseBlurBg: document.getElementById("noiseBlurBg")?.checked || false,
                         };
 
                         savePreferences(newPrefs);
