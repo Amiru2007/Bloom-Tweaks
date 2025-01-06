@@ -1,0 +1,28 @@
+.main-nowPlayingView-section,
+button.main-nowPlayingView-aboutArtistV2Button {
+    position: relative;
+}
+
+.Dropdown-menu::before,
+.main-entityHeader-backgroundColor::before,
+button.main-nowPlayingView-aboutArtistV2Button::before,
+.main-nowPlayingView-section::before,
+.main-nowPlayingView-sectionHeaderSpacing.main-nowPlayingView-lyricsGradient::before {
+    content: '';
+    position: absolute;
+    background: var(--noise-texture);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: var(--border-radius-2);
+    opacity: 10%;
+}
+
+.main-nowPlayingView-sectionHeaderSpacing.main-nowPlayingView-lyricsGradient::before {
+    opacity: 40% !important;
+}
+
+.main-entityHeader-backgroundColor::before {
+    opacity: 5% !important;
+}

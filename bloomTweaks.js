@@ -19,6 +19,7 @@ function waitForSpicetify() {
         beautifulLyricsLegacyCinema: false,
         playlistTags: false,
         spicetifyStats: false,
+        noiseBlurBg: false,
     };
 
     function loadPreferences() {
@@ -119,6 +120,14 @@ function waitForSpicetify() {
             await loadCSSFile("spicetifyStats.css");
         } else if (!prefs.spicetifyStats && spicetifyStatsLink) {
             spicetifyStatsLink.remove();
+        }
+
+        // Load noiseBlurBg.css (Updated name from 'noiseBlurBg.css')
+        const noiseBlurBgLink = document.querySelector("link[href*='noiseBlurBg.css']"); // Corrected here
+        if (prefs.noiseBlurBg && !noiseBlurBgLink) {
+            await loadCSSFile("noiseBlurBg.css");
+        } else if (!prefs.noiseBlurBg && noiseBlurBgLink) {
+            noiseBlurBgLink.remove();
         }
     }
 
@@ -299,6 +308,17 @@ function waitForSpicetify() {
                                 </label>
                             </div>
                         </div>
+                        <div class="bloom-tweaks x-settings-row">
+                            <div class="bloom-tweaks x-settings-firstColumn">
+                                <label class="bloom-tweaks encore-text encore-text-body-small encore-internal-color-text-subdued">Floating Volume Bar</label>
+                            </div>
+                            <div class="bloom-tweaks x-settings-secondColumn">
+                                <label class="bloom-tweaks x-toggle-wrapper">
+                                    <input id="floatingVolumeBar" type="checkbox" class="bloom-tweaks x-toggle-input" ${prefs.noiseBlurBg ? "checked" : ""}>
+                                    <span class="bloom-tweaks x-toggle-indicatorWrapper"><span class="bloom-tweaks x-toggle-indicator"></span></span>
+                                </label>
+                            </div>
+                        </div>
                         <h3 style="padding-top: 16px;">Extension Customizations</h3>
                         <div class="bloom-tweaks x-settings-row">
                             <div class="bloom-tweaks x-settings-firstColumn">
@@ -387,6 +407,7 @@ function waitForSpicetify() {
                             beautifulLyricsLegacyCinema: document.getElementById("beautifulLyricsLegacyCinema")?.checked || false,
                             playlistTags: document.getElementById("playlistTags")?.checked || false,
                             spicetifyStats: document.getElementById("spicetifyStats")?.checked || false,
+                            spicetifyStats: document.getElementById("noiseBlurBg")?.checked || false,
                         };
 
                         savePreferences(newPrefs);

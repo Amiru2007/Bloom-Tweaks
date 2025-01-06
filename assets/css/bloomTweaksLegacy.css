@@ -1863,6 +1863,17 @@ h2.encore-text.encore-text-title-small.encore-internal-color-text-base.b_dSllo9k
     grid-template-columns: repeat(auto-fill, minmax(215px, 1fr));
 }
 
+/* .main-entityHeader-container.main-entityHeader-withBackgroundImage::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgb(0 0 0 / 0%), #ededed);
+    top: 0;
+    left: 0;
+    filter: invert(1);
+} */
+
 /* -------------------------------------- Device connect panel------------------------------------- */
 
 div[aria-describedby*="device-picker-troubleshooting-list"] {
