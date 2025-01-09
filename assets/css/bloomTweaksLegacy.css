@@ -2242,3 +2242,16 @@ button.main-globalNav-link-icon[aria-label*="Statistics"] svg {
 .k128gbGG35HRlqRLl19c.KL8t9WB65UfUEPuTFAhO {
     height: 100% !important;
 }
+
+
+/* ncs custom app */
+
+
+.Root__main-view:has(.visualizer-container) {
+    transition: background-image 0.5s ease-in-out;
+}
+
+.global-nav .main-view-container:has(.visualizer-container) {
+    backdrop-filter: blur(10px) brightness(0.7) contrast(1.1);
+    /* background: url(https://i.ebayimg.com/images/g/n8IAAOSwltRkNCSF/s-l1200.png); */
+}

@@ -205,6 +205,36 @@ function waitForSpicetify() {
         });
     }
 
+    function updateBackground() {
+        // Ensure track data is available
+        const currentTrack = Spicetify.Player.data?.track;
+        
+        if (!currentTrack) {
+            console.warn("Track data not available yet.");
+            return;
+        }
+    
+        // Get cover art
+        const coverArt = currentTrack.metadata?.image_xlarge_url || currentTrack.metadata?.image_url;
+        
+        if (coverArt) {
+            const mainView = document.querySelector(".Root__main-view");
+    
+            // Only update if visualizer container is present
+            if (mainView && mainView.querySelector(".visualizer-container")) {
+                mainView.style.backdropFilter = "blur(10px) brightness(0.7) contrast(1.1)";
+                mainView.style.backgroundImage = `url(${coverArt})`;
+                mainView.style.backgroundSize = "cover";
+                mainView.style.backgroundPosition = "center";
+            }
+        } else {
+            console.warn("Cover art not found.");
+        }
+    }
+
+    Spicetify.Player.addEventListener("songchange", updateBackground);
+
+
     function addControlPanelButton() {
         const prefs = loadPreferences();
 
@@ -425,6 +455,7 @@ function waitForSpicetify() {
         loadCustomCSS();
         updateButtonState();
         addArtistButtonClass();
+        updateBackground();
     }
 
     function initObserver() {
