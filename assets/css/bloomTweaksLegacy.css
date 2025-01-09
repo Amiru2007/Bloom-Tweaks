@@ -2248,7 +2248,10 @@ button.main-globalNav-link-icon[aria-label*="Statistics"] svg {
 
 
 .Root__main-view:has(.visualizer-container) {
-    transition: background-image 0.5s ease-in-out;
+    transition: background-image 1s ease-in-out;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .global-nav .main-view-container:has(.visualizer-container) {

@@ -227,9 +227,12 @@ function waitForSpicetify() {
             return;
         }
 
-        const VisualizerContainer = createVisualizerContainer();
-        if (VisualizerContainer) {
-            VisualizerContainer.style.backgroundImage = `url(${albumCoverUrl})`;
+        const Root__main = createRoot__main();
+        
+        if (Root__main && Root__main.querySelector('.visualizer-container')) {
+            Root__main.style.backgroundImage = `url(${albumCoverUrl})`;
+
+            console.log('Hello');
         }
     }
 
@@ -241,10 +244,10 @@ function waitForSpicetify() {
         updateAmbientEffect();
     }
 
-    function createVisualizerContainer() {
-        let VisualizerContainer = document.querySelector('.visualizer-container');
+    function createRoot__main() {
+        let Root__main = document.querySelector('.Root__main-view');
         
-        return VisualizerContainer;
+        return Root__main;
     }
 
     setupDynamicAmbient();
