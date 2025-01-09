@@ -2255,3 +2255,11 @@ button.main-globalNav-link-icon[aria-label*="Statistics"] svg {
     backdrop-filter: blur(10px) brightness(0.7) contrast(1.1);
     /* background: url(https://i.ebayimg.com/images/g/n8IAAOSwltRkNCSF/s-l1200.png); */
 }
+
+.visualizer-container {
+    margin-top: -90px !important;
+}
+
+.visualizer-container>* {
+    height: calc(100% - 180px) !important;
+}

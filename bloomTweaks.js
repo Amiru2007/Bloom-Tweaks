@@ -205,35 +205,49 @@ function waitForSpicetify() {
         });
     }
 
-    function updateBackground() {
-        // Ensure track data is available
-        const currentTrack = Spicetify.Player.data?.track;
-        
-        if (!currentTrack) {
-            console.warn("Track data not available yet.");
+    async function updateAmbientEffect(retries = 10, delay = 100) {
+        if (!Spicetify.Player || !Spicetify.Player.data || !Spicetify.Player.data.item) {
+            console.warn('Spicetify Player or track data is not available. Retrying...');
+            if (retries > 0) {
+                setTimeout(() => {
+                    updateAmbientEffect(retries - 1, delay);
+                }, delay);
+                return;
+            } else {
+                console.error('Max retries reached. Exiting updateAmbientEffect.');
+                return;
+            }
+        }
+
+        const currentTrack = Spicetify.Player.data.item;
+        const albumCoverUrl = currentTrack.album.images[0]?.url;
+
+        if (!albumCoverUrl) {
+            console.warn('Album cover URL not found.');
             return;
         }
-    
-        // Get cover art
-        const coverArt = currentTrack.metadata?.image_xlarge_url || currentTrack.metadata?.image_url;
-        
-        if (coverArt) {
-            const mainView = document.querySelector(".Root__main-view");
-    
-            // Only update if visualizer container is present
-            if (mainView && mainView.querySelector(".visualizer-container")) {
-                mainView.style.backdropFilter = "blur(10px) brightness(0.7) contrast(1.1)";
-                mainView.style.backgroundImage = `url(${coverArt})`;
-                mainView.style.backgroundSize = "cover";
-                mainView.style.backgroundPosition = "center";
-            }
-        } else {
-            console.warn("Cover art not found.");
+
+        const VisualizerContainer = createVisualizerContainer();
+        if (VisualizerContainer) {
+            VisualizerContainer.style.backgroundImage = `url(${albumCoverUrl})`;
         }
     }
 
-    Spicetify.Player.addEventListener("songchange", updateBackground);
+    function setupDynamicAmbient() {
+        Spicetify.Player.addEventListener("songchange", () => {
+            updateAmbientEffect();
+        });
 
+        updateAmbientEffect();
+    }
+
+    function createVisualizerContainer() {
+        let VisualizerContainer = document.querySelector('.visualizer-container');
+        
+        return VisualizerContainer;
+    }
+
+    setupDynamicAmbient();
 
     function addControlPanelButton() {
         const prefs = loadPreferences();
@@ -455,7 +469,6 @@ function waitForSpicetify() {
         loadCustomCSS();
         updateButtonState();
         addArtistButtonClass();
-        updateBackground();
     }
 
     function initObserver() {
