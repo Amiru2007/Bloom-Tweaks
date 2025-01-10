@@ -2255,7 +2255,7 @@ button.main-globalNav-link-icon[aria-label*="Statistics"] svg {
 }
 
 .global-nav .main-view-container:has(.visualizer-container) {
-    backdrop-filter: blur(10px) brightness(0.7) contrast(1.1);
+    backdrop-filter: blur(10px) brightness(0.4) contrast(1.1);
     /* background: url(https://i.ebayimg.com/images/g/n8IAAOSwltRkNCSF/s-l1200.png); */
 }
 
@@ -2265,4 +2265,8 @@ button.main-globalNav-link-icon[aria-label*="Statistics"] svg {
 
 .visualizer-container>* {
     height: calc(100% - 180px) !important;
+}
+
+.Root__main-view:not(.Root__main-view:has(.visualizer-container)) {
+    background: var(--spice-main) !important;
 }
