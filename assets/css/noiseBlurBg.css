@@ -5,14 +5,13 @@ button.main-nowPlayingView-aboutArtistV2Button {
 
 .Dropdown-menu::before,
 .main-entityHeader-backgroundColor::before,
-button.main-nowPlayingView-aboutArtistV2Button::before,
 .main-nowPlayingView-section::before,
 .main-nowPlayingView-sectionHeaderSpacing.main-nowPlayingView-lyricsGradient::before,
 .lyrics-lyricsContainer-SyncedLyricsPage::before,
 .cacyLqtJhjhr95qRC_R7::before,
 .CvWRWfWfmS9_2fgM7c3A::before,
 #BeautifulLyrics-CardView::before {
-    content: '';
+    content: "";
     position: absolute;
     background: var(--noise-texture);
     width: 100%;
