@@ -10,7 +10,8 @@ button.main-nowPlayingView-aboutArtistV2Button {
 .lyrics-lyricsContainer-SyncedLyricsPage::before,
 .cacyLqtJhjhr95qRC_R7::before,
 .CvWRWfWfmS9_2fgM7c3A::before,
-#BeautifulLyrics-CardView::before {
+#BeautifulLyrics-CardView::before,
+footer.main-nowPlayingBar-container::before {
     content: "";
     position: absolute;
     background: var(--noise-texture);
