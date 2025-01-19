@@ -1,5 +1,8 @@
-button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBrowserDefaultFocusStyle-condensedAll svg,
-button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBrowserDefaultFocusStyle-condensedAll svg svg {
+button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBrowserDefaultFocusStyle-condensedAll
+    svg,
+button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBrowserDefaultFocusStyle-condensedAll
+    svg
+    svg {
     background: var(--spice-text) !important;
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/settings.svg) !important;
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/settings.svg) !important;
@@ -52,16 +55,14 @@ button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBro
     cursor: pointer;
 }
 
-
 /* ----------------------------------------------------------------------------- Snippets ------------------------------------------------------------------------------------ */
 
 .BeautifulLyricsPage.Fullscreen .Content .PlayPanel {
     padding-top: 0 !important;
-    margin-top: calc(50cqh - var(--PlayPanelWidth)* .6) !important;
+    margin-top: calc(50cqh - var(--PlayPanelWidth) * 0.6) !important;
 }
 
 /* explicit tag hide */
-
 
 .main-trackList-rowMainContent {
     column-gap: 0 !important;
@@ -71,22 +72,29 @@ span.encore-text.encore-text-body-medium.encore-internal-color-text-subdued.main
     display: none !important;
 }
 
-
 /* beautiful lyrics text-shdow delete */
 
 .Vocals.Active .Synced {
-    background-image: linear-gradient(var(--gradient-angle), rgba(var(--gradient-color), var(--gradient-color), var(--gradient-color), var(--gradient-color-alpha-active)) var(--gradient-progress), rgba(var(--gradient-color), var(--gradient-color), var(--gradient-color), var(--gradient-color-alpha)) calc(var(--gradient-progress) + 20% + var(--gradient-offset)));
+    background-image: linear-gradient(
+        var(--gradient-angle),
+        rgba(
+                var(--gradient-color),
+                var(--gradient-color),
+                var(--gradient-color),
+                var(--gradient-color-alpha-active)
+            )
+            var(--gradient-progress),
+        rgba(
+                var(--gradient-color),
+                var(--gradient-color),
+                var(--gradient-color),
+                var(--gradient-color-alpha)
+            )
+            calc(var(--gradient-progress) + 20% + var(--gradient-offset))
+    );
     text-shadow: 0 0 var(--text-shadow-blur-radius) rgb(255 255 255 / 0%);
     text-shadow: none !important;
 }
-
-
-
-
-
-
-
-
 
 .RMhp6CH5pXRI1XuARX8n {
     background: transparent !important;
@@ -95,9 +103,11 @@ span.encore-text.encore-text-body-medium.encore-internal-color-text-subdued.main
 
 .PkOz5g82CaoKk1J3GX0e {
     background-color: var(--spice-main) !important;
-    background-image: linear-gradient(0deg,
-            var(--spice-main),
-            var(--spice-main)) !important;
+    background-image: linear-gradient(
+        0deg,
+        var(--spice-main),
+        var(--spice-main)
+    ) !important;
 }
 
 .yhlH4Dsjqw56Z58EOwvQ {
@@ -132,8 +142,6 @@ span.encore-text.encore-text-body-medium.encore-internal-color-text-subdued.main
     overflow: hidden;
 }
 
-
-
 /*-------------------------------------------------------------------------------- Custom Apps Configuration ---------------------------------------------------------------------------------*/
 
 button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle.link-subtle.main-globalNav-navLink.main-globalNav-link-icon.custom-navlink[aria-label*="Tags"] {
@@ -164,7 +172,9 @@ button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-useBrows
     display: none !important;
 }
 
-.playlist-playlist-playlist .IconWrapper__Wrapper-sc-1hf1hjl-0 .Svg-sc-ytk21e-0 {
+.playlist-playlist-playlist
+    .IconWrapper__Wrapper-sc-1hf1hjl-0
+    .Svg-sc-ytk21e-0 {
     width: 50px;
     height: 50px;
 }
@@ -187,11 +197,13 @@ button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-useBrows
     background-color: transparent !important;
 }
 
-.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only:hover .ButtonInner-sc-14ud5tc-0 {
+.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only:hover
+    .ButtonInner-sc-14ud5tc-0 {
     background-color: transparent !important;
 }
 
-.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only:active .ButtonInner-sc-14ud5tc-0 {
+.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only:active
+    .ButtonInner-sc-14ud5tc-0 {
     background-color: transparent !important;
 }
 
@@ -220,7 +232,8 @@ aside[aria-label="Friend Activity"] {
     z-index: 0;
 }
 
-button.main-actionButtons-button.main-topBarStatusIndicator-hasTooltip.main-noConnection-isNotice.main-topBarStatusIndicator-tooltipEnter.main-topBarStatusIndicator-tooltipEnterActive svg {
+button.main-actionButtons-button.main-topBarStatusIndicator-hasTooltip.main-noConnection-isNotice.main-topBarStatusIndicator-tooltipEnter.main-topBarStatusIndicator-tooltipEnterActive
+    svg {
     fill: var(--spice-alt-text) !important;
 }
 
@@ -244,13 +257,15 @@ aside[aria-label="Friend Activity"] .sGj6VHKqd2s4IorAqiYI p {
     width: 16px !important;
 }
 
-.main-trackList-rowSectionVariable[aria-sort*="ascending"] svg.Svg-sc-ytk21e-0.Svg-img-icon-small-textBrightAccent.OQc9_giz7hbNqHLZODIx {
+.main-trackList-rowSectionVariable[aria-sort*="ascending"]
+    svg.Svg-sc-ytk21e-0.Svg-img-icon-small-textBrightAccent.OQc9_giz7hbNqHLZODIx {
     background: var(--spice-accent) !important;
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/ic_fluent_caret_up_24_filled.svg) !important;
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/ic_fluent_caret_up_24_filled.svg) !important;
 }
 
-.main-trackList-rowSectionVariable[aria-sort*="descending"] svg.Svg-sc-ytk21e-0.Svg-img-icon-small-textBrightAccent.OQc9_giz7hbNqHLZODIx {
+.main-trackList-rowSectionVariable[aria-sort*="descending"]
+    svg.Svg-sc-ytk21e-0.Svg-img-icon-small-textBrightAccent.OQc9_giz7hbNqHLZODIx {
     background: var(--spice-accent) !important;
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/ic_fluent_caret_down_24_filled.svg) !important;
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/ic_fluent_caret_down_24_filled.svg) !important;
@@ -290,31 +305,54 @@ aside[aria-label="Queue"] .Button-sc-1dqy6lx-0 svg {
     background: rgba(0, 0, 0, 0.5) !important;
 }
 
-#spicetify-playlist-list li button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle[aria-label*="Play"] svg.Svg-sc-ytk21e-0.Svg-img-icon-medium,
+#spicetify-playlist-list
+    li
+    button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle[aria-label*="Play"]
+    svg.Svg-sc-ytk21e-0.Svg-img-icon-medium,
 .main-playButton-PlayButton.main-playButton-primary svg,
 aside[aria-label="Queue"] .Button-sc-1dqy6lx-0[aria-label*="Play"] svg,
 .cRB7yMdTUrWxDud8Uqvi[aria-label*="Play"] .RTHphmJ9fFJyJWFe9Kwt,
-.xU4sacBisQneHoQeHMP5 .srjSlmxMGzXnJBc32BJa[aria-label*="Play"] .lju7xv10a5Y5Z8h8CcKJ,
+.xU4sacBisQneHoQeHMP5
+    .srjSlmxMGzXnJBc32BJa[aria-label*="Play"]
+    .lju7xv10a5Y5Z8h8CcKJ,
 .play-button svg,
-.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only[aria-label*="Play"] .IconWrapper__Wrapper-sc-1hf1hjl-0 .Svg-sc-ytk21e-0,
-button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle.play svg,
-button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle[aria-label*="Play"] svg,
-.main-yourLibraryX-listItem button.Button-sc-1dqy6lx-0.Button-buttonTertiary-textBase-medium-medium-iconOnly-useBrowserDefaultFocusStyle[aria-label*="Play"] svg {
+.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only[aria-label*="Play"]
+    .IconWrapper__Wrapper-sc-1hf1hjl-0
+    .Svg-sc-ytk21e-0,
+button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle.play
+    svg,
+button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle[aria-label*="Play"]
+    svg,
+.main-yourLibraryX-listItem
+    button.Button-sc-1dqy6lx-0.Button-buttonTertiary-textBase-medium-medium-iconOnly-useBrowserDefaultFocusStyle[aria-label*="Play"]
+    svg {
     mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg) !important;
     -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg) !important;
     transition: transform 0.3s ease;
     background: var(--spice-text) !important;
 }
 
-#spicetify-playlist-list li button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle[aria-label*="Pause"] svg.Svg-sc-ytk21e-0.Svg-img-icon-medium,
+#spicetify-playlist-list
+    li
+    button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle[aria-label*="Pause"]
+    svg.Svg-sc-ytk21e-0.Svg-img-icon-medium,
 aside[aria-label="Queue"] .Button-sc-1dqy6lx-0[aria-label*="Pause"] svg,
 .cRB7yMdTUrWxDud8Uqvi[aria-label*="Pause"] .RTHphmJ9fFJyJWFe9Kwt,
-.xU4sacBisQneHoQeHMP5 .srjSlmxMGzXnJBc32BJa[aria-label*="Pause"] .lju7xv10a5Y5Z8h8CcKJ,
-.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only[aria-label*="Pause"] .IconWrapper__Wrapper-sc-1hf1hjl-0 .Svg-sc-ytk21e-,
-button.Button-sc-qlcn5g-0.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only.pause svg,
-button.Button-sc-qlcn5g-0.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only[aria-label*="Pause"] svg,
-button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle.pause svg,
-.main-yourLibraryX-listItem button.Button-sc-1dqy6lx-0.Button-buttonTertiary-textBase-medium-medium-iconOnly-useBrowserDefaultFocusStyle[aria-label*="Pause"] svg {
+.xU4sacBisQneHoQeHMP5
+    .srjSlmxMGzXnJBc32BJa[aria-label*="Pause"]
+    .lju7xv10a5Y5Z8h8CcKJ,
+.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only[aria-label*="Pause"]
+    .IconWrapper__Wrapper-sc-1hf1hjl-0
+    .Svg-sc-ytk21e-,
+button.Button-sc-qlcn5g-0.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only.pause
+    svg,
+button.Button-sc-qlcn5g-0.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only[aria-label*="Pause"]
+    svg,
+button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle.pause
+    svg,
+.main-yourLibraryX-listItem
+    button.Button-sc-1dqy6lx-0.Button-buttonTertiary-textBase-medium-medium-iconOnly-useBrowserDefaultFocusStyle[aria-label*="Pause"]
+    svg {
     mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_pause_16_filled.svg) !important;
     -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_pause_16_filled.svg) !important;
     transition: transform 0.3s ease;
@@ -349,17 +387,23 @@ button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly
     display: block !important;
 }
 
-.main-yourLibraryX-libraryItemContainer li.main-useDropTarget-base.main-useDropTarget-track.main-useDropTarget-local.main-useDropTarget-album.main-useDropTarget-episode.main-yourLibraryX-listItem button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle svg.Svg-sc-ytk21e-0.Svg-img-icon-medium path {
+.main-yourLibraryX-libraryItemContainer
+    li.main-useDropTarget-base.main-useDropTarget-track.main-useDropTarget-local.main-useDropTarget-album.main-useDropTarget-episode.main-yourLibraryX-listItem
+    button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle
+    svg.Svg-sc-ytk21e-0.Svg-img-icon-medium
+    path {
     background: transparent;
 }
 
-button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-in-keyboard-nav-condensedAll-useBrowserDefaultFocusStyle.PUipCs3_0Qott0Sru3pB.XAOxFVWnd185_vZ5zPGu.JUPaw8kZF94Coth4G88s[aria-label*="Expand folder"] svg {
+button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-in-keyboard-nav-condensedAll-useBrowserDefaultFocusStyle.PUipCs3_0Qott0Sru3pB.XAOxFVWnd185_vZ5zPGu.JUPaw8kZF94Coth4G88s[aria-label*="Expand folder"]
+    svg {
     background: var(--spice-subtext);
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_caret_down_24_filled.svg);
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_caret_down_24_filled.svg);
 }
 
-button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-in-keyboard-nav-condensedAll-useBrowserDefaultFocusStyle.PUipCs3_0Qott0Sru3pB.XAOxFVWnd185_vZ5zPGu[aria-label*="Collapse folder"] svg {
+button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-in-keyboard-nav-condensedAll-useBrowserDefaultFocusStyle.PUipCs3_0Qott0Sru3pB.XAOxFVWnd185_vZ5zPGu[aria-label*="Collapse folder"]
+    svg {
     background: var(--spice-subtext);
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_caret_down_24_filled.svg);
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_caret_down_24_filled.svg);
@@ -370,15 +414,21 @@ button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-
 }
 
 .main-yourLibraryX-filterArea::after {
-    content: '';
+    content: "";
     width: 100%;
     height: 30px;
     position: absolute !important;
     bottom: -30px;
-    background-image: linear-gradient(to bottom, var(--spice-main) 50%, transparent);
+    background-image: linear-gradient(
+        to bottom,
+        var(--spice-main) 50%,
+        transparent
+    );
 }
 
-.main-yourLibraryX-listItem:hover .Box__BoxComponent-sc-y4nds-0.BoxComponent-group-listRow-naked-isInteractive-minBlockSize_56px-padding_8px.Box-sc-8t9c76-0.Box-group-listRow-isInteractive-hasLeadingOrMedia-minBlockSize_56px-padding_8px.fYWNdY4zhj4OX_T2Xtg6[aria-labelledby*="artist"] .BfALkuQy0UjTI70U9QlQ {
+.main-yourLibraryX-listItem:hover
+    .Box__BoxComponent-sc-y4nds-0.BoxComponent-group-listRow-naked-isInteractive-minBlockSize_56px-padding_8px.Box-sc-8t9c76-0.Box-group-listRow-isInteractive-hasLeadingOrMedia-minBlockSize_56px-padding_8px.fYWNdY4zhj4OX_T2Xtg6[aria-labelledby*="artist"]
+    .BfALkuQy0UjTI70U9QlQ {
     border-radius: 50% !important;
 }
 
@@ -387,7 +437,8 @@ button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-
     border-radius: 4px !important;
 }
 
-.Box__BoxComponent-sc-y4nds-0.BoxComponent-group-listRow-naked-isInteractive-minBlockSize_56px-padding_8px.Box-sc-8t9c76-0.Box-group-listRow-isInteractive-hasLeadingOrMedia-minBlockSize_56px-padding_8px.fYWNdY4zhj4OX_T2Xtg6[aria-labelledby*="artist"] .BfALkuQy0UjTI70U9QlQ {
+.Box__BoxComponent-sc-y4nds-0.BoxComponent-group-listRow-naked-isInteractive-minBlockSize_56px-padding_8px.Box-sc-8t9c76-0.Box-group-listRow-isInteractive-hasLeadingOrMedia-minBlockSize_56px-padding_8px.fYWNdY4zhj4OX_T2Xtg6[aria-labelledby*="artist"]
+    .BfALkuQy0UjTI70U9QlQ {
     border-radius: 50% !important;
 }
 
@@ -403,12 +454,14 @@ button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-
     padding: 0 !important;
 }
 
-.ZSXjRBoTtuX5kmFeZHQu span.IconWrapper__Wrapper-sc-1hf1hjl-0.Wrapper-small-leading-small {
+.ZSXjRBoTtuX5kmFeZHQu
+    span.IconWrapper__Wrapper-sc-1hf1hjl-0.Wrapper-small-leading-small {
     margin: 0 4px !important;
 }
 
 .shuffle-enabled {
-    filter: brightness(0) saturate(100%) invert(79%) sepia(29%) saturate(800%) hue-rotate(87deg) brightness(87%) contrast(81%) !important;
+    filter: brightness(0) saturate(100%) invert(79%) sepia(29%) saturate(800%)
+        hue-rotate(87deg) brightness(87%) contrast(81%) !important;
 }
 
 .Wrapper-large-only-medium .Svg-sc-ytk21e-0 {
@@ -420,14 +473,16 @@ button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-
     transition: transform 0.3s ease;
 }
 
-.main-trackList-rowImagePlayButton[aria-label*="Play"] .main-trackList-rowPlayPauseIcon {
+.main-trackList-rowImagePlayButton[aria-label*="Play"]
+    .main-trackList-rowPlayPauseIcon {
     mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg);
     -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg);
     background-color: var(--spice-text) !important;
     transition: transform 0.3s ease;
 }
 
-.main-trackList-rowImagePlayButton[aria-label*="Pause"] .main-trackList-rowPlayPauseIcon {
+.main-trackList-rowImagePlayButton[aria-label*="Pause"]
+    .main-trackList-rowPlayPauseIcon {
     mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_pause_16_filled.svg);
     -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_pause_16_filled.svg);
     background-color: var(--spice-text) !important;
@@ -482,7 +537,9 @@ button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-
     display: none;
 }
 
-.desktop-grid-wrapper .main-trackList-rowImageWithPlay:hover .main-trackList-rowPlayPauseWrapper {
+.desktop-grid-wrapper
+    .main-trackList-rowImageWithPlay:hover
+    .main-trackList-rowPlayPauseWrapper {
     opacity: 1 !important;
 }
 
@@ -573,11 +630,13 @@ button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-
     opacity: 1 !important;
 }
 
-.main-trackList-rowImageWithPlay:hover .main-trackList-rowImagePlayButton[aria-label*="Play"] {
+.main-trackList-rowImageWithPlay:hover
+    .main-trackList-rowImagePlayButton[aria-label*="Play"] {
     display: block !important;
 }
 
-.main-trackList-rowImageWithPlay:hover .main-trackList-rowImagePlayButton[aria-label*="Pause"] {
+.main-trackList-rowImageWithPlay:hover
+    .main-trackList-rowImagePlayButton[aria-label*="Pause"] {
     display: none !important;
 }
 
@@ -623,8 +682,14 @@ button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-
 
 /* ------------------------------------ Marketplace ------------------------------------ */
 
-.marketplace-grid .main-card-draggable .main-card-cardMetadata li.marketplace-card__tag[data-tag="external JS"],
-.marketplace-grid .main-card-draggable .main-card-cardMetadata li.marketplace-card__tag[data-tag="archived"] {
+.marketplace-grid
+    .main-card-draggable
+    .main-card-cardMetadata
+    li.marketplace-card__tag[data-tag="external JS"],
+.marketplace-grid
+    .main-card-draggable
+    .main-card-cardMetadata
+    li.marketplace-card__tag[data-tag="archived"] {
     background-color: var(--spice-accent) !important;
     color: var(--spice-alt-text) !important;
 }
@@ -718,7 +783,9 @@ button.button-module__button___hf2qg_marketplace.marketplace-add-snippet-btn {
     background: transparent !important;
 }
 
-.Root__now-playing-bar .Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only .Svg-sc-ytk21e-0 {
+.Root__now-playing-bar
+    .Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only
+    .Svg-sc-ytk21e-0 {
     width: 28px !important;
     height: 28px !important;
 }
@@ -738,7 +805,8 @@ button.Button-sc-1dqy6lx-0[aria-label*="Next"] {
     padding-right: 10px !important;
 }
 
-button.Button-sc-1dqy6lx-0[aria-label*="Previous"] svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
+button.Button-sc-1dqy6lx-0[aria-label*="Previous"]
+    svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
     mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_previous_24_filled.svg);
     -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_previous_24_filled.svg);
     background-color: var(--spice-text) !important;
@@ -746,7 +814,8 @@ button.Button-sc-1dqy6lx-0[aria-label*="Previous"] svg.Svg-sc-ytk21e-0.Svg-img-i
     height: 24px !important;
 }
 
-button.Button-sc-1dqy6lx-0[aria-label*="Next"] svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
+button.Button-sc-1dqy6lx-0[aria-label*="Next"]
+    svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
     mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_next_24_filled.svg);
     -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_next_24_filled.svg);
     background-color: var(--spice-text) !important;
@@ -770,7 +839,8 @@ button.Button-sc-1dqy6lx-0[aria-label*="Enable repeat one"] path {
     opacity: 0 !important;
 }
 
-button.Button-sc-1dqy6lx-0[aria-label*="Enable shuffle"] svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
+button.Button-sc-1dqy6lx-0[aria-label*="Enable shuffle"]
+    svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
     mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/refs/heads/main/assets/fluentui-system-icons/ic_fluent_arrow_shuffle_24_regular.svg);
     -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/refs/heads/main/assets/fluentui-system-icons/ic_fluent_arrow_shuffle_24_regular.svg);
     background-color: var(--text-subdued) !important;
@@ -778,7 +848,8 @@ button.Button-sc-1dqy6lx-0[aria-label*="Enable shuffle"] svg.Svg-sc-ytk21e-0.Svg
     height: 22px !important;
 }
 
-button.Button-sc-1dqy6lx-0[aria-label*="Disable shuffle"] svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
+button.Button-sc-1dqy6lx-0[aria-label*="Disable shuffle"]
+    svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
     mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/refs/heads/main/assets/fluentui-system-icons/ic_fluent_arrow_shuffle_24_filled.svg);
     -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/refs/heads/main/assets/fluentui-system-icons/ic_fluent_arrow_shuffle_24_filled.svg);
     background-color: var(--spice-accent) !important;
@@ -786,7 +857,8 @@ button.Button-sc-1dqy6lx-0[aria-label*="Disable shuffle"] svg.Svg-sc-ytk21e-0.Sv
     height: 22px !important;
 }
 
-button.Button-sc-1dqy6lx-0[aria-label*="Enable repeat"] svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
+button.Button-sc-1dqy6lx-0[aria-label*="Enable repeat"]
+    svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
     mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/refs/heads/main/assets/fluentui-system-icons/ic_fluent_arrow_repeat_all_off_24_regular.svg);
     -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/refs/heads/main/assets/fluentui-system-icons/ic_fluent_arrow_repeat_all_off_24_regular.svg);
     background-color: var(--text-subdued) !important;
@@ -794,7 +866,8 @@ button.Button-sc-1dqy6lx-0[aria-label*="Enable repeat"] svg.Svg-sc-ytk21e-0.Svg-
     height: 22px !important;
 }
 
-button.Button-sc-1dqy6lx-0[aria-label*="Enable repeat one"] svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
+button.Button-sc-1dqy6lx-0[aria-label*="Enable repeat one"]
+    svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
     mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/refs/heads/main/assets/fluentui-system-icons/ic_fluent_arrow_repeat_all_24_filled.svg);
     -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/refs/heads/main/assets/fluentui-system-icons/ic_fluent_arrow_repeat_all_24_filled.svg);
     background-color: var(--spice-accent) !important;
@@ -802,7 +875,8 @@ button.Button-sc-1dqy6lx-0[aria-label*="Enable repeat one"] svg.Svg-sc-ytk21e-0.
     height: 22px !important;
 }
 
-button.Button-sc-1dqy6lx-0[aria-label*="Disable repeat"] svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
+button.Button-sc-1dqy6lx-0[aria-label*="Disable repeat"]
+    svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
     mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/refs/heads/main/assets/fluentui-system-icons/ic_fluent_arrow_repeat_all_once_24_filled.svg);
     -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/refs/heads/main/assets/fluentui-system-icons/ic_fluent_arrow_repeat_all_once_24_filled.svg);
     background-color: var(--spice-accent) !important;
@@ -828,7 +902,8 @@ button.Button-sc-1dqy6lx-0[aria-label*="Disable repeat"] svg.Svg-sc-ytk21e-0.Svg
     padding: 0 10px;
 }
 
-.fZjbVIqD8Xc3auRZOxu5:before, .vW9NFcNIj8useE43Vx9G:before {
+.fZjbVIqD8Xc3auRZOxu5:before,
+.vW9NFcNIj8useE43Vx9G:before {
     background-color: var(--spice-accent) !important;
 }
 
@@ -943,19 +1018,22 @@ button.main-topBar-button[aria-label*="playlist-stats"] svg {
     background: var(--spice-subtext);
 } */
 
-button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-condensed-useBrowserDefaultFocusStyle.main-globalNav-icon[aria-label*="Full App Display"] svg,
+button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-condensed-useBrowserDefaultFocusStyle.main-globalNav-icon[aria-label*="Full App Display"]
+    svg,
 button.main-topBar-button[aria-label*="Full App Display"] svg {
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/tv.svg) !important;
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/tv.svg) !important;
 }
 
-button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-condensed-useBrowserDefaultFocusStyle.main-globalNav-icon[aria-label*="Bookmark"] svg,
+button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-condensed-useBrowserDefaultFocusStyle.main-globalNav-icon[aria-label*="Bookmark"]
+    svg,
 button.main-topBar-button[aria-label*="Bookmark"] svg {
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/bookmark.svg) !important;
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/bookmark.svg) !important;
 }
 
-button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-condensed-useBrowserDefaultFocusStyle.main-globalNav-icon[aria-label*="Beautiful Fullscreen"] svg,
+button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-condensed-useBrowserDefaultFocusStyle.main-globalNav-icon[aria-label*="Beautiful Fullscreen"]
+    svg,
 button.main-topBar-button[aria-label*="Beautiful Fullscreen"] svg {
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/fullscreen.svg) !important;
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/fullscreen.svg) !important;
@@ -1000,7 +1078,8 @@ button[aria-label*="Get Random Saved Album"]:hover svg {
     transform: translateX(8px);
 }
 
-button.main-actionButtons-button.main-topBarStatusIndicator-hasTooltip.main-noConnection-isNotice.main-topBarStatusIndicator-tooltipEnter.main-topBarStatusIndicator-tooltipEnterActive svg {
+button.main-actionButtons-button.main-topBarStatusIndicator-hasTooltip.main-noConnection-isNotice.main-topBarStatusIndicator-tooltipEnter.main-topBarStatusIndicator-tooltipEnterActive
+    svg {
     fill: var(--spice-accent) !important;
 }
 
@@ -1019,7 +1098,8 @@ button.main-actionButtons-button.main-topBarStatusIndicator-hasTooltip.main-noCo
     right: -7px;
 }
 
-button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-condensed-disabled-isUsingKeyboard-useBrowserDefaultFocusStyle.main-globalNav-icon.play svg {
+button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-condensed-disabled-isUsingKeyboard-useBrowserDefaultFocusStyle.main-globalNav-icon.play
+    svg {
     height: 24px !important;
     width: 24px !important;
     background: var(--spice-subtext) !important;
@@ -1042,27 +1122,32 @@ button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-condense
     margin-left: 5px;
 }
 
-button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-condensed-disabled-isUsingKeyboard-useBrowserDefaultFocusStyle.main-globalNav-icon.play path {
+button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-condensed-disabled-isUsingKeyboard-useBrowserDefaultFocusStyle.main-globalNav-icon.play
+    path {
     opacity: 0 !important;
 }
 
 /* -------------------------------------- New Release Page ------------------------------------- */
 
-.view-homeShortcutsGrid-PlayButtonContainer .Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only {
+.view-homeShortcutsGrid-PlayButtonContainer
+    .Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only {
     background: transparent !important;
 }
 
-.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only .Svg-sc-ytk21e-0,
+.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only
+    .Svg-sc-ytk21e-0,
 .view-homeShortcutsGrid-PlayButtonContainer .Svg-sc-ytk21e-0 {
     width: 35px;
     height: 35px;
 }
 
-.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only .ButtonInner-small-iconOnly {
+.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only
+    .ButtonInner-small-iconOnly {
     background: transparent !important;
 }
 
-.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only .IconWrapper__Wrapper-sc-1hf1hjl-0 {
+.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only
+    .IconWrapper__Wrapper-sc-1hf1hjl-0 {
     top: 0 !important;
     left: 0 !important;
     margin: 0 !important;
@@ -1203,7 +1288,9 @@ p.popup-row {
     color: var(--text-subdued) !important;
 }
 
-.main-nowPlayingWidget-trackInfo.main-trackInfo-container .ellipsis-one-line.main-type-finale span {
+.main-nowPlayingWidget-trackInfo.main-trackInfo-container
+    .ellipsis-one-line.main-type-finale
+    span {
     color: var(--text-subdued) !important;
 }
 
@@ -1244,20 +1331,27 @@ p.popup-row {
 }
 
 .QSkuUiKpZ4MHrdOB83XV {
-    background: linear-gradient(0deg,
-            transparent 2.09%,
-            rgb(10 10 10 / 10%) 16.28%,
-            rgb(10 10 10 / 40%) 36.5%,
-            rgb(10 10 10 / 60%) 53.25%) !important;
+    background: linear-gradient(
+        0deg,
+        transparent 2.09%,
+        rgb(10 10 10 / 10%) 16.28%,
+        rgb(10 10 10 / 40%) 36.5%,
+        rgb(10 10 10 / 60%) 53.25%
+    ) !important;
 }
 
-.AqLt2Nk3rygv3mAt_6gi,
-.C2dCWzsDwu1iDX7ttMKA {
-    background: linear-gradient(180deg,
-            transparent 2.09%,
-            rgb(10 10 10 / 10%) 16.28%,
-            rgb(10 10 10 / 40%) 36.5%,
-            rgb(10 10 10 / 60%) 53.25%) !important;
+.pobLn0CELRvb4TjnNApn {
+    background: linear-gradient(
+        180deg,
+        transparent 2.09%,
+        rgb(10 10 10 / 10%) 16.28%,
+        rgb(10 10 10 / 40%) 36.5%,
+        rgb(10 10 10 / 60%) 53.25%
+    ) !important;
+}
+
+.MKCgGhu_c8l6hsVuee46 .main-shelf-shelfGrid {
+    --row-count: 3 !important;
 }
 
 .OGu88AVNWY3IM3QlZjG0 {
@@ -1275,7 +1369,6 @@ p.popup-row {
 
 /* ------------------------------------------------------------- Home Card Shell Bug Updates -------------------------------------------------------------------------- */
 
-
 .qI009QzTkvisAXqhbw74 {
     gap: 12px !important;
 }
@@ -1285,7 +1378,9 @@ p.popup-row {
     min-width: 217px !important;
 } */
 
-section.xOmT3apmEbwVlFt4HkBe.C3jVNGQUUZcUp5kTEOC0.Sm3POgzbjs7wFj7tyYNh[aria-label*="WRAPPED has arrived"] .qI009QzTkvisAXqhbw74 .Box__BoxComponent-sc-y4nds-0.BoxComponent-group-card-naked-isInteractive-draggable.Box-sc-1njtxi4-0.Box-group-naked-card-md-isInteractive-draggable.main-card-cardContainer.Card {
+section.xOmT3apmEbwVlFt4HkBe.C3jVNGQUUZcUp5kTEOC0.Sm3POgzbjs7wFj7tyYNh[aria-label*="WRAPPED has arrived"]
+    .qI009QzTkvisAXqhbw74
+    .Box__BoxComponent-sc-y4nds-0.BoxComponent-group-card-naked-isInteractive-draggable.Box-sc-1njtxi4-0.Box-group-naked-card-md-isInteractive-draggable.main-card-cardContainer.Card {
     min-width: calc(190px * 2 + 12px) !important;
     flex-direction: row;
     max-height: 100px !important;
@@ -1293,12 +1388,23 @@ section.xOmT3apmEbwVlFt4HkBe.C3jVNGQUUZcUp5kTEOC0.Sm3POgzbjs7wFj7tyYNh[aria-labe
     gap: 24px;
 }
 
-section.xOmT3apmEbwVlFt4HkBe.C3jVNGQUUZcUp5kTEOC0.Sm3POgzbjs7wFj7tyYNh[aria-label*="WRAPPED has arrived"] .qI009QzTkvisAXqhbw74 .Box__BoxComponent-sc-y4nds-0.BoxComponent-group-card-naked-isInteractive-draggable.Box-sc-1njtxi4-0.Box-group-naked-card-md-isInteractive-draggable.main-card-cardContainer.Card .main-card-imageContainer, section.xOmT3apmEbwVlFt4HkBe.C3jVNGQUUZcUp5kTEOC0.Sm3POgzbjs7wFj7tyYNh[aria-label*="WRAPPED has arrived"] .qI009QzTkvisAXqhbw74 .Box__BoxComponent-sc-y4nds-0.BoxComponent-group-card-naked-isInteractive-draggable.Box-sc-1njtxi4-0.Box-group-naked-card-md-isInteractive-draggable.main-card-cardContainer.Card .main-card-imageContainer .GOcsybnoHYyJGQGDRuwj {
+section.xOmT3apmEbwVlFt4HkBe.C3jVNGQUUZcUp5kTEOC0.Sm3POgzbjs7wFj7tyYNh[aria-label*="WRAPPED has arrived"]
+    .qI009QzTkvisAXqhbw74
+    .Box__BoxComponent-sc-y4nds-0.BoxComponent-group-card-naked-isInteractive-draggable.Box-sc-1njtxi4-0.Box-group-naked-card-md-isInteractive-draggable.main-card-cardContainer.Card
+    .main-card-imageContainer,
+section.xOmT3apmEbwVlFt4HkBe.C3jVNGQUUZcUp5kTEOC0.Sm3POgzbjs7wFj7tyYNh[aria-label*="WRAPPED has arrived"]
+    .qI009QzTkvisAXqhbw74
+    .Box__BoxComponent-sc-y4nds-0.BoxComponent-group-card-naked-isInteractive-draggable.Box-sc-1njtxi4-0.Box-group-naked-card-md-isInteractive-draggable.main-card-cardContainer.Card
+    .main-card-imageContainer
+    .GOcsybnoHYyJGQGDRuwj {
     width: 68px !important;
     height: 68px !important;
 }
 
-section.xOmT3apmEbwVlFt4HkBe.C3jVNGQUUZcUp5kTEOC0.Sm3POgzbjs7wFj7tyYNh[aria-label*="WRAPPED has arrived"] .qI009QzTkvisAXqhbw74 .Box__BoxComponent-sc-y4nds-0.BoxComponent-group-card-naked-isInteractive-draggable.Box-sc-1njtxi4-0.Box-group-naked-card-md-isInteractive-draggable.main-card-cardContainer.Card .MainArea {
+section.xOmT3apmEbwVlFt4HkBe.C3jVNGQUUZcUp5kTEOC0.Sm3POgzbjs7wFj7tyYNh[aria-label*="WRAPPED has arrived"]
+    .qI009QzTkvisAXqhbw74
+    .Box__BoxComponent-sc-y4nds-0.BoxComponent-group-card-naked-isInteractive-draggable.Box-sc-1njtxi4-0.Box-group-naked-card-md-isInteractive-draggable.main-card-cardContainer.Card
+    .MainArea {
     width: -webkit-fill-available !important;
 }
 
@@ -1311,7 +1417,8 @@ section.xOmT3apmEbwVlFt4HkBe.C3jVNGQUUZcUp5kTEOC0.Sm3POgzbjs7wFj7tyYNh[aria-labe
     color: var(--spice-alt-text) !important;
 }
 
-button.main-genericButton-button.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-iconOnly-isUsingKeyboard-useBrowserDefaultFocusStyle svg.Svg-sc-ytk21e-0.Svg-img-icon-small.Svg-img-icon.Svg-img-16.Svg-img-16-icon.uPxdw {
+button.main-genericButton-button.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-iconOnly-isUsingKeyboard-useBrowserDefaultFocusStyle
+    svg.Svg-sc-ytk21e-0.Svg-img-icon-small.Svg-img-icon.Svg-img-16.Svg-img-16-icon.uPxdw {
     background: var(--spice-subtext);
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/icons-i-nedd-in-my-project-personal/refs/heads/main/ic_fluent_weather_moon_23_filled.svg);
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/icons-i-nedd-in-my-project-personal/refs/heads/main/ic_fluent_weather_moon_24_filled.svg);
@@ -1372,7 +1479,9 @@ button.btn.btn-increment.btn-outline-secondary.btn-plus strong {
     left: 6px;
 }
 
-#sleep-timer-menu .input-group > .form-control, #sleep-timer-menu .input-group > .form-select, #sleep-timer-menu .input-group > .form-floating {
+#sleep-timer-menu .input-group > .form-control,
+#sleep-timer-menu .input-group > .form-select,
+#sleep-timer-menu .input-group > .form-floating {
     border: transparent !important;
     background: transparent !important;
     color: var(--spice-text) !important;
@@ -1401,11 +1510,14 @@ span.timer-icons-label.icons-label-minutes {
     right: 55px !important;
 }
 
-button.main-genericButton-button.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-iconOnly-isUsingKeyboard-useBrowserDefaultFocusStyle:hover svg.Svg-sc-ytk21e-0.Svg-img-icon-small.Svg-img-icon.Svg-img-16.Svg-img-16-icon.uPxdw {
+button.main-genericButton-button.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-iconOnly-isUsingKeyboard-useBrowserDefaultFocusStyle:hover
+    svg.Svg-sc-ytk21e-0.Svg-img-icon-small.Svg-img-icon.Svg-img-16.Svg-img-16-icon.uPxdw {
     background: var(--spice-text) !important;
 }
 
-button.main-genericButton-button.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-iconOnly-isUsingKeyboard-useBrowserDefaultFocusStyle svg.Svg-sc-ytk21e-0.Svg-img-icon-small.Svg-img-icon.Svg-img-16.Svg-img-16-icon.uPxdw path {
+button.main-genericButton-button.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-iconOnly-isUsingKeyboard-useBrowserDefaultFocusStyle
+    svg.Svg-sc-ytk21e-0.Svg-img-icon-small.Svg-img-icon.Svg-img-16.Svg-img-16-icon.uPxdw
+    path {
     display: none;
 }
 
@@ -1433,9 +1545,11 @@ button.main-genericButton-button.Button-sc-1dqy6lx-0.Button-buttonTertiary-small
 }
 
 button#sleep-timer-start.btn-success,
-#sleep-timer-menu .btn-success, #sleep-timer-menu .btn-primary:hover,
+#sleep-timer-menu .btn-success,
+#sleep-timer-menu .btn-primary:hover,
 button#sleep-timer-start.btn-primary,
-#sleep-timer-menu .btn-primary, #sleep-timer-menu .btn-primary:hover {
+#sleep-timer-menu .btn-primary,
+#sleep-timer-menu .btn-primary:hover {
     background: var(--spice-text) !important;
     border: 0 !important;
     width: fit-content !important;
@@ -1449,7 +1563,7 @@ button#sleep-timer-start.btn-primary,
 }
 
 button#sleep-timer-start.btn-success::before {
-    content: '';
+    content: "";
     width: 24px;
     height: 24px;
     background: var(--spice-alt-text);
@@ -1459,7 +1573,7 @@ button#sleep-timer-start.btn-success::before {
 }
 
 button#sleep-timer-start.btn-primary::before {
-    content: '';
+    content: "";
     width: 24px;
     height: 24px;
     background: var(--spice-alt-text);
@@ -1491,28 +1605,34 @@ button#sleep-timer-start.btn-primary::before {
 
 /* -------------------------------------- Spicetify Better Local Fils by Pithaya ------------------------------------- */
 
-.contentSpacing.main-entityHeader-container.main-entityHeader-nonWrapped.main-entityHeader-newEntityHeaders .app-module__center-container___LG8O4_betterDlocalDfiles {
+.contentSpacing.main-entityHeader-container.main-entityHeader-nonWrapped.main-entityHeader-newEntityHeaders
+    .app-module__center-container___LG8O4_betterDlocalDfiles {
     border-radius: var(--border-radius-1) !important;
     box-shadow: 0 4px 60px rgb(33 33 33 / 50%) !important;
-    background-image: linear-gradient(to right top,
-            #007cbc,
-            #00a1d3,
-            #00c2bc,
-            #00dc7c,
-            #a8eb12) !important;
+    background-image: linear-gradient(
+        to right top,
+        #007cbc,
+        #00a1d3,
+        #00c2bc,
+        #00dc7c,
+        #a8eb12
+    ) !important;
 }
 
-.app-module__stretch-container___SIzsh_betterDlocalDfiles.undefined .main-trackList-trackListRow {
+.app-module__stretch-container___SIzsh_betterDlocalDfiles.undefined
+    .main-trackList-trackListRow {
     width: calc(100% - 20px) !important;
     margin-left: 10px !important;
     margin-top: 0px !important;
 }
 
-.app-module__stretch-container___SIzsh_betterDlocalDfiles.undefined .main-trackList-trackListHeaderRow {
+.app-module__stretch-container___SIzsh_betterDlocalDfiles.undefined
+    .main-trackList-trackListHeaderRow {
     margin-bottom: 25px;
 }
 
-.app-module__stretch-container___SIzsh_betterDlocalDfiles.undefined .main-entityHeader-backgroundColor {
+.app-module__stretch-container___SIzsh_betterDlocalDfiles.undefined
+    .main-entityHeader-backgroundColor {
     background-color: #00a1d3;
 }
 
@@ -1521,16 +1641,19 @@ span.Type__TypeElement-sc-goli3j-0.TypeElement-type-mesto-textSubdued.main-track
     color: var(--spice-subtext) !important;
 }
 
-.app-module__full-size-container___XoGtP_betterDlocalDfiles .contentSpacing:not(.artist-artistDiscography-topBar,
-    .search-searchCategory-container,
-    .hV9v6y_uYwdAsoiOHpzk,
-    .main-entityHeader-container,
-    .main-actionBar-ActionBar) {
+.app-module__full-size-container___XoGtP_betterDlocalDfiles
+    .contentSpacing:not(
+        .artist-artistDiscography-topBar,
+        .search-searchCategory-container,
+        .hV9v6y_uYwdAsoiOHpzk,
+        .main-entityHeader-container,
+        .main-actionBar-ActionBar
+    ) {
     padding-top: 8px;
     padding-bottom: 110px;
 }
 
-.main-playButton-PlayButton>button {
+.main-playButton-PlayButton > button {
     width: 50px !important;
     height: 50px !important;
     margin: 3px;
@@ -1557,7 +1680,9 @@ svg.made-for-you-icon.home-icon {
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/crown-simple.svg);
 }
 
-li.main-yourLibraryX-navItem a[aria-label*="Made for you"]:hover svg.made-for-you-icon.home-icon {
+li.main-yourLibraryX-navItem
+    a[aria-label*="Made for you"]:hover
+    svg.made-for-you-icon.home-icon {
     background: var(--spice-text);
 }
 
@@ -1585,11 +1710,11 @@ li.main-yourLibraryX-navItem a[aria-label*="Made for you"]:hover svg.made-for-yo
     background-color: var(--spice-accent) !important;
 }
 
-.main-yourLibraryX-navLink[href="/library"]:hover>svg {
+.main-yourLibraryX-navLink[href="/library"]:hover > svg {
     background-color: var(--spice-text) !important;
 }
 
-.main-yourLibraryX-navLink[href="/library"].active:hover>svg {
+.main-yourLibraryX-navLink[href="/library"].active:hover > svg {
     background-color: var(--spice-accent) !important;
 }
 
@@ -1820,13 +1945,15 @@ button.main-repeatButton-button.main-repeatButton-active svg {
     background: none !important;
 }
 
-a.muHL0_3HjlqTZDoapgc9[href*="https://en.wikipedia.org/"] svg {
+a.muHL0_3HjlqTZDoapgc9[href*="https://en.wikipedia.org/"] svg
+{
     background: var(--background-elevated-highlight) !important;
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/wikipedia-w-brands-solid.svg) !important;
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/wikipedia-w-brands-solid.svg) !important;
 }
 
-a.muHL0_3HjlqTZDoapgc9[href*="https://en.wikipedia.org/"] svg path {
+a.muHL0_3HjlqTZDoapgc9[href*="https://en.wikipedia.org/"] svg path
+{
     opacity: 0 !important;
 }
 
@@ -1852,7 +1979,10 @@ a.muHL0_3HjlqTZDoapgc9[href*="https://en.wikipedia.org/"] svg path {
     transform: translateY(-24px);
 }
 
-[data-context-menu-open=true]>a:only-child, a:not([data-encore-id]):focus, a:not([data-encore-id]):hover, a:not([data-encore-id])[data-context-menu-open=true] {
+[data-context-menu-open="true"] > a:only-child,
+a:not([data-encore-id]):focus,
+a:not([data-encore-id]):hover,
+a:not([data-encore-id])[data-context-menu-open="true"] {
     text-decoration: none !important;
 }
 
@@ -2004,7 +2134,8 @@ button.main-globalNav-link-icon[aria-label*="Home"] svg {
     background-color: var(--spice-subtext) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="Home"].main-globalNav-navLinkActive svg {
+button.main-globalNav-link-icon[aria-label*="Home"].main-globalNav-navLinkActive
+    svg {
     mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_home_24_filled.svg");
     -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_home_24_filled.svg");
     background-color: var(--spice-accent) !important;
@@ -2016,7 +2147,8 @@ button.main-globalNav-link-icon[aria-label*="search"] svg {
     background-color: var(--spice-subtext) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="search"].main-globalNav-navLinkActive svg {
+button.main-globalNav-link-icon[aria-label*="search"].main-globalNav-navLinkActive
+    svg {
     mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_search_24_filled.svg");
     -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_search_24_filled.svg");
     background-color: var(--spice-accent) !important;
@@ -2028,7 +2160,8 @@ button.main-globalNav-link-icon[aria-label*="lyrics-plus"] svg {
     background-color: var(--spice-subtext) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="lyrics-plus"].main-globalNav-navLinkActive svg {
+button.main-globalNav-link-icon[aria-label*="lyrics-plus"].main-globalNav-navLinkActive
+    svg {
     mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_slide_text_24_filled.svg");
     -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_slide_text_24_filled.svg");
     background-color: var(--spice-accent) !important;
@@ -2040,7 +2173,8 @@ button.main-globalNav-link-icon[aria-label*="Marketplace"] svg {
     background-color: var(--spice-subtext) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="Marketplace"].main-globalNav-navLinkActive svg {
+button.main-globalNav-link-icon[aria-label*="Marketplace"].main-globalNav-navLinkActive
+    svg {
     mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_app_store_24_filled.svg");
     -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_app_store_24_filled.svg");
     background-color: var(--spice-accent) !important;
@@ -2052,7 +2186,8 @@ button.main-globalNav-link-icon[aria-label*="eternal-jukebox"] svg {
     background-color: var(--spice-subtext) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="eternal-jukebox"].main-globalNav-navLinkActive svg {
+button.main-globalNav-link-icon[aria-label*="eternal-jukebox"].main-globalNav-navLinkActive
+    svg {
     mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/phosphor-icons/infinity-bold.svg");
     -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/phosphor-icons/infinity-bold.svg");
     background-color: var(--spice-accent) !important;
@@ -2064,7 +2199,8 @@ button.main-globalNav-link-icon[aria-label*="new-releases"] svg {
     background-color: var(--spice-subtext) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="new-releases"].main-globalNav-navLinkActive svg {
+button.main-globalNav-link-icon[aria-label*="new-releases"].main-globalNav-navLinkActive
+    svg {
     mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_alert_24_filled.svg");
     -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_alert_24_filled.svg");
     background-color: var(--spice-accent) !important;
@@ -2076,7 +2212,8 @@ button.main-globalNav-link-icon[aria-label*="Statistics"] svg {
     background-color: var(--spice-subtext) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="Statistics"].main-globalNav-navLinkActive svg {
+button.main-globalNav-link-icon[aria-label*="Statistics"].main-globalNav-navLinkActive
+    svg {
     mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_chart_multiple_24_filled.svg");
     -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_chart_multiple_24_filled.svg");
     background-color: var(--spice-accent) !important;
@@ -2088,7 +2225,8 @@ button.main-globalNav-link-icon[aria-label*="name-that-tune"] svg {
     background-color: var(--spice-subtext) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="name-that-tune"].main-globalNav-navLinkActive svg {
+button.main-globalNav-link-icon[aria-label*="name-that-tune"].main-globalNav-navLinkActive
+    svg {
     mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_music_note_2_24_filled.svg");
     -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_music_note_2_24_filled.svg");
     background-color: var(--spice-accent) !important;
@@ -2100,7 +2238,8 @@ button.main-globalNav-link-icon[aria-label*="Your Library"] svg {
     background-color: var(--spice-subtext) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="Your Library"].main-globalNav-navLinkActive svg {
+button.main-globalNav-link-icon[aria-label*="Your Library"].main-globalNav-navLinkActive
+    svg {
     mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_library_24_filled.svg");
     -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_library_24_filled.svg");
     background-color: var(--spice-accent) !important;
@@ -2112,7 +2251,8 @@ button.main-globalNav-link-icon[aria-label*="better-local-files"] svg {
     background-color: var(--spice-subtext) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="better-local-files"].main-globalNav-navLinkActive svg {
+button.main-globalNav-link-icon[aria-label*="better-local-files"].main-globalNav-navLinkActive
+    svg {
     mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_folder_24_filled.svg");
     -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_folder_24_filled.svg");
     background-color: var(--spice-accent) !important;
@@ -2124,7 +2264,8 @@ button.main-globalNav-link-icon[aria-label*="Tags"] svg {
     background-color: var(--spice-subtext) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="Tags"].main-globalNav-navLinkActive svg {
+button.main-globalNav-link-icon[aria-label*="Tags"].main-globalNav-navLinkActive
+    svg {
     mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_tag_24_filled.svg");
     -webkit-mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_tag_24_filled.svg");
     background-color: var(--spice-accent) !important;
@@ -2188,11 +2329,7 @@ button.main-globalNav-link-icon[aria-label*="Statistics"] svg {
     border-bottom: 2px solid var(--spice-accent) !important;
 }
 
-
-
 /* ------------------------------------------------- Full Screen Default ------------------------------------------------- */
-
-
 
 .ylcmjHXKpwmez5_bBVgt {
     opacity: 1 !important;
@@ -2207,15 +2344,23 @@ button.main-globalNav-link-icon[aria-label*="Statistics"] svg {
     background: var(--spice-contour) !important;
 }
 
-
-
-/* ----------------------------------------------------------------- New NPV Page ------------------------------------------------------------------------- */ 
-
-
+/* ----------------------------------------------------------------- New NPV Page ------------------------------------------------------------------------- */
 
 .XWJtATtk3_2VpHc4YOaI {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(var(--spice-rgb-main), .6))), var(--cinema-mode-bg-image) !important;
-    background-image: linear-gradient(180deg, transparent 0, rgba(var(--spice-rgb-main), .6) 100%), var(--cinema-mode-bg-image) !important;
+    background-image: -webkit-gradient(
+            linear,
+            left top,
+            left bottom,
+            from(transparent),
+            to(rgba(var(--spice-rgb-main), 0.6))
+        ),
+        var(--cinema-mode-bg-image) !important;
+    background-image: linear-gradient(
+            180deg,
+            transparent 0,
+            rgba(var(--spice-rgb-main), 0.6) 100%
+        ),
+        var(--cinema-mode-bg-image) !important;
     /* height: calc(100% - 65px) !important; */
 }
 
@@ -2229,23 +2374,21 @@ button.main-globalNav-link-icon[aria-label*="Statistics"] svg {
 }
 
 .I6NEvCpflvkfINWthnVk::before {
-    content: '';
+    content: "";
     background: var(--spice-sidebar) !important;
     width: 8px;
     height: 100%;
     position: absolute;
     z-index: 9;
     left: -8px;
-    transition: all .5s cubic-bezier(.47,0,.23,1.38);
+    transition: all 0.5s cubic-bezier(0.47, 0, 0.23, 1.38);
 }
 
 .k128gbGG35HRlqRLl19c.KL8t9WB65UfUEPuTFAhO {
     height: 100% !important;
 }
 
-
 /* ncs custom app */
-
 
 .Root__main-view:has(.visualizer-container) {
     transition: background-image 1s ease-in-out;
@@ -2263,7 +2406,7 @@ button.main-globalNav-link-icon[aria-label*="Statistics"] svg {
     margin-top: -90px !important;
 }
 
-.visualizer-container>* {
+.visualizer-container > * {
     height: calc(100% - 180px) !important;
 }
 
