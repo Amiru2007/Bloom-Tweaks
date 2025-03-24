@@ -831,13 +831,13 @@ button.Button-sc-1dqy6lx-0[aria-label*="Enable repeat one"] {
     padding: 0 25px !important;
 }
 
-button.Button-sc-1dqy6lx-0[aria-label*="Enable shuffle"] path,
+/* button.Button-sc-1dqy6lx-0[aria-label*="Enable shuffle"] path,
 button.Button-sc-1dqy6lx-0[aria-label*="Disable shuffle"] path,
 button.Button-sc-1dqy6lx-0[aria-label*="Enable repeat"] path,
 button.Button-sc-1dqy6lx-0[aria-label*="Disable repeat"] path,
 button.Button-sc-1dqy6lx-0[aria-label*="Enable repeat one"] path {
     opacity: 0 !important;
-}
+} */
 
 button.Button-sc-1dqy6lx-0[aria-label*="Enable shuffle"]
     svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
@@ -2046,11 +2046,6 @@ span.encore-text.encore-text-body-small.ArQQy9kpoXLmafHpoi6u.FGrkEs4xa3OtWqaSmtv
     color: var(--spice-subtext) !important;
 }
 
-.main-trackList-trackListHeaderStuck.main-trackList-trackListHeader {
-    /* top: 40px !important; */
-    transform: translateY(-24px);
-}
-
 .main-embedWidgetGenerator-contentCode {
     background-color: transparent !important;
     margin-top: -30px !important;
@@ -2412,4 +2407,45 @@ button.main-globalNav-link-icon[aria-label*="Statistics"] svg {
 
 .Root__main-view:not(.Root__main-view:has(.visualizer-container)) {
     background: var(--spice-main) !important;
+}
+
+.e-9640-button-primary__inner {
+    background: transparent !important;
+}
+
+span.e-9640-baseline.e-9640-overflow-wrap-anywhere.e-9640-button-primary__inner.encore-bright-accent-set.e-9640-button-icon-only--large svg {
+    height: 60px !important;
+    width: 60px !important;
+}
+
+button[aria-label*="Play"] .e-9640-button-icon-only--large .e-9640-button__icon-wrapper svg, .e-9640-button-icon-only--medium .e-9640-button__icon-wrapper svg, .e-9640-button-icon-only--small .e-9640-button__icon-wrapper svg {
+    background: var(--spice-text) !important;
+    mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg");
+    -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg");
+}
+
+button[aria-label*="Pause"] .e-9640-button-icon-only--large .e-9640-button__icon-wrapper svg, .e-9640-button-icon-only--medium .e-9640-button__icon-wrapper svg, .e-9640-button-icon-only--small .e-9640-button__icon-wrapper svg {
+    background: var(--spice-text) !important;
+    mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_pause_16_filled.svg");
+    -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_pause_16_filled.svg");
+}
+
+.e-9640-button-icon-only--large .e-9640-button__icon-wrapper svg path, .e-9640-button-icon-only--medium .e-9640-button__icon-wrapper svg path, .e-9640-button-icon-only--small .e-9640-button__icon-wrapper svg path {
+    display: none;
+}
+
+.main-topBar-topbarContent button.e-9640-button-primary.e-9640-button {
+    width: 30px !important;
+    transform: scale(0.8) !important;
+}
+
+.main-trackList-trackListHeader {
+    padding: 0 !important;
+    margin-top: 4px !important;
+    margin-bottom: 0 !important;
+}
+
+.main-trackList-trackListHeader.main-trackList-trackListHeaderStuck {
+    margin-top: 4px !important;
+    margin-bottom: 0 !important;
 }
