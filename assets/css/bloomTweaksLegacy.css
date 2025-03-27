@@ -2,7 +2,7 @@ button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBro
     svg,
 button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBrowserDefaultFocusStyle-condensedAll
     svg
-    svg {
+        svg {
     background: var(--spice-text) !important;
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/settings.svg) !important;
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/settings.svg) !important;
@@ -57,7 +57,9 @@ button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBro
 
 /* ----------------------------------------------------------------------------- Snippets ------------------------------------------------------------------------------------ */
 
-.BeautifulLyricsPage.Fullscreen .Content .PlayPanel {
+.BeautifulLyricsPage.Fullscreen 
+    .Content 
+        .PlayPanel {
     padding-top: 0 !important;
     margin-top: calc(50cqh - var(--PlayPanelWidth) * 0.6) !important;
 }
@@ -128,8 +130,10 @@ span.encore-text.encore-text-body-medium.encore-internal-color-text-subdued.main
     opacity: 0;
 }
 
-.LayoutResizer__resize-bar:hover .LayoutResizer__inline-end:after,
-.LayoutResizer__resize-bar:hover .LayoutResizer__inline-start:after {
+.LayoutResizer__resize-bar:hover 
+    .LayoutResizer__inline-end:after,
+.LayoutResizer__resize-bar:hover 
+    .LayoutResizer__inline-start:after {
     opacity: 1;
 }
 
@@ -185,7 +189,8 @@ button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-useBrows
     background-color: var(--spice-text) !important;
 } */
 
-.IconWrapper__Wrapper-sc-1hf1hjl-0 .Svg-sc-ytk21e-0 path {
+.IconWrapper__Wrapper-sc-1hf1hjl-0 .Svg-sc-ytk21e-0 
+    path {
     fill: transparent;
 }
 
@@ -237,15 +242,18 @@ button.main-actionButtons-button.main-topBarStatusIndicator-hasTooltip.main-noCo
     fill: var(--spice-alt-text) !important;
 }
 
-aside[aria-label="Friend Activity"] .sGj6VHKqd2s4IorAqiYI {
+aside[aria-label="Friend Activity"] 
+    .sGj6VHKqd2s4IorAqiYI {
     background-color: var(--background-press) !important;
 }
 
-aside[aria-label="Friend Activity"] .sGj6VHKqd2s4IorAqiYI p {
+aside[aria-label="Friend Activity"] 
+    .sGj6VHKqd2s4IorAqiYI p {
     color: var(--spice-subtext) !important;
 }
 
-.dAPXjNmPLJI6x_sXJwAp .cRB7yMdTUrWxDud8Uqvi {
+.dAPXjNmPLJI6x_sXJwAp 
+    .cRB7yMdTUrWxDud8Uqvi {
     background-color: rgba(var(--spice-rgb-card), 0.7) !important;
 }
 
@@ -275,7 +283,8 @@ aside[aria-label="Friend Activity"] .sGj6VHKqd2s4IorAqiYI p {
     color: var(--spice-alt-text) !important;
 }
 
-.RTHphmJ9fFJyJWFe9Kwt path {
+.RTHphmJ9fFJyJWFe9Kwt 
+    path {
     opacity: 0;
 }
 
@@ -287,11 +296,13 @@ aside[aria-label="Friend Activity"] .sGj6VHKqd2s4IorAqiYI p {
     color: #d9d9d9 !important;
 } */
 
-.play-icon path {
+.play-icon 
+    path {
     visibility: hidden;
 }
 
-aside[aria-label="Queue"] .Button-sc-1dqy6lx-0 svg {
+aside[aria-label="Queue"] 
+    .Button-sc-1dqy6lx-0 svg {
     width: 20px;
     height: 20px;
 }
@@ -307,25 +318,25 @@ aside[aria-label="Queue"] .Button-sc-1dqy6lx-0 svg {
 
 #spicetify-playlist-list
     li
-    button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle[aria-label*="Play"]
-    svg.Svg-sc-ytk21e-0.Svg-img-icon-medium,
+        button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle[aria-label*="Play"]
+            svg.Svg-sc-ytk21e-0.Svg-img-icon-medium,
 .main-playButton-PlayButton.main-playButton-primary svg,
 aside[aria-label="Queue"] .Button-sc-1dqy6lx-0[aria-label*="Play"] svg,
 .cRB7yMdTUrWxDud8Uqvi[aria-label*="Play"] .RTHphmJ9fFJyJWFe9Kwt,
 .xU4sacBisQneHoQeHMP5
     .srjSlmxMGzXnJBc32BJa[aria-label*="Play"]
-    .lju7xv10a5Y5Z8h8CcKJ,
+        .lju7xv10a5Y5Z8h8CcKJ,
 .play-button svg,
 .Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only[aria-label*="Play"]
     .IconWrapper__Wrapper-sc-1hf1hjl-0
-    .Svg-sc-ytk21e-0,
+        .Svg-sc-ytk21e-0,
 button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle.play
     svg,
 button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle[aria-label*="Play"]
     svg,
 .main-yourLibraryX-listItem
     button.Button-sc-1dqy6lx-0.Button-buttonTertiary-textBase-medium-medium-iconOnly-useBrowserDefaultFocusStyle[aria-label*="Play"]
-    svg {
+        svg {
     mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg) !important;
     -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg) !important;
     transition: transform 0.3s ease;
@@ -334,16 +345,16 @@ button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly
 
 #spicetify-playlist-list
     li
-    button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle[aria-label*="Pause"]
-    svg.Svg-sc-ytk21e-0.Svg-img-icon-medium,
+        button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle[aria-label*="Pause"]
+            svg.Svg-sc-ytk21e-0.Svg-img-icon-medium,
 aside[aria-label="Queue"] .Button-sc-1dqy6lx-0[aria-label*="Pause"] svg,
 .cRB7yMdTUrWxDud8Uqvi[aria-label*="Pause"] .RTHphmJ9fFJyJWFe9Kwt,
 .xU4sacBisQneHoQeHMP5
     .srjSlmxMGzXnJBc32BJa[aria-label*="Pause"]
-    .lju7xv10a5Y5Z8h8CcKJ,
+        .lju7xv10a5Y5Z8h8CcKJ,
 .Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only[aria-label*="Pause"]
     .IconWrapper__Wrapper-sc-1hf1hjl-0
-    .Svg-sc-ytk21e-,
+        .Svg-sc-ytk21e-,
 button.Button-sc-qlcn5g-0.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only.pause
     svg,
 button.Button-sc-qlcn5g-0.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only[aria-label*="Pause"]
@@ -352,7 +363,7 @@ button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly
     svg,
 .main-yourLibraryX-listItem
     button.Button-sc-1dqy6lx-0.Button-buttonTertiary-textBase-medium-medium-iconOnly-useBrowserDefaultFocusStyle[aria-label*="Pause"]
-    svg {
+        svg {
     mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_pause_16_filled.svg) !important;
     -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_pause_16_filled.svg) !important;
     transition: transform 0.3s ease;
@@ -368,11 +379,13 @@ button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly
     padding: 2px 1px 2px 5px;
 }
 
-.explicit-text span.title {
+.explicit-text 
+    span.title {
     margin-right: 12px;
 }
 
-.explicit-text span.percentage-value {
+.explicit-text 
+    span.percentage-value {
     background-color: var(--spice-main);
     border-radius: 4px;
     color: var(--spice-text);
@@ -389,9 +402,9 @@ button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly
 
 .main-yourLibraryX-libraryItemContainer
     li.main-useDropTarget-base.main-useDropTarget-track.main-useDropTarget-local.main-useDropTarget-album.main-useDropTarget-episode.main-yourLibraryX-listItem
-    button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle
-    svg.Svg-sc-ytk21e-0.Svg-img-icon-medium
-    path {
+        button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle
+            svg.Svg-sc-ytk21e-0.Svg-img-icon-medium
+                path {
     background: transparent;
 }
 
@@ -442,11 +455,13 @@ button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-
     border-radius: 50% !important;
 }
 
-.view-homeShortcutsGrid-PlayButtonContainer .Svg-sc-ytk21e-0 {
+.view-homeShortcutsGrid-PlayButtonContainer 
+    .Svg-sc-ytk21e-0 {
     margin-right: 10px;
 }
 
-.ZSXjRBoTtuX5kmFeZHQu svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
+.ZSXjRBoTtuX5kmFeZHQu 
+    svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/ic_fluent_share_24_filled.svg) !important;
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/ic_fluent_share_24_filled.svg) !important;
     background: var(--spice-alt-text) !important;
@@ -464,7 +479,8 @@ button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-
         hue-rotate(87deg) brightness(87%) contrast(81%) !important;
 }
 
-.Wrapper-large-only-medium .Svg-sc-ytk21e-0 {
+.Wrapper-large-only-medium 
+    .Svg-sc-ytk21e-0 {
     width: 50px !important;
     height: 50px !important;
 }
@@ -505,7 +521,8 @@ button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-
     display: none;
 }
 
-.lPDqjZWZMsdD4yc00T2X .main-trackList-rowPlayPauseIcon {
+.lPDqjZWZMsdD4yc00T2X 
+    .main-trackList-rowPlayPauseIcon {
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/icons-i-nedd-in-my-project-personal/main/facebook-f-brands-solid.svg);
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/icons-i-nedd-in-my-project-personal/main/facebook-f-brands-solid.svg);
     background-color: var(--spice-text) !important;
@@ -514,22 +531,28 @@ button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-
     transition: transform 0.3s ease;
 }
 
-.playlist-playlist-playlist .main-editImageButton-image:focus,
-.playlist-playlist-playlist .main-editImageButton-image:hover {
+.playlist-playlist-playlist 
+    .main-editImageButton-image:focus,
+.playlist-playlist-playlist 
+    .main-editImageButton-image:hover {
     opacity: 1;
     border-radius: var(--border-radius-1) !important;
 }
 
-.main-trackList-rowImageWithPlay .main-trackList-rowImagePlayPauseButton {
+.main-trackList-rowImageWithPlay 
+    .main-trackList-rowImagePlayPauseButton {
     border-radius: 4px !important;
 }
 
-.view-homeShortcutsGrid-shortcut:hover .view-homeShortcutsGrid-equaliser {
+.view-homeShortcutsGrid-shortcut:hover 
+    .view-homeShortcutsGrid-equaliser {
     opacity: 0;
 }
 
-.mjZrvVI3CxfHJXu7y0Lg .main-trackList-rowImageButton:focus,
-.mjZrvVI3CxfHJXu7y0Lg .main-trackList-rowImageButton:hover {
+.mjZrvVI3CxfHJXu7y0Lg 
+    .main-trackList-rowImageButton:focus,
+.mjZrvVI3CxfHJXu7y0Lg 
+    .main-trackList-rowImageButton:hover {
     opacity: 1;
 }
 
@@ -539,7 +562,7 @@ button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-
 
 .desktop-grid-wrapper
     .main-trackList-rowImageWithPlay:hover
-    .main-trackList-rowPlayPauseWrapper {
+        .main-trackList-rowPlayPauseWrapper {
     opacity: 1 !important;
 }
 
@@ -547,7 +570,8 @@ button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-
     opacity: 0.9;
 }
 
-.KYkSwfV1FCtD15TMChbH img {
+.KYkSwfV1FCtD15TMChbH 
+    img {
     filter: hue-rotate(55deg) brightness(1.2) saturate(1.1) !important;
 }
 
@@ -621,12 +645,14 @@ button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-
     background-color: var(--spice-sidebar-highlight) !important;
 }
 
-.main-rootlist-rootlistItemLink .main-rootlist-itemLinkText {
+.main-rootlist-rootlistItemLink 
+    .main-rootlist-itemLinkText {
     border-radius: 4px !important;
     font-weight: 400 !important;
 }
 
-.main-trackList-rowImageWithPlay:hover .main-trackList-rowPlayPauseWrapper {
+.main-trackList-rowImageWithPlay:hover 
+    .main-trackList-rowPlayPauseWrapper {
     opacity: 1 !important;
 }
 
@@ -650,7 +676,8 @@ button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-
 
 /* ------------------------------------ Profile Page ----------------------------------- */
 
-.spotify__container--is-desktop:not(.fullscreen) .zogFp9G1AEqb8AKOd5BO {
+.spotify__container--is-desktop:not(.fullscreen) 
+    .zogFp9G1AEqb8AKOd5BO {
     -webkit-app-region: no-drag;
     backdrop-filter: blur(40px) saturate(3.5) !important;
     border-radius: var(--border-radius-1);
@@ -664,7 +691,8 @@ button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-
     margin: 15px !important;
 }
 
-.PsrXxenHUFXYM1ub1xWw .tAIzXn8C9KriGwGuBfWg {
+.PsrXxenHUFXYM1ub1xWw 
+    .tAIzXn8C9KriGwGuBfWg {
     cursor: pointer !important;
 }
 
@@ -684,12 +712,12 @@ button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-
 
 .marketplace-grid
     .main-card-draggable
-    .main-card-cardMetadata
-    li.marketplace-card__tag[data-tag="external JS"],
+        .main-card-cardMetadata
+            li.marketplace-card__tag[data-tag="external JS"],
 .marketplace-grid
     .main-card-draggable
-    .main-card-cardMetadata
-    li.marketplace-card__tag[data-tag="archived"] {
+        .main-card-cardMetadata
+            li.marketplace-card__tag[data-tag="archived"] {
     background-color: var(--spice-accent) !important;
     color: var(--spice-alt-text) !important;
 }
@@ -785,12 +813,13 @@ button.button-module__button___hf2qg_marketplace.marketplace-add-snippet-btn {
 
 .Root__now-playing-bar
     .Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only
-    .Svg-sc-ytk21e-0 {
+        .Svg-sc-ytk21e-0 {
     width: 28px !important;
     height: 28px !important;
 }
 
-.player-controls__buttons button {
+.player-controls__buttons 
+    button {
     max-height: var(--button-size);
     max-width: var(--button-size);
     padding-left: 0 !important;
@@ -884,7 +913,8 @@ button.Button-sc-1dqy6lx-0[aria-label*="Disable repeat"]
     height: 22px !important;
 }
 
-.playback-bar .playback-progressbar {
+.playback-bar 
+    .playback-progressbar {
     height: 20px !important;
 }
 
@@ -892,11 +922,13 @@ button.Button-sc-1dqy6lx-0[aria-label*="Disable repeat"]
     padding: 0 10px;
 }
 
-.playback-bar .x-progressBar-progressBarBg {
+.playback-bar 
+    .x-progressBar-progressBarBg {
     width: calc(100% - 20px) !important;
 }
 
-.playback-bar .x-progressBar-fillColor {
+.playback-bar 
+    .x-progressBar-fillColor {
     width: 100%;
     will-change: transform;
     padding: 0 10px;
@@ -942,7 +974,9 @@ button.Button-sc-1dqy6lx-0[aria-label*="Disable repeat"]
     outline: none;
 }
 
-.XgeTnLs82tTjczDR6oKn .IconWrapper__Wrapper-sc-1hf1hjl-0 .Svg-sc-ytk21e-0 {
+.XgeTnLs82tTjczDR6oKn 
+    .IconWrapper__Wrapper-sc-1hf1hjl-0 
+        .Svg-sc-ytk21e-0 {
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/ic_fluent_open_24_filled.svg);
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/ic_fluent_open_24_filled.svg);
     background-color: var(--spice-highlight-elevated) !important;
@@ -953,7 +987,8 @@ button.Button-sc-1dqy6lx-0[aria-label*="Disable repeat"]
 
 /* -------------------------------------- Top Bar ------------------------------------- */
 
-.main-topBar-topbarContent svg {
+.main-topBar-topbarContent 
+    svg {
     width: 25px !important;
     height: 25px !important;
     margin-top: -4px;
@@ -974,7 +1009,8 @@ button.main-topBar-button,
     background: var(--spice-sidebar);
 }
 
-.main-topBar-buddyFeed svg {
+.main-topBar-buddyFeed 
+    svg {
     z-index: 5;
 }
 
@@ -982,19 +1018,24 @@ button.main-topBar-button,
     margin-left: 10px;
 } */
 
-#library-app .main-gridContainer-gridContainer.grid .main-card-cardContainer {
+#library-app 
+    .main-gridContainer-gridContainer.grid 
+        .main-card-cardContainer {
     width: 190px !important;
     max-width: 190px !important;
     min-width: 190px !important;
 }
 
-button.main-topBar-button svg {
+button.main-topBar-button 
+    svg {
     background: var(--spice-text) !important;
     height: 18px !important;
     width: 18px !important;
 }
 
-button.main-topBar-button svg path {
+button.main-topBar-button 
+    svg 
+        path {
     opacity: 0 !important;
 }
 
@@ -1003,7 +1044,8 @@ button.main-topBar-button svg path {
     order: -99;
 }
 
-.main-topBar-buddyFeed[aria-label*="playlist-stats"] svg {
+.main-topBar-buddyFeed[aria-label*="playlist-stats"] 
+    svg {
     background: var(--spice-text);
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/align-start-vertical.svg) !important;
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/align-start-vertical.svg) !important;
@@ -1020,26 +1062,30 @@ button.main-topBar-button[aria-label*="playlist-stats"] svg {
 
 button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-condensed-useBrowserDefaultFocusStyle.main-globalNav-icon[aria-label*="Full App Display"]
     svg,
-button.main-topBar-button[aria-label*="Full App Display"] svg {
+button.main-topBar-button[aria-label*="Full App Display"] 
+    svg {
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/tv.svg) !important;
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/tv.svg) !important;
 }
 
 button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-condensed-useBrowserDefaultFocusStyle.main-globalNav-icon[aria-label*="Bookmark"]
     svg,
-button.main-topBar-button[aria-label*="Bookmark"] svg {
+button.main-topBar-button[aria-label*="Bookmark"] 
+    svg {
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/bookmark.svg) !important;
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/bookmark.svg) !important;
 }
 
 button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-condensed-useBrowserDefaultFocusStyle.main-globalNav-icon[aria-label*="Beautiful Fullscreen"]
     svg,
-button.main-topBar-button[aria-label*="Beautiful Fullscreen"] svg {
+button.main-topBar-button[aria-label*="Beautiful Fullscreen"] 
+    svg {
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/fullscreen.svg) !important;
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/fullscreen.svg) !important;
 }
 
-button[title*="TV Mode Display"] svg {
+button[title*="TV Mode Display"] 
+    svg {
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/tv-minimal.svg) !important;
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/tv-minimal.svg) !important;
     background: var(--spice-text) !important;
@@ -1047,17 +1093,20 @@ button[title*="TV Mode Display"] svg {
     width: 18px !important;
 }
 
-button[aria-label*="Get Random Saved Album"] svg {
+button[aria-label*="Get Random Saved Album"] 
+    svg {
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/dice-5.svg);
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/dice-5.svg);
     transition: all 0.3s ease;
 }
 
-button[aria-label*="Get Random Saved Album"]:hover svg {
+button[aria-label*="Get Random Saved Album"]:hover 
+    svg {
     transform: rotate(90deg);
 }
 
-.main-topBar-buddyFeed[aria-label*="What's New"] svg {
+.main-topBar-buddyFeed[aria-label*="What's New"] 
+    svg {
     background: var(--spice-text) !important;
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/bell.svg) !important;
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/bell.svg) !important;
@@ -1065,7 +1114,8 @@ button[aria-label*="Get Random Saved Album"]:hover svg {
     height: 18px;
 }
 
-.main-topBar-buddyFeed[aria-label*="Friend Activity"] svg {
+.main-topBar-buddyFeed[aria-label*="Friend Activity"] 
+    svg {
     background: var(--spice-text) !important;
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/users.svg) !important;
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/users.svg) !important;
@@ -1111,7 +1161,8 @@ button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-condense
     padding: 12px !important;
 }
 
-.main-globalNav-historyButtons div::after {
+.main-globalNav-historyButtons 
+    div::after {
     content: "";
     width: 1px;
     height: 30px;
@@ -1157,7 +1208,8 @@ button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-condense
     width: 60% !important;
 }
 
-.D71yL9GnHIYg7PheYlz8 .kAYwHqwZ7agHEAGbYN3v {
+.D71yL9GnHIYg7PheYlz8 
+    .kAYwHqwZ7agHEAGbYN3v {
     border-radius: var(--border-radius-2) !important;
 }
 
@@ -1169,7 +1221,8 @@ button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-condense
     color: var(--spice-text) !important;
 }
 
-span.ListRowDetails__LineClamp-sc-sozu4l-1.LineClamp a,
+span.ListRowDetails__LineClamp-sc-sozu4l-1.LineClamp 
+    a,
 .FDm94lE0xkDYtA1Bk7Jc {
     color: var(--text-subdued) !important;
 }
@@ -1186,7 +1239,8 @@ span.ListRowDetails__LineClamp-sc-sozu4l-1.LineClamp a,
 
 /* -------------------------------------- Nav Bar ------------------------------------- */
 
-.main-yourLibraryX-header .Button-sc-1dqy6lx-0[aria-label="Go back"] svg {
+.main-yourLibraryX-header .Button-sc-1dqy6lx-0[aria-label="Go back"] 
+    svg {
     mask-image: url(https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_arrow_left_24_filled.svg) !important;
     -webkit-mask-image: url(https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_arrow_left_24_filled.svg) !important;
     background-color: var(--spice-subtext);
@@ -1194,7 +1248,8 @@ span.ListRowDetails__LineClamp-sc-sozu4l-1.LineClamp a,
     margin-right: 9px !important;
 }
 
-.main-yourLibraryX-button[aria-label="Create playlist or folder"] svg {
+.main-yourLibraryX-button[aria-label="Create playlist or folder"] 
+    svg {
     background: var(--spice-subtext) !important;
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_add_24_filled.svg) !important;
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_add_24_filled.svg) !important;
@@ -1206,13 +1261,16 @@ span.ListRowDetails__LineClamp-sc-sozu4l-1.LineClamp a,
     background-color: transparent !important;
 }
 
-.main-yourLibraryX-button[aria-haspopup="menu"] svg {
+.main-yourLibraryX-button[aria-haspopup="menu"] 
+    svg {
     background: var(--spice-subtext) !important;
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_more_horizontal_24_filled.svg) !important;
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_more_horizontal_24_filled.svg) !important;
 }
 
-.main-yourLibraryX-libraryRootlist span.collapse-button svg {
+.main-yourLibraryX-libraryRootlist 
+    span.collapse-button 
+        svg {
     background: var(--text-subdued, #656565);
     opacity: 1;
     height: 20px;
@@ -1222,7 +1280,10 @@ span.ListRowDetails__LineClamp-sc-sozu4l-1.LineClamp a,
     transform: rotate(270deg);
 }
 
-.main-yourLibraryX-libraryRootlist span.collapse-button svg path {
+.main-yourLibraryX-libraryRootlist 
+    span.collapse-button 
+        svg 
+            path {
     opacity: 0 !important;
 }
 
@@ -1258,8 +1319,10 @@ span.ListRowDetails__LineClamp-sc-sozu4l-1.LineClamp a,
     transition: transform 0.3s ease-in-out, height 0.3s ease-in-out;
 }
 
-.main-yourLibraryX-entryPoints #spicetify-show-list,
-.main-yourLibraryX-entryPoints #spicetify-hidden-list {
+.main-yourLibraryX-entryPoints 
+    #spicetify-show-list,
+.main-yourLibraryX-entryPoints 
+    #spicetify-hidden-list {
     padding: 0 12px 8px 12px;
 }
 
@@ -1275,7 +1338,8 @@ span.ListRowDetails__LineClamp-sc-sozu4l-1.LineClamp a,
 
 /* -------------------------------------- Genre Tags ------------------------------------- */
 
-.main-nowPlayingBar-nowPlayingBar .ellipsis-one-line a {
+.main-nowPlayingBar-nowPlayingBar .ellipsis-one-line 
+    a {
     color: var(--text-subdued) !important;
     font-size: var(--encore-text-size-smaller-2) !important;
 }
@@ -1308,7 +1372,8 @@ p.popup-row {
     overflow: hidden;
 }
 
-.MKCgGhu_c8l6hsVuee46 .main-shelf-shelfGrid {
+.MKCgGhu_c8l6hsVuee46 
+    .main-shelf-shelfGrid {
     margin-inline: 0 !important;
 }
 
@@ -1350,10 +1415,6 @@ p.popup-row {
     ) !important;
 }
 
-.MKCgGhu_c8l6hsVuee46 .main-shelf-shelfGrid {
-    --row-count: 3 !important;
-}
-
 .OGu88AVNWY3IM3QlZjG0 {
     color: var(--text-subdued) !important;
 }
@@ -1363,7 +1424,8 @@ p.popup-row {
     animation: none !important;
 }
 
-.fYWNdY4zhj4OX_T2Xtg6[aria-labelledby*="artist"] .BfALkuQy0UjTI70U9QlQ {
+.fYWNdY4zhj4OX_T2Xtg6[aria-labelledby*="artist"] 
+    .BfALkuQy0UjTI70U9QlQ {
     border-radius: 50% !important;
 }
 
@@ -1410,8 +1472,10 @@ section.xOmT3apmEbwVlFt4HkBe.C3jVNGQUUZcUp5kTEOC0.Sm3POgzbjs7wFj7tyYNh[aria-labe
 
 /* -------------------------------------- Sleep Time ------------------------------------- */
 
-#sleep-timer-menu .btn-success,
-#sleep-timer-menu .btn-success:hover {
+#sleep-timer-menu 
+    .btn-success,
+#sleep-timer-menu 
+    .btn-success:hover {
     background: var(--spice-button, var(--spice-accent)) !important;
     border: 1px solid var(--spice-button, var(--spice-accent)) !important;
     color: var(--spice-alt-text) !important;
@@ -1427,17 +1491,20 @@ button.main-genericButton-button.Button-sc-1dqy6lx-0.Button-buttonTertiary-small
     margin-top: 2px;
 }
 
-#sleep-timer-menu div.input-spinner-input-spinner {
+#sleep-timer-menu 
+    div.input-spinner-input-spinner {
     width: 100% !important;
 }
 
-#sleep-timer-menu label {
+#sleep-timer-menu 
+    label {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#sleep-timer-menu div.input-spinner-input-spinner {
+#sleep-timer-menu 
+    div.input-spinner-input-spinner {
     gap: 10px;
 }
 
@@ -1469,8 +1536,10 @@ button.btn.btn-increment.btn-outline-secondary.btn-plus:hover {
     color: var(--spice-text) !important;
 }
 
-button.btn.btn-decrement.btn-outline-secondary.btn-minus strong,
-button.btn.btn-increment.btn-outline-secondary.btn-plus strong {
+button.btn.btn-decrement.btn-outline-secondary.btn-minus 
+    strong,
+button.btn.btn-increment.btn-outline-secondary.btn-plus 
+    strong {
     font-size: 24px !important;
     font-weight: 300 !important;
     height: 24px !important;
@@ -1489,11 +1558,15 @@ button.btn.btn-increment.btn-outline-secondary.btn-plus strong {
     text-align: left !important;
 }
 
-#sleep-timer-menu label svg {
+#sleep-timer-menu 
+    label 
+        svg {
     display: none;
 }
 
-#sleep-timer-menu label .timer-icons-label {
+#sleep-timer-menu 
+    label 
+        .timer-icons-label {
     opacity: 1 !important;
     position: absolute;
     font-size: 14px !important;
@@ -1521,7 +1594,9 @@ button.main-genericButton-button.Button-sc-1dqy6lx-0.Button-buttonTertiary-small
     display: none;
 }
 
-.popup-menu popup-menu--is-visible div {
+.popup-menu 
+    popup-menu--is-visible 
+        div {
     max-height: calc(100vh - 90px);
     overflow-y: auto;
     padding: 5px;
@@ -1536,20 +1611,28 @@ button.main-genericButton-button.Button-sc-1dqy6lx-0.Button-buttonTertiary-small
     border-radius: var(--border-radius-1) !important;
 }
 
-#sleep-timer-menu label:hover .timer-icons-label.icons-label-songs {
+#sleep-timer-menu 
+    label:hover 
+        .timer-icons-label.icons-label-songs {
     transform: translate(-10px, 0px) !important;
 }
 
-#sleep-timer-menu label:hover .timer-icons-label.icons-label-minutes {
+#sleep-timer-menu 
+    label:hover 
+        .timer-icons-label.icons-label-minutes {
     transform: translate(-5px, 0px) !important;
 }
 
 button#sleep-timer-start.btn-success,
-#sleep-timer-menu .btn-success,
-#sleep-timer-menu .btn-primary:hover,
+#sleep-timer-menu 
+    .btn-success,
+#sleep-timer-menu 
+    .btn-primary:hover,
 button#sleep-timer-start.btn-primary,
-#sleep-timer-menu .btn-primary,
-#sleep-timer-menu .btn-primary:hover {
+#sleep-timer-menu 
+    .btn-primary,
+#sleep-timer-menu 
+    .btn-primary:hover {
     background: var(--spice-text) !important;
     border: 0 !important;
     width: fit-content !important;
@@ -1661,16 +1744,19 @@ span.Type__TypeElement-sc-goli3j-0.TypeElement-type-mesto-textSubdued.main-track
 
 /* -------------------------------------- Made For You ------------------------------------- */
 
-a[aria-label*="Made for you"] .TypeElement-balladBold-type {
+a[aria-label*="Made for you"] 
+    .TypeElement-balladBold-type {
     font-weight: 700 !important;
 }
 
-.custom-style a {
+.custom-style 
+    a {
     background-color: var(--spice-selected-row);
     color: var(--spice-text);
 }
 
-svg.made-for-you-icon.home-icon path {
+svg.made-for-you-icon.home-icon 
+    path {
     opacity: 0;
 }
 
@@ -1682,29 +1768,35 @@ svg.made-for-you-icon.home-icon {
 
 li.main-yourLibraryX-navItem
     a[aria-label*="Made for you"]:hover
-    svg.made-for-you-icon.home-icon {
+        svg.made-for-you-icon.home-icon {
     background: var(--spice-text);
 }
 
-.custom-style a svg:nth-child(1) {
+.custom-style 
+    a 
+        svg:nth-child(1) {
     background: var(--spice-accent);
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/crown-simple-fill.svg);
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/crown-simple-fill.svg);
 }
 
-.custom-style a:hover svg:nth-child(1) {
+.custom-style 
+    a:hover 
+        svg:nth-child(1) {
     background: var(--spice-accent) !important;
 }
 
 /* -------------------------------------- Spicetify Library by Harbassan ------------------------------------- */
 
-.main-yourLibraryX-navLink[href="/library"] svg {
+.main-yourLibraryX-navLink[href="/library"] 
+    svg {
     mask-image: url(https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_library_24_regular.svg) !important;
     -webkit-mask-image: url(https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_library_24_regular.svg) !important;
     background-color: var(--spice-subtext) !important;
 }
 
-.main-yourLibraryX-navLink[href="/library"].active svg {
+.main-yourLibraryX-navLink[href="/library"].active 
+    svg {
     mask-image: url(https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_library_24_filled.svg) !important;
     -webkit-mask-image: url(https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_library_24_filled.svg) !important;
     background-color: var(--spice-accent) !important;
@@ -1718,7 +1810,9 @@ li.main-yourLibraryX-navItem
     background-color: var(--spice-accent) !important;
 }
 
-.main-yourLibraryX-navLink[href="/library"] svg path {
+.main-yourLibraryX-navLink[href="/library"] 
+    svg 
+        path {
     opacity: 0;
 }
 
@@ -1735,19 +1829,28 @@ li.main-yourLibraryX-navItem
     bottom: 8px;
 } */
 
-#library-app .ix_8kg3iUb9VS5SmTnBY {
+#library-app 
+    .ix_8kg3iUb9VS5SmTnBY {
     margin-right: 0 !important;
 }
 
-#playback-bar-drag-block div div:nth-child(3),
-#playback-bar-drag-block div div:nth-child(6) {
+#playback-bar-drag-block 
+    div 
+        div:nth-child(3),
+#playback-bar-drag-block 
+    div 
+        div:nth-child(6) {
     background-color: var(--spice-player-bar-bg) !important;
 }
 
-#playback-bar-drag-block div div:nth-child(1) svg,
-#playback-bar-drag-block div div:nth-child(2) svg,
-#playback-bar-drag-block div div:nth-child(4) svg,
-#playback-bar-drag-block div div:nth-child(5) svg {
+#playback-bar-drag-block div div:nth-child(1) 
+    svg,
+#playback-bar-drag-block div div:nth-child(2) 
+    svg,
+#playback-bar-drag-block div div:nth-child(4) 
+    svg,
+#playback-bar-drag-block div div:nth-child(5) 
+    svg {
     opacity: 0;
 }
 
@@ -1837,17 +1940,20 @@ li.main-yourLibraryX-navItem
     padding: 35px !important;
 }
 
-.main-duplicateTrackModal-container h2 {
+.main-duplicateTrackModal-container 
+    h2 {
     font-size: 26px !important;
 }
 
-.main-duplicateTrackModal-container p {
+.main-duplicateTrackModal-container 
+    p {
     color: var(--text-subdued) !important;
 }
 
 /* -------------------------------------- Eternal Jukebox ------------------------------------- */
 
-.player-controls__buttons button {
+.player-controls__buttons 
+    button {
     max-height: var(--button-size);
     max-width: var(--button-size);
     padding-left: 20px !important;
@@ -1857,8 +1963,10 @@ li.main-yourLibraryX-navItem
     cursor: pointer;
 }
 
-button.main-repeatButton-button svg,
-button.main-repeatButton-button.main-repeatButton-active svg {
+button.main-repeatButton-button 
+    svg,
+button.main-repeatButton-button.main-repeatButton-active 
+    svg {
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/infinite.svg) !important;
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/infinite.svg) !important;
     width: 20px !important;
@@ -1868,11 +1976,13 @@ button.main-repeatButton-button.main-repeatButton-active svg {
     /* z-index: 999999; */
 }
 
-button.main-repeatButton-button svg {
+button.main-repeatButton-button 
+    svg {
     background: var(--spice-subtext);
 }
 
-button.main-repeatButton-button.main-repeatButton-active svg {
+button.main-repeatButton-button.main-repeatButton-active 
+    svg {
     background: var(--spice-accent) !important;
 }
 
@@ -1923,7 +2033,8 @@ button.main-repeatButton-button.main-repeatButton-active svg {
 }
 
 .YpfopxY2udneDY34uzRN,
-.cBs7zoipfqjsCHbDjY_p .tICcDjrC0CkSMO2fZZNy {
+.cBs7zoipfqjsCHbDjY_p 
+    .tICcDjrC0CkSMO2fZZNy {
     background: var(--spice-main-elevated) !important;
 }
 
@@ -1945,14 +2056,17 @@ button.main-repeatButton-button.main-repeatButton-active svg {
     background: none !important;
 }
 
-a.muHL0_3HjlqTZDoapgc9[href*="https://en.wikipedia.org/"] svg
+a.muHL0_3HjlqTZDoapgc9[href*="https://en.wikipedia.org/"] 
+    svg
 {
     background: var(--background-elevated-highlight) !important;
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/wikipedia-w-brands-solid.svg) !important;
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/wikipedia-w-brands-solid.svg) !important;
 }
 
-a.muHL0_3HjlqTZDoapgc9[href*="https://en.wikipedia.org/"] svg path
+a.muHL0_3HjlqTZDoapgc9[href*="https://en.wikipedia.org/"] 
+    svg 
+        path
 {
     opacity: 0 !important;
 }
@@ -1970,7 +2084,8 @@ a.muHL0_3HjlqTZDoapgc9[href*="https://en.wikipedia.org/"] svg path
     border-radius: 4px !important;
 }
 
-.tYSzgx8hG37WjBDn364n .DehN40s8150pzqyBfGN_ {
+.tYSzgx8hG37WjBDn364n 
+    .DehN40s8150pzqyBfGN_ {
     color: var(--text-subdued) !important;
     font-size: 13px !important;
 }
@@ -2057,7 +2172,8 @@ span.encore-text.encore-text-body-small.ArQQy9kpoXLmafHpoi6u.FGrkEs4xa3OtWqaSmtv
     opacity: 1;
 }
 
-.main-embedWidgetGenerator-contentCode .main-embedWidgetGenerator-code {
+.main-embedWidgetGenerator-contentCode 
+    .main-embedWidgetGenerator-code {
     background: rgba(var(--spice-rgb-player-bar-bg), 0.25) !important;
     width: calc(100% - 48px) !important;
     margin-left: 24px !important;
@@ -2069,17 +2185,21 @@ span.encore-text.encore-text-body-small.ArQQy9kpoXLmafHpoi6u.FGrkEs4xa3OtWqaSmtv
     z-index: 2;
 }
 
-.main-yourLibraryX-navLinkActive .home-active-icon,
-.main-yourLibraryX-navLinkActive .search-active-icon {
+.main-yourLibraryX-navLinkActive 
+    .home-active-icon,
+.main-yourLibraryX-navLinkActive 
+    .search-active-icon {
     color: var(--spice-accent);
 }
 
-.Root__globalNav .main-globalNav-link-icon {
+.Root__globalNav 
+    .main-globalNav-link-icon {
     background-color: transparent !important;
 }
 
 button.main-globalNav-link-icon[aria-label*="Home"],
-.Root__globalNav .main-globalNav-link-icon.main-globalNav-navLinkActive {
+.Root__globalNav 
+    .main-globalNav-link-icon.main-globalNav-navLinkActive {
     border: 1px solid var(--spice-main-elevated) !important;
     background-color: var(--spice-card) !important;
     border-radius: var(--border-radius-2);
@@ -2093,36 +2213,61 @@ button.main-globalNav-link-icon[aria-label*="Home"],
     display: none !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="Home"] path,
-button.main-globalNav-link-icon[aria-label*="search"] path,
-button.main-globalNav-link-icon[aria-label*="search"] path,
-button.main-globalNav-link-icon[aria-label*="lyrics-plus"] path,
-button.main-globalNav-link-icon[aria-label*="Marketplace"] path,
-button.main-globalNav-link-icon[aria-label*="eternal-jukebox"] path,
-button.main-globalNav-link-icon[aria-label*="new-releases"] path,
-button.main-globalNav-link-icon[aria-label*="Statistics"] svg path,
-button.main-globalNav-link-icon[aria-label*="name-that-tune"] path,
-button.main-globalNav-link-icon[aria-label*="Your Library"] path,
-button.main-globalNav-link-icon[aria-label*="better-local-files"] path,
-button.main-globalNav-link-icon[aria-label*="Tags"] path {
+button.main-globalNav-link-icon[aria-label*="Home"] 
+    path,
+button.main-globalNav-link-icon[aria-label*="search"] 
+    path,
+button.main-globalNav-link-icon[aria-label*="search"] 
+    path,
+button.main-globalNav-link-icon[aria-label*="lyrics-plus"] 
+    path,
+button.main-globalNav-link-icon[aria-label*="Marketplace"] 
+    path,
+button.main-globalNav-link-icon[aria-label*="eternal-jukebox"] 
+    path,
+button.main-globalNav-link-icon[aria-label*="new-releases"] 
+    path,
+button.main-globalNav-link-icon[aria-label*="Statistics"] 
+    svg 
+        path,
+button.main-globalNav-link-icon[aria-label*="name-that-tune"] 
+    path,
+button.main-globalNav-link-icon[aria-label*="Your Library"] 
+    path,
+button.main-globalNav-link-icon[aria-label*="better-local-files"] 
+    path,
+button.main-globalNav-link-icon[aria-label*="Tags"] 
+    path {
     display: none !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="Home"]:hover svg,
-button.main-globalNav-link-icon[aria-label*="search"]:hover .search-icon,
-button.main-globalNav-link-icon[aria-label*="lyrics-plus"]:hover svg,
-button.main-globalNav-link-icon[aria-label*="Marketplace"]:hover svg,
-button.main-globalNav-link-icon[aria-label*="eternal-jukebox"]:hover svg,
-button.main-globalNav-link-icon[aria-label*="new-releases"]:hover svg,
-button.main-globalNav-link-icon[aria-label*="Statistics"]:hover svg,
-button.main-globalNav-link-icon[aria-label*="name-that-tune"]:hover svg,
-button.main-globalNav-link-icon[aria-label*="Your Library"]:hover svg,
-button.main-globalNav-link-icon[aria-label*="better-local-files"]:hover svg,
-button.main-globalNav-link-icon[aria-label*="Tags"]:hover svg {
+button.main-globalNav-link-icon[aria-label*="Home"]:hover 
+    svg,
+button.main-globalNav-link-icon[aria-label*="search"]:hover 
+    .search-icon,
+button.main-globalNav-link-icon[aria-label*="lyrics-plus"]:hover 
+    svg,
+button.main-globalNav-link-icon[aria-label*="Marketplace"]:hover 
+    svg,
+button.main-globalNav-link-icon[aria-label*="eternal-jukebox"]:hover 
+    svg,
+button.main-globalNav-link-icon[aria-label*="new-releases"]:hover 
+    svg,
+button.main-globalNav-link-icon[aria-label*="Statistics"]:hover 
+    svg,
+button.main-globalNav-link-icon[aria-label*="name-that-tune"]:hover 
+    svg,
+button.main-globalNav-link-icon[aria-label*="Your Library"]:hover 
+    svg,
+button.main-globalNav-link-icon[aria-label*="better-local-files"]:hover 
+    svg,
+button.main-globalNav-link-icon[aria-label*="Tags"]:hover 
+    svg {
     background-color: var(--spice-text) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="Home"] svg {
+button.main-globalNav-link-icon[aria-label*="Home"] 
+    svg {
     mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_home_24_regular.svg");
     -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_home_24_regular.svg");
 
@@ -2136,7 +2281,8 @@ button.main-globalNav-link-icon[aria-label*="Home"].main-globalNav-navLinkActive
     background-color: var(--spice-accent) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="search"] svg {
+button.main-globalNav-link-icon[aria-label*="search"] 
+    svg {
     mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_search_24_regular.svg");
     -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_search_24_regular.svg");
     background-color: var(--spice-subtext) !important;
@@ -2149,7 +2295,8 @@ button.main-globalNav-link-icon[aria-label*="search"].main-globalNav-navLinkActi
     background-color: var(--spice-accent) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="lyrics-plus"] svg {
+button.main-globalNav-link-icon[aria-label*="lyrics-plus"] 
+    svg {
     mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_slide_text_24_regular.svg");
     -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_slide_text_24_regular.svg");
     background-color: var(--spice-subtext) !important;
@@ -2162,7 +2309,8 @@ button.main-globalNav-link-icon[aria-label*="lyrics-plus"].main-globalNav-navLin
     background-color: var(--spice-accent) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="Marketplace"] svg {
+button.main-globalNav-link-icon[aria-label*="Marketplace"] 
+    svg {
     mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_app_store_24_regular.svg");
     -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_app_store_24_regular.svg");
     background-color: var(--spice-subtext) !important;
@@ -2175,7 +2323,8 @@ button.main-globalNav-link-icon[aria-label*="Marketplace"].main-globalNav-navLin
     background-color: var(--spice-accent) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="eternal-jukebox"] svg {
+button.main-globalNav-link-icon[aria-label*="eternal-jukebox"] 
+    svg {
     mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/phosphor-icons/infinity.svg");
     -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/phosphor-icons/infinity.svg");
     background-color: var(--spice-subtext) !important;
@@ -2188,7 +2337,8 @@ button.main-globalNav-link-icon[aria-label*="eternal-jukebox"].main-globalNav-na
     background-color: var(--spice-accent) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="new-releases"] svg {
+button.main-globalNav-link-icon[aria-label*="new-releases"] 
+    svg {
     mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_alert_24_regular.svg");
     -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_alert_24_regular.svg");
     background-color: var(--spice-subtext) !important;
@@ -2201,7 +2351,8 @@ button.main-globalNav-link-icon[aria-label*="new-releases"].main-globalNav-navLi
     background-color: var(--spice-accent) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="Statistics"] svg {
+button.main-globalNav-link-icon[aria-label*="Statistics"] 
+    svg {
     mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_chart_multiple_24_regular.svg");
     -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_chart_multiple_24_regular.svg");
     background-color: var(--spice-subtext) !important;
@@ -2214,7 +2365,8 @@ button.main-globalNav-link-icon[aria-label*="Statistics"].main-globalNav-navLink
     background-color: var(--spice-accent) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="name-that-tune"] svg {
+button.main-globalNav-link-icon[aria-label*="name-that-tune"] 
+    svg {
     mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_music_note_2_24_regular.svg");
     -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_music_note_2_24_regular.svg");
     background-color: var(--spice-subtext) !important;
@@ -2227,7 +2379,8 @@ button.main-globalNav-link-icon[aria-label*="name-that-tune"].main-globalNav-nav
     background-color: var(--spice-accent) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="Your Library"] svg {
+button.main-globalNav-link-icon[aria-label*="Your Library"] 
+    svg {
     mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_library_24_regular.svg");
     -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_library_24_regular.svg");
     background-color: var(--spice-subtext) !important;
@@ -2240,7 +2393,8 @@ button.main-globalNav-link-icon[aria-label*="Your Library"].main-globalNav-navLi
     background-color: var(--spice-accent) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="better-local-files"] svg {
+button.main-globalNav-link-icon[aria-label*="better-local-files"] 
+    svg {
     mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_folder_24_regular.svg");
     -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_folder_24_regular.svg");
     background-color: var(--spice-subtext) !important;
@@ -2253,7 +2407,8 @@ button.main-globalNav-link-icon[aria-label*="better-local-files"].main-globalNav
     background-color: var(--spice-accent) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="Tags"] svg {
+button.main-globalNav-link-icon[aria-label*="Tags"] 
+    svg {
     mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_tag_24_regular.svg");
     -webkit-mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_tag_24_regular.svg");
     background-color: var(--spice-subtext) !important;
@@ -2279,7 +2434,8 @@ button.main-globalNav-link-icon[aria-label*="Tags"].main-globalNav-navLinkActive
     margin-bottom: 20px !important;
 }
 
-.Root__globalNav .main-globalNav-link-icon::after {
+.Root__globalNav 
+    .main-globalNav-link-icon::after {
     content: "";
     position: absolute;
     height: 3px;
@@ -2291,7 +2447,8 @@ button.main-globalNav-link-icon[aria-label*="Tags"].main-globalNav-navLinkActive
     transition-delay: 0.3s;
 }
 
-.Root__globalNav .main-globalNav-link-icon.main-globalNav-navLinkActive::after {
+.Root__globalNav 
+    .main-globalNav-link-icon.main-globalNav-navLinkActive::after {
     width: 16px;
     background: var(--spice-accent);
 }
@@ -2309,17 +2466,20 @@ button.main-globalNav-link-icon[aria-label*="Statistics"] svg {
     mask-image: url();
 } */
 
-.b7r2WRiu5f9Q99qmyreh .main-topBar-searchBar {
+.b7r2WRiu5f9Q99qmyreh 
+    .main-topBar-searchBar {
     background: var(--spice-card) !important;
     border: 1px solid var(--spice-main-elevated) !important;
     border-radius: 8px !important;
 }
 
-.b7r2WRiu5f9Q99qmyreh .main-topBar-searchBar:hover {
+.b7r2WRiu5f9Q99qmyreh 
+    .main-topBar-searchBar:hover {
     background: var(--spice-main) !important;
 }
 
-.b7r2WRiu5f9Q99qmyreh .main-topBar-searchBar:focus {
+.b7r2WRiu5f9Q99qmyreh 
+    .main-topBar-searchBar:focus {
     background: var(--spice-main) !important;
     border-bottom: 2px solid var(--spice-accent) !important;
 }
@@ -2330,11 +2490,13 @@ button.main-globalNav-link-icon[aria-label*="Statistics"] svg {
     opacity: 1 !important;
 }
 
-.spotifyinternal-artistnpv .npv-up-next__image {
+.spotifyinternal-artistnpv 
+    .npv-up-next__image {
     border-radius: var(--border-radius-2) !important;
 }
 
-.spotifyinternal-artistnpv .npv-up-next {
+.spotifyinternal-artistnpv 
+    .npv-up-next {
     border-radius: var(--border-radius-1) !important;
     background: var(--spice-contour) !important;
 }
@@ -2363,7 +2525,8 @@ button.main-globalNav-link-icon[aria-label*="Statistics"] svg {
     bottom: 65px !important;
 }
 
-.encore-over-media-set.s5XoTreeKWcvy7aQT62A .pRnninATMpy3HDTSr5o0 {
+.encore-over-media-set.s5XoTreeKWcvy7aQT62A 
+    .pRnninATMpy3HDTSr5o0 {
     background-color: rgb(0 0 0 / 54%) !important;
     color: var(--text-base) !important;
 }
@@ -2413,24 +2576,58 @@ button.main-globalNav-link-icon[aria-label*="Statistics"] svg {
     background: transparent !important;
 }
 
-span.e-9640-baseline.e-9640-overflow-wrap-anywhere.e-9640-button-primary__inner.encore-bright-accent-set.e-9640-button-icon-only--large svg {
+span.e-9640-baseline.e-9640-overflow-wrap-anywhere.e-9640-button-primary__inner.encore-bright-accent-set.e-9640-button-icon-only--large
+    svg {
     height: 60px !important;
     width: 60px !important;
 }
 
-button[aria-label*="Play"] .e-9640-button-icon-only--large .e-9640-button__icon-wrapper svg, .e-9640-button-icon-only--medium .e-9640-button__icon-wrapper svg, .e-9640-button-icon-only--small .e-9640-button__icon-wrapper svg {
+button[aria-label*="Play"]
+    .e-9640-button-icon-only--large
+        .e-9640-button__icon-wrapper
+            svg,
+button[aria-label*="Play"]
+    .e-9640-button-icon-only--medium
+        .e-9640-button__icon-wrapper
+            svg,
+button[aria-label*="Play"]
+    .e-9640-button-icon-only--small
+        .e-9640-button__icon-wrapper
+            svg {
     background: var(--spice-text) !important;
     mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg");
     -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg");
 }
 
-button[aria-label*="Pause"] .e-9640-button-icon-only--large .e-9640-button__icon-wrapper svg, .e-9640-button-icon-only--medium .e-9640-button__icon-wrapper svg, .e-9640-button-icon-only--small .e-9640-button__icon-wrapper svg {
+button[aria-label*="Pause"]
+        .e-9640-button-icon-only--large
+            .e-9640-button__icon-wrapper
+                svg,
+button[aria-label*="Pause"]
+        .e-9640-button-icon-only--medium
+            .e-9640-button__icon-wrapper
+                svg,
+button[aria-label*="Pause"]
+        .e-9640-button-icon-only--small
+            .e-9640-button__icon-wrapper
+                svg {
     background: var(--spice-text) !important;
     mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_pause_16_filled.svg");
     -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_pause_16_filled.svg");
 }
 
-.e-9640-button-icon-only--large .e-9640-button__icon-wrapper svg path, .e-9640-button-icon-only--medium .e-9640-button__icon-wrapper svg path, .e-9640-button-icon-only--small .e-9640-button__icon-wrapper svg path {
+.main-card-imageContainer
+    button
+    .e-9640-button-icon-only--medium
+    .e-9640-button__icon-wrapper
+    svg {
+    width: 36px !important;
+    height: 36px !important;
+}
+
+.e-9640-button-icon-only--large .e-9640-button__icon-wrapper svg path,
+.e-9640-button-icon-only--medium .e-9640-button__icon-wrapper svg path,
+.e-9640-button-icon-only--small .e-9640-button__icon-wrapper svg path {
     display: none;
 }
 
@@ -2448,4 +2645,12 @@ button[aria-label*="Pause"] .e-9640-button-icon-only--large .e-9640-button__icon
 .main-trackList-trackListHeader.main-trackList-trackListHeaderStuck {
     margin-top: 4px !important;
     margin-bottom: 0 !important;
+}
+
+.bF2GZTmgrRQLsrDcIZXd {
+    margin-left: 12px !important;
+}
+
+.search-searchCategory-contentArea {
+    overflow: visible !important;
 }
