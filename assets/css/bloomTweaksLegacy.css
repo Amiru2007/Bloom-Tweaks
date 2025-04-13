@@ -2654,3 +2654,43 @@ button[aria-label*="Pause"]
 .search-searchCategory-contentArea {
     overflow: visible !important;
 }
+
+.e-9800-button-primary__inner {
+    background: transparent !important;
+}
+
+.e-9800-button-primary__inner svg {
+    background: var(--spice-text);
+    height: 50px;
+    width: 50px;
+    mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMzIgMzIiPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTcuMjUgM0EzLjI1IDMuMjUgMCAwIDAgNCA2LjI1djE4LjVBMy4yNSAzLjI1IDAgMCAwIDcuMjUgMjhoMy41QTMuMjUgMy4yNSAwIDAgMCAxNCAyNC43NVY2LjI1QTMuMjUgMy4yNSAwIDAgMCAxMC43NSAzem0xNCAwQTMuMjUgMy4yNSAwIDAgMCAxOCA2LjI1djE4LjVBMy4yNSAzLjI1IDAgMCAwIDIxLjI1IDI4aDMuNUEzLjI1IDMuMjUgMCAwIDAgMjggMjQuNzVWNi4yNUEzLjI1IDMuMjUgMCAwIDAgMjQuNzUgM3oiLz48L3N2Zz4=");
+}
+
+button[aria-label*="Pause"] .e-9800-button-primary__inner svg {
+    mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_pause_16_filled.svg") !important;
+    -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_pause_16_filled.svg") !important;
+}
+
+button[aria-label*="Play"] .e-9800-button-primary__inner svg {
+    mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg") !important;
+    -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg") !important;
+}
+
+.e-9800-button-primary__inner svg path {
+    opacity: 0;
+}
+
+span.e-9800-baseline.e-9800-overflow-wrap-anywhere.e-9800-button-primary__inner.encore-bright-accent-set.e-9800-button-icon-only--large {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+span.e-9800-baseline.e-9800-overflow-wrap-anywhere.e-9800-button-primary__inner.encore-bright-accent-set.e-9800-button-icon-only--large:hover {
+    transform: scale(1.15);
+}
+
+.view-homeShortcutsGrid-shortcutLink .ix_8kg3iUb9VS5SmTnBY button[aria-label*="Play"] .e-9800-button-primary__inner svg {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
