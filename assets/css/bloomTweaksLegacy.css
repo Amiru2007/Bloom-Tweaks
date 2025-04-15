@@ -2566,6 +2566,10 @@ span.e-9800-baseline.e-9800-overflow-wrap-anywhere.e-9800-button-primary__inner.
     overflow-y: hidden !important;
 }
 
+.main-shelf-shelf {
+    overflow: hidden !important;
+}
+
 .main-yourLibraryX-listItem
     .Areas__InteractiveArea-sc-8gfrea-0.Areas__TrailingSlot-sc-8gfrea-7.bJSfgC.jpzxju
     button
