@@ -2602,3 +2602,68 @@ span.e-9800-text.encore-text-body-small.encore-internal-color-text-subdued.ArQQy
 span.UyzJidwrGk3awngSGIwv {
     color: var(--spice-subtext) !important;
 }
+
+
+
+/* upcoming song extension bloom update */
+
+
+.main-nowPlayingBar-container {
+    overflow: visible !important;
+}
+
+div#upcomingSongDiv {
+    position: absolute !important;
+    top: -46px;
+    right: 0;
+    padding: var(--padding-now-playing-bar) !important;
+    height: 32px;
+    border-radius: var(--border-radius-now-playing-bar) !important;
+    background-color: rgba(var(--spice-rgb-main), 0.5);
+    backdrop-filter: blur(var(--blur-radius)) saturate(0.5) brightness(100%);
+    border: var(--default-border-thickness) solid var(--shadow-rgb);
+}
+
+div#upcomingSongDiv .main-coverSlotCollapsed-container {
+    width: 30px;
+    height: calc(30px - 0.6rem);
+    border-radius: 0.25rem !important;
+}
+
+div#upcomingSongDiv .cover-art {
+    margin-top: 0 !important;
+    height: 30px;
+    width: 30px;
+}
+
+div#upcomingSongDiv img#upcomingSongImg {
+    border-radius: 0.25rem !important;
+    box-shadow: none !important;
+    /* height: 27px !important; */
+    background-position: center;
+}
+
+div#upcomingSongDiv .main-nowPlayingWidget-trackInfo.main-trackInfo-container {
+    display: flex;
+    flex-direction: row;
+}
+
+div#upcomingSongDiv .Type__TypeElement-sc-goli3j-0.TypeElement-mesto-type.main-trackInfo-name {
+    margin: 0 !important;
+    display: flex;
+    align-items: center;
+}
+
+div#upcomingSongDiv .main-trackInfo-name {
+    width: fit-content !important;
+    display: flex;
+}
+
+/* div#upcomingSongDiv .main-trackInfo-artists::before {
+    content: '・';
+    font-size: 15px;
+} */
+
+div#upcomingSongDiv .main-trackInfo-artists {
+    width: fit-content !important;
+}
