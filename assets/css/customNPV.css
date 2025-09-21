@@ -91,7 +91,7 @@ div#BeautifulLyrics-CardView {
 .LoadingLyricsCard.Loading {
     max-height: 537px !important;
     height: fit-content !important;
-    min-height: 537px !important;!i;!;
+    min-height: 537px !important;
     opacity: 1;
 }
 

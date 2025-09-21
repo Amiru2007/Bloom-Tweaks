@@ -2608,7 +2608,7 @@ span.UyzJidwrGk3awngSGIwv {
 /* upcoming song extension bloom update */
 
 
-.main-nowPlayingBar-container {
+/* .main-nowPlayingBar-container {
     overflow: visible !important;
 }
 
@@ -2639,7 +2639,6 @@ div#upcomingSongDiv .cover-art {
 div#upcomingSongDiv img#upcomingSongImg {
     border-radius: 0.25rem !important;
     box-shadow: none !important;
-    /* height: 27px !important; */
     background-position: center;
 }
 
@@ -2659,11 +2658,6 @@ div#upcomingSongDiv .main-trackInfo-name {
     display: flex;
 }
 
-/* div#upcomingSongDiv .main-trackInfo-artists::before {
-    content: '・';
-    font-size: 15px;
-} */
-
 div#upcomingSongDiv .main-trackInfo-artists {
     width: fit-content !important;
-}
+} */
