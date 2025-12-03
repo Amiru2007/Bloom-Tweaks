@@ -2661,3 +2661,49 @@ div#upcomingSongDiv .main-trackInfo-name {
 div#upcomingSongDiv .main-trackInfo-artists {
     width: fit-content !important;
 } */
+
+/* ------------------ Update 12/03/2025 ------------------------ */
+
+.global-nav .marketplace-header, .global-nav .main-trackList-trackListHeader, .global-nav .artist-artistDiscography-topBar {
+    width: calc(100% - 0px) !important;
+    margin-left: 0px !important;
+}
+
+.main-playButton-button, .main-playButton-PlayButton>button, .main-trackList-rowPlayPauseButton {
+    mask-repeat: no-repeat !important;
+    mask-size: 100% !important;
+}
+
+/* .spotify__container--is-desktop:not(.fullscreen) .main-topBar-background, .spotify__container--is-desktop:not(.fullscreen) .main-topBar-container>* {
+    background: transparent !important;
+    border: none !important;
+} */
+
+.main-entityHeader-headerText, .iWTIFTzhRZT0rCD0_gOK {
+    height: 296px !important;
+}
+
+.main-nowPlayingView-creditsShowAll, .main-nowPlayingView-openQueue {
+    mask-repeat: no-repeat !important;
+    mask-position: center !important;
+}
+
+.main-yourLibraryX-collapseButton {
+    width: 100% !important;
+}
+
+.Root__nav-bar {
+    width: 100% !important;
+}
+
+.main-trackList-trackListHeader.main-trackList-trackListHeaderStuck {
+    top: 40px !important;
+}
+
+button.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-iconOnly-disabled-useBrowserDefaultFocusStyle.e-91000-overflow-wrap-anywhere.e-91000-button-tertiary--icon-only.main-genericButton-button.main-nowPlayingBar-lyricsButton {
+    display: none !important;
+}
+
+button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBrowserDefaultFocusStyle-condensedAll svg {
+    margin-bottom: -2px !important;
+}
