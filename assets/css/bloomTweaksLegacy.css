@@ -2698,6 +2698,8 @@ div#upcomingSongDiv .main-trackInfo-artists {
 
 .main-trackList-trackListHeader.main-trackList-trackListHeaderStuck {
     top: 40px !important;
+    transform: translateY(-24px) !important;
+    transition: all 0.01s ease !important;
 }
 
 button.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-iconOnly-disabled-useBrowserDefaultFocusStyle.e-91000-overflow-wrap-anywhere.e-91000-button-tertiary--icon-only.main-genericButton-button.main-nowPlayingBar-lyricsButton {
@@ -2706,4 +2708,56 @@ button.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-iconOnly-disabled-useBrow
 
 button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBrowserDefaultFocusStyle-condensedAll svg {
     margin-bottom: -2px !important;
+}
+
+.main-genericButton-button.main-genericButton-buttonActive[data-testid*="lyrics-button"] {
+    display: none !important;
+}
+
+.main-topBar-topbarContentWrapper .main-playButton-PlayButton>button {
+    transform: scale(0.5) !important;
+    margin: 0 !important;
+    margin-right: -8px !important;
+}
+
+.main-entityHeader-topbarContent.main-entityHeader-topbarContentFadeIn>* {
+    font-size: 20px !important;
+    transition: all 0.2s ease;
+}
+
+.main-topBar-container .contentSpacing {
+    width: 100% !important;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.profile-editImage-imageContainer[data-testid*="playlist-image"] {
+    border-radius: 8px !important;
+    overflow: hidden;
+}
+
+.main-trackList-trackList {
+    border-radius: 8px !important;
+}
+
+.main-actionBar-ActionBar.contentSpacing {
+    padding-top: 24px !important;
+}
+
+.main-trackList-rowImagePlayButton[aria-label*="Play"] .main-trackList-rowPlayPauseIcon {
+    mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg);
+    -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg);
+    background-color: var(--spice-text) !important;
+    transition: transform 0.3s ease;
+    mask-repeat: no-repeat;
+    mask-size: 100%;
+}
+
+.main-nowPlayingView-queue .main-playButton-PlayButton > button {
+    transform: scale(0.6) !important;
 }
