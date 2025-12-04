@@ -2698,7 +2698,7 @@ div#upcomingSongDiv .main-trackInfo-artists {
 
 .main-trackList-trackListHeader.main-trackList-trackListHeaderStuck {
     top: 40px !important;
-    transform: translateY(-24px) !important;
+    /* transform: translateY(-24px) !important; */
     transition: all 0.01s ease !important;
 }
 
