@@ -2718,10 +2718,11 @@ button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBro
     transform: scale(0.5) !important;
     margin: 0 !important;
     margin-right: -8px !important;
+    margin-top: -2px !important;
 }
 
 .main-entityHeader-topbarContent.main-entityHeader-topbarContentFadeIn>* {
-    font-size: 20px !important;
+    /* font-size: 20px !important; */
     transition: all 0.2s ease;
 }
 
