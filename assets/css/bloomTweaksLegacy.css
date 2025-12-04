@@ -2762,3 +2762,12 @@ button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBro
 .main-nowPlayingView-queue .main-playButton-PlayButton > button {
     transform: scale(0.6) !important;
 }
+
+.main-trackList-rowBadges {
+    margin-right: 4px !important;
+}
+
+.x-explicit-label {
+    background-color: var(--spice-accent) !important;
+    border-radius: 4px !important;
+}
