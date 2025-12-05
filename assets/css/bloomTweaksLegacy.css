@@ -2160,15 +2160,15 @@ button.main-globalNav-link-icon[aria-label*="Lyrics"].main-globalNav-navLinkActi
 }
 
 button.main-globalNav-link-icon[aria-label*="Marketplace"] svg {
-    mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_app_store_24_regular.svg");
-    -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_app_store_24_regular.svg");
+    mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_app_store_24_regular.svg");
+    -webkit-mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_app_store_24_regular.svg");
     background-color: var(--spice-subtext) !important;
 }
 
 button.main-globalNav-link-icon[aria-label*="Marketplace"].main-globalNav-navLinkActive
     svg {
-    mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_app_store_24_filled.svg");
-    -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_app_store_24_filled.svg");
+    mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_app_store_24_filled.svg");
+    -webkit-mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_app_store_24_filled.svg");
     background-color: var(--spice-accent) !important;
 }
 
