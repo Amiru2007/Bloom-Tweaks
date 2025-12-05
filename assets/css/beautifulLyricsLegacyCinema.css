@@ -236,3 +236,47 @@ button:has(.LyricsPageIcon):after {
 .Root__top-container:has(.BeautifulLyricsPage.Contained.BeautifulLyricsBackground) .Root__right-sidebar .XOawmCGZcQx4cesyNfVO {
     border-right: 8px solid var(--spice-sidebar);
 }
+
+.BeautifulLyricsPage.Fullscreen .Content .PlayPanel {
+    padding-top: 0 !important;
+    margin-top: calc(50cqh - var(--PlayPanelWidth)* .6) !important;
+}
+
+.main-nowPlayingBar-lyricsButton {
+    display: block !important;
+}
+
+.Root__top-container:has(.BeautifulLyricsPage) .Root__right-sidebar {
+    display: none !important;
+}
+
+.Root__main-view:has(.BeautifulLyricsPage.Contained) .ViewControls, div.os-host:has(.BeautifulLyricsPage.Contained) .ViewControls {
+    top: 36px;
+    container-type: size;
+    display: flex;
+    gap: 16px;
+    height: 5cqh;
+    justify-content: center;
+    opacity: 0;
+    position: absolute;
+    transition: opacity .2s;
+    width: 100cqw;
+    z-index: 101;
+    --ViewControlSize: 100cqh;
+}
+
+.Vocals.Active .Synced {
+    text-shadow: none !important;
+}
+
+#BeautifulLyrics-CardView .LyricsContent .ContentContainer {
+    height: calc(41cqh + 50px) !important;
+}
+
+.main-nowPlayingView-contextItemInfo, .main-nowPlayingView-nowPlayingGrid {
+    margin-left: -48px !important;
+}
+
+span.main-trackInfo-contentWrapper h1 {
+    white-space: nowrap;
+}

@@ -1191,7 +1191,7 @@ span.ListRowDetails__LineClamp-sc-sozu4l-1.LineClamp a,
     -webkit-mask-image: url(https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_arrow_left_24_filled.svg) !important;
     background-color: var(--spice-subtext);
     margin-left: 0px !important;
-    margin-right: 9px !important;
+    /* margin-right: 9px !important; */
 }
 
 .main-yourLibraryX-button[aria-label="Create playlist or folder"] svg {
@@ -2146,13 +2146,13 @@ button.main-globalNav-link-icon[aria-label*="search"].main-globalNav-navLinkActi
     background-color: var(--spice-accent) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="lyrics-plus"] svg {
+button.main-globalNav-link-icon[aria-label*="Lyrics"] svg {
     mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_slide_text_24_regular.svg");
     -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_slide_text_24_regular.svg");
     background-color: var(--spice-subtext) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="lyrics-plus"].main-globalNav-navLinkActive
+button.main-globalNav-link-icon[aria-label*="Lyrics"].main-globalNav-navLinkActive
     svg {
     mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_slide_text_24_filled.svg");
     -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_slide_text_24_filled.svg");
@@ -2679,9 +2679,9 @@ div#upcomingSongDiv .main-trackInfo-artists {
     border: none !important;
 } */
 
-.main-entityHeader-headerText, .iWTIFTzhRZT0rCD0_gOK {
+/* .main-entityHeader-headerText, .iWTIFTzhRZT0rCD0_gOK {
     height: 296px !important;
-}
+} */
 
 .main-nowPlayingView-creditsShowAll, .main-nowPlayingView-openQueue {
     mask-repeat: no-repeat !important;
@@ -2707,7 +2707,7 @@ button.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-iconOnly-disabled-useBrow
 }
 
 button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBrowserDefaultFocusStyle-condensedAll svg {
-    margin-bottom: -2px !important;
+    margin-bottom: -4px !important;
 }
 
 .main-genericButton-button.main-genericButton-buttonActive[data-testid*="lyrics-button"] {
@@ -2770,4 +2770,138 @@ button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBro
 .x-explicit-label {
     background-color: var(--spice-accent) !important;
     border-radius: 4px !important;
+}
+
+button.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-iconOnly-useBrowserDefaultFocusStyle.e-91000-overflow-wrap-anywhere.e-91000-button-tertiary--icon-only.main-genericButton-button.main-nowPlayingBar-lyricsButton {
+    display: none !important;
+}
+
+button:has(.LyricsPageIcon) {
+    margin: 0 !important;
+}
+
+button:has(.LyricsPageIcon) span svg {
+    margin-top: -1px !important;
+}
+
+.main-topBar-container:has(.main-entityHeader-topbarContentFadeIn) {
+    opacity: 1 !important;
+}
+
+.global-nav .main-topBar-container {
+    position: absolute !important;
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+    opacity: 0;
+    transition: all 0.1s ease-in-out;
+}
+
+.main-globalNav-searchInputContainer .main-topBar-searchBar:placeholder-shown {
+    background-color: var(--spice-card) !important;
+    border: 1px solid color-mix(in srgb, var(--spice-light-border), black 40%) !important;
+}
+
+button.main-globalNav-navLink[aria-label*="Home"] svg {
+    mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_home_24_regular.svg");
+    -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_home_24_regular.svg");
+    background-color: var(--spice-subtext) !important;
+}
+
+button.main-globalNav-navLinkActive[aria-label*="Home"] svg {
+    mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_home_24_filled.svg");
+    -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_home_24_filled.svg");
+    background-color: var(--spice-accent) !important;
+}
+
+button.main-globalNav-navLinkActive[aria-label*="Home"], .Root__globalNav .main-globalNav-link-icon.main-globalNav-navLinkActive {
+    border: 1px solid var(--spice-main-elevated) !important;
+    background-color: var(--spice-card) !important;
+    border-radius: var(--border-radius-2);
+}
+
+.Root__globalNav .main-globalNav-navLinkActive[aria-label*="Home"]::after {
+    width: 16px !important;
+    background: var(--spice-accent) !important;
+}
+
+.Root__globalNav .main-globalNav-navLink[aria-label*="Home"]::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 5px;
+    background: transparent;
+    bottom: 0;
+    border-radius: 9px;
+    transition: width 0.3s ease;
+    transition-delay: 0.3s;
+}
+
+button.main-globalNav-navLink[aria-label*="Home"] svg path {
+    opacity: 0 !important;
+}
+
+.B9lb86gGqGGFcSZZ95bA { /* -------------------------------------------------------------------------- Button next to 3 dots (main) on the left was hidden, so I blocked it out  */
+    display: none !important;
+}
+
+.CCIGxtpAreSdwWRo14FE { /* --------------------------------------------------------------------- Button before the control button on the right was hidden, so I blocked it out  */
+    display: none !important;
+}
+
+.main-yourLibraryX-collapseButton svg path {
+  opacity: 0 !important;
+}
+
+.main-nowPlayingBar-container {
+    overflow: hidden !important;
+}
+
+.Root__now-playing-bar {
+    box-shadow: none !important;
+    background-color: transparent !important;
+    width: calc(100% - (0.6rem* 3)) !important;
+}
+
+.main-trackList-trackListRow.main-trackList-active .main-trackList-rowTitle, .main-trackList-trackListRow.main-trackList-active .main-trackList-rowMarker {
+    text-shadow: 0px 0px 0px var(--spice-accent) !important;
+}
+
+.XVz4BMGP5zAEE5p90mYK {
+    background-color: transparent !important;
+}
+
+span.Ps9zgW56WZaBVLo1n3cg.l67ZKWaTyRadDGEcLWcE {
+    background: #ff005e !important;
+    border-radius: 4px !important;
+    margin-right: 5px !important;
+    color: white !important;
+    filter: invert(1);
+    font-weight: 400 !important;
+    width: 16px;
+}
+
+span.e-9640-baseline.e-9640-overflow-wrap-anywhere.e-9640-button-primary__inner.encore-bright-accent-set.e-9640-button-icon-only--large svg {
+    height: 50px !important;
+    width: 50px !important;
+}
+
+.player-controls .playback-progressbar::before {
+    right: 16px !important;
+    margin-bottom: -5px !important;
+}
+
+.Bdcf5g__Rug3TGqSdbiy {
+    background: transparent !important;
+}
+
+span.e-91000-text.encore-text-body-medium.main-trackList-number {
+    top: auto !important;
+}
+
+div#upcomingSongDiv {
+    transform: translateY(886px) !important;
+}
+
+.main-gridContainer-gridContainer.main-shelf-shelfGrid.deJGxfMNXUc8uApEGgoQ.nrVisibleCards-20.fJTotRs7ANTq1nrBwlqA {
+    grid-template-rows: repeat(4, minmax(0, 1fr)) !important;
 }
