@@ -2916,8 +2916,8 @@ div#upcomingSongDiv {
 }
 
 .Root__main-view:has(.marketplace-header) .main-topBar-container,
-.Root__main-view:has(.lyrics-lyricsContainer-LyricsBackground)
-    .main-topBar-container {
+.Root__main-view:has(.lyrics-lyricsContainer-LyricsBackground) .main-topBar-container,
+.Root__main-view:has(#library-app) .main-topBar-container {
     opacity: 1 !important;
 }
 
@@ -2952,3 +2952,21 @@ div#upcomingSongDiv {
     height: 80% !important;
     margin: 0 5px;
 }
+
+.ChipInnerComponent-sm {
+    background: transparent !important;
+}
+
+#library-app > :first-child, #stats-app > :first-child {
+    margin-top: 32px !important;
+}
+
+/* #library-app .page-header,
+#stats-app .page-header {
+    margin: 0 !important;
+    padding: 16px 0 !important;
+    position: absolute;
+    width: calc(100% - 44px);
+    z-index: 2;
+    background: var(--spice-main) !important;
+} */
