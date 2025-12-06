@@ -2929,3 +2929,26 @@ div#upcomingSongDiv {
     opacity: 1 !important;
     height: calc(48px + var(--panel-gap) * 2) !important;
 }
+
+.main-card-imageContainer>.main-card-PlayButtonContainer>.main-playButton-PlayButton>button {
+    width: 40px !important;
+    height: 40px !important;
+}
+
+.main-playButton-PlayButton>button[aria-label*="Pause"],
+.main-card-imageContainer>.main-card-PlayButtonContainer>.main-playButton-PlayButton>button[aria-label*="Pause"],
+.view-homeShortcutsGrid-grid .main-playButton-PlayButton button[aria-label*="Pause"] {
+    background-color: var(--spice-text) !important;
+    mask-image: url(https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_pause_16_filled.svg) !important;
+    -webkit-mask-image: url(https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_pause_16_filled.svg) !important;
+}
+
+.view-homeShortcutsGrid-PlayButtonContainer {
+    margin-right: 16px !important;
+}
+
+.main-navBar-mainNav .main-playButton-PlayButton > button {
+    width: 80% !important;
+    height: 80% !important;
+    margin: 0 5px;
+}
