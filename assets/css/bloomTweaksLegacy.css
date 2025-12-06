@@ -742,7 +742,7 @@ a[class*="topBarActive"]::before {
 }
 
 .global-nav .marketplace-header {
-    transform: translateY(-24px) !important;
+    /* transform: translateY(-24px) !important; */
     background-color: var(--spice-main);
 }
 
@@ -2093,7 +2093,7 @@ button.main-globalNav-link-icon[aria-label*="Home"],
 button.main-globalNav-link-icon[aria-label*="Home"] path,
 button.main-globalNav-link-icon[aria-label*="search"] path,
 button.main-globalNav-link-icon[aria-label*="search"] path,
-button.main-globalNav-link-icon[aria-label*="lyrics-plus"] path,
+button.main-globalNav-link-icon[aria-label*="Lyrics"] path,
 button.main-globalNav-link-icon[aria-label*="Marketplace"] path,
 button.main-globalNav-link-icon[aria-label*="eternal-jukebox"] path,
 button.main-globalNav-link-icon[aria-label*="new-releases"] path,
@@ -2107,7 +2107,7 @@ button.main-globalNav-link-icon[aria-label*="Tags"] path {
 
 button.main-globalNav-link-icon[aria-label*="Home"]:hover svg,
 button.main-globalNav-link-icon[aria-label*="search"]:hover .search-icon,
-button.main-globalNav-link-icon[aria-label*="lyrics-plus"]:hover svg,
+button.main-globalNav-link-icon[aria-label*="Lyrics"]:hover svg,
 button.main-globalNav-link-icon[aria-label*="Marketplace"]:hover svg,
 button.main-globalNav-link-icon[aria-label*="eternal-jukebox"]:hover svg,
 button.main-globalNav-link-icon[aria-label*="new-releases"]:hover svg,
@@ -2603,10 +2603,7 @@ span.UyzJidwrGk3awngSGIwv {
     color: var(--spice-subtext) !important;
 }
 
-
-
 /* upcoming song extension bloom update */
-
 
 /* .main-nowPlayingBar-container {
     overflow: visible !important;
@@ -2664,12 +2661,16 @@ div#upcomingSongDiv .main-trackInfo-artists {
 
 /* ------------------ Update 12/03/2025 ------------------------ */
 
-.global-nav .marketplace-header, .global-nav .main-trackList-trackListHeader, .global-nav .artist-artistDiscography-topBar {
+.global-nav .marketplace-header,
+.global-nav .main-trackList-trackListHeader,
+.global-nav .artist-artistDiscography-topBar {
     width: calc(100% - 0px) !important;
     margin-left: 0px !important;
 }
 
-.main-playButton-button, .main-playButton-PlayButton>button, .main-trackList-rowPlayPauseButton {
+.main-playButton-button,
+.main-playButton-PlayButton > button,
+.main-trackList-rowPlayPauseButton {
     mask-repeat: no-repeat !important;
     mask-size: 100% !important;
 }
@@ -2683,7 +2684,8 @@ div#upcomingSongDiv .main-trackInfo-artists {
     height: 296px !important;
 } */
 
-.main-nowPlayingView-creditsShowAll, .main-nowPlayingView-openQueue {
+.main-nowPlayingView-creditsShowAll,
+.main-nowPlayingView-openQueue {
     mask-repeat: no-repeat !important;
     mask-position: center !important;
 }
@@ -2706,7 +2708,8 @@ button.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-iconOnly-disabled-useBrow
     display: none !important;
 }
 
-button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBrowserDefaultFocusStyle-condensedAll svg {
+button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBrowserDefaultFocusStyle-condensedAll
+    svg {
     margin-bottom: -4px !important;
 }
 
@@ -2714,14 +2717,14 @@ button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBro
     display: none !important;
 }
 
-.main-topBar-topbarContentWrapper .main-playButton-PlayButton>button {
+.main-topBar-topbarContentWrapper .main-playButton-PlayButton > button {
     transform: scale(0.5) !important;
     margin: 0 !important;
     margin-right: -8px !important;
     margin-top: -2px !important;
 }
 
-.main-entityHeader-topbarContent.main-entityHeader-topbarContentFadeIn>* {
+.main-entityHeader-topbarContent.main-entityHeader-topbarContentFadeIn > * {
     /* font-size: 20px !important; */
     transition: all 0.2s ease;
 }
@@ -2750,7 +2753,8 @@ button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBro
     padding-top: 24px !important;
 }
 
-.main-trackList-rowImagePlayButton[aria-label*="Play"] .main-trackList-rowPlayPauseIcon {
+.main-trackList-rowImagePlayButton[aria-label*="Play"]
+    .main-trackList-rowPlayPauseIcon {
     mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg);
     -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg);
     background-color: var(--spice-text) !important;
@@ -2813,7 +2817,8 @@ button.main-globalNav-navLinkActive[aria-label*="Home"] svg {
     background-color: var(--spice-accent) !important;
 }
 
-button.main-globalNav-navLinkActive[aria-label*="Home"], .Root__globalNav .main-globalNav-link-icon.main-globalNav-navLinkActive {
+button.main-globalNav-navLinkActive[aria-label*="Home"],
+.Root__globalNav .main-globalNav-link-icon.main-globalNav-navLinkActive {
     border: 1px solid var(--spice-main-elevated) !important;
     background-color: var(--spice-card) !important;
     border-radius: var(--border-radius-2);
@@ -2840,16 +2845,18 @@ button.main-globalNav-navLink[aria-label*="Home"] svg path {
     opacity: 0 !important;
 }
 
-.B9lb86gGqGGFcSZZ95bA { /* -------------------------------------------------------------------------- Button next to 3 dots (main) on the left was hidden, so I blocked it out  */
+.B9lb86gGqGGFcSZZ95bA {
+    /* -------------------------------------------------------------------------- Button next to 3 dots (main) on the left was hidden, so I blocked it out  */
     display: none !important;
 }
 
-.CCIGxtpAreSdwWRo14FE { /* --------------------------------------------------------------------- Button before the control button on the right was hidden, so I blocked it out  */
+.CCIGxtpAreSdwWRo14FE {
+    /* --------------------------------------------------------------------- Button before the control button on the right was hidden, so I blocked it out  */
     display: none !important;
 }
 
 .main-yourLibraryX-collapseButton svg path {
-  opacity: 0 !important;
+    opacity: 0 !important;
 }
 
 .main-nowPlayingBar-container {
@@ -2859,10 +2866,11 @@ button.main-globalNav-navLink[aria-label*="Home"] svg path {
 .Root__now-playing-bar {
     box-shadow: none !important;
     background-color: transparent !important;
-    width: calc(100% - (0.6rem* 3)) !important;
+    width: calc(100% - (0.6rem * 3)) !important;
 }
 
-.main-trackList-trackListRow.main-trackList-active .main-trackList-rowTitle, .main-trackList-trackListRow.main-trackList-active .main-trackList-rowMarker {
+.main-trackList-trackListRow.main-trackList-active .main-trackList-rowTitle,
+.main-trackList-trackListRow.main-trackList-active .main-trackList-rowMarker {
     text-shadow: 0px 0px 0px var(--spice-accent) !important;
 }
 
@@ -2880,7 +2888,8 @@ span.Ps9zgW56WZaBVLo1n3cg.l67ZKWaTyRadDGEcLWcE {
     width: 16px;
 }
 
-span.e-9640-baseline.e-9640-overflow-wrap-anywhere.e-9640-button-primary__inner.encore-bright-accent-set.e-9640-button-icon-only--large svg {
+span.e-9640-baseline.e-9640-overflow-wrap-anywhere.e-9640-button-primary__inner.encore-bright-accent-set.e-9640-button-icon-only--large
+    svg {
     height: 50px !important;
     width: 50px !important;
 }
@@ -2904,4 +2913,19 @@ div#upcomingSongDiv {
 
 .main-gridContainer-gridContainer.main-shelf-shelfGrid.deJGxfMNXUc8uApEGgoQ.nrVisibleCards-20.fJTotRs7ANTq1nrBwlqA {
     grid-template-rows: repeat(4, minmax(0, 1fr)) !important;
+}
+
+.Root__main-view:has(.marketplace-header) .main-topBar-container,
+.Root__main-view:has(.lyrics-lyricsContainer-LyricsBackground)
+    .main-topBar-container {
+    opacity: 1 !important;
+}
+
+.marketplace-content {
+    margin-top: 50px !important;
+}
+
+.Root__top-container:has(.lyrics-config-button) .Root__globalNav {
+    opacity: 1 !important;
+    height: calc(48px + var(--panel-gap) * 2) !important;
 }
