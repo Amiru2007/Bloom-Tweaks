@@ -501,9 +501,9 @@ button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-
     box-shadow: 0 -15px 0 var(--spice-sidebar), 0 15px 0 var(--spice-sidebar) !important;
 }
 
-.x-downloadButton-DownloadButton {
+/* .x-downloadButton-DownloadButton {
     display: none;
-}
+} */
 
 .lPDqjZWZMsdD4yc00T2X .main-trackList-rowPlayPauseIcon {
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/icons-i-nedd-in-my-project-personal/main/facebook-f-brands-solid.svg);
@@ -2916,7 +2916,8 @@ div#upcomingSongDiv {
 }
 
 .Root__main-view:has(.marketplace-header) .main-topBar-container,
-.Root__main-view:has(.lyrics-lyricsContainer-LyricsBackground) .main-topBar-container,
+.Root__main-view:has(.lyrics-lyricsContainer-LyricsBackground)
+    .main-topBar-container,
 .Root__main-view:has(#library-app) .main-topBar-container {
     opacity: 1 !important;
 }
@@ -2930,14 +2931,22 @@ div#upcomingSongDiv {
     height: calc(48px + var(--panel-gap) * 2) !important;
 }
 
-.main-card-imageContainer>.main-card-PlayButtonContainer>.main-playButton-PlayButton>button {
+.main-card-imageContainer
+    > .main-card-PlayButtonContainer
+    > .main-playButton-PlayButton
+    > button {
     width: 40px !important;
     height: 40px !important;
 }
 
-.main-playButton-PlayButton>button[aria-label*="Pause"],
-.main-card-imageContainer>.main-card-PlayButtonContainer>.main-playButton-PlayButton>button[aria-label*="Pause"],
-.view-homeShortcutsGrid-grid .main-playButton-PlayButton button[aria-label*="Pause"] {
+.main-playButton-PlayButton > button[aria-label*="Pause"],
+.main-card-imageContainer
+    > .main-card-PlayButtonContainer
+    > .main-playButton-PlayButton
+    > button[aria-label*="Pause"],
+.view-homeShortcutsGrid-grid
+    .main-playButton-PlayButton
+    button[aria-label*="Pause"] {
     background-color: var(--spice-text) !important;
     mask-image: url(https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_pause_16_filled.svg) !important;
     -webkit-mask-image: url(https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_pause_16_filled.svg) !important;
@@ -2950,14 +2959,15 @@ div#upcomingSongDiv {
 .main-navBar-mainNav .main-playButton-PlayButton > button {
     width: 80% !important;
     height: 80% !important;
-    margin: 0 5px;
+    margin: 0 3px;
 }
 
 .ChipInnerComponent-sm {
     background: transparent !important;
 }
 
-#library-app > :first-child, #stats-app > :first-child {
+#library-app > :first-child,
+#stats-app > :first-child {
     margin-top: 32px !important;
 }
 
@@ -2970,3 +2980,11 @@ div#upcomingSongDiv {
     z-index: 2;
     background: var(--spice-main) !important;
 } */
+
+section[data-testid*="album-page"] .main-entityHeader-backgroundColor {
+    background-color: transparent !important;
+}
+
+.playlist-playlist-actionBarBackground-background {
+    opacity: 0 !important;
+}
