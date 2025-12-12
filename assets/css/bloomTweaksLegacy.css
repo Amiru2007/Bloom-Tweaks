@@ -3008,3 +3008,33 @@ section[data-testid*="album-page"] .main-entityHeader-backgroundColor {
 button.main-globalNav-link-icon[aria-label*="Your Library"] {
     order: -1 !important;
 }
+
+.main-trackCreditsModal-container,
+.main-aboutRecsModal-container,
+.main-playlistEditDetailsModal-container,
+.profile-userEditDetails-container,
+.tJeH2W2to1A7d9tWBRoi,
+.artist-artistAbout-modal,
+.XwNfIrI6_hCa_9_T2cQB,
+.main-embedWidgetGenerator-container,
+.main-trackCreditsModal-header,
+.main-confirmDialog-container {
+    background-color: var(--spice-card) !important;
+}
+
+.artist-artistAbout-close {
+    background: transparent !important;
+}
+
+.artist-artistAbout-close svg {
+    fill: var(--spice-text) !important;
+}
+
+.b_dSllo9kearPhsw_MSp {
+    padding-top: 16px !important;
+}
+
+section:has(.artist-artistAbout-scrollbars) .main-shelf-shelf,
+.main-gridContainer-gridContainer:has(.dIlzffEKwokwWI5sqYJN) {
+    margin-top: 20px !important;
+}
