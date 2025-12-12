@@ -2101,7 +2101,8 @@ button.main-globalNav-link-icon[aria-label*="Statistics"] svg path,
 button.main-globalNav-link-icon[aria-label*="name-that-tune"] path,
 button.main-globalNav-link-icon[aria-label*="Your Library"] path,
 button.main-globalNav-link-icon[aria-label*="better-local-files"] path,
-button.main-globalNav-link-icon[aria-label*="Tags"] path {
+button.main-globalNav-link-icon[aria-label*="Tags"] path,
+button.main-globalNav-link-icon[aria-label*="Made for you"] path {
     display: none !important;
 }
 
@@ -2115,7 +2116,8 @@ button.main-globalNav-link-icon[aria-label*="Statistics"]:hover svg,
 button.main-globalNav-link-icon[aria-label*="name-that-tune"]:hover svg,
 button.main-globalNav-link-icon[aria-label*="Your Library"]:hover svg,
 button.main-globalNav-link-icon[aria-label*="better-local-files"]:hover svg,
-button.main-globalNav-link-icon[aria-label*="Tags"]:hover svg {
+button.main-globalNav-link-icon[aria-label*="Tags"]:hover svg,
+button.main-globalNav-link-icon[aria-label*="Made for you"]:hover svg {
     background-color: var(--spice-text) !important;
 }
 
@@ -2260,6 +2262,19 @@ button.main-globalNav-link-icon[aria-label*="Tags"].main-globalNav-navLinkActive
     svg {
     mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_tag_24_filled.svg");
     -webkit-mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_tag_24_filled.svg");
+    background-color: var(--spice-accent) !important;
+}
+
+button.main-globalNav-link-icon[aria-label*="Made for you"] svg {
+    mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_diversity_24_regular.svg");
+    -webkit-mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_diversity_24_regular.svg");
+    background-color: var(--spice-subtext) !important;
+}
+
+button.main-globalNav-link-icon[aria-label*="Made for you"].main-globalNav-navLinkActive
+    svg {
+    mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_diversity_24_filled.svg");
+    -webkit-mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_diversity_24_filled.svg");
     background-color: var(--spice-accent) !important;
 }
 
@@ -2543,6 +2558,7 @@ span.e-9800-baseline.e-9800-overflow-wrap-anywhere.e-9800-button-primary__inner.
 .Root__globalNav .main-globalNav-navLink {
     border-radius: 8px !important;
     background: transparent !important;
+    border: 1px solid transparent !important;
 }
 
 .fYWNdY4zhj4OX_T2Xtg6 .ix_8kg3iUb9VS5SmTnBY button[aria-label*="Pause"] svg {
@@ -2987,4 +3003,8 @@ section[data-testid*="album-page"] .main-entityHeader-backgroundColor {
 
 .playlist-playlist-actionBarBackground-background {
     opacity: 0 !important;
+}
+
+button.main-globalNav-link-icon[aria-label*="Your Library"] {
+    order: -1 !important;
 }
