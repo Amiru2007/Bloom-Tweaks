@@ -4,10 +4,10 @@ button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBro
     svg
     svg {
     background: var(--spice-text) !important;
-    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/settings.svg) !important;
-    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/settings.svg) !important;
-    width: 18px;
-    height: 18px;
+    mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_settings_24_regular.svg") !important;
+    -webkit-mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_settings_24_regular.svg") !important;
+    width: 20px;
+    height: 20px;
 }
 
 button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBrowserDefaultFocusStyle-condensedAll {
@@ -1059,18 +1059,18 @@ button[aria-label*="Get Random Saved Album"]:hover svg {
 
 .main-topBar-buddyFeed[aria-label*="What's New"] svg {
     background: var(--spice-text) !important;
-    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/bell.svg) !important;
-    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/bell.svg) !important;
-    width: 18px;
-    height: 18px;
+    mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_alert_24_regular.svg") !important;
+    -webkit-mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_alert_24_regular.svg") !important;
+    width: 20px;
+    height: 20px;
 }
 
 .main-topBar-buddyFeed[aria-label*="Friend Activity"] svg {
     background: var(--spice-text) !important;
-    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/users.svg) !important;
-    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/users.svg) !important;
-    width: 18px;
-    height: 18px;
+    mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_communication_person_24_regular.svg") !important;
+    -webkit-mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_communication_person_24_regular.svg") !important;
+    width: 20px;
+    height: 20px;
 }
 
 .main-noConnection-isNotice {
@@ -2816,9 +2816,77 @@ button:has(.LyricsPageIcon) span svg {
     transition: all 0.1s ease-in-out;
 }
 
+.main-globalNav-searchInputContainer .main-topBar-searchBar,
 .main-globalNav-searchInputContainer .main-topBar-searchBar:placeholder-shown {
     background-color: var(--spice-card) !important;
     border: 1px solid color-mix(in srgb, var(--spice-light-border), black 40%) !important;
+}
+
+.x-searchInput-searchInputInput:focus,
+.main-globalNav-searchInputContainer input:focus {
+    background-color: rgba(var(--spice-rgb-card), 0.75) !important;
+    border-bottom: none !important;
+}
+
+.main-globalNav-searchInputContainer::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: transparent;
+    bottom: 0;
+    z-index: 1;
+    transition: all 0.2s ease;
+}
+
+.main-globalNav-searchInputContainer:has(input:focus)::after {
+    background: var(--spice-accent) !important;
+}
+
+.main-globalNav-searchInputContainer::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: 3px solid var(--spice-sidebar) !important;
+    background: transparent;
+    top: -3px;
+    left: -3px;
+    border-radius: 8px !important;
+    z-index: 2;
+    transition: width 0.3s ease;
+    transition-delay: 0.3s;
+    transform: rotate(180deg);
+}
+
+.main-globalNav-searchInputContainer>:last-child {
+    z-index: 3 !important;
+}
+
+.main-globalNav-searchInputContainer .M9l40ptEBXPm03dU3X1k {
+    mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_search_24_regular.svg") !important;
+    -webkit-mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_search_24_regular.svg") !important;
+    background-color: var(--spice-subtext) !important;
+    height: 24px !important;
+}
+
+.main-globalNav-searchInputContainer>:last-child button[aria-label*="Clear search field"] {
+    transform: scale(0.7);
+}
+
+.main-globalNav-searchInputContainer>:last-child button[aria-label*="Browse"] svg {
+    mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_collections_24_regular.svg");
+    -webkit-mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_collections_24_regular.svg");
+    background-color: var(--spice-subtext) !important;
+}
+
+.main-globalNav-searchInputContainer>:last-child button[aria-label*="Browse"]:hover svg {
+    background-color: var(--spice-text) !important;
+}
+
+.main-globalNav-searchInputContainer .M9l40ptEBXPm03dU3X1k path,
+.main-globalNav-searchInputContainer>:last-child button[aria-label*="Browse"] svg path {
+    display: none !important;
 }
 
 button.main-globalNav-navLink[aria-label*="Home"] svg {
