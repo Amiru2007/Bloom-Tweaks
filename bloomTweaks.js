@@ -252,6 +252,34 @@ function waitForSpicetify() {
 
     setupDynamicAmbient();
 
+    function createInvertedSpiceAccent() {
+        const root = document.documentElement;
+
+        // Read --spice-accent
+        const accent = getComputedStyle(root)
+            .getPropertyValue("--spice-accent")
+            .trim();
+
+        if (!accent) return;
+
+        // Convert color to RGB using browser
+        const temp = document.createElement("div");
+        temp.style.color = accent;
+        document.body.appendChild(temp);
+
+        const rgb = getComputedStyle(temp).color;
+        document.body.removeChild(temp);
+
+        // Extract numbers
+        const [r, g, b] = rgb.match(/\d+/g).map(Number);
+
+        // Invert
+        const inverted = `rgb(${255 - r}, ${255 - g}, ${255 - b})`;
+
+        // Set new CSS variable
+        root.style.setProperty("--spice-accent-inverted", inverted);
+    }
+
     function addControlPanelButton() {
         const prefs = loadPreferences();
 
@@ -469,7 +497,10 @@ function waitForSpicetify() {
     }
 
     function initExtension() {
-        loadCustomCSS();
+        loadCustomCSS().then(() => {
+            createInvertedSpiceAccent();
+        });
+
         updateButtonState();
         addArtistButtonClass();
     }
