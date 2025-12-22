@@ -3127,7 +3127,7 @@ section:has(.artist-artistAbout-scrollbars) .main-shelf-shelf,
 
 .main-globalNav-historyButtons
     div:has(
-        .Button-buttonTertiary-medium-iconOnly-useBrowserDefaultFocusStyle-condensed[aria-label*="Update Spicetify"]
+        button[aria-label*="Update Spicetify"]
     ) {
     width: 64px !important;
     height: auto !important;
@@ -3135,8 +3135,7 @@ section:has(.artist-artistAbout-scrollbars) .main-shelf-shelf,
     justify-content: center !important;
 }
 
-.Button-buttonTertiary-medium-iconOnly-useBrowserDefaultFocusStyle-condensed[aria-label*="Update Spicetify"]
-    svg {
+button[aria-label*="Update Spicetify"] svg {
     height: 24px !important;
     width: 24px !important;
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_arrow_download_24_filled.svg) !important;
@@ -3144,7 +3143,7 @@ section:has(.artist-artistAbout-scrollbars) .main-shelf-shelf,
     background: var(--spice-accent) !important;
 }
 
-.Button-buttonTertiary-medium-iconOnly-useBrowserDefaultFocusStyle-condensed[aria-label*="Update Spicetify"]
+button[aria-label*="Update Spicetify"]
     svg
     path {
     display: none !important;
