@@ -761,6 +761,10 @@ a[class*="topBarActive"]::before {
     border-radius: 6px !important;
 }
 
+#marketplace-config-container .settings-block div div {
+    background: var(--spice-main) !important;
+}
+
 /* .contentSpacing:not(.artist-artistDiscography-topBar, .search-searchCategory-container, .hV9v6y_uYwdAsoiOHpzk) {
     display: flex !important;
     flex-direction: column;
@@ -2861,7 +2865,7 @@ button:has(.LyricsPageIcon) span svg {
     transform: rotate(180deg);
 }
 
-.main-globalNav-searchInputContainer>:last-child {
+.main-globalNav-searchInputContainer > :last-child {
     z-index: 3 !important;
 }
 
@@ -2872,22 +2876,34 @@ button:has(.LyricsPageIcon) span svg {
     height: 24px !important;
 }
 
-.main-globalNav-searchInputContainer>:last-child button[aria-label*="Clear search field"] {
+.main-globalNav-searchInputContainer
+    > :last-child
+    button[aria-label*="Clear search field"] {
     transform: scale(0.7);
 }
 
-.main-globalNav-searchInputContainer>:last-child button[aria-label*="Browse"] svg {
+.main-globalNav-searchInputContainer
+    > :last-child
+    button[aria-label*="Browse"]
+    svg {
     mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_collections_24_regular.svg");
     -webkit-mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_collections_24_regular.svg");
     background-color: var(--spice-subtext) !important;
 }
 
-.main-globalNav-searchInputContainer>:last-child button[aria-label*="Browse"]:hover svg {
+.main-globalNav-searchInputContainer
+    > :last-child
+    button[aria-label*="Browse"]:hover
+    svg {
     background-color: var(--spice-text) !important;
 }
 
 .main-globalNav-searchInputContainer .M9l40ptEBXPm03dU3X1k path,
-.main-globalNav-searchInputContainer>:last-child button[aria-label*="Browse"] svg path {
+.main-globalNav-searchInputContainer
+    > :last-child
+    button[aria-label*="Browse"]
+    svg
+    path {
     display: none !important;
 }
 
@@ -3107,4 +3123,38 @@ button.main-globalNav-link-icon[aria-label*="Your Library"] {
 section:has(.artist-artistAbout-scrollbars) .main-shelf-shelf,
 .main-gridContainer-gridContainer:has(.dIlzffEKwokwWI5sqYJN) {
     margin-top: 20px !important;
+}
+
+.main-globalNav-historyButtons
+    div:has(
+        .Button-buttonTertiary-medium-iconOnly-useBrowserDefaultFocusStyle-condensed[aria-label*="Update Spicetify"]
+    ) {
+    width: 64px !important;
+    height: auto !important;
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.Button-buttonTertiary-medium-iconOnly-useBrowserDefaultFocusStyle-condensed[aria-label*="Update Spicetify"]
+    svg {
+    height: 24px !important;
+    width: 24px !important;
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_arrow_download_24_filled.svg) !important;
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_arrow_download_24_filled.svg) !important;
+    background: var(--spice-accent) !important;
+}
+
+.Button-buttonTertiary-medium-iconOnly-useBrowserDefaultFocusStyle-condensed[aria-label*="Update Spicetify"]
+    svg
+    path {
+    display: none !important;
+}
+
+.main-globalNav-historyButtons div::after {
+    content: "";
+    width: 1px !important;
+    height: 28px !important;
+    top: 17px !important;
+    position: absolute !important;
+    margin-right: -80px !important;
 }

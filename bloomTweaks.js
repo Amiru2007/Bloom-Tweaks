@@ -228,7 +228,7 @@ function waitForSpicetify() {
         }
 
         const Root__main = createRoot__main();
-        
+
         if (Root__main && Root__main.querySelector('.visualizer-container')) {
             Root__main.style.backgroundImage = `url(${albumCoverUrl})`;
 
@@ -246,7 +246,7 @@ function waitForSpicetify() {
 
     function createRoot__main() {
         let Root__main = document.querySelector('.Root__main-view');
-        
+
         return Root__main;
     }
 
