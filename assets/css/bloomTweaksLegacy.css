@@ -3059,9 +3059,8 @@ div#upcomingSongDiv {
 }
 
 .main-navBar-mainNav .main-playButton-PlayButton > button {
-    width: 80% !important;
-    height: 80% !important;
-    margin: 0 3px;
+    width: 32px !important;
+    height: 32px !important;
 }
 
 .ChipInnerComponent-sm {
@@ -3125,10 +3124,7 @@ section:has(.artist-artistAbout-scrollbars) .main-shelf-shelf,
     margin-top: 20px !important;
 }
 
-.main-globalNav-historyButtons
-    div:has(
-        button[aria-label*="Update Spicetify"]
-    ) {
+.main-globalNav-historyButtons div:has(button[aria-label*="Update Spicetify"]) {
     width: 64px !important;
     height: auto !important;
     display: flex !important;
@@ -3143,9 +3139,7 @@ button[aria-label*="Update Spicetify"] svg {
     background: var(--spice-accent) !important;
 }
 
-button[aria-label*="Update Spicetify"]
-    svg
-    path {
+button[aria-label*="Update Spicetify"] svg path {
     display: none !important;
 }
 
@@ -3156,4 +3150,72 @@ button[aria-label*="Update Spicetify"]
     top: 17px !important;
     position: absolute !important;
     margin-right: -80px !important;
+}
+
+aside[aria-label*="Queue"] .main-playButton-PlayButton > button {
+    width: 32px !important;
+    height: 32px !important;
+    margin: 3px;
+}
+
+.main-navBar-mainNav .main-playButton-PlayButton {
+    transition: opacity 0.5s, visibility 0.5s !important;
+    width: 48px !important;
+    height: 48px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.BZh0f1vbOmruyp4_t9wy .AIlmv6h8bR5NY5R0VceT,
+.BZh0f1vbOmruyp4_t9wy .AIlmv6h8bR5NY5R0VceT:hover {
+    background: transparent !important;
+}
+
+.BZh0f1vbOmruyp4_t9wy button[aria-label*="fullscreen library"] svg {
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_arrow_expand_24_filled.svg) !important;
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_arrow_expand_24_filled.svg) !important;
+    background: var(--text-subdued) !important;
+}
+
+.nGWhztVvLY1BInXjcWYa:hover {
+    background: transparent !important;
+}
+
+#Desktop_LeftSidebar_Id {
+    width: 320px !important;
+}
+
+.Root__cinema-view .C8eWy3XOVsVS4MoaL1mj {
+    background-color: transparent !important;
+}
+
+.Root__cinema-view .t1zLmOYnTuqrLT7AR9d6::before {
+    background: linear-gradient(
+        0deg,
+        transparent,
+        rgba(var(--spice-rgb-main), 0.01) 7%,
+        rgba(var(--spice-rgb-main), 0.04) 15%,
+        rgba(var(--spice-rgb-main), 0.09) 25%,
+        rgba(var(--spice-rgb-main), 0.16) 35%,
+        rgba(var(--spice-rgb-main), 0.26) 45%,
+        rgba(var(--spice-rgb-main), 0.38) 55%,
+        rgba(var(--spice-rgb-main), 0.51) 65%,
+        rgba(var(--spice-rgb-main), 0.64) 75%,
+        rgba(var(--spice-rgb-main), 0.75) 85%,
+        rgba(var(--spice-rgb-main), 0.85)
+    ) !important;
+}
+
+.Root__cinema-view .fOA8mVyHaHw2T808ZLpL {
+    background-image: linear-gradient(
+            180deg,
+            transparent 0,
+            rgba(var(--spice-rgb-main), 0.6) 100%
+        ),
+        var(--cinema-mode-bg-image) !important;
+}
+
+dialog::backdrop {
+    background-color: rgba(var(--spice-rgb-main), 0.2) !important;
 }
