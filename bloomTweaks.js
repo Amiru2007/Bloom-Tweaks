@@ -18,6 +18,7 @@ function waitForSpicetify() {
         floatingVolumeBar: false,
         customAppEnhancify: false,
         beautifulLyricsLegacyCinema: false,
+        LyricMiniplayerByDiego: true,
         playlistTags: false,
         spicetifyStats: false,
     };
@@ -104,6 +105,14 @@ function waitForSpicetify() {
             await loadCSSFile("beautifulLyricsLegacyCinema.css");
         } else if (!prefs.beautifulLyricsLegacyCinema && beautifulLyricsLegacyCinemaLink) {
             beautifulLyricsLegacyCinemaLink.remove();
+        }
+
+        // Load LyricMiniplayerByDiego.css (Updated name from 'LyricMiniplayerByDiego.css')
+        const LyricMiniplayerByDiegoLink = document.querySelector("link[href*='LyricMiniplayerByDiego.css']"); // Corrected here
+        if (prefs.LyricMiniplayerByDiego && !LyricMiniplayerByDiegoLink) {
+            await loadCSSFile("LyricMiniplayerByDiego.css");
+        } else if (!prefs.LyricMiniplayerByDiego && LyricMiniplayerByDiegoLink) {
+            LyricMiniplayerByDiegoLink.remove();
         }
 
         // Load playlistTags.css (Updated name from 'playlistTags.css')
@@ -406,6 +415,17 @@ function waitForSpicetify() {
                                 </label>
                             </div>
                         </div>
+                        <div class="bloom-tweaks x-settings-row">
+                            <div class="bloom-tweaks x-settings-firstColumn">
+                                <label class="bloom-tweaks encore-text encore-text-body-small encore-internal-color-text-subdued">Beautiful Lyrics old cinema lyrics page</label>
+                            </div>
+                            <div class="bloom-tweaks x-settings-secondColumn">
+                                <label class="bloom-tweaks x-toggle-wrapper">
+                                    <input id="LyricMiniplayerByDiego" type="checkbox" class="bloom-tweaks x-toggle-input" ${prefs.LyricMiniplayerByDiego ? "checked" : ""}>
+                                    <span class="bloom-tweaks x-toggle-indicatorWrapper"><span class="bloom-tweaks x-toggle-indicator"></span></span>
+                                </label>
+                            </div>
+                        </div>
                         <h3 style="padding-top: 16px;">Custom App Customizations</h3>
                         <div class="bloom-tweaks x-settings-row">
                             <div class="bloom-tweaks x-settings-firstColumn">
@@ -480,6 +500,7 @@ function waitForSpicetify() {
                             floatingVolumeBar: document.getElementById("floatingVolumeBar")?.checked || false,
                             customAppEnhancify: document.getElementById("customAppEnhancify")?.checked || false,
                             beautifulLyricsLegacyCinema: document.getElementById("beautifulLyricsLegacyCinema")?.checked || false,
+                            LyricMiniplayerByDiego: document.getElementById("LyricMiniplayerByDiego")?.checked || false,
                             playlistTags: document.getElementById("playlistTags")?.checked || false,
                             spicetifyStats: document.getElementById("spicetifyStats")?.checked || false,
                             noiseBlurBg: document.getElementById("noiseBlurBg")?.checked || false,
