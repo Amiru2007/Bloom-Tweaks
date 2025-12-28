@@ -1,10 +1,15 @@
-// Original creator and the repository - https://github.com/FO-SS/Spictify-Lyric-Miniplayer
+// Original Creator and the repo - https://github.com/FO-SS/Spictify-Lyric-Miniplayer
+
+// Lyric Miniplayer - Spicetify Extension
+// Creates a floating Picture-in-Picture lyrics window that stays on top of all apps
 
 (async function LyricsOverlay() {
+    // Wait for Spicetify to be fully loaded
     while (!Spicetify?.Player?.data || !Spicetify?.Platform || !Spicetify?.CosmosAsync) {
         await new Promise(resolve => setTimeout(resolve, 100));
     }
 
+    // ==================== CONFIG ====================
     const CONFIG = {
         pipWidth: 400,
         pipHeight: 500,
@@ -14,6 +19,7 @@
         minFontSize: 12,
     };
 
+    // ==================== STATE ====================
     let pipWindow = null;
     let currentLyrics = null;
     let currentTrackUri = null;
@@ -35,10 +41,464 @@
         if (savedShowLyrics !== null) showLyrics = savedShowLyrics === 'true';
     } catch (e) {}
 
+    // ==================== STYLES FOR PIP WINDOW ====================
     const PIP_STYLES = `
-        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap');
+        :root {
+            --text: #ffffff;
+            --subtext: #909090;
+            --alt-text: #000000;
+            --main: #121212;
+            --sidebar: #191919;
+            --player: #262626;
+            --player-border: #3c3c3c;
+            --player-bar-shadow: #080808;
+            --player-bar-bg: #333333;
+            --card: #1c1c1c;
+            --shadow: #ffffff;
+            --selected-row: #373737;
+            --button: #00ffa1;
+            --button-active: #00ffa1;
+            --button-disabled: #313131;
+            --tab-active: #1c1c1c;
+            --notification: #42a0fe;
+            --notification-error: #ff99a4;
+            --notif-bubble-info: #182b3f;
+            --notif-bubble-error: #442726;
+            --misc: #909090;
+            --not-selected: #bbbbbb;
+            --accent: #00ffa1;
+            --layer-shadow: #000000;
+            --contour: #3c3c3c;
+            --dark-border: #171717;
+            --light-border: #3a3a3a;
+            --text-subdued: #909090b3;
+        }
+
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI Variable Display", "Segoe UI Variable Text", "Segoe UI", "Microsoft Ya Hei", sans-serif !important; 
+        }
+
+        html, body {
+            height: 100%;
+            overflow: hidden;
+        }
+
+        body {
+            background: linear-gradient(160deg, #0a0a0a 0%, #1a1a2e 40%, #0f0f23 100%);
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header - Draggable */
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 14px 16px;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            flex-shrink: 0;
+            cursor: grab;
+            user-select: none;
+            -webkit-app-region: drag;
+            app-region: drag;
+        }
+
+        .header:active {
+            cursor: grabbing;
+        }
+
+        .album-art {
+            width: 48px;
+            height: 48px;
+            border-radius: 8px;
+            object-fit: cover;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+            flex-shrink: 0;
+            -webkit-app-region: no-drag;
+            app-region: no-drag;
+        }
+
+        .track-info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .track-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: #fff;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-bottom: 2px;
+        }
+
+        .track-artist {
+            font-size: 12px;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.55);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        /* Menu Button */
+        .menu-btn {
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+            padding: 8px 6px;
+            cursor: pointer;
+            opacity: 0.4;
+            transition: opacity 0.15s;
+            -webkit-app-region: no-drag;
+            app-region: no-drag;
+            background: none;
+            border: none;
+        }
+
+        .menu-btn:hover {
+            opacity: 0.8;
+        }
+
+        .menu-row {
+            display: flex;
+            gap: 3px;
+        }
+
+        .menu-dot {
+            width: 3px;
+            height: 3px;
+            background: #fff;
+            border-radius: 50%;
+        }
+
+        /* Settings Menu */
+        .settings-menu {
+            position: absolute;
+            top: 70px;
+            right: 12px;
+            background: rgba(30, 30, 40, 0.98);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 8px 0;
+            min-width: 160px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            display: none;
+            -webkit-app-region: no-drag;
+            app-region: no-drag;
+        }
+
+        .settings-menu.open {
+            display: block;
+            animation: menuFade 0.15s ease;
+        }
+
+        @keyframes menuFade {
+            from { opacity: 0; transform: translateY(-8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .menu-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 14px;
+            cursor: pointer;
+            transition: background 0.1s;
+        }
+
+        .menu-item:hover {
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .menu-item-label {
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.85);
+        }
+
+        .menu-toggle {
+            width: 36px;
+            height: 20px;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 10px;
+            position: relative;
+            transition: background 0.2s;
+        }
+
+        .menu-toggle.on {
+            background: #1ed760;
+        }
+
+        .menu-toggle::after {
+            content: '';
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            width: 16px;
+            height: 16px;
+            background: #fff;
+            border-radius: 50%;
+            transition: transform 0.2s;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+        }
+
+        .menu-toggle.on::after {
+            transform: translateX(16px);
+        }
+
+        .menu-divider {
+            height: 1px;
+            background: rgba(255, 255, 255, 0.08);
+            margin: 6px 0;
+        }
+
+        /* Controls */
+        .controls {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.35);
+            flex-shrink: 0;
+            -webkit-app-region: no-drag;
+            app-region: no-drag;
+        }
+
+        .ctrl-btn {
+            background: rgba(255, 255, 255, 0.08);
+            border: none;
+            color: #fff;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.15s ease;
+        }
+
+        .ctrl-btn:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: scale(1.05);
+        }
+
+        .ctrl-btn:active {
+            transform: scale(0.95);
+        }
+
+        .ctrl-btn svg {
+            width: 16px;
+            height: 16px;
+            fill: currentColor;
+        }
+
+        .ctrl-btn.play-btn {
+            width: 46px;
+            height: 46px;
+            background: #1ed760;
+            color: #000;
+        }
+
+        .ctrl-btn.play-btn:hover {
+            background: #1fdf64;
+            transform: scale(1.06);
+        }
+
+        .ctrl-btn.play-btn svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        /* Lyrics Container */
+        .lyrics-wrap {
+            flex: 1 1 auto;
+            overflow-y: auto;
+            overflow-x: hidden;
+            padding: 20px 16px;
+            scroll-behavior: smooth;
+            -webkit-app-region: no-drag;
+            app-region: no-drag;
+            min-height: 0;
+        }
+
+        .lyrics-wrap.collapsed {
+            display: none;
+        }
+
+        .lyrics-wrap::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        .lyrics-wrap::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .lyrics-wrap::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.12);
+            border-radius: 2px;
+        }
+
+        .lyric {
+            padding: 8px 0;
+            opacity: 0.3;
+            transition: all 0.2s ease;
+            cursor: pointer;
+            line-height: 1.4;
+            transform-origin: left center;
+        }
+
+        .lyric:hover {
+            opacity: 0.5;
+        }
+
+        .lyric.active {
+            opacity: 1;
+            color: #1ed760;
+            font-weight: 500;
+            transform: scale(1.02);
+            text-shadow: 0 0 20px rgba(30, 215, 96, 0.3);
+        }
+
+        .lyric.past {
+            opacity: 0.4;
+        }
+
+
+        /* No Lyrics / Loading */
+        .status-msg {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            text-align: center;
+            padding: 20px;
+            opacity: 0.6;
+        }
+
+        .status-msg .icon {
+            font-size: 40px;
+            margin-bottom: 12px;
+        }
+
+        .status-msg .text {
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .status-msg .subtext {
+            font-size: 12px;
+            opacity: 0.6;
+            margin-top: 4px;
+        }
+
+        .spinner {
+            width: 32px;
+            height: 32px;
+            border: 3px solid rgba(255, 255, 255, 0.1);
+            border-top-color: #1ed760;
+            border-radius: 50%;
+            animation: spin 0.7s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Footer */
+        .footer {
+            background: rgba(0, 0, 0, 0.45);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            flex-shrink: 0;
+            padding: 10px 14px;
+            -webkit-app-region: no-drag;
+            app-region: no-drag;
+        }
+
+        .footer:empty {
+            display: none;
+        }
+
+        .footer-row {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.2s ease;
+        }
+
+        .footer-row.collapsed {
+            display: none;
+        }
+
+        .footer-row + .footer-row:not(.collapsed) {
+            margin-top: 8px;
+            padding-top: 8px;
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .control-label {
+            font-size: 10px;
+            color: rgba(255, 255, 255, 0.4);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            min-width: 28px;
+        }
+
+        .slider {
+            -webkit-appearance: none;
+            flex: 1;
+            height: 3px;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 2px;
+            outline: none;
+        }
+
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 12px;
+            height: 12px;
+            background: #1ed760;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: transform 0.1s;
+        }
+
+        .slider::-webkit-slider-thumb:hover {
+            transform: scale(1.2);
+        }
+
+        .volume-icon {
+            width: 16px;
+            height: 16px;
+            fill: rgba(255, 255, 255, 0.5);
+            flex-shrink: 0;
+            cursor: pointer;
+            transition: fill 0.15s;
+        }
+
+        .volume-icon:hover {
+            fill: #fff;
+        }
+
+        .value-display {
+            font-size: 11px;
+            color: rgba(255, 255, 255, 0.5);
+            min-width: 28px;
+            text-align: right;
+        }
     `;
 
+    // ==================== LYRICS FETCHING ====================
     async function fetchLyrics(trackUri) {
         try {
             const trackId = trackUri.split(':').pop();
@@ -59,6 +519,7 @@
                 }
             } catch (e) {}
 
+            // Method 2: Platform Lyrics API
             if (Spicetify.Platform?.Lyrics) {
                 try {
                     const lyrics = await Spicetify.Platform.Lyrics.getLyrics(trackUri);
@@ -74,6 +535,7 @@
                 } catch (e) {}
             }
 
+            // Method 3: Legacy endpoint
             try {
                 const altResponse = await Spicetify.CosmosAsync.get(
                     `wg://lyrics/v1/track/${trackId}?format=json&market=from_token`
@@ -96,13 +558,16 @@
         }
     }
 
+    // ==================== PIP WINDOW CREATION ====================
     async function openPictureInPicture() {
+        // Close existing PiP window if open
         if (pipWindow && !pipWindow.closed) {
             pipWindow.close();
             pipWindow = null;
             return;
         }
 
+        // Check for Document Picture-in-Picture API (Chrome 116+)
         if ('documentPictureInPicture' in window) {
             try {
                 pipWindow = await window.documentPictureInPicture.requestWindow({
@@ -117,6 +582,7 @@
             }
         }
 
+        // Fallback: Regular popup window
         try {
             const left = window.screen.width - CONFIG.pipWidth - 30;
             const top = 30;
@@ -166,7 +632,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>♫ Lyrics</title>
-    <link rel="stylesheet" href="styles.css">
     <style>${PIP_STYLES}</style>
 </head>
 <body>
@@ -245,6 +710,7 @@
 </html>`);
         doc.close();
 
+        // Get elements
         const menuBtn = doc.getElementById('menuBtn');
         const settingsMenu = doc.getElementById('settingsMenu');
         const prevBtn = doc.getElementById('prevBtn');
@@ -302,10 +768,12 @@
             localStorage.setItem('lyrics-overlay-showvol', showVolumeSlider);
         };
 
+        // Control handlers
         prevBtn.onclick = () => Spicetify.Player.back();
         playBtn.onclick = () => Spicetify.Player.togglePlay();
         nextBtn.onclick = () => Spicetify.Player.next();
 
+        // Font size handler
         fontSlider.oninput = (e) => {
             fontSize = parseInt(e.target.value);
             fontValue.textContent = `${fontSize}px`;
@@ -313,6 +781,7 @@
             updatePipFontSize();
         };
 
+        // Volume handlers
         volumeSlider.oninput = (e) => {
             const vol = parseInt(e.target.value);
             Spicetify.Player.setVolume(vol / 100);
@@ -320,6 +789,7 @@
             volumeIconWrap.innerHTML = getVolumeIconSvg(vol);
         };
 
+        // Click volume icon to mute/unmute
         volumeIconWrap.onclick = () => {
             const currentVol = Math.round((Spicetify.Player.getVolume() || 0) * 100);
             if (currentVol > 0) {
@@ -337,6 +807,7 @@
             }
         };
 
+        // Lyrics click to seek
         lyricsContainer.onclick = (e) => {
             if (e.target.classList.contains('lyric')) {
                 const time = e.target.dataset.time;
@@ -344,14 +815,17 @@
             }
         };
 
+        // Handle window close
         win.addEventListener('pagehide', () => {
             pipWindow = null;
         });
 
+        // Initial update
         updatePipContent();
         startUpdateLoop();
     }
 
+    // ==================== PIP CONTENT UPDATES ====================
     function updatePipContent() {
         if (!pipWindow || pipWindow.closed) return;
 
@@ -362,6 +836,7 @@
 
         const track = data.item;
 
+        // Update track info
         const titleEl = doc.getElementById('trackTitle');
         const artistEl = doc.getElementById('trackArtist');
         const albumArtEl = doc.getElementById('albumArt');
@@ -373,10 +848,13 @@
             albumArtEl.src = imgUrl;
         }
 
+        // Update play button
         updatePipPlayButton();
 
+        // Update volume
         updatePipVolume();
 
+        // Check if track changed
         if (track.uri !== currentTrackUri) {
             currentTrackUri = track.uri;
             loadLyrics(track.uri);
@@ -405,6 +883,7 @@
         
         if (!volumeSlider || !volumePercent || !volumeIconWrap) return;
 
+        // Only update if slider is not being dragged
         if (doc.activeElement !== volumeSlider) {
             const vol = Math.round((Spicetify.Player.getVolume() || 0) * 100);
             volumeSlider.value = vol;
@@ -419,8 +898,10 @@
         const container = pipWindow.document.getElementById('lyricsContainer');
         if (!container) return;
 
+        // Show loading
         container.innerHTML = '<div class="status-msg"><div class="spinner"></div></div>';
 
+        // Fetch lyrics
         currentLyrics = await fetchLyrics(uri);
 
         if (!currentLyrics || !currentLyrics.lines?.length) {
@@ -434,6 +915,7 @@
             return;
         }
 
+        // Render lyrics
         const lyricsHtml = currentLyrics.lines
             .filter(line => line.text && line.text.trim())
             .map((line, idx) => 
@@ -454,6 +936,7 @@
         const doc = pipWindow.document;
         const currentTime = Spicetify.Player.getProgress();
         
+        // Find active line
         let activeIdx = -1;
         const filteredLines = currentLyrics.lines.filter(l => l.text && l.text.trim());
         
@@ -464,6 +947,7 @@
             }
         }
 
+        // Update classes
         const lyrics = doc.querySelectorAll('.lyric');
         lyrics.forEach((el, idx) => {
             el.classList.remove('active', 'past');
@@ -501,12 +985,14 @@
         }, CONFIG.updateInterval);
     }
 
+    // ==================== UTILITIES ====================
     function escapeHtml(text) {
         const div = document.createElement('div');
         div.textContent = text;
         return div.innerHTML;
     }
 
+    // ==================== TOPBAR BUTTON ====================
     function createButton() {
         if (Spicetify.Topbar?.Button) {
             new Spicetify.Topbar.Button(
@@ -520,6 +1006,7 @@
             );
         }
 
+        // Keyboard shortcut: Ctrl+Shift+L
         document.addEventListener('keydown', (e) => {
             if ((e.ctrlKey || e.metaKey) && e.shiftKey && e.key.toLowerCase() === 'l') {
                 e.preventDefault();
@@ -528,6 +1015,7 @@
         });
     }
 
+    // ==================== EVENT LISTENERS ====================
     Spicetify.Player.addEventListener('songchange', () => {
         updatePipContent();
     });
@@ -536,6 +1024,7 @@
         updatePipPlayButton();
     });
 
+    // ==================== INIT ====================
     createButton();
     
     console.log('[Lyric Miniplayer] Ready! Click the button or press Ctrl+Shift+L');
