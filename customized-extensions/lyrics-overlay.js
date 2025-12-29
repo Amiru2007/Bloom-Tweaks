@@ -72,23 +72,28 @@
             --dark-border: #171717;
             --light-border: #3a3a3a;
             --text-subdued: #909090b3;
+            --range: #444444;
         }
 
-        *, *::before, *::after {
+        *,
+        *::before,
+        *::after {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: "Segoe UI Variable Display", "Segoe UI Variable Text", "Segoe UI", "Microsoft Ya Hei", sans-serif !important; 
+            font-family: "Segoe UI Variable Display", "Segoe UI Variable Text",
+                "Segoe UI", "Microsoft Ya Hei", sans-serif !important;
         }
 
-        html, body {
+        html,
+        body {
             height: 100%;
             overflow: hidden;
         }
 
         body {
-            background: linear-gradient(160deg, #0a0a0a 0%, #1a1a2e 40%, #0f0f23 100%);
-            color: #ffffff;
+            background: var(--main);
+            color: var(--text);
             display: flex;
             flex-direction: column;
         }
@@ -99,7 +104,7 @@
             align-items: center;
             gap: 12px;
             padding: 14px 16px;
-            background: rgba(0, 0, 0, 0.5);
+            /* background: rgba(0, 0, 0, 0.5); */
             backdrop-filter: blur(10px);
             border-bottom: 1px solid rgba(255, 255, 255, 0.06);
             flex-shrink: 0;
@@ -202,8 +207,14 @@
         }
 
         @keyframes menuFade {
-            from { opacity: 0; transform: translateY(-8px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(-8px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .menu-item {
@@ -238,7 +249,7 @@
         }
 
         .menu-toggle::after {
-            content: '';
+            content: "";
             position: absolute;
             top: 2px;
             left: 2px;
@@ -271,6 +282,16 @@
             flex-shrink: 0;
             -webkit-app-region: no-drag;
             app-region: no-drag;
+            order: 2;
+            width: calc(100% - 16px);
+            border: 1px solid var(--dark-border);
+            border-radius: 8px;
+            backdrop-filter: blur(10px);
+            position: absolute;
+            bottom: 82px;
+            left: 8px;
+            height: 54px;
+            z-index: 2;
         }
 
         .ctrl-btn {
@@ -285,6 +306,9 @@
             align-items: center;
             justify-content: center;
             transition: all 0.15s ease;
+            mask-repeat: no-repeat !important;
+            mask-size: 64% !important;
+            mask-position: center !important;
         }
 
         .ctrl-btn:hover {
@@ -297,20 +321,37 @@
         }
 
         .ctrl-btn svg {
-            width: 16px;
-            height: 16px;
+            width: 24px !important;
+            height: 24px !important;
             fill: currentColor;
+            background: var(--text);
+        }
+
+        .ctrl-btn svg path {
+            display: none;
         }
 
         .ctrl-btn.play-btn {
-            width: 46px;
-            height: 46px;
+            /* width: 46px;
+            height: 46px; */
             background: #1ed760;
             color: #000;
+            mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_pause_16_filled.svg) !important;
+            -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_pause_16_filled.svg) !important;
+        }
+
+        button#prevBtn {
+            mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_previous_24_filled.svg);
+            -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_previous_24_filled.svg);
+        }
+
+        button#nextBtn {
+            mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_next_24_filled.svg);
+            -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_next_24_filled.svg);
         }
 
         .ctrl-btn.play-btn:hover {
-            background: #1fdf64;
+            background: transparent !important;
             transform: scale(1.06);
         }
 
@@ -355,6 +396,7 @@
             cursor: pointer;
             line-height: 1.4;
             transform-origin: left center;
+            font-weight: 500;
         }
 
         .lyric:hover {
@@ -363,16 +405,14 @@
 
         .lyric.active {
             opacity: 1;
-            color: #1ed760;
-            font-weight: 500;
+            color: var(--text);
             transform: scale(1.02);
-            text-shadow: 0 0 20px rgba(30, 215, 96, 0.3);
+            text-shadow: 0 0 20px rgba(225, 225, 225, 0.3);
         }
 
         .lyric.past {
             opacity: 0.4;
         }
-
 
         /* No Lyrics / Loading */
         .status-msg {
@@ -412,7 +452,9 @@
         }
 
         @keyframes spin {
-            to { transform: rotate(360deg); }
+            to {
+                transform: rotate(360deg);
+            }
         }
 
         /* Footer */
@@ -423,6 +465,7 @@
             padding: 10px 14px;
             -webkit-app-region: no-drag;
             app-region: no-drag;
+            order: 3;
         }
 
         .footer:empty {
@@ -458,7 +501,7 @@
             -webkit-appearance: none;
             flex: 1;
             height: 3px;
-            background: rgba(255, 255, 255, 0.15);
+            background: var(--range);
             border-radius: 2px;
             outline: none;
         }
