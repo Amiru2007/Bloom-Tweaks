@@ -1,3 +1,7 @@
+*{
+    --spice-text: #2f3035 !important;
+  }
+
 .Button-sc-y0gtbx-0 {
     background: rgba(var(--spice-rgb-alt-text), 1) !important;
     border: 1px solid var(--spice-contour) !important;
@@ -52,9 +56,9 @@ aside[aria-label*="Now playing view"] #context-menu button.Button-sc-1dqy6lx-0.B
     color: var(--spice-alt-text) !important;
 }
 
-.Root__right-sidebar:has(.main-nowPlayingView-section, canvas) .main-nowPlayingView-section {
+/* .Root__right-sidebar:has(.main-nowPlayingView-section, canvas) .main-nowPlayingView-section {
     background: rgba(var(--spice-rgb-alt-text), 0.5) !important;
-}
+} */
 
 #BeautifulLyrics-CardView {
     background-color: rgba(var(--spice-rgb-alt-text), 0.1) !important;
@@ -99,4 +103,37 @@ button.main-globalNav-link-icon[aria-label*="Home"],
 .artist-artistOnTour-info p,
 .artist-artistOnTour-info span {
     color: var(--spice-not-selected) !important;
+}
+
+.main-entityHeader-overlay {
+    backdrop-filter: brightness(2) !important;
+}
+
+.BfALkuQy0UjTI70U9QlQ {
+    background: rgba(var(--spice-rgb-shadow), .5) !important;
+}
+
+aside .spicy-dynamic-bg {
+    filter: brightness(1.25) saturate(2.65) !important;
+}
+
+.Root__right-sidebar .Box-group-listRow-isInteractive-hasLeadingOrMedia-minBlockSize_56px-padding_8px {
+    --box-hover-background-color: var(--spice-light-border) !important;
+}
+
+.StyledTabItem-tab-tabItem-useBrowserDefaultFocusStyle:hover {
+    background-color: transparent !important;
+}
+
+.main-globalNav-searchInputContainer .main-topBar-searchBar, .main-globalNav-searchInputContainer .main-topBar-searchBar:placeholder-shown {
+    border: 1px solid 
+color-mix(in srgb, var(--spice-light-border), black 2%) !important;
+}
+
+.GimJ6fo6WOYPyWNVpSr1 div:nth-child(1) {
+    background: var(--spice-sidebar) !important;
+}
+
+.e-91000-box--hover-custom.e-91000-box--interactive:hover:after {
+    background-color: var(--spice-card) !important;
 }
