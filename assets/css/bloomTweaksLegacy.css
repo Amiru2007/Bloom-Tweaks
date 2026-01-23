@@ -2798,7 +2798,7 @@ button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBro
     filter: invert(1) !important;
 }
 
-button.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-iconOnly-useBrowserDefaultFocusStyle.e-91000-overflow-wrap-anywhere.e-91000-button-tertiary--icon-only.main-genericButton-button.main-nowPlayingBar-lyricsButton {
+button.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-iconOnly-useBrowserDefaultFocusStyle.e-91000-overflow-wrap-anywhere.e-91000-button-tertiary--icon-only.main-genericButton-button.main-nowPlayingBar-lyricsButton[aria-label*="Lyrics"] {
     display: none !important;
 }
 
