@@ -17,6 +17,10 @@
     fill: var(--spice-text) !important;
 }
 
+.stats-title {
+    font-size: 1.5rem !important;
+}
+
 .stats-title,
 .top-list-title,
 .activity-title,
@@ -32,6 +36,7 @@
 
 .overview-card.hero {
     background: var(--spice-text) !important;
+    border: 1px var(--spice-text) solid !important;
 }
 
 .item-row:hover {
@@ -41,4 +46,22 @@
 .overview-stat-label {
     opacity: 0.7 !important;
     font-weight: 600 !important;
+}
+
+.stats-announcement {
+    display: none !important;
+}
+
+.period-tab.active {
+    background: var(--spice-main-elevated) !important;
+    color: var(--spice-text) !important;
+    font-weight: 500;
+}
+
+.period-tabs {
+    background: rgba(var(--spice-rgb-main, 0, 0, 0), 0.05) !important;
+}
+
+.overview-secondary {
+    border-top: 1px solid transparent !important;
 }
