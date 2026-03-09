@@ -1,0 +1,38 @@
+.overview-card,
+.top-list,
+.activity-section,
+.recent-section {
+    background: var(--spice-card) !important;
+    border: 1px var(--spice-contour) solid !important;
+    border-radius: 8px !important;
+}
+
+.top-list-title span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-list-title span svg {
+    fill: var(--spice-text) !important;
+}
+
+.top-list-title,
+.activity-title,
+.recent-title,
+.item-name,
+.recent-name {
+    color: var(--spice-text) !important;
+}
+
+.section-drag-handle:hover {
+    background: transparent !important;
+}
+
+.overview-card.hero {
+    background: var(--spice-text) !important;
+}
+
+.item-row:hover {
+    background: rgba(var(--spice-rgb-selected-row), 0.2) !important;
+}

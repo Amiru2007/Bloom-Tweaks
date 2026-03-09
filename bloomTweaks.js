@@ -17,6 +17,7 @@ function waitForSpicetify() {
         friendsActivityBar: false,
         floatingVolumeBar: false,
         customAppEnhancify: false,
+        listeningStats: false,
         beautifulLyricsLegacyCinema: false,
         playlistTags: false,
         spicetifyStats: false,
@@ -96,6 +97,14 @@ function waitForSpicetify() {
             await loadCSSFile("customAppEnhancify.css");
         } else if (!prefs.customAppEnhancify && customAppEnhancifyLink) {
             customAppEnhancifyLink.remove();
+        }
+
+        // Load listeningStats.css (Updated name from 'listeningStats.css')
+        const listeningStatsLink = document.querySelector("link[href*='listeningStats.css']"); // Corrected here
+        if (prefs.listeningStats && !listeningStatsLink) {
+            await loadCSSFile("listeningStats.css");
+        } else if (!prefs.listeningStats && listeningStatsLink) {
+            listeningStatsLink.remove();
         }
 
         // Load beautifulLyricsLegacyCinema.css (Updated name from 'beautifulLyricsLegacyCinema.css')
@@ -451,6 +460,17 @@ function waitForSpicetify() {
                                 </label>
                             </div>
                         </div>
+                        <div class="bloom-tweaks x-settings-row">
+                            <div class="bloom-tweaks x-settings-firstColumn">
+                                <label class="bloom-tweaks encore-text encore-text-body-small encore-internal-color-text-subdued">Listening Stats Custom App Page</label>
+                            </div>
+                            <div class="bloom-tweaks x-settings-secondColumn">
+                                <label class="bloom-tweaks x-toggle-wrapper">
+                                    <input id="listeningStats" type="checkbox" class="bloom-tweaks x-toggle-input" ${prefs.listeningStats ? "checked" : ""}>
+                                    <span class="bloom-tweaks x-toggle-indicatorWrapper"><span class="bloom-tweaks x-toggle-indicator"></span></span>
+                                </label>
+                            </div>
+                        </div>
                         <div class="bloom-tweaks save-btn-container">
                             <button id="saveSettingsButton" class="bloom-tweaks-popup-btn save-button">
                                 Save
@@ -479,6 +499,7 @@ function waitForSpicetify() {
                             friendsActivityBar: document.getElementById("friendsActivityBar")?.checked || false,
                             floatingVolumeBar: document.getElementById("floatingVolumeBar")?.checked || false,
                             customAppEnhancify: document.getElementById("customAppEnhancify")?.checked || false,
+                            listeningStats: document.getElementById("listeningStats")?.checked || false,
                             beautifulLyricsLegacyCinema: document.getElementById("beautifulLyricsLegacyCinema")?.checked || false,
                             playlistTags: document.getElementById("playlistTags")?.checked || false,
                             spicetifyStats: document.getElementById("spicetifyStats")?.checked || false,
