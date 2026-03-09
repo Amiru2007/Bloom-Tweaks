@@ -2106,7 +2106,8 @@ button.main-globalNav-link-icon[aria-label*="name-that-tune"] path,
 button.main-globalNav-link-icon[aria-label*="Your Library"] path,
 button.main-globalNav-link-icon[aria-label*="better-local-files"] path,
 button.main-globalNav-link-icon[aria-label*="Tags"] path,
-button.main-globalNav-link-icon[aria-label*="Made for you"] path {
+button.main-globalNav-link-icon[aria-label*="Made for you"] path,
+button.main-globalNav-link-icon[aria-label*="Listening Stats"] path {
     display: none !important;
 }
 
@@ -2121,7 +2122,8 @@ button.main-globalNav-link-icon[aria-label*="name-that-tune"]:hover svg,
 button.main-globalNav-link-icon[aria-label*="Your Library"]:hover svg,
 button.main-globalNav-link-icon[aria-label*="better-local-files"]:hover svg,
 button.main-globalNav-link-icon[aria-label*="Tags"]:hover svg,
-button.main-globalNav-link-icon[aria-label*="Made for you"]:hover svg {
+button.main-globalNav-link-icon[aria-label*="Made for you"]:hover svg,
+button.main-globalNav-link-icon[aria-label*="Listening Stats"]:hover svg {
     background-color: var(--spice-text) !important;
 }
 
