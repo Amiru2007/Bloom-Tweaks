@@ -17,6 +17,7 @@
     fill: var(--spice-text) !important;
 }
 
+.stats-title,
 .top-list-title,
 .activity-title,
 .recent-title,
@@ -35,4 +36,9 @@
 
 .item-row:hover {
     background: rgba(var(--spice-rgb-selected-row), 0.2) !important;
+}
+
+.overview-stat-label {
+    opacity: 0.7 !important;
+    font-weight: 600 !important;
 }
