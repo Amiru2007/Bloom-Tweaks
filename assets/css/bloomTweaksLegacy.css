@@ -3238,3 +3238,11 @@ dialog::backdrop {
 .VOGWdrCvz59_A_wAZv58 {
     margin: 16px 0 !important;
 }
+
+html .WDC2Yzs811n7JCYtYQzc {
+    transition: all 0.3s ease;
+}
+
+.Vn9yz8P5MjIvDT8c0U6w:hover img.main-image-image.WDC2Yzs811n7JCYtYQzc.main-image-loaded {
+    transform: rotate(25deg) translate(18%, -2%) scale(1.2) !important;
+}

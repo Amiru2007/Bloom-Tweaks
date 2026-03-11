@@ -127,11 +127,11 @@ button.cRB7yMdTUrWxDud8Uqvi.play {
     color: var(--spice-subtext) !important;
 }
 
-aside#Desktop_PanelContainer_Id figure.main-avatar-avatar,
+/* aside#Desktop_PanelContainer_Id figure.main-avatar-avatar,
 aside#Desktop_PanelContainer_Id figure.main-avatar-avatar div {
     width: 24px !important;
     height: 24px !important;
-}
+} */
 
 .gtJcoAXGeGQ9ochIvg6h div div button[aria-label*="Play"] {
     position: absolute !important;
@@ -143,4 +143,13 @@ aside#Desktop_PanelContainer_Id figure.main-avatar-avatar div {
     z-index: 2;
     background: transparent !important;
     cursor: pointer !important;
+}
+
+/* aside#Desktop_PanelContainer_Id .xU4sacBisQneHoQeHMP5 {
+    display: flex;
+    align-items: center;
+} */
+
+aside#Desktop_PanelContainer_Id .jr794VV4i2iUBRhfvS5i span {
+    margin: 0 2px;
 }
