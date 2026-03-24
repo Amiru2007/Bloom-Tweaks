@@ -1095,11 +1095,11 @@ button.main-actionButtons-button.main-topBarStatusIndicator-hasTooltip.main-noCo
 
 .link-subtle.main-topBar-topbarContentRight::after {
     content: "";
-    width: 134px;
-    height: 32px;
+    width: 135px;
+    height: 64px;
     position: absolute;
     background: #353535;
-    right: -7px;
+    right: 0px;
 }
 
 button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-condensed-disabled-isUsingKeyboard-useBrowserDefaultFocusStyle.main-globalNav-icon.play
@@ -3245,4 +3245,48 @@ html .WDC2Yzs811n7JCYtYQzc {
 
 .Vn9yz8P5MjIvDT8c0U6w:hover img.main-image-image.WDC2Yzs811n7JCYtYQzc.main-image-loaded {
     transform: rotate(25deg) translate(18%, -2%) scale(1.2) !important;
+}
+
+
+
+
+.e-91000-box.e-91000-baseline.e-91000-box--elevated.e-91000-box--browser-default-focus.encore-light-theme.encore-layout-themes.CGvXvS7oksVDyPuwPFCI.encore-light-theme.encore-layout-themes.CGvXvS7oksVDyPuwPFCI {
+    background: var(--spice-sidebar) !important;
+    border: 1px solid var(--spice-card) !important;
+}
+
+.main-entityHeader-backgroundColor {
+    background-image: linear-gradient(0deg, var(--spice-main), transparent) !important;
+}
+
+.main-actionBar-ActionBar button, .main-actionBar-ActionBar button:hover {
+    transform: scale(0.8);
+}
+
+.IEulmRakQT_FgH43ov2a {
+    display: none !important;
+}
+
+.main-globalNav-searchInputContainer .main-topBar-searchBar, .main-globalNav-searchInputContainer .main-topBar-searchBar:placeholder-shown {
+    width: 100% !important;
+    padding-left: 50px !important;
+}
+
+.E5B9sQzoDPDXBM6wP8A1 {
+    margin-right: 5px !important;
+}
+
+.main-watchFeed-modal {
+    background-color: rgb(5 5 5 / 90%) !important;
+}
+
+.main-watchFeed-imageWrapper:after {
+    box-shadow: 0 4px min(3vw, 3vh, 60px) rgb(22 22 22 / 50%) !important;
+}
+
+button.main-actionBar-exploreButton svg.e-91000-icon.e-91000-baseline {
+    mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg) !important;
+    -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg) !important;
+    transition: transform 0.3s ease;
+    background: var(--spice-text) !important;
 }
