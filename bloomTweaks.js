@@ -293,7 +293,7 @@ function waitForSpicetify() {
         const prefs = loadPreferences();
 
         const tryAddButton = setInterval(() => {
-            const actionButtons = document.querySelector(".LedDBMWCxYhMD20KtPJo.main-actionButtons");
+            const actionButtons = document.querySelector(".main-actionButtons");
 
             if (actionButtons) {
                 clearInterval(tryAddButton);
