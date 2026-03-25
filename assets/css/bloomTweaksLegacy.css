@@ -474,7 +474,7 @@ button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-
 }
 
 .main-trackList-rowImagePlayButton[aria-label*="Play"]
-    .main-trackList-rowPlayPauseIcon {
+    svg {
     mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg);
     -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg);
     background-color: var(--spice-text) !important;
@@ -482,7 +482,7 @@ button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-
 }
 
 .main-trackList-rowImagePlayButton[aria-label*="Pause"]
-    .main-trackList-rowPlayPauseIcon {
+    svg {
     mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_pause_16_filled.svg);
     -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_pause_16_filled.svg);
     background-color: var(--spice-text) !important;
@@ -3289,4 +3289,31 @@ button.main-actionBar-exploreButton svg.e-91000-icon.e-91000-baseline {
     -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg) !important;
     transition: transform 0.3s ease;
     background: var(--spice-text) !important;
+}
+
+/* resolve to date 3/25/2026 */
+
+img.X_HqPouENflGygaUXNus {
+    filter: brightness(10);
+}
+
+.main-trackList-trackListRow.dAFQydUa_3YLPaMsqWAv .eYJgrgW01l7dHKuMJidG {
+    color: var(--spice-text) !important;
+    text-shadow: 0 0 1px var(--spice-accent);
+}
+
+.main-actionBar-ActionBar .main-playButton-PlayButton>button {
+    transform: scale(1.2) !important;
+}
+
+.playlist-playlist-searchBoxContainer button, .playlist-playlist-searchBoxContainer button:hover {
+    transform: scale(1) !important;
+}
+
+.main-userWidget-box {
+    background-color: transparent !important;
+}
+
+.HqnBIbdgZkWQHFxrJC6y {
+    background-color: #00000065 !important;
 }
