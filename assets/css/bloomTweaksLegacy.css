@@ -479,6 +479,9 @@ button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-
     -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg);
     background-color: var(--spice-text) !important;
     transition: transform 0.3s ease;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: 16px;
 }
 
 .main-trackList-rowImagePlayButton[aria-label*="Pause"]
@@ -735,6 +738,7 @@ a[class*="topBarActive"]::before {
 
 .main-topBar-background {
     background-color: var(--spice-main) !important;
+    border-bottom: none !important;
 }
 
 .marketplace-card-type-heading {
@@ -1196,6 +1200,7 @@ span.ListRowDetails__LineClamp-sc-sozu4l-1.LineClamp a,
     background-color: var(--spice-subtext);
     margin-left: 0px !important;
     /* margin-right: 9px !important; */
+    mask-size: 16px !important;
 }
 
 .main-yourLibraryX-button[aria-label="Create playlist or folder"] svg {
@@ -1624,6 +1629,7 @@ button#sleep-timer-start.btn-primary::before {
     width: calc(100% - 20px) !important;
     margin-left: 10px !important;
     margin-top: 0px !important;
+    border-radius: 8px;
 }
 
 .app-module__stretch-container___SIzsh_betterDlocalDfiles.undefined
@@ -2617,6 +2623,7 @@ span.e-9800-baseline.e-9800-overflow-wrap-anywhere.e-9800-button-primary__inner.
     svg {
     background: var(--spice-subtext) !important;
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/icons-i-nedd-in-my-project-personal/refs/heads/main/ic_fluent_caret_down_24_filled.svg);
+    mask-size: 16px !important;
 }
 
 span.e-9800-text.encore-text-body-small.encore-internal-color-text-subdued.ArQQy9kpoXLmafHpoi6u.twKbCm9ojEsawfh4KCY8 {
@@ -2809,8 +2816,18 @@ button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBro
 .x-explicit-label {
     background-color: var(--spice-accent-inverted) !important;
     border-radius: 4px !important;
-    color: var(--spice-text) !important;
+    color: var(--spice-alt-text) !important;
+    font-weight: 500;
     filter: invert(1) !important;
+    background: var(--spice-accent) !important;
+}
+
+.x-explicit-label::after {
+    content: '';
+    backdrop-filter: invert(1) !important;
+    height: 16px;
+    width: 15px;
+    position: absolute;
 }
 
 button.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-iconOnly-useBrowserDefaultFocusStyle.e-91000-overflow-wrap-anywhere.e-91000-button-tertiary--icon-only.main-genericButton-button.main-nowPlayingBar-lyricsButton[aria-label*="Lyrics"] {
@@ -3076,6 +3093,7 @@ div#upcomingSongDiv {
 .main-navBar-mainNav .main-playButton-PlayButton > button {
     width: 32px !important;
     height: 32px !important;
+    margin-top: 18px !important;
 }
 
 .ChipInnerComponent-sm {
@@ -3255,10 +3273,6 @@ html .WDC2Yzs811n7JCYtYQzc {
     border: 1px solid var(--spice-card) !important;
 }
 
-.main-entityHeader-backgroundColor {
-    background-image: linear-gradient(0deg, var(--spice-main), transparent) !important;
-}
-
 .main-actionBar-ActionBar button, .main-actionBar-ActionBar button:hover {
     transform: scale(0.8);
 }
@@ -3316,4 +3330,66 @@ img.X_HqPouENflGygaUXNus {
 
 .HqnBIbdgZkWQHFxrJC6y {
     background-color: #00000065 !important;
+}
+
+.x-searchInput-searchInputSearchIcon {
+    mask-repeat: no-repeat !important;
+    transform: scale(1.5) !important;
+    margin-left: 16px !important;
+}
+
+.main-globalNav-searchInputContainer .main-topBar-searchBar::placeholder {
+    color: var(--spice-subtext) !important;
+}
+
+.main-entityHeader-container.main-entityHeader-withBackgroundImage {
+    background-image: linear-gradient(0deg, var(--spice-main), transparent) !important;
+}
+
+.main-entityHeader-metaDataText {
+    color: var(--spice-subtext) !important;
+}
+
+section[data-testid*="playlist-page"] .main-entityHeader-backgroundColor,
+section[data-testid*="album-page"] .main-entityHeader-backgroundColor {
+    background-image: linear-gradient(0deg, var(--spice-main), transparent) !important;
+}
+
+.main-yourLibraryX-collapseButton svg {
+    mask-size: 16px !important;
+}
+
+.main-yourLibraryX-headerContent.main-yourLibraryX-headerIsCollapsed
+button[aria-label*="Open Your Library"] svg {
+    mask-size: 24px !important;
+}
+
+.x-filterBox-searchIcon {
+    display: block;
+    fill: var(--text-subdued) !important;
+}
+
+.main-yourLibraryX-entryPoints {
+    max-width: 320px !important;
+}
+
+.playlist-playlist-searchBoxContainer button {
+    color: var(--spice-subtext) !important;
+}
+
+.x-filterBox-filterInput {
+    color: var(--spice-subtext) !important;
+}
+
+.x-filterBox-filterInput::placeholder {
+    color: var(--text-subdued) !important;
+}
+
+.playback-progressbar-isInteractive .progress-bar .x-progressBar-fillColor {
+    visibility: visible;
+    background-color: var(--is-active-fg-color) !important;
+}
+
+#SpicyLyrics_FullscreenButton svg {
+    fill: var(--spice-subtext) !important;
 }
