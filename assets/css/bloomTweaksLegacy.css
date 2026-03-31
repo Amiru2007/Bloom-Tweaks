@@ -473,8 +473,7 @@ button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-
     transition: transform 0.3s ease;
 }
 
-.main-trackList-rowImagePlayButton[aria-label*="Play"]
-    svg {
+.main-trackList-rowImagePlayButton[aria-label*="Play"] svg {
     mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg);
     -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg);
     background-color: var(--spice-text) !important;
@@ -484,8 +483,7 @@ button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-
     mask-size: 16px;
 }
 
-.main-trackList-rowImagePlayButton[aria-label*="Pause"]
-    svg {
+.main-trackList-rowImagePlayButton[aria-label*="Pause"] svg {
     mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_pause_16_filled.svg);
     -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_pause_16_filled.svg);
     background-color: var(--spice-text) !important;
@@ -501,7 +499,9 @@ button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-
 }
 
 .Root__main-view::before {
-    box-shadow: 0 -15px 0 var(--spice-sidebar), 0 15px 0 var(--spice-sidebar) !important;
+    box-shadow:
+        0 -15px 0 var(--spice-sidebar),
+        0 15px 0 var(--spice-sidebar) !important;
 }
 
 /* .x-downloadButton-DownloadButton {
@@ -1250,7 +1250,9 @@ span.ListRowDetails__LineClamp-sc-sozu4l-1.LineClamp a,
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    transition: height 0.3s, transform 0.3s ease;
+    transition:
+        height 0.3s,
+        transform 0.3s ease;
     z-index: 1000;
     /* Ensure it's above other content */
 }
@@ -1264,7 +1266,9 @@ span.ListRowDetails__LineClamp-sc-sozu4l-1.LineClamp a,
     height: 24px !important;
     background: var(--spice-accent);
     border-radius: 9999px;
-    transition: transform 0.3s ease-in-out, height 0.3s ease-in-out;
+    transition:
+        transform 0.3s ease-in-out,
+        height 0.3s ease-in-out;
 }
 
 .main-yourLibraryX-entryPoints #spicetify-show-list,
@@ -1951,16 +1955,13 @@ button.main-repeatButton-button.main-repeatButton-active svg {
     background: none !important;
 }
 
-a.muHL0_3HjlqTZDoapgc9[href*="https://en.wikipedia.org/"] 
-    svg {
+a.muHL0_3HjlqTZDoapgc9[href*="https://en.wikipedia.org/"] svg {
     background: var(--background-elevated-highlight) !important;
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/wikipedia-w-brands-solid.svg) !important;
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/wikipedia-w-brands-solid.svg) !important;
 }
 
-a.muHL0_3HjlqTZDoapgc9[href*="https://en.wikipedia.org/"] 
-    svg 
-        path {
+a.muHL0_3HjlqTZDoapgc9[href*="https://en.wikipedia.org/"] svg path {
     opacity: 0 !important;
 }
 
@@ -2379,7 +2380,8 @@ button.main-globalNav-link-icon[aria-label*="Statistics"] svg {
 /* ----------------------------------------------------------------- New NPV Page ------------------------------------------------------------------------- */
 
 .XWJtATtk3_2VpHc4YOaI {
-    background-image: -webkit-gradient(
+    background-image:
+        -webkit-gradient(
             linear,
             left top,
             left bottom,
@@ -2387,7 +2389,8 @@ button.main-globalNav-link-icon[aria-label*="Statistics"] svg {
             to(rgba(var(--spice-rgb-main), 0.6))
         ),
         var(--cinema-mode-bg-image) !important;
-    background-image: linear-gradient(
+    background-image:
+        linear-gradient(
             180deg,
             transparent 0,
             rgba(var(--spice-rgb-main), 0.6) 100%
@@ -2823,7 +2826,7 @@ button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBro
 }
 
 .x-explicit-label::after {
-    content: '';
+    content: "";
     backdrop-filter: invert(1) !important;
     height: 16px;
     width: 15px;
@@ -3192,7 +3195,9 @@ aside[aria-label*="Queue"] .main-playButton-PlayButton > button {
 }
 
 .main-navBar-mainNav .main-playButton-PlayButton {
-    transition: opacity 0.5s, visibility 0.5s !important;
+    transition:
+        opacity 0.5s,
+        visibility 0.5s !important;
     width: 48px !important;
     height: 48px !important;
     display: flex !important;
@@ -3241,7 +3246,8 @@ aside[aria-label*="Queue"] .main-playButton-PlayButton > button {
 }
 
 .Root__cinema-view .fOA8mVyHaHw2T808ZLpL {
-    background-image: linear-gradient(
+    background-image:
+        linear-gradient(
             180deg,
             transparent 0,
             rgba(var(--spice-rgb-main), 0.6) 100%
@@ -3261,19 +3267,18 @@ html .WDC2Yzs811n7JCYtYQzc {
     transition: all 0.3s ease;
 }
 
-.Vn9yz8P5MjIvDT8c0U6w:hover img.main-image-image.WDC2Yzs811n7JCYtYQzc.main-image-loaded {
+.Vn9yz8P5MjIvDT8c0U6w:hover
+    img.main-image-image.WDC2Yzs811n7JCYtYQzc.main-image-loaded {
     transform: rotate(25deg) translate(18%, -2%) scale(1.2) !important;
 }
-
-
-
 
 .e-91000-box.e-91000-baseline.e-91000-box--elevated.e-91000-box--browser-default-focus.encore-light-theme.encore-layout-themes.CGvXvS7oksVDyPuwPFCI.encore-light-theme.encore-layout-themes.CGvXvS7oksVDyPuwPFCI {
     background: var(--spice-sidebar) !important;
     border: 1px solid var(--spice-card) !important;
 }
 
-.main-actionBar-ActionBar button, .main-actionBar-ActionBar button:hover {
+.main-actionBar-ActionBar button,
+.main-actionBar-ActionBar button:hover {
     transform: scale(0.8);
 }
 
@@ -3281,7 +3286,8 @@ html .WDC2Yzs811n7JCYtYQzc {
     display: none !important;
 }
 
-.main-globalNav-searchInputContainer .main-topBar-searchBar, .main-globalNav-searchInputContainer .main-topBar-searchBar:placeholder-shown {
+.main-globalNav-searchInputContainer .main-topBar-searchBar,
+.main-globalNav-searchInputContainer .main-topBar-searchBar:placeholder-shown {
     width: 100% !important;
     padding-left: 50px !important;
 }
@@ -3316,11 +3322,12 @@ img.X_HqPouENflGygaUXNus {
     text-shadow: 0 0 1px var(--spice-accent);
 }
 
-.main-actionBar-ActionBar .main-playButton-PlayButton>button {
+.main-actionBar-ActionBar .main-playButton-PlayButton > button {
     transform: scale(1.2) !important;
 }
 
-.playlist-playlist-searchBoxContainer button, .playlist-playlist-searchBoxContainer button:hover {
+.playlist-playlist-searchBoxContainer button,
+.playlist-playlist-searchBoxContainer button:hover {
     transform: scale(1) !important;
 }
 
@@ -3343,7 +3350,11 @@ img.X_HqPouENflGygaUXNus {
 }
 
 .main-entityHeader-container.main-entityHeader-withBackgroundImage {
-    background-image: linear-gradient(0deg, var(--spice-main), transparent) !important;
+    background-image: linear-gradient(
+        0deg,
+        var(--spice-main),
+        transparent
+    ) !important;
 }
 
 .main-entityHeader-metaDataText {
@@ -3352,7 +3363,11 @@ img.X_HqPouENflGygaUXNus {
 
 section[data-testid*="playlist-page"] .main-entityHeader-backgroundColor,
 section[data-testid*="album-page"] .main-entityHeader-backgroundColor {
-    background-image: linear-gradient(0deg, var(--spice-main), transparent) !important;
+    background-image: linear-gradient(
+        0deg,
+        var(--spice-main),
+        transparent
+    ) !important;
 }
 
 .main-yourLibraryX-collapseButton svg {
@@ -3360,7 +3375,8 @@ section[data-testid*="album-page"] .main-entityHeader-backgroundColor {
 }
 
 .main-yourLibraryX-headerContent.main-yourLibraryX-headerIsCollapsed
-button[aria-label*="Open Your Library"] svg {
+    button[aria-label*="Open Your Library"]
+    svg {
     mask-size: 24px !important;
 }
 
@@ -3398,7 +3414,8 @@ button[aria-label*="Open Your Library"] svg {
     background: #1111118e !important;
 }
 
-.cover-art .cover-art-image, .main-coverSlotCollapsed-container {
+.cover-art .cover-art-image,
+.main-coverSlotCollapsed-container {
     height: 105px !important;
     width: 180px !important;
 }
