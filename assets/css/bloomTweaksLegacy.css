@@ -2760,14 +2760,14 @@ button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBro
 }
 
 .main-topBar-topbarContentWrapper .main-playButton-PlayButton > button {
-    transform: scale(0.5) !important;
+    transform: scale(0.4) !important;
     margin: 0 !important;
-    margin-right: -8px !important;
+    margin-right: -14px !important;
     margin-top: -2px !important;
 }
 
 .main-entityHeader-topbarContent.main-entityHeader-topbarContentFadeIn > * {
-    /* font-size: 20px !important; */
+    font-size: 16px !important;
     transition: all 0.2s ease;
 }
 
@@ -3392,4 +3392,13 @@ button[aria-label*="Open Your Library"] svg {
 
 #SpicyLyrics_FullscreenButton svg {
     fill: var(--spice-subtext) !important;
+}
+
+.FBKzymbuP_e_Zuo9l4yg .T1_DYMv96F0Gk2a5Yr1K {
+    background: #1111118e !important;
+}
+
+.cover-art .cover-art-image, .main-coverSlotCollapsed-container {
+    height: 105px !important;
+    width: 180px !important;
 }
