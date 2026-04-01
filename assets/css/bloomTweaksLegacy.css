@@ -3423,3 +3423,7 @@ section[data-testid*="album-page"] .main-entityHeader-backgroundColor {
 button.nprd-refresh {
     display: none;
 }
+
+aside.main-nowPlayingBar-container {
+    border-left: 2px var(--cover-ambience-color) solid;
+}
