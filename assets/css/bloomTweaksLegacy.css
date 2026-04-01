@@ -3414,8 +3414,12 @@ section[data-testid*="album-page"] .main-entityHeader-backgroundColor {
     background: #1111118e !important;
 }
 
-.cover-art .cover-art-image,
+/* .cover-art .cover-art-image,
 .main-coverSlotCollapsed-container {
     height: 105px !important;
     width: 180px !important;
+} */
+
+button.nprd-refresh {
+    display: none;
 }
