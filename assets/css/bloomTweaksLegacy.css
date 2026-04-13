@@ -3462,12 +3462,15 @@ aside.main-nowPlayingBar-container {
     filter: invert(1) !important;
 }
 
-.main-trackList-trackListRow.dAFQydUa_3YLPaMsqWAv .main-trackList-rowMarker, .main-trackList-trackListRow.dAFQydUa_3YLPaMsqWAv .main-trackList-rowMainContentTitle {
+.main-trackList-trackListRow.dAFQydUa_3YLPaMsqWAv .main-trackList-rowMarker,
+.main-trackList-trackListRow.dAFQydUa_3YLPaMsqWAv
+    .main-trackList-rowMainContentTitle {
     color: var(--spice-text);
     text-shadow: 0 0 var(--spice-accent);
 }
 
-button.main-useDropTarget-base[aria-label="Create"], button.l5V7KOO1aHJ4R7jYTQuV[aria-label="Create"] {
+button.main-useDropTarget-base[aria-label="Create"],
+button.l5V7KOO1aHJ4R7jYTQuV[aria-label="Create"] {
     border-radius: 8px !important;
     display: flex;
     align-items: center;
@@ -3488,7 +3491,7 @@ button.main-useDropTarget-base[aria-label="Create"], button.l5V7KOO1aHJ4R7jYTQuV
 }
 
 .marketplace-header::before {
-    content: '';
+    content: "";
     width: 100%;
     height: 25px;
     background: var(--spice-main);
