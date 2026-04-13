@@ -3040,9 +3040,9 @@ span.e-9640-baseline.e-9640-overflow-wrap-anywhere.e-9640-button-primary__inner.
     background: transparent !important;
 }
 
-span.e-91000-text.encore-text-body-medium.main-trackList-number {
+/* span.e-91000-text.encore-text-body-medium.main-trackList-number {
     top: auto !important;
-}
+} */
 
 div#upcomingSongDiv {
     transform: translateY(886px) !important;
@@ -3426,4 +3426,76 @@ button.nprd-refresh {
 
 aside.main-nowPlayingBar-container {
     border-left: 2px var(--cover-ambience-color) solid;
+}
+
+.main-trackList-trackList.main-trackList-indexable {
+    padding: 0 8px 8px 8px !important;
+}
+
+.main-trackList-trackListRow.main-trackList-trackListRowGrid {
+    border-radius: 8px !important;
+}
+
+.playlist-playlist-sectionGrid .main-trackList-trackList {
+    padding: 8px !important;
+}
+
+.wuQsKLTukGW5aeEAHxiu {
+    gap: 16px;
+}
+
+/* .GQ7pYEaYc5RtbYCo3ndP {
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(2.09%, transparent), color-stop(16.28%, rgba(var(--spice-rgb-shadow), .1)), color-stop(36.5%, rgba(var(--spice-rgb-shadow), .4)), color-stop(53.25%, rgba(var(--spice-rgb-shadow), .6)));
+    background: linear-gradient(0deg, transparent 2.09%, rgba(var(--spice-rgb-shadow), .1) 16.28%, rgba(var(--spice-rgb-shadow), .4) 36.5%, rgba(var(--spice-rgb-shadow), .6) 53.25%);
+    height: 50%;
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+} */
+
+.GQ7pYEaYc5RtbYCo3ndP,
+.K3Z6DlJaJf57rAiW0kNF {
+    filter: invert(1) !important;
+}
+
+.main-trackList-trackListRow.dAFQydUa_3YLPaMsqWAv .main-trackList-rowMarker, .main-trackList-trackListRow.dAFQydUa_3YLPaMsqWAv .main-trackList-rowMainContentTitle {
+    color: var(--spice-text);
+    text-shadow: 0 0 var(--spice-accent);
+}
+
+button.main-useDropTarget-base[aria-label="Create"], button.l5V7KOO1aHJ4R7jYTQuV[aria-label="Create"] {
+    border-radius: 8px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid color-mix(in srgb, var(--spice-light-border), black 36%) !important;
+}
+
+.main-view-container {
+    padding-bottom: 100px !important;
+}
+
+/* .main-shelf-shelf {
+    overflow: visible !important;
+} */
+
+.Sq2ZlLQM6q75ALS7Xctj .main-shelf-shelfGrid {
+    margin-inline: 0 !important;
+}
+
+.marketplace-header::before {
+    content: '';
+    width: 100%;
+    height: 25px;
+    background: var(--spice-main);
+    position: absolute;
+    transform: translateY(-40px);
+}
+
+.main-topBar-topbarContentWrapper {
+    transform: translateY(-4px);
 }
