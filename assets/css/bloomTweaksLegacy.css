@@ -11,9 +11,9 @@ button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBro
 }
 
 button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBrowserDefaultFocusStyle-condensedAll {
-    width: 30px;
+    /* width: 30px;
     height: 30px;
-    margin-top: 10px;
+    margin-top: 10px; */
     background: transparent;
     border: 1px solid transparent;
     order: -1;
