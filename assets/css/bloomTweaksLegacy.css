@@ -11,11 +11,15 @@ button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBro
 }
 
 button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBrowserDefaultFocusStyle-condensedAll {
-    width: 28px;
-    height: 28px;
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
     background: transparent;
     border: 1px solid transparent;
     order: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .main-trackCreditsModal-mainSection {
@@ -984,6 +988,7 @@ button.main-topBar-button,
 
 .main-topBar-buddyFeed svg {
     z-index: 5;
+    transform: scale(0.9);
 }
 
 /* button.main-topBar-button.play[aria-label*="playlist-stats"] {
@@ -2756,6 +2761,10 @@ button.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-iconOnly-disabled-useBrow
 button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBrowserDefaultFocusStyle-condensedAll
     svg {
     margin-bottom: -4px !important;
+    width: 24px !important;
+    height: 24px !important;
+    display: flex !important;
+    transform: scale(0.9) !important;
 }
 
 .main-genericButton-button.main-genericButton-buttonActive[data-testid*="lyrics-button"] {
@@ -3501,4 +3510,8 @@ button.l5V7KOO1aHJ4R7jYTQuV[aria-label="Create"] {
 
 .main-topBar-topbarContentWrapper {
     transform: translateY(-4px);
+}
+
+.main-globalNav-contentRightSpacer {
+    display: none !important;
 }
