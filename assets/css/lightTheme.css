@@ -155,3 +155,7 @@ section[data-testid*="playlist-page"] .main-entityHeader-backgroundColor, sectio
 .main-entityHeader-contentWrapper.contentSpacing {
     z-index: 2 !important;
 }
+
+section[data-testid*="playlist-page"] .main-entityHeader-backgroundColor::after, section[data-testid*="album-page"] .main-entityHeader-backgroundColor::after {
+    background: transparent !important;
+}
