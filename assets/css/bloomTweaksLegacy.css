@@ -2043,10 +2043,9 @@ div[aria-describedby*="device-picker-troubleshooting-list"] {
 
 /*---------------------------------------------------------- Episodes----------------------------------------------------------- */
 
-.main-contextMenu-menu,
-.main-contextMenu-tippy,
-.main-devicePicker-tooltip {
-    background-color: rgb(28 28 28) !important;
+.main-contextMenu-menu, .main-contextMenu-tippy, .main-devicePicker-tooltip {
+    border-radius: 8px !important;
+    box-shadow: 0 0 10px rgb(var(--spice-rgb-text), 0.04) !important;
 }
 
 /*---------------------------------------------------------- Main Playlist Page ----------------------------------------------------------- */
@@ -3370,13 +3369,11 @@ img.X_HqPouENflGygaUXNus {
     color: var(--spice-subtext) !important;
 }
 
-section[data-testid*="playlist-page"] .main-entityHeader-backgroundColor,
-section[data-testid*="album-page"] .main-entityHeader-backgroundColor {
-    background-image: linear-gradient(
-        0deg,
-        var(--spice-main),
-        transparent
-    ) !important;
+
+
+section[data-testid*="playlist-page"] .main-entityHeader-backgroundColor, section[data-testid*="album-page"] .main-entityHeader-backgroundColor {
+    /* background-image: linear-gradient(0deg, var(--spice-main), transparent) !important; */
+    filter: brightness(1);
 }
 
 .main-yourLibraryX-collapseButton svg {
@@ -3514,4 +3511,12 @@ button.l5V7KOO1aHJ4R7jYTQuV[aria-label="Create"] {
 
 .main-globalNav-contentRightSpacer {
     display: none !important;
+}
+
+section[data-testid*="playlist-page"] .main-entityHeader-backgroundColor::after, section[data-testid*="album-page"] .main-entityHeader-backgroundColor::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, var(--spice-main), transparent) !important;
 }

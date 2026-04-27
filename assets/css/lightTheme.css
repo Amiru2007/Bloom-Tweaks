@@ -137,3 +137,21 @@ color-mix(in srgb, var(--spice-light-border), black 2%) !important;
 .e-91000-box--hover-custom.e-91000-box--interactive:hover:after {
     background-color: var(--spice-card) !important;
 }
+
+section[data-testid*="playlist-page"] .main-entityHeader-backgroundColor, section[data-testid*="album-page"] .main-entityHeader-backgroundColor {
+    background-image: linear-gradient(0deg, rgb(var(--spice-rgb-main), 0.7), transparent);
+    filter: brightness(2) !important;
+}
+
+.playlist-playlist-playlistContent::before {
+    content: '';
+    width: calc(100% + 100px);
+    height: 300px;
+    position: absolute;
+    box-shadow: 0 -100px 109px var(--spice-main);
+    margin-left: -50px;
+}
+
+.main-entityHeader-contentWrapper.contentSpacing {
+    z-index: 2 !important;
+}
