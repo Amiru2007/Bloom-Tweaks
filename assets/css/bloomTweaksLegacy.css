@@ -329,6 +329,9 @@ button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly
     svg,
 .main-yourLibraryX-listItem
     button.Button-sc-1dqy6lx-0.Button-buttonTertiary-textBase-medium-medium-iconOnly-useBrowserDefaultFocusStyle[aria-label*="Play"]
+    svg,
+#search-dropdown
+    .Button-buttonTertiary-textBase-medium-iconOnly-useBrowserDefaultFocusStyle[aria-label*="Play"]
     svg {
     mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg) !important;
     -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg) !important;
@@ -356,6 +359,9 @@ button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly
     svg,
 .main-yourLibraryX-listItem
     button.Button-sc-1dqy6lx-0.Button-buttonTertiary-textBase-medium-medium-iconOnly-useBrowserDefaultFocusStyle[aria-label*="Pause"]
+    svg,
+#search-dropdown
+    .Button-buttonTertiary-textBase-medium-iconOnly-useBrowserDefaultFocusStyle[aria-label*="Pause"]
     svg {
     mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_pause_16_filled.svg) !important;
     -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_pause_16_filled.svg) !important;
@@ -2043,7 +2049,9 @@ div[aria-describedby*="device-picker-troubleshooting-list"] {
 
 /*---------------------------------------------------------- Episodes----------------------------------------------------------- */
 
-.main-contextMenu-menu, .main-contextMenu-tippy, .main-devicePicker-tooltip {
+.main-contextMenu-menu,
+.main-contextMenu-tippy,
+.main-devicePicker-tooltip {
     border-radius: 8px !important;
     box-shadow: 0 0 10px rgb(var(--spice-rgb-text), 0.04) !important;
 }
@@ -3369,9 +3377,8 @@ img.X_HqPouENflGygaUXNus {
     color: var(--spice-subtext) !important;
 }
 
-
-
-section[data-testid*="playlist-page"] .main-entityHeader-backgroundColor, section[data-testid*="album-page"] .main-entityHeader-backgroundColor {
+section[data-testid*="playlist-page"] .main-entityHeader-backgroundColor,
+section[data-testid*="album-page"] .main-entityHeader-backgroundColor {
     /* background-image: linear-gradient(0deg, var(--spice-main), transparent) !important; */
     filter: brightness(1);
 }
@@ -3513,10 +3520,15 @@ button.l5V7KOO1aHJ4R7jYTQuV[aria-label="Create"] {
     display: none !important;
 }
 
-section[data-testid*="playlist-page"] .main-entityHeader-backgroundColor::after, section[data-testid*="album-page"] .main-entityHeader-backgroundColor::after {
-    content: '';
+section[data-testid*="playlist-page"] .main-entityHeader-backgroundColor::after,
+section[data-testid*="album-page"] .main-entityHeader-backgroundColor::after {
+    content: "";
     position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(0deg, var(--spice-main), transparent) !important;
+    background: linear-gradient(
+        0deg,
+        var(--spice-main),
+        transparent
+    ) !important;
 }

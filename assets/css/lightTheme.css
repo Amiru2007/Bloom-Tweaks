@@ -159,3 +159,17 @@ section[data-testid*="playlist-page"] .main-entityHeader-backgroundColor, sectio
 section[data-testid*="playlist-page"] .main-entityHeader-backgroundColor::after, section[data-testid*="album-page"] .main-entityHeader-backgroundColor::after {
     background: transparent !important;
 }
+
+img.X_HqPouENflGygaUXNus {
+    filter: brightness(0) !important;
+}
+
+.znOINyqAy7ivIGbQyrbt.main-actionBar-ActionBarContainer {
+    background: var(--spice-main) !important;
+    border: 1px solid var
+(--spice-light-border) !important;
+}
+
+.main-globalNav-searchInputKBDWrapper {
+    filter: invert(1) !important;
+}
