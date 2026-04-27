@@ -1,6 +1,6 @@
-*{
+* {
     --spice-text: #2f3035 !important;
-  }
+}
 
 .Button-sc-y0gtbx-0 {
     background: rgba(var(--spice-rgb-alt-text), 1) !important;
@@ -11,7 +11,10 @@
     background: var(--spice-main) !important;
 }
 
-.main-card-PlayButtonContainer .Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only[aria-label*="Play"] .IconWrapper__Wrapper-sc-1hf1hjl-0 .Svg-sc-ytk21e-0 {
+.main-card-PlayButtonContainer
+    .Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only[aria-label*="Play"]
+    .IconWrapper__Wrapper-sc-1hf1hjl-0
+    .Svg-sc-ytk21e-0 {
     background: var(--spice-alt-text) !important;
 }
 
@@ -19,7 +22,8 @@
     border-radius: var(--border-radius-2) !important;
 }
 
-.LegacyChip__LegacyChipComponent-sc-tzfq94-0:hover>.ChipInnerComponent-sm-selected.ChipInnerComponent-sm-selected {
+.LegacyChip__LegacyChipComponent-sc-tzfq94-0:hover
+    > .ChipInnerComponent-sm-selected.ChipInnerComponent-sm-selected {
     background-color: var(--spice-highlight-elevated) !important;
 }
 
@@ -31,12 +35,21 @@ button.Button-sc-1dqy6lx-0.Button-buttonTertiary-textBase-medium-medium-useBrows
     background: var(--spice-not-selected) !important;
 }
 
-aside[aria-label*="Now playing view"] h1.encore-text.encore-text-body-medium-bold.encore-internal-color-text-base,
-aside[aria-label*="Now playing view"] .main-trackInfo-contentContainer .main-trackInfo-contentWrapper span a,
+aside[aria-label*="Now playing view"]
+    h1.encore-text.encore-text-body-medium-bold.encore-internal-color-text-base,
+aside[aria-label*="Now playing view"]
+    .main-trackInfo-contentContainer
+    .main-trackInfo-contentWrapper
+    span
+    a,
 aside[aria-label*="Now playing view"] .main-nowPlayingView-sectionHeaderText,
 aside[aria-label*="Now playing view"] span,
-aside[aria-label*="Now playing view"] .artist-artistOnTour-date.artist-artistOnTour-elevated h5,
-aside[aria-label*="Now playing view"] .artist-artistOnTour-date.artist-artistOnTour-elevated h1,
+aside[aria-label*="Now playing view"]
+    .artist-artistOnTour-date.artist-artistOnTour-elevated
+    h5,
+aside[aria-label*="Now playing view"]
+    .artist-artistOnTour-date.artist-artistOnTour-elevated
+    h1,
 aside[aria-label*="Now playing view"] .artist-artistOnTour-info h3 {
     color: var(--spice-alt-text) !important;
 }
@@ -45,12 +58,18 @@ aside[aria-label*="Now playing view"] span:has(svg) {
     color: var(--spice-text) !important;
 }
 
-aside[aria-label*="Now playing view"] p[data-encore-id*="listRowSubtitle"] span span a,
+aside[aria-label*="Now playing view"]
+    p[data-encore-id*="listRowSubtitle"]
+    span
+    span
+    a,
 aside[aria-label*="Now playing view"] span[data-testid*="artist-row-role"] {
     color: var(--spice-not-selected) !important;
 }
 
-aside[aria-label*="Now playing view"] #context-menu button.Button-sc-1dqy6lx-0.Button-buttonTertiary-textSubdued-small-small-useBrowserDefaultFocusStyle-condensed,
+aside[aria-label*="Now playing view"]
+    #context-menu
+    button.Button-sc-1dqy6lx-0.Button-buttonTertiary-textSubdued-small-small-useBrowserDefaultFocusStyle-condensed,
 .main-dropDown-dropDown,
 .ShowLyrics {
     color: var(--spice-alt-text) !important;
@@ -76,7 +95,8 @@ span.encore-text.encore-text-body-small.main-nowPlayingView-aboutArtistV2Bio {
     color: var(--spice-layer-shadow);
 }
 
-.main-nowPlayingView-section.main-nowPlayingView-aboutArtistV2 .main-nowPlayingView-sectionHeaderText {
+.main-nowPlayingView-section.main-nowPlayingView-aboutArtistV2
+    .main-nowPlayingView-sectionHeaderText {
     color: var(--spice-alt-text);
 }
 
@@ -110,14 +130,15 @@ button.main-globalNav-link-icon[aria-label*="Home"],
 }
 
 .BfALkuQy0UjTI70U9QlQ {
-    background: rgba(var(--spice-rgb-shadow), .5) !important;
+    background: rgba(var(--spice-rgb-shadow), 0.5) !important;
 }
 
 aside .spicy-dynamic-bg {
     filter: brightness(1.25) saturate(2.65) !important;
 }
 
-.Root__right-sidebar .Box-group-listRow-isInteractive-hasLeadingOrMedia-minBlockSize_56px-padding_8px {
+.Root__right-sidebar
+    .Box-group-listRow-isInteractive-hasLeadingOrMedia-minBlockSize_56px-padding_8px {
     --box-hover-background-color: var(--spice-light-border) !important;
 }
 
@@ -125,9 +146,9 @@ aside .spicy-dynamic-bg {
     background-color: transparent !important;
 }
 
-.main-globalNav-searchInputContainer .main-topBar-searchBar, .main-globalNav-searchInputContainer .main-topBar-searchBar:placeholder-shown {
-    border: 1px solid 
-color-mix(in srgb, var(--spice-light-border), black 2%) !important;
+.main-globalNav-searchInputContainer .main-topBar-searchBar,
+.main-globalNav-searchInputContainer .main-topBar-searchBar:placeholder-shown {
+    border: 1px solid color-mix(in srgb, var(--spice-light-border), black 2%) !important;
 }
 
 .GimJ6fo6WOYPyWNVpSr1 div:nth-child(1) {
@@ -138,13 +159,18 @@ color-mix(in srgb, var(--spice-light-border), black 2%) !important;
     background-color: var(--spice-card) !important;
 }
 
-section[data-testid*="playlist-page"] .main-entityHeader-backgroundColor, section[data-testid*="album-page"] .main-entityHeader-backgroundColor {
-    background-image: linear-gradient(0deg, rgb(var(--spice-rgb-main), 0.7), transparent);
+section[data-testid*="playlist-page"] .main-entityHeader-backgroundColor,
+section[data-testid*="album-page"] .main-entityHeader-backgroundColor {
+    background-image: linear-gradient(
+        0deg,
+        rgb(var(--spice-rgb-main), 0.7),
+        transparent
+    );
     filter: brightness(2) !important;
 }
 
 .playlist-playlist-playlistContent::before {
-    content: '';
+    content: "";
     width: calc(100% + 100px);
     height: 300px;
     position: absolute;
@@ -156,7 +182,8 @@ section[data-testid*="playlist-page"] .main-entityHeader-backgroundColor, sectio
     z-index: 2 !important;
 }
 
-section[data-testid*="playlist-page"] .main-entityHeader-backgroundColor::after, section[data-testid*="album-page"] .main-entityHeader-backgroundColor::after {
+section[data-testid*="playlist-page"] .main-entityHeader-backgroundColor::after,
+section[data-testid*="album-page"] .main-entityHeader-backgroundColor::after {
     background: transparent !important;
 }
 
@@ -166,8 +193,7 @@ img.X_HqPouENflGygaUXNus {
 
 .znOINyqAy7ivIGbQyrbt.main-actionBar-ActionBarContainer {
     background: var(--spice-main) !important;
-    border: 1px solid var
-(--spice-light-border) !important;
+    border: 1px solid var (--spice-light-border) !important;
 }
 
 .main-globalNav-searchInputKBDWrapper {
