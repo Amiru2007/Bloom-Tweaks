@@ -17,6 +17,7 @@ button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBro
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .main-trackCreditsModal-mainSection {
@@ -692,6 +693,7 @@ a[class*="topBarActive"]::before {
 
 .main-topBar-background {
     background-color: rgba(var(--spice-rgb-sidebar), 1) !important;
+    border-bottom: 1px solid rgba(var(--spice-rgb-shadow), 0.045) !important;
 }
 
 .marketplace-customCSS-input-container {
@@ -2749,6 +2751,7 @@ button:has(.LyricsPageIcon) span svg {
     -webkit-mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_search_24_regular.svg") !important;
     background-color: var(--spice-subtext) !important;
     height: 24px !important;
+    transform: translate(0px, -1px);
 }
 
 .main-globalNav-searchInputContainer> :last-child button[aria-label*="Clear search field"] {
@@ -3103,6 +3106,7 @@ html .WDC2Yzs811n7JCYtYQzc {
 .main-globalNav-searchInputContainer .main-topBar-searchBar:placeholder-shown {
     width: 100% !important;
     padding-left: 50px !important;
+    height: 50px !important;
 }
 
 .E5B9sQzoDPDXBM6wP8A1 {
@@ -3337,4 +3341,21 @@ section[data-testid*="album-page"] .main-entityHeader-backgroundColor::after {
 
 .main-contextMenu-subMenuIcon path {
     opacity: 0;
+}
+
+.main-topBar-buddyFeed[aria-label*="What's New"] svg.vw7Ql5Ip9ZrzaLknOFdK {
+    background: var(--spice-accent) !important;
+    mask-image: none !important;
+    width: 8px !important;
+    height: 8px !important;
+    border-radius: 50% !important;
+    border: 2px solid var(--spice-sidebar) !important;
+}
+
+.main-topBar-buddyFeed[aria-label*="What's New"] svg.vw7Ql5Ip9ZrzaLknOFdK circle {
+    opacity: 0;
+}
+
+.main-globalNav-searchInputContainer {
+    transform: translate(0px, 1px);
 }
