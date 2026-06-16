@@ -459,8 +459,8 @@ button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-
 } */
 
 .lPDqjZWZMsdD4yc00T2X .main-trackList-rowPlayPauseIcon {
-    mask-image: url(https://raw.githubusercontent.com/Amiru2007/icons-i-nedd-in-my-project-personal/main/facebook-f-brands-solid.svg);
-    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/icons-i-nedd-in-my-project-personal/main/facebook-f-brands-solid.svg);
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/icons-i-need-in-my-project-personal/main/facebook-f-brands-solid.svg);
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/icons-i-need-in-my-project-personal/main/facebook-f-brands-solid.svg);
     background-color: var(--spice-text) !important;
     width: 20px;
     height: 20px;
@@ -1332,8 +1332,8 @@ section.xOmT3apmEbwVlFt4HkBe.C3jVNGQUUZcUp5kTEOC0.Sm3POgzbjs7wFj7tyYNh[aria-labe
 
 button.main-genericButton-button.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-iconOnly-isUsingKeyboard-useBrowserDefaultFocusStyle svg.Svg-sc-ytk21e-0.Svg-img-icon-small.Svg-img-icon.Svg-img-16.Svg-img-16-icon.uPxdw {
     background: var(--spice-subtext);
-    mask-image: url(https://raw.githubusercontent.com/Amiru2007/icons-i-nedd-in-my-project-personal/refs/heads/main/ic_fluent_weather_moon_23_filled.svg);
-    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/icons-i-nedd-in-my-project-personal/refs/heads/main/ic_fluent_weather_moon_24_filled.svg);
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/icons-i-need-in-my-project-personal/refs/heads/main/ic_fluent_weather_moon_23_filled.svg);
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/icons-i-need-in-my-project-personal/refs/heads/main/ic_fluent_weather_moon_24_filled.svg);
     width: 20px;
     height: 20px;
     margin-top: 2px;
@@ -2465,7 +2465,7 @@ span.e-9800-baseline.e-9800-overflow-wrap-anywhere.e-9800-button-primary__inner.
 
 .Areas__InteractiveArea-sc-8gfrea-0.Areas__TrailingSlot-sc-8gfrea-7.bJSfgC.jpzxju button svg {
     background: var(--spice-subtext) !important;
-    mask-image: url(https://raw.githubusercontent.com/Amiru2007/icons-i-nedd-in-my-project-personal/refs/heads/main/ic_fluent_caret_down_24_filled.svg);
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/icons-i-need-in-my-project-personal/refs/heads/main/ic_fluent_caret_down_24_filled.svg);
     mask-size: 16px !important;
 }
 
@@ -3325,4 +3325,16 @@ section[data-testid*="album-page"] .main-entityHeader-backgroundColor::after {
 
 .main-trackInfo-enhanced svg {
     border-radius: 3px;
+}
+
+.main-contextMenu-subMenuIcon {
+    background: var(--spice-subtext);
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/icons-i-need-in-my-project-personal/refs/heads/main/ic_fluent_chevron_right_24_filled.svg);
+    transform: rotate(0) !important;
+    mask-size: 100% !important;
+    filter: brightness(1.1);
+}
+
+.main-contextMenu-subMenuIcon path {
+    opacity: 0;
 }
