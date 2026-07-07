@@ -3234,9 +3234,9 @@ button.nprd-refresh {
     display: none;
 }
 
-aside.main-nowPlayingBar-container {
+/* aside.main-nowPlayingBar-container {
     border-left: 2px var(--cover-ambience-color) solid;
-}
+} */
 
 .main-trackList-trackList.main-trackList-indexable {
     padding: 0 8px 8px 8px !important;
@@ -3358,4 +3358,27 @@ section[data-testid*="album-page"] .main-entityHeader-backgroundColor::after {
 
 .main-globalNav-searchInputContainer {
     transform: translate(0px, 1px);
+}
+
+div#sort-and-view-picker ul[aria-label*="Sort by"] {
+    margin-bottom: 4px;
+}
+
+.spicetify-exp-features button.switch {
+    background: transparent !important;
+}
+
+.raRkZ_Zd6LonLck0bG34 {
+    background-color: var(--background-highlight);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: var(--encore-spacing-looser);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: var(--encore-spacing-base);
+    border-radius: var(--border-radius-2);
+    background-color: var(--spice-card);
 }
