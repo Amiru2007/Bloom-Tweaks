@@ -2465,7 +2465,7 @@ span.e-9800-baseline.e-9800-overflow-wrap-anywhere.e-9800-button-primary__inner.
     background: var(--spice-subtext) !important;
 }
 
-.Areas__InteractiveArea-sc-8gfrea-0.Areas__TrailingSlot-sc-8gfrea-7.bJSfgC.jpzxju button svg {
+#Desktop_LeftSidebar_Id .Areas__InteractiveArea-sc-8gfrea-0.Areas__TrailingSlot-sc-8gfrea-7.bJSfgC.jpzxju button svg {
     background: var(--spice-subtext) !important;
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/icons-i-need-in-my-project-personal/refs/heads/main/ic_fluent_caret_down_24_filled.svg);
     mask-size: 16px !important;
@@ -3195,10 +3195,6 @@ section[data-testid*="album-page"] .main-entityHeader-backgroundColor {
     fill: var(--text-subdued) !important;
 }
 
-.main-yourLibraryX-entryPoints {
-    max-width: 320px !important;
-}
-
 .playlist-playlist-searchBoxContainer button {
     color: var(--spice-subtext) !important;
 }
@@ -3381,4 +3377,33 @@ div#sort-and-view-picker ul[aria-label*="Sort by"] {
     gap: var(--encore-spacing-base);
     border-radius: var(--border-radius-2);
     background-color: var(--spice-card);
+}
+
+
+
+
+.main-yourLibraryX-headerContent button {
+    background: transparent !important;
+    border: none !important;
+}
+
+.search-searchCategory-categoryGrid div[aria-label*="Filter options"] .LegacyChipComponent-presentation-chip-sm-useBrowserDefaultFocusStyle span {
+    background: var(--spice-sidebar);
+}
+
+.Root__nav-bar:not(.yXlTmwlWtDebsivA1gM6) .main-yourLibraryX-entryPoints {
+    max-width: 320px !important;
+}
+
+.Root__nav-bar:not(:has(.G4x1juhr8jVza8dirSUd)) .main-yourLibraryX-entryPoints {
+    min-width: 320px !important;
+}
+
+.PcZ4Ih4RnDcfih7nQsvV {
+    background-color: rgba(var(--spice-rgb-main), .6) !important;
+}
+
+.main-home-filterChipsSectionActive {
+    background: var(--spice-main) !important;
+    border-bottom: 1px solid var(--spice-main-elevated) !important;
 }
