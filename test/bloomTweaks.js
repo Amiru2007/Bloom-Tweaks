@@ -214,30 +214,6 @@ function waitForSpicetify() {
         });
     }
 
-    function setupStickyHeaderScrollEffect() {
-        const scrollContainerSelector = '[data-overlayscrollbars-viewport]';
-        
-        const trySetup = setInterval(() => {
-            const scrollContainer = document.querySelector(scrollContainerSelector);
-            const header = document.querySelector('.main-entityHeader-container');
-
-            if (scrollContainer && header) {
-                clearInterval(trySetup);
-
-                scrollContainer.addEventListener('scroll', () => {
-                    const scrollTop = scrollContainer.scrollTop;
-                    
-                    // Adjust styles dynamically based on scroll distance (e.g., 50px threshold)
-                    if (scrollTop > 50) {
-                        header.classList.add('bloom-header-scrolled');
-                    } else {
-                        header.classList.remove('bloom-header-scrolled');
-                    }
-                });
-            }
-        }, 200);
-    }
-
     async function updateAmbientEffect(retries = 10, delay = 100) {
         if (!Spicetify.Player || !Spicetify.Player.data || !Spicetify.Player.data.item) {
             console.warn('Spicetify Player or track data is not available. Retrying...');
@@ -563,7 +539,6 @@ function waitForSpicetify() {
     addControlPanelButton();
     initExtension();
     initObserver();
-    setupStickyHeaderScrollEffect();
 }
 
 waitForSpicetify();

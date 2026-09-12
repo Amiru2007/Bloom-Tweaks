@@ -87,9 +87,9 @@ span.ButtonInner-sc-14ud5tc-0 {
     border-radius: 6px;
 }
 
-.ChipInnerComponent-sm, .ChipInnerComponent-sm-selected {
+/* .ChipInnerComponent-sm, .ChipInnerComponent-sm-selected {
     border-radius: var(--border-radius-2) !important;
-}
+} */
 
 
 /* ----------------------------------------------------------------------- Marketplace----------------------------------------------------------------------------- */

@@ -3407,3 +3407,35 @@ div#sort-and-view-picker ul[aria-label*="Sort by"] {
     background: var(--spice-main) !important;
     border-bottom: 1px solid var(--spice-main-elevated) !important;
 }
+
+.main-trackList-rowSectionIndex {
+    justify-self: center !important;
+}
+
+.main-trackList-column {
+    padding-left: 0 !important;
+}
+
+button.main-trackList-column.main-trackList-durationHeader.main-trackList-sortable {
+    margin-right: 20px !important;
+}
+
+
+.main-actionBar-exploreButtonPlayIconWrapper svg.e-91000-icon.e-91000-baseline {
+    mask-size: 14px !important;
+}
+
+.main-entityHeader-container {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, padding 0.3s ease;
+}
+
+/* Styles applied once the user scrolls past 50px */
+.main-entityHeader-container.bloom-header-scrolled {
+  background-color: rgba(18, 18, 18, 0.95); /* Solidifies background */
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  padding-bottom: 10px;
+}
