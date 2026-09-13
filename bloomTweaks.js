@@ -221,7 +221,7 @@ function waitForSpicetify() {
             const viewport = e.target.closest ? e.target.closest('[data-overlayscrollbars-viewport]') : null;
             
             if (viewport) {
-                const header = document.querySelector('.main-entityHeader-container');
+                const header = document.querySelector('.main-topBar-topbarContent');
                 if (header) {
                     const scrollTop = viewport.scrollTop;
                     if (scrollTop > 50) {

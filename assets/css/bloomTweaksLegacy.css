@@ -2687,16 +2687,28 @@ button:has(.LyricsPageIcon) span svg {
     margin-top: -1px !important;
 }
 
-.main-topBar-container:has(.main-entityHeader-topbarContentFadeIn) {
+.main-topBar-container .main-topBar-topbarContent .main-entityHeader-topbarTitle {
+    font-size: 16px !important;
+}
+
+.main-topBar-container:has(.bloom-header-scrolled) {
     opacity: 1 !important;
+    transform: translateY(0) !important;
 }
 
 .global-nav .main-topBar-container {
     position: absolute !important;
     -webkit-backdrop-filter: none !important;
     backdrop-filter: none !important;
-    opacity: 0;
+    /* opacity: 0; */
+    transform: translateY(-48px);
     transition: all 0.1s ease-in-out;
+}
+
+.main-topBar-container:has(.bloom-header-scrolled) .main-topBar-topbarContent .main-playButton-PlayButton,
+.main-topBar-container:has(.bloom-header-scrolled) .main-topBar-topbarContent .main-entityHeader-topbarTitle {
+    opacity: 1 !important;
+    visibility: visible;
 }
 
 .main-globalNav-searchInputContainer .main-topBar-searchBar,
@@ -3425,17 +3437,28 @@ button.main-trackList-column.main-trackList-durationHeader.main-trackList-sortab
     mask-size: 14px !important;
 }
 
-.main-entityHeader-container {
+/* .main-entityHeader-container {
   position: sticky;
   top: 0;
   z-index: 1000;
   transition: background-color 0.3s ease, box-shadow 0.3s ease, padding 0.3s ease;
 }
 
-/* Styles applied once the user scrolls past 50px */
 .main-entityHeader-container.bloom-header-scrolled {
-  background-color: rgba(18, 18, 18, 0.95); /* Solidifies background */
+  background-color: rgba(18, 18, 18, 0.95);
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
   padding-bottom: 10px;
+} */
+
+.main-topBar-container:has(.bloom-header-scrolled) .main-topBar-background{
+    opacity: 1 !important;
+}
+
+.ZLQMyiECjwh0Fat0ymny {
+    background: transparent !important;
+}
+
+.ZLQMyiECjwh0Fat0ymny:after {
+    background-image: linear-gradient(var(--spice-main), transparent) !important;
 }
