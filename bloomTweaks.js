@@ -215,27 +215,23 @@ function waitForSpicetify() {
     }
 
     function setupStickyHeaderScrollEffect() {
-        const scrollContainerSelector = '[data-overlayscrollbars-viewport]';
-        
-        const trySetup = setInterval(() => {
-            const scrollContainer = document.querySelector(scrollContainerSelector);
-            const header = document.querySelector('.main-entityHeader-container');
+        console.log("BloomTweaks: Initializing resilient scroll tracker.");
 
-            if (scrollContainer && header) {
-                clearInterval(trySetup);
-
-                scrollContainer.addEventListener('scroll', () => {
-                    const scrollTop = scrollContainer.scrollTop;
-                    
-                    // Adjust styles dynamically based on scroll distance (e.g., 50px threshold)
+        window.addEventListener('scroll', (e) => {
+            const viewport = e.target.closest ? e.target.closest('[data-overlayscrollbars-viewport]') : null;
+            
+            if (viewport) {
+                const header = document.querySelector('.main-entityHeader-container');
+                if (header) {
+                    const scrollTop = viewport.scrollTop;
                     if (scrollTop > 50) {
                         header.classList.add('bloom-header-scrolled');
                     } else {
                         header.classList.remove('bloom-header-scrolled');
                     }
-                });
+                }
             }
-        }, 200);
+        }, true);
     }
 
     async function updateAmbientEffect(retries = 10, delay = 100) {
