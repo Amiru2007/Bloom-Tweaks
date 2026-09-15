@@ -10,17 +10,7 @@ function waitForSpicetify() {
         buttonStyling: true,
         tagStyling: true,
         fluentButtonsCSS: true,
-        windowsColorThemeCSS: false,
-        customNPV: true,
-        lightTheme: false,
         noiseBlurBg: true,
-        friendsActivityBar: false,
-        floatingVolumeBar: false,
-        customAppEnhancify: false,
-        listeningStats: false,
-        beautifulLyricsLegacyCinema: false,
-        playlistTags: false,
-        spicetifyStats: false,
     };
 
     function loadPreferences() {
@@ -51,88 +41,8 @@ function waitForSpicetify() {
             existingFluentLink.remove();
         }
 
-        // Load windowsColorTheme.css (Updated name from 'windowsColorTheme.css')
-        const existingwindowsColorThemeLink = document.querySelector("link[href*='windowsColorTheme.css']"); // Corrected here
-        if (prefs.windowsColorThemeCSS && !existingwindowsColorThemeLink) {
-            await loadCSSFile("windowsColorTheme.css");
-        } else if (!prefs.windowsColorThemeCSS && existingwindowsColorThemeLink) {
-            existingwindowsColorThemeLink.remove();
-        }
-
-        // Load customNPV.css (Updated name from 'customNPV.css')
-        const customNPVLink = document.querySelector("link[href*='customNPV.css']"); // Corrected here
-        if (prefs.customNPV && !customNPVLink) {
-            await loadCSSFile("customNPV.css");
-        } else if (!prefs.customNPV && customNPVLink) {
-            customNPVLink.remove();
-        }
-
-        // Load lightTheme.css (Updated name from 'lightTheme.css')
-        const lightThemeLink = document.querySelector("link[href*='lightTheme.css']"); // Corrected here
-        if (prefs.lightTheme && !lightThemeLink) {
-            await loadCSSFile("lightTheme.css");
-        } else if (!prefs.lightTheme && lightThemeLink) {
-            lightThemeLink.remove();
-        }
-
-        // Load friendsActivityBar.css (Updated name from 'friendsActivityBar.css')
-        const friendsActivityBarLink = document.querySelector("link[href*='friendsActivityBar.css']"); // Corrected here
-        if (prefs.friendsActivityBar && !friendsActivityBarLink) {
-            await loadCSSFile("friendsActivityBar.css");
-        } else if (!prefs.friendsActivityBar && friendsActivityBarLink) {
-            friendsActivityBarLink.remove();
-        }
-
-        // Load floatingVolumeBar.css (Updated name from 'floatingVolumeBar.css')
-        const floatingVolumeBarLink = document.querySelector("link[href*='floatingVolumeBar.css']"); // Corrected here
-        if (prefs.floatingVolumeBar && !floatingVolumeBarLink) {
-            await loadCSSFile("floatingVolumeBar.css");
-        } else if (!prefs.floatingVolumeBar && floatingVolumeBarLink) {
-            floatingVolumeBarLink.remove();
-        }
-
-        // Load customAppEnhancify.css (Updated name from 'customAppEnhancify.css')
-        const customAppEnhancifyLink = document.querySelector("link[href*='customAppEnhancify.css']"); // Corrected here
-        if (prefs.customAppEnhancify && !customAppEnhancifyLink) {
-            await loadCSSFile("customAppEnhancify.css");
-        } else if (!prefs.customAppEnhancify && customAppEnhancifyLink) {
-            customAppEnhancifyLink.remove();
-        }
-
-        // Load listeningStats.css (Updated name from 'listeningStats.css')
-        const listeningStatsLink = document.querySelector("link[href*='listeningStats.css']"); // Corrected here
-        if (prefs.listeningStats && !listeningStatsLink) {
-            await loadCSSFile("listeningStats.css");
-        } else if (!prefs.listeningStats && listeningStatsLink) {
-            listeningStatsLink.remove();
-        }
-
-        // Load beautifulLyricsLegacyCinema.css (Updated name from 'beautifulLyricsLegacyCinema.css')
-        const beautifulLyricsLegacyCinemaLink = document.querySelector("link[href*='beautifulLyricsLegacyCinema.css']"); // Corrected here
-        if (prefs.beautifulLyricsLegacyCinema && !beautifulLyricsLegacyCinemaLink) {
-            await loadCSSFile("beautifulLyricsLegacyCinema.css");
-        } else if (!prefs.beautifulLyricsLegacyCinema && beautifulLyricsLegacyCinemaLink) {
-            beautifulLyricsLegacyCinemaLink.remove();
-        }
-
-        // Load playlistTags.css (Updated name from 'playlistTags.css')
-        const playlistTagsLink = document.querySelector("link[href*='playlistTags.css']"); // Corrected here
-        if (prefs.playlistTags && !playlistTagsLink) {
-            await loadCSSFile("playlistTags.css");
-        } else if (!prefs.playlistTags && playlistTagsLink) {
-            playlistTagsLink.remove();
-        }
-
-        // Load spicetifyStats.css (Updated name from 'spicetifyStats.css')
-        const spicetifyStatsLink = document.querySelector("link[href*='spicetifyStats.css']"); // Corrected here
-        if (prefs.spicetifyStats && !spicetifyStatsLink) {
-            await loadCSSFile("spicetifyStats.css");
-        } else if (!prefs.spicetifyStats && spicetifyStatsLink) {
-            spicetifyStatsLink.remove();
-        }
-
-        // Load noiseBlurBg.css (Updated name from 'noiseBlurBg.css')
-        const noiseBlurBgLink = document.querySelector("link[href*='noiseBlurBg.css']"); // Corrected here
+        // Load noiseBlurBg.css
+        const noiseBlurBgLink = document.querySelector("link[href*='noiseBlurBg.css']");
         if (prefs.noiseBlurBg && !noiseBlurBgLink) {
             await loadCSSFile("noiseBlurBg.css");
         } else if (!prefs.noiseBlurBg && noiseBlurBgLink) {
@@ -284,14 +194,12 @@ function waitForSpicetify() {
     function createInvertedSpiceAccent() {
         const root = document.documentElement;
 
-        // Read --spice-accent
         const accent = getComputedStyle(root)
             .getPropertyValue("--spice-accent")
             .trim();
 
         if (!accent) return;
 
-        // Convert color to RGB using browser
         const temp = document.createElement("div");
         temp.style.color = accent;
         document.body.appendChild(temp);
@@ -299,13 +207,9 @@ function waitForSpicetify() {
         const rgb = getComputedStyle(temp).color;
         document.body.removeChild(temp);
 
-        // Extract numbers
         const [r, g, b] = rgb.match(/\d+/g).map(Number);
-
-        // Invert
         const inverted = `rgb(${255 - r}, ${255 - g}, ${255 - b})`;
 
-        // Set new CSS variable
         root.style.setProperty("--spice-accent-inverted", inverted);
     }
 
@@ -348,50 +252,6 @@ function waitForSpicetify() {
                         </div>
                         <div class="bloom-tweaks x-settings-row">
                             <div class="bloom-tweaks x-settings-firstColumn">
-                                <label class="bloom-tweaks encore-text encore-text-body-small encore-internal-color-text-subdued">Windows Accent Color</label>
-                            </div>
-                            <div class="bloom-tweaks x-settings-secondColumn">
-                                <label class="bloom-tweaks x-toggle-wrapper">
-                                    <input id="windowsColorThemeCSS" type="checkbox" class="bloom-tweaks x-toggle-input" ${prefs.windowsColorThemeCSS ? "checked" : ""}>
-                                    <span class="bloom-tweaks x-toggle-indicatorWrapper"><span class="bloom-tweaks x-toggle-indicator"></span></span>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="bloom-tweaks x-settings-row">
-                            <div class="bloom-tweaks x-settings-firstColumn">
-                                <label class="bloom-tweaks encore-text encore-text-body-small encore-internal-color-text-subdued">Custom NPV</label>
-                            </div>
-                            <div class="bloom-tweaks x-settings-secondColumn">
-                                <label class="bloom-tweaks x-toggle-wrapper">
-                                    <input id="customNPV" type="checkbox" class="bloom-tweaks x-toggle-input" ${prefs.customNPV ? "checked" : ""}>
-                                    <span class="bloom-tweaks x-toggle-indicatorWrapper"><span class="bloom-tweaks x-toggle-indicator"></span></span>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="bloom-tweaks x-settings-row">
-                            <div class="bloom-tweaks x-settings-firstColumn">
-                                <label class="bloom-tweaks encore-text encore-text-body-small encore-internal-color-text-subdued">Light Theme</label>
-                            </div>
-                            <div class="bloom-tweaks x-settings-secondColumn">
-                                <label class="bloom-tweaks x-toggle-wrapper">
-                                    <input id="lightTheme" type="checkbox" class="bloom-tweaks x-toggle-input" ${prefs.lightTheme ? "checked" : ""}>
-                                    <span class="bloom-tweaks x-toggle-indicatorWrapper"><span class="bloom-tweaks x-toggle-indicator"></span></span>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="bloom-tweaks x-settings-row">
-                            <div class="bloom-tweaks x-settings-firstColumn">
-                                <label class="bloom-tweaks encore-text encore-text-body-small encore-internal-color-text-subdued">Custom Friends Activity Panel</label>
-                            </div>
-                            <div class="bloom-tweaks x-settings-secondColumn">
-                                <label class="bloom-tweaks x-toggle-wrapper">
-                                    <input id="friendsActivityBar" type="checkbox" class="bloom-tweaks x-toggle-input" ${prefs.friendsActivityBar ? "checked" : ""}>
-                                    <span class="bloom-tweaks x-toggle-indicatorWrapper"><span class="bloom-tweaks x-toggle-indicator"></span></span>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="bloom-tweaks x-settings-row">
-                            <div class="bloom-tweaks x-settings-firstColumn">
                                 <label class="bloom-tweaks encore-text encore-text-body-small encore-internal-color-text-subdued">Fluent Buttons CSS</label>
                             </div>
                             <div class="bloom-tweaks x-settings-secondColumn">
@@ -403,90 +263,11 @@ function waitForSpicetify() {
                         </div>
                         <div class="bloom-tweaks x-settings-row">
                             <div class="bloom-tweaks x-settings-firstColumn">
-                                <label class="bloom-tweaks encore-text encore-text-body-small encore-internal-color-text-subdued">Floating Volume Bar</label>
-                            </div>
-                            <div class="bloom-tweaks x-settings-secondColumn">
-                                <label class="bloom-tweaks x-toggle-wrapper">
-                                    <input id="floatingVolumeBar" type="checkbox" class="bloom-tweaks x-toggle-input" ${prefs.floatingVolumeBar ? "checked" : ""}>
-                                    <span class="bloom-tweaks x-toggle-indicatorWrapper"><span class="bloom-tweaks x-toggle-indicator"></span></span>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="bloom-tweaks x-settings-row">
-                            <div class="bloom-tweaks x-settings-firstColumn">
                                 <label class="bloom-tweaks encore-text encore-text-body-small encore-internal-color-text-subdued">Noise Blur Background</label>
                             </div>
                             <div class="bloom-tweaks x-settings-secondColumn">
                                 <label class="bloom-tweaks x-toggle-wrapper">
                                     <input id="noiseBlurBg" type="checkbox" class="bloom-tweaks x-toggle-input" ${prefs.noiseBlurBg ? "checked" : ""}>
-                                    <span class="bloom-tweaks x-toggle-indicatorWrapper"><span class="bloom-tweaks x-toggle-indicator"></span></span>
-                                </label>
-                            </div>
-                        </div>
-                        <h3 style="padding-top: 16px;">Extension Customizations</h3>
-                        <div class="bloom-tweaks x-settings-row">
-                            <div class="bloom-tweaks x-settings-firstColumn">
-                                <label class="bloom-tweaks encore-text encore-text-body-small encore-internal-color-text-subdued">Beautiful Lyrics old cinema lyrics page</label>
-                            </div>
-                            <div class="bloom-tweaks x-settings-secondColumn">
-                                <label class="bloom-tweaks x-toggle-wrapper">
-                                    <input id="beautifulLyricsLegacyCinema" type="checkbox" class="bloom-tweaks x-toggle-input" ${prefs.beautifulLyricsLegacyCinema ? "checked" : ""}>
-                                    <span class="bloom-tweaks x-toggle-indicatorWrapper"><span class="bloom-tweaks x-toggle-indicator"></span></span>
-                                </label>
-                            </div>
-                        </div>
-                        <h3 style="padding-top: 16px;">Custom App Customizations</h3>
-                        <div class="bloom-tweaks x-settings-row">
-                            <div class="bloom-tweaks x-settings-firstColumn">
-                                <label class="bloom-tweaks encore-text encore-text-body-small encore-internal-color-text-subdued">Tag Styling (Playlist Tags Custom App)</label>
-                            </div>
-                            <div class="bloom-tweaks x-settings-secondColumn">
-                                <label class="bloom-tweaks x-toggle-wrapper">
-                                    <input id="tagStyling" type="checkbox" class="bloom-tweaks x-toggle-input" ${prefs.tagStyling ? "checked" : ""}>
-                                    <span class="bloom-tweaks x-toggle-indicatorWrapper"><span class="bloom-tweaks x-toggle-indicator"></span></span>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="bloom-tweaks x-settings-row">
-                            <div class="bloom-tweaks x-settings-firstColumn">
-                                <label class="bloom-tweaks encore-text encore-text-body-small encore-internal-color-text-subdued">Playlist Tags Bloom Update</label>
-                            </div>
-                            <div class="bloom-tweaks x-settings-secondColumn">
-                                <label class="bloom-tweaks x-toggle-wrapper">
-                                    <input id="playlistTags" type="checkbox" class="bloom-tweaks x-toggle-input" ${prefs.playlistTags ? "checked" : ""}>
-                                    <span class="bloom-tweaks x-toggle-indicatorWrapper"><span class="bloom-tweaks x-toggle-indicator"></span></span>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="bloom-tweaks x-settings-row">
-                            <div class="bloom-tweaks x-settings-firstColumn">
-                                <label class="bloom-tweaks encore-text encore-text-body-small encore-internal-color-text-subdued">Spicetify Stats Bloom Update</label>
-                            </div>
-                            <div class="bloom-tweaks x-settings-secondColumn">
-                                <label class="bloom-tweaks x-toggle-wrapper">
-                                    <input id="spicetifyStats" type="checkbox" class="bloom-tweaks x-toggle-input" ${prefs.spicetifyStats ? "checked" : ""}>
-                                    <span class="bloom-tweaks x-toggle-indicatorWrapper"><span class="bloom-tweaks x-toggle-indicator"></span></span>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="bloom-tweaks x-settings-row">
-                            <div class="bloom-tweaks x-settings-firstColumn">
-                                <label class="bloom-tweaks encore-text encore-text-body-small encore-internal-color-text-subdued">Enhancify Custom App Page</label>
-                            </div>
-                            <div class="bloom-tweaks x-settings-secondColumn">
-                                <label class="bloom-tweaks x-toggle-wrapper">
-                                    <input id="customAppEnhancify" type="checkbox" class="bloom-tweaks x-toggle-input" ${prefs.customAppEnhancify ? "checked" : ""}>
-                                    <span class="bloom-tweaks x-toggle-indicatorWrapper"><span class="bloom-tweaks x-toggle-indicator"></span></span>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="bloom-tweaks x-settings-row">
-                            <div class="bloom-tweaks x-settings-firstColumn">
-                                <label class="bloom-tweaks encore-text encore-text-body-small encore-internal-color-text-subdued">Listening Stats Custom App Page</label>
-                            </div>
-                            <div class="bloom-tweaks x-settings-secondColumn">
-                                <label class="bloom-tweaks x-toggle-wrapper">
-                                    <input id="listeningStats" type="checkbox" class="bloom-tweaks x-toggle-input" ${prefs.listeningStats ? "checked" : ""}>
                                     <span class="bloom-tweaks x-toggle-indicatorWrapper"><span class="bloom-tweaks x-toggle-indicator"></span></span>
                                 </label>
                             </div>
@@ -510,19 +291,9 @@ function waitForSpicetify() {
                     function saveSettings() {
                         const newPrefs = {
                             customCSS: document.getElementById("customCSS")?.checked || false,
-                            buttonStyling: document.getElementById("buttonStyling")?.checked || false,
-                            tagStyling: document.getElementById("tagStyling")?.checked || false,
+                            buttonStyling: prefs.buttonStyling, // Preserved internally if utilized elsewhere
+                            tagStyling: prefs.tagStyling,       // Preserved internally if utilized elsewhere
                             fluentButtonsCSS: document.getElementById("fluentButtonsCSS")?.checked || false,
-                            windowsColorThemeCSS: document.getElementById("windowsColorThemeCSS")?.checked || false,
-                            customNPV: document.getElementById("customNPV")?.checked || false,
-                            lightTheme: document.getElementById("lightTheme")?.checked || false,
-                            friendsActivityBar: document.getElementById("friendsActivityBar")?.checked || false,
-                            floatingVolumeBar: document.getElementById("floatingVolumeBar")?.checked || false,
-                            customAppEnhancify: document.getElementById("customAppEnhancify")?.checked || false,
-                            listeningStats: document.getElementById("listeningStats")?.checked || false,
-                            beautifulLyricsLegacyCinema: document.getElementById("beautifulLyricsLegacyCinema")?.checked || false,
-                            playlistTags: document.getElementById("playlistTags")?.checked || false,
-                            spicetifyStats: document.getElementById("spicetifyStats")?.checked || false,
                             noiseBlurBg: document.getElementById("noiseBlurBg")?.checked || false,
                         };
 
@@ -530,7 +301,6 @@ function waitForSpicetify() {
                         location.reload();
                     }
                 });
-
 
                 actionButtons.appendChild(button);
             }
