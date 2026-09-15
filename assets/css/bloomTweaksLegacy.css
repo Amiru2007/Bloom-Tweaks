@@ -2691,18 +2691,18 @@ button:has(.LyricsPageIcon) span svg {
     font-size: 16px !important;
 }
 
-.main-topBar-container:has(.bloom-header-scrolled) {
-    opacity: 1 !important;
-    transform: translateY(0) !important;
-}
-
 .global-nav .main-topBar-container {
     position: absolute !important;
     -webkit-backdrop-filter: none !important;
     backdrop-filter: none !important;
-    /* opacity: 0; */
-    transform: translateY(-48px);
+    opacity: 0;
+    /* transform: translateY(-48px); */
     transition: all 0.1s ease-in-out;
+}
+
+.main-topBar-container:has(.bloom-header-scrolled) {
+    opacity: 1 !important;
+    /* transform: translateY(0) !important; */
 }
 
 .main-topBar-container:has(.bloom-header-scrolled) .main-topBar-topbarContent .main-playButton-PlayButton,
@@ -3461,4 +3461,30 @@ button.main-trackList-column.main-trackList-durationHeader.main-trackList-sortab
 
 .ZLQMyiECjwh0Fat0ymny:after {
     background-image: linear-gradient(var(--spice-main), transparent) !important;
+}
+
+.spotify__container--is-desktop:not(.fullscreen) .CqXpLitKxRFvrULhC2kW {
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--spice-dark-border, #e0e0e0) !important;
+    border-radius: var(--border-radius-1);
+    background: rgba(var(--spice-rgb-main), 0.6) !important;
+}
+
+.main-playlistEditDetailsModal-albumCover {
+    border-radius: var(--border-radius-2) !important;
+    overflow: hidden !important;
+}
+
+.main-playlistEditDetailsModal-imageDropDownButton {
+    background-color: rgba(var(--spice-rgb-main), .7) !important;
+    border-radius: var(--border-radius-2) !important;
+}
+
+.main-playlistEditDetailsModal-titleInput, .main-playlistEditDetailsModal-descriptionTextarea, .main-playlistEditDetailsModal-titleInput:focus, .main-playlistEditDetailsModal-descriptionTextarea:focus, .playlist-inlineSearchBox-filterInput {
+    background-color: color-mix(in oklab, var(--spice-main), white 2%) !important;
+    color: color-mix(in oklab, var(--spice-subtext), white 20%) !important;
+}
+
+.main-playlistEditDetailsModal-titleInput:focus, .main-playlistEditDetailsModal-descriptionTextarea:focus, .profile-userEditDetails-textElement:focus, .playlist-inlineSearchBox-filterInput:focus {
+    color: var(--spice-text) !important;
 }

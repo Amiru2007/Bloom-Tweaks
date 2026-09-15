@@ -1,10 +1,6 @@
 /* ----------------------------------------------------------------- Button Pack ---------------------------------------------------------------------------------------------------------- */
 
-#context-menu button.Button-sc-1dqy6lx-0.Button-buttonTertiary-textSubdued-small-small-useBrowserDefaultFocusStyle-condensed,
-.main-dropDown-dropDown,
-.Button-sc-y0gtbx-0,
-.ShowLyrics,
-.Dropdown-control {
+#context-menu button.Button-sc-1dqy6lx-0.Button-buttonTertiary-textSubdued-small-small-useBrowserDefaultFocusStyle-condensed, .main-dropDown-dropDown, .Button-sc-y0gtbx-0, .ShowLyrics, .Dropdown-control {
     /* background: var(--spice-card) !important;
     border: 1px solid var(--spice-main-elevated) !important; */
     border-radius: 6px !important;
@@ -24,7 +20,8 @@
 }
 
 .ButtonInner-sc-14ud5tc-0.ButtonInner-medium.encore-inverted-light-set,
-#context-menu button.Button-sc-qlcn5g-0.Button-buttonPrimary-useBrowserDefaultFocusStyle span {
+#context-menu button.Button-sc-qlcn5g-0.Button-buttonPrimary-useBrowserDefaultFocusStyle span,
+.main-playlistEditDetailsModal-save button span {
     border-radius: 6px !important;
     font-weight: 400 !important;
     backdrop-filter: blur(10px) !important;
@@ -160,4 +157,30 @@ button.qyKJPLjz8o4jnbk92JOn.nsakAYOtgZOAcEO4ObrM svg path {
 
 span.LegacyChipInner__ChipInnerComponent-sc-1qguixk-0.ChipInnerComponent-md-selected.encore-bright-accent-set.x0xbkRE3CyGK_i406MSX:hover {
     background-color: var(--spice-accent) !important;
+}
+
+.main-playlistEditDetailsModal-save button span {
+    padding: 0;
+    padding-block: var(--encore-spacing-tighter-4);
+    padding-inline: var(--encore-spacing-base);
+    font-size: var(--encore-text-size-smaller);
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    will-change: transform;
+    color: var(--text-base,#000000);
+    min-inline-size: 0px;
+    min-block-size: var(--encore-control-size-smaller,32px);
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    overflow-wrap: anywhere;
+    border-radius: 6px !important;
+    font-weight: 400 !important;
+    backdrop-filter: blur(10px) !important;
+    border: 1px solid rgba(var(--spice-rgb-shadow), 0.045) !important;
+    transition: all 0.3s ease !important;
+    min-width: 100px !important;
 }
