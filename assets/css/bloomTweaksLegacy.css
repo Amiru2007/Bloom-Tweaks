@@ -373,13 +373,12 @@ button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-
 
 .main-yourLibraryX-filterArea::after {
     content: "";
-    width: 100%;
+    width: 100vw;
     height: 30px;
     position: absolute !important;
     bottom: -30px;
-    background-image: linear-gradient(to bottom,
-            var(--spice-main) 50%,
-            transparent);
+    left: -20px;
+    background-image: linear-gradient(to bottom, var(--spice-main) 50%, transparent);
 }
 
 .main-yourLibraryX-listItem:hover .Box__BoxComponent-sc-y4nds-0.BoxComponent-group-listRow-naked-isInteractive-minBlockSize_56px-padding_8px.Box-sc-8t9c76-0.Box-group-listRow-isInteractive-hasLeadingOrMedia-minBlockSize_56px-padding_8px.fYWNdY4zhj4OX_T2Xtg6[aria-labelledby*="artist"] .BfALkuQy0UjTI70U9QlQ {
@@ -3250,6 +3249,11 @@ button.nprd-refresh {
     padding: 0 8px 8px 8px !important;
 }
 
+.main-trackList-trackList.main-trackList-indexable[aria-label*="popular tracks"],
+.zLAesFTq26qpqIxuveE7 .main-trackList-trackList.main-trackList-indexable {
+    padding: 8px !important;
+}
+
 .main-trackList-trackListRow.main-trackList-trackListRowGrid {
     border-radius: 8px !important;
 }
@@ -3487,4 +3491,31 @@ button.main-trackList-column.main-trackList-durationHeader.main-trackList-sortab
 
 .main-playlistEditDetailsModal-titleInput:focus, .main-playlistEditDetailsModal-descriptionTextarea:focus, .profile-userEditDetails-textElement:focus, .playlist-inlineSearchBox-filterInput:focus {
     color: var(--spice-text) !important;
+}
+
+
+.main-shelf-shelf:last-child,
+main[aria-label*="Liked Songs"] .main-trackList-trackListContainer,
+.main-page-footerContainer,
+.playlist-playlist-sectionGrid,
+section.ORh5KMdLTGzeffIpbavP,
+section.lLVLck3qrPA1TLtWobAd.main-shelf-shelf.Shelf.Sq2ZlLQM6q75ALS7Xctj {
+    padding-bottom: 100px !important;
+}
+
+button.NIccMWgYS0OibP_70DRO {
+    color: var(--text-subdued);
+}
+
+.global-nav .artist-artistDiscography-topBar {
+    top: 64px !important;
+}
+
+.artist-artistDiscography-topBar.artist-artistDiscography-topBarScrolled {
+    height: 56px;
+    border-bottom: 1px solid color-mix(in srgb, var(--spice-light-border), black 36%) !important;
+}
+
+button.x-sortBox-sortDropdown {
+    color: var(--text-subdued) !important;
 }
