@@ -3519,3 +3519,16 @@ button.NIccMWgYS0OibP_70DRO {
 button.x-sortBox-sortDropdown {
     color: var(--text-subdued) !important;
 }
+
+.main-yourLibraryX-libraryItemContainer .os-scrollbar-vertical:active .os-scrollbar-handle[data-group-by]:after {
+    background-color: var(--spice-card) !important;
+    border: 1px solid rgb(var(--spice-rgb-light-border), 0.4) !important;
+    box-shadow: 0 16px 24px rgba(var(--spice-rgb-main), .3), 0 6px 8px rgba(var(--spice-rgb-main), .2) !important;
+    /* color: var(--spice-subtext) !important; */
+}
+
+.marketplace-footer {
+    margin: auto;
+    text-align: center;
+    padding-bottom: 120px;
+}
