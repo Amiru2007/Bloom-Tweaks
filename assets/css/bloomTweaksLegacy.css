@@ -1,3 +1,27 @@
 button.main-globalNav-navLink.main-globalNav-link-icon path {
+    display: none;
+}
 
+button.main-globalNav-navLink.main-globalNav-link-icon svg {
+    background: var(--text-subdued) !important;
+}
+
+button.main-globalNav-navLink.main-globalNav-link-icon.main-globalNav-navLinkActive svg {
+    background: var(--spice-accent) !important;
+}
+
+button.main-globalNav-navLink.main-globalNav-link-icon[aria-label*="Marketplace"] svg {
+    mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_app_store_24_regular.svg")
+}
+
+button.main-globalNav-navLink.main-globalNav-link-icon.main-globalNav-navLinkActive[aria-label*="Marketplace"] svg {
+    mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_app_store_24_filled.svg")
+}
+
+button.main-globalNav-navLink.main-globalNav-link-icon[aria-label*="Home"] svg {
+    mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_home_24_regular.svg")
+}
+
+button.main-globalNav-navLink.main-globalNav-link-icon.main-globalNav-navLinkActive[aria-label*="Home"] svg {
+    mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_home_24_filled.svg")
 }
