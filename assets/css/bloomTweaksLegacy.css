@@ -152,10 +152,103 @@ header.main-topBar-container button.e-10860-legacy-button-primary.e-10860-legacy
     mask-size: 30px
 }
 
+.main-nowPlayingBar-nowPlayingBar button.e-10860-legacy-button-primary.e-10860-legacy-button span svg {
+    width: 24px;
+    height: 24px;
+    mask-size: 24px
+}
+
 header.main-topBar-container {
     height: 64px !important;
 }
 
 .X92CLCIdgH5PcxglhxRv.contentSpacing {
     padding-top: 0px !important;
+}
+
+.main-nowPlayingBar-container {
+    width: calc(100% - 15px) !important;
+}
+
+a:not([data-encore-id]):hover, a:not([data-encore-id]):focus, a:not([data-encore-id])[data-context-menu-open=true], [data-context-menu-open=true]>a:only-child {
+    text-decoration: none !important;
+}
+
+.WosRx6NbfxOIFkdobeyk {
+    overflow: scroll !important;
+}
+
+.t6Jwud2fkYyUBTi8RqaT {
+    padding: 0px 0px 64px 0px;
+}
+
+.x-progressBar-progressBarBg div[data-testid*="progress-bar-handle"] {
+    background: var(--spice-light-border);
+    width: 22px;
+    height: 22px;
+    border: 1px solid var(--spice-button-disabled);
+}
+
+.x-progressBar-progressBarBg div[data-testid*="progress-bar-handle"]::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: var(--spice-accent);
+    border-radius: 50%;
+    transition: all 0.15s ease-in-out;
+}
+
+.x-progressBar-progressBarBg div[data-testid*="progress-bar-handle"]:hover::after {
+    transform: scale(1.3);
+}
+
+.kMvOpkTCi8ZAgLVHRKxi,
+.tE3l9TnMW6w8Evh_ico2 {
+    text-align: center !important;
+}
+
+.AJAehY5PvDch63k01sHw.xljhkx9cbmxKi0ds5o5e { /* main playlist list container */
+    background: var(--spice-card);
+    border: 1px solid var(--spice-light-border);
+    border-radius: var(--border-radius-2);
+    padding: 0px 12px !important;
+}
+
+.AJAehY5PvDch63k01sHw.xljhkx9cbmxKi0ds5o5e .j3mNS2daSmqH4118677h button.play path {
+    display: none !important;
+}
+
+.AJAehY5PvDch63k01sHw.xljhkx9cbmxKi0ds5o5e .j3mNS2daSmqH4118677h button.play svg,
+.AJAehY5PvDch63k01sHw.xljhkx9cbmxKi0ds5o5e .j3mNS2daSmqH4118677h button.pause svg {
+    width: 16px !important;
+    height: 16px !important;
+    mask-size: 16px !important;
+}
+
+.AJAehY5PvDch63k01sHw.xljhkx9cbmxKi0ds5o5e .j3mNS2daSmqH4118677h button.play svg {
+    background: var(--spice-text) !important;
+    mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_play_24_filled.svg") !important;
+}
+
+.AJAehY5PvDch63k01sHw.xljhkx9cbmxKi0ds5o5e .j3mNS2daSmqH4118677h button.pause svg {
+    background: var(--spice-text) !important;
+    mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_pause_16_filled.svg") !important;
+}
+
+.h3nJTxxmxIYRP5Aft1CC:hover, .h3nJTxxmxIYRP5Aft1CC:focus-within {
+    background-color: var(--spice-main-elevated) !important;
+}
+
+.h3nJTxxmxIYRP5Aft1CC {
+    border-radius: var(--border-radius-2) !important;
+}
+
+.WUHV3yvmh_gdGie5wFp4.contentSpacing { /* Playlist main large button container */
+    padding-top: 30px !important;
+}
+
+.zyugqDUpsiWa8v7oczU1.cJhY7bOAfbdpUsMavIvn {
+    margin-left: -40px !important;
+    padding: 0 40px !important;
+    margin-right: -40px !important;
 }
