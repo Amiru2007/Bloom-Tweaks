@@ -235,6 +235,31 @@ function waitForSpicetify() {
                 icon.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`;
                 button.appendChild(icon);
 
+                const styleTag = document.createElement("style");
+                styleTag.innerHTML = `
+                .bloom-tweaks.x-settings-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 0;
+}
+    .bloom-tweaks.save-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 60px;
+}
+    button#saveSettingsButton {
+    background: var(--spice-text);
+    padding: 6px 16px;
+    border: 1px solid transparent;
+    border-radius: var(--border-radius-2);
+    color: var(--spice-alt-text);
+    font-weight: 600;
+}
+                `;
+                document.head.appendChild(styleTag);
+
                 button.addEventListener("click", () => {
                     const content = document.createElement("div");
                     content.innerHTML = `

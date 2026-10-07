@@ -1,3 +1,17 @@
+button.main-globalNav-navLink.main-globalNav-link-icon {
+    width: 48px !important;
+    height: 48px !important;
+    background-color: transparent !important;
+    border: 1px solid transparent !important;
+    border-radius: var(--border-radius-1) !important;
+  transition: all 0.1s ease-in-out;
+}
+
+button.main-globalNav-navLink.main-globalNav-link-icon svg {
+    width: 24px !important;
+    height: 24px !important;
+}
+
 button.main-globalNav-navLink.main-globalNav-link-icon path {
     display: none;
 }
@@ -6,8 +20,22 @@ button.main-globalNav-navLink.main-globalNav-link-icon svg {
     background: var(--text-subdued) !important;
 }
 
+button.main-globalNav-navLink.main-globalNav-link-icon.main-globalNav-navLinkActive {
+    border: 1px solid var(--spice-main-elevated) !important;
+}
+
 button.main-globalNav-navLink.main-globalNav-link-icon.main-globalNav-navLinkActive svg {
     background: var(--spice-accent) !important;
+}
+
+button.main-globalNav-navLink.main-globalNav-link-icon.main-globalNav-navLinkActive::after {
+    content: '';
+    width: 24px;
+    height: 3px;
+    background: var(--spice-accent);
+    position: absolute;
+    bottom: 2px;
+    border-radius: 9999px;
 }
 
 button.main-globalNav-navLink.main-globalNav-link-icon[aria-label*="Marketplace"] svg {
@@ -24,4 +52,110 @@ button.main-globalNav-navLink.main-globalNav-link-icon[aria-label*="Home"] svg {
 
 button.main-globalNav-navLink.main-globalNav-link-icon.main-globalNav-navLinkActive[aria-label*="Home"] svg {
     mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_home_24_filled.svg")
+}
+
+button.main-globalNav-navLink.main-globalNav-link-icon:hover svg {
+    background: var(--spice-text) !important;
+}
+
+button.main-globalNav-navLink.main-globalNav-link-icon.main-globalNav-navLinkActive:hover svg {
+    background: var(--spice-accent) !important;
+}
+
+button[aria-label="What's New"], button[aria-label="Listening activity"], button[aria-label*="Customizations"] {
+  background: transparent !important;
+  border: 1px solid transparent !important;
+  height: 32px !important;
+  width: 32px !important;
+  top: 0px !important;
+}
+
+button[aria-label="What's New"] path, button[aria-label="Listening activity"] path, button[aria-label*="Customizations"] path, button[aria-label*="Customizations"] circle {
+  display: none !important;
+}
+
+button[aria-label="What's New"] svg, button[aria-label="Listening activity"] svg, button[aria-label*="Customizations"] svg svg {
+    background: var(--text-subdued) !important;
+  width: 24px !important;
+  height: 24px !important;
+  transition: all 0.1s ease-in-out;
+}
+
+button[aria-label="What's New"]:hover svg, button[aria-label="Listening activity"]:hover svg, button[aria-label*="Customizations"]:hover svg svg {
+    background: var(--spice-text) !important;
+}
+
+button[aria-label="What's New"] svg {
+    mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_alert_24_regular.svg");
+  mask-size: 24px;
+}
+
+button[aria-label="Listening activity"] svg {
+    mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_people_24_regular.svg");
+  mask-size: 24px;
+}
+
+button[aria-label="Customizations"] svg svg {
+    mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_settings_24_regular.svg");
+  mask-size: 24px;
+}
+
+button[aria-label="Customizations"] {
+    order: -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    cursor: pointer;
+}
+
+button[aria-label="Customizations"] svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
+  display: block;
+  width: 24px !important;
+  height: 24px !important;
+}
+
+.SnlXBd9tDSDjg6w4TqlK.lVgsUuhaE5SIvV2lxRaV { /* main-actionButtons what's new & listening activity buttons container */
+    padding-inline: 0px !important;
+}
+
+.main-actionButtons {
+    order: 2;
+}
+
+button.e-10860-legacy-button-primary.e-10860-legacy-button span.e-10860-button-primary__inner {
+    background: transparent !important;
+}
+
+button.e-10860-legacy-button-primary.e-10860-legacy-button span svg path {
+    display: none;
+}
+
+button.e-10860-legacy-button-primary.e-10860-legacy-button.pause span svg {
+    background: var(--spice-text);
+    mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_pause_16_filled.svg") !important;
+}
+
+button.e-10860-legacy-button-primary.e-10860-legacy-button.play span svg {
+    background: var(--spice-text);
+    mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_play_24_filled.svg") !important;
+}
+
+.OV5qcAEJH6buOXykghv7 button.e-10860-legacy-button-primary.e-10860-legacy-button span svg {
+    width: 50px;
+    height: 50px;
+    mask-size: 50px
+}
+
+header.main-topBar-container button.e-10860-legacy-button-primary.e-10860-legacy-button span svg {
+    width: 30px;
+    height: 30px;
+    mask-size: 30px
+}
+
+header.main-topBar-container {
+    height: 64px !important;
+}
+
+.X92CLCIdgH5PcxglhxRv.contentSpacing {
+    padding-top: 0px !important;
 }
