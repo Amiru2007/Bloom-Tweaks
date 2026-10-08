@@ -403,7 +403,37 @@ button[aria-label*="Open Your Library"]:hover span svg {
     mask-size: 40px;
 }
 
-img.Paf_Idn_uHcJizNgwOAs { /* Home Page quick playlists' now playing animation */
+.KB2AQPN5PgcnaX3dojWi img.Paf_Idn_uHcJizNgwOAs { /* Home Page quick playlists' now playing animation */
+    display: none;
+}
+
+.KB2AQPN5PgcnaX3dojWi::after {
+    content: '';
     width: 24px;
     height: 24px;
+    mask-size: 24px;
+    background: var(--spice-accent);
+    display: block;
+    mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/equaliser-animated-green.gif");
+}
+
+
+
+
+
+/* ---------------------------------------------------------------- Home Page main playlists ---------------------------------------------------------------- */
+
+.BTXPtQEzifZvDSNbfM4U.X433eA5ps5SoaH2ccjn0.pLvcoSIbNF28FKD_iw0A { /* Home Page main playlists container (scroll-through section)*/
+    padding-bottom: 8px;
+}
+
+.ofWraNR1hqxAaUfhHJ3M.NAiyN6JALb_zb4EVY545 .iEQccp87vlal4xUJePkw [data-carousel-item] {
+    height: 100%;
+}
+
+.e-10860-legacy-box.e-10860-legacy-box--interactive.e-10860-legacy-box--padding-custom.e-10860-card.CDSPLe2djW9sHmj1Z9gs.Card {
+    background: var(--spice-card) !important;
+    border: 1px solid var(--spice-light-border);
+    margin-left: 12px;
+    height: 100%;
 }
