@@ -1,0 +1,186 @@
+/* ----------------------------------------------------------------- Button Pack ---------------------------------------------------------------------------------------------------------- */
+
+#context-menu button.Button-sc-1dqy6lx-0.Button-buttonTertiary-textSubdued-small-small-useBrowserDefaultFocusStyle-condensed, .main-dropDown-dropDown, .Button-sc-y0gtbx-0, .ShowLyrics, .Dropdown-control {
+    /* background: var(--spice-card) !important;
+    border: 1px solid var(--spice-main-elevated) !important; */
+    border-radius: 6px !important;
+    font-weight: 400 !important;
+    backdrop-filter: blur(10px) !important;
+    background: rgba(var(--spice-rgb-not-selected), 0.045) !important;
+    border: 1px solid rgba(var(--spice-rgb-shadow), 0.045) !important;
+    transition: all 0.3s ease !important;
+    min-width: 100px !important;
+}
+
+#context-menu button.Button-sc-1dqy6lx-0.Button-buttonTertiary-textSubdued-small-small-useBrowserDefaultFocusStyle-condensed {
+    color: var(--spice-text);
+    height: 32px !important;
+    padding: 0 20px;
+    min-width: 114px !important;
+}
+
+.ButtonInner-sc-14ud5tc-0.ButtonInner-medium.encore-inverted-light-set,
+#context-menu button.Button-sc-qlcn5g-0.Button-buttonPrimary-useBrowserDefaultFocusStyle span,
+.main-playlistEditDetailsModal-save button span {
+    border-radius: 6px !important;
+    font-weight: 400 !important;
+    backdrop-filter: blur(10px) !important;
+    background: var(--spice-accent) !important;
+    border: 1px solid transparent !important;
+    transition: all 0.3s ease !important;
+    min-width: 114px !important;
+    height: 30px;
+}
+
+.ButtonInner-sc-14ud5tc-0.ButtonInner-medium.encore-inverted-light-set:hover,
+#context-menu button.Button-sc-1dqy6lx-0.Button-buttonTertiary-textSubdued-small-small-useBrowserDefaultFocusStyle-condensed:hover,
+#context-menu button.Button-sc-qlcn5g-0.Button-buttonPrimary-useBrowserDefaultFocusStyle span:hover {
+    transform: scale(1) !important;
+}
+
+.Button-buttonSecondary-small-useBrowserDefaultFocusStyle:hover,
+.ShowLyrics:hover {
+    transform: scale(1) !important;
+    background: rgba(var(--spice-rgb-not-selected), 0.07) !important;
+    border: 1px solid rgba(var(--spice-rgb-shadow), 0.05) !important;
+}
+
+.playlist-playlist-recommendedTrackList button.Button-sc-y0gtbx-0,
+.playlist-playlist-recommendedTrackList button.Button-sc-y0gtbx-0:hover {
+    transform: translateX(-5px) !important;
+}
+
+span.ButtonInner-sc-14ud5tc-0 {
+    border-radius: 6px !important;
+    font-weight: 400 !important;
+    min-block-size: 32px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.Dropdown-control {
+    min-width: 140px !important;
+}
+
+.Dropdown-menu {
+    background-color: rgba(var(--spice-rgb-main), 0.5) !important;
+    backdrop-filter: blur(var(--blur-radius)) saturate(0.5) brightness(100%);
+    padding: 6px;
+    gap: 6px;
+    display: flex;
+    flex-direction: column;
+    min-width: 140px;
+    margin-top: 6px !important;
+    border-radius: 8px !important;
+    border: 1px solid rgba(var(--spice-rgb-shadow), 0.045) !important;
+}
+
+.Dropdown-menu {
+    scrollbar-color: var(--spice-main-elevated) transparent;
+    scrollbar-width: thin;
+}
+
+.Dropdown-option {
+    border-radius: 6px;
+}
+
+/* .ChipInnerComponent-sm, .ChipInnerComponent-sm-selected {
+    border-radius: var(--border-radius-2) !important;
+} */
+
+
+/* ----------------------------------------------------------------------- Marketplace----------------------------------------------------------------------------- */
+
+button.button-module__button___hf2qg_marketplace.marketplace-add-snippet-btn {
+    border-radius: 6px !important;
+    font-weight: 400 !important;
+    background: var(--spice-text) !important;
+    border: 1px solid rgba(var(--spice-rgb-shadow), 0.045) !important;
+    transition: all 0.3s ease !important;
+    min-width: 100px !important;
+    cursor: pointer;
+    padding: 6px 30px !important;
+}
+
+
+/* ----------------------------------------------------------------------- Artist Page ----------------------------------------------------------------------------- */
+
+button.qyKJPLjz8o4jnbk92JOn.zsVdTdACMZA_MWB3HlEW,
+button.qyKJPLjz8o4jnbk92JOn.nsakAYOtgZOAcEO4ObrM {
+    width: 18px !important;
+    height: 50px !important;
+    border-radius: 4px !important;
+    font-weight: 400 !important;
+    backdrop-filter: blur(10px) !important;
+    background: rgba(var(--spice-rgb-not-selected), 0.045) !important;
+    border: 1px solid rgba(var(--spice-rgb-shadow), 0.045) !important;
+    transition: all 0.3s ease !important;
+}
+
+button.qyKJPLjz8o4jnbk92JOn.zsVdTdACMZA_MWB3HlEW:hover,
+button.qyKJPLjz8o4jnbk92JOn.nsakAYOtgZOAcEO4ObrM:hover {
+    background: rgba(var(--spice-rgb-not-selected), 0.07) !important;
+    border: 1px solid rgba(var(--spice-rgb-shadow), 0.05) !important;
+}
+
+button.qyKJPLjz8o4jnbk92JOn.zsVdTdACMZA_MWB3HlEW svg,
+button.qyKJPLjz8o4jnbk92JOn.nsakAYOtgZOAcEO4ObrM svg {
+    background: var(--spice-subtext);
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_caret_right_24_filled.svg);
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_caret_right_24_filled.svg);
+}
+
+button.qyKJPLjz8o4jnbk92JOn.zsVdTdACMZA_MWB3HlEW svg {
+    transform: rotate(180deg) !important;
+}
+
+button.qyKJPLjz8o4jnbk92JOn.zsVdTdACMZA_MWB3HlEW:hover svg,
+button.qyKJPLjz8o4jnbk92JOn.nsakAYOtgZOAcEO4ObrM:hover svg {
+    background: var(--spice-text) !important;
+}
+
+button.qyKJPLjz8o4jnbk92JOn.zsVdTdACMZA_MWB3HlEW svg path,
+button.qyKJPLjz8o4jnbk92JOn.nsakAYOtgZOAcEO4ObrM svg path {
+    opacity: 0 !important;
+}
+
+.C1USyigFSYyc22_BmsgB {
+    border-radius: var(--border-radius-1);
+}
+
+.rdp-day_selected, .rdp-day_selected:focus-visible, .rdp-day_selected:hover {
+    background-color: var(--spice-accent) !important;
+    color: var(--spice-alt-text) !important;
+    font-weight: 400;
+    border: 1px solid var(--spice-accent) !important;
+}
+
+span.LegacyChipInner__ChipInnerComponent-sc-1qguixk-0.ChipInnerComponent-md-selected.encore-bright-accent-set.x0xbkRE3CyGK_i406MSX:hover {
+    background-color: var(--spice-accent) !important;
+}
+
+.main-playlistEditDetailsModal-save button span {
+    padding: 0;
+    padding-block: var(--encore-spacing-tighter-4);
+    padding-inline: var(--encore-spacing-base);
+    font-size: var(--encore-text-size-smaller);
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    will-change: transform;
+    color: var(--text-base,#000000);
+    min-inline-size: 0px;
+    min-block-size: var(--encore-control-size-smaller,32px);
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    overflow-wrap: anywhere;
+    border-radius: 6px !important;
+    font-weight: 400 !important;
+    backdrop-filter: blur(10px) !important;
+    border: 1px solid rgba(var(--spice-rgb-shadow), 0.045) !important;
+    transition: all 0.3s ease !important;
+    min-width: 100px !important;
+}

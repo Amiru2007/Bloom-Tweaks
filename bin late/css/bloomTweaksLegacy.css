@@ -1,0 +1,599 @@
+button.main-globalNav-navLink.main-globalNav-link-icon {
+    width: 48px !important;
+    height: 48px !important;
+    background-color: transparent !important;
+    border: 1px solid transparent !important;
+    border-radius: var(--border-radius-1) !important;
+  transition: all 0.1s ease-in-out;
+}
+
+button.main-globalNav-navLink.main-globalNav-link-icon svg {
+    width: 24px !important;
+    height: 24px !important;
+}
+
+button.main-globalNav-navLink.main-globalNav-link-icon path {
+    display: none;
+}
+
+button.main-globalNav-navLink.main-globalNav-link-icon svg {
+    background: var(--text-subdued) !important;
+}
+
+button.main-globalNav-navLink.main-globalNav-link-icon.main-globalNav-navLinkActive {
+    border: 1px solid var(--spice-main-elevated) !important;
+}
+
+button.main-globalNav-navLink.main-globalNav-link-icon.main-globalNav-navLinkActive svg {
+    background: var(--spice-accent) !important;
+}
+
+button.main-globalNav-navLink.main-globalNav-link-icon.main-globalNav-navLinkActive::after {
+    content: '';
+    width: 24px;
+    height: 3px;
+    background: var(--spice-accent);
+    position: absolute;
+    bottom: 2px;
+    border-radius: 9999px;
+}
+
+button.main-globalNav-navLink.main-globalNav-link-icon[aria-label*="Marketplace"] svg {
+    mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_app_store_24_regular.svg")
+}
+
+button.main-globalNav-navLink.main-globalNav-link-icon.main-globalNav-navLinkActive[aria-label*="Marketplace"] svg {
+    mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_app_store_24_filled.svg")
+}
+
+button.main-globalNav-navLink.main-globalNav-link-icon[aria-label*="Home"] svg {
+    mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_home_24_regular.svg")
+}
+
+button.main-globalNav-navLink.main-globalNav-link-icon.main-globalNav-navLinkActive[aria-label*="Home"] svg {
+    mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_home_24_filled.svg")
+}
+
+button.main-globalNav-navLink[aria-label="Home"] {
+    top: 0 !important;
+}
+
+button.main-globalNav-navLink.main-globalNav-link-icon:hover svg {
+    background: var(--spice-text) !important;
+}
+
+button.main-globalNav-navLink.main-globalNav-link-icon.main-globalNav-navLinkActive:hover svg {
+    background: var(--spice-accent) !important;
+}
+
+button[aria-label="What's New"], button[aria-label="Listening activity"], button[aria-label*="Customizations"] {
+  background: transparent !important;
+  border: 1px solid transparent !important;
+  height: 32px !important;
+  width: 32px !important;
+  top: 0px !important;
+}
+
+button[aria-label="What's New"] path, button[aria-label="Listening activity"] path, button[aria-label*="Customizations"] path, button[aria-label*="Customizations"] circle {
+  display: none !important;
+}
+
+button[aria-label="What's New"] svg, button[aria-label="Listening activity"] svg, button[aria-label*="Customizations"] svg svg {
+    background: var(--text-subdued) !important;
+  width: 24px !important;
+  height: 24px !important;
+  transition: all 0.1s ease-in-out;
+}
+
+button[aria-label="What's New"]:hover svg, button[aria-label="Listening activity"]:hover svg, button[aria-label*="Customizations"]:hover svg svg {
+    background: var(--spice-text) !important;
+}
+
+button[aria-label="What's New"] svg {
+    mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_alert_24_regular.svg");
+  mask-size: 24px;
+}
+
+button[aria-label="Listening activity"] svg {
+    mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_people_24_regular.svg");
+  mask-size: 24px;
+}
+
+button[aria-label="Customizations"] svg svg {
+    mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_settings_24_regular.svg");
+  mask-size: 24px;
+}
+
+button[aria-label="Customizations"] {
+    order: -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    cursor: pointer;
+}
+
+button[aria-label="Customizations"] svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
+  display: block;
+  width: 24px !important;
+  height: 24px !important;
+}
+
+.SnlXBd9tDSDjg6w4TqlK.lVgsUuhaE5SIvV2lxRaV { /* main-actionButtons what's new & listening activity buttons container */
+    padding-inline: 0px !important;
+}
+
+.main-actionButtons {
+    order: 2;
+}
+
+button.e-10860-legacy-button-primary.e-10860-legacy-button span.e-10860-button-primary__inner {
+    background: transparent !important;
+}
+
+button.e-10860-legacy-button-primary.e-10860-legacy-button span svg path {
+    display: none;
+}
+
+button.e-10860-legacy-button-primary.e-10860-legacy-button.pause span svg {
+    background: var(--spice-text);
+    mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_pause_16_filled.svg") !important;
+}
+
+button.e-10860-legacy-button-primary.e-10860-legacy-button.play span svg {
+    background: var(--spice-text);
+    mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_play_24_filled.svg") !important;
+}
+
+.OV5qcAEJH6buOXykghv7 button.e-10860-legacy-button-primary.e-10860-legacy-button span svg {
+    width: 60px;
+    height: 60px;
+    mask-size: 60px;
+}
+
+header.main-topBar-container button.e-10860-legacy-button-primary.e-10860-legacy-button span svg {
+    width: 30px;
+    height: 30px;
+    mask-size: 30px
+}
+
+.main-nowPlayingBar-nowPlayingBar button.e-10860-legacy-button-primary.e-10860-legacy-button span svg {
+    width: 24px;
+    height: 24px;
+    mask-size: 24px;
+}
+
+.CDSPLe2djW9sHmj1Z9gs button span svg {
+    transform: scale(0.8);
+    box-shadow: 0 4px 16px rgba(var(--spice-rgb-layer-shadow), 0.5) !important;
+}
+
+header.main-topBar-container {
+    height: 64px !important;
+}
+
+.X92CLCIdgH5PcxglhxRv.contentSpacing {
+    padding-top: 0px !important;
+}
+
+.main-nowPlayingBar-container {
+    width: calc(100% - 15px) !important;
+}
+
+a:not([data-encore-id]):hover, a:not([data-encore-id]):focus, a:not([data-encore-id])[data-context-menu-open=true], [data-context-menu-open=true]>a:only-child {
+    text-decoration: none !important;
+}
+
+.WosRx6NbfxOIFkdobeyk {
+    overflow: scroll !important;
+}
+
+.t6Jwud2fkYyUBTi8RqaT {
+    padding: 0px 0px 64px 0px;
+}
+
+.x-progressBar-progressBarBg div[data-testid*="progress-bar-handle"] {
+    background: var(--spice-light-border);
+    width: 18px;
+    height: 18px;
+    border: 1px solid var(--spice-button-disabled);
+    display: flex;
+}
+
+.x-progressBar-progressBarBg div[data-testid*="progress-bar-handle"]::after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: var(--spice-accent);
+    border-radius: 50%;
+    transition: all 0.1s ease-in-out;
+}
+
+.x-progressBar-progressBarBg div[data-testid*="progress-bar-handle"]:hover::after {
+    transform: scale(1.3);
+}
+
+.kMvOpkTCi8ZAgLVHRKxi,
+.tE3l9TnMW6w8Evh_ico2 {
+    text-align: center !important;
+}
+
+.AJAehY5PvDch63k01sHw.xljhkx9cbmxKi0ds5o5e { /* main playlist list container */
+    background: var(--spice-sidebar);
+    border: 1px solid var(--spice-highlight-elevated);
+    border-radius: var(--border-radius-2);
+    padding: 0px 8px 8px 8px !important;
+}
+
+.L3JPMnmwEzf7DL1TKZ9R svg path {
+    display: none;
+}
+
+.L3JPMnmwEzf7DL1TKZ9R svg {
+    width: 16px;
+    height: 16px;
+    background: var(--spice-subtext);
+    mask-size: 16px;
+    transform: rotate(90deg);
+    mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_caret_right_24_filled.svg") !important;
+}
+
+.j3mNS2daSmqH4118677h { /* Side bar now playing animation */
+    content: '';
+    width: 14px;
+    height: 14px;
+    mask-size: 14px;
+    background: var(--spice-accent);
+    display: block;
+    mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/equaliser-animated-green.gif");
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+}
+
+.AJAehY5PvDch63k01sHw.xljhkx9cbmxKi0ds5o5e .j3mNS2daSmqH4118677h button.play path {
+    display: none !important;
+}
+
+.AJAehY5PvDch63k01sHw.xljhkx9cbmxKi0ds5o5e .j3mNS2daSmqH4118677h button.play svg,
+.AJAehY5PvDch63k01sHw.xljhkx9cbmxKi0ds5o5e .j3mNS2daSmqH4118677h button.pause svg {
+    width: 16px !important;
+    height: 16px !important;
+    mask-size: 16px !important;
+}
+
+.AJAehY5PvDch63k01sHw.xljhkx9cbmxKi0ds5o5e .j3mNS2daSmqH4118677h button.play svg {
+    background: var(--spice-text) !important;
+    mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_play_24_filled.svg") !important;
+}
+
+.AJAehY5PvDch63k01sHw.xljhkx9cbmxKi0ds5o5e .j3mNS2daSmqH4118677h button.pause svg {
+    background: var(--spice-text) !important;
+    mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_pause_16_filled.svg") !important;
+}
+
+.h3nJTxxmxIYRP5Aft1CC:hover, .h3nJTxxmxIYRP5Aft1CC:focus-within {
+    background-color: var(--spice-main-elevated) !important;
+}
+
+.h3nJTxxmxIYRP5Aft1CC {
+    border-radius: var(--border-radius-2) !important;
+}
+
+.WUHV3yvmh_gdGie5wFp4.contentSpacing { /* Playlist main large button container */
+    padding-top: 30px !important;
+}
+
+.zyugqDUpsiWa8v7oczU1.cJhY7bOAfbdpUsMavIvn {
+    margin-left: -40px !important;
+    padding: 0 40px !important;
+    margin-right: -40px !important;
+    background: var(--spice-sidebar) !important;
+    border-bottom: 1px solid var(--spice-main-elevated) !important;
+}
+
+.skbiXj4RSA0QAr5xDn9P { /* Playlist main large button container gradient background */
+    background: transparent !important;
+}
+
+.CpEaNOB66nFcZNUZA2wg { /* Playlist container header */
+    border-bottom: 1px solid var(--spice-main-elevated) !important;
+}
+
+.yvYdZyDIc9bukbMMn5Qe::after {
+    opacity: 1 !important;
+    background: linear-gradient(180deg, transparent, var(--spice-main)) !important;
+}
+
+
+/* ---------------------------------------------------------------- Spotify official playlist pages background gradient overlay ---------------------------------------------------------------- */
+
+.UbzV6GmaFXRSbQNfaAZL.WHmePp2RcjDcZf8l9fqg.gmb9NAvXgkg8XFMlNTNR::after { 
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, var(--spice-main));
+    position: absolute;
+}
+
+.DH2PjHMgNMcBwVKbJnnr {
+    z-index: 2 !important;
+}
+
+
+/* ---------------------------------------------------------------- Liked Songs page gradient overlays ---------------------------------------------------------------- */
+
+.IA4iGG9XYovF8ZeEsq8A { /* Liked Songs main large button container gradient background */
+    background: var(--spice-main) !important;
+}
+
+.uUrwzgxT0uv5kJSygl8V { /* Liked Songs cover art container gradient overlay */
+    background: linear-gradient(180deg, transparent, var(--spice-main)) !important;
+}
+
+.b0kbWFp7K9_JqU7W7FqI {
+    background: var(--spice-sidebar) !important;
+    border: 1px solid var(--spice-main-elevated) !important;
+}
+
+
+
+
+
+
+.e-10860-legacy-box.e-10860-legacy-box--elevated.encore-light-theme.encore-layout-themes.RMmBg2QzG5bh3XiTes7p {
+    background: var(--spice-player);
+    border: 1px solid var(--spice-highlight-elevated);
+}
+
+
+
+
+/* ---------------------------------------------------------------- Side bar ---------------------------------------------------------------- */
+
+button[aria-label*="Collapse Your Library"] {
+    display: flex;
+    align-items: center;
+}
+
+button[aria-label*="Open Your Library"] span,
+button[aria-label*="Collapse Your Library"] span {
+    width: 24px !important;
+    height: 24px !important;
+}
+
+button[aria-label*="Open Your Library"] span path,
+button[aria-label*="Collapse Your Library"] span path {
+    display: none;
+}
+
+button[aria-label*="Collapse Your Library"] span svg {
+    width: 24px;
+    height: 24px;
+    mask-size: 24px;
+    background: var(--spice-text);
+    mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_library_24_filled.svg") !important;
+}
+
+button[aria-label*="Open Your Library"] span svg {
+    width: 24px;
+    height: 24px;
+    mask-size: 24px;
+    background: var(--spice-subtext);
+    mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_library_24_regular.svg") !important;
+}
+
+.d4HKuP52MDiNg1YzPGuF .zWHCTn_WEakA2IkLpb83 {
+    height: 32px !important;
+}
+
+button[aria-label*="Open Your Library"]:hover span svg {
+    background: var(--spice-text) !important;
+}
+
+.main-yourLibraryX-libraryRootlist div[aria-label*="Your Library"] .e-10860-legacy-list-row__slot.e-10860-legacy-list-row__interactive button path,
+.main-yourLibraryX-libraryRootlist div[aria-label*="Your Library"] .kIdwlYLsDCgBSpsfutG6 button path {
+    display: none;
+}
+
+.main-yourLibraryX-libraryRootlist div[aria-label*="Your Library"] .kIdwlYLsDCgBSpsfutG6 button svg {
+    width: 24px !important;
+    height: 24px !important;
+    mask-size: 24px !important;
+    background: var(--spice-text);
+}
+
+.main-yourLibraryX-libraryRootlist div[aria-label*="Your Library"] .kIdwlYLsDCgBSpsfutG6 button.play svg {
+    mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_play_24_filled.svg") !important;
+}
+
+.main-yourLibraryX-libraryRootlist div[aria-label*="Your Library"] .kIdwlYLsDCgBSpsfutG6 button.pause svg {
+    mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_pause_16_filled.svg") !important;
+}
+
+.main-yourLibraryX-libraryRootlist div[aria-label*="Your Library"] .e-10860-legacy-list-row__slot.e-10860-legacy-list-row__interactive button svg {
+    width: 16px !important;
+    height: 16px !important;
+    mask-size: 16px !important;
+    background: var(--spice-subtext);
+    mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_play_24_filled.svg") !important;
+}
+
+.main-yourLibraryX-libraryRootlist div[aria-label*="Your Library"] .e-10860-legacy-list-row__slot.e-10860-legacy-list-row__interactive button[aria-label*="Expand folder"] svg {
+  transform: rotate(90deg);
+}
+
+.main-yourLibraryX-libraryRootlist div[aria-label*="Your Library"] .e-10860-legacy-list-row__slot.e-10860-legacy-list-row__interactive button[aria-label*="Collapse folder"] svg {
+  transform: rotate(-90deg);
+}
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------- Home Page quick playlists ---------------------------------------------------------------- */
+
+.x0Tk9K1tu0sFwdD5iNF5 {
+    padding: 12px;
+    background: var(--spice-card) !important;
+    border: 1px solid var(--spice-light-border);
+    border-radius: var(--border-radius-2) !important;
+}
+
+.JjVnTjohUhLjyoxUzwrJ {
+    height: 100% !important;
+    gap: 10px;
+}
+
+.x0Tk9K1tu0sFwdD5iNF5 .IQI1MMR9t78Vtcj_40sk {
+    border-radius: var(--border-radius-2);
+    overflow: hidden !important;
+}
+
+.x0Tk9K1tu0sFwdD5iNF5 .c7P7B0AgZ0QRaj8wX4kh { /* Home Page quick playlists' cover arts */
+    min-width: calc(var(--item-height) - 24px) !important;
+    min-height: calc(var(--item-height) - 24px) !important;
+}
+
+.x0Tk9K1tu0sFwdD5iNF5 .gUVVOKnk0b3kHDSNL5HC .gPP9HHNB_VcUwNSTc1Lw { /* Home Page quick playlists' control button */
+    margin-right: 12px;
+}
+
+.x0Tk9K1tu0sFwdD5iNF5 .gUVVOKnk0b3kHDSNL5HC .gPP9HHNB_VcUwNSTc1Lw button.e-10860-legacy-button-primary.e-10860-legacy-button span {
+    transition: all 0.2s ease-in-out;
+}
+
+.x0Tk9K1tu0sFwdD5iNF5 .gUVVOKnk0b3kHDSNL5HC .gPP9HHNB_VcUwNSTc1Lw button.e-10860-legacy-button-primary.e-10860-legacy-button span svg {
+    width: 40px;
+    height: 40px;
+    mask-size: 40px;
+}
+
+.KB2AQPN5PgcnaX3dojWi img.Paf_Idn_uHcJizNgwOAs,
+.j3mNS2daSmqH4118677h .YQ0uPtmHEvHsS8MszwpG { /* Home Page quick playlists' now playing animation */
+    display: none;
+}
+
+.KB2AQPN5PgcnaX3dojWi::after {
+    content: '';
+    width: 24px;
+    height: 24px;
+    mask-size: 24px;
+    background: var(--spice-accent);
+    display: block;
+    mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/equaliser-animated-green.gif");
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+}
+
+.x0Tk9K1tu0sFwdD5iNF5:hover .KB2AQPN5PgcnaX3dojWi::after {
+    opacity: 0 !important;
+}
+
+
+
+
+
+/* ---------------------------------------------------------------- Home Page main playlists ---------------------------------------------------------------- */
+
+.BTXPtQEzifZvDSNbfM4U.X433eA5ps5SoaH2ccjn0.pLvcoSIbNF28FKD_iw0A { /* Home Page main playlists container (scroll-through section)*/
+    padding-bottom: 8px;
+}
+
+.ofWraNR1hqxAaUfhHJ3M.NAiyN6JALb_zb4EVY545 .iEQccp87vlal4xUJePkw [data-carousel-item] {
+    height: 100%;
+}
+
+.e-10860-legacy-box.e-10860-legacy-box--interactive.e-10860-legacy-box--padding-custom.e-10860-card.CDSPLe2djW9sHmj1Z9gs.Card {
+    background: var(--spice-card) !important;
+    border: 1px solid var(--spice-light-border);
+    margin-left: 12px;
+    height: 100%;
+}
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------- Right Click menus ---------------------------------------------------------------- */
+
+div#context-menu {
+    box-shadow: 0px 0px 10px #00000052 !important;
+}
+
+.l1Ov7CMEDnAqk63BPZvI {
+    background: var(--spice-card) !important;
+    border: 1px solid var(--spice-light-border) !important;
+    border-radius: var(--border-radius-2) !important;
+    /* backdrop-filter: blur(20px); */
+}
+
+.iVeJpmLBo_ZjJBt1spaC:not([aria-checked=true]):focus, .iVeJpmLBo_ZjJBt1spaC:hover {
+    background-color: var(--spice-main-elevated) !important;
+}
+
+.bLn6jrxfTPeNMMinrlwG:has(+.hQeFi01SZsZitKpMEvtQ:not(:first-child)), .hQeFi01SZsZitKpMEvtQ:not(:last-child)+.idqQaVyeqAh9SCggFTLg {
+    margin: 4px 0;
+}
+
+.vIIkpjJ5y4lSciEhcISG svg path {
+    display: none;
+}
+
+.vIIkpjJ5y4lSciEhcISG svg  {
+    width: 16px;
+    height: 16px;
+    mask-size: 16px;
+    background: var(--spice-text);
+    mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_caret_right_24_filled.svg") !important;
+    transform: rotate(0deg) !important;
+}
+
+
+
+
+/* ---------------------------------------------------------------- Explicit tag ---------------------------------------------------------------- */
+
+span:has(span[aria-label*="Explicit"]) {
+    background: var(--spice-accent) !important;
+    border-radius: 4px !important;
+    width: 16px !important;
+    height: 16px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+span[aria-label*="Explicit"] {
+    color: var(--spice-alt-text) !important;
+    font-weight: 600 !important;
+}
+
+
+
+
+
+/* ---------------------------------------------------------------- Popups ---------------------------------------------------------------- */
+
+.VvAoS6GSNFNNkXztQUOF { /* Edit menu */
+    background: rgba(var(--spice-rgb-main), 0.8) !important;
+    backdrop-filter: blur(10px) !important;
+    border: 1px solid var(--spice-card) !important;
+}
+
+.VvAoS6GSNFNNkXztQUOF .H6u2D0Xqnkd1Ah9YxzYi {
+    background: var(--spice-highlight-elevated) !important;
+    border: 1px solid var(--spice-highlight-elevated) !important;
+    transition: all 0.1s ease-in-out;
+}
+
+.VvAoS6GSNFNNkXztQUOF .H6u2D0Xqnkd1Ah9YxzYi:focus {
+    background: var(--spice-highlight) !important;
+    border: 1px solid var(--spice-highlight-elevated) !important;
+}
+
+.VvAoS6GSNFNNkXztQUOF button.e-10860-legacy-button-primary.e-10860-legacy-button span.e-10860-button-primary__inner {
+    background: var(--spice-text) !important;
+}
