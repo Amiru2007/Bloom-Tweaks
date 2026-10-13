@@ -1,5 +1,8 @@
-button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBrowserDefaultFocusStyle-condensedAll svg,
-button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBrowserDefaultFocusStyle-condensedAll svg svg {
+button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBrowserDefaultFocusStyle-condensedAll
+    svg,
+button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBrowserDefaultFocusStyle-condensedAll
+    svg
+    svg {
     background: var(--spice-text) !important;
     mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_settings_24_regular.svg") !important;
     -webkit-mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_settings_24_regular.svg") !important;
@@ -77,15 +80,23 @@ button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBro
 /* beautiful lyrics text-shdow delete */
 
 .Vocals.Active .Synced {
-    background-image: linear-gradient(var(--gradient-angle),
-            rgba(var(--gradient-color),
+    background-image: linear-gradient(
+        var(--gradient-angle),
+        rgba(
                 var(--gradient-color),
                 var(--gradient-color),
-                var(--gradient-color-alpha-active)) var(--gradient-progress),
-            rgba(var(--gradient-color),
+                var(--gradient-color),
+                var(--gradient-color-alpha-active)
+            )
+            var(--gradient-progress),
+        rgba(
                 var(--gradient-color),
                 var(--gradient-color),
-                var(--gradient-color-alpha)) calc(var(--gradient-progress) + 20% + var(--gradient-offset)));
+                var(--gradient-color),
+                var(--gradient-color-alpha)
+            )
+            calc(var(--gradient-progress) + 20% + var(--gradient-offset))
+    );
     text-shadow: 0 0 var(--text-shadow-blur-radius) rgb(255 255 255 / 0%);
     text-shadow: none !important;
 }
@@ -97,9 +108,11 @@ button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBro
 
 .PkOz5g82CaoKk1J3GX0e {
     background-color: var(--spice-main) !important;
-    background-image: linear-gradient(0deg,
-            var(--spice-main),
-            var(--spice-main)) !important;
+    background-image: linear-gradient(
+        0deg,
+        var(--spice-main),
+        var(--spice-main)
+    ) !important;
 }
 
 .yhlH4Dsjqw56Z58EOwvQ {
@@ -164,7 +177,9 @@ button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-useBrows
     display: none !important;
 }
 
-.playlist-playlist-playlist .IconWrapper__Wrapper-sc-1hf1hjl-0 .Svg-sc-ytk21e-0 {
+.playlist-playlist-playlist
+    .IconWrapper__Wrapper-sc-1hf1hjl-0
+    .Svg-sc-ytk21e-0 {
     width: 50px;
     height: 50px;
 }
@@ -187,11 +202,13 @@ button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-useBrows
     background-color: transparent !important;
 }
 
-.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only:hover .ButtonInner-sc-14ud5tc-0 {
+.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only:hover
+    .ButtonInner-sc-14ud5tc-0 {
     background-color: transparent !important;
 }
 
-.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only:active .ButtonInner-sc-14ud5tc-0 {
+.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only:active
+    .ButtonInner-sc-14ud5tc-0 {
     background-color: transparent !important;
 }
 
@@ -220,7 +237,8 @@ aside[aria-label="Friend Activity"] {
     z-index: 0;
 }
 
-button.main-actionButtons-button.main-topBarStatusIndicator-hasTooltip.main-noConnection-isNotice.main-topBarStatusIndicator-tooltipEnter.main-topBarStatusIndicator-tooltipEnterActive svg {
+button.main-actionButtons-button.main-topBarStatusIndicator-hasTooltip.main-noConnection-isNotice.main-topBarStatusIndicator-tooltipEnter.main-topBarStatusIndicator-tooltipEnterActive
+    svg {
     fill: var(--spice-alt-text) !important;
 }
 
@@ -244,13 +262,15 @@ aside[aria-label="Friend Activity"] .sGj6VHKqd2s4IorAqiYI p {
     width: 16px !important;
 }
 
-.main-trackList-rowSectionVariable[aria-sort*="ascending"] svg.Svg-sc-ytk21e-0.Svg-img-icon-small-textBrightAccent.OQc9_giz7hbNqHLZODIx {
+.main-trackList-rowSectionVariable[aria-sort*="ascending"]
+    svg.Svg-sc-ytk21e-0.Svg-img-icon-small-textBrightAccent.OQc9_giz7hbNqHLZODIx {
     background: var(--spice-accent) !important;
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/ic_fluent_caret_up_24_filled.svg) !important;
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/ic_fluent_caret_up_24_filled.svg) !important;
 }
 
-.main-trackList-rowSectionVariable[aria-sort*="descending"] svg.Svg-sc-ytk21e-0.Svg-img-icon-small-textBrightAccent.OQc9_giz7hbNqHLZODIx {
+.main-trackList-rowSectionVariable[aria-sort*="descending"]
+    svg.Svg-sc-ytk21e-0.Svg-img-icon-small-textBrightAccent.OQc9_giz7hbNqHLZODIx {
     background: var(--spice-accent) !important;
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/ic_fluent_caret_down_24_filled.svg) !important;
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/main/assets/Icons/ic_fluent_caret_down_24_filled.svg) !important;
@@ -290,33 +310,60 @@ aside[aria-label="Queue"] .Button-sc-1dqy6lx-0 svg {
     background: rgba(0, 0, 0, 0.5) !important;
 }
 
-#spicetify-playlist-list li button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle[aria-label*="Play"] svg.Svg-sc-ytk21e-0.Svg-img-icon-medium,
+#spicetify-playlist-list
+    li
+    button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle[aria-label*="Play"]
+    svg.Svg-sc-ytk21e-0.Svg-img-icon-medium,
 .main-playButton-PlayButton.main-playButton-primary svg,
 aside[aria-label="Queue"] .Button-sc-1dqy6lx-0[aria-label*="Play"] svg,
 .cRB7yMdTUrWxDud8Uqvi[aria-label*="Play"] .RTHphmJ9fFJyJWFe9Kwt,
-.xU4sacBisQneHoQeHMP5 .srjSlmxMGzXnJBc32BJa[aria-label*="Play"] .lju7xv10a5Y5Z8h8CcKJ,
+.xU4sacBisQneHoQeHMP5
+    .srjSlmxMGzXnJBc32BJa[aria-label*="Play"]
+    .lju7xv10a5Y5Z8h8CcKJ,
 .play-button svg,
-.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only[aria-label*="Play"] .IconWrapper__Wrapper-sc-1hf1hjl-0 .Svg-sc-ytk21e-0,
-button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle.play svg,
-button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle[aria-label*="Play"] svg,
-.main-yourLibraryX-listItem button.Button-sc-1dqy6lx-0.Button-buttonTertiary-textBase-medium-medium-iconOnly-useBrowserDefaultFocusStyle[aria-label*="Play"] svg,
-#search-dropdown .Button-buttonTertiary-textBase-medium-iconOnly-useBrowserDefaultFocusStyle[aria-label*="Play"] svg {
+.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only[aria-label*="Play"]
+    .IconWrapper__Wrapper-sc-1hf1hjl-0
+    .Svg-sc-ytk21e-0,
+button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle.play
+    svg,
+button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle[aria-label*="Play"]
+    svg,
+.main-yourLibraryX-listItem
+    button.Button-sc-1dqy6lx-0.Button-buttonTertiary-textBase-medium-medium-iconOnly-useBrowserDefaultFocusStyle[aria-label*="Play"]
+    svg,
+#search-dropdown
+    .Button-buttonTertiary-textBase-medium-iconOnly-useBrowserDefaultFocusStyle[aria-label*="Play"]
+    svg {
     mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg) !important;
     -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg) !important;
     transition: transform 0.3s ease;
     background: var(--spice-text) !important;
 }
 
-#spicetify-playlist-list li button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle[aria-label*="Pause"] svg.Svg-sc-ytk21e-0.Svg-img-icon-medium,
+#spicetify-playlist-list
+    li
+    button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle[aria-label*="Pause"]
+    svg.Svg-sc-ytk21e-0.Svg-img-icon-medium,
 aside[aria-label="Queue"] .Button-sc-1dqy6lx-0[aria-label*="Pause"] svg,
 .cRB7yMdTUrWxDud8Uqvi[aria-label*="Pause"] .RTHphmJ9fFJyJWFe9Kwt,
-.xU4sacBisQneHoQeHMP5 .srjSlmxMGzXnJBc32BJa[aria-label*="Pause"] .lju7xv10a5Y5Z8h8CcKJ,
-.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only[aria-label*="Pause"] .IconWrapper__Wrapper-sc-1hf1hjl-0 .Svg-sc-ytk21e-,
-button.Button-sc-qlcn5g-0.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only.pause svg,
-button.Button-sc-qlcn5g-0.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only[aria-label*="Pause"] svg,
-button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle.pause svg,
-.main-yourLibraryX-listItem button.Button-sc-1dqy6lx-0.Button-buttonTertiary-textBase-medium-medium-iconOnly-useBrowserDefaultFocusStyle[aria-label*="Pause"] svg,
-#search-dropdown .Button-buttonTertiary-textBase-medium-iconOnly-useBrowserDefaultFocusStyle[aria-label*="Pause"] svg {
+.xU4sacBisQneHoQeHMP5
+    .srjSlmxMGzXnJBc32BJa[aria-label*="Pause"]
+    .lju7xv10a5Y5Z8h8CcKJ,
+.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only[aria-label*="Pause"]
+    .IconWrapper__Wrapper-sc-1hf1hjl-0
+    .Svg-sc-ytk21e-,
+button.Button-sc-qlcn5g-0.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only.pause
+    svg,
+button.Button-sc-qlcn5g-0.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only[aria-label*="Pause"]
+    svg,
+button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle.pause
+    svg,
+.main-yourLibraryX-listItem
+    button.Button-sc-1dqy6lx-0.Button-buttonTertiary-textBase-medium-medium-iconOnly-useBrowserDefaultFocusStyle[aria-label*="Pause"]
+    svg,
+#search-dropdown
+    .Button-buttonTertiary-textBase-medium-iconOnly-useBrowserDefaultFocusStyle[aria-label*="Pause"]
+    svg {
     mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_pause_16_filled.svg) !important;
     -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_pause_16_filled.svg) !important;
     transition: transform 0.3s ease;
@@ -351,17 +398,23 @@ button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly
     display: block !important;
 }
 
-.main-yourLibraryX-libraryItemContainer li.main-useDropTarget-base.main-useDropTarget-track.main-useDropTarget-local.main-useDropTarget-album.main-useDropTarget-episode.main-yourLibraryX-listItem button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle svg.Svg-sc-ytk21e-0.Svg-img-icon-medium path {
+.main-yourLibraryX-libraryItemContainer
+    li.main-useDropTarget-base.main-useDropTarget-track.main-useDropTarget-local.main-useDropTarget-album.main-useDropTarget-episode.main-yourLibraryX-listItem
+    button.Button-sc-1dqy6lx-0.Button-textBase-medium-medium-buttonTertiary-iconOnly-useBrowserDefaultFocusStyle
+    svg.Svg-sc-ytk21e-0.Svg-img-icon-medium
+    path {
     background: transparent;
 }
 
-button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-in-keyboard-nav-condensedAll-useBrowserDefaultFocusStyle.PUipCs3_0Qott0Sru3pB.XAOxFVWnd185_vZ5zPGu.JUPaw8kZF94Coth4G88s[aria-label*="Expand folder"] svg {
+button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-in-keyboard-nav-condensedAll-useBrowserDefaultFocusStyle.PUipCs3_0Qott0Sru3pB.XAOxFVWnd185_vZ5zPGu.JUPaw8kZF94Coth4G88s[aria-label*="Expand folder"]
+    svg {
     background: var(--spice-subtext);
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_caret_down_24_filled.svg);
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_caret_down_24_filled.svg);
 }
 
-button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-in-keyboard-nav-condensedAll-useBrowserDefaultFocusStyle.PUipCs3_0Qott0Sru3pB.XAOxFVWnd185_vZ5zPGu[aria-label*="Collapse folder"] svg {
+button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-in-keyboard-nav-condensedAll-useBrowserDefaultFocusStyle.PUipCs3_0Qott0Sru3pB.XAOxFVWnd185_vZ5zPGu[aria-label*="Collapse folder"]
+    svg {
     background: var(--spice-subtext);
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_caret_down_24_filled.svg);
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_caret_down_24_filled.svg);
@@ -378,10 +431,16 @@ button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-
     position: absolute !important;
     bottom: -30px;
     left: -20px;
-    background-image: linear-gradient(to bottom, var(--spice-main) 50%, transparent);
+    background-image: linear-gradient(
+        to bottom,
+        var(--spice-main) 50%,
+        transparent
+    );
 }
 
-.main-yourLibraryX-listItem:hover .Box__BoxComponent-sc-y4nds-0.BoxComponent-group-listRow-naked-isInteractive-minBlockSize_56px-padding_8px.Box-sc-8t9c76-0.Box-group-listRow-isInteractive-hasLeadingOrMedia-minBlockSize_56px-padding_8px.fYWNdY4zhj4OX_T2Xtg6[aria-labelledby*="artist"] .BfALkuQy0UjTI70U9QlQ {
+.main-yourLibraryX-listItem:hover
+    .Box__BoxComponent-sc-y4nds-0.BoxComponent-group-listRow-naked-isInteractive-minBlockSize_56px-padding_8px.Box-sc-8t9c76-0.Box-group-listRow-isInteractive-hasLeadingOrMedia-minBlockSize_56px-padding_8px.fYWNdY4zhj4OX_T2Xtg6[aria-labelledby*="artist"]
+    .BfALkuQy0UjTI70U9QlQ {
     border-radius: 50% !important;
 }
 
@@ -390,7 +449,8 @@ button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-
     border-radius: 4px !important;
 }
 
-.Box__BoxComponent-sc-y4nds-0.BoxComponent-group-listRow-naked-isInteractive-minBlockSize_56px-padding_8px.Box-sc-8t9c76-0.Box-group-listRow-isInteractive-hasLeadingOrMedia-minBlockSize_56px-padding_8px.fYWNdY4zhj4OX_T2Xtg6[aria-labelledby*="artist"] .BfALkuQy0UjTI70U9QlQ {
+.Box__BoxComponent-sc-y4nds-0.BoxComponent-group-listRow-naked-isInteractive-minBlockSize_56px-padding_8px.Box-sc-8t9c76-0.Box-group-listRow-isInteractive-hasLeadingOrMedia-minBlockSize_56px-padding_8px.fYWNdY4zhj4OX_T2Xtg6[aria-labelledby*="artist"]
+    .BfALkuQy0UjTI70U9QlQ {
     border-radius: 50% !important;
 }
 
@@ -406,12 +466,14 @@ button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-
     padding: 0 !important;
 }
 
-.ZSXjRBoTtuX5kmFeZHQu span.IconWrapper__Wrapper-sc-1hf1hjl-0.Wrapper-small-leading-small {
+.ZSXjRBoTtuX5kmFeZHQu
+    span.IconWrapper__Wrapper-sc-1hf1hjl-0.Wrapper-small-leading-small {
     margin: 0 4px !important;
 }
 
 .shuffle-enabled {
-    filter: brightness(0) saturate(100%) invert(79%) sepia(29%) saturate(800%) hue-rotate(87deg) brightness(87%) contrast(81%) !important;
+    filter: brightness(0) saturate(100%) invert(79%) sepia(29%) saturate(800%)
+        hue-rotate(87deg) brightness(87%) contrast(81%) !important;
 }
 
 .Wrapper-large-only-medium .Svg-sc-ytk21e-0 {
@@ -492,7 +554,9 @@ button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-
     display: none;
 }
 
-.desktop-grid-wrapper .main-trackList-rowImageWithPlay:hover .main-trackList-rowPlayPauseWrapper {
+.desktop-grid-wrapper
+    .main-trackList-rowImageWithPlay:hover
+    .main-trackList-rowPlayPauseWrapper {
     opacity: 1 !important;
 }
 
@@ -583,11 +647,13 @@ button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-
     opacity: 1 !important;
 }
 
-.main-trackList-rowImageWithPlay:hover .main-trackList-rowImagePlayButton[aria-label*="Play"] {
+.main-trackList-rowImageWithPlay:hover
+    .main-trackList-rowImagePlayButton[aria-label*="Play"] {
     display: block !important;
 }
 
-.main-trackList-rowImageWithPlay:hover .main-trackList-rowImagePlayButton[aria-label*="Pause"] {
+.main-trackList-rowImageWithPlay:hover
+    .main-trackList-rowImagePlayButton[aria-label*="Pause"] {
     display: none !important;
 }
 
@@ -633,8 +699,14 @@ button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-
 
 /* ------------------------------------ Marketplace ------------------------------------ */
 
-.marketplace-grid .main-card-draggable .main-card-cardMetadata li.marketplace-card__tag[data-tag="external JS"],
-.marketplace-grid .main-card-draggable .main-card-cardMetadata li.marketplace-card__tag[data-tag="archived"] {
+.marketplace-grid
+    .main-card-draggable
+    .main-card-cardMetadata
+    li.marketplace-card__tag[data-tag="external JS"],
+.marketplace-grid
+    .main-card-draggable
+    .main-card-cardMetadata
+    li.marketplace-card__tag[data-tag="archived"] {
     background-color: var(--spice-accent) !important;
     color: var(--spice-alt-text) !important;
 }
@@ -734,7 +806,9 @@ button.button-module__button___hf2qg_marketplace.marketplace-add-snippet-btn {
     background: transparent !important;
 }
 
-.Root__now-playing-bar .Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only .Svg-sc-ytk21e-0 {
+.Root__now-playing-bar
+    .Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only
+    .Svg-sc-ytk21e-0 {
     width: 28px !important;
     height: 28px !important;
 }
@@ -754,7 +828,8 @@ button.Button-sc-1dqy6lx-0[aria-label*="Next"] {
     padding-right: 10px !important;
 }
 
-button.Button-sc-1dqy6lx-0[aria-label*="Previous"] svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
+button.Button-sc-1dqy6lx-0[aria-label*="Previous"]
+    svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
     mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_previous_24_filled.svg);
     -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_previous_24_filled.svg);
     background-color: var(--spice-text) !important;
@@ -762,7 +837,8 @@ button.Button-sc-1dqy6lx-0[aria-label*="Previous"] svg.Svg-sc-ytk21e-0.Svg-img-i
     height: 24px !important;
 }
 
-button.Button-sc-1dqy6lx-0[aria-label*="Next"] svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
+button.Button-sc-1dqy6lx-0[aria-label*="Next"]
+    svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
     mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_next_24_filled.svg);
     -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_next_24_filled.svg);
     background-color: var(--spice-text) !important;
@@ -786,7 +862,8 @@ button.Button-sc-1dqy6lx-0[aria-label*="Enable repeat one"] path {
     opacity: 0 !important;
 } */
 
-button.Button-sc-1dqy6lx-0[aria-label*="Enable shuffle"] svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
+button.Button-sc-1dqy6lx-0[aria-label*="Enable shuffle"]
+    svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
     mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/refs/heads/main/assets/fluentui-system-icons/ic_fluent_arrow_shuffle_24_regular.svg);
     -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/refs/heads/main/assets/fluentui-system-icons/ic_fluent_arrow_shuffle_24_regular.svg);
     background-color: var(--text-subdued) !important;
@@ -794,7 +871,8 @@ button.Button-sc-1dqy6lx-0[aria-label*="Enable shuffle"] svg.Svg-sc-ytk21e-0.Svg
     height: 22px !important;
 }
 
-button.Button-sc-1dqy6lx-0[aria-label*="Disable shuffle"] svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
+button.Button-sc-1dqy6lx-0[aria-label*="Disable shuffle"]
+    svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
     mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/refs/heads/main/assets/fluentui-system-icons/ic_fluent_arrow_shuffle_24_filled.svg);
     -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/refs/heads/main/assets/fluentui-system-icons/ic_fluent_arrow_shuffle_24_filled.svg);
     background-color: var(--spice-accent) !important;
@@ -802,7 +880,8 @@ button.Button-sc-1dqy6lx-0[aria-label*="Disable shuffle"] svg.Svg-sc-ytk21e-0.Sv
     height: 22px !important;
 }
 
-button.Button-sc-1dqy6lx-0[aria-label*="Enable repeat"] svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
+button.Button-sc-1dqy6lx-0[aria-label*="Enable repeat"]
+    svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
     mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/refs/heads/main/assets/fluentui-system-icons/ic_fluent_arrow_repeat_all_off_24_regular.svg);
     -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/refs/heads/main/assets/fluentui-system-icons/ic_fluent_arrow_repeat_all_off_24_regular.svg);
     background-color: var(--text-subdued) !important;
@@ -810,7 +889,8 @@ button.Button-sc-1dqy6lx-0[aria-label*="Enable repeat"] svg.Svg-sc-ytk21e-0.Svg-
     height: 22px !important;
 }
 
-button.Button-sc-1dqy6lx-0[aria-label*="Enable repeat one"] svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
+button.Button-sc-1dqy6lx-0[aria-label*="Enable repeat one"]
+    svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
     mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/refs/heads/main/assets/fluentui-system-icons/ic_fluent_arrow_repeat_all_24_filled.svg);
     -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/refs/heads/main/assets/fluentui-system-icons/ic_fluent_arrow_repeat_all_24_filled.svg);
     background-color: var(--spice-accent) !important;
@@ -818,7 +898,8 @@ button.Button-sc-1dqy6lx-0[aria-label*="Enable repeat one"] svg.Svg-sc-ytk21e-0.
     height: 22px !important;
 }
 
-button.Button-sc-1dqy6lx-0[aria-label*="Disable repeat"] svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
+button.Button-sc-1dqy6lx-0[aria-label*="Disable repeat"]
+    svg.Svg-sc-ytk21e-0.Svg-img-icon-small {
     mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/refs/heads/main/assets/fluentui-system-icons/ic_fluent_arrow_repeat_all_once_24_filled.svg);
     -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/refs/heads/main/assets/fluentui-system-icons/ic_fluent_arrow_repeat_all_once_24_filled.svg);
     background-color: var(--spice-accent) !important;
@@ -961,19 +1042,22 @@ button.main-topBar-button[aria-label*="playlist-stats"] svg {
     background: var(--spice-subtext);
 } */
 
-button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-condensed-useBrowserDefaultFocusStyle.main-globalNav-icon[aria-label*="Full App Display"] svg,
+button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-condensed-useBrowserDefaultFocusStyle.main-globalNav-icon[aria-label*="Full App Display"]
+    svg,
 button.main-topBar-button[aria-label*="Full App Display"] svg {
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/tv.svg) !important;
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/tv.svg) !important;
 }
 
-button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-condensed-useBrowserDefaultFocusStyle.main-globalNav-icon[aria-label*="Bookmark"] svg,
+button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-condensed-useBrowserDefaultFocusStyle.main-globalNav-icon[aria-label*="Bookmark"]
+    svg,
 button.main-topBar-button[aria-label*="Bookmark"] svg {
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/bookmark.svg) !important;
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/bookmark.svg) !important;
 }
 
-button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-condensed-useBrowserDefaultFocusStyle.main-globalNav-icon[aria-label*="Beautiful Fullscreen"] svg,
+button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-condensed-useBrowserDefaultFocusStyle.main-globalNav-icon[aria-label*="Beautiful Fullscreen"]
+    svg,
 button.main-topBar-button[aria-label*="Beautiful Fullscreen"] svg {
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/fullscreen.svg) !important;
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/fullscreen.svg) !important;
@@ -1018,7 +1102,8 @@ button[aria-label*="Get Random Saved Album"]:hover svg {
     transform: translateX(8px);
 }
 
-button.main-actionButtons-button.main-topBarStatusIndicator-hasTooltip.main-noConnection-isNotice.main-topBarStatusIndicator-tooltipEnter.main-topBarStatusIndicator-tooltipEnterActive svg {
+button.main-actionButtons-button.main-topBarStatusIndicator-hasTooltip.main-noConnection-isNotice.main-topBarStatusIndicator-tooltipEnter.main-topBarStatusIndicator-tooltipEnterActive
+    svg {
     fill: var(--spice-accent) !important;
 }
 
@@ -1037,7 +1122,8 @@ button.main-actionButtons-button.main-topBarStatusIndicator-hasTooltip.main-noCo
     right: 0px;
 }
 
-button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-condensed-disabled-isUsingKeyboard-useBrowserDefaultFocusStyle.main-globalNav-icon.play svg {
+button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-condensed-disabled-isUsingKeyboard-useBrowserDefaultFocusStyle.main-globalNav-icon.play
+    svg {
     height: 24px !important;
     width: 24px !important;
     background: var(--spice-subtext) !important;
@@ -1060,27 +1146,32 @@ button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-condense
     margin-left: 5px;
 }
 
-button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-condensed-disabled-isUsingKeyboard-useBrowserDefaultFocusStyle.main-globalNav-icon.play path {
+button.Button-sc-1dqy6lx-0.Button-medium-medium-buttonTertiary-iconOnly-condensed-disabled-isUsingKeyboard-useBrowserDefaultFocusStyle.main-globalNav-icon.play
+    path {
     opacity: 0 !important;
 }
 
 /* -------------------------------------- New Release Page ------------------------------------- */
 
-.view-homeShortcutsGrid-PlayButtonContainer .Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only {
+.view-homeShortcutsGrid-PlayButtonContainer
+    .Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only {
     background: transparent !important;
 }
 
-.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only .Svg-sc-ytk21e-0,
+.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only
+    .Svg-sc-ytk21e-0,
 .view-homeShortcutsGrid-PlayButtonContainer .Svg-sc-ytk21e-0 {
     width: 35px;
     height: 35px;
 }
 
-.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only .ButtonInner-small-iconOnly {
+.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only
+    .ButtonInner-small-iconOnly {
     background: transparent !important;
 }
 
-.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only .IconWrapper__Wrapper-sc-1hf1hjl-0 {
+.Button-buttonPrimary-useBrowserDefaultFocusStyle-data-is-icon-only
+    .IconWrapper__Wrapper-sc-1hf1hjl-0 {
     top: 0 !important;
     left: 0 !important;
     margin: 0 !important;
@@ -1226,7 +1317,9 @@ p.popup-row {
     color: var(--text-subdued) !important;
 }
 
-.main-nowPlayingWidget-trackInfo.main-trackInfo-container .ellipsis-one-line.main-type-finale span {
+.main-nowPlayingWidget-trackInfo.main-trackInfo-container
+    .ellipsis-one-line.main-type-finale
+    span {
     color: var(--text-subdued) !important;
 }
 
@@ -1267,19 +1360,23 @@ p.popup-row {
 }
 
 .QSkuUiKpZ4MHrdOB83XV {
-    background: linear-gradient(0deg,
-            transparent 2.09%,
-            rgb(10 10 10 / 10%) 16.28%,
-            rgb(10 10 10 / 40%) 36.5%,
-            rgb(10 10 10 / 60%) 53.25%) !important;
+    background: linear-gradient(
+        0deg,
+        transparent 2.09%,
+        rgb(10 10 10 / 10%) 16.28%,
+        rgb(10 10 10 / 40%) 36.5%,
+        rgb(10 10 10 / 60%) 53.25%
+    ) !important;
 }
 
 .pobLn0CELRvb4TjnNApn {
-    background: linear-gradient(180deg,
-            transparent 2.09%,
-            rgb(10 10 10 / 10%) 16.28%,
-            rgb(10 10 10 / 40%) 36.5%,
-            rgb(10 10 10 / 60%) 53.25%) !important;
+    background: linear-gradient(
+        180deg,
+        transparent 2.09%,
+        rgb(10 10 10 / 10%) 16.28%,
+        rgb(10 10 10 / 40%) 36.5%,
+        rgb(10 10 10 / 60%) 53.25%
+    ) !important;
 }
 
 .OGu88AVNWY3IM3QlZjG0 {
@@ -1306,7 +1403,9 @@ p.popup-row {
     min-width: 217px !important;
 } */
 
-section.xOmT3apmEbwVlFt4HkBe.C3jVNGQUUZcUp5kTEOC0.Sm3POgzbjs7wFj7tyYNh[aria-label*="WRAPPED has arrived"] .qI009QzTkvisAXqhbw74 .Box__BoxComponent-sc-y4nds-0.BoxComponent-group-card-naked-isInteractive-draggable.Box-sc-1njtxi4-0.Box-group-naked-card-md-isInteractive-draggable.main-card-cardContainer.Card {
+section.xOmT3apmEbwVlFt4HkBe.C3jVNGQUUZcUp5kTEOC0.Sm3POgzbjs7wFj7tyYNh[aria-label*="WRAPPED has arrived"]
+    .qI009QzTkvisAXqhbw74
+    .Box__BoxComponent-sc-y4nds-0.BoxComponent-group-card-naked-isInteractive-draggable.Box-sc-1njtxi4-0.Box-group-naked-card-md-isInteractive-draggable.main-card-cardContainer.Card {
     min-width: calc(190px * 2 + 12px) !important;
     flex-direction: row;
     max-height: 100px !important;
@@ -1314,13 +1413,23 @@ section.xOmT3apmEbwVlFt4HkBe.C3jVNGQUUZcUp5kTEOC0.Sm3POgzbjs7wFj7tyYNh[aria-labe
     gap: 24px;
 }
 
-section.xOmT3apmEbwVlFt4HkBe.C3jVNGQUUZcUp5kTEOC0.Sm3POgzbjs7wFj7tyYNh[aria-label*="WRAPPED has arrived"] .qI009QzTkvisAXqhbw74 .Box__BoxComponent-sc-y4nds-0.BoxComponent-group-card-naked-isInteractive-draggable.Box-sc-1njtxi4-0.Box-group-naked-card-md-isInteractive-draggable.main-card-cardContainer.Card .main-card-imageContainer,
-section.xOmT3apmEbwVlFt4HkBe.C3jVNGQUUZcUp5kTEOC0.Sm3POgzbjs7wFj7tyYNh[aria-label*="WRAPPED has arrived"] .qI009QzTkvisAXqhbw74 .Box__BoxComponent-sc-y4nds-0.BoxComponent-group-card-naked-isInteractive-draggable.Box-sc-1njtxi4-0.Box-group-naked-card-md-isInteractive-draggable.main-card-cardContainer.Card .main-card-imageContainer .GOcsybnoHYyJGQGDRuwj {
+section.xOmT3apmEbwVlFt4HkBe.C3jVNGQUUZcUp5kTEOC0.Sm3POgzbjs7wFj7tyYNh[aria-label*="WRAPPED has arrived"]
+    .qI009QzTkvisAXqhbw74
+    .Box__BoxComponent-sc-y4nds-0.BoxComponent-group-card-naked-isInteractive-draggable.Box-sc-1njtxi4-0.Box-group-naked-card-md-isInteractive-draggable.main-card-cardContainer.Card
+    .main-card-imageContainer,
+section.xOmT3apmEbwVlFt4HkBe.C3jVNGQUUZcUp5kTEOC0.Sm3POgzbjs7wFj7tyYNh[aria-label*="WRAPPED has arrived"]
+    .qI009QzTkvisAXqhbw74
+    .Box__BoxComponent-sc-y4nds-0.BoxComponent-group-card-naked-isInteractive-draggable.Box-sc-1njtxi4-0.Box-group-naked-card-md-isInteractive-draggable.main-card-cardContainer.Card
+    .main-card-imageContainer
+    .GOcsybnoHYyJGQGDRuwj {
     width: 68px !important;
     height: 68px !important;
 }
 
-section.xOmT3apmEbwVlFt4HkBe.C3jVNGQUUZcUp5kTEOC0.Sm3POgzbjs7wFj7tyYNh[aria-label*="WRAPPED has arrived"] .qI009QzTkvisAXqhbw74 .Box__BoxComponent-sc-y4nds-0.BoxComponent-group-card-naked-isInteractive-draggable.Box-sc-1njtxi4-0.Box-group-naked-card-md-isInteractive-draggable.main-card-cardContainer.Card .MainArea {
+section.xOmT3apmEbwVlFt4HkBe.C3jVNGQUUZcUp5kTEOC0.Sm3POgzbjs7wFj7tyYNh[aria-label*="WRAPPED has arrived"]
+    .qI009QzTkvisAXqhbw74
+    .Box__BoxComponent-sc-y4nds-0.BoxComponent-group-card-naked-isInteractive-draggable.Box-sc-1njtxi4-0.Box-group-naked-card-md-isInteractive-draggable.main-card-cardContainer.Card
+    .MainArea {
     width: -webkit-fill-available !important;
 }
 
@@ -1333,7 +1442,8 @@ section.xOmT3apmEbwVlFt4HkBe.C3jVNGQUUZcUp5kTEOC0.Sm3POgzbjs7wFj7tyYNh[aria-labe
     color: var(--spice-alt-text) !important;
 }
 
-button.main-genericButton-button.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-iconOnly-isUsingKeyboard-useBrowserDefaultFocusStyle svg.Svg-sc-ytk21e-0.Svg-img-icon-small.Svg-img-icon.Svg-img-16.Svg-img-16-icon.uPxdw {
+button.main-genericButton-button.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-iconOnly-isUsingKeyboard-useBrowserDefaultFocusStyle
+    svg.Svg-sc-ytk21e-0.Svg-img-icon-small.Svg-img-icon.Svg-img-16.Svg-img-16-icon.uPxdw {
     background: var(--spice-subtext);
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/icons-i-need-in-my-project-personal/refs/heads/main/ic_fluent_weather_moon_23_filled.svg);
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/icons-i-need-in-my-project-personal/refs/heads/main/ic_fluent_weather_moon_24_filled.svg);
@@ -1394,9 +1504,9 @@ button.btn.btn-increment.btn-outline-secondary.btn-plus strong {
     left: 6px;
 }
 
-#sleep-timer-menu .input-group>.form-control,
-#sleep-timer-menu .input-group>.form-select,
-#sleep-timer-menu .input-group>.form-floating {
+#sleep-timer-menu .input-group > .form-control,
+#sleep-timer-menu .input-group > .form-select,
+#sleep-timer-menu .input-group > .form-floating {
     border: transparent !important;
     background: transparent !important;
     color: var(--spice-text) !important;
@@ -1425,11 +1535,14 @@ span.timer-icons-label.icons-label-minutes {
     right: 55px !important;
 }
 
-button.main-genericButton-button.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-iconOnly-isUsingKeyboard-useBrowserDefaultFocusStyle:hover svg.Svg-sc-ytk21e-0.Svg-img-icon-small.Svg-img-icon.Svg-img-16.Svg-img-16-icon.uPxdw {
+button.main-genericButton-button.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-iconOnly-isUsingKeyboard-useBrowserDefaultFocusStyle:hover
+    svg.Svg-sc-ytk21e-0.Svg-img-icon-small.Svg-img-icon.Svg-img-16.Svg-img-16-icon.uPxdw {
     background: var(--spice-text) !important;
 }
 
-button.main-genericButton-button.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-iconOnly-isUsingKeyboard-useBrowserDefaultFocusStyle svg.Svg-sc-ytk21e-0.Svg-img-icon-small.Svg-img-icon.Svg-img-16.Svg-img-16-icon.uPxdw path {
+button.main-genericButton-button.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-iconOnly-isUsingKeyboard-useBrowserDefaultFocusStyle
+    svg.Svg-sc-ytk21e-0.Svg-img-icon-small.Svg-img-icon.Svg-img-16.Svg-img-16-icon.uPxdw
+    path {
     display: none;
 }
 
@@ -1517,29 +1630,35 @@ button#sleep-timer-start.btn-primary::before {
 
 /* -------------------------------------- Spicetify Better Local Fils by Pithaya ------------------------------------- */
 
-.contentSpacing.main-entityHeader-container.main-entityHeader-nonWrapped.main-entityHeader-newEntityHeaders .app-module__center-container___LG8O4_betterDlocalDfiles {
+.contentSpacing.main-entityHeader-container.main-entityHeader-nonWrapped.main-entityHeader-newEntityHeaders
+    .app-module__center-container___LG8O4_betterDlocalDfiles {
     border-radius: var(--border-radius-1) !important;
     box-shadow: 0 4px 60px rgb(33 33 33 / 50%) !important;
-    background-image: linear-gradient(to right top,
-            #007cbc,
-            #00a1d3,
-            #00c2bc,
-            #00dc7c,
-            #a8eb12) !important;
+    background-image: linear-gradient(
+        to right top,
+        #007cbc,
+        #00a1d3,
+        #00c2bc,
+        #00dc7c,
+        #a8eb12
+    ) !important;
 }
 
-.app-module__stretch-container___SIzsh_betterDlocalDfiles.undefined .main-trackList-trackListRow {
+.app-module__stretch-container___SIzsh_betterDlocalDfiles.undefined
+    .main-trackList-trackListRow {
     width: calc(100% - 20px) !important;
     margin-left: 10px !important;
     margin-top: 0px !important;
     border-radius: 8px;
 }
 
-.app-module__stretch-container___SIzsh_betterDlocalDfiles.undefined .main-trackList-trackListHeaderRow {
+.app-module__stretch-container___SIzsh_betterDlocalDfiles.undefined
+    .main-trackList-trackListHeaderRow {
     margin-bottom: 25px;
 }
 
-.app-module__stretch-container___SIzsh_betterDlocalDfiles.undefined .main-entityHeader-backgroundColor {
+.app-module__stretch-container___SIzsh_betterDlocalDfiles.undefined
+    .main-entityHeader-backgroundColor {
     background-color: #00a1d3;
 }
 
@@ -1548,19 +1667,30 @@ span.Type__TypeElement-sc-goli3j-0.TypeElement-type-mesto-textSubdued.main-track
     color: var(--spice-subtext) !important;
 }
 
-.app-module__full-size-container___XoGtP_betterDlocalDfiles .contentSpacing:not(.artist-artistDiscography-topBar,
-    .search-searchCategory-container,
-    .hV9v6y_uYwdAsoiOHpzk,
-    .main-entityHeader-container,
-    .main-actionBar-ActionBar) {
+.app-module__full-size-container___XoGtP_betterDlocalDfiles
+    .contentSpacing:not(
+        .artist-artistDiscography-topBar,
+        .search-searchCategory-container,
+        .hV9v6y_uYwdAsoiOHpzk,
+        .main-entityHeader-container,
+        .main-actionBar-ActionBar
+    ) {
     padding-top: 8px;
     padding-bottom: 110px;
 }
 
-.main-playButton-PlayButton>button {
+.view-homeShortcutsGrid-shortcut .main-playButton-PlayButton > button {
     width: 50px !important;
     height: 50px !important;
     margin: 3px;
+    /* visibility: hidden; */
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.view-homeShortcutsGrid-shortcut:hover .main-playButton-PlayButton > button {
+    /* visibility: visible; */
+    opacity: 1;
 }
 
 /* -------------------------------------- Made For You ------------------------------------- */
@@ -1584,7 +1714,9 @@ svg.made-for-you-icon.home-icon {
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/crown-simple.svg);
 }
 
-li.main-yourLibraryX-navItem a[aria-label*="Made for you"]:hover svg.made-for-you-icon.home-icon {
+li.main-yourLibraryX-navItem
+    a[aria-label*="Made for you"]:hover
+    svg.made-for-you-icon.home-icon {
     background: var(--spice-text);
 }
 
@@ -1612,11 +1744,11 @@ li.main-yourLibraryX-navItem a[aria-label*="Made for you"]:hover svg.made-for-yo
     background-color: var(--spice-accent) !important;
 }
 
-.main-yourLibraryX-navLink[href="/library"]:hover>svg {
+.main-yourLibraryX-navLink[href="/library"]:hover > svg {
     background-color: var(--spice-text) !important;
 }
 
-.main-yourLibraryX-navLink[href="/library"].active:hover>svg {
+.main-yourLibraryX-navLink[href="/library"].active:hover > svg {
     background-color: var(--spice-accent) !important;
 }
 
@@ -1879,7 +2011,7 @@ a.muHL0_3HjlqTZDoapgc9[href*="https://en.wikipedia.org/"] svg path {
     transform: translateY(-24px);
 }
 
-[data-context-menu-open="true"]>a:only-child,
+[data-context-menu-open="true"] > a:only-child,
 a:not([data-encore-id]):focus,
 a:not([data-encore-id]):hover,
 a:not([data-encore-id])[data-context-menu-open="true"] {
@@ -1935,7 +2067,9 @@ div[aria-describedby*="device-picker-troubleshooting-list"] {
 .main-devicePicker-tooltip {
     border-radius: 8px !important;
     border: 1px solid rgb(var(--spice-rgb-light-border), 0.4) !important;
-    box-shadow: 0 16px 24px rgba(var(--spice-rgb-main), .3), 0 6px 8px rgba(var(--spice-rgb-main), .2) !important;
+    box-shadow:
+        0 16px 24px rgba(var(--spice-rgb-main), 0.3),
+        0 6px 8px rgba(var(--spice-rgb-main), 0.2) !important;
 }
 
 /*---------------------------------------------------------- Main Playlist Page ----------------------------------------------------------- */
@@ -2035,7 +2169,8 @@ button.main-globalNav-link-icon[aria-label*="Home"] svg {
     background-color: var(--spice-subtext) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="Home"].main-globalNav-navLinkActive svg {
+button.main-globalNav-link-icon[aria-label*="Home"].main-globalNav-navLinkActive
+    svg {
     mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_home_24_filled.svg");
     -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_home_24_filled.svg");
     background-color: var(--spice-accent) !important;
@@ -2047,7 +2182,8 @@ button.main-globalNav-link-icon[aria-label*="search"] svg {
     background-color: var(--spice-subtext) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="search"].main-globalNav-navLinkActive svg {
+button.main-globalNav-link-icon[aria-label*="search"].main-globalNav-navLinkActive
+    svg {
     mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_search_24_filled.svg");
     -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_search_24_filled.svg");
     background-color: var(--spice-accent) !important;
@@ -2059,7 +2195,8 @@ button.main-globalNav-link-icon[aria-label*="Lyrics"] svg {
     background-color: var(--spice-subtext) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="Lyrics"].main-globalNav-navLinkActive svg {
+button.main-globalNav-link-icon[aria-label*="Lyrics"].main-globalNav-navLinkActive
+    svg {
     mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_textbox_24_filled.svg");
     -webkit-mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_textbox_24_filled.svg");
     background-color: var(--spice-accent) !important;
@@ -2071,7 +2208,8 @@ button.main-globalNav-link-icon[aria-label*="Marketplace"] svg {
     background-color: var(--spice-subtext) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="Marketplace"].main-globalNav-navLinkActive svg {
+button.main-globalNav-link-icon[aria-label*="Marketplace"].main-globalNav-navLinkActive
+    svg {
     mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_app_store_24_filled.svg");
     -webkit-mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_app_store_24_filled.svg");
     background-color: var(--spice-accent) !important;
@@ -2083,7 +2221,8 @@ button.main-globalNav-link-icon[aria-label*="eternal-jukebox"] svg {
     background-color: var(--spice-subtext) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="eternal-jukebox"].main-globalNav-navLinkActive svg {
+button.main-globalNav-link-icon[aria-label*="eternal-jukebox"].main-globalNav-navLinkActive
+    svg {
     mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/phosphor-icons/infinity-bold.svg");
     -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/phosphor-icons/infinity-bold.svg");
     background-color: var(--spice-accent) !important;
@@ -2095,7 +2234,8 @@ button.main-globalNav-link-icon[aria-label*="new-releases"] svg {
     background-color: var(--spice-subtext) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="new-releases"].main-globalNav-navLinkActive svg {
+button.main-globalNav-link-icon[aria-label*="new-releases"].main-globalNav-navLinkActive
+    svg {
     mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_alert_24_filled.svg");
     -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_alert_24_filled.svg");
     background-color: var(--spice-accent) !important;
@@ -2107,7 +2247,8 @@ button.main-globalNav-link-icon[aria-label*="Statistics"] svg {
     background-color: var(--spice-subtext) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="Statistics"].main-globalNav-navLinkActive svg {
+button.main-globalNav-link-icon[aria-label*="Statistics"].main-globalNav-navLinkActive
+    svg {
     mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_chart_multiple_24_filled.svg");
     -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_chart_multiple_24_filled.svg");
     background-color: var(--spice-accent) !important;
@@ -2119,7 +2260,8 @@ button.main-globalNav-link-icon[aria-label*="name-that-tune"] svg {
     background-color: var(--spice-subtext) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="name-that-tune"].main-globalNav-navLinkActive svg {
+button.main-globalNav-link-icon[aria-label*="name-that-tune"].main-globalNav-navLinkActive
+    svg {
     mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_music_note_2_24_filled.svg");
     -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_music_note_2_24_filled.svg");
     background-color: var(--spice-accent) !important;
@@ -2131,7 +2273,8 @@ button.main-globalNav-link-icon[aria-label*="Your Library"] svg {
     background-color: var(--spice-subtext) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="Your Library"].main-globalNav-navLinkActive svg {
+button.main-globalNav-link-icon[aria-label*="Your Library"].main-globalNav-navLinkActive
+    svg {
     mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_library_24_filled.svg");
     -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_library_24_filled.svg");
     background-color: var(--spice-accent) !important;
@@ -2143,7 +2286,8 @@ button.main-globalNav-link-icon[aria-label*="better-local-files"] svg {
     background-color: var(--spice-subtext) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="better-local-files"].main-globalNav-navLinkActive svg {
+button.main-globalNav-link-icon[aria-label*="better-local-files"].main-globalNav-navLinkActive
+    svg {
     mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_folder_24_filled.svg");
     -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_folder_24_filled.svg");
     background-color: var(--spice-accent) !important;
@@ -2155,7 +2299,8 @@ button.main-globalNav-link-icon[aria-label*="Tags"] svg {
     background-color: var(--spice-subtext) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="Tags"].main-globalNav-navLinkActive svg {
+button.main-globalNav-link-icon[aria-label*="Tags"].main-globalNav-navLinkActive
+    svg {
     mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_tag_24_filled.svg");
     -webkit-mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_tag_24_filled.svg");
     background-color: var(--spice-accent) !important;
@@ -2167,7 +2312,8 @@ button.main-globalNav-link-icon[aria-label*="Made for you"] svg {
     background-color: var(--spice-subtext) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="Made for you"].main-globalNav-navLinkActive svg {
+button.main-globalNav-link-icon[aria-label*="Made for you"].main-globalNav-navLinkActive
+    svg {
     mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_diversity_24_filled.svg");
     -webkit-mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_diversity_24_filled.svg");
     background-color: var(--spice-accent) !important;
@@ -2179,7 +2325,8 @@ button.main-globalNav-link-icon[aria-label*="Listening Stats"] svg {
     background-color: var(--spice-subtext) !important;
 }
 
-button.main-globalNav-link-icon[aria-label*="Listening Stats"].main-globalNav-navLinkActive svg {
+button.main-globalNav-link-icon[aria-label*="Listening Stats"].main-globalNav-navLinkActive
+    svg {
     mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_device_eq_24_filled.svg");
     -webkit-mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_device_eq_24_filled.svg");
     background-color: var(--spice-accent) !important;
@@ -2262,16 +2409,20 @@ button.main-globalNav-link-icon[aria-label*="Statistics"] svg {
 
 .XWJtATtk3_2VpHc4YOaI {
     background-image:
-        -webkit-gradient(linear,
+        -webkit-gradient(
+            linear,
             left top,
             left bottom,
             from(transparent),
-            to(rgba(var(--spice-rgb-main), 0.6))),
+            to(rgba(var(--spice-rgb-main), 0.6))
+        ),
         var(--cinema-mode-bg-image) !important;
     background-image:
-        linear-gradient(180deg,
+        linear-gradient(
+            180deg,
             transparent 0,
-            rgba(var(--spice-rgb-main), 0.6) 100%),
+            rgba(var(--spice-rgb-main), 0.6) 100%
+        ),
         var(--cinema-mode-bg-image) !important;
     /* height: calc(100% - 65px) !important; */
 }
@@ -2318,7 +2469,7 @@ button.main-globalNav-link-icon[aria-label*="Statistics"] svg {
     margin-top: -90px !important;
 }
 
-.visualizer-container>* {
+.visualizer-container > * {
     height: calc(100% - 180px) !important;
 }
 
@@ -2330,28 +2481,51 @@ button.main-globalNav-link-icon[aria-label*="Statistics"] svg {
     background: transparent !important;
 }
 
-span.e-9640-baseline.e-9640-overflow-wrap-anywhere.e-9640-button-primary__inner.encore-bright-accent-set.e-9640-button-icon-only--large svg {
+span.e-9640-baseline.e-9640-overflow-wrap-anywhere.e-9640-button-primary__inner.encore-bright-accent-set.e-9640-button-icon-only--large
+    svg {
     height: 60px !important;
     width: 60px !important;
 }
 
-button[aria-label*="Play"] .e-9640-button-icon-only--large .e-9640-button__icon-wrapper svg,
-button[aria-label*="Play"] .e-9640-button-icon-only--medium .e-9640-button__icon-wrapper svg,
-button[aria-label*="Play"] .e-9640-button-icon-only--small .e-9640-button__icon-wrapper svg {
+button[aria-label*="Play"]
+    .e-9640-button-icon-only--large
+    .e-9640-button__icon-wrapper
+    svg,
+button[aria-label*="Play"]
+    .e-9640-button-icon-only--medium
+    .e-9640-button__icon-wrapper
+    svg,
+button[aria-label*="Play"]
+    .e-9640-button-icon-only--small
+    .e-9640-button__icon-wrapper
+    svg {
     background: var(--spice-text) !important;
     mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg");
     -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg");
 }
 
-button[aria-label*="Pause"] .e-9640-button-icon-only--large .e-9640-button__icon-wrapper svg,
-button[aria-label*="Pause"] .e-9640-button-icon-only--medium .e-9640-button__icon-wrapper svg,
-button[aria-label*="Pause"] .e-9640-button-icon-only--small .e-9640-button__icon-wrapper svg {
+button[aria-label*="Pause"]
+    .e-9640-button-icon-only--large
+    .e-9640-button__icon-wrapper
+    svg,
+button[aria-label*="Pause"]
+    .e-9640-button-icon-only--medium
+    .e-9640-button__icon-wrapper
+    svg,
+button[aria-label*="Pause"]
+    .e-9640-button-icon-only--small
+    .e-9640-button__icon-wrapper
+    svg {
     background: var(--spice-text) !important;
     mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_pause_16_filled.svg");
     -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_pause_16_filled.svg");
 }
 
-.main-card-imageContainer button .e-9640-button-icon-only--medium .e-9640-button__icon-wrapper svg {
+.main-card-imageContainer
+    button
+    .e-9640-button-icon-only--medium
+    .e-9640-button__icon-wrapper
+    svg {
     width: 36px !important;
     height: 36px !important;
 }
@@ -2420,13 +2594,19 @@ span.e-9800-baseline.e-9800-overflow-wrap-anywhere.e-9800-button-primary__inner.
     transform: scale(1.15);
 }
 
-.view-homeShortcutsGrid-shortcutLink .ix_8kg3iUb9VS5SmTnBY button[aria-label*="Play"] .e-9800-button-primary__inner svg {
+.view-homeShortcutsGrid-shortcutLink
+    .ix_8kg3iUb9VS5SmTnBY
+    button[aria-label*="Play"]
+    .e-9800-button-primary__inner
+    svg {
     height: 30px;
     width: 30px;
     margin-right: 10px;
 }
 
-.main-globalNav-searchContainer button.Button-sc-1dqy6lx-0.Button-buttonTertiary-medium-iconOnly-useBrowserDefaultFocusStyle.e-9800-overflow-wrap-anywhere.e-9800-button-tertiary--icon-only.Dp3xccI7c2f_JSJ8OHYu.main-globalNav-navLink.link-subtle svg {
+.main-globalNav-searchContainer
+    button.Button-sc-1dqy6lx-0.Button-buttonTertiary-medium-iconOnly-useBrowserDefaultFocusStyle.e-9800-overflow-wrap-anywhere.e-9800-button-tertiary--icon-only.Dp3xccI7c2f_JSJ8OHYu.main-globalNav-navLink.link-subtle
+    svg {
     background: var(--spice-subtext);
     mask-image: url("https://raw.githubusercontent.com/nimsandu/spicetify-bloom/refs/heads/main/assets/fluentui-system-icons/ic_fluent_home_24_regular.svg");
 }
@@ -2462,11 +2642,17 @@ span.e-9800-baseline.e-9800-overflow-wrap-anywhere.e-9800-button-primary__inner.
     overflow: hidden !important;
 }
 
-.main-yourLibraryX-listItem .Areas__InteractiveArea-sc-8gfrea-0.Areas__TrailingSlot-sc-8gfrea-7.bJSfgC.jpzxju button svg {
+.main-yourLibraryX-listItem
+    .Areas__InteractiveArea-sc-8gfrea-0.Areas__TrailingSlot-sc-8gfrea-7.bJSfgC.jpzxju
+    button
+    svg {
     background: var(--spice-subtext) !important;
 }
 
-#Desktop_LeftSidebar_Id .Areas__InteractiveArea-sc-8gfrea-0.Areas__TrailingSlot-sc-8gfrea-7.bJSfgC.jpzxju button svg {
+#Desktop_LeftSidebar_Id
+    .Areas__InteractiveArea-sc-8gfrea-0.Areas__TrailingSlot-sc-8gfrea-7.bJSfgC.jpzxju
+    button
+    svg {
     background: var(--spice-subtext) !important;
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/icons-i-need-in-my-project-personal/refs/heads/main/ic_fluent_caret_down_24_filled.svg);
     mask-size: 16px !important;
@@ -2555,7 +2741,7 @@ div#upcomingSongDiv .main-trackInfo-artists {
 }
 
 .main-playButton-button,
-.main-playButton-PlayButton>button,
+.main-playButton-PlayButton > button,
 .main-trackList-rowPlayPauseButton {
     mask-repeat: no-repeat !important;
     mask-size: 100% !important;
@@ -2594,7 +2780,8 @@ button.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-iconOnly-disabled-useBrow
     display: none !important;
 }
 
-button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBrowserDefaultFocusStyle-condensedAll svg {
+button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBrowserDefaultFocusStyle-condensedAll
+    svg {
     /* margin-bottom: -4px !important; */
     width: 24px !important;
     height: 24px !important;
@@ -2606,14 +2793,14 @@ button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBro
     display: none !important;
 }
 
-.main-topBar-topbarContentWrapper .main-playButton-PlayButton>button {
+.main-topBar-topbarContentWrapper .main-playButton-PlayButton > button {
     transform: scale(0.4) !important;
     margin: 0 !important;
     margin-right: -14px !important;
     margin-top: -2px !important;
 }
 
-.main-entityHeader-topbarContent.main-entityHeader-topbarContentFadeIn>* {
+.main-entityHeader-topbarContent.main-entityHeader-topbarContentFadeIn > * {
     font-size: 16px !important;
     transition: all 0.2s ease;
 }
@@ -2642,7 +2829,8 @@ button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBro
     padding-top: 24px !important;
 }
 
-.main-trackList-rowImagePlayButton[aria-label*="Play"] .main-trackList-rowPlayPauseIcon {
+.main-trackList-rowImagePlayButton[aria-label*="Play"]
+    .main-trackList-rowPlayPauseIcon {
     mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg);
     -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg);
     background-color: var(--spice-text) !important;
@@ -2651,7 +2839,7 @@ button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBro
     mask-size: 100%;
 }
 
-.main-nowPlayingView-queue .main-playButton-PlayButton>button {
+.main-nowPlayingView-queue .main-playButton-PlayButton > button {
     transform: scale(0.6) !important;
 }
 
@@ -2688,7 +2876,9 @@ button:has(.LyricsPageIcon) span svg {
     margin-top: -1px !important;
 }
 
-.main-topBar-container .main-topBar-topbarContent .main-entityHeader-topbarTitle {
+.main-topBar-container
+    .main-topBar-topbarContent
+    .main-entityHeader-topbarTitle {
     font-size: 16px !important;
 }
 
@@ -2706,16 +2896,25 @@ button:has(.LyricsPageIcon) span svg {
     /* transform: translateY(0) !important; */
 }
 
-.main-topBar-container:has(.bloom-header-scrolled) .main-topBar-topbarContent .main-playButton-PlayButton,
-.main-topBar-container:has(.bloom-header-scrolled) .main-topBar-topbarContent .main-entityHeader-topbarTitle {
+.main-topBar-container:has(.bloom-header-scrolled)
+    .main-topBar-topbarContent
+    .main-playButton-PlayButton,
+.main-topBar-container:has(.bloom-header-scrolled)
+    .main-topBar-topbarContent
+    .main-entityHeader-topbarTitle {
     opacity: 1 !important;
     visibility: visible;
+}
+
+button.main-globalNav-navLink[aria-label="Home"] {
+    top: 2px !important;
 }
 
 .main-globalNav-searchInputContainer .main-topBar-searchBar,
 .main-globalNav-searchInputContainer .main-topBar-searchBar:placeholder-shown {
     background-color: var(--spice-card) !important;
     border: 1px solid color-mix(in srgb, var(--spice-light-border), black 40%) !important;
+    border-radius: var(--border-radius-1) !important;
 }
 
 .x-searchInput-searchInputInput:focus,
@@ -2724,20 +2923,22 @@ button:has(.LyricsPageIcon) span svg {
     border-bottom: none !important;
 }
 
-.main-globalNav-searchInputContainer::after {
+/* .main-globalNav-searchInputContainer::after {
     content: "";
     position: absolute;
     height: 3px;
-    width: 100%;
+    width: calc(100% - 32px);
     background: transparent;
-    bottom: 0;
+    bottom: 3px;
     z-index: 1;
     transition: all 0.2s ease;
+    border-radius: 999px;
+    margin-left: 16px;
 }
 
 .main-globalNav-searchInputContainer:has(input:focus)::after {
     background: var(--spice-accent) !important;
-}
+} */
 
 .main-globalNav-searchInputContainer::before {
     content: "";
@@ -2755,7 +2956,7 @@ button:has(.LyricsPageIcon) span svg {
     transform: rotate(180deg);
 }
 
-.main-globalNav-searchInputContainer> :last-child {
+.main-globalNav-searchInputContainer > :last-child {
     z-index: 3 !important;
 }
 
@@ -2763,26 +2964,39 @@ button:has(.LyricsPageIcon) span svg {
     mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_search_24_regular.svg") !important;
     -webkit-mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_search_24_regular.svg") !important;
     background-color: var(--spice-subtext) !important;
+    width: 24px !important;
     height: 24px !important;
-    transform: translate(0px, -1px);
+    margin-left: 14px !important;
 }
 
-.main-globalNav-searchInputContainer> :last-child button[aria-label*="Clear search field"] {
+.main-globalNav-searchInputContainer
+    > :last-child
+    button[aria-label*="Clear search field"] {
     transform: scale(0.7);
 }
 
-.main-globalNav-searchInputContainer> :last-child button[aria-label*="Browse"] svg {
+.main-globalNav-searchInputContainer
+    > :last-child
+    button[aria-label*="Browse"]
+    svg {
     mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_collections_24_regular.svg");
     -webkit-mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_collections_24_regular.svg");
     background-color: var(--spice-subtext) !important;
 }
 
-.main-globalNav-searchInputContainer> :last-child button[aria-label*="Browse"]:hover svg {
+.main-globalNav-searchInputContainer
+    > :last-child
+    button[aria-label*="Browse"]:hover
+    svg {
     background-color: var(--spice-text) !important;
 }
 
 .main-globalNav-searchInputContainer .M9l40ptEBXPm03dU3X1k path,
-.main-globalNav-searchInputContainer> :last-child button[aria-label*="Browse"] svg path {
+.main-globalNav-searchInputContainer
+    > :last-child
+    button[aria-label*="Browse"]
+    svg
+    path {
     display: none !important;
 }
 
@@ -2869,7 +3083,8 @@ span.Ps9zgW56WZaBVLo1n3cg.l67ZKWaTyRadDGEcLWcE {
     width: 16px;
 }
 
-span.e-9640-baseline.e-9640-overflow-wrap-anywhere.e-9640-button-primary__inner.encore-bright-accent-set.e-9640-button-icon-only--large svg {
+span.e-9640-baseline.e-9640-overflow-wrap-anywhere.e-9640-button-primary__inner.encore-bright-accent-set.e-9640-button-icon-only--large
+    svg {
     height: 50px !important;
     width: 50px !important;
 }
@@ -2896,7 +3111,8 @@ div#upcomingSongDiv {
 }
 
 .Root__main-view:has(.marketplace-header) .main-topBar-container,
-.Root__main-view:has(.lyrics-lyricsContainer-LyricsBackground) .main-topBar-container,
+.Root__main-view:has(.lyrics-lyricsContainer-LyricsBackground)
+    .main-topBar-container,
 .Root__main-view:has(#library-app) .main-topBar-container {
     opacity: 1 !important;
 }
@@ -2910,14 +3126,22 @@ div#upcomingSongDiv {
     height: calc(48px + var(--panel-gap) * 2) !important;
 }
 
-.main-card-imageContainer>.main-card-PlayButtonContainer>.main-playButton-PlayButton>button {
+.main-card-imageContainer
+    > .main-card-PlayButtonContainer
+    > .main-playButton-PlayButton
+    > button {
     width: 40px !important;
     height: 40px !important;
 }
 
-.main-playButton-PlayButton>button[aria-label*="Pause"],
-.main-card-imageContainer>.main-card-PlayButtonContainer>.main-playButton-PlayButton>button[aria-label*="Pause"],
-.view-homeShortcutsGrid-grid .main-playButton-PlayButton button[aria-label*="Pause"] {
+.main-playButton-PlayButton > button[aria-label*="Pause"],
+.main-card-imageContainer
+    > .main-card-PlayButtonContainer
+    > .main-playButton-PlayButton
+    > button[aria-label*="Pause"],
+.view-homeShortcutsGrid-grid
+    .main-playButton-PlayButton
+    button[aria-label*="Pause"] {
     background-color: var(--spice-text) !important;
     mask-image: url(https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_pause_16_filled.svg) !important;
     -webkit-mask-image: url(https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_pause_16_filled.svg) !important;
@@ -2927,7 +3151,7 @@ div#upcomingSongDiv {
     margin-right: 16px !important;
 }
 
-.main-navBar-mainNav .main-playButton-PlayButton>button {
+.main-navBar-mainNav .main-playButton-PlayButton > button {
     width: 32px !important;
     height: 32px !important;
     margin-top: 18px !important;
@@ -2937,8 +3161,8 @@ div#upcomingSongDiv {
     background: transparent !important;
 }
 
-#library-app> :first-child,
-#stats-app> :first-child {
+#library-app > :first-child,
+#stats-app > :first-child {
     margin-top: 32px !important;
 }
 
@@ -3022,7 +3246,7 @@ button[aria-label*="Update Spicetify"] svg path {
     margin-right: -80px !important;
 }
 
-aside[aria-label*="Queue"] .main-playButton-PlayButton>button {
+aside[aria-label*="Queue"] .main-playButton-PlayButton > button {
     width: 32px !important;
     height: 32px !important;
     margin: 3px;
@@ -3063,25 +3287,29 @@ aside[aria-label*="Queue"] .main-playButton-PlayButton>button {
 }
 
 .Root__cinema-view .t1zLmOYnTuqrLT7AR9d6::before {
-    background: linear-gradient(0deg,
-            transparent,
-            rgba(var(--spice-rgb-main), 0.01) 7%,
-            rgba(var(--spice-rgb-main), 0.04) 15%,
-            rgba(var(--spice-rgb-main), 0.09) 25%,
-            rgba(var(--spice-rgb-main), 0.16) 35%,
-            rgba(var(--spice-rgb-main), 0.26) 45%,
-            rgba(var(--spice-rgb-main), 0.38) 55%,
-            rgba(var(--spice-rgb-main), 0.51) 65%,
-            rgba(var(--spice-rgb-main), 0.64) 75%,
-            rgba(var(--spice-rgb-main), 0.75) 85%,
-            rgba(var(--spice-rgb-main), 0.85)) !important;
+    background: linear-gradient(
+        0deg,
+        transparent,
+        rgba(var(--spice-rgb-main), 0.01) 7%,
+        rgba(var(--spice-rgb-main), 0.04) 15%,
+        rgba(var(--spice-rgb-main), 0.09) 25%,
+        rgba(var(--spice-rgb-main), 0.16) 35%,
+        rgba(var(--spice-rgb-main), 0.26) 45%,
+        rgba(var(--spice-rgb-main), 0.38) 55%,
+        rgba(var(--spice-rgb-main), 0.51) 65%,
+        rgba(var(--spice-rgb-main), 0.64) 75%,
+        rgba(var(--spice-rgb-main), 0.75) 85%,
+        rgba(var(--spice-rgb-main), 0.85)
+    ) !important;
 }
 
 .Root__cinema-view .fOA8mVyHaHw2T808ZLpL {
     background-image:
-        linear-gradient(180deg,
+        linear-gradient(
+            180deg,
             transparent 0,
-            rgba(var(--spice-rgb-main), 0.6) 100%),
+            rgba(var(--spice-rgb-main), 0.6) 100%
+        ),
         var(--cinema-mode-bg-image) !important;
 }
 
@@ -3097,7 +3325,8 @@ html .WDC2Yzs811n7JCYtYQzc {
     transition: all 0.3s ease;
 }
 
-.Vn9yz8P5MjIvDT8c0U6w:hover img.main-image-image.WDC2Yzs811n7JCYtYQzc.main-image-loaded {
+.Vn9yz8P5MjIvDT8c0U6w:hover
+    img.main-image-image.WDC2Yzs811n7JCYtYQzc.main-image-loaded {
     transform: rotate(25deg) translate(18%, -2%) scale(1.2) !important;
 }
 
@@ -3147,7 +3376,7 @@ img.X_HqPouENflGygaUXNus {
     text-shadow: 0 0 1px var(--spice-accent);
 }
 
-.main-actionBar-ActionBar .main-playButton-PlayButton>button {
+.main-actionBar-ActionBar .main-playButton-PlayButton > button {
     transform: scale(1.2) !important;
 }
 
@@ -3175,9 +3404,11 @@ img.X_HqPouENflGygaUXNus {
 }
 
 .main-entityHeader-container.main-entityHeader-withBackgroundImage {
-    background-image: linear-gradient(0deg,
-            var(--spice-main),
-            transparent) !important;
+    background-image: linear-gradient(
+        0deg,
+        var(--spice-main),
+        transparent
+    ) !important;
 }
 
 .main-entityHeader-metaDataText {
@@ -3191,10 +3422,32 @@ section[data-testid*="album-page"] .main-entityHeader-backgroundColor {
 }
 
 .main-yourLibraryX-collapseButton svg {
-    mask-size: 16px !important;
+    mask-size: 24px !important;
 }
 
-.main-yourLibraryX-headerContent.main-yourLibraryX-headerIsCollapsed button[aria-label*="Open Your Library"] svg {
+.main-yourLibraryX-collapseButton button[aria-label*="Collapse Your Library"] svg {
+    width: 24px !important;
+    height: 24px !important;
+    mask-size: 24px !important;
+    margin-top: -2px;
+}
+
+.main-yourLibraryX-collapseButton button[aria-label*="Expand Your Library"] svg {
+    mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_library_24_regular.svg");
+    -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_library_24_regular.svg");
+    background-color: var(--spice-subtext) !important;
+    width: 24px !important;
+    height: 24px !important;
+    mask-size: 24px !important;
+}
+
+.main-yourLibraryX-collapseButton button[aria-label*="Expand Your Library"]:hover svg {
+    background-color: var(--spice-text) !important;
+}
+
+.main-yourLibraryX-headerContent.main-yourLibraryX-headerIsCollapsed
+    button[aria-label*="Open Your Library"]
+    svg {
     mask-size: 24px !important;
 }
 
@@ -3282,7 +3535,8 @@ button.nprd-refresh {
 }
 
 .main-trackList-trackListRow.dAFQydUa_3YLPaMsqWAv .main-trackList-rowMarker,
-.main-trackList-trackListRow.dAFQydUa_3YLPaMsqWAv .main-trackList-rowMainContentTitle {
+.main-trackList-trackListRow.dAFQydUa_3YLPaMsqWAv
+    .main-trackList-rowMainContentTitle {
     color: var(--spice-text);
     text-shadow: 0 0 var(--spice-accent);
 }
@@ -3331,9 +3585,11 @@ section[data-testid*="album-page"] .main-entityHeader-backgroundColor::after {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(0deg,
-            var(--spice-main),
-            transparent) !important;
+    background: linear-gradient(
+        0deg,
+        var(--spice-main),
+        transparent
+    ) !important;
 }
 
 .main-trackInfo-enhanced svg {
@@ -3361,7 +3617,9 @@ section[data-testid*="album-page"] .main-entityHeader-backgroundColor::after {
     border: 2px solid var(--spice-sidebar) !important;
 }
 
-.main-topBar-buddyFeed[aria-label*="What's New"] svg.vw7Ql5Ip9ZrzaLknOFdK circle {
+.main-topBar-buddyFeed[aria-label*="What's New"]
+    svg.vw7Ql5Ip9ZrzaLknOFdK
+    circle {
     opacity: 0;
 }
 
@@ -3392,28 +3650,33 @@ div#sort-and-view-picker ul[aria-label*="Sort by"] {
     background-color: var(--spice-card);
 }
 
-
-
-
 .main-yourLibraryX-headerContent button {
     background: transparent !important;
     border: none !important;
 }
 
-.search-searchCategory-categoryGrid div[aria-label*="Filter options"] .LegacyChipComponent-presentation-chip-sm-useBrowserDefaultFocusStyle span {
+.search-searchCategory-categoryGrid
+    div[aria-label*="Filter options"]
+    .LegacyChipComponent-presentation-chip-sm-useBrowserDefaultFocusStyle
+    span {
     background: var(--spice-sidebar);
 }
 
-.Root__nav-bar:not(.yXlTmwlWtDebsivA1gM6) .main-yourLibraryX-entryPoints {
+/* .Root__nav-bar:not(.yXlTmwlWtDebsivA1gM6) .main-yourLibraryX-entryPoints {
     max-width: 320px !important;
 }
 
 .Root__nav-bar:not(:has(.G4x1juhr8jVza8dirSUd)) .main-yourLibraryX-entryPoints {
     min-width: 320px !important;
+} */
+
+.Root__nav-bar:not(:has(.main-yourLibraryX-collapseButton.main-yourLibraryX-headerIsCollapsed)) .main-yourLibraryX-entryPoints {
+    min-width: 320px !important;
+    max-width: 400px !important;
 }
 
 .PcZ4Ih4RnDcfih7nQsvV {
-    background-color: rgba(var(--spice-rgb-main), .6) !important;
+    background-color: rgba(var(--spice-rgb-main), 0.6) !important;
 }
 
 .main-home-filterChipsSectionActive {
@@ -3433,7 +3696,6 @@ button.main-trackList-column.main-trackList-durationHeader.main-trackList-sortab
     margin-right: 20px !important;
 }
 
-
 .main-actionBar-exploreButtonPlayIconWrapper svg.e-91000-icon.e-91000-baseline {
     mask-size: 14px !important;
 }
@@ -3452,7 +3714,7 @@ button.main-trackList-column.main-trackList-durationHeader.main-trackList-sortab
   padding-bottom: 10px;
 } */
 
-.main-topBar-container:has(.bloom-header-scrolled) .main-topBar-background{
+.main-topBar-container:has(.bloom-header-scrolled) .main-topBar-background {
     opacity: 1 !important;
 }
 
@@ -3461,7 +3723,10 @@ button.main-trackList-column.main-trackList-durationHeader.main-trackList-sortab
 }
 
 .ZLQMyiECjwh0Fat0ymny:after {
-    background-image: linear-gradient(var(--spice-main), transparent) !important;
+    background-image: linear-gradient(
+        var(--spice-main),
+        transparent
+    ) !important;
 }
 
 .spotify__container--is-desktop:not(.fullscreen) .CqXpLitKxRFvrULhC2kW {
@@ -3477,19 +3742,29 @@ button.main-trackList-column.main-trackList-durationHeader.main-trackList-sortab
 }
 
 .main-playlistEditDetailsModal-imageDropDownButton {
-    background-color: rgba(var(--spice-rgb-main), .7) !important;
+    background-color: rgba(var(--spice-rgb-main), 0.7) !important;
     border-radius: var(--border-radius-2) !important;
 }
 
-.main-playlistEditDetailsModal-titleInput, .main-playlistEditDetailsModal-descriptionTextarea, .main-playlistEditDetailsModal-titleInput:focus, .main-playlistEditDetailsModal-descriptionTextarea:focus, .playlist-inlineSearchBox-filterInput {
-    background-color: color-mix(in oklab, var(--spice-main), white 2%) !important;
+.main-playlistEditDetailsModal-titleInput,
+.main-playlistEditDetailsModal-descriptionTextarea,
+.main-playlistEditDetailsModal-titleInput:focus,
+.main-playlistEditDetailsModal-descriptionTextarea:focus,
+.playlist-inlineSearchBox-filterInput {
+    background-color: color-mix(
+        in oklab,
+        var(--spice-main),
+        white 2%
+    ) !important;
     color: color-mix(in oklab, var(--spice-subtext), white 20%) !important;
 }
 
-.main-playlistEditDetailsModal-titleInput:focus, .main-playlistEditDetailsModal-descriptionTextarea:focus, .profile-userEditDetails-textElement:focus, .playlist-inlineSearchBox-filterInput:focus {
+.main-playlistEditDetailsModal-titleInput:focus,
+.main-playlistEditDetailsModal-descriptionTextarea:focus,
+.profile-userEditDetails-textElement:focus,
+.playlist-inlineSearchBox-filterInput:focus {
     color: var(--spice-text) !important;
 }
-
 
 .main-shelf-shelf:last-child,
 main[aria-label*="Liked Songs"] .main-trackList-trackListContainer,
@@ -3510,17 +3785,22 @@ button.NIccMWgYS0OibP_70DRO {
 
 .artist-artistDiscography-topBar.artist-artistDiscography-topBarScrolled {
     height: 56px;
-    border-bottom: 1px solid color-mix(in srgb, var(--spice-light-border), black 36%) !important;
+    border-bottom: 1px solid
+        color-mix(in srgb, var(--spice-light-border), black 36%) !important;
 }
 
 button.x-sortBox-sortDropdown {
     color: var(--text-subdued) !important;
 }
 
-.main-yourLibraryX-libraryItemContainer .os-scrollbar-vertical:active .os-scrollbar-handle[data-group-by]:after {
+.main-yourLibraryX-libraryItemContainer
+    .os-scrollbar-vertical:active
+    .os-scrollbar-handle[data-group-by]:after {
     background-color: var(--spice-card) !important;
     border: 1px solid rgb(var(--spice-rgb-light-border), 0.4) !important;
-    box-shadow: 0 16px 24px rgba(var(--spice-rgb-main), .3), 0 6px 8px rgba(var(--spice-rgb-main), .2) !important;
+    box-shadow:
+        0 16px 24px rgba(var(--spice-rgb-main), 0.3),
+        0 6px 8px rgba(var(--spice-rgb-main), 0.2) !important;
     /* color: var(--spice-subtext) !important; */
 }
 
@@ -3528,4 +3808,26 @@ button.x-sortBox-sortDropdown {
     margin: auto;
     text-align: center;
     padding-bottom: 120px;
+}
+
+.view-homeShortcutsGrid-main div:has(.view-homeShortcutsGrid-equaliser)::before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    background: var(--spice-accent);
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/equaliser-animated-green.gif);
+    mask-size: 24px;
+}
+
+
+.view-homeShortcutsGrid-shortcut:hover .view-homeShortcutsGrid-main div:has(.view-homeShortcutsGrid-equaliser)::before {
+    opacity: 0 !important;
+}
+
+.view-homeShortcutsGrid-main .view-homeShortcutsGrid-equaliser {
+    display: none !important;
+}
+
+.main-card-imageContainer .main-playButton-PlayButton > button > span {
+    display: none !important;
 }

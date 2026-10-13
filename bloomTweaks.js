@@ -36,7 +36,9 @@ function waitForSpicetify() {
         const prefs = loadPreferences();
 
         // Load bloomTweaksLegacy.css
-        const existingLegacyLink = document.querySelector("link[href*='bloomTweaksLegacy.css']");
+        const existingLegacyLink = document.querySelector(
+            "link[href*='bloomTweaksLegacy.css']",
+        );
         if (prefs.customCSS && !existingLegacyLink) {
             await loadCSSFile("bloomTweaksLegacy.css");
         } else if (!prefs.customCSS && existingLegacyLink) {
@@ -44,7 +46,9 @@ function waitForSpicetify() {
         }
 
         // Load fluentButtons.css
-        const existingFluentLink = document.querySelector("link[href*='fluentButtons.css']");
+        const existingFluentLink = document.querySelector(
+            "link[href*='fluentButtons.css']",
+        );
         if (prefs.fluentButtonsCSS && !existingFluentLink) {
             await loadCSSFile("fluentButtons.css");
         } else if (!prefs.fluentButtonsCSS && existingFluentLink) {
@@ -52,15 +56,22 @@ function waitForSpicetify() {
         }
 
         // Load windowsColorTheme.css (Updated name from 'windowsColorTheme.css')
-        const existingwindowsColorThemeLink = document.querySelector("link[href*='windowsColorTheme.css']"); // Corrected here
+        const existingwindowsColorThemeLink = document.querySelector(
+            "link[href*='windowsColorTheme.css']",
+        ); // Corrected here
         if (prefs.windowsColorThemeCSS && !existingwindowsColorThemeLink) {
             await loadCSSFile("windowsColorTheme.css");
-        } else if (!prefs.windowsColorThemeCSS && existingwindowsColorThemeLink) {
+        } else if (
+            !prefs.windowsColorThemeCSS &&
+            existingwindowsColorThemeLink
+        ) {
             existingwindowsColorThemeLink.remove();
         }
 
         // Load customNPV.css (Updated name from 'customNPV.css')
-        const customNPVLink = document.querySelector("link[href*='customNPV.css']"); // Corrected here
+        const customNPVLink = document.querySelector(
+            "link[href*='customNPV.css']",
+        ); // Corrected here
         if (prefs.customNPV && !customNPVLink) {
             await loadCSSFile("customNPV.css");
         } else if (!prefs.customNPV && customNPVLink) {
@@ -68,7 +79,9 @@ function waitForSpicetify() {
         }
 
         // Load lightTheme.css (Updated name from 'lightTheme.css')
-        const lightThemeLink = document.querySelector("link[href*='lightTheme.css']"); // Corrected here
+        const lightThemeLink = document.querySelector(
+            "link[href*='lightTheme.css']",
+        ); // Corrected here
         if (prefs.lightTheme && !lightThemeLink) {
             await loadCSSFile("lightTheme.css");
         } else if (!prefs.lightTheme && lightThemeLink) {
@@ -76,7 +89,9 @@ function waitForSpicetify() {
         }
 
         // Load friendsActivityBar.css (Updated name from 'friendsActivityBar.css')
-        const friendsActivityBarLink = document.querySelector("link[href*='friendsActivityBar.css']"); // Corrected here
+        const friendsActivityBarLink = document.querySelector(
+            "link[href*='friendsActivityBar.css']",
+        ); // Corrected here
         if (prefs.friendsActivityBar && !friendsActivityBarLink) {
             await loadCSSFile("friendsActivityBar.css");
         } else if (!prefs.friendsActivityBar && friendsActivityBarLink) {
@@ -84,7 +99,9 @@ function waitForSpicetify() {
         }
 
         // Load floatingVolumeBar.css (Updated name from 'floatingVolumeBar.css')
-        const floatingVolumeBarLink = document.querySelector("link[href*='floatingVolumeBar.css']"); // Corrected here
+        const floatingVolumeBarLink = document.querySelector(
+            "link[href*='floatingVolumeBar.css']",
+        ); // Corrected here
         if (prefs.floatingVolumeBar && !floatingVolumeBarLink) {
             await loadCSSFile("floatingVolumeBar.css");
         } else if (!prefs.floatingVolumeBar && floatingVolumeBarLink) {
@@ -92,7 +109,9 @@ function waitForSpicetify() {
         }
 
         // Load customAppEnhancify.css (Updated name from 'customAppEnhancify.css')
-        const customAppEnhancifyLink = document.querySelector("link[href*='customAppEnhancify.css']"); // Corrected here
+        const customAppEnhancifyLink = document.querySelector(
+            "link[href*='customAppEnhancify.css']",
+        ); // Corrected here
         if (prefs.customAppEnhancify && !customAppEnhancifyLink) {
             await loadCSSFile("customAppEnhancify.css");
         } else if (!prefs.customAppEnhancify && customAppEnhancifyLink) {
@@ -100,7 +119,9 @@ function waitForSpicetify() {
         }
 
         // Load listeningStats.css (Updated name from 'listeningStats.css')
-        const listeningStatsLink = document.querySelector("link[href*='listeningStats.css']"); // Corrected here
+        const listeningStatsLink = document.querySelector(
+            "link[href*='listeningStats.css']",
+        ); // Corrected here
         if (prefs.listeningStats && !listeningStatsLink) {
             await loadCSSFile("listeningStats.css");
         } else if (!prefs.listeningStats && listeningStatsLink) {
@@ -108,15 +129,25 @@ function waitForSpicetify() {
         }
 
         // Load beautifulLyricsLegacyCinema.css (Updated name from 'beautifulLyricsLegacyCinema.css')
-        const beautifulLyricsLegacyCinemaLink = document.querySelector("link[href*='beautifulLyricsLegacyCinema.css']"); // Corrected here
-        if (prefs.beautifulLyricsLegacyCinema && !beautifulLyricsLegacyCinemaLink) {
+        const beautifulLyricsLegacyCinemaLink = document.querySelector(
+            "link[href*='beautifulLyricsLegacyCinema.css']",
+        ); // Corrected here
+        if (
+            prefs.beautifulLyricsLegacyCinema &&
+            !beautifulLyricsLegacyCinemaLink
+        ) {
             await loadCSSFile("beautifulLyricsLegacyCinema.css");
-        } else if (!prefs.beautifulLyricsLegacyCinema && beautifulLyricsLegacyCinemaLink) {
+        } else if (
+            !prefs.beautifulLyricsLegacyCinema &&
+            beautifulLyricsLegacyCinemaLink
+        ) {
             beautifulLyricsLegacyCinemaLink.remove();
         }
 
         // Load playlistTags.css (Updated name from 'playlistTags.css')
-        const playlistTagsLink = document.querySelector("link[href*='playlistTags.css']"); // Corrected here
+        const playlistTagsLink = document.querySelector(
+            "link[href*='playlistTags.css']",
+        ); // Corrected here
         if (prefs.playlistTags && !playlistTagsLink) {
             await loadCSSFile("playlistTags.css");
         } else if (!prefs.playlistTags && playlistTagsLink) {
@@ -124,7 +155,9 @@ function waitForSpicetify() {
         }
 
         // Load spicetifyStats.css (Updated name from 'spicetifyStats.css')
-        const spicetifyStatsLink = document.querySelector("link[href*='spicetifyStats.css']"); // Corrected here
+        const spicetifyStatsLink = document.querySelector(
+            "link[href*='spicetifyStats.css']",
+        ); // Corrected here
         if (prefs.spicetifyStats && !spicetifyStatsLink) {
             await loadCSSFile("spicetifyStats.css");
         } else if (!prefs.spicetifyStats && spicetifyStatsLink) {
@@ -132,7 +165,9 @@ function waitForSpicetify() {
         }
 
         // Load noiseBlurBg.css (Updated name from 'noiseBlurBg.css')
-        const noiseBlurBgLink = document.querySelector("link[href*='noiseBlurBg.css']"); // Corrected here
+        const noiseBlurBgLink = document.querySelector(
+            "link[href*='noiseBlurBg.css']",
+        ); // Corrected here
         if (prefs.noiseBlurBg && !noiseBlurBgLink) {
             await loadCSSFile("noiseBlurBg.css");
         } else if (!prefs.noiseBlurBg && noiseBlurBgLink) {
@@ -145,7 +180,9 @@ function waitForSpicetify() {
         const repoName = "Bloom-Tweaks";
 
         try {
-            const response = await fetch(`https://api.github.com/repos/${repoOwner}/${repoName}/commits/main`);
+            const response = await fetch(
+                `https://api.github.com/repos/${repoOwner}/${repoName}/commits/main`,
+            );
             const data = await response.json();
             const latestCommitHash = data.sha;
 
@@ -217,33 +254,49 @@ function waitForSpicetify() {
     function setupStickyHeaderScrollEffect() {
         console.log("BloomTweaks: Initializing resilient scroll tracker.");
 
-        window.addEventListener('scroll', (e) => {
-            const viewport = e.target.closest ? e.target.closest('[data-overlayscrollbars-viewport]') : null;
-            
-            if (viewport) {
-                const header = document.querySelector('.main-topBar-topbarContent');
-                if (header) {
-                    const scrollTop = viewport.scrollTop;
-                    if (scrollTop > 50) {
-                        header.classList.add('bloom-header-scrolled');
-                    } else {
-                        header.classList.remove('bloom-header-scrolled');
+        window.addEventListener(
+            "scroll",
+            (e) => {
+                const viewport = e.target.closest
+                    ? e.target.closest("[data-overlayscrollbars-viewport]")
+                    : null;
+
+                if (viewport) {
+                    const header = document.querySelector(
+                        ".main-topBar-topbarContent",
+                    );
+                    if (header) {
+                        const scrollTop = viewport.scrollTop;
+                        if (scrollTop > 50) {
+                            header.classList.add("bloom-header-scrolled");
+                        } else {
+                            header.classList.remove("bloom-header-scrolled");
+                        }
                     }
                 }
-            }
-        }, true);
+            },
+            true,
+        );
     }
 
     async function updateAmbientEffect(retries = 10, delay = 100) {
-        if (!Spicetify.Player || !Spicetify.Player.data || !Spicetify.Player.data.item) {
-            console.warn('Spicetify Player or track data is not available. Retrying...');
+        if (
+            !Spicetify.Player ||
+            !Spicetify.Player.data ||
+            !Spicetify.Player.data.item
+        ) {
+            console.warn(
+                "Spicetify Player or track data is not available. Retrying...",
+            );
             if (retries > 0) {
                 setTimeout(() => {
                     updateAmbientEffect(retries - 1, delay);
                 }, delay);
                 return;
             } else {
-                console.error('Max retries reached. Exiting updateAmbientEffect.');
+                console.error(
+                    "Max retries reached. Exiting updateAmbientEffect.",
+                );
                 return;
             }
         }
@@ -252,16 +305,16 @@ function waitForSpicetify() {
         const albumCoverUrl = currentTrack.album.images[0]?.url;
 
         if (!albumCoverUrl) {
-            console.warn('Album cover URL not found.');
+            console.warn("Album cover URL not found.");
             return;
         }
 
         const Root__main = createRoot__main();
 
-        if (Root__main && Root__main.querySelector('.visualizer-container')) {
+        if (Root__main && Root__main.querySelector(".visualizer-container")) {
             Root__main.style.backgroundImage = `url(${albumCoverUrl})`;
 
-            console.log('Hello');
+            console.log("Hello");
         }
     }
 
@@ -274,7 +327,7 @@ function waitForSpicetify() {
     }
 
     function createRoot__main() {
-        let Root__main = document.querySelector('.Root__main-view');
+        let Root__main = document.querySelector(".Root__main-view");
 
         return Root__main;
     }
@@ -319,7 +372,8 @@ function waitForSpicetify() {
                 clearInterval(tryAddButton);
 
                 const button = document.createElement("button");
-                button.className = "bloom-tweaks Button-sc-1dqy6lx-0 Button-buttonTertiary-small-small-useBrowserDefaultFocusStyle-condensedAll encore-text-body-small-bold";
+                button.className =
+                    "bloom-tweaks Button-sc-1dqy6lx-0 Button-buttonTertiary-small-small-useBrowserDefaultFocusStyle-condensedAll encore-text-body-small-bold";
                 button.setAttribute("aria-label", "Customizations");
 
                 const icon = document.createElement("svg");
@@ -505,32 +559,64 @@ function waitForSpicetify() {
                         onConfirm: saveSettings,
                     });
 
-                    document.getElementById("saveSettingsButton").addEventListener("click", saveSettings);
+                    document
+                        .getElementById("saveSettingsButton")
+                        .addEventListener("click", saveSettings);
 
                     function saveSettings() {
                         const newPrefs = {
-                            customCSS: document.getElementById("customCSS")?.checked || false,
-                            buttonStyling: document.getElementById("buttonStyling")?.checked || false,
-                            tagStyling: document.getElementById("tagStyling")?.checked || false,
-                            fluentButtonsCSS: document.getElementById("fluentButtonsCSS")?.checked || false,
-                            windowsColorThemeCSS: document.getElementById("windowsColorThemeCSS")?.checked || false,
-                            customNPV: document.getElementById("customNPV")?.checked || false,
-                            lightTheme: document.getElementById("lightTheme")?.checked || false,
-                            friendsActivityBar: document.getElementById("friendsActivityBar")?.checked || false,
-                            floatingVolumeBar: document.getElementById("floatingVolumeBar")?.checked || false,
-                            customAppEnhancify: document.getElementById("customAppEnhancify")?.checked || false,
-                            listeningStats: document.getElementById("listeningStats")?.checked || false,
-                            beautifulLyricsLegacyCinema: document.getElementById("beautifulLyricsLegacyCinema")?.checked || false,
-                            playlistTags: document.getElementById("playlistTags")?.checked || false,
-                            spicetifyStats: document.getElementById("spicetifyStats")?.checked || false,
-                            noiseBlurBg: document.getElementById("noiseBlurBg")?.checked || false,
+                            customCSS:
+                                document.getElementById("customCSS")?.checked ||
+                                false,
+                            buttonStyling:
+                                document.getElementById("buttonStyling")
+                                    ?.checked || false,
+                            tagStyling:
+                                document.getElementById("tagStyling")
+                                    ?.checked || false,
+                            fluentButtonsCSS:
+                                document.getElementById("fluentButtonsCSS")
+                                    ?.checked || false,
+                            windowsColorThemeCSS:
+                                document.getElementById("windowsColorThemeCSS")
+                                    ?.checked || false,
+                            customNPV:
+                                document.getElementById("customNPV")?.checked ||
+                                false,
+                            lightTheme:
+                                document.getElementById("lightTheme")
+                                    ?.checked || false,
+                            friendsActivityBar:
+                                document.getElementById("friendsActivityBar")
+                                    ?.checked || false,
+                            floatingVolumeBar:
+                                document.getElementById("floatingVolumeBar")
+                                    ?.checked || false,
+                            customAppEnhancify:
+                                document.getElementById("customAppEnhancify")
+                                    ?.checked || false,
+                            listeningStats:
+                                document.getElementById("listeningStats")
+                                    ?.checked || false,
+                            beautifulLyricsLegacyCinema:
+                                document.getElementById(
+                                    "beautifulLyricsLegacyCinema",
+                                )?.checked || false,
+                            playlistTags:
+                                document.getElementById("playlistTags")
+                                    ?.checked || false,
+                            spicetifyStats:
+                                document.getElementById("spicetifyStats")
+                                    ?.checked || false,
+                            noiseBlurBg:
+                                document.getElementById("noiseBlurBg")
+                                    ?.checked || false,
                         };
 
                         savePreferences(newPrefs);
                         location.reload();
                     }
                 });
-
 
                 actionButtons.appendChild(button);
             }
