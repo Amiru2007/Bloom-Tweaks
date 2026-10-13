@@ -1680,8 +1680,8 @@ span.Type__TypeElement-sc-goli3j-0.TypeElement-type-mesto-textSubdued.main-track
 }
 
 .view-homeShortcutsGrid-shortcut .main-playButton-PlayButton > button {
-    width: 50px !important;
-    height: 50px !important;
+    width: 40px !important;
+    height: 40px !important;
     margin: 3px;
     /* visibility: hidden; */
     opacity: 0;
@@ -2536,11 +2536,6 @@ button[aria-label*="Pause"]
     display: none;
 }
 
-.main-topBar-topbarContent button.e-9640-button-primary.e-9640-button {
-    width: 30px !important;
-    transform: scale(0.8) !important;
-}
-
 .main-trackList-trackListHeader {
     padding: 0 !important;
     margin-top: 4px !important;
@@ -2794,9 +2789,9 @@ button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBro
 }
 
 .main-topBar-topbarContentWrapper .main-playButton-PlayButton > button {
-    transform: scale(0.4) !important;
+    transform: scale(0.5) !important;
     margin: 0 !important;
-    margin-right: -14px !important;
+    margin-right: -6px !important;
     margin-top: -2px !important;
 }
 
@@ -2910,6 +2905,7 @@ button.main-globalNav-navLink[aria-label="Home"] {
     top: 2px !important;
 }
 
+.Root__globalNav .main-globalNav-navLink,
 .main-globalNav-searchInputContainer .main-topBar-searchBar,
 .main-globalNav-searchInputContainer .main-topBar-searchBar:placeholder-shown {
     background-color: var(--spice-card) !important;
@@ -3269,9 +3265,12 @@ aside[aria-label*="Queue"] .main-playButton-PlayButton > button {
 }
 
 .BZh0f1vbOmruyp4_t9wy button[aria-label*="fullscreen library"] svg {
-    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_arrow_expand_24_filled.svg) !important;
-    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_arrow_expand_24_filled.svg) !important;
-    background: var(--text-subdued) !important;
+    mask-image: url(ic_fluent_full_screen_maximize_24_regular.svg) !important;
+    -webkit-mask-image: url(ic_fluent_full_screen_maximize_24_regular.svg) !important;
+    background: var(--text-text) !important;
+    width: 16px;
+    height: 16px;
+    mask-size: 16px;
 }
 
 .nGWhztVvLY1BInXjcWYa:hover {
@@ -3318,7 +3317,7 @@ dialog::backdrop {
 }
 
 .VOGWdrCvz59_A_wAZv58 {
-    margin: 16px 0 !important;
+    margin: 8px 0 !important;
 }
 
 html .WDC2Yzs811n7JCYtYQzc {
@@ -3571,9 +3570,9 @@ button.l5V7KOO1aHJ4R7jYTQuV[aria-label="Create"] {
     transform: translateY(-40px);
 }
 
-.main-topBar-topbarContentWrapper {
+/* .main-topBar-topbarContentWrapper {
     transform: translateY(-4px);
-}
+} */
 
 .main-globalNav-contentRightSpacer {
     display: none !important;
@@ -3817,6 +3816,7 @@ button.x-sortBox-sortDropdown {
     background: var(--spice-accent);
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/equaliser-animated-green.gif);
     mask-size: 24px;
+    margin-right: 16px;
 }
 
 
@@ -3830,4 +3830,52 @@ button.x-sortBox-sortDropdown {
 
 .main-card-imageContainer .main-playButton-PlayButton > button > span {
     display: none !important;
+}
+
+.main-trackList-rowMarker:has(.main-trackList-playingIcon)::after {
+    content: '';
+    width: 16px;
+    height: 16px;
+    display: block;
+    mask-size: 16px;
+    background: var(--spice-accent);
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/equaliser-animated-green.gif);
+}
+
+.main-trackList-trackListRow:focus-within .main-trackList-rowMarker:has(.main-trackList-playingIcon)::after, .main-trackList-trackListRow:hover .main-trackList-rowMarker:has(.main-trackList-playingIcon)::after {
+    opacity: 0 !important;
+}
+
+.main-trackList-rowMarker .main-trackList-playingIcon {
+    display: none;
+}
+
+.main-actionBar-ActionBarRow > :not(:first-child, :last-child) {
+    transform: scale(0.8);
+}
+
+.playlist-playlist-playlistDescription.playlist-playlist-playlistDescription {
+    color: var(--text-subdued) !important;
+}
+
+.SjhDNg4bQRQmIJAba47Z {
+    background: var(--spice-card) !important;
+    border: 1px var(--spice-contour) solid !important;
+    padding-block: 12px !important;
+}
+
+.SjhDNg4bQRQmIJAba47Z .main-playButton-PlayButton > button {
+    right: 4px;
+}
+
+.main-trackList-trackListRow.main-trackList-active .main-trackList-rowTitle, .main-trackList-trackListRow.main-trackList-active .main-trackList-rowMarker {
+    color: var(--spice-text) !important;
+}
+
+.BV0jjn_h5TtMMl8YKuZ0 {
+    border-inline-start: 1px solid var(--spice-contour) !important;
+}
+
+.main-pageErrorTemplate-errorBody button {
+    background: var(--spice-accent) !important;
 }
