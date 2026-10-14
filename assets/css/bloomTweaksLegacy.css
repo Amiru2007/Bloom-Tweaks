@@ -3911,7 +3911,7 @@ button.x-sortBox-sortDropdown {
     z-index: 9999999 !important;
 }
 
-.Root__nav-bar.TkqXOzhmCCuE6YI3hlgA:not(:has(.main-yourLibraryX-libraryRootlist.KwShd3RdVrsX6dGLJNxT))  .main-navBar-mainNav .main-playButton-PlayButton > button {
+.Root__nav-bar.TkqXOzhmCCuE6YI3hlgA:not(:has(.main-yourLibraryX-libraryRootlist.KwShd3RdVrsX6dGLJNxT)) .main-navBar-mainNav .main-playButton-PlayButton > button {
     margin-top: 0 !important;
     transform: scale(1.3) !important;
 }
