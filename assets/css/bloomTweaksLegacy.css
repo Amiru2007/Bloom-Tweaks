@@ -3265,8 +3265,8 @@ aside[aria-label*="Queue"] .main-playButton-PlayButton > button {
 }
 
 .Root__nav-bar .BZh0f1vbOmruyp4_t9wy button[aria-label*="fullscreen library"] svg {
-    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_full_screen_maximize_24_filled.svg) !important;
-    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_full_screen_maximize_24_filled.svg) !important;
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/fullscreen-expand.svg) !important;
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/fullscreen-expand.svg) !important;
     background: var(--spice-text) !important;
     width: 16px;
     height: 16px;
@@ -3274,8 +3274,8 @@ aside[aria-label*="Queue"] .main-playButton-PlayButton > button {
 }
 
 .Root__nav-bar.TkqXOzhmCCuE6YI3hlgA .BZh0f1vbOmruyp4_t9wy button[aria-label*="fullscreen library"] svg {
-    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_full_screen_minimize_24_filled.svg) !important;
-    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_full_screen_minimize_24_filled.svg) !important;
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/fullscreen-collapse.svg) !important;
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/fullscreen-collapse.svg) !important;
 }
 
 .nGWhztVvLY1BInXjcWYa:hover {
