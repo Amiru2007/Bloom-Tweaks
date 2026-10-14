@@ -11,7 +11,8 @@ button.main-nowPlayingView-aboutArtistV2Button {
 .cacyLqtJhjhr95qRC_R7::before,
 .CvWRWfWfmS9_2fgM7c3A::before,
 #BeautifulLyrics-CardView::before,
-footer.main-nowPlayingBar-container::before {
+footer.main-nowPlayingBar-container::before,
+.mjZrvVI3CxfHJXu7y0Lg.fIvMht6B9HdROywMNJZ4.main-home-filterChipsSection::before {
     content: "";
     position: absolute;
     background: var(--noise-texture);

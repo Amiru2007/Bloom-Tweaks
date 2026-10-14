@@ -3264,13 +3264,18 @@ aside[aria-label*="Queue"] .main-playButton-PlayButton > button {
     background: transparent !important;
 }
 
-.BZh0f1vbOmruyp4_t9wy button[aria-label*="fullscreen library"] svg {
-    mask-image: url(ic_fluent_full_screen_maximize_24_regular.svg) !important;
-    -webkit-mask-image: url(ic_fluent_full_screen_maximize_24_regular.svg) !important;
-    background: var(--text-text) !important;
+.Root__nav-bar .BZh0f1vbOmruyp4_t9wy button[aria-label*="fullscreen library"] svg {
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_full_screen_maximize_24_filled.svg) !important;
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_full_screen_maximize_24_filled.svg) !important;
+    background: var(--spice-text) !important;
     width: 16px;
     height: 16px;
     mask-size: 16px;
+}
+
+.Root__nav-bar.TkqXOzhmCCuE6YI3hlgA .BZh0f1vbOmruyp4_t9wy button[aria-label*="fullscreen library"] svg {
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_full_screen_minimize_24_filled.svg) !important;
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_full_screen_minimize_24_filled.svg) !important;
 }
 
 .nGWhztVvLY1BInXjcWYa:hover {
@@ -3376,7 +3381,8 @@ img.X_HqPouENflGygaUXNus {
 }
 
 .main-actionBar-ActionBar .main-playButton-PlayButton > button {
-    transform: scale(1.2) !important;
+    transform: scale(1.6) !important;
+    margin: 0 16px !important;
 }
 
 .playlist-playlist-searchBoxContainer button,
@@ -3424,14 +3430,18 @@ section[data-testid*="album-page"] .main-entityHeader-backgroundColor {
     mask-size: 24px !important;
 }
 
-.main-yourLibraryX-collapseButton button[aria-label*="Collapse Your Library"] svg {
+.main-yourLibraryX-collapseButton
+    button[aria-label*="Collapse Your Library"]
+    svg {
     width: 24px !important;
     height: 24px !important;
     mask-size: 24px !important;
     margin-top: -2px;
 }
 
-.main-yourLibraryX-collapseButton button[aria-label*="Expand Your Library"] svg {
+.main-yourLibraryX-collapseButton
+    button[aria-label*="Expand Your Library"]
+    svg {
     mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_library_24_regular.svg");
     -webkit-mask-image: url("https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_library_24_regular.svg");
     background-color: var(--spice-subtext) !important;
@@ -3440,7 +3450,9 @@ section[data-testid*="album-page"] .main-entityHeader-backgroundColor {
     mask-size: 24px !important;
 }
 
-.main-yourLibraryX-collapseButton button[aria-label*="Expand Your Library"]:hover svg {
+.main-yourLibraryX-collapseButton
+    button[aria-label*="Expand Your Library"]:hover
+    svg {
     background-color: var(--spice-text) !important;
 }
 
@@ -3669,9 +3681,14 @@ div#sort-and-view-picker ul[aria-label*="Sort by"] {
     min-width: 320px !important;
 } */
 
-.Root__nav-bar:not(:has(.main-yourLibraryX-collapseButton.main-yourLibraryX-headerIsCollapsed)) .main-yourLibraryX-entryPoints {
+.Root__nav-bar:not(
+        :has(
+            .main-yourLibraryX-collapseButton.main-yourLibraryX-headerIsCollapsed
+        )
+    )
+    .main-yourLibraryX-entryPoints {
     min-width: 320px !important;
-    max-width: 400px !important;
+    /* max-width: 400px !important; */
 }
 
 .PcZ4Ih4RnDcfih7nQsvV {
@@ -3809,8 +3826,9 @@ button.x-sortBox-sortDropdown {
     padding-bottom: 120px;
 }
 
-.view-homeShortcutsGrid-main div:has(.view-homeShortcutsGrid-equaliser)::before {
-    content: '';
+.view-homeShortcutsGrid-main
+    div:has(.view-homeShortcutsGrid-equaliser)::before {
+    content: "";
     width: 24px;
     height: 24px;
     background: var(--spice-accent);
@@ -3819,8 +3837,9 @@ button.x-sortBox-sortDropdown {
     margin-right: 16px;
 }
 
-
-.view-homeShortcutsGrid-shortcut:hover .view-homeShortcutsGrid-main div:has(.view-homeShortcutsGrid-equaliser)::before {
+.view-homeShortcutsGrid-shortcut:hover
+    .view-homeShortcutsGrid-main
+    div:has(.view-homeShortcutsGrid-equaliser)::before {
     opacity: 0 !important;
 }
 
@@ -3833,7 +3852,7 @@ button.x-sortBox-sortDropdown {
 }
 
 .main-trackList-rowMarker:has(.main-trackList-playingIcon)::after {
-    content: '';
+    content: "";
     width: 16px;
     height: 16px;
     display: block;
@@ -3842,7 +3861,10 @@ button.x-sortBox-sortDropdown {
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/equaliser-animated-green.gif);
 }
 
-.main-trackList-trackListRow:focus-within .main-trackList-rowMarker:has(.main-trackList-playingIcon)::after, .main-trackList-trackListRow:hover .main-trackList-rowMarker:has(.main-trackList-playingIcon)::after {
+.main-trackList-trackListRow:focus-within
+    .main-trackList-rowMarker:has(.main-trackList-playingIcon)::after,
+.main-trackList-trackListRow:hover
+    .main-trackList-rowMarker:has(.main-trackList-playingIcon)::after {
     opacity: 0 !important;
 }
 
@@ -3868,7 +3890,8 @@ button.x-sortBox-sortDropdown {
     right: 4px;
 }
 
-.main-trackList-trackListRow.main-trackList-active .main-trackList-rowTitle, .main-trackList-trackListRow.main-trackList-active .main-trackList-rowMarker {
+.main-trackList-trackListRow.main-trackList-active .main-trackList-rowTitle,
+.main-trackList-trackListRow.main-trackList-active .main-trackList-rowMarker {
     color: var(--spice-text) !important;
 }
 
@@ -3878,4 +3901,17 @@ button.x-sortBox-sortDropdown {
 
 .main-pageErrorTemplate-errorBody button {
     background: var(--spice-accent) !important;
+}
+
+.UqLpBiryzmdVyUucfSTQ {
+    overflow: hidden !important;
+}
+
+#recent-searches-dropdown {
+    z-index: 9999999 !important;
+}
+
+.Root__nav-bar.TkqXOzhmCCuE6YI3hlgA:not(:has(.main-yourLibraryX-libraryRootlist.KwShd3RdVrsX6dGLJNxT))  .main-navBar-mainNav .main-playButton-PlayButton > button {
+    margin-top: 0 !important;
+    transform: scale(1.3) !important;
 }
