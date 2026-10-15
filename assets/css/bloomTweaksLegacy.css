@@ -2862,13 +2862,14 @@ button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBro
     font-weight: 500;
     filter: invert(1) !important;
     background: var(--spice-accent) !important;
+    width: 16px;
 }
 
 .x-explicit-label::after {
     content: "";
     backdrop-filter: invert(1) !important;
     height: 16px;
-    width: 15px;
+    width: 16px;
     position: absolute;
 }
 
@@ -3990,4 +3991,135 @@ button.x-sortBox-sortDropdown {
 
 .MdDY8fQ_j94mQZy7ZVXf.BG0k3lL7qfJ5h2cRpJzJ {
     margin-top: -4px;
+}
+
+.player-controls__buttons button[aria-label*="Enable Shuffle"],
+.player-controls__buttons button[aria-label*="Enable Smart Shuffle"],
+.player-controls__buttons button[aria-label*="Disable Shuffle"] {
+    margin-right: 7px;
+}
+
+.player-controls__buttons button[aria-label*="Enable repeat"],
+.player-controls__buttons button[aria-label*="Enable repeat one"],
+.player-controls__buttons button[aria-label*="Disable repeat"] {
+    margin-left: 2px;
+}
+
+.player-controls__buttons button[aria-label*="Enable Shuffle"] svg,
+.player-controls__buttons button[aria-label*="Enable repeat"] svg {
+    background: var(--spice-subtext) !important;
+    width: 22px !important;
+    height: 22px !important;
+    mask-size: 22px !important;
+}
+
+.player-controls__buttons button[aria-label*="Enable Smart Shuffle"] svg,
+.player-controls__buttons button[aria-label*="Disable Shuffle"] svg,
+.player-controls__buttons button[aria-label*="Enable repeat one"] svg,
+.player-controls__buttons button[aria-label*="Disable repeat"] svg {
+    background: var(--spice-accent) !important;
+    width: 22px !important;
+    height: 22px !important;
+    mask-size: 22px !important;
+}
+
+.player-controls__buttons button[aria-label*="Enable Shuffle"] svg path,
+.player-controls__buttons button[aria-label*="Enable Smart Shuffle"] svg path,
+.player-controls__buttons button[aria-label*="Disable Shuffle"] svg path,
+.player-controls__buttons button[aria-label*="Enable repeat"] svg path,
+.player-controls__buttons button[aria-label*="Enable repeat one"] svg path,
+.player-controls__buttons button[aria-label*="Disable repeat"] svg path {
+    display: none !important;
+}
+
+.player-controls__buttons button[aria-label*="Enable Shuffle"]:hover svg,
+.player-controls__buttons button[aria-label*="Enable repeat"]:hover svg {
+    background: var(--spice-text) !important;
+}
+
+.player-controls__buttons button[aria-label*="Enable Shuffle"] svg {
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_arrow_shuffle_24_regular.svg) !important;
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_arrow_shuffle_24_regular.svg) !important;
+}
+
+.player-controls__buttons button[aria-label*="Enable Smart Shuffle"] svg {
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_arrow_shuffle_24_filled.svg) !important;
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_arrow_shuffle_24_filled.svg) !important;
+}
+
+.player-controls__buttons button[aria-label*="Disable Shuffle"] svg {
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_flow_sparkle_24_filled.svg) !important;
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_flow_sparkle_24_filled.svg) !important;
+}
+
+.player-controls__buttons button[aria-label*="Enable repeat"] svg {
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_arrow_repeat_all_24_regular.svg) !important;
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_arrow_repeat_all_24_regular.svg) !important;
+}
+
+.player-controls__buttons button[aria-label*="Enable repeat one"] svg {
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_arrow_repeat_all_24_filled.svg) !important;
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_arrow_repeat_all_24_filled.svg) !important;
+}
+
+.player-controls__buttons button[aria-label*="Disable repeat"] svg {
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_arrow_repeat_1_24_filled.svg) !important;
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_arrow_repeat_1_24_filled.svg) !important;
+}
+
+.player-controls__buttons .E1ikFpkPVaoLplbQdrTP:after,
+.player-controls__buttons .vW9NFcNIj8useE43Vx9G:before {
+    display: none !important;
+}
+
+button.srjSlmxMGzXnJBc32BJa {
+    width: 50px !important;
+    height: 50px !important;
+    margin-top: 3px;
+    background: rgba(var(--spice-rgb-main), 0.7) !important;
+}
+
+button.srjSlmxMGzXnJBc32BJa svg {
+    width: 22px !important;
+    height: 22px !important;
+    mask-size: 22px !important;
+}
+
+.xU4sacBisQneHoQeHMP5 .srjSlmxMGzXnJBc32BJa, .xU4sacBisQneHoQeHMP5 .srjSlmxMGzXnJBc32BJa {
+    transition: all 0.2s ease-in-out !important;
+}
+
+.xU4sacBisQneHoQeHMP5 .srjSlmxMGzXnJBc32BJa:focus, .xU4sacBisQneHoQeHMP5 .srjSlmxMGzXnJBc32BJa:hover {
+    transition: all 0.2s ease-in-out !important;
+}
+
+.main-topBar-topbarContentRight button.main-userWidget-box[data-testid="user-widget-link"] {
+    border: 1px solid transparent !important;
+    transform: scale(1.2);
+    margin-left: 6px !important;
+}
+
+.encore-internal-color-text-subdued svg[aria-label*="Smart Shuffle recommendation"] {
+    border-radius: 4px !important;
+    background: var(--spice-accent) !important;
+    position: relative;
+}
+
+.encore-internal-color-text-subdued:has(svg[aria-label*="Smart Shuffle recommendation"])::after {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 12px;
+    mask-size: 12px;
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_sparkle_24_filled.svg) !important;
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_sparkle_24_filled.svg) !important;
+    background: var(--spice-alt-text);
+    z-index: 2;
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 2px;
+}
+
+.encore-internal-color-text-subdued svg[aria-label*="Smart Shuffle recommendation"] path {
+    display: none !important;
 }
