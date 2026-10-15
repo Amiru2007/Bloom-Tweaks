@@ -23,6 +23,14 @@ button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBro
     cursor: pointer;
 }
 
+button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBrowserDefaultFocusStyle-condensedAll:hover {
+    transform: scale(1.04);
+}
+
+/* button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBrowserDefaultFocusStyle-condensedAll svg path {
+    display: none;
+} */
+
 .main-trackCreditsModal-mainSection {
     padding: 16px 16px 0 32px !important;
 }
@@ -1095,6 +1103,11 @@ button[aria-label*="Get Random Saved Album"]:hover svg {
     -webkit-mask-image: url("https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_people_communication_24_regular.svg") !important;
     width: 20px;
     height: 20px;
+}
+
+.main-topBar-buddyFeed[aria-label*="What's New"] svg path,
+.main-topBar-buddyFeed[aria-label*="Friend Activity"] svg path {
+    display: none;
 }
 
 .main-noConnection-isNotice {
@@ -3954,4 +3967,27 @@ button.x-sortBox-sortDropdown {
 
 .jr794VV4i2iUBRhfvS5i .Ydxgl4Y23orfVVVI9O2k span {
     color: var(--spice-subtext) !important;
+}
+
+.BZh0f1vbOmruyp4_t9wy.QO1vC7wN5xiIjBOHGElf span button.nGWhztVvLY1BInXjcWYa {
+    background-color: var(--spice-sidebar, #f3f3f3) !important;
+    background: transparent !important;
+    border: 1px solid transparent !important;
+    border-radius: var(--border-radius-2);
+    color: var(--spice-text) !important;
+    box-shadow: none !important;
+    padding: 8px !important;
+}
+
+.BZh0f1vbOmruyp4_t9wy.QO1vC7wN5xiIjBOHGElf span button.nGWhztVvLY1BInXjcWYa svg {
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_more_horizontal_24_filled.svg) !important;
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_more_horizontal_24_filled.svg) !important;
+    background: var(--spice-text) !important;
+    width: 16px;
+    height: 16px;
+    mask-size: 16px;
+}
+
+.MdDY8fQ_j94mQZy7ZVXf.BG0k3lL7qfJ5h2cRpJzJ {
+    margin-top: -4px;
 }

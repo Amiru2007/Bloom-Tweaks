@@ -661,8 +661,9 @@ transition: all 0.1s ease-in-out;
 
 button.main-useDropTarget-base[aria-label="Create"]:hover,
 button.main-useDropTarget-base[aria-label="fullscreen library"]:hover,
-button.l5V7KOO1aHJ4R7jYTQuV[aria-label="Create"]:hover {
-    background: rgba(var(--spice-rgb-main-elevated), 0.8) !important;
+button.l5V7KOO1aHJ4R7jYTQuV[aria-label="Create"]:hover,
+.BZh0f1vbOmruyp4_t9wy.QO1vC7wN5xiIjBOHGElf span button.nGWhztVvLY1BInXjcWYa:hover {
+    background: rgba(var(--spice-rgb-main-elevated), 0.5) !important;
 }
 
 /* Optionally add style for text if it doesn't inherit the color */
@@ -824,12 +825,12 @@ form.e-9812-form-input-icon[role="search"]
 form.e-9812-form-input-icon[role="search"]
     .e-9812-form-input-icon__icon--trailing
     button.MdMAXXFPalD99eigsBug {
-    margin-right: 3px !important; /* ÃÅ¸ÃÂ¾ÃÂ¿Ã‘â‚¬ÃÂ¾ÃÂ±Ã‘Æ’ÃÂ¹ 3px */
+    margin-right: 3px !important; /* ÃƒÂÃ…Â¸ÃƒÂÃ‚Â¾ÃƒÂÃ‚Â¿Ãƒâ€˜Ã¢â€šÂ¬ÃƒÂÃ‚Â¾ÃƒÂÃ‚Â±Ãƒâ€˜Ã†â€™ÃƒÂÃ‚Â¹ 3px */
 }
 form.e-9812-form-input-icon[role="search"]
     .e-9812-form-input-icon__icon--trailing
     div.BV0jjn_h5TtMMl8YKuZ0 {
-    margin-left: 8px !important; /* ÃÅ¸ÃÂ¾ÃÂ¿Ã‘â‚¬ÃÂ¾ÃÂ±Ã‘Æ’ÃÂ¹ 3px */
+    margin-left: 8px !important; /* ÃƒÂÃ…Â¸ÃƒÂÃ‚Â¾ÃƒÂÃ‚Â¿Ãƒâ€˜Ã¢â€šÂ¬ÃƒÂÃ‚Â¾ÃƒÂÃ‚Â±Ãƒâ€˜Ã†â€™ÃƒÂÃ‚Â¹ 3px */
 }
 form.e-9812-form-input-icon[role="search"]
     .e-9812-form-input-icon__icon--trailing
@@ -2955,4 +2956,10 @@ button[aria-label*="Customizations"] {
     height: 32px !important;
     width: 32px !important;
     top: 0px !important;
+}
+
+.SjhDNg4bQRQmIJAba47Z {
+    background: var(--spice-card) !important;
+    border: 1px var(--spice-contour) solid !important;
+    padding-block: 12px !important;
 }
