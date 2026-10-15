@@ -3278,7 +3278,10 @@ aside[aria-label*="Queue"] .main-playButton-PlayButton > button {
     background: transparent !important;
 }
 
-.Root__nav-bar .BZh0f1vbOmruyp4_t9wy button[aria-label*="fullscreen library"] svg {
+.Root__nav-bar
+    .BZh0f1vbOmruyp4_t9wy
+    button[aria-label*="fullscreen library"]
+    svg {
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/fullscreen-expand.svg) !important;
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/fullscreen-expand.svg) !important;
     background: var(--spice-text) !important;
@@ -3287,7 +3290,10 @@ aside[aria-label*="Queue"] .main-playButton-PlayButton > button {
     mask-size: 16px;
 }
 
-.Root__nav-bar.TkqXOzhmCCuE6YI3hlgA .BZh0f1vbOmruyp4_t9wy button[aria-label*="fullscreen library"] svg {
+.Root__nav-bar.TkqXOzhmCCuE6YI3hlgA
+    .BZh0f1vbOmruyp4_t9wy
+    button[aria-label*="fullscreen library"]
+    svg {
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/fullscreen-collapse.svg) !important;
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/fullscreen-collapse.svg) !important;
 }
@@ -3524,9 +3530,17 @@ button.nprd-refresh {
     padding: 0 8px 8px 8px !important;
 }
 
+.main-trackList-trackList.main-trackList-indexable[aria-label*="Top tracks this month"],
 .main-trackList-trackList.main-trackList-indexable[aria-label*="popular tracks"],
 .zLAesFTq26qpqIxuveE7 .main-trackList-trackList.main-trackList-indexable {
     padding: 8px !important;
+}
+
+.main-trackList-trackList.main-trackList-indexable[aria-label*="Top tracks this month"] .main-trackList-rowSectionEnd {
+    /* justify-self: end; */
+    position: absolute !important;
+    right: 0 !important;
+    top: 12px !important;
 }
 
 .main-trackList-trackListRow.main-trackList-trackListRowGrid {
@@ -3846,7 +3860,8 @@ button.x-sortBox-sortDropdown {
     width: 24px;
     height: 24px;
     background: var(--spice-accent);
-    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/equaliser-animated-green.gif);
+    /* mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/equaliser-animated-green.gif); */
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/equaliser-animated-white.gif);
     mask-size: 24px;
     margin-right: 16px;
 }
@@ -3872,7 +3887,8 @@ button.x-sortBox-sortDropdown {
     display: block;
     mask-size: 16px;
     background: var(--spice-accent);
-    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/equaliser-animated-green.gif);
+    /* mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/equaliser-animated-green.gif); */
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/equaliser-animated-white.gif);
 }
 
 .main-trackList-trackListRow:focus-within
@@ -3925,7 +3941,12 @@ button.x-sortBox-sortDropdown {
     z-index: 9999999 !important;
 }
 
-.Root__nav-bar.TkqXOzhmCCuE6YI3hlgA:not(:has(.main-yourLibraryX-libraryRootlist.KwShd3RdVrsX6dGLJNxT)) .main-navBar-mainNav .main-playButton-PlayButton > button {
+.Root__nav-bar.TkqXOzhmCCuE6YI3hlgA:not(
+        :has(.main-yourLibraryX-libraryRootlist.KwShd3RdVrsX6dGLJNxT)
+    )
+    .main-navBar-mainNav
+    .main-playButton-PlayButton
+    > button {
     margin-top: 0 !important;
     transform: scale(1.3) !important;
 }
@@ -3941,7 +3962,7 @@ button.x-sortBox-sortDropdown {
 .jGcEaPyhr1c_janM2uRF {
     background: var(--spice-card);
     border: 1px solid var(--spice-contour);
-    border-radius: var(--encore-corner-radius-larger,6px);
+    border-radius: var(--encore-corner-radius-larger, 6px);
     padding: 12px !important;
 }
 
@@ -3980,7 +4001,10 @@ button.x-sortBox-sortDropdown {
     padding: 8px !important;
 }
 
-.BZh0f1vbOmruyp4_t9wy.QO1vC7wN5xiIjBOHGElf span button.nGWhztVvLY1BInXjcWYa svg {
+.BZh0f1vbOmruyp4_t9wy.QO1vC7wN5xiIjBOHGElf
+    span
+    button.nGWhztVvLY1BInXjcWYa
+    svg {
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_more_horizontal_24_filled.svg) !important;
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_more_horizontal_24_filled.svg) !important;
     background: var(--spice-text) !important;
@@ -3996,21 +4020,21 @@ button.x-sortBox-sortDropdown {
 .player-controls__buttons button[aria-label*="Enable Shuffle"],
 .player-controls__buttons button[aria-label*="Enable Smart Shuffle"],
 .player-controls__buttons button[aria-label*="Disable Shuffle"] {
-    margin-right: 7px;
+    margin-right: 8px;
 }
 
 .player-controls__buttons button[aria-label*="Enable repeat"],
 .player-controls__buttons button[aria-label*="Enable repeat one"],
 .player-controls__buttons button[aria-label*="Disable repeat"] {
-    margin-left: 2px;
+    margin-left: 3px;
 }
 
 .player-controls__buttons button[aria-label*="Enable Shuffle"] svg,
 .player-controls__buttons button[aria-label*="Enable repeat"] svg {
     background: var(--spice-subtext) !important;
-    width: 22px !important;
-    height: 22px !important;
-    mask-size: 22px !important;
+    width: 24px !important;
+    height: 24px !important;
+    mask-size: 24px !important;
 }
 
 .player-controls__buttons button[aria-label*="Enable Smart Shuffle"] svg,
@@ -4018,9 +4042,9 @@ button.x-sortBox-sortDropdown {
 .player-controls__buttons button[aria-label*="Enable repeat one"] svg,
 .player-controls__buttons button[aria-label*="Disable repeat"] svg {
     background: var(--spice-accent) !important;
-    width: 22px !important;
-    height: 22px !important;
-    mask-size: 22px !important;
+    width: 24px !important;
+    height: 24px !important;
+    mask-size: 24px !important;
 }
 
 .player-controls__buttons button[aria-label*="Enable Shuffle"] svg path,
@@ -4085,28 +4109,34 @@ button.srjSlmxMGzXnJBc32BJa svg {
     mask-size: 22px !important;
 }
 
-.xU4sacBisQneHoQeHMP5 .srjSlmxMGzXnJBc32BJa, .xU4sacBisQneHoQeHMP5 .srjSlmxMGzXnJBc32BJa {
+.xU4sacBisQneHoQeHMP5 .srjSlmxMGzXnJBc32BJa,
+.xU4sacBisQneHoQeHMP5 .srjSlmxMGzXnJBc32BJa {
     transition: all 0.2s ease-in-out !important;
 }
 
-.xU4sacBisQneHoQeHMP5 .srjSlmxMGzXnJBc32BJa:focus, .xU4sacBisQneHoQeHMP5 .srjSlmxMGzXnJBc32BJa:hover {
+.xU4sacBisQneHoQeHMP5 .srjSlmxMGzXnJBc32BJa:focus,
+.xU4sacBisQneHoQeHMP5 .srjSlmxMGzXnJBc32BJa:hover {
     transition: all 0.2s ease-in-out !important;
 }
 
-.main-topBar-topbarContentRight button.main-userWidget-box[data-testid="user-widget-link"] {
+.main-topBar-topbarContentRight
+    button.main-userWidget-box[data-testid="user-widget-link"] {
     border: 1px solid transparent !important;
     transform: scale(1.2);
     margin-left: 6px !important;
 }
 
-.encore-internal-color-text-subdued svg[aria-label*="Smart Shuffle recommendation"] {
+.encore-internal-color-text-subdued
+    svg[aria-label*="Smart Shuffle recommendation"] {
     border-radius: 4px !important;
     background: var(--spice-accent) !important;
     position: relative;
 }
 
-.encore-internal-color-text-subdued:has(svg[aria-label*="Smart Shuffle recommendation"])::after {
-    content: '';
+.encore-internal-color-text-subdued:has(
+        svg[aria-label*="Smart Shuffle recommendation"]
+    )::after {
+    content: "";
     display: block;
     width: 12px;
     height: 12px;
@@ -4120,6 +4150,87 @@ button.srjSlmxMGzXnJBc32BJa svg {
     margin-left: 2px;
 }
 
-.encore-internal-color-text-subdued svg[aria-label*="Smart Shuffle recommendation"] path {
+.encore-internal-color-text-subdued
+    svg[aria-label*="Smart Shuffle recommendation"]
+    path {
     display: none !important;
+}
+
+.main-trackCreditsModal-container .encore-text-marginal-bold,
+.main-aboutRecsModal-container .encore-text-marginal-bold,
+.main-playlistEditDetailsModal-container .encore-text-marginal-bold,
+.profile-userEditDetails-container .encore-text-marginal-bold,
+.tJeH2W2to1A7d9tWBRoi .encore-text-marginal-bold,
+.artist-artistAbout-modal .encore-text-marginal-bold,
+.XwNfIrI6_hCa_9_T2cQB .encore-text-marginal-bold,
+.main-embedWidgetGenerator-container .encore-text-marginal-bold,
+.main-trackCreditsModal-header .encore-text-marginal-bold,
+.main-confirmDialog-container .encore-text-marginal-bold {
+    font-weight: 400 !important;
+    color: var(--spice-subtext);
+    font-size: 12px;
+}
+
+.PsrXxenHUFXYM1ub1xWw {
+    transition: all 0.2s ease-in-out;
+}
+
+.profile-userEditDetails-closeButton {
+    cursor: pointer !important;
+}
+
+.profile-userEditDetails-closeButton svg {
+    fill: var(--spice-subtext) !important;
+}
+
+span.ArQQy9kpoXLmafHpoi6u.FGrkEs4xa3OtWqaSmtvc {
+    margin: 0 8px;
+}
+
+section.DJCugGBTcU3io4Q28BHl.main-shelf-shelf.Shelf.MKCgGhu_c8l6hsVuee46[aria-label*="Following"] {
+    overflow: hidden !important;
+    padding-bottom: 0px !important;
+    margin-bottom: 8px !important;
+}
+
+.tYSzgx8hG37WjBDn364n ._4XNZPDdnyq1HHKG5Qtx {
+    text-decoration: none;
+}
+
+.SMBqsyNXIMb0yeYVwPxv, .bcAylCIHjoXKDI08jTx0 {
+    grid-column: span 3 !important;
+}
+
+.RClL7GUhUo_xqzNcsXSG svg {
+    width: 16px;
+    height: 16px;
+    mask-size: 16px;
+    background: var(--text-subdued) !important;
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_open_24_filled.svg) !important;
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_open_24_filled.svg) !important;
+}
+
+.RClL7GUhUo_xqzNcsXSG svg path {
+    display: none !important;
+}
+
+.main-actionBar-ActionBar.contentSpacing button.Button-sc-y0gtbx-0.Button-buttonSecondary-small-useBrowserDefaultFocusStyle.encore-text-body-small-bold.e-9640-button--small {
+    transform: scale(1) !important;
+}
+
+.N9r2VuXMBlhRSVF5dCek {
+    height: 40px !important;
+}
+
+.main-topBar-topbarContentRight button.main-userWidget-box[data-testid="user-widget-link"] {
+    margin-top: -4px !important;
+}
+
+.artist-popularTrackList-seeMore div {
+    color: var(--text-subdued) !important;
+}
+
+section.kwzBRpFigKr1EP2d5qle.ukV8NB0JGnieUOa0eri5 figure {
+    width: fit-content !important;
+    padding-right: 6px !important;
 }

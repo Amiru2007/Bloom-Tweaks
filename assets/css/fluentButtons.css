@@ -195,3 +195,17 @@ span.LegacyChipInner__ChipInnerComponent-sc-1qguixk-0.ChipInnerComponent-md-sele
     transition: all 0.3s ease !important;
     min-width: 100px !important;
 }
+
+.main-trackCreditsModal-container .e-9640-button-primary__inner,
+.main-aboutRecsModal-container .e-9640-button-primary__inner,
+.main-playlistEditDetailsModal-container .e-9640-button-primary__inner,
+.profile-userEditDetails-container .e-9640-button-primary__inner,
+.tJeH2W2to1A7d9tWBRoi .e-9640-button-primary__inner,
+.artist-artistAbout-modal .e-9640-button-primary__inner,
+.XwNfIrI6_hCa_9_T2cQB .e-9640-button-primary__inner,
+.main-embedWidgetGenerator-container .e-9640-button-primary__inner,
+.main-trackCreditsModal-header .e-9640-button-primary__inner,
+.main-confirmDialog-container .e-9640-button-primary__inner {
+    background: var(--spice-text) !important;
+    border-radius: var(--border-radius-2);
+}
