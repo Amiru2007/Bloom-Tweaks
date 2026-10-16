@@ -121,14 +121,14 @@ button.qyKJPLjz8o4jnbk92JOn.nsakAYOtgZOAcEO4ObrM {
     border-radius: 4px !important;
     font-weight: 400 !important;
     backdrop-filter: blur(10px) !important;
-    background: rgba(var(--spice-rgb-not-selected), 0.045) !important;
-    border: 1px solid rgba(var(--spice-rgb-shadow), 0.045) !important;
+    background: rgba(var(--spice-rgb-main), 0.07) !important;
+    border: 1px solid rgba(var(--spice-rgb-main-elevated), 0.07) !important;
     transition: all 0.3s ease !important;
 }
 
 button.qyKJPLjz8o4jnbk92JOn.zsVdTdACMZA_MWB3HlEW:hover,
 button.qyKJPLjz8o4jnbk92JOn.nsakAYOtgZOAcEO4ObrM:hover {
-    background: rgba(var(--spice-rgb-not-selected), 0.07) !important;
+    background: rgba(var(--spice-rgb-main-elevated), 0.7) !important;
     border: 1px solid rgba(var(--spice-rgb-shadow), 0.05) !important;
 }
 
@@ -137,6 +137,10 @@ button.qyKJPLjz8o4jnbk92JOn.nsakAYOtgZOAcEO4ObrM svg {
     background: var(--spice-subtext);
     mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_caret_right_24_filled.svg);
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_caret_right_24_filled.svg);
+    padding-right: 18px;
+    width: 16px;
+    height: 16px;
+    mask-size: 16px;
 }
 
 button.qyKJPLjz8o4jnbk92JOn.zsVdTdACMZA_MWB3HlEW svg {

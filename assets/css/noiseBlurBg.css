@@ -12,7 +12,8 @@ button.main-nowPlayingView-aboutArtistV2Button {
 .CvWRWfWfmS9_2fgM7c3A::before,
 #BeautifulLyrics-CardView::before,
 footer.main-nowPlayingBar-container::before,
-.mjZrvVI3CxfHJXu7y0Lg.fIvMht6B9HdROywMNJZ4.main-home-filterChipsSection::before {
+.mjZrvVI3CxfHJXu7y0Lg.fIvMht6B9HdROywMNJZ4.main-home-filterChipsSection::before,
+.search-searchCategory-SearchCategory::before {
     content: "";
     position: absolute;
     background: var(--noise-texture);

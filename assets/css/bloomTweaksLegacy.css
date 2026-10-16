@@ -547,6 +547,7 @@ button.Button-sc-1dqy6lx-0.Button-small-small-buttonTertiary-iconOnly-data-skip-
 
 .main-trackList-rowImageWithPlay .main-trackList-rowImagePlayPauseButton {
     border-radius: 4px !important;
+    background: rgba(var(--spice-rgb-main), 0.6) !important;
 }
 
 .view-homeShortcutsGrid-shortcut:hover .view-homeShortcutsGrid-equaliser {
@@ -2070,7 +2071,8 @@ div[aria-describedby*="device-picker-troubleshooting-list"] {
 }
 
 .mXNT9H2GU7lDW4cGx0q1 {
-    background: var(--spice-tab-active) !important;
+    background: var(--spice-card) !important;
+    border: 1px var(--spice-contour) solid !important;
 }
 
 /*---------------------------------------------------------- Episodes----------------------------------------------------------- */
@@ -3860,8 +3862,8 @@ button.x-sortBox-sortDropdown {
     width: 24px;
     height: 24px;
     background: var(--spice-accent);
-    /* mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/equaliser-animated-green.gif); */
-    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/equaliser-animated-white.gif);
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/equaliser-animated-green.gif);
+    /* mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/equaliser-animated-white.gif); */
     mask-size: 24px;
     margin-right: 16px;
 }
@@ -3887,8 +3889,8 @@ button.x-sortBox-sortDropdown {
     display: block;
     mask-size: 16px;
     background: var(--spice-accent);
-    /* mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/equaliser-animated-green.gif); */
-    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/equaliser-animated-white.gif);
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/equaliser-animated-green.gif);
+    /* mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/equaliser-animated-white.gif); */
 }
 
 .main-trackList-trackListRow:focus-within
@@ -4175,7 +4177,8 @@ button.srjSlmxMGzXnJBc32BJa svg {
     transition: all 0.2s ease-in-out;
 }
 
-.profile-userEditDetails-closeButton {
+.profile-userEditDetails-closeButton,
+.playlist-playlist-playlistInlineCurationCloseButton {
     cursor: pointer !important;
 }
 
@@ -4226,11 +4229,69 @@ section.DJCugGBTcU3io4Q28BHl.main-shelf-shelf.Shelf.MKCgGhu_c8l6hsVuee46[aria-la
     margin-top: -4px !important;
 }
 
-.artist-popularTrackList-seeMore div {
+.artist-popularTrackList-seeMore div,
+.playlist-playlist-playlistInlineCurationBackButton p,
+.playlist-inlineSearchBox-filterInput::placeholder {
     color: var(--text-subdued) !important;
 }
 
 section.kwzBRpFigKr1EP2d5qle.ukV8NB0JGnieUOa0eri5 figure {
     width: fit-content !important;
     padding-right: 6px !important;
+}
+
+.playlist-inlineSearchBox-filterInput {
+    border: 1px solid var(--spice-main-elevated) !important;
+}
+
+.playlist-inlineSearchBox-overlay span svg,
+.playlist-playlist-playlistInlineCurationBackButton svg,
+.playlist-playlist-playlistInlineCurationCloseButton svg,
+.playlist-inlineSearchBox-clearButton svg {
+    fill: var(--text-subdued) !important;
+}
+
+button.main-trackList-rowImagePlayButton.main-trackList-rowImagePlayPauseButton,
+.ZsK_P9NvvpkeVeJJQw2a {
+    background: rgba(var(--spice-rgb-main), 0.6) !important;
+}
+
+.main-nowPlayingBar-container {
+    width: calc(100% + 14px) !important;
+}
+
+.search-searchCategory-SearchCategory {
+    background: rgba(var(--spice-rgb-main), 0.5) !important;
+    backdrop-filter: blur(50px) saturate(1.5) !important;
+    border-radius: 8px;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+.od_kF1rLZbir8kM_F607 {
+    border-bottom: 1px solid rgba(var(--spice-rgb-main-elevated), 0.6) !important;
+}
+
+figure.main-avatar-avatar.artist-artistAbout-postedByAvatar {
+    width: fit-content !important;
+    margin-right: 12px !important;
+}
+
+.artist-artistAbout-statsContainer {
+    margin-right: 20px;
+}
+
+.marketplace-grid .main-cardHeader-text.main-type-balladBold {
+    margin-top: 12px;
+}
+
+.main-buddyFeed-buddyFeedRoot .main-avatar-avatar, aside[aria-label="Friend Activity"] .main-avatar-avatar {
+    overflow: visible !important;
+}
+
+.main-avatar-avatar.main-avatar-withBadge:after {
+    width: 8px !important;
+    height: 8px !important;
+    margin: 1px !important;
+    border: 2px solid var(--spice-card) !important;
 }

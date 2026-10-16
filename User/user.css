@@ -640,7 +640,7 @@ button.l5V7KOO1aHJ4R7jYTQuV[aria-label="Create"] {
         --spice-text
     ) !important; /* ** Dark color for text and icon ** */
     box-shadow: none !important;
-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
 
     /* ** REMOVE fixed sizes and round shape ** */
     /* width: 32px !important; */
@@ -662,7 +662,9 @@ transition: all 0.1s ease-in-out;
 button.main-useDropTarget-base[aria-label="Create"]:hover,
 button.main-useDropTarget-base[aria-label="fullscreen library"]:hover,
 button.l5V7KOO1aHJ4R7jYTQuV[aria-label="Create"]:hover,
-.BZh0f1vbOmruyp4_t9wy.QO1vC7wN5xiIjBOHGElf span button.nGWhztVvLY1BInXjcWYa:hover {
+.BZh0f1vbOmruyp4_t9wy.QO1vC7wN5xiIjBOHGElf
+    span
+    button.nGWhztVvLY1BInXjcWYa:hover {
     background: rgba(var(--spice-rgb-main-elevated), 0.5) !important;
 }
 
@@ -825,12 +827,12 @@ form.e-9812-form-input-icon[role="search"]
 form.e-9812-form-input-icon[role="search"]
     .e-9812-form-input-icon__icon--trailing
     button.MdMAXXFPalD99eigsBug {
-    margin-right: 3px !important; /* ÃƒÂÃ…Â¸ÃƒÂÃ‚Â¾ÃƒÂÃ‚Â¿Ãƒâ€˜Ã¢â€šÂ¬ÃƒÂÃ‚Â¾ÃƒÂÃ‚Â±Ãƒâ€˜Ã†â€™ÃƒÂÃ‚Â¹ 3px */
+    margin-right: 3px !important; /* ÃƒÆ’Ã‚ÂÃƒâ€¦Ã‚Â¸ÃƒÆ’Ã‚ÂÃƒâ€šÃ‚Â¾ÃƒÆ’Ã‚ÂÃƒâ€šÃ‚Â¿ÃƒÆ’Ã¢â‚¬ËœÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÆ’Ã‚ÂÃƒâ€šÃ‚Â¾ÃƒÆ’Ã‚ÂÃƒâ€šÃ‚Â±ÃƒÆ’Ã¢â‚¬ËœÃƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚ÂÃƒâ€šÃ‚Â¹ 3px */
 }
 form.e-9812-form-input-icon[role="search"]
     .e-9812-form-input-icon__icon--trailing
     div.BV0jjn_h5TtMMl8YKuZ0 {
-    margin-left: 8px !important; /* ÃƒÂÃ…Â¸ÃƒÂÃ‚Â¾ÃƒÂÃ‚Â¿Ãƒâ€˜Ã¢â€šÂ¬ÃƒÂÃ‚Â¾ÃƒÂÃ‚Â±Ãƒâ€˜Ã†â€™ÃƒÂÃ‚Â¹ 3px */
+    margin-left: 8px !important; /* ÃƒÆ’Ã‚ÂÃƒâ€¦Ã‚Â¸ÃƒÆ’Ã‚ÂÃƒâ€šÃ‚Â¾ÃƒÆ’Ã‚ÂÃƒâ€šÃ‚Â¿ÃƒÆ’Ã¢â‚¬ËœÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÆ’Ã‚ÂÃƒâ€šÃ‚Â¾ÃƒÆ’Ã‚ÂÃƒâ€šÃ‚Â±ÃƒÆ’Ã¢â‚¬ËœÃƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚ÂÃƒâ€šÃ‚Â¹ 3px */
 }
 form.e-9812-form-input-icon[role="search"]
     .e-9812-form-input-icon__icon--trailing
@@ -1072,7 +1074,9 @@ path[d="M23 0C10.298 0 0 10.297 0 23c0 12.702 10.298 23 23 23 12.703 0 23-10.298
 .main-embedWidgetGenerator-container,
 .main-trackCreditsModal-header,
 .main-confirmDialog-container {
-    background-color: transparent !important;
+    background-color: rgba(var(--spice-rgb-main), 0.6) !important;
+    border: 1px solid rgba(var(--spice-rgb-main-elevated), 0.6) !important;
+    border-radius: var(--border-radius-1) !important;
 }
 
 .GenericModal {
@@ -1095,12 +1099,11 @@ path[d="M23 0C10.298 0 0 10.297 0 23c0 12.702 10.298 23 23 23 12.703 0 23-10.298
 .main-playlistEditDetailsModal-titleInput:focus,
 .main-playlistEditDetailsModal-descriptionTextarea:focus,
 .playlist-inlineSearchBox-filterInput {
-    background-color: var(--spice-card);
+    background: rgba(var(--spice-rgb-card), 0.6) !important;
 }
 
-.profile-userEditDetails-nameInput,
-.profile-userEditDetails-textElement:focus {
-    background: var(--spice-card) !important;
+.profile-userEditDetails-nameInput, .profile-userEditDetails-textElement:focus {
+    background: rgba(var(--spice-rgb-card), 0.6) !important;
 }
 
 .main-playlistEditDetailsModal-titleInput:focus,
@@ -1111,7 +1114,7 @@ path[d="M23 0C10.298 0 0 10.297 0 23c0 12.702 10.298 23 23 23 12.703 0 23-10.298
 }
 
 .playlist-inlineSearchBox-filterInput {
-    border: 1px solid var(--spice-card);
+    background: rgba(var(--spice-rgb-card), 0.6) !important;
 }
 
 .main-playlistEditDetailsModal-titleInput,
@@ -2902,8 +2905,7 @@ button.main-globalNav-navLink[aria-label="Home"] {
     margin-inline-start: 0px !important;
     margin-inline-end: 8px;
     background-color: var(--spice-card) !important;
-    border: 1px solid 
-color-mix(in srgb, var(--spice-light-border), black 40%) !important;
+    border: 1px solid color-mix(in srgb, var(--spice-light-border), black 40%) !important;
 }
 
 button.main-globalNav-navLinkActive[aria-label*="Home"] {
@@ -2962,4 +2964,75 @@ button[aria-label*="Customizations"] {
     background: var(--spice-card) !important;
     border: 1px var(--spice-contour) solid !important;
     padding-block: 12px !important;
+}
+
+button.srjSlmxMGzXnJBc32BJa {
+    width: 50px !important;
+    height: 50px !important;
+    margin-top: 3px;
+    background: rgba(var(--spice-rgb-main), 0.7) !important;
+}
+
+button.srjSlmxMGzXnJBc32BJa svg {
+    width: 22px !important;
+    height: 22px !important;
+    mask-size: 22px !important;
+}
+
+.main-topBar-topbarContentRight
+    button.main-userWidget-box[data-testid="user-widget-link"] {
+    border: 1px solid transparent !important;
+    transform: scale(1.2);
+    margin-left: 6px !important;
+}
+
+.encore-internal-color-text-subdued
+    svg[aria-label*="Smart Shuffle recommendation"] {
+    border-radius: 4px !important;
+    background: var(--spice-accent) !important;
+    position: relative;
+}
+
+.encore-internal-color-text-subdued:has(
+        svg[aria-label*="Smart Shuffle recommendation"]
+    )::after {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    mask-size: 12px;
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_sparkle_24_filled.svg) !important;
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_sparkle_24_filled.svg) !important;
+    background: var(--spice-alt-text);
+    z-index: 2;
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 2px;
+}
+
+.encore-internal-color-text-subdued
+    svg[aria-label*="Smart Shuffle recommendation"]
+    path {
+    display: none !important;
+}
+
+section.kwzBRpFigKr1EP2d5qle.ukV8NB0JGnieUOa0eri5 figure {
+    width: fit-content !important;
+    padding-right: 6px !important;
+}
+
+.FOgY6uo_Bj_VTV5hwaix .T_JcGdJujSuj014SZfjl svg {
+    fill: var(--spice-main-elevated);
+}
+
+#searchPage .main-trackList-trackListHeader {
+    top: 64px !important;
+}
+
+.search-searchCategory-SearchCategory {
+    background: rgba(var(--spice-rgb-main), 0.5) !important;
+    backdrop-filter: blur(50px) saturate(1.5) !important;
+    border-radius: 8px;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
 }
