@@ -1,4 +1,4 @@
-# Bloom-Tweaks
+# Bloom Tweaks
 
 An extension to resolve [Bloom Theme](https://github.com/nimsandu/spicetify-bloom) issues.
 
