@@ -1,3 +1,13 @@
+code,
+pre,
+body {
+    font-family:
+        "Cascadia Mono", "Segoe UI Mono", Consolas, monospace !important;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    word-break: break-all;
+}
+
 button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBrowserDefaultFocusStyle-condensedAll
     svg,
 button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBrowserDefaultFocusStyle-condensedAll
@@ -3712,9 +3722,10 @@ div#sort-and-view-picker ul[aria-label*="Sort by"] {
     min-width: 320px !important;
 } */
 
-.Root__nav-bar:not(
+.Root__top-container:not(
         :has(
-            .main-yourLibraryX-collapseButton.main-yourLibraryX-headerIsCollapsed
+            .main-yourLibraryX-collapseButton.main-yourLibraryX-headerIsCollapsed,
+            .Root__nav-bar.TkqXOzhmCCuE6YI3hlgA
         )
     )
     .main-yourLibraryX-entryPoints {
@@ -3965,7 +3976,7 @@ button.x-sortBox-sortDropdown {
 .jGcEaPyhr1c_janM2uRF {
     background: var(--spice-card);
     border: 1px solid var(--spice-contour);
-    border-radius: var(--encore-corner-radius-larger, 6px);
+    border-radius: var(--border-radius-2);
     padding: 12px !important;
 }
 
@@ -4239,7 +4250,8 @@ section.DJCugGBTcU3io4Q28BHl.main-shelf-shelf.Shelf.MKCgGhu_c8l6hsVuee46[aria-la
     color: var(--text-subdued) !important;
 }
 
-section.kwzBRpFigKr1EP2d5qle.ukV8NB0JGnieUOa0eri5 figure {
+section.kwzBRpFigKr1EP2d5qle.ukV8NB0JGnieUOa0eri5 figure,
+.main-avatar-avatar.iy5hzmfkdXQ0B2SFZAyj {
     width: fit-content !important;
     padding-right: 6px !important;
 }
@@ -4251,7 +4263,8 @@ section.kwzBRpFigKr1EP2d5qle.ukV8NB0JGnieUOa0eri5 figure {
 .playlist-inlineSearchBox-overlay span svg,
 .playlist-playlist-playlistInlineCurationBackButton svg,
 .playlist-playlist-playlistInlineCurationCloseButton svg,
-.playlist-inlineSearchBox-clearButton svg {
+.playlist-inlineSearchBox-clearButton svg,
+.main-embedWidgetGenerator-closeBtn svg {
     fill: var(--text-subdued) !important;
 }
 
@@ -4334,21 +4347,16 @@ dialog.ZjyLlDvxh8QqNVY2vMsF button span {
     fill: var(--text-subdued);
 }
 
-
-
-
 /* ----------------------------------------------------------------------------- Spicy Lyrics Full Screen Feature ----------------------------------------------------------------------------- */
-
-
-
 
 /* 1. Smooth transitions for navigation and sidebars (excluding now-playing-bar) */
 .Root__globalNav,
 .Root__nav-bar,
 .Root__right-sidebar {
-    transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
-                transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
-                visibility 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition:
+        opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+        transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
 }
 
 /* 2. Slide the top and side navigation bars completely out of view */
@@ -4400,4 +4408,82 @@ body.btFullscreenEnabled .Root__main-view {
 body.btFullscreenEnabled #SpicyLyricsPage {
     width: 100% !important;
     height: 100% !important;
+}
+
+.jr794VV4i2iUBRhfvS5i .KE3gK5ccLz2gL3dhJ4BW p svg {
+    width: 14px;
+    height: 14px;
+    mask-size: 14px;
+    background: var(--spice-accent);
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/equaliser-animated-green.gif);
+}
+
+.jr794VV4i2iUBRhfvS5i .KE3gK5ccLz2gL3dhJ4BW p svg path {
+    display: none !important;
+}
+
+.VQ0BLAewv7Aw5H3hV0YK {
+    margin-top: 24px;
+}
+
+.BackgroundColorContainer_backgroundColorContainer__YZSQ7 {
+    border-radius: 16px;
+}
+
+dialog[aria-label*="Embed track"] .main-embedWidgetGenerator-contentCode {
+    margin-top: 10px !important;
+    border-radius: var(--border-radius-1) !important;
+    background: rgba(var(--spice-rgb-main), 0.6) !important;
+    border: 1px solid rgba(var(--spice-rgb-main-elevated), 0.6) !important;
+    padding: 16px !important;
+}
+
+dialog[aria-label*="Embed track"]
+    .main-embedWidgetGenerator-contentCode
+    .main-embedWidgetGenerator-code {
+    background: var(--spice-card) !important;
+    border-radius: var(--border-radius-2) !important;
+    padding: 20px !important;
+}
+
+.main-embedWidgetGenerator-theme .main-embedWidgetGenerator-themeRadio {
+    border: 1px solid rgba(var(--spice-rgb-contour), 0.5);
+    cursor: pointer;
+}
+
+.main-embedWidgetGenerator-theme
+    .main-embedWidgetGenerator-themeRadio.main-embedWidgetGenerator-active::before {
+    content: "";
+    width: calc(100% - 14px);
+    height: calc(100% - 14px);
+    border-radius: 50%;
+    background: rgba(var(--spice-rgb-main), 0.8) !important;
+    border: 1px solid rgba(var(--spice-rgb-contour), 0.5);
+    display: block;
+    position: relative;
+    z-index: 1;
+    margin: 6px;
+    transition: all 0.2s ease-in-out;
+}
+
+.main-embedWidgetGenerator-theme
+    .main-embedWidgetGenerator-themeRadio.main-embedWidgetGenerator-active:nth-last-child(
+        1
+    )::before {
+    content: "";
+    width: calc(100% - 14px);
+    height: calc(100% - 14px);
+    border-radius: 50%;
+    background: rgba(var(--spice-rgb-text), 0.5) !important;
+    border: 1px solid rgba(var(--spice-rgb-contour), 0.3);
+    display: block;
+    position: relative;
+    z-index: 1;
+    margin: 6px;
+    transition: all 0.2s ease-in-out;
+}
+
+.main-embedWidgetGenerator-theme
+    .main-embedWidgetGenerator-themeRadio.main-embedWidgetGenerator-active:hover::before {
+    transform: scale(1.4);
 }
