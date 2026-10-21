@@ -1,11 +1,11 @@
 code,
-pre,
-body {
+pre {
     font-family:
         "Cascadia Mono", "Segoe UI Mono", Consolas, monospace !important;
     white-space: pre-wrap;
     overflow-wrap: break-word;
     word-break: break-all;
+    color: var(--spice-subtext) !important;
 }
 
 button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBrowserDefaultFocusStyle-condensedAll
@@ -2109,7 +2109,7 @@ span.encore-text.encore-text-body-small.ArQQy9kpoXLmafHpoi6u.FGrkEs4xa3OtWqaSmtv
 
 .main-embedWidgetGenerator-contentCode {
     background-color: transparent !important;
-    margin-top: -30px !important;
+    margin-top: 10px !important;
     opacity: 0;
     transition: all 0.3s ease !important;
 }
@@ -4347,69 +4347,6 @@ dialog.ZjyLlDvxh8QqNVY2vMsF button span {
     fill: var(--text-subdued);
 }
 
-/* ----------------------------------------------------------------------------- Spicy Lyrics Full Screen Feature ----------------------------------------------------------------------------- */
-
-/* 1. Smooth transitions for navigation and sidebars (excluding now-playing-bar) */
-.Root__globalNav,
-.Root__nav-bar,
-.Root__right-sidebar {
-    transition:
-        opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1),
-        transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
-        visibility 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
-}
-
-/* 2. Slide the top and side navigation bars completely out of view */
-body.btFullscreenEnabled .Root__globalNav {
-    opacity: 0 !important;
-    transform: translateY(-100%) !important;
-    visibility: hidden !important;
-    pointer-events: none !important;
-}
-
-body.btFullscreenEnabled .Root__nav-bar {
-    opacity: 0 !important;
-    transform: translateX(-100%) !important;
-    visibility: hidden !important;
-    pointer-events: none !important;
-}
-
-body.btFullscreenEnabled .Root__right-sidebar {
-    opacity: 0 !important;
-    transform: translateX(100%) !important;
-    visibility: hidden !important;
-    pointer-events: none !important;
-}
-
-/* 3. Keep the Bottom Controls Bar visible and pin it to the foreground */
-body.btFullscreenEnabled .Root__now-playing-bar {
-    position: fixed !important;
-    bottom: 0 !important;
-    left: 0 !important;
-    right: 0 !important;
-    z-index: 101 !important;
-    opacity: 1 !important;
-    transform: none !important;
-    visibility: visible !important;
-    pointer-events: auto !important;
-}
-
-/* 4. Force the main view to break out of the grid and fill the background */
-body.btFullscreenEnabled .Root__main-view {
-    position: fixed !important;
-    inset: 0 !important;
-    width: 100vw !important;
-    height: 100vh !important;
-    z-index: 100 !important;
-    border-radius: 0 !important;
-}
-
-/* 5. Ensure SpicyLyricsPage stretches to fill the fixed container */
-body.btFullscreenEnabled #SpicyLyricsPage {
-    width: 100% !important;
-    height: 100% !important;
-}
-
 .jr794VV4i2iUBRhfvS5i .KE3gK5ccLz2gL3dhJ4BW p svg {
     width: 14px;
     height: 14px;
@@ -4486,4 +4423,61 @@ dialog[aria-label*="Embed track"]
 .main-embedWidgetGenerator-theme
     .main-embedWidgetGenerator-themeRadio.main-embedWidgetGenerator-active:hover::before {
     transform: scale(1.4);
+}
+
+.main-embedWidgetGenerator-theme
+    .main-embedWidgetGenerator-themeRadio.main-embedWidgetGenerator-active,
+.main-embedWidgetGenerator-theme .main-embedWidgetGenerator-themeRadio:hover {
+    border-color: rgba(var(--spice-rgb-contour), 0.5) !important;
+}
+
+.main-embedWidgetGenerator-darkControl {
+    background: rgba(var(--spice-rgb-card), 0.9) !important;
+    border: 1px solid var(--spice-main-elevated) !important;
+    border-radius: 8px !important;
+    color: var(--spice-subtext) !important;
+}
+
+#SpicyLyricsPage.SpicyRenderer .LyricsContainer .LyricsContent .SpicyLyricsScrollContainer:not(.HasDuetLines) .line {
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
+}
+
+
+.DquSH3YjnaIIXMZiOvwA {
+    border: 1px solid rgb(var(--spice-rgb-light-border), 0.4) !important;
+    box-shadow: 0 16px 24px rgba(var(--spice-rgb-main), 0.3), 0 6px 8px rgba(var(--spice-rgb-main), 0.2) !important;
+    background: var(--spice-card) !important;
+}
+
+.OO14Jbk4k4Sfsnl3GMni .LineClamp-1 span {
+    font-size: 13px !important;
+}
+
+.X5mwWAw7ijxPvQOoabzQ {
+    background: var(--spice-main-elevated) !important;
+    border-top: 1px solid rgba(var(--spice-rgb-contour), 0.4);
+}
+
+.X5mwWAw7ijxPvQOoabzQ:before {
+    background: linear-gradient(0deg,rgba(var(--spice-rgb-sidebar),.3),transparent) !important;
+}
+
+.RHoNK4qVATbstzJZm5G8.v8g3JwlNkChF4Ph5BDA9:before {
+    background: linear-gradient(180deg, rgba(var(--spice-rgb-main), .5), transparent) !important;
+}
+
+.X5mwWAw7ijxPvQOoabzQ .e-9640-button-primary {
+    background: var(--spice-text);
+    border-radius: var(--border-radius-2);
+}
+
+.x-filterBox-expandedOrHasFilter .x-filterBox-filterInput:placeholder-shown {
+    -webkit-padding-end: 8px;
+    padding-inline-end: 8px;
+    border: 1px solid rgb(var(--spice-rgb-light-border), 0.3) !important;
+}
+
+.x-filterBox-expandButton:focus, .x-filterBox-expandButton:hover {
+    border: 1px solid transparent;
 }

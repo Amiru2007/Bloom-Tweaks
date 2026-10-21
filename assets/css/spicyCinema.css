@@ -1,0 +1,63 @@
+/* ----------------------------------------------------------------------------- Spicy Lyrics Full Screen Feature ----------------------------------------------------------------------------- */
+
+/* 1. Smooth transitions for navigation and sidebars (excluding now-playing-bar) */
+.Root__globalNav,
+.Root__nav-bar,
+.Root__right-sidebar,
+.Root__main-view {
+    transition:
+        opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+        transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+/* 2. Slide the top and side navigation bars completely out of view */
+body:has(.NowBarStatus__Closed) .Root__globalNav {
+    opacity: 0 !important;
+    transform: translateY(-100%) !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+}
+
+body:has(.NowBarStatus__Closed) .Root__nav-bar {
+    opacity: 0 !important;
+    transform: translateX(-100%) !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+}
+
+body:has(.NowBarStatus__Closed) .Root__right-sidebar {
+    opacity: 0 !important;
+    transform: translateX(100%) !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+}
+
+/* 3. Keep the Bottom Controls Bar visible and pin it to the foreground */
+body:has(.NowBarStatus__Closed) .Root__now-playing-bar {
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 101 !important;
+    opacity: 1 !important;
+    transform: none !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+}
+
+/* 4. Force the main view to break out of the grid and fill the background */
+body:has(.NowBarStatus__Closed) .Root__main-view {
+    position: fixed !important;
+    inset: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    z-index: 100 !important;
+    border-radius: 0 !important;
+}
+
+/* 5. Ensure SpicyLyricsPage stretches to fill the fixed container */
+body:has(.NowBarStatus__Closed) #SpicyLyricsPage {
+    width: 100% !important;
+    height: 100% !important;
+}

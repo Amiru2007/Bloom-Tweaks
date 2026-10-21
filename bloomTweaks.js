@@ -11,6 +11,7 @@ function waitForSpicetify() {
         fluentButtonsCSS: true,
         customNPV: true,
         noiseBlurBg: true,
+        SpicyCinema: true,
         spicyLyricsFullscreenButton: true,
     };
 
@@ -42,6 +43,15 @@ function waitForSpicetify() {
             await loadCSSFile("fluentButtons.css");
         } else if (!prefs.fluentButtonsCSS && existingFluentLink) {
             existingFluentLink.remove();
+        }
+
+        const SpicyCinemaLink = document.querySelector(
+            "link[href*='spicyCinema.css']",
+        );
+        if (prefs.SpicyCinema && !SpicyCinemaLink) {
+            await loadCSSFile("spicyCinema.css");
+        } else if (!prefs.SpicyCinema && SpicyCinemaLink) {
+            SpicyCinemaLink.remove();
         }
 
         const customNPVLink = document.querySelector(
@@ -371,6 +381,17 @@ function waitForSpicetify() {
                         </div>
                         <div class="bloom-tweaks x-settings-row">
                             <div class="bloom-tweaks x-settings-firstColumn">
+                                <label class="bloom-tweaks encore-text encore-text-body-small encore-internal-color-text-subdued">Spicy Cinema</label>
+                            </div>
+                            <div class="bloom-tweaks x-settings-secondColumn">
+                                <label class="bloom-tweaks x-toggle-wrapper">
+                                    <input id="SpicyCinema" type="checkbox" class="bloom-tweaks x-toggle-input" ${prefs.SpicyCinema ? "checked" : ""}>
+                                    <span class="bloom-tweaks x-toggle-indicatorWrapper"><span class="bloom-tweaks x-toggle-indicator"></span></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="bloom-tweaks x-settings-row">
+                            <div class="bloom-tweaks x-settings-firstColumn">
                                 <label class="bloom-tweaks encore-text encore-text-body-small encore-internal-color-text-subdued">Noise Blur Background</label>
                             </div>
                             <div class="bloom-tweaks x-settings-secondColumn">
@@ -383,7 +404,7 @@ function waitForSpicetify() {
                         <h3 style="padding-top: 16px;">Extension Customizations</h3>
                         <div class="bloom-tweaks x-settings-row">
                             <div class="bloom-tweaks x-settings-firstColumn">
-                                <label class="bloom-tweaks encore-text encore-text-body-small encore-internal-color-text-subdued">Spicy Lyrics Fullscreen Button</label>
+                                <label class="bloom-tweaks encore-text encore-text-body-small encore-internal-color-text-subdued">Spicy Lyrics Fullscreen Button (Bugs Found)</label>
                             </div>
                             <div class="bloom-tweaks x-settings-secondColumn">
                                 <label class="bloom-tweaks x-toggle-wrapper">
@@ -418,6 +439,9 @@ function waitForSpicetify() {
                             buttonStyling: prefs.buttonStyling,
                             fluentButtonsCSS:
                                 document.getElementById("fluentButtonsCSS")
+                                    ?.checked || false,
+                            SpicyCinema:
+                                document.getElementById("SpicyCinema")
                                     ?.checked || false,
                             customNPV:
                                 document.getElementById("customNPV")?.checked ||
