@@ -3250,9 +3250,10 @@ section:has(.artist-artistAbout-scrollbars) .main-shelf-shelf,
 button[aria-label*="Update Spicetify"] svg {
     height: 24px !important;
     width: 24px !important;
-    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_arrow_download_24_filled.svg) !important;
-    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_arrow_download_24_filled.svg) !important;
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_arrow_sync_24_regular.svg) !important;
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_arrow_sync_24_regular.svg) !important;
     background: var(--spice-accent) !important;
+    transform: rotate(45deg);
 }
 
 button[aria-label*="Update Spicetify"] svg path {
@@ -3501,6 +3502,7 @@ section[data-testid*="album-page"] .main-entityHeader-backgroundColor {
 
 .playlist-playlist-searchBoxContainer button {
     color: var(--spice-subtext) !important;
+    border: 1px solid transparent;
 }
 
 .x-filterBox-filterInput {
@@ -4460,11 +4462,11 @@ dialog[aria-label*="Embed track"]
 }
 
 .X5mwWAw7ijxPvQOoabzQ:before {
-    background: linear-gradient(0deg,rgba(var(--spice-rgb-sidebar),.3),transparent) !important;
+    background: linear-gradient(0deg,rgba(var(--spice-rgb-main), 0.5),transparent) !important;
 }
 
 .RHoNK4qVATbstzJZm5G8.v8g3JwlNkChF4Ph5BDA9:before {
-    background: linear-gradient(180deg, rgba(var(--spice-rgb-main), .5), transparent) !important;
+    background: linear-gradient(180deg, rgba(var(--spice-rgb-main), 0.5), transparent) !important;
 }
 
 .X5mwWAw7ijxPvQOoabzQ .e-9640-button-primary {
@@ -4480,4 +4482,25 @@ dialog[aria-label*="Embed track"]
 
 .x-filterBox-expandButton:focus, .x-filterBox-expandButton:hover {
     border: 1px solid transparent;
+}
+
+.LegacyChipComponent-checkbox-chip-sm-useBrowserDefaultFocusStyle {
+    /* border: 1px solid rgba(var(--spice-rgb-contour), 0.1) !important; */
+    background: rgba(var(--spice-rgb-contour), 0.1) !important;
+}
+
+#spicetify-update hr {
+    border-color: rgba(var(--spice-rgb-contour), 0.7) !important;
+}
+
+.GimJ6fo6WOYPyWNVpSr1 {
+    border-radius: var(--border-radius-2) !important;
+    border: 1px solid rgb(var(--spice-rgb-light-border), 0.4) !important;
+    box-shadow: 0 16px 24px rgba(var(--spice-rgb-main), 0.3), 0 6px 8px rgba(var(--spice-rgb-main), 0.2) !important;
+    background: rgba(var(--spice-rgb-main), 0.6) !important;
+    backdrop-filter: blur(64px);
+}
+
+.main-entityHeader-overlay:after {
+    background: linear-gradient(oklch(from var(--background-base) l c h) 0, oklch(from var(--background-base) l c h / 70%) 40%) !important;
 }

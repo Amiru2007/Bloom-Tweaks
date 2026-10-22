@@ -61,3 +61,13 @@ body:has(.NowBarStatus__Closed) #SpicyLyricsPage {
     width: 100% !important;
     height: 100% !important;
 }
+
+body:has(.NowBarStatus__Closed) .main-nowPlayingBar-container {
+    background-color: rgba(var(--spice-rgb-main), 0.3) !important;
+    backdrop-filter: blur(var(--blur-radius)) brightness(100%) !important;
+}
+
+.E912cqRfb05FrRPFKDZ_ {
+    bottom: 100px !important;
+    position: sticky !important;
+}
