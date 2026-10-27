@@ -12,7 +12,6 @@ function waitForSpicetify() {
         customNPV: true,
         noiseBlurBg: true,
         SpicyCinema: true,
-        spicyLyricsFullscreenButton: true,
     };
 
     function loadPreferences() {
@@ -216,109 +215,6 @@ function waitForSpicetify() {
         root.style.setProperty("--spice-accent-inverted", inverted);
     }
 
-    // --- Custom SVGs for Fullscreen States ---
-    const enterFullscreenSVG = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 6C5 5.44772 5.44772 5 6 5H8C8.55228 5 9 4.55228 9 4C9 3.44772 8.55228 3 8 3H6C4.34315 3 3 4.34315 3 6V8C3 8.55228 3.44772 9 4 9C4.55228 9 5 8.55228 5 8V6ZM5 18C5 18.5523 5.44772 19 6 19H8C8.55228 19 9 19.4477 9 20C9 20.5523 8.55228 21 8 21H6C4.34315 21 3 19.6569 3 18V16C3 15.4477 3.44772 15 4 15C4.55228 15 5 15.4477 5 16V18ZM18 5C18.5523 5 19 5.44772 19 6V8C19 8.55228 19.4477 9 20 9C20.5523 9 21 8.55228 21 8V6C21 4.34315 19.6569 3 18 3H16C15.4477 3 15 3.44772 15 4C15 4.55228 15.4477 5 16 5H18ZM19 18C19 18.5523 18.5523 19 18 19H16C15.4477 19 15 19.4477 15 20C15 20.5523 15.4477 21 16 21H18C19.6569 21 21 19.6569 21 18V16C21 15.4477 20.5523 15 20 15C19.4477 15 19 15.4477 19 16V18Z" fill="#ffffff"/></svg>`;
-    
-    const exitFullscreenSVG = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 4C9 3.44772 8.55228 3 8 3C7.44772 3 7 3.44772 7 4V6.5C7 6.77614 6.77614 7 6.5 7H4C3.44772 7 3 7.44772 3 8C3 8.55228 3.44772 9 4 9H6.5C7.88071 9 9 7.88071 9 6.5V4ZM9 20C9 20.5523 8.55228 21 8 21C7.44772 21 7 20.5523 7 20V17.5C7 17.2239 6.77614 17 6.5 17H4C3.44772 17 3 16.5523 3 16C3 15.4477 3.44772 15 4 15H6.5C7.88071 15 9 16.1193 9 17.5V20ZM16 3C15.4477 3 15 3.44772 15 4V6.5C15 7.88071 16.1193 9 17.5 9H20C20.5523 9 21 8.55228 21 8C21 7.44772 20.5523 7 20 7H17.5C17.2239 7 17 6.77614 17 6.5V4C17 3.44772 16.5523 3 16 3ZM15 20C15 20.5523 15.4477 21 16 21C16.5523 21 17 20.5523 17 20V17.5C17 17.2239 17.2239 17 17.5 17H20C20.5523 17 21 16.5523 21 16C21 15.4477 20.5523 15 20 15H17.5C16.1193 15 15 16.1193 15 17.5V20Z" fill="#ffffff"/></svg>`;
-
-    // --- Fullscreen Button Injection with Dynamic Icons & Tippy Tooltip ---
-    let isInjecting = false;
-    let tippyInstance = null;
-
-    function addSpicyLyricsFullscreenButton() {
-        if (isInjecting) return;
-
-        const prefs = loadPreferences();
-        if (!prefs.spicyLyricsFullscreenButton) return;
-
-        const spicyPage = document.querySelector("#SpicyLyricsPage");
-        if (!spicyPage) return;
-
-        const isTargetPage = spicyPage.classList.contains("NowBarStatus__Closed");
-        const viewControls = spicyPage.querySelector(".ViewControls");
-
-        if (isTargetPage && viewControls) {
-            if (!viewControls.querySelector("#btFullscreen")) {
-                isInjecting = true;
-
-                const button = document.createElement("button");
-                button.id = "btFullscreen";
-                button.className = "ViewControl";
-                button.setAttribute("type", "button");
-
-                const isCurrentlyFull = !!document.fullscreenElement;
-                const labelText = isCurrentlyFull ? "Exit Fullscreen" : "Fullscreen";
-
-                button.setAttribute("aria-label", labelText);
-                button.innerHTML = isCurrentlyFull ? exitFullscreenSVG : enterFullscreenSVG;
-
-                if (Spicetify.Tippy) {
-                    tippyInstance = Spicetify.Tippy(button, {
-                        ...Spicetify.TippyProps,
-                        content: labelText,
-                    });
-                }
-
-                button.addEventListener("click", (e) => {
-                    e.stopPropagation();
-                    if (!document.fullscreenElement) {
-                        document.documentElement.requestFullscreen().catch((err) => console.log(err));
-                        document.body.classList.add("btFullscreenEnabled");
-                        updateButtonStateAppearance("Exit Fullscreen", exitFullscreenSVG);
-                    } else {
-                        if (document.exitFullscreen) {
-                            document.exitFullscreen().catch((err) => console.log(err));
-                        }
-                        document.body.classList.remove("btFullscreenEnabled");
-                        updateButtonStateAppearance("Fullscreen", enterFullscreenSVG);
-                    }
-                });
-
-                viewControls.appendChild(button);
-
-                setTimeout(() => {
-                    isInjecting = false;
-                }, 50);
-            }
-        } else {
-            const customBtn = viewControls?.querySelector("#btFullscreen");
-            if (customBtn) {
-                isInjecting = true;
-                if (tippyInstance) {
-                    tippyInstance.destroy();
-                    tippyInstance = null;
-                }
-                customBtn.remove();
-                setTimeout(() => {
-                    isInjecting = false;
-                }, 50);
-            }
-        }
-    }
-
-    function updateButtonStateAppearance(text, svgContent) {
-        const customBtn = document.getElementById("btFullscreen");
-        if (customBtn) {
-            customBtn.setAttribute("aria-label", text);
-            customBtn.innerHTML = svgContent;
-        }
-        if (tippyInstance) {
-            tippyInstance.setContent(text);
-        }
-    }
-
-    document.addEventListener("fullscreenchange", () => {
-        const isFull = !!document.fullscreenElement;
-
-        if (isFull) {
-            document.body.classList.add("btFullscreenEnabled");
-            updateButtonStateAppearance("Exit Fullscreen", exitFullscreenSVG);
-        } else {
-            document.body.classList.remove("btFullscreenEnabled");
-            updateButtonStateAppearance("Fullscreen", enterFullscreenSVG);
-        }
-    });
-
     function addControlPanelButton() {
         const prefs = loadPreferences();
 
@@ -401,18 +297,6 @@ function waitForSpicetify() {
                                 </label>
                             </div>
                         </div>
-                        <h3 style="padding-top: 16px;">Extension Customizations</h3>
-                        <div class="bloom-tweaks x-settings-row">
-                            <div class="bloom-tweaks x-settings-firstColumn">
-                                <label class="bloom-tweaks encore-text encore-text-body-small encore-internal-color-text-subdued">Spicy Lyrics Fullscreen Button (Bugs Found)</label>
-                            </div>
-                            <div class="bloom-tweaks x-settings-secondColumn">
-                                <label class="bloom-tweaks x-toggle-wrapper">
-                                    <input id="spicyLyricsFullscreenButton" type="checkbox" class="bloom-tweaks x-toggle-input" ${prefs.spicyLyricsFullscreenButton ? "checked" : ""}>
-                                    <span class="bloom-tweaks x-toggle-indicatorWrapper"><span class="bloom-tweaks x-toggle-indicator"></span></span>
-                                </label>
-                            </div>
-                        </div>
                         <div class="bloom-tweaks save-btn-container">
                             <button id="saveSettingsButton" class="bloom-tweaks-popup-btn save-button">
                                 Save
@@ -449,9 +333,6 @@ function waitForSpicetify() {
                             noiseBlurBg:
                                 document.getElementById("noiseBlurBg")
                                     ?.checked || false,
-                            spicyLyricsFullscreenButton:
-                                document.getElementById("spicyLyricsFullscreenButton")
-                                    ?.checked || false,
                         };
 
                         savePreferences(newPrefs);
@@ -470,7 +351,6 @@ function waitForSpicetify() {
         });
 
         updateButtonState();
-        addSpicyLyricsFullscreenButton();
     }
 
     let observerTimer = null;
@@ -479,7 +359,6 @@ function waitForSpicetify() {
             if (observerTimer) return;
             observerTimer = setTimeout(() => {
                 updateButtonState();
-                addSpicyLyricsFullscreenButton();
                 observerTimer = null;
             }, 100);
         });

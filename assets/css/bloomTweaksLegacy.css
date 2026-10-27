@@ -2467,7 +2467,7 @@ button.main-globalNav-link-icon[aria-label*="Statistics"] svg {
     width: 8px;
     height: 100%;
     position: absolute;
-    z-index: 9;
+    z-index: 6;
     left: -8px;
     transition: all 0.5s cubic-bezier(0.47, 0, 0.23, 1.38);
 }
@@ -3776,6 +3776,7 @@ button.main-trackList-column.main-trackList-durationHeader.main-trackList-sortab
 
 .main-topBar-container:has(.bloom-header-scrolled) .main-topBar-background {
     opacity: 1 !important;
+    background: color-mix(in oklab,  var(--background-base) 10%, var(--spice-sidebar) 90%) !important;
 }
 
 .ZLQMyiECjwh0Fat0ymny {
@@ -3953,9 +3954,9 @@ button.x-sortBox-sortDropdown {
     overflow: hidden !important;
 }
 
-#recent-searches-dropdown {
+/* #recent-searches-dropdown {
     z-index: 9999999 !important;
-}
+} */
 
 .Root__nav-bar.TkqXOzhmCCuE6YI3hlgA:not(
         :has(.main-yourLibraryX-libraryRootlist.KwShd3RdVrsX6dGLJNxT)
@@ -4075,6 +4076,10 @@ button.x-sortBox-sortDropdown {
 .player-controls__buttons button[aria-label*="Enable Shuffle"]:hover svg,
 .player-controls__buttons button[aria-label*="Enable repeat"]:hover svg {
     background: var(--spice-text) !important;
+}
+
+.player-controls__buttons button[aria-label*="Enable repeat one"]:hover svg {
+    background: var(--spice-accent) !important;
 }
 
 .player-controls__buttons button[aria-label*="Enable Shuffle"] svg {
@@ -4478,6 +4483,7 @@ dialog[aria-label*="Embed track"]
     -webkit-padding-end: 8px;
     padding-inline-end: 8px;
     border: 1px solid rgb(var(--spice-rgb-light-border), 0.3) !important;
+    background: var(--spice-sidebar) !important;
 }
 
 .x-filterBox-expandButton:focus, .x-filterBox-expandButton:hover {
@@ -4503,4 +4509,64 @@ dialog[aria-label*="Embed track"]
 
 .main-entityHeader-overlay:after {
     background: linear-gradient(oklch(from var(--background-base) l c h) 0, oklch(from var(--background-base) l c h / 70%) 40%) !important;
+}
+
+#recent-searches-dropdown {
+    pointer-events: all !important;
+}
+
+.ka4wGy_b04LNCthHIH1N {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+
+.ka4wGy_b04LNCthHIH1N button.Button-buttonTertiary-medium-iconOnly-useBrowserDefaultFocusStyle[aria-label*="Pause"] svg  {
+    background-color: var(--spice-text) !important;
+    mask-image: url(https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_pause_16_filled.svg) !important;
+    -webkit-mask-image: url(https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_pause_16_filled.svg) !important;
+    mask-size: 24px !important;
+    width: 24px !important;
+    height: 24px !important;
+    mask-repeat: no-repeat;
+}
+
+.ka4wGy_b04LNCthHIH1N button.Button-buttonTertiary-medium-iconOnly-useBrowserDefaultFocusStyle[aria-label*="Play"] svg {
+    background-color: var(--spice-text) !important;
+    mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg);
+    -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg);
+    mask-size: 24px !important;
+    width: 24px !important;
+    height: 24px !important;
+    mask-repeat: no-repeat;
+}
+
+.ka4wGy_b04LNCthHIH1N button.Button-buttonTertiary-medium-iconOnly-useBrowserDefaultFocusStyle svg path {
+    display: none;
+}
+
+.Vn9yz8P5MjIvDT8c0U6w {
+    border: 1px solid rgba(var(--spice-rgb-contour), 0.7) !important;
+}
+
+#spicetify-update ul li {
+    font-weight: 400 !important;
+    color: var(--spice-subtext);
+}
+
+#spicetify-update a {
+    color: var(--spice-accent) !important;
+}
+
+#spicetify-update ol p {
+    font-weight: 400 !important;
+    color: var(--spice-subtext);
+    font-size: 12px;
+}
+
+.BZh0f1vbOmruyp4_t9wy.QO1vC7wN5xiIjBOHGElf span:has(button) {
+    order: -1;
+}
+
+.x-entityImage-imageContainer.LAdTOeZ2QwKXGF4XAXZ8.x-entityImage-xsmall {
+    border: 1px solid rgba(var(--spice-rgb-contour), 0.4) !important;
 }
