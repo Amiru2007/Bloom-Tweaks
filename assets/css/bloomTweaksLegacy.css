@@ -2813,11 +2813,23 @@ button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBro
     display: none !important;
 }
 
+.main-topBar-container:has(.bloom-header-scrolled)
+    .main-topBar-topbarContent
+    .main-playButton-PlayButton {
+    width: 24px !important;
+    height: 24px !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
 .main-topBar-topbarContentWrapper .main-playButton-PlayButton > button {
-    transform: scale(0.5) !important;
+    transform: scale(1) !important;
     margin: 0 !important;
-    margin-right: -6px !important;
+    /* margin-right: -6px !important; */
     margin-top: -2px !important;
+    width: 24px !important;
+    height: 24px !important;
 }
 
 .main-entityHeader-topbarContent.main-entityHeader-topbarContentFadeIn > * {
@@ -3500,7 +3512,7 @@ section[data-testid*="album-page"] .main-entityHeader-backgroundColor {
     fill: var(--text-subdued) !important;
 }
 
-.playlist-playlist-searchBoxContainer button {
+button.x-filterBox-expandButton {
     color: var(--spice-subtext) !important;
     border: 1px solid transparent;
 }
@@ -3776,7 +3788,11 @@ button.main-trackList-column.main-trackList-durationHeader.main-trackList-sortab
 
 .main-topBar-container:has(.bloom-header-scrolled) .main-topBar-background {
     opacity: 1 !important;
-    background: color-mix(in oklab,  var(--background-base) 10%, var(--spice-sidebar) 90%) !important;
+    background: color-mix(
+        in oklab,
+        var(--background-base) 15%,
+        var(--spice-sidebar) 85%
+    ) !important;
 }
 
 .ZLQMyiECjwh0Fat0ymny {
@@ -4445,15 +4461,20 @@ dialog[aria-label*="Embed track"]
     color: var(--spice-subtext) !important;
 }
 
-#SpicyLyricsPage.SpicyRenderer .LyricsContainer .LyricsContent .SpicyLyricsScrollContainer:not(.HasDuetLines) .line {
+#SpicyLyricsPage.SpicyRenderer
+    .LyricsContainer
+    .LyricsContent
+    .SpicyLyricsScrollContainer:not(.HasDuetLines)
+    .line {
     padding-top: 4px !important;
     padding-bottom: 4px !important;
 }
 
-
 .DquSH3YjnaIIXMZiOvwA {
     border: 1px solid rgb(var(--spice-rgb-light-border), 0.4) !important;
-    box-shadow: 0 16px 24px rgba(var(--spice-rgb-main), 0.3), 0 6px 8px rgba(var(--spice-rgb-main), 0.2) !important;
+    box-shadow:
+        0 16px 24px rgba(var(--spice-rgb-main), 0.3),
+        0 6px 8px rgba(var(--spice-rgb-main), 0.2) !important;
     background: var(--spice-card) !important;
 }
 
@@ -4467,11 +4488,19 @@ dialog[aria-label*="Embed track"]
 }
 
 .X5mwWAw7ijxPvQOoabzQ:before {
-    background: linear-gradient(0deg,rgba(var(--spice-rgb-main), 0.5),transparent) !important;
+    background: linear-gradient(
+        0deg,
+        rgba(var(--spice-rgb-main), 0.5),
+        transparent
+    ) !important;
 }
 
 .RHoNK4qVATbstzJZm5G8.v8g3JwlNkChF4Ph5BDA9:before {
-    background: linear-gradient(180deg, rgba(var(--spice-rgb-main), 0.5), transparent) !important;
+    background: linear-gradient(
+        180deg,
+        rgba(var(--spice-rgb-main), 0.5),
+        transparent
+    ) !important;
 }
 
 .X5mwWAw7ijxPvQOoabzQ .e-9640-button-primary {
@@ -4486,7 +4515,8 @@ dialog[aria-label*="Embed track"]
     background: var(--spice-sidebar) !important;
 }
 
-.x-filterBox-expandButton:focus, .x-filterBox-expandButton:hover {
+.x-filterBox-expandButton:focus,
+.x-filterBox-expandButton:hover {
     border: 1px solid transparent;
 }
 
@@ -4502,13 +4532,18 @@ dialog[aria-label*="Embed track"]
 .GimJ6fo6WOYPyWNVpSr1 {
     border-radius: var(--border-radius-2) !important;
     border: 1px solid rgb(var(--spice-rgb-light-border), 0.4) !important;
-    box-shadow: 0 16px 24px rgba(var(--spice-rgb-main), 0.3), 0 6px 8px rgba(var(--spice-rgb-main), 0.2) !important;
+    box-shadow:
+        0 16px 24px rgba(var(--spice-rgb-main), 0.3),
+        0 6px 8px rgba(var(--spice-rgb-main), 0.2) !important;
     background: rgba(var(--spice-rgb-main), 0.6) !important;
     backdrop-filter: blur(64px);
 }
 
 .main-entityHeader-overlay:after {
-    background: linear-gradient(oklch(from var(--background-base) l c h) 0, oklch(from var(--background-base) l c h / 70%) 40%) !important;
+    background: linear-gradient(
+        oklch(from var(--background-base) l c h) 0,
+        oklch(from var(--background-base) l c h / 70%) 40%
+    ) !important;
 }
 
 #recent-searches-dropdown {
@@ -4519,8 +4554,9 @@ dialog[aria-label*="Embed track"]
     background-color: rgba(0, 0, 0, 0.5) !important;
 }
 
-
-.ka4wGy_b04LNCthHIH1N button.Button-buttonTertiary-medium-iconOnly-useBrowserDefaultFocusStyle[aria-label*="Pause"] svg  {
+.ka4wGy_b04LNCthHIH1N
+    button.Button-buttonTertiary-medium-iconOnly-useBrowserDefaultFocusStyle[aria-label*="Pause"]
+    svg {
     background-color: var(--spice-text) !important;
     mask-image: url(https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_pause_16_filled.svg) !important;
     -webkit-mask-image: url(https://nimsandu.github.io/spicetify-bloom/assets/fluentui-system-icons/ic_fluent_pause_16_filled.svg) !important;
@@ -4530,7 +4566,9 @@ dialog[aria-label*="Embed track"]
     mask-repeat: no-repeat;
 }
 
-.ka4wGy_b04LNCthHIH1N button.Button-buttonTertiary-medium-iconOnly-useBrowserDefaultFocusStyle[aria-label*="Play"] svg {
+.ka4wGy_b04LNCthHIH1N
+    button.Button-buttonTertiary-medium-iconOnly-useBrowserDefaultFocusStyle[aria-label*="Play"]
+    svg {
     background-color: var(--spice-text) !important;
     mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg);
     -webkit-mask-image: url(https://raw.githubusercontent.com/nimsandu/spicetify-bloom/main/assets/fluentui-system-icons/ic_fluent_play_24_filled.svg);
@@ -4540,7 +4578,10 @@ dialog[aria-label*="Embed track"]
     mask-repeat: no-repeat;
 }
 
-.ka4wGy_b04LNCthHIH1N button.Button-buttonTertiary-medium-iconOnly-useBrowserDefaultFocusStyle svg path {
+.ka4wGy_b04LNCthHIH1N
+    button.Button-buttonTertiary-medium-iconOnly-useBrowserDefaultFocusStyle
+    svg
+    path {
     display: none;
 }
 
