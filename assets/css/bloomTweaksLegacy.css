@@ -1128,7 +1128,18 @@ button[aria-label*="Get Random Saved Album"]:hover svg {
 
 button.main-actionButtons-button.main-topBarStatusIndicator-hasTooltip.main-noConnection-isNotice.main-topBarStatusIndicator-tooltipEnter.main-topBarStatusIndicator-tooltipEnterActive
     svg {
-    fill: var(--spice-accent) !important;
+    background: var(--spice-accent) !important;
+    mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_incognito_24_regular_green.svg) !important;
+    -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_incognito_24_regular_green.svg) !important;
+    mask-size: 16px;
+    mask-repeat: no-repeat;
+    transform: scale(1.35);
+}
+
+button.main-actionButtons-button.main-topBarStatusIndicator-hasTooltip.main-noConnection-isNotice.main-topBarStatusIndicator-tooltipEnter.main-topBarStatusIndicator-tooltipEnterActive
+    svg
+    path {
+    display: none;
 }
 
 .qSTDtICR1fiIGRni1cwy {
