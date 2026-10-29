@@ -1108,7 +1108,8 @@ path[d="M23 0C10.298 0 0 10.297 0 23c0 12.702 10.298 23 23 23 12.703 0 23-10.298
     background: rgba(var(--spice-rgb-card), 0.6) !important;
 }
 
-.profile-userEditDetails-nameInput, .profile-userEditDetails-textElement:focus {
+.profile-userEditDetails-nameInput,
+.profile-userEditDetails-textElement:focus {
     background: rgba(var(--spice-rgb-card), 0.6) !important;
 }
 
@@ -3058,7 +3059,7 @@ section.kwzBRpFigKr1EP2d5qle.ukV8NB0JGnieUOa0eri5 figure {
 
 /* .main-trackCreditsModal-mainSection {
     background-color: rgba(var(--spice-rgb-main), 0.6) !important; */
-    /* border: 1px solid rgba(var(--spice-rgb-main-elevated), 0.6) !important;
+/* border: 1px solid rgba(var(--spice-rgb-main-elevated), 0.6) !important;
 } */
 
 .main-topBar-topbarContent.main-entityHeader-topbarContent.main-entityHeader-topbarContentFadeIn.bloom-header-scrolled {

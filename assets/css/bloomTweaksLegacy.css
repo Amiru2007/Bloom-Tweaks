@@ -1133,7 +1133,7 @@ button.main-actionButtons-button.main-topBarStatusIndicator-hasTooltip.main-noCo
     -webkit-mask-image: url(https://raw.githubusercontent.com/Amiru2007/Bloom-Tweaks/refs/heads/main/assets/Icons/ic_fluent_incognito_24_regular_green.svg) !important;
     mask-size: 16px;
     mask-repeat: no-repeat;
-    transform: scale(1.35);
+    transform: scale(1.25);
 }
 
 button.main-actionButtons-button.main-topBarStatusIndicator-hasTooltip.main-noConnection-isNotice.main-topBarStatusIndicator-tooltipEnter.main-topBarStatusIndicator-tooltipEnterActive
@@ -4501,7 +4501,7 @@ dialog[aria-label*="Embed track"]
 .X5mwWAw7ijxPvQOoabzQ:before {
     background: linear-gradient(
         0deg,
-        rgba(var(--spice-rgb-main), 0.5),
+        rgba(var(--spice-rgb-sidebar), 0.5),
         transparent
     ) !important;
 }
@@ -4509,7 +4509,7 @@ dialog[aria-label*="Embed track"]
 .RHoNK4qVATbstzJZm5G8.v8g3JwlNkChF4Ph5BDA9:before {
     background: linear-gradient(
         180deg,
-        rgba(var(--spice-rgb-main), 0.5),
+        rgba(var(--spice-rgb-sidebar), 0.5),
         transparent
     ) !important;
 }
@@ -4621,4 +4621,22 @@ dialog[aria-label*="Embed track"]
 
 .x-entityImage-imageContainer.LAdTOeZ2QwKXGF4XAXZ8.x-entityImage-xsmall {
     border: 1px solid rgba(var(--spice-rgb-contour), 0.4) !important;
+}
+
+.PromotionDefaultNative-module_footer-area__N7OZR {
+    gap: 0 !important;
+}
+
+.PromotionDefaultNative-module_footer-area__N7OZR span span:has(button) {
+    width: 48px;
+    height: 48px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.PromotionDefaultNative-module_footer-area__N7OZR span span:has(button) button[aria-label*="Play"] .e-9640-button-icon-only--small .e-9640-button__icon-wrapper svg {
+    width: 28px;
+    height: 28px;
+    mask-size: 28px;
 }
