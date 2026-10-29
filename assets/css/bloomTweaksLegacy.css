@@ -137,10 +137,6 @@ button.bloom-tweaks.Button-sc-1dqy6lx-0.Button-buttonTertiary-small-small-useBro
     background: linear-gradient(transparent 0, var(--spice-main)) !important;
 }
 
-._Cq69xKZBtHaaeMZXIdk {
-    display: none !important;
-}
-
 .LayoutResizer__resize-bar {
     opacity: 1 !important;
     background: var(--spice-sidebar);
